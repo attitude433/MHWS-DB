@@ -1,0 +1,131 @@
+{
+  "last_updated": "2026-04-23",
+  "game_version": "v1.041 (2026년 2월)",
+  "description": "Monster Hunter Wilds 챗봇용 데이터 수집 — 찾아야 할 항목들",
+  "mhdb_extraction_needed": {
+    "description": "MHWS-Editor로 .user.3 파일 탐색 후 mhdb extractor에 추출 로직 추가 필요",
+    "items": [
+      {
+        "name": "메인 베이스캠프",
+        "detail": "4개 필드의 구역 1 캠프 (경계의 모래 평원, 주홍빛 숲, 기름 솟는 계곡, 용도의 폐허). 빙무의 절벽만 현재 포함됨.",
+        "priority": "낮음 (수동으로도 가능)"
+      },
+      {
+        "name": "소형 몬스터",
+        "detail": "약 22개 (콩가, 블랑고, 랑고스타, 케라토노스, 달루토돈, 브브라치카, 탈리오스, 바오노스, 가지오스, 필라길, 하르푸스, 크라노다스, 네마라치카, 젤레도론, 라프마, 포케피나, 네르스큐라 베이비 등)",
+        "priority": "높음"
+      },
+      {
+        "name": "환경생물 상세 데이터",
+        "detail": "현재 나무위키 파싱 데이터 사용 중. mhdb에서 공식 데이터로 대체 가능",
+        "priority": "중간"
+      },
+      {
+        "name": "퀘스트 공식 데이터",
+        "detail": "현재 인벤/나무위키 파싱. 공식 데이터는 타겟/보상/조건이 정확",
+        "priority": "높음"
+      },
+      {
+        "name": "사냥벌레 (Kinsects)",
+        "detail": "조충곤용. 현재 인벤 21개",
+        "priority": "중간"
+      },
+      {
+        "name": "팔리코 장비",
+        "detail": "팔리코 방어구 169개 + 무기 73개",
+        "priority": "중간"
+      },
+      {
+        "name": "아이템 채집 위치",
+        "detail": "필드/구역별로 어떤 아이템 채집 가능한지 (약초, 광석, 벌꿀 등)",
+        "priority": "높음"
+      },
+      {
+        "name": "필드 게더링 포인트",
+        "detail": "각 필드의 채집 포인트 좌표 및 획득 가능 아이템",
+        "priority": "중간"
+      }
+    ]
+  },
+  "other_sources_needed": {
+    "description": "mhdb 외 다른 소스에서 보강",
+    "items": [
+      {
+        "name": "아이템 획득 방법 세부",
+        "detail": "상점 구입 가능 여부, 조합 여부, 퀘스트 보상 여부 등. 현재 인벤에 430개만 있음",
+        "priority": "높음"
+      },
+      {
+        "name": "NPC 정보",
+        "detail": "Sekka, Gemma 등 교역/납품 NPC 정보",
+        "priority": "중간"
+      },
+      {
+        "name": "상점 구입 가능 아이템 목록",
+        "detail": "어느 상점에서 뭘 팔고 얼마에 파는지",
+        "priority": "중간"
+      },
+      {
+        "name": "Tarred Device 3종",
+        "detail": "fextralife에서 TBA 상태. TU/업데이트 추가 시 재확인 필요",
+        "priority": "낮음"
+      }
+    ]
+  },
+  "derived_mappings_needed": {
+    "description": "기존 데이터로 만들 수 있는 역방향 매핑",
+    "items": [
+      {
+        "name": "필드 → 나오는 몬스터/환경생물/아이템",
+        "detail": "현재 monsters/endemic_life에 locations 있음. 역매핑 만들면 가능"
+      },
+      {
+        "name": "아이템 → 나오는 필드",
+        "detail": "몬스터 드롭 + 환경생물 드롭 종합. 채집물은 mhdb 추출 필요"
+      },
+      {
+        "name": "스킬 → 해당 스킬 있는 장식주/호신구",
+        "detail": "이미 skill_to_equipment.json에 방어구/무기만 있음. 장식주/호신구 추가 필요"
+      },
+      {
+        "name": "무기 제작 트리",
+        "detail": "crafting.previous_id/branches 활용해서 전체 파생 트리 그리기"
+      },
+      {
+        "name": "아이템 제작 트리",
+        "detail": "어떤 아이템이 어떤 아이템 조합 재료로 쓰이는지"
+      }
+    ]
+  },
+  "manual_data_needed": {
+    "description": "게임 외 데이터라 수동 작성 필요",
+    "items": [
+      {
+        "name": "챗봇 응답 템플릿",
+        "detail": "사용자 질문 유형별 응답 포맷"
+      },
+      {
+        "name": "공략/추천 정보",
+        "detail": "몬스터별 추천 무기, 스킬 조합 등 (선택사항)"
+      }
+    ]
+  },
+  "completed": {
+    "description": "Phase 1 완료 항목",
+    "items": [
+      "items.json (773개, mhdb + 인벤 드롭 정보)",
+      "monsters.json (34개 대형, mhdb 공식)",
+      "armor.json (194 세트, 714 피스)",
+      "weapons_all.json (1188개, 14종)",
+      "accessories.json (361 장식주)",
+      "charms.json (187 호신구)",
+      "skills.json (179 스킬)",
+      "stages.json (5 필드, 47 캠프) — 메인 베이스캠프 누락",
+      "endemic_life.json (70 환경생물, 나무위키 기반)",
+      "퀘스트 4종 (free/main/event/tournament) + monster_to_quests.json",
+      "monster_to_materials + material_to_monsters (인벤 기반)",
+      "name_mapping.json (622개)",
+      "skill_to_equipment.json"
+    ]
+  }
+}

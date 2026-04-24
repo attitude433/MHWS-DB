@@ -1,0 +1,429 @@
+{
+  "????": {
+    "name_kr": "????",
+    "name_en": "???",
+    "kind": "machine",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "game_id": 21849,
+        "name_kr": "오메가 플라네테스",
+        "name_en": "Omega Planetes",
+        "base_health": 7000,
+        "locations_kr": [
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  },
+  "고룡종": {
+    "name_kr": "고룡종",
+    "name_en": "Elder Dragon",
+    "kind": "elder-dragon",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "game_id": 13052,
+        "name_kr": "고그마지오스",
+        "name_en": "Gogmazios",
+        "base_health": 10000,
+        "locations_kr": [
+          "기름 솟는 계곡"
+        ]
+      }
+    ]
+  },
+  "두족종": {
+    "name_kr": "두족종",
+    "name_en": "Cephalopod",
+    "kind": "cephalopod",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "game_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "base_health": 4500,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "base_health": 5250,
+        "locations_kr": [
+          "기름 솟는 계곡"
+        ]
+      }
+    ]
+  },
+  "비룡종": {
+    "name_kr": "비룡종",
+    "name_en": "Flying Wyvern",
+    "kind": "flying-wyvern",
+    "monster_count": 6,
+    "monsters": [
+      {
+        "game_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "base_health": 5000,
+        "locations_kr": [
+          "경계의 모래 평원"
+        ]
+      },
+      {
+        "game_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "base_health": 5500,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "base_health": 5500,
+        "locations_kr": [
+          "경계의 모래 평원",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "base_health": 4500,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "경계의 모래 평원",
+          "주홍빛 숲"
+        ]
+      },
+      {
+        "game_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "base_health": 5200,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "경계의 모래 평원",
+          "주홍빛 숲",
+          "용도의 폐허",
+          "빙무의 절벽"
+        ]
+      },
+      {
+        "game_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "base_health": 4500,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "주홍빛 숲",
+          "용도의 폐허"
+        ]
+      }
+    ]
+  },
+  "수룡종": {
+    "name_kr": "수룡종",
+    "name_en": "Brute Wyvern",
+    "kind": "brute-wyvern",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "game_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "base_health": 4000,
+        "locations_kr": [
+          "경계의 모래 평원",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "base_health": 4500,
+        "locations_kr": [
+          "기름 솟는 계곡"
+        ]
+      }
+    ]
+  },
+  "아성룡종": {
+    "name_kr": "아성룡종",
+    "name_en": "Demi Elder",
+    "kind": "demi-elder",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "game_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "base_health": 5100,
+        "locations_kr": [
+          "용도의 폐허",
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  },
+  "아수종": {
+    "name_kr": "아수종",
+    "name_en": "Fanged Beast",
+    "kind": "fanged-beast",
+    "monster_count": 4,
+    "monsters": [
+      {
+        "game_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "base_health": 5000,
+        "locations_kr": [
+          "주홍빛 숲",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "base_health": 4800,
+        "locations_kr": [
+          "경계의 모래 평원",
+          "주홍빛 숲",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "base_health": 5200,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "base_health": 4500,
+        "locations_kr": [
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  },
+  "양서종": {
+    "name_kr": "양서종",
+    "name_en": "Amphibian",
+    "kind": "amphibian",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "game_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "base_health": 4000,
+        "locations_kr": [
+          "경계의 모래 평원"
+        ]
+      }
+    ]
+  },
+  "인조룡종": {
+    "name_kr": "인조룡종",
+    "name_en": "Construct",
+    "kind": "construct",
+    "monster_count": 6,
+    "monsters": [
+      {
+        "game_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "base_health": 9000,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "base_health": 5800,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "base_health": 5200,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 107194928,
+        "name_kr": "수호룡 안쟈나프 아종",
+        "name_en": "Guardian Fulgur Anjanath",
+        "base_health": 5000,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "base_health": 5000,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "base_health": 5000,
+        "locations_kr": [
+          "용도의 폐허"
+        ]
+      }
+    ]
+  },
+  "조룡종": {
+    "name_kr": "조룡종",
+    "name_en": "Bird Wyvern",
+    "kind": "bird-wyvern",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "game_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "base_health": 3800,
+        "locations_kr": [
+          "주홍빛 숲",
+          "빙무의 절벽"
+        ]
+      },
+      {
+        "game_id": 1049705664,
+        "name_kr": "게리오스",
+        "name_en": "Gypceros",
+        "base_health": 4200,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "경계의 모래 평원",
+          "용도의 폐허",
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  },
+  "해룡종": {
+    "name_kr": "해룡종",
+    "name_en": "Leviathan",
+    "kind": "leviathan",
+    "monster_count": 6,
+    "monsters": [
+      {
+        "game_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "base_health": 5600,
+        "locations_kr": [
+          "주홍빛 숲"
+        ]
+      },
+      {
+        "game_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "base_health": 4400,
+        "locations_kr": [
+          "경계의 모래 평원"
+        ]
+      },
+      {
+        "game_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "base_health": 5500,
+        "locations_kr": [
+          "주홍빛 숲",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "base_health": 4500,
+        "locations_kr": [
+          "용도의 폐허",
+          "빙무의 절벽"
+        ]
+      },
+      {
+        "game_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "base_health": 5500,
+        "locations_kr": [
+          "주홍빛 숲"
+        ]
+      },
+      {
+        "game_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "base_health": 7400,
+        "locations_kr": [
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  },
+  "협각종": {
+    "name_kr": "협각종",
+    "name_en": "Temnoceran",
+    "kind": "temnoceran",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "game_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "base_health": 4000,
+        "locations_kr": [
+          "주홍빛 숲",
+          "용도의 폐허"
+        ]
+      },
+      {
+        "game_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "base_health": 4400,
+        "locations_kr": [
+          "기름 솟는 계곡",
+          "용도의 폐허",
+          "빙무의 절벽"
+        ]
+      }
+    ]
+  }
+}
