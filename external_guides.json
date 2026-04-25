@@ -1,0 +1,197 @@
+{
+  "source": "dcinside_toothpick",
+  "source_url": "https://gall.dcinside.com/m/toothpick",
+  "source_kr": "디씨인사이드 이쑤시개 마이너 갤러리",
+  "description": "와일즈 무기별 추천 빌드 및 공략",
+  "guides": [
+    {
+      "weapon_kr": "대검",
+      "weapon_en": "Great Sword",
+      "url": "https://gall.dcinside.com/m/toothpick/3995",
+      "aliases": [
+        "greatsword",
+        "gs",
+        "그레이트소드"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "태도",
+      "weapon_en": "Long Sword",
+      "url": "https://gall.dcinside.com/m/toothpick/3996",
+      "aliases": [
+        "longsword",
+        "ls",
+        "롱소드"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "한손검",
+      "weapon_en": "Sword & Shield",
+      "url": "https://gall.dcinside.com/m/toothpick/3997",
+      "aliases": [
+        "sword and shield",
+        "sns",
+        "한손",
+        "한손방패"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "쌍검",
+      "weapon_en": "Dual Blades",
+      "url": "https://gall.dcinside.com/m/toothpick/3998",
+      "aliases": [
+        "dualblades",
+        "db",
+        "듀얼블레이드",
+        "쌍수검"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "해머",
+      "weapon_en": "Hammer",
+      "url": "https://gall.dcinside.com/m/toothpick/3999",
+      "aliases": [
+        "hammer",
+        "함마",
+        "햄머"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "수렵피리",
+      "weapon_en": "Hunting Horn",
+      "url": "https://gall.dcinside.com/m/toothpick/4000",
+      "aliases": [
+        "hunting horn",
+        "hh",
+        "헌팅혼",
+        "피리"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "랜스",
+      "weapon_en": "Lance",
+      "url": "https://gall.dcinside.com/m/toothpick/4001",
+      "aliases": [
+        "lance"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "건랜스",
+      "weapon_en": "Gunlance",
+      "url": "https://gall.dcinside.com/m/toothpick/4002",
+      "aliases": [
+        "gunlance",
+        "gl",
+        "건랜"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "슬래시액스",
+      "weapon_en": "Switch Axe",
+      "url": "https://gall.dcinside.com/m/toothpick/4003",
+      "aliases": [
+        "switch axe",
+        "swaxe",
+        "스위치액스",
+        "슬액"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "차지액스",
+      "weapon_en": "Charge Blade",
+      "url": "https://gall.dcinside.com/m/toothpick/4004",
+      "aliases": [
+        "charge blade",
+        "cb",
+        "차지블레이드",
+        "찰액",
+        "차액"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "조충곤",
+      "weapon_en": "Insect Glaive",
+      "url": "https://gall.dcinside.com/m/toothpick/4005",
+      "aliases": [
+        "insect glaive",
+        "ig",
+        "벌레창",
+        "벌레",
+        "조충"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "라이트보우건",
+      "weapon_en": "Light Bowgun",
+      "url": "https://gall.dcinside.com/m/toothpick/4006",
+      "aliases": [
+        "light bowgun",
+        "lbg",
+        "라보",
+        "경궁"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "헤비보우건",
+      "weapon_en": "Heavy Bowgun",
+      "url": "https://gall.dcinside.com/m/toothpick/4007",
+      "aliases": [
+        "heavy bowgun",
+        "hbg",
+        "헤보",
+        "중궁"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    },
+    {
+      "weapon_kr": "활",
+      "weapon_en": "Bow",
+      "url": "https://gall.dcinside.com/m/toothpick/4008",
+      "aliases": [
+        "bow",
+        "보우"
+      ],
+      "source": "dcinside_toothpick",
+      "source_kr": "디씨 이쑤시개 마이너 갤러리",
+      "guide_type": "무기별 빌드 가이드"
+    }
+  ]
+}
