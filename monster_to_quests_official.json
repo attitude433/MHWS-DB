@@ -1,0 +1,1026 @@
+[
+  {
+    "monster_kr": "게리오스",
+    "quest_count": 1,
+    "quests": [
+      {
+        "mission_id": "104010",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "고그마지오스",
+    "quest_count": 2,
+    "quests": [
+      {
+        "mission_id": "740010",
+        "sub_id": null,
+        "category": "event"
+      },
+      {
+        "mission_id": "740025",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "고어 마가라",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "010115",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "106004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109010",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199020",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "그라비모스",
+    "quest_count": 3,
+    "quests": [
+      {
+        "mission_id": "105008",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199008",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199016",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "네르스큐라",
+    "quest_count": 8,
+    "quests": [
+      {
+        "mission_id": "003230",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003230",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "006025",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104006",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "107001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199019",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "730015",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "누 이그드라",
+    "quest_count": 9,
+    "quests": [
+      {
+        "mission_id": "003255",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003260",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003260",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "009095",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "103000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "106002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109008",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "도도블랑고",
+    "quest_count": 5,
+    "quests": [
+      {
+        "mission_id": "010115",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "105009",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199009",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199017",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199019",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "도샤구마",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "001135",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001135",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001135",
+        "sub_id": "02",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101009",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109000",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "라기아크루스",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "106007",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109013",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "720015",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "라바라 바리나",
+    "quest_count": 7,
+    "quests": [
+      {
+        "mission_id": "001080",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001080",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "007035",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199002",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199015",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "레 다우",
+    "quest_count": 8,
+    "quests": [
+      {
+        "mission_id": "003210",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003210",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "009075",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102003",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "106001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109006",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "리오레우스",
+    "quest_count": 3,
+    "quests": [
+      {
+        "mission_id": "105010",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109015",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "리오레이아",
+    "quest_count": 3,
+    "quests": [
+      {
+        "mission_id": "104009",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199014",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "204001",
+        "sub_id": null,
+        "category": "optional"
+      }
+    ]
+  },
+  {
+    "monster_kr": "바바콩가",
+    "quest_count": 5,
+    "quests": [
+      {
+        "mission_id": "001100",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001100",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104003",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199015",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "발라하라",
+    "quest_count": 5,
+    "quests": [
+      {
+        "mission_id": "001130",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001130",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101008",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199001",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "셀레기오스",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "106008",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109012",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "720025",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "수호룡 도샤구마",
+    "quest_count": 5,
+    "quests": [
+      {
+        "mission_id": "004270",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "004270",
+        "sub_id": "02",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "103001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199010",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "수호룡 리오레우스",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "004290",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "004290",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "103002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105003",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "수호룡 안쟈나프 아종",
+    "quest_count": 2,
+    "quests": [
+      {
+        "mission_id": "007035",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "105006",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "수호룡 알슈베르도",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "004310",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "004310",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "005360",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "005360",
+        "sub_id": "01",
+        "category": "main_story"
+      }
+    ]
+  },
+  {
+    "monster_kr": "수호룡 오도가론 아종",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "005340",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "005340",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "103004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105004",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199013",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199018",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "시이우",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "005350",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "005350",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "103005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199011",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199018",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "아자라칸",
+    "quest_count": 9,
+    "quests": [
+      {
+        "mission_id": "003250",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003250",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102007",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "105001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199012",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199016",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "205000",
+        "sub_id": null,
+        "category": "optional"
+      },
+      {
+        "mission_id": "205001",
+        "sub_id": null,
+        "category": "optional"
+      }
+    ]
+  },
+  {
+    "monster_kr": "알슈베르도",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "011125",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "107000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109011",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "얀쿡크",
+    "quest_count": 3,
+    "quests": [
+      {
+        "mission_id": "006015",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "199003",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199019",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "오메가 플라네테스",
+    "quest_count": 2,
+    "quests": [
+      {
+        "mission_id": "107002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "730025",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "우드 투나",
+    "quest_count": 8,
+    "quests": [
+      {
+        "mission_id": "002150",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "002150",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "009085",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "106000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109007",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "조 시아",
+    "quest_count": 3,
+    "quests": [
+      {
+        "mission_id": "005390",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "005390",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "700025",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "진 다하드",
+    "quest_count": 5,
+    "quests": [
+      {
+        "mission_id": "004320",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "004320",
+        "sub_id": "02",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "008055",
+        "sub_id": null,
+        "category": "main_story"
+      },
+      {
+        "mission_id": "106003",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109009",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "차타카브라",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "001030",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001030",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001030",
+        "sub_id": "02",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104000",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "204000",
+        "sub_id": null,
+        "category": "optional"
+      }
+    ]
+  },
+  {
+    "monster_kr": "케마트리스",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "001050",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "001050",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "101002",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199000",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199014",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  },
+  {
+    "monster_kr": "타마미츠네",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "105013",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "109014",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "700015",
+        "sub_id": null,
+        "category": "event"
+      }
+    ]
+  },
+  {
+    "monster_kr": "푸푸로포루",
+    "quest_count": 4,
+    "quests": [
+      {
+        "mission_id": "002190",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "002190",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102001",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104005",
+        "sub_id": null,
+        "category": "sub_quest"
+      }
+    ]
+  },
+  {
+    "monster_kr": "히라바미",
+    "quest_count": 6,
+    "quests": [
+      {
+        "mission_id": "003240",
+        "sub_id": "00",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "003240",
+        "sub_id": "01",
+        "category": "main_story"
+      },
+      {
+        "mission_id": "102005",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "104007",
+        "sub_id": null,
+        "category": "sub_quest"
+      },
+      {
+        "mission_id": "199004",
+        "sub_id": null,
+        "category": "special_or_arena"
+      },
+      {
+        "mission_id": "199017",
+        "sub_id": null,
+        "category": "special_or_arena"
+      }
+    ]
+  }
+]

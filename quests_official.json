@@ -1,0 +1,4772 @@
+[
+  {
+    "mission_id": "001030",
+    "sub_id": "00",
+    "file": "BossZakoLayout_001030_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001030",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001030_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001030",
+    "sub_id": "02",
+    "file": "BossZakoLayout_001030_02.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 2,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001050",
+    "sub_id": "00",
+    "file": "BossZakoLayout_001050_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001050",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001050_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001080",
+    "sub_id": "00",
+    "file": "BossZakoLayout_001080_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001080",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001080_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001100",
+    "sub_id": "00",
+    "file": "BossZakoLayout_001100_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001100",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001100_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001130",
+    "sub_id": null,
+    "file": "BossZakoLayout_001130.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001130",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001130_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001135",
+    "sub_id": null,
+    "file": "BossZakoLayout_001135.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 1,
+        "fixed_size": 130,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001135",
+    "sub_id": "01",
+    "file": "BossZakoLayout_001135_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 1,
+        "fixed_size": 130,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "001135",
+    "sub_id": "02",
+    "file": "BossZakoLayout_001135_02.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 1,
+        "fixed_size": 130,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "002150",
+    "sub_id": "00",
+    "file": "BossZakoLayout_002150_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "002150",
+    "sub_id": "01",
+    "file": "BossZakoLayout_002150_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "002190",
+    "sub_id": "00",
+    "file": "BossZakoLayout_002190_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "002190",
+    "sub_id": "01",
+    "file": "BossZakoLayout_002190_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003210",
+    "sub_id": "00",
+    "file": "BossZakoLayout_003210_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003210",
+    "sub_id": "01",
+    "file": "BossZakoLayout_003210_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003230",
+    "sub_id": "00",
+    "file": "BossZakoLayout_003230_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003230",
+    "sub_id": "01",
+    "file": "BossZakoLayout_003230_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003240",
+    "sub_id": "00",
+    "file": "BossZakoLayout_003240_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003240",
+    "sub_id": "01",
+    "file": "BossZakoLayout_003240_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003250",
+    "sub_id": "00",
+    "file": "BossZakoLayout_003250_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003250",
+    "sub_id": "01",
+    "file": "BossZakoLayout_003250_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003255",
+    "sub_id": null,
+    "file": "BossZakoLayout_003255.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003260",
+    "sub_id": "00",
+    "file": "BossZakoLayout_003260_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "003260",
+    "sub_id": "01",
+    "file": "BossZakoLayout_003260_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004270",
+    "sub_id": "01",
+    "file": "BossZakoLayout_004270_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004270",
+    "sub_id": "02",
+    "file": "BossZakoLayout_004270_02.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004290",
+    "sub_id": "00",
+    "file": "BossZakoLayout_004290_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004290",
+    "sub_id": "01",
+    "file": "BossZakoLayout_004290_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004310",
+    "sub_id": "00",
+    "file": "BossZakoLayout_004310_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004310",
+    "sub_id": "01",
+    "file": "BossZakoLayout_004310_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004320",
+    "sub_id": "01",
+    "file": "BossZakoLayout_004320_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "004320",
+    "sub_id": "02",
+    "file": "BossZakoLayout_004320_02.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005340",
+    "sub_id": "00",
+    "file": "BossZakoLayout_005340_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005340",
+    "sub_id": "01",
+    "file": "BossZakoLayout_005340_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 9,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005350",
+    "sub_id": "00",
+    "file": "BossZakoLayout_005350_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005350",
+    "sub_id": "01",
+    "file": "BossZakoLayout_005350_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005360",
+    "sub_id": "00",
+    "file": "BossZakoLayout_005360_00.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005360",
+    "sub_id": "01",
+    "file": "BossZakoLayout_005360_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -283654400,
+        "name_kr": "수호룡 알슈베르도",
+        "name_en": "Guardian Arkveld",
+        "em_enum": "EM0160_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005390",
+    "sub_id": null,
+    "file": "BossZakoLayout_005390.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "005390",
+    "sub_id": "01",
+    "file": "BossZakoLayout_005390_01.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "006015",
+    "sub_id": null,
+    "file": "BossZakoLayout_006015.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster",
+        "set_area_no": 16,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "006025",
+    "sub_id": null,
+    "file": "BossZakoLayout_006025.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": -1
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "007035",
+    "sub_id": null,
+    "file": "BossZakoLayout_007035.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 107194928,
+        "name_kr": "수호룡 안쟈나프 아종",
+        "name_en": "Guardian Fulgur Anjanath",
+        "em_enum": "EM0100_51_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      },
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 107194928,
+        "name_kr": "수호룡 안쟈나프 아종",
+        "name_en": "Guardian Fulgur Anjanath",
+        "em_enum": "EM0100_51_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "008055",
+    "sub_id": null,
+    "file": "BossZakoLayout_008055.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "009075",
+    "sub_id": null,
+    "file": "BossZakoLayout_009075.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "009085",
+    "sub_id": null,
+    "file": "BossZakoLayout_009085.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "009095",
+    "sub_id": null,
+    "file": "BossZakoLayout_009095.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "010115",
+    "sub_id": null,
+    "file": "BossZakoLayout_010115.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      },
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "011125",
+    "sub_id": null,
+    "file": "BossZakoLayout_011125.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster",
+        "set_area_no": 17,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "main_story",
+    "unique_monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101000",
+    "sub_id": null,
+    "file": "BossZakoLayout_101000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101002",
+    "sub_id": null,
+    "file": "BossZakoLayout_101002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101004",
+    "sub_id": null,
+    "file": "BossZakoLayout_101004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101005",
+    "sub_id": null,
+    "file": "BossZakoLayout_101005.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101008",
+    "sub_id": null,
+    "file": "BossZakoLayout_101008.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster",
+        "set_area_no": 11,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "101009",
+    "sub_id": null,
+    "file": "BossZakoLayout_101009.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102000",
+    "sub_id": null,
+    "file": "BossZakoLayout_102000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102001",
+    "sub_id": null,
+    "file": "BossZakoLayout_102001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102003",
+    "sub_id": null,
+    "file": "BossZakoLayout_102003.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 17,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102004",
+    "sub_id": null,
+    "file": "BossZakoLayout_102004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102005",
+    "sub_id": null,
+    "file": "BossZakoLayout_102005.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "102007",
+    "sub_id": null,
+    "file": "BossZakoLayout_102007.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "103000",
+    "sub_id": null,
+    "file": "BossZakoLayout_103000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "103001",
+    "sub_id": null,
+    "file": "BossZakoLayout_103001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "103002",
+    "sub_id": null,
+    "file": "BossZakoLayout_103002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "103004",
+    "sub_id": null,
+    "file": "BossZakoLayout_103004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 9,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "103005",
+    "sub_id": null,
+    "file": "BossZakoLayout_103005.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104000",
+    "sub_id": null,
+    "file": "BossZakoLayout_104000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104001",
+    "sub_id": null,
+    "file": "BossZakoLayout_104001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104002",
+    "sub_id": null,
+    "file": "BossZakoLayout_104002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 10,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104003",
+    "sub_id": null,
+    "file": "BossZakoLayout_104003.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104004",
+    "sub_id": null,
+    "file": "BossZakoLayout_104004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster",
+        "set_area_no": 11,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104005",
+    "sub_id": null,
+    "file": "BossZakoLayout_104005.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster",
+        "set_area_no": 2,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 567628288,
+        "name_kr": "푸푸로포루",
+        "name_en": "Rompopolo",
+        "em_enum": "EM0155_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104006",
+    "sub_id": null,
+    "file": "BossZakoLayout_104006.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104007",
+    "sub_id": null,
+    "file": "BossZakoLayout_104007.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104009",
+    "sub_id": null,
+    "file": "BossZakoLayout_104009.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "104010",
+    "sub_id": null,
+    "file": "BossZakoLayout_104010.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1049705664,
+        "name_kr": "게리오스",
+        "name_en": "Gypceros",
+        "em_enum": "EM0009_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1049705664,
+        "name_kr": "게리오스",
+        "name_en": "Gypceros",
+        "em_enum": "EM0009_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105000",
+    "sub_id": null,
+    "file": "BossZakoLayout_105000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 10,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105001",
+    "sub_id": null,
+    "file": "BossZakoLayout_105001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105002",
+    "sub_id": null,
+    "file": "BossZakoLayout_105002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105003",
+    "sub_id": null,
+    "file": "BossZakoLayout_105003.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1411933184,
+        "name_kr": "수호룡 리오레우스",
+        "name_en": "Guardian Rathalos",
+        "em_enum": "EM0002_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105004",
+    "sub_id": null,
+    "file": "BossZakoLayout_105004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105005",
+    "sub_id": null,
+    "file": "BossZakoLayout_105005.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105006",
+    "sub_id": null,
+    "file": "BossZakoLayout_105006.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 107194928,
+        "name_kr": "수호룡 안쟈나프 아종",
+        "name_en": "Guardian Fulgur Anjanath",
+        "em_enum": "EM0100_51_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 107194928,
+        "name_kr": "수호룡 안쟈나프 아종",
+        "name_en": "Guardian Fulgur Anjanath",
+        "em_enum": "EM0100_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105008",
+    "sub_id": null,
+    "file": "BossZakoLayout_105008.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105009",
+    "sub_id": null,
+    "file": "BossZakoLayout_105009.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105010",
+    "sub_id": null,
+    "file": "BossZakoLayout_105010.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "105013",
+    "sub_id": null,
+    "file": "BossZakoLayout_105013.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106000",
+    "sub_id": null,
+    "file": "BossZakoLayout_106000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 2,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106001",
+    "sub_id": null,
+    "file": "BossZakoLayout_106001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106002",
+    "sub_id": null,
+    "file": "BossZakoLayout_106002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106003",
+    "sub_id": null,
+    "file": "BossZakoLayout_106003.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106004",
+    "sub_id": null,
+    "file": "BossZakoLayout_106004.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster",
+        "set_area_no": 16,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106007",
+    "sub_id": null,
+    "file": "BossZakoLayout_106007.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster",
+        "set_area_no": 17,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "106008",
+    "sub_id": null,
+    "file": "BossZakoLayout_106008.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster",
+        "set_area_no": 11,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "107000",
+    "sub_id": null,
+    "file": "BossZakoLayout_107000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "107001",
+    "sub_id": null,
+    "file": "BossZakoLayout_107001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 5,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "107002",
+    "sub_id": null,
+    "file": "BossZakoLayout_107002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 21849,
+        "name_kr": "오메가 플라네테스",
+        "name_en": "Omega Planetes",
+        "em_enum": "EM0166_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 21849,
+        "name_kr": "오메가 플라네테스",
+        "name_en": "Omega Planetes",
+        "em_enum": "EM0166_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109000",
+    "sub_id": null,
+    "file": "BossZakoLayout_109000.json",
+    "monster_count": 3,
+    "monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 1,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 103
+      },
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 104
+      },
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 105
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 15,
+        "name_kr": "도샤구마",
+        "name_en": "Doshaguma",
+        "em_enum": "EM0150_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109001",
+    "sub_id": null,
+    "file": "BossZakoLayout_109001.json",
+    "monster_count": 3,
+    "monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      },
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 103
+      },
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 104
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109002",
+    "sub_id": null,
+    "file": "BossZakoLayout_109002.json",
+    "monster_count": 3,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      },
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 103
+      },
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 4,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 105
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109005",
+    "sub_id": null,
+    "file": "BossZakoLayout_109005.json",
+    "monster_count": 4,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      },
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 2,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 103
+      },
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      },
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster",
+        "set_area_no": 3,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 104
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109006",
+    "sub_id": null,
+    "file": "BossZakoLayout_109006.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1547364608,
+        "name_kr": "레 다우",
+        "name_en": "Rey Dau",
+        "em_enum": "EM0156_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109007",
+    "sub_id": null,
+    "file": "BossZakoLayout_109007.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1467998976,
+        "name_kr": "우드 투나",
+        "name_en": "Uth Duna",
+        "em_enum": "EM0157_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109008",
+    "sub_id": null,
+    "file": "BossZakoLayout_109008.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1657778432,
+        "name_kr": "누 이그드라",
+        "name_en": "Nu Udra",
+        "em_enum": "EM0158_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109009",
+    "sub_id": null,
+    "file": "BossZakoLayout_109009.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1553456768,
+        "name_kr": "진 다하드",
+        "name_en": "Jin Dahaad",
+        "em_enum": "EM0162_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109010",
+    "sub_id": null,
+    "file": "BossZakoLayout_109010.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109011",
+    "sub_id": null,
+    "file": "BossZakoLayout_109011.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 746996864,
+        "name_kr": "알슈베르도",
+        "name_en": "Arkveld",
+        "em_enum": "EM0160_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109012",
+    "sub_id": null,
+    "file": "BossZakoLayout_109012.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109013",
+    "sub_id": null,
+    "file": "BossZakoLayout_109013.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109014",
+    "sub_id": null,
+    "file": "BossZakoLayout_109014.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "109015",
+    "sub_id": null,
+    "file": "BossZakoLayout_109015.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "sub_quest",
+    "unique_monsters": [
+      {
+        "em_id": 1965232896,
+        "name_kr": "리오레우스",
+        "name_en": "Rathalos",
+        "em_enum": "EM0002_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199000",
+    "sub_id": null,
+    "file": "BossZakoLayout_199000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199001",
+    "sub_id": null,
+    "file": "BossZakoLayout_199001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 16,
+        "name_kr": "발라하라",
+        "name_en": "Balahara",
+        "em_enum": "EM0151_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199002",
+    "sub_id": null,
+    "file": "BossZakoLayout_199002.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199003",
+    "sub_id": null,
+    "file": "BossZakoLayout_199003.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199004",
+    "sub_id": null,
+    "file": "BossZakoLayout_199004.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 112,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 91,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199008",
+    "sub_id": null,
+    "file": "BossZakoLayout_199008.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster",
+        "set_area_no": 16,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199009",
+    "sub_id": null,
+    "file": "BossZakoLayout_199009.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster",
+        "set_area_no": 14,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199010",
+    "sub_id": null,
+    "file": "BossZakoLayout_199010.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster",
+        "set_area_no": 6,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -1916429696,
+        "name_kr": "수호룡 도샤구마",
+        "name_en": "Guardian Doshaguma",
+        "em_enum": "EM0150_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199011",
+    "sub_id": null,
+    "file": "BossZakoLayout_199011.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199012",
+    "sub_id": null,
+    "file": "BossZakoLayout_199012.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 91,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 3,
+        "role_id": 0,
+        "fixed_size": 122,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199013",
+    "sub_id": null,
+    "file": "BossZakoLayout_199013.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199014",
+    "sub_id": null,
+    "file": "BossZakoLayout_199014.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster",
+        "set_area_no": 10,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -34937520,
+        "name_kr": "케마트리스",
+        "name_en": "Quematrice",
+        "em_enum": "EM0153_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199015",
+    "sub_id": null,
+    "file": "BossZakoLayout_199015.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster",
+        "set_area_no": 10,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -1528962176,
+        "name_kr": "라바라 바리나",
+        "name_en": "Lala Barina",
+        "em_enum": "EM0154_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -1440201088,
+        "name_kr": "바바콩가",
+        "name_en": "Congalala",
+        "em_enum": "EM0021_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199016",
+    "sub_id": null,
+    "file": "BossZakoLayout_199016.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster",
+        "set_area_no": 15,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -535078400,
+        "name_kr": "그라비모스",
+        "name_en": "Gravios",
+        "em_enum": "EM0005_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199017",
+    "sub_id": null,
+    "file": "BossZakoLayout_199017.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster",
+        "set_area_no": 12,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 0
+      },
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster",
+        "set_area_no": 8,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 1
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 222933952,
+        "name_kr": "히라바미",
+        "name_en": "Hirabami",
+        "em_enum": "EM0161_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199018",
+    "sub_id": null,
+    "file": "BossZakoLayout_199018.json",
+    "monster_count": 2,
+    "monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      },
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster",
+        "set_area_no": 9,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 1401863296,
+        "name_kr": "시이우",
+        "name_en": "Xu Wu",
+        "em_enum": "EM0163_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 1663995904,
+        "name_kr": "수호룡 오도가론 아종",
+        "name_en": "Guardian Ebony Odogaron",
+        "em_enum": "EM0113_51_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199019",
+    "sub_id": null,
+    "file": "BossZakoLayout_199019.json",
+    "monster_count": 5,
+    "monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      },
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 104
+      },
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster",
+        "set_area_no": 10,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 102
+      },
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 103
+      },
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 7,
+        "role_id": 3,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 105
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": 402056736,
+        "name_kr": "얀쿡크",
+        "name_en": "Yian Kut-Ku",
+        "em_enum": "EM0008_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": 2129596800,
+        "name_kr": "도도블랑고",
+        "name_en": "Blangonga",
+        "em_enum": "EM0022_00_0",
+        "category": "large_monster"
+      },
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "199020",
+    "sub_id": null,
+    "file": "BossZakoLayout_199020.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster",
+        "set_area_no": 16,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "special_or_arena",
+    "unique_monsters": [
+      {
+        "em_id": -758250816,
+        "name_kr": "고어 마가라",
+        "name_en": "Gore Magala",
+        "em_enum": "EM0071_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "204000",
+    "sub_id": null,
+    "file": "BossZakoLayout_204000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "optional",
+    "unique_monsters": [
+      {
+        "em_id": 33,
+        "name_kr": "차타카브라",
+        "name_en": "Chatacabra",
+        "em_enum": "EM0152_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "204001",
+    "sub_id": null,
+    "file": "BossZakoLayout_204001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "optional",
+    "unique_monsters": [
+      {
+        "em_id": 26,
+        "name_kr": "리오레이아",
+        "name_en": "Rathian",
+        "em_enum": "EM0001_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "205000",
+    "sub_id": null,
+    "file": "BossZakoLayout_205000.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "optional",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "205001",
+    "sub_id": null,
+    "file": "BossZakoLayout_205001.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "optional",
+    "unique_monsters": [
+      {
+        "em_id": 777460864,
+        "name_kr": "아자라칸",
+        "name_en": "Ajarakan",
+        "em_enum": "EM0159_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "700015",
+    "sub_id": null,
+    "file": "BossZakoLayout_700015.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": 32634,
+        "name_kr": "타마미츠네",
+        "name_en": "Mizutsune",
+        "em_enum": "EM0082_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "700025",
+    "sub_id": null,
+    "file": "BossZakoLayout_700025.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster",
+        "set_area_no": 1,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": -2003468672,
+        "name_kr": "조 시아",
+        "name_en": "Zoh Shia",
+        "em_enum": "EM0164_50_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "720015",
+    "sub_id": null,
+    "file": "BossZakoLayout_720015.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster",
+        "set_area_no": 13,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": -1083842944,
+        "name_kr": "라기아크루스",
+        "name_en": "Lagiacrus",
+        "em_enum": "EM0046_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "720025",
+    "sub_id": null,
+    "file": "BossZakoLayout_720025.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster",
+        "set_area_no": 3,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": 25,
+        "name_kr": "셀레기오스",
+        "name_en": "Seregios",
+        "em_enum": "EM0077_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "730015",
+    "sub_id": null,
+    "file": "BossZakoLayout_730015.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster",
+        "set_area_no": 5,
+        "role_id": 5,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": -1363370496,
+        "name_kr": "네르스큐라",
+        "name_en": "Nerscylla",
+        "em_enum": "EM0070_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "730025",
+    "sub_id": null,
+    "file": "BossZakoLayout_730025.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 21849,
+        "name_kr": "오메가 플라네테스",
+        "name_en": "Omega Planetes",
+        "em_enum": "EM0166_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": 21849,
+        "name_kr": "오메가 플라네테스",
+        "name_en": "Omega Planetes",
+        "em_enum": "EM0166_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "740010",
+    "sub_id": null,
+    "file": "BossZakoLayout_740010.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 13052,
+        "name_kr": "고그마지오스",
+        "name_en": "Gogmazios",
+        "em_enum": "EM0078_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": 13052,
+        "name_kr": "고그마지오스",
+        "name_en": "Gogmazios",
+        "em_enum": "EM0078_00_0",
+        "category": "large_monster"
+      }
+    ]
+  },
+  {
+    "mission_id": "740025",
+    "sub_id": null,
+    "file": "BossZakoLayout_740025.json",
+    "monster_count": 1,
+    "monsters": [
+      {
+        "em_id": 13052,
+        "name_kr": "고그마지오스",
+        "name_en": "Gogmazios",
+        "em_enum": "EM0078_00_0",
+        "category": "large_monster",
+        "set_area_no": 255,
+        "role_id": 0,
+        "fixed_size": 100,
+        "is_random_size": false,
+        "story_target_id": 101
+      }
+    ],
+    "category": "event",
+    "unique_monsters": [
+      {
+        "em_id": 13052,
+        "name_kr": "고그마지오스",
+        "name_en": "Gogmazios",
+        "em_enum": "EM0078_00_0",
+        "category": "large_monster"
+      }
+    ]
+  }
+]
