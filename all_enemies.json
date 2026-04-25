@@ -33,7 +33,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 765,
+        "title_kr": "20<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_765>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_765></BOLD>"
+      },
+      {
+        "title_id": 766,
+        "title_kr": "30<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_766>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_766></BOLD>"
+      },
+      {
+        "title_id": 767,
+        "title_kr": "40<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_767>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_767></BOLD>"
+      },
+      {
+        "title_id": 768,
+        "title_kr": "50<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_768>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_768></BOLD>"
+      }
+    ]
   },
   {
     "index": 2,
@@ -69,7 +90,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 777,
+        "title_kr": "20<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_777>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_777></BOLD>"
+      },
+      {
+        "title_id": 778,
+        "title_kr": "30<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_778>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_778></BOLD>"
+      },
+      {
+        "title_id": 779,
+        "title_kr": "40<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_779>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_779></BOLD>"
+      },
+      {
+        "title_id": 780,
+        "title_kr": "50<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_780>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_780></BOLD>"
+      }
+    ]
   },
   {
     "index": 3,
@@ -105,7 +147,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 713,
+        "title_kr": "20<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_713>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_713></BOLD>"
+      },
+      {
+        "title_id": 714,
+        "title_kr": "30<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_714>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_714></BOLD>"
+      },
+      {
+        "title_id": 715,
+        "title_kr": "40<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_715>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_715></BOLD>"
+      },
+      {
+        "title_id": 716,
+        "title_kr": "50<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_716>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_716></BOLD>"
+      }
+    ]
   },
   {
     "index": 4,
@@ -141,7 +204,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 773,
+        "title_kr": "20<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_773>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_773></BOLD>"
+      },
+      {
+        "title_id": 774,
+        "title_kr": "30<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_774>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_774></BOLD>"
+      },
+      {
+        "title_id": 775,
+        "title_kr": "40<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_775>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_775></BOLD>"
+      },
+      {
+        "title_id": 776,
+        "title_kr": "50<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_776>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_776></BOLD>"
+      }
+    ]
   },
   {
     "index": 5,
@@ -177,7 +261,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 749,
+        "title_kr": "20<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_749>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_749></BOLD>"
+      },
+      {
+        "title_id": 750,
+        "title_kr": "30<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_750>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_750></BOLD>"
+      },
+      {
+        "title_id": 751,
+        "title_kr": "40<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_751>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_751></BOLD>"
+      },
+      {
+        "title_id": 752,
+        "title_kr": "50<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_752>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_752></BOLD>"
+      }
+    ]
   },
   {
     "index": 6,
@@ -213,7 +318,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 761,
+        "title_kr": "20<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_761>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_761></BOLD>"
+      },
+      {
+        "title_id": 762,
+        "title_kr": "30<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_762>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_762></BOLD>"
+      },
+      {
+        "title_id": 763,
+        "title_kr": "40<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_763>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_763></BOLD>"
+      },
+      {
+        "title_id": 764,
+        "title_kr": "50<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_764>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_764></BOLD>"
+      }
+    ]
   },
   {
     "index": 7,
@@ -249,7 +375,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 681,
+        "title_kr": "20<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_681>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_681></BOLD>"
+      },
+      {
+        "title_id": 682,
+        "title_kr": "30<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_682>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_682></BOLD>"
+      },
+      {
+        "title_id": 683,
+        "title_kr": "40<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_683>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_683></BOLD>"
+      },
+      {
+        "title_id": 684,
+        "title_kr": "50<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_684>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_684></BOLD>"
+      }
+    ]
   },
   {
     "index": 8,
@@ -285,7 +432,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 769,
+        "title_kr": "20<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_769>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_769></BOLD>"
+      },
+      {
+        "title_id": 770,
+        "title_kr": "30<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_770>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_770></BOLD>"
+      },
+      {
+        "title_id": 771,
+        "title_kr": "40<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_771>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_771></BOLD>"
+      },
+      {
+        "title_id": 772,
+        "title_kr": "50<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_772>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_772></BOLD>"
+      }
+    ]
   },
   {
     "index": 9,
@@ -321,7 +489,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 957,
+        "title_kr": "20<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_957>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_957></BOLD>"
+      },
+      {
+        "title_id": 958,
+        "title_kr": "30<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_958>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_958></BOLD>"
+      },
+      {
+        "title_id": 959,
+        "title_kr": "40<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_959>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_959></BOLD>"
+      },
+      {
+        "title_id": 960,
+        "title_kr": "50<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_960>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_960></BOLD>"
+      }
+    ]
   },
   {
     "index": 10,
@@ -357,7 +546,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 697,
+        "title_kr": "20<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_697>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_697></BOLD>"
+      },
+      {
+        "title_id": 698,
+        "title_kr": "30<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_698>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_698></BOLD>"
+      },
+      {
+        "title_id": 699,
+        "title_kr": "40<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_699>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_699></BOLD>"
+      },
+      {
+        "title_id": 700,
+        "title_kr": "50<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_700>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_700></BOLD>"
+      }
+    ]
   },
   {
     "index": 11,
@@ -393,7 +603,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 757,
+        "title_kr": "20<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_757>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_757></BOLD>"
+      },
+      {
+        "title_id": 758,
+        "title_kr": "30<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_758>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_758></BOLD>"
+      },
+      {
+        "title_id": 759,
+        "title_kr": "40<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_759>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_759></BOLD>"
+      },
+      {
+        "title_id": 760,
+        "title_kr": "50<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_760>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_760></BOLD>"
+      }
+    ]
   },
   {
     "index": 12,
@@ -429,7 +660,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 961,
+        "title_kr": "20<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_961>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_961></BOLD>"
+      },
+      {
+        "title_id": 962,
+        "title_kr": "30<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_962>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_962></BOLD>"
+      },
+      {
+        "title_id": 963,
+        "title_kr": "40<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_963>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_963></BOLD>"
+      },
+      {
+        "title_id": 964,
+        "title_kr": "50<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_964>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_964></BOLD>"
+      }
+    ]
   },
   {
     "index": 13,
@@ -465,7 +717,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 988,
+        "title_kr": "10<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_988>】",
+        "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_988></BOLD>"
+      },
+      {
+        "title_id": 989,
+        "title_kr": "15<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_989>】",
+        "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_989></BOLD>"
+      },
+      {
+        "title_id": 990,
+        "title_kr": "20<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_990>】",
+        "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_990></BOLD>"
+      },
+      {
+        "title_id": 991,
+        "title_kr": "30<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_991>】",
+        "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_991></BOLD>"
+      }
+    ]
   },
   {
     "index": 14,
@@ -501,7 +774,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 916,
+        "title_kr": "20<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_916>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_916></BOLD>"
+      },
+      {
+        "title_id": 917,
+        "title_kr": "30<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_917>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_917></BOLD>"
+      },
+      {
+        "title_id": 918,
+        "title_kr": "40<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_918>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_918></BOLD>"
+      },
+      {
+        "title_id": 919,
+        "title_kr": "50<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_919>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_919></BOLD>"
+      }
+    ]
   },
   {
     "index": 15,
@@ -537,7 +831,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 753,
+        "title_kr": "20<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_753>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_753></BOLD>"
+      },
+      {
+        "title_id": 754,
+        "title_kr": "30<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_754>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_754></BOLD>"
+      },
+      {
+        "title_id": 755,
+        "title_kr": "40<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_755>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_755></BOLD>"
+      },
+      {
+        "title_id": 756,
+        "title_kr": "50<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_756>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_756></BOLD>"
+      }
+    ]
   },
   {
     "index": 16,
@@ -573,7 +888,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 717,
+        "title_kr": "20<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_717>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_717></BOLD>"
+      },
+      {
+        "title_id": 718,
+        "title_kr": "30<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_718>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_718></BOLD>"
+      },
+      {
+        "title_id": 719,
+        "title_kr": "40<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_719>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_719></BOLD>"
+      },
+      {
+        "title_id": 720,
+        "title_kr": "50<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_720>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_720></BOLD>"
+      }
+    ]
   },
   {
     "index": 17,
@@ -609,7 +945,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 689,
+        "title_kr": "20<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_689>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_689></BOLD>"
+      },
+      {
+        "title_id": 690,
+        "title_kr": "30<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_690>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_690></BOLD>"
+      },
+      {
+        "title_id": 691,
+        "title_kr": "40<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_691>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_691></BOLD>"
+      },
+      {
+        "title_id": 692,
+        "title_kr": "50<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_692>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_692></BOLD>"
+      }
+    ]
   },
   {
     "index": 18,
@@ -645,7 +1002,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 709,
+        "title_kr": "20<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_709>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_709></BOLD>"
+      },
+      {
+        "title_id": 710,
+        "title_kr": "30<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_710>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_710></BOLD>"
+      },
+      {
+        "title_id": 711,
+        "title_kr": "40<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_711>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_711></BOLD>"
+      },
+      {
+        "title_id": 712,
+        "title_kr": "50<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_712>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_712></BOLD>"
+      }
+    ]
   },
   {
     "index": 19,
@@ -681,7 +1059,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 685,
+        "title_kr": "20<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_685>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_685></BOLD>"
+      },
+      {
+        "title_id": 686,
+        "title_kr": "30<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_686>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_686></BOLD>"
+      },
+      {
+        "title_id": 687,
+        "title_kr": "40<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_687>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_687></BOLD>"
+      },
+      {
+        "title_id": 688,
+        "title_kr": "50<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_688>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_688></BOLD>"
+      }
+    ]
   },
   {
     "index": 20,
@@ -717,7 +1116,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 669,
+        "title_kr": "20<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_669>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_669></BOLD>"
+      },
+      {
+        "title_id": 670,
+        "title_kr": "30<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_670>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_670></BOLD>"
+      },
+      {
+        "title_id": 671,
+        "title_kr": "40<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_671>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_671></BOLD>"
+      },
+      {
+        "title_id": 672,
+        "title_kr": "50<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_672>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_672></BOLD>"
+      }
+    ]
   },
   {
     "index": 21,
@@ -753,7 +1173,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 673,
+        "title_kr": "20<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_673>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_673></BOLD>"
+      },
+      {
+        "title_id": 674,
+        "title_kr": "30<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_674>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_674></BOLD>"
+      },
+      {
+        "title_id": 675,
+        "title_kr": "40<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_675>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_675></BOLD>"
+      },
+      {
+        "title_id": 676,
+        "title_kr": "50<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_676>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_676></BOLD>"
+      }
+    ]
   },
   {
     "index": 22,
@@ -789,7 +1230,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 677,
+        "title_kr": "20<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_677>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_677></BOLD>"
+      },
+      {
+        "title_id": 678,
+        "title_kr": "30<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_678>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_678></BOLD>"
+      },
+      {
+        "title_id": 679,
+        "title_kr": "40<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_679>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_679></BOLD>"
+      },
+      {
+        "title_id": 680,
+        "title_kr": "50<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_680>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_680></BOLD>"
+      }
+    ]
   },
   {
     "index": 23,
@@ -825,7 +1287,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 693,
+        "title_kr": "20<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_693>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_693></BOLD>"
+      },
+      {
+        "title_id": 694,
+        "title_kr": "30<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_694>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_694></BOLD>"
+      },
+      {
+        "title_id": 695,
+        "title_kr": "40<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_695>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_695></BOLD>"
+      },
+      {
+        "title_id": 696,
+        "title_kr": "50<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_696>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_696></BOLD>"
+      }
+    ]
   },
   {
     "index": 24,
@@ -861,7 +1344,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 729,
+        "title_kr": "20<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_729>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_729></BOLD>"
+      },
+      {
+        "title_id": 730,
+        "title_kr": "30<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_730>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_730></BOLD>"
+      },
+      {
+        "title_id": 731,
+        "title_kr": "40<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_731>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_731></BOLD>"
+      },
+      {
+        "title_id": 732,
+        "title_kr": "50<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_732>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_732></BOLD>"
+      }
+    ]
   },
   {
     "index": 25,
@@ -897,7 +1401,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 725,
+        "title_kr": "20<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_725>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_725></BOLD>"
+      },
+      {
+        "title_id": 726,
+        "title_kr": "30<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_726>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_726></BOLD>"
+      },
+      {
+        "title_id": 727,
+        "title_kr": "40<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_727>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_727></BOLD>"
+      },
+      {
+        "title_id": 728,
+        "title_kr": "50<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_728>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_728></BOLD>"
+      }
+    ]
   },
   {
     "index": 26,
@@ -933,7 +1458,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 733,
+        "title_kr": "20<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_733>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_733></BOLD>"
+      },
+      {
+        "title_id": 734,
+        "title_kr": "30<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_734>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_734></BOLD>"
+      },
+      {
+        "title_id": 735,
+        "title_kr": "40<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_735>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_735></BOLD>"
+      },
+      {
+        "title_id": 736,
+        "title_kr": "50<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_736>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_736></BOLD>"
+      }
+    ]
   },
   {
     "index": 27,
@@ -969,7 +1515,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 705,
+        "title_kr": "20<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_705>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_705></BOLD>"
+      },
+      {
+        "title_id": 706,
+        "title_kr": "30<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_706>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_706></BOLD>"
+      },
+      {
+        "title_id": 707,
+        "title_kr": "40<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_707>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_707></BOLD>"
+      },
+      {
+        "title_id": 708,
+        "title_kr": "50<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_708>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_708></BOLD>"
+      }
+    ]
   },
   {
     "index": 28,
@@ -1005,7 +1572,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 781,
+        "title_kr": "10<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_781>】",
+        "title_en": "Hunt 10: <BOLD><Ref Title_Word_NAME_781></BOLD>"
+      },
+      {
+        "title_id": 782,
+        "title_kr": "15<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_782>】",
+        "title_en": "Hunt 15: <BOLD><Ref Title_Word_NAME_782></BOLD>"
+      },
+      {
+        "title_id": 783,
+        "title_kr": "20<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_783>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_783></BOLD>"
+      },
+      {
+        "title_id": 784,
+        "title_kr": "30<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_784>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_784></BOLD>"
+      }
+    ]
   },
   {
     "index": 29,
@@ -1041,7 +1629,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 741,
+        "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_741>】",
+        "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_741></BOLD>"
+      },
+      {
+        "title_id": 742,
+        "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_742>】",
+        "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_742></BOLD>"
+      },
+      {
+        "title_id": 743,
+        "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_743>】",
+        "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_743></BOLD>"
+      },
+      {
+        "title_id": 744,
+        "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_744>】",
+        "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_744></BOLD>"
+      }
+    ]
   },
   {
     "index": 30,
@@ -1077,7 +1686,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 701,
+        "title_kr": "20<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_701>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_701></BOLD>"
+      },
+      {
+        "title_id": 702,
+        "title_kr": "30<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_702>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_702></BOLD>"
+      },
+      {
+        "title_id": 703,
+        "title_kr": "40<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_703>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_703></BOLD>"
+      },
+      {
+        "title_id": 704,
+        "title_kr": "50<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_704>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_704></BOLD>"
+      }
+    ]
   },
   {
     "index": 31,
@@ -1113,7 +1743,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 737,
+        "title_kr": "10<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_737>】",
+        "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_737></BOLD>"
+      },
+      {
+        "title_id": 738,
+        "title_kr": "15<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_738>】",
+        "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_738></BOLD>"
+      },
+      {
+        "title_id": 739,
+        "title_kr": "20<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_739>】",
+        "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_739></BOLD>"
+      },
+      {
+        "title_id": 740,
+        "title_kr": "30<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_740>】",
+        "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_740></BOLD>"
+      }
+    ]
   },
   {
     "index": 32,
@@ -1149,7 +1800,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 721,
+        "title_kr": "20<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_721>】",
+        "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_721></BOLD>"
+      },
+      {
+        "title_id": 722,
+        "title_kr": "30<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_722>】",
+        "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_722></BOLD>"
+      },
+      {
+        "title_id": 723,
+        "title_kr": "40<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_723>】",
+        "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_723></BOLD>"
+      },
+      {
+        "title_id": 724,
+        "title_kr": "50<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_724>】",
+        "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_724></BOLD>"
+      }
+    ]
   },
   {
     "index": 33,
@@ -1185,7 +1857,48 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 745,
+        "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_745>】",
+        "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_745></BOLD>"
+      },
+      {
+        "title_id": 746,
+        "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_746>】",
+        "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_746></BOLD>"
+      },
+      {
+        "title_id": 747,
+        "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_747>】",
+        "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_747></BOLD>"
+      },
+      {
+        "title_id": 748,
+        "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_748>】",
+        "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_748></BOLD>"
+      },
+      {
+        "title_id": 920,
+        "title_kr": "10<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_920>】",
+        "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_920></BOLD>"
+      },
+      {
+        "title_id": 921,
+        "title_kr": "15<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_921>】",
+        "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_921></BOLD>"
+      },
+      {
+        "title_id": 922,
+        "title_kr": "20<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_922>】",
+        "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_922></BOLD>"
+      },
+      {
+        "title_id": 923,
+        "title_kr": "30<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_923>】",
+        "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_923></BOLD>"
+      }
+    ]
   },
   {
     "index": 34,
@@ -1257,7 +1970,28 @@
     "leg_num": 0,
     "is_map_draw": true,
     "otomo_pick": false,
-    "titles": []
+    "titles": [
+      {
+        "title_id": 979,
+        "title_kr": "10<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_979>】",
+        "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_979></BOLD>"
+      },
+      {
+        "title_id": 980,
+        "title_kr": "15<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_980>】",
+        "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_980></BOLD>"
+      },
+      {
+        "title_id": 981,
+        "title_kr": "20<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_981>】",
+        "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_981></BOLD>"
+      },
+      {
+        "title_id": 982,
+        "title_kr": "30<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_982>】",
+        "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_982></BOLD>"
+      }
+    ]
   },
   {
     "index": 36,

@@ -1,0 +1,1262 @@
+[
+  {
+    "title_id": 669,
+    "em_id": 33,
+    "monster_kr": "차타카브라",
+    "monster_en": "Chatacabra",
+    "title_kr": "20<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_669>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_669></BOLD>",
+    "title_ja": "２０<EMCT EM0152_00_0>狩猟【<Ref Title_Word_NAME_669>】"
+  },
+  {
+    "title_id": 670,
+    "em_id": 33,
+    "monster_kr": "차타카브라",
+    "monster_en": "Chatacabra",
+    "title_kr": "30<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_670>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_670></BOLD>",
+    "title_ja": "３０<EMCT EM0152_00_0>狩猟【<Ref Title_Word_NAME_670>】"
+  },
+  {
+    "title_id": 671,
+    "em_id": 33,
+    "monster_kr": "차타카브라",
+    "monster_en": "Chatacabra",
+    "title_kr": "40<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_671>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_671></BOLD>",
+    "title_ja": "４０<EMCT EM0152_00_0>狩猟【<Ref Title_Word_NAME_671>】"
+  },
+  {
+    "title_id": 672,
+    "em_id": 33,
+    "monster_kr": "차타카브라",
+    "monster_en": "Chatacabra",
+    "title_kr": "50<EMCT EM0152_00_0> 사냥【<Ref Title_Word_NAME_672>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_672></BOLD>",
+    "title_ja": "５０<EMCT EM0152_00_0>狩猟【<Ref Title_Word_NAME_672>】"
+  },
+  {
+    "title_id": 673,
+    "em_id": -34937520,
+    "monster_kr": "케마트리스",
+    "monster_en": "Quematrice",
+    "title_kr": "20<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_673>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_673></BOLD>",
+    "title_ja": "２０<EMCT EM0153_00_0>狩猟【<Ref Title_Word_NAME_673>】"
+  },
+  {
+    "title_id": 674,
+    "em_id": -34937520,
+    "monster_kr": "케마트리스",
+    "monster_en": "Quematrice",
+    "title_kr": "30<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_674>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_674></BOLD>",
+    "title_ja": "３０<EMCT EM0153_00_0>狩猟【<Ref Title_Word_NAME_674>】"
+  },
+  {
+    "title_id": 675,
+    "em_id": -34937520,
+    "monster_kr": "케마트리스",
+    "monster_en": "Quematrice",
+    "title_kr": "40<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_675>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_675></BOLD>",
+    "title_ja": "４０<EMCT EM0153_00_0>狩猟【<Ref Title_Word_NAME_675>】"
+  },
+  {
+    "title_id": 676,
+    "em_id": -34937520,
+    "monster_kr": "케마트리스",
+    "monster_en": "Quematrice",
+    "title_kr": "50<EMCT EM0153_00_0> 사냥【<Ref Title_Word_NAME_676>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_676></BOLD>",
+    "title_ja": "５０<EMCT EM0153_00_0>狩猟【<Ref Title_Word_NAME_676>】"
+  },
+  {
+    "title_id": 677,
+    "em_id": -1528962176,
+    "monster_kr": "라바라 바리나",
+    "monster_en": "Lala Barina",
+    "title_kr": "20<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_677>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_677></BOLD>",
+    "title_ja": "２０<EMCT EM0154_00_0>狩猟【<Ref Title_Word_NAME_677>】"
+  },
+  {
+    "title_id": 678,
+    "em_id": -1528962176,
+    "monster_kr": "라바라 바리나",
+    "monster_en": "Lala Barina",
+    "title_kr": "30<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_678>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_678></BOLD>",
+    "title_ja": "３０<EMCT EM0154_00_0>狩猟【<Ref Title_Word_NAME_678>】"
+  },
+  {
+    "title_id": 679,
+    "em_id": -1528962176,
+    "monster_kr": "라바라 바리나",
+    "monster_en": "Lala Barina",
+    "title_kr": "40<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_679>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_679></BOLD>",
+    "title_ja": "４０<EMCT EM0154_00_0>狩猟【<Ref Title_Word_NAME_679>】"
+  },
+  {
+    "title_id": 680,
+    "em_id": -1528962176,
+    "monster_kr": "라바라 바리나",
+    "monster_en": "Lala Barina",
+    "title_kr": "50<EMCT EM0154_00_0> 사냥【<Ref Title_Word_NAME_680>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_680></BOLD>",
+    "title_ja": "５０<EMCT EM0154_00_0>狩猟【<Ref Title_Word_NAME_680>】"
+  },
+  {
+    "title_id": 681,
+    "em_id": -1440201088,
+    "monster_kr": "바바콩가",
+    "monster_en": "Congalala",
+    "title_kr": "20<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_681>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_681></BOLD>",
+    "title_ja": "２０<EMCT EM0021_00_0>狩猟【<Ref Title_Word_NAME_681>】"
+  },
+  {
+    "title_id": 682,
+    "em_id": -1440201088,
+    "monster_kr": "바바콩가",
+    "monster_en": "Congalala",
+    "title_kr": "30<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_682>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_682></BOLD>",
+    "title_ja": "３０<EMCT EM0021_00_0>狩猟【<Ref Title_Word_NAME_682>】"
+  },
+  {
+    "title_id": 683,
+    "em_id": -1440201088,
+    "monster_kr": "바바콩가",
+    "monster_en": "Congalala",
+    "title_kr": "40<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_683>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_683></BOLD>",
+    "title_ja": "４０<EMCT EM0021_00_0>狩猟【<Ref Title_Word_NAME_683>】"
+  },
+  {
+    "title_id": 684,
+    "em_id": -1440201088,
+    "monster_kr": "바바콩가",
+    "monster_en": "Congalala",
+    "title_kr": "50<EMCT EM0021_00_0> 사냥【<Ref Title_Word_NAME_684>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_684></BOLD>",
+    "title_ja": "５０<EMCT EM0021_00_0>狩猟【<Ref Title_Word_NAME_684>】"
+  },
+  {
+    "title_id": 685,
+    "em_id": 16,
+    "monster_kr": "발라하라",
+    "monster_en": "Balahara",
+    "title_kr": "20<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_685>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_685></BOLD>",
+    "title_ja": "２０<EMCT EM0151_00_0>狩猟【<Ref Title_Word_NAME_685>】"
+  },
+  {
+    "title_id": 686,
+    "em_id": 16,
+    "monster_kr": "발라하라",
+    "monster_en": "Balahara",
+    "title_kr": "30<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_686>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_686></BOLD>",
+    "title_ja": "３０<EMCT EM0151_00_0>狩猟【<Ref Title_Word_NAME_686>】"
+  },
+  {
+    "title_id": 687,
+    "em_id": 16,
+    "monster_kr": "발라하라",
+    "monster_en": "Balahara",
+    "title_kr": "40<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_687>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_687></BOLD>",
+    "title_ja": "４０<EMCT EM0151_00_0>狩猟【<Ref Title_Word_NAME_687>】"
+  },
+  {
+    "title_id": 688,
+    "em_id": 16,
+    "monster_kr": "발라하라",
+    "monster_en": "Balahara",
+    "title_kr": "50<EMCT EM0151_00_0> 사냥【<Ref Title_Word_NAME_688>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_688></BOLD>",
+    "title_ja": "５０<EMCT EM0151_00_0>狩猟【<Ref Title_Word_NAME_688>】"
+  },
+  {
+    "title_id": 689,
+    "em_id": 15,
+    "monster_kr": "도샤구마",
+    "monster_en": "Doshaguma",
+    "title_kr": "20<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_689>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_689></BOLD>",
+    "title_ja": "２０<EMCT EM0150_00_0>狩猟【<Ref Title_Word_NAME_689>】"
+  },
+  {
+    "title_id": 690,
+    "em_id": 15,
+    "monster_kr": "도샤구마",
+    "monster_en": "Doshaguma",
+    "title_kr": "30<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_690>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_690></BOLD>",
+    "title_ja": "３０<EMCT EM0150_00_0>狩猟【<Ref Title_Word_NAME_690>】"
+  },
+  {
+    "title_id": 691,
+    "em_id": 15,
+    "monster_kr": "도샤구마",
+    "monster_en": "Doshaguma",
+    "title_kr": "40<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_691>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_691></BOLD>",
+    "title_ja": "４０<EMCT EM0150_00_0>狩猟【<Ref Title_Word_NAME_691>】"
+  },
+  {
+    "title_id": 692,
+    "em_id": 15,
+    "monster_kr": "도샤구마",
+    "monster_en": "Doshaguma",
+    "title_kr": "50<EMCT EM0150_00_0> 사냥【<Ref Title_Word_NAME_692>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_692></BOLD>",
+    "title_ja": "５０<EMCT EM0150_00_0>狩猟【<Ref Title_Word_NAME_692>】"
+  },
+  {
+    "title_id": 693,
+    "em_id": 567628288,
+    "monster_kr": "푸푸로포루",
+    "monster_en": "Rompopolo",
+    "title_kr": "20<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_693>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_693></BOLD>",
+    "title_ja": "２０<EMCT EM0155_00_0>狩猟【<Ref Title_Word_NAME_693>】"
+  },
+  {
+    "title_id": 694,
+    "em_id": 567628288,
+    "monster_kr": "푸푸로포루",
+    "monster_en": "Rompopolo",
+    "title_kr": "30<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_694>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_694></BOLD>",
+    "title_ja": "３０<EMCT EM0155_00_0>狩猟【<Ref Title_Word_NAME_694>】"
+  },
+  {
+    "title_id": 695,
+    "em_id": 567628288,
+    "monster_kr": "푸푸로포루",
+    "monster_en": "Rompopolo",
+    "title_kr": "40<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_695>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_695></BOLD>",
+    "title_ja": "４０<EMCT EM0155_00_0>狩猟【<Ref Title_Word_NAME_695>】"
+  },
+  {
+    "title_id": 696,
+    "em_id": 567628288,
+    "monster_kr": "푸푸로포루",
+    "monster_en": "Rompopolo",
+    "title_kr": "50<EMCT EM0155_00_0> 사냥【<Ref Title_Word_NAME_696>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_696></BOLD>",
+    "title_ja": "５０<EMCT EM0155_00_0>狩猟【<Ref Title_Word_NAME_696>】"
+  },
+  {
+    "title_id": 697,
+    "em_id": -1363370496,
+    "monster_kr": "네르스큐라",
+    "monster_en": "Nerscylla",
+    "title_kr": "20<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_697>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_697></BOLD>",
+    "title_ja": "２０<EMCT EM0070_00_0>狩猟【<Ref Title_Word_NAME_697>】"
+  },
+  {
+    "title_id": 698,
+    "em_id": -1363370496,
+    "monster_kr": "네르스큐라",
+    "monster_en": "Nerscylla",
+    "title_kr": "30<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_698>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_698></BOLD>",
+    "title_ja": "３０<EMCT EM0070_00_0>狩猟【<Ref Title_Word_NAME_698>】"
+  },
+  {
+    "title_id": 699,
+    "em_id": -1363370496,
+    "monster_kr": "네르스큐라",
+    "monster_en": "Nerscylla",
+    "title_kr": "40<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_699>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_699></BOLD>",
+    "title_ja": "４０<EMCT EM0070_00_0>狩猟【<Ref Title_Word_NAME_699>】"
+  },
+  {
+    "title_id": 700,
+    "em_id": -1363370496,
+    "monster_kr": "네르스큐라",
+    "monster_en": "Nerscylla",
+    "title_kr": "50<EMCT EM0070_00_0> 사냥【<Ref Title_Word_NAME_700>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_700></BOLD>",
+    "title_ja": "５０<EMCT EM0070_00_0>狩猟【<Ref Title_Word_NAME_700>】"
+  },
+  {
+    "title_id": 701,
+    "em_id": 222933952,
+    "monster_kr": "히라바미",
+    "monster_en": "Hirabami",
+    "title_kr": "20<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_701>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_701></BOLD>",
+    "title_ja": "２０<EMCT EM0161_00_0>狩猟【<Ref Title_Word_NAME_701>】"
+  },
+  {
+    "title_id": 702,
+    "em_id": 222933952,
+    "monster_kr": "히라바미",
+    "monster_en": "Hirabami",
+    "title_kr": "30<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_702>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_702></BOLD>",
+    "title_ja": "３０<EMCT EM0161_00_0>狩猟【<Ref Title_Word_NAME_702>】"
+  },
+  {
+    "title_id": 703,
+    "em_id": 222933952,
+    "monster_kr": "히라바미",
+    "monster_en": "Hirabami",
+    "title_kr": "40<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_703>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_703></BOLD>",
+    "title_ja": "４０<EMCT EM0161_00_0>狩猟【<Ref Title_Word_NAME_703>】"
+  },
+  {
+    "title_id": 704,
+    "em_id": 222933952,
+    "monster_kr": "히라바미",
+    "monster_en": "Hirabami",
+    "title_kr": "50<EMCT EM0161_00_0> 사냥【<Ref Title_Word_NAME_704>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_704></BOLD>",
+    "title_ja": "５０<EMCT EM0161_00_0>狩猟【<Ref Title_Word_NAME_704>】"
+  },
+  {
+    "title_id": 705,
+    "em_id": 777460864,
+    "monster_kr": "아자라칸",
+    "monster_en": "Ajarakan",
+    "title_kr": "20<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_705>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_705></BOLD>",
+    "title_ja": "２０<EMCT EM0159_00_0>狩猟【<Ref Title_Word_NAME_705>】"
+  },
+  {
+    "title_id": 706,
+    "em_id": 777460864,
+    "monster_kr": "아자라칸",
+    "monster_en": "Ajarakan",
+    "title_kr": "30<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_706>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_706></BOLD>",
+    "title_ja": "３０<EMCT EM0159_00_0>狩猟【<Ref Title_Word_NAME_706>】"
+  },
+  {
+    "title_id": 707,
+    "em_id": 777460864,
+    "monster_kr": "아자라칸",
+    "monster_en": "Ajarakan",
+    "title_kr": "40<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_707>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_707></BOLD>",
+    "title_ja": "４０<EMCT EM0159_00_0>狩猟【<Ref Title_Word_NAME_707>】"
+  },
+  {
+    "title_id": 708,
+    "em_id": 777460864,
+    "monster_kr": "아자라칸",
+    "monster_en": "Ajarakan",
+    "title_kr": "50<EMCT EM0159_00_0> 사냥【<Ref Title_Word_NAME_708>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_708></BOLD>",
+    "title_ja": "５０<EMCT EM0159_00_0>狩猟【<Ref Title_Word_NAME_708>】"
+  },
+  {
+    "title_id": 709,
+    "em_id": -1916429696,
+    "monster_kr": "수호룡 도샤구마",
+    "monster_en": "Guardian Doshaguma",
+    "title_kr": "20<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_709>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_709></BOLD>",
+    "title_ja": "２０<EMCT EM0150_50_0>狩猟【<Ref Title_Word_NAME_709>】"
+  },
+  {
+    "title_id": 710,
+    "em_id": -1916429696,
+    "monster_kr": "수호룡 도샤구마",
+    "monster_en": "Guardian Doshaguma",
+    "title_kr": "30<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_710>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_710></BOLD>",
+    "title_ja": "３０<EMCT EM0150_50_0>狩猟【<Ref Title_Word_NAME_710>】"
+  },
+  {
+    "title_id": 711,
+    "em_id": -1916429696,
+    "monster_kr": "수호룡 도샤구마",
+    "monster_en": "Guardian Doshaguma",
+    "title_kr": "40<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_711>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_711></BOLD>",
+    "title_ja": "４０<EMCT EM0150_50_0>狩猟【<Ref Title_Word_NAME_711>】"
+  },
+  {
+    "title_id": 712,
+    "em_id": -1916429696,
+    "monster_kr": "수호룡 도샤구마",
+    "monster_en": "Guardian Doshaguma",
+    "title_kr": "50<EMCT EM0150_50_0> 사냥【<Ref Title_Word_NAME_712>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_712></BOLD>",
+    "title_ja": "５０<EMCT EM0150_50_0>狩猟【<Ref Title_Word_NAME_712>】"
+  },
+  {
+    "title_id": 713,
+    "em_id": 1411933184,
+    "monster_kr": "수호룡 리오레우스",
+    "monster_en": "Guardian Rathalos",
+    "title_kr": "20<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_713>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_713></BOLD>",
+    "title_ja": "２０<EMCT EM0002_50_0>狩猟【<Ref Title_Word_NAME_713>】"
+  },
+  {
+    "title_id": 714,
+    "em_id": 1411933184,
+    "monster_kr": "수호룡 리오레우스",
+    "monster_en": "Guardian Rathalos",
+    "title_kr": "30<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_714>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_714></BOLD>",
+    "title_ja": "３０<EMCT EM0002_50_0>狩猟【<Ref Title_Word_NAME_714>】"
+  },
+  {
+    "title_id": 715,
+    "em_id": 1411933184,
+    "monster_kr": "수호룡 리오레우스",
+    "monster_en": "Guardian Rathalos",
+    "title_kr": "40<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_715>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_715></BOLD>",
+    "title_ja": "４０<EMCT EM0002_50_0>狩猟【<Ref Title_Word_NAME_715>】"
+  },
+  {
+    "title_id": 716,
+    "em_id": 1411933184,
+    "monster_kr": "수호룡 리오레우스",
+    "monster_en": "Guardian Rathalos",
+    "title_kr": "50<EMCT EM0002_50_0> 사냥【<Ref Title_Word_NAME_716>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_716></BOLD>",
+    "title_ja": "５０<EMCT EM0002_50_0>狩猟【<Ref Title_Word_NAME_716>】"
+  },
+  {
+    "title_id": 717,
+    "em_id": 1663995904,
+    "monster_kr": "수호룡 오도가론 아종",
+    "monster_en": "Guardian Ebony Odogaron",
+    "title_kr": "20<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_717>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_717></BOLD>",
+    "title_ja": "２０<EMCT EM0113_51_0>狩猟【<Ref Title_Word_NAME_717>】"
+  },
+  {
+    "title_id": 718,
+    "em_id": 1663995904,
+    "monster_kr": "수호룡 오도가론 아종",
+    "monster_en": "Guardian Ebony Odogaron",
+    "title_kr": "30<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_718>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_718></BOLD>",
+    "title_ja": "３０<EMCT EM0113_51_0>狩猟【<Ref Title_Word_NAME_718>】"
+  },
+  {
+    "title_id": 719,
+    "em_id": 1663995904,
+    "monster_kr": "수호룡 오도가론 아종",
+    "monster_en": "Guardian Ebony Odogaron",
+    "title_kr": "40<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_719>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_719></BOLD>",
+    "title_ja": "４０<EMCT EM0113_51_0>狩猟【<Ref Title_Word_NAME_719>】"
+  },
+  {
+    "title_id": 720,
+    "em_id": 1663995904,
+    "monster_kr": "수호룡 오도가론 아종",
+    "monster_en": "Guardian Ebony Odogaron",
+    "title_kr": "50<EMCT EM0113_51_0> 사냥【<Ref Title_Word_NAME_720>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_720></BOLD>",
+    "title_ja": "５０<EMCT EM0113_51_0>狩猟【<Ref Title_Word_NAME_720>】"
+  },
+  {
+    "title_id": 721,
+    "em_id": 1401863296,
+    "monster_kr": "시이우",
+    "monster_en": "Xu Wu",
+    "title_kr": "20<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_721>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_721></BOLD>",
+    "title_ja": "２０<EMCT EM0163_00_0>狩猟【<Ref Title_Word_NAME_721>】"
+  },
+  {
+    "title_id": 722,
+    "em_id": 1401863296,
+    "monster_kr": "시이우",
+    "monster_en": "Xu Wu",
+    "title_kr": "30<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_722>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_722></BOLD>",
+    "title_ja": "３０<EMCT EM0163_00_0>狩猟【<Ref Title_Word_NAME_722>】"
+  },
+  {
+    "title_id": 723,
+    "em_id": 1401863296,
+    "monster_kr": "시이우",
+    "monster_en": "Xu Wu",
+    "title_kr": "40<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_723>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_723></BOLD>",
+    "title_ja": "４０<EMCT EM0163_00_0>狩猟【<Ref Title_Word_NAME_723>】"
+  },
+  {
+    "title_id": 724,
+    "em_id": 1401863296,
+    "monster_kr": "시이우",
+    "monster_en": "Xu Wu",
+    "title_kr": "50<EMCT EM0163_00_0> 사냥【<Ref Title_Word_NAME_724>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_724></BOLD>",
+    "title_ja": "５０<EMCT EM0163_00_0>狩猟【<Ref Title_Word_NAME_724>】"
+  },
+  {
+    "title_id": 725,
+    "em_id": 1467998976,
+    "monster_kr": "우드 투나",
+    "monster_en": "Uth Duna",
+    "title_kr": "20<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_725>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_725></BOLD>",
+    "title_ja": "２０<EMCT EM0157_00_0>狩猟【<Ref Title_Word_NAME_725>】"
+  },
+  {
+    "title_id": 726,
+    "em_id": 1467998976,
+    "monster_kr": "우드 투나",
+    "monster_en": "Uth Duna",
+    "title_kr": "30<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_726>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_726></BOLD>",
+    "title_ja": "３０<EMCT EM0157_00_0>狩猟【<Ref Title_Word_NAME_726>】"
+  },
+  {
+    "title_id": 727,
+    "em_id": 1467998976,
+    "monster_kr": "우드 투나",
+    "monster_en": "Uth Duna",
+    "title_kr": "40<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_727>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_727></BOLD>",
+    "title_ja": "４０<EMCT EM0157_00_0>狩猟【<Ref Title_Word_NAME_727>】"
+  },
+  {
+    "title_id": 728,
+    "em_id": 1467998976,
+    "monster_kr": "우드 투나",
+    "monster_en": "Uth Duna",
+    "title_kr": "50<EMCT EM0157_00_0> 사냥【<Ref Title_Word_NAME_728>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_728></BOLD>",
+    "title_ja": "５０<EMCT EM0157_00_0>狩猟【<Ref Title_Word_NAME_728>】"
+  },
+  {
+    "title_id": 729,
+    "em_id": -1547364608,
+    "monster_kr": "레 다우",
+    "monster_en": "Rey Dau",
+    "title_kr": "20<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_729>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_729></BOLD>",
+    "title_ja": "２０<EMCT EM0156_00_0>狩猟【<Ref Title_Word_NAME_729>】"
+  },
+  {
+    "title_id": 730,
+    "em_id": -1547364608,
+    "monster_kr": "레 다우",
+    "monster_en": "Rey Dau",
+    "title_kr": "30<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_730>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_730></BOLD>",
+    "title_ja": "３０<EMCT EM0156_00_0>狩猟【<Ref Title_Word_NAME_730>】"
+  },
+  {
+    "title_id": 731,
+    "em_id": -1547364608,
+    "monster_kr": "레 다우",
+    "monster_en": "Rey Dau",
+    "title_kr": "40<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_731>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_731></BOLD>",
+    "title_ja": "４０<EMCT EM0156_00_0>狩猟【<Ref Title_Word_NAME_731>】"
+  },
+  {
+    "title_id": 732,
+    "em_id": -1547364608,
+    "monster_kr": "레 다우",
+    "monster_en": "Rey Dau",
+    "title_kr": "50<EMCT EM0156_00_0> 사냥【<Ref Title_Word_NAME_732>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_732></BOLD>",
+    "title_ja": "５０<EMCT EM0156_00_0>狩猟【<Ref Title_Word_NAME_732>】"
+  },
+  {
+    "title_id": 733,
+    "em_id": 1657778432,
+    "monster_kr": "누 이그드라",
+    "monster_en": "Nu Udra",
+    "title_kr": "20<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_733>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_733></BOLD>",
+    "title_ja": "２０<EMCT EM0158_00_0>狩猟【<Ref Title_Word_NAME_733>】"
+  },
+  {
+    "title_id": 734,
+    "em_id": 1657778432,
+    "monster_kr": "누 이그드라",
+    "monster_en": "Nu Udra",
+    "title_kr": "30<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_734>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_734></BOLD>",
+    "title_ja": "３０<EMCT EM0158_00_0>狩猟【<Ref Title_Word_NAME_734>】"
+  },
+  {
+    "title_id": 735,
+    "em_id": 1657778432,
+    "monster_kr": "누 이그드라",
+    "monster_en": "Nu Udra",
+    "title_kr": "40<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_735>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_735></BOLD>",
+    "title_ja": "４０<EMCT EM0158_00_0>狩猟【<Ref Title_Word_NAME_735>】"
+  },
+  {
+    "title_id": 736,
+    "em_id": 1657778432,
+    "monster_kr": "누 이그드라",
+    "monster_en": "Nu Udra",
+    "title_kr": "50<EMCT EM0158_00_0> 사냥【<Ref Title_Word_NAME_736>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_736></BOLD>",
+    "title_ja": "５０<EMCT EM0158_00_0>狩猟【<Ref Title_Word_NAME_736>】"
+  },
+  {
+    "title_id": 737,
+    "em_id": 1553456768,
+    "monster_kr": "진 다하드",
+    "monster_en": "Jin Dahaad",
+    "title_kr": "10<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_737>】",
+    "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_737></BOLD>",
+    "title_ja": "１０<EMCT EM0162_00_0>討伐【<Ref Title_Word_NAME_737>】"
+  },
+  {
+    "title_id": 738,
+    "em_id": 1553456768,
+    "monster_kr": "진 다하드",
+    "monster_en": "Jin Dahaad",
+    "title_kr": "15<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_738>】",
+    "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_738></BOLD>",
+    "title_ja": "１５<EMCT EM0162_00_0>討伐【<Ref Title_Word_NAME_738>】"
+  },
+  {
+    "title_id": 739,
+    "em_id": 1553456768,
+    "monster_kr": "진 다하드",
+    "monster_en": "Jin Dahaad",
+    "title_kr": "20<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_739>】",
+    "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_739></BOLD>",
+    "title_ja": "２０<EMCT EM0162_00_0>討伐【<Ref Title_Word_NAME_739>】"
+  },
+  {
+    "title_id": 740,
+    "em_id": 1553456768,
+    "monster_kr": "진 다하드",
+    "monster_en": "Jin Dahaad",
+    "title_kr": "30<EMCT EM0162_00_0> 토벌【<Ref Title_Word_NAME_740>】",
+    "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_740></BOLD>",
+    "title_ja": "３０<EMCT EM0162_00_0>討伐【<Ref Title_Word_NAME_740>】"
+  },
+  {
+    "title_id": 741,
+    "em_id": -283654400,
+    "monster_kr": "수호룡 알슈베르도",
+    "monster_en": "Guardian Arkveld",
+    "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_741>】",
+    "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_741></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>狩猟【<Ref Title_Word_NAME_741>】"
+  },
+  {
+    "title_id": 742,
+    "em_id": -283654400,
+    "monster_kr": "수호룡 알슈베르도",
+    "monster_en": "Guardian Arkveld",
+    "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_742>】",
+    "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_742></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>狩猟【<Ref Title_Word_NAME_742>】"
+  },
+  {
+    "title_id": 743,
+    "em_id": -283654400,
+    "monster_kr": "수호룡 알슈베르도",
+    "monster_en": "Guardian Arkveld",
+    "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_743>】",
+    "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_743></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>狩猟【<Ref Title_Word_NAME_743>】"
+  },
+  {
+    "title_id": 744,
+    "em_id": -283654400,
+    "monster_kr": "수호룡 알슈베르도",
+    "monster_en": "Guardian Arkveld",
+    "title_kr": "1<EMCT EM0164_50_0> 사냥【<Ref Title_Word_NAME_744>】",
+    "title_en": "Hunt 1: <BOLD><Ref Title_Word_NAME_744></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>狩猟【<Ref Title_Word_NAME_744>】"
+  },
+  {
+    "title_id": 745,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_745>】",
+    "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_745></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_745>】"
+  },
+  {
+    "title_id": 746,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_746>】",
+    "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_746></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_746>】"
+  },
+  {
+    "title_id": 747,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_747>】",
+    "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_747></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_747>】"
+  },
+  {
+    "title_id": 748,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "1<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_748>】",
+    "title_en": "Slay 1: <BOLD><Ref Title_Word_NAME_748></BOLD>",
+    "title_ja": "１<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_748>】"
+  },
+  {
+    "title_id": 749,
+    "em_id": 402056736,
+    "monster_kr": "얀쿡크",
+    "monster_en": "Yian Kut-Ku",
+    "title_kr": "20<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_749>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_749></BOLD>",
+    "title_ja": "２０<EMCT EM0008_00_0>狩猟【<Ref Title_Word_NAME_749>】"
+  },
+  {
+    "title_id": 750,
+    "em_id": 402056736,
+    "monster_kr": "얀쿡크",
+    "monster_en": "Yian Kut-Ku",
+    "title_kr": "30<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_750>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_750></BOLD>",
+    "title_ja": "３０<EMCT EM0008_00_0>狩猟【<Ref Title_Word_NAME_750>】"
+  },
+  {
+    "title_id": 751,
+    "em_id": 402056736,
+    "monster_kr": "얀쿡크",
+    "monster_en": "Yian Kut-Ku",
+    "title_kr": "40<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_751>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_751></BOLD>",
+    "title_ja": "４０<EMCT EM0008_00_0>狩猟【<Ref Title_Word_NAME_751>】"
+  },
+  {
+    "title_id": 752,
+    "em_id": 402056736,
+    "monster_kr": "얀쿡크",
+    "monster_en": "Yian Kut-Ku",
+    "title_kr": "50<EMCT EM0008_00_0> 사냥【<Ref Title_Word_NAME_752>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_752></BOLD>",
+    "title_ja": "５０<EMCT EM0008_00_0>狩猟【<Ref Title_Word_NAME_752>】"
+  },
+  {
+    "title_id": 753,
+    "em_id": 107194928,
+    "monster_kr": "수호룡 안쟈나프 아종",
+    "monster_en": "Guardian Fulgur Anjanath",
+    "title_kr": "20<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_753>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_753></BOLD>",
+    "title_ja": "２０<EMCT EM0100_51_0>狩猟【<Ref Title_Word_NAME_753>】"
+  },
+  {
+    "title_id": 754,
+    "em_id": 107194928,
+    "monster_kr": "수호룡 안쟈나프 아종",
+    "monster_en": "Guardian Fulgur Anjanath",
+    "title_kr": "30<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_754>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_754></BOLD>",
+    "title_ja": "３０<EMCT EM0100_51_0>狩猟【<Ref Title_Word_NAME_754>】"
+  },
+  {
+    "title_id": 755,
+    "em_id": 107194928,
+    "monster_kr": "수호룡 안쟈나프 아종",
+    "monster_en": "Guardian Fulgur Anjanath",
+    "title_kr": "40<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_755>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_755></BOLD>",
+    "title_ja": "４０<EMCT EM0100_51_0>狩猟【<Ref Title_Word_NAME_755>】"
+  },
+  {
+    "title_id": 756,
+    "em_id": 107194928,
+    "monster_kr": "수호룡 안쟈나프 아종",
+    "monster_en": "Guardian Fulgur Anjanath",
+    "title_kr": "50<EMCT EM0100_51_0> 사냥【<Ref Title_Word_NAME_756>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_756></BOLD>",
+    "title_ja": "５０<EMCT EM0100_51_0>狩猟【<Ref Title_Word_NAME_756>】"
+  },
+  {
+    "title_id": 757,
+    "em_id": -758250816,
+    "monster_kr": "고어 마가라",
+    "monster_en": "Gore Magala",
+    "title_kr": "20<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_757>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_757></BOLD>",
+    "title_ja": "２０<EMCT EM0071_00_0>狩猟【<Ref Title_Word_NAME_757>】"
+  },
+  {
+    "title_id": 758,
+    "em_id": -758250816,
+    "monster_kr": "고어 마가라",
+    "monster_en": "Gore Magala",
+    "title_kr": "30<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_758>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_758></BOLD>",
+    "title_ja": "３０<EMCT EM0071_00_0>狩猟【<Ref Title_Word_NAME_758>】"
+  },
+  {
+    "title_id": 759,
+    "em_id": -758250816,
+    "monster_kr": "고어 마가라",
+    "monster_en": "Gore Magala",
+    "title_kr": "40<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_759>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_759></BOLD>",
+    "title_ja": "４０<EMCT EM0071_00_0>狩猟【<Ref Title_Word_NAME_759>】"
+  },
+  {
+    "title_id": 760,
+    "em_id": -758250816,
+    "monster_kr": "고어 마가라",
+    "monster_en": "Gore Magala",
+    "title_kr": "50<EMCT EM0071_00_0> 사냥【<Ref Title_Word_NAME_760>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_760></BOLD>",
+    "title_ja": "５０<EMCT EM0071_00_0>狩猟【<Ref Title_Word_NAME_760>】"
+  },
+  {
+    "title_id": 761,
+    "em_id": 1049705664,
+    "monster_kr": "게리오스",
+    "monster_en": "Gypceros",
+    "title_kr": "20<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_761>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_761></BOLD>",
+    "title_ja": "２０<EMCT EM0009_00_0>狩猟【<Ref Title_Word_NAME_761>】"
+  },
+  {
+    "title_id": 762,
+    "em_id": 1049705664,
+    "monster_kr": "게리오스",
+    "monster_en": "Gypceros",
+    "title_kr": "30<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_762>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_762></BOLD>",
+    "title_ja": "３０<EMCT EM0009_00_0>狩猟【<Ref Title_Word_NAME_762>】"
+  },
+  {
+    "title_id": 763,
+    "em_id": 1049705664,
+    "monster_kr": "게리오스",
+    "monster_en": "Gypceros",
+    "title_kr": "40<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_763>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_763></BOLD>",
+    "title_ja": "４０<EMCT EM0009_00_0>狩猟【<Ref Title_Word_NAME_763>】"
+  },
+  {
+    "title_id": 764,
+    "em_id": 1049705664,
+    "monster_kr": "게리오스",
+    "monster_en": "Gypceros",
+    "title_kr": "50<EMCT EM0009_00_0> 사냥【<Ref Title_Word_NAME_764>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_764></BOLD>",
+    "title_ja": "５０<EMCT EM0009_00_0>狩猟【<Ref Title_Word_NAME_764>】"
+  },
+  {
+    "title_id": 765,
+    "em_id": 26,
+    "monster_kr": "리오레이아",
+    "monster_en": "Rathian",
+    "title_kr": "20<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_765>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_765></BOLD>",
+    "title_ja": "２０<EMCT EM0001_00_0>狩猟【<Ref Title_Word_NAME_765>】"
+  },
+  {
+    "title_id": 766,
+    "em_id": 26,
+    "monster_kr": "리오레이아",
+    "monster_en": "Rathian",
+    "title_kr": "30<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_766>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_766></BOLD>",
+    "title_ja": "３０<EMCT EM0001_00_0>狩猟【<Ref Title_Word_NAME_766>】"
+  },
+  {
+    "title_id": 767,
+    "em_id": 26,
+    "monster_kr": "리오레이아",
+    "monster_en": "Rathian",
+    "title_kr": "40<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_767>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_767></BOLD>",
+    "title_ja": "４０<EMCT EM0001_00_0>狩猟【<Ref Title_Word_NAME_767>】"
+  },
+  {
+    "title_id": 768,
+    "em_id": 26,
+    "monster_kr": "리오레이아",
+    "monster_en": "Rathian",
+    "title_kr": "50<EMCT EM0001_00_0> 사냥【<Ref Title_Word_NAME_768>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_768></BOLD>",
+    "title_ja": "５０<EMCT EM0001_00_0>狩猟【<Ref Title_Word_NAME_768>】"
+  },
+  {
+    "title_id": 769,
+    "em_id": 2129596800,
+    "monster_kr": "도도블랑고",
+    "monster_en": "Blangonga",
+    "title_kr": "20<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_769>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_769></BOLD>",
+    "title_ja": "２０<EMCT EM0022_00_0>狩猟【<Ref Title_Word_NAME_769>】"
+  },
+  {
+    "title_id": 770,
+    "em_id": 2129596800,
+    "monster_kr": "도도블랑고",
+    "monster_en": "Blangonga",
+    "title_kr": "30<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_770>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_770></BOLD>",
+    "title_ja": "３０<EMCT EM0022_00_0>狩猟【<Ref Title_Word_NAME_770>】"
+  },
+  {
+    "title_id": 771,
+    "em_id": 2129596800,
+    "monster_kr": "도도블랑고",
+    "monster_en": "Blangonga",
+    "title_kr": "40<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_771>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_771></BOLD>",
+    "title_ja": "４０<EMCT EM0022_00_0>狩猟【<Ref Title_Word_NAME_771>】"
+  },
+  {
+    "title_id": 772,
+    "em_id": 2129596800,
+    "monster_kr": "도도블랑고",
+    "monster_en": "Blangonga",
+    "title_kr": "50<EMCT EM0022_00_0> 사냥【<Ref Title_Word_NAME_772>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_772></BOLD>",
+    "title_ja": "５０<EMCT EM0022_00_0>狩猟【<Ref Title_Word_NAME_772>】"
+  },
+  {
+    "title_id": 773,
+    "em_id": -535078400,
+    "monster_kr": "그라비모스",
+    "monster_en": "Gravios",
+    "title_kr": "20<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_773>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_773></BOLD>",
+    "title_ja": "２０<EMCT EM0005_00_0>狩猟【<Ref Title_Word_NAME_773>】"
+  },
+  {
+    "title_id": 774,
+    "em_id": -535078400,
+    "monster_kr": "그라비모스",
+    "monster_en": "Gravios",
+    "title_kr": "30<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_774>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_774></BOLD>",
+    "title_ja": "３０<EMCT EM0005_00_0>狩猟【<Ref Title_Word_NAME_774>】"
+  },
+  {
+    "title_id": 775,
+    "em_id": -535078400,
+    "monster_kr": "그라비모스",
+    "monster_en": "Gravios",
+    "title_kr": "40<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_775>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_775></BOLD>",
+    "title_ja": "４０<EMCT EM0005_00_0>狩猟【<Ref Title_Word_NAME_775>】"
+  },
+  {
+    "title_id": 776,
+    "em_id": -535078400,
+    "monster_kr": "그라비모스",
+    "monster_en": "Gravios",
+    "title_kr": "50<EMCT EM0005_00_0> 사냥【<Ref Title_Word_NAME_776>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_776></BOLD>",
+    "title_ja": "５０<EMCT EM0005_00_0>狩猟【<Ref Title_Word_NAME_776>】"
+  },
+  {
+    "title_id": 777,
+    "em_id": 1965232896,
+    "monster_kr": "리오레우스",
+    "monster_en": "Rathalos",
+    "title_kr": "20<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_777>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_777></BOLD>",
+    "title_ja": "２０<EMCT EM0002_00_0>狩猟【<Ref Title_Word_NAME_777>】"
+  },
+  {
+    "title_id": 778,
+    "em_id": 1965232896,
+    "monster_kr": "리오레우스",
+    "monster_en": "Rathalos",
+    "title_kr": "30<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_778>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_778></BOLD>",
+    "title_ja": "３０<EMCT EM0002_00_0>狩猟【<Ref Title_Word_NAME_778>】"
+  },
+  {
+    "title_id": 779,
+    "em_id": 1965232896,
+    "monster_kr": "리오레우스",
+    "monster_en": "Rathalos",
+    "title_kr": "40<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_779>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_779></BOLD>",
+    "title_ja": "４０<EMCT EM0002_00_0>狩猟【<Ref Title_Word_NAME_779>】"
+  },
+  {
+    "title_id": 780,
+    "em_id": 1965232896,
+    "monster_kr": "리오레우스",
+    "monster_en": "Rathalos",
+    "title_kr": "50<EMCT EM0002_00_0> 사냥【<Ref Title_Word_NAME_780>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_780></BOLD>",
+    "title_ja": "５０<EMCT EM0002_00_0>狩猟【<Ref Title_Word_NAME_780>】"
+  },
+  {
+    "title_id": 781,
+    "em_id": 746996864,
+    "monster_kr": "알슈베르도",
+    "monster_en": "Arkveld",
+    "title_kr": "10<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_781>】",
+    "title_en": "Hunt 10: <BOLD><Ref Title_Word_NAME_781></BOLD>",
+    "title_ja": "１０<EMCT EM0160_00_0>狩猟【<Ref Title_Word_NAME_781>】"
+  },
+  {
+    "title_id": 782,
+    "em_id": 746996864,
+    "monster_kr": "알슈베르도",
+    "monster_en": "Arkveld",
+    "title_kr": "15<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_782>】",
+    "title_en": "Hunt 15: <BOLD><Ref Title_Word_NAME_782></BOLD>",
+    "title_ja": "１５<EMCT EM0160_00_0>狩猟【<Ref Title_Word_NAME_782>】"
+  },
+  {
+    "title_id": 783,
+    "em_id": 746996864,
+    "monster_kr": "알슈베르도",
+    "monster_en": "Arkveld",
+    "title_kr": "20<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_783>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_783></BOLD>",
+    "title_ja": "２０<EMCT EM0160_00_0>狩猟【<Ref Title_Word_NAME_783>】"
+  },
+  {
+    "title_id": 784,
+    "em_id": 746996864,
+    "monster_kr": "알슈베르도",
+    "monster_en": "Arkveld",
+    "title_kr": "30<EMCT EM0160_00_0> 사냥【<Ref Title_Word_NAME_784>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_784></BOLD>",
+    "title_ja": "３０<EMCT EM0160_00_0>狩猟【<Ref Title_Word_NAME_784>】"
+  },
+  {
+    "title_id": 916,
+    "em_id": 32634,
+    "monster_kr": "타마미츠네",
+    "monster_en": "Mizutsune",
+    "title_kr": "20<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_916>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_916></BOLD>",
+    "title_ja": "２０<EMCT EM0082_00_0>狩猟【<Ref Title_Word_NAME_916>】"
+  },
+  {
+    "title_id": 917,
+    "em_id": 32634,
+    "monster_kr": "타마미츠네",
+    "monster_en": "Mizutsune",
+    "title_kr": "30<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_917>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_917></BOLD>",
+    "title_ja": "３０<EMCT EM0082_00_0>狩猟【<Ref Title_Word_NAME_917>】"
+  },
+  {
+    "title_id": 918,
+    "em_id": 32634,
+    "monster_kr": "타마미츠네",
+    "monster_en": "Mizutsune",
+    "title_kr": "40<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_918>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_918></BOLD>",
+    "title_ja": "４０<EMCT EM0082_00_0>狩猟【<Ref Title_Word_NAME_918>】"
+  },
+  {
+    "title_id": 919,
+    "em_id": 32634,
+    "monster_kr": "타마미츠네",
+    "monster_en": "Mizutsune",
+    "title_kr": "50<EMCT EM0082_00_0> 사냥【<Ref Title_Word_NAME_919>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_919></BOLD>",
+    "title_ja": "５０<EMCT EM0082_00_0>狩猟【<Ref Title_Word_NAME_919>】"
+  },
+  {
+    "title_id": 920,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "10<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_920>】",
+    "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_920></BOLD>",
+    "title_ja": "１０<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_920>】"
+  },
+  {
+    "title_id": 921,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "15<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_921>】",
+    "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_921></BOLD>",
+    "title_ja": "１５<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_921>】"
+  },
+  {
+    "title_id": 922,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "20<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_922>】",
+    "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_922></BOLD>",
+    "title_ja": "２０<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_922>】"
+  },
+  {
+    "title_id": 923,
+    "em_id": -2003468672,
+    "monster_kr": "조 시아",
+    "monster_en": "Zoh Shia",
+    "title_kr": "30<EMCT EM0164_50_0> 토벌【<Ref Title_Word_NAME_923>】",
+    "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_923></BOLD>",
+    "title_ja": "３０<EMCT EM0164_50_0>討伐【<Ref Title_Word_NAME_923>】"
+  },
+  {
+    "title_id": 957,
+    "em_id": -1083842944,
+    "monster_kr": "라기아크루스",
+    "monster_en": "Lagiacrus",
+    "title_kr": "20<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_957>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_957></BOLD>",
+    "title_ja": "２０<EMCT EM0046_00_0>狩猟【<Ref Title_Word_NAME_957>】"
+  },
+  {
+    "title_id": 958,
+    "em_id": -1083842944,
+    "monster_kr": "라기아크루스",
+    "monster_en": "Lagiacrus",
+    "title_kr": "30<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_958>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_958></BOLD>",
+    "title_ja": "３０<EMCT EM0046_00_0>狩猟【<Ref Title_Word_NAME_958>】"
+  },
+  {
+    "title_id": 959,
+    "em_id": -1083842944,
+    "monster_kr": "라기아크루스",
+    "monster_en": "Lagiacrus",
+    "title_kr": "40<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_959>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_959></BOLD>",
+    "title_ja": "４０<EMCT EM0046_00_0>狩猟【<Ref Title_Word_NAME_959>】"
+  },
+  {
+    "title_id": 960,
+    "em_id": -1083842944,
+    "monster_kr": "라기아크루스",
+    "monster_en": "Lagiacrus",
+    "title_kr": "50<EMCT EM0046_00_0> 사냥【<Ref Title_Word_NAME_960>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_960></BOLD>",
+    "title_ja": "５０<EMCT EM0046_00_0>狩猟【<Ref Title_Word_NAME_960>】"
+  },
+  {
+    "title_id": 961,
+    "em_id": 25,
+    "monster_kr": "셀레기오스",
+    "monster_en": "Seregios",
+    "title_kr": "20<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_961>】",
+    "title_en": "Hunt 20: <BOLD><Ref Title_Word_NAME_961></BOLD>",
+    "title_ja": "２０<EMCT EM0077_00_0>狩猟【<Ref Title_Word_NAME_961>】"
+  },
+  {
+    "title_id": 962,
+    "em_id": 25,
+    "monster_kr": "셀레기오스",
+    "monster_en": "Seregios",
+    "title_kr": "30<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_962>】",
+    "title_en": "Hunt 30: <BOLD><Ref Title_Word_NAME_962></BOLD>",
+    "title_ja": "３０<EMCT EM0077_00_0>狩猟【<Ref Title_Word_NAME_962>】"
+  },
+  {
+    "title_id": 963,
+    "em_id": 25,
+    "monster_kr": "셀레기오스",
+    "monster_en": "Seregios",
+    "title_kr": "40<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_963>】",
+    "title_en": "Hunt 40: <BOLD><Ref Title_Word_NAME_963></BOLD>",
+    "title_ja": "４０<EMCT EM0077_00_0>狩猟【<Ref Title_Word_NAME_963>】"
+  },
+  {
+    "title_id": 964,
+    "em_id": 25,
+    "monster_kr": "셀레기오스",
+    "monster_en": "Seregios",
+    "title_kr": "50<EMCT EM0077_00_0> 사냥【<Ref Title_Word_NAME_964>】",
+    "title_en": "Hunt 50: <BOLD><Ref Title_Word_NAME_964></BOLD>",
+    "title_ja": "５０<EMCT EM0077_00_0>狩猟【<Ref Title_Word_NAME_964>】"
+  },
+  {
+    "title_id": 979,
+    "em_id": 21849,
+    "monster_kr": "오메가 플라네테스",
+    "monster_en": "Omega Planetes",
+    "title_kr": "10<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_979>】",
+    "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_979></BOLD>",
+    "title_ja": "１０<EMCT EM0166_00_0>討伐【<Ref Title_Word_NAME_979>】"
+  },
+  {
+    "title_id": 980,
+    "em_id": 21849,
+    "monster_kr": "오메가 플라네테스",
+    "monster_en": "Omega Planetes",
+    "title_kr": "15<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_980>】",
+    "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_980></BOLD>",
+    "title_ja": "１５<EMCT EM0166_00_0>討伐【<Ref Title_Word_NAME_980>】"
+  },
+  {
+    "title_id": 981,
+    "em_id": 21849,
+    "monster_kr": "오메가 플라네테스",
+    "monster_en": "Omega Planetes",
+    "title_kr": "20<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_981>】",
+    "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_981></BOLD>",
+    "title_ja": "２０<EMCT EM0166_00_0>討伐【<Ref Title_Word_NAME_981>】"
+  },
+  {
+    "title_id": 982,
+    "em_id": 21849,
+    "monster_kr": "오메가 플라네테스",
+    "monster_en": "Omega Planetes",
+    "title_kr": "30<EMCT EM0166_00_0> 토벌【<Ref Title_Word_NAME_982>】",
+    "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_982></BOLD>",
+    "title_ja": "３０<EMCT EM0166_00_0>討伐【<Ref Title_Word_NAME_982>】"
+  },
+  {
+    "title_id": 988,
+    "em_id": 13052,
+    "monster_kr": "고그마지오스",
+    "monster_en": "Gogmazios",
+    "title_kr": "10<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_988>】",
+    "title_en": "Slay 10: <BOLD><Ref Title_Word_NAME_988></BOLD>",
+    "title_ja": "１０<EMCT EM0078_00_0>討伐【<Ref Title_Word_NAME_988>】"
+  },
+  {
+    "title_id": 989,
+    "em_id": 13052,
+    "monster_kr": "고그마지오스",
+    "monster_en": "Gogmazios",
+    "title_kr": "15<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_989>】",
+    "title_en": "Slay 15: <BOLD><Ref Title_Word_NAME_989></BOLD>",
+    "title_ja": "１５<EMCT EM0078_00_0>討伐【<Ref Title_Word_NAME_989>】"
+  },
+  {
+    "title_id": 990,
+    "em_id": 13052,
+    "monster_kr": "고그마지오스",
+    "monster_en": "Gogmazios",
+    "title_kr": "20<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_990>】",
+    "title_en": "Slay 20: <BOLD><Ref Title_Word_NAME_990></BOLD>",
+    "title_ja": "２０<EMCT EM0078_00_0>討伐【<Ref Title_Word_NAME_990>】"
+  },
+  {
+    "title_id": 991,
+    "em_id": 13052,
+    "monster_kr": "고그마지오스",
+    "monster_en": "Gogmazios",
+    "title_kr": "30<EMCT EM0078_00_0> 토벌【<Ref Title_Word_NAME_991>】",
+    "title_en": "Slay 30: <BOLD><Ref Title_Word_NAME_991></BOLD>",
+    "title_ja": "３０<EMCT EM0078_00_0>討伐【<Ref Title_Word_NAME_991>】"
+  }
+]

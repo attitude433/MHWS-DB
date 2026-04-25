@@ -1,0 +1,65 @@
+[
+  {
+    "attr_id": 1,
+    "name_kr": "불속성",
+    "name_en": "Fire",
+    "description_kr": "불속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the fire element\r\nare effective."
+  },
+  {
+    "attr_id": 2,
+    "name_kr": "물속성",
+    "name_en": "Water",
+    "description_kr": "물속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the water element\r\nare effective."
+  },
+  {
+    "attr_id": 3,
+    "name_kr": "얼음속성",
+    "name_en": "Ice",
+    "description_kr": "얼음속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the ice element\r\nare effective."
+  },
+  {
+    "attr_id": 4,
+    "name_kr": "번개속성",
+    "name_en": "Thunder",
+    "description_kr": "번개속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the thunder\r\nelement are effective."
+  },
+  {
+    "attr_id": 5,
+    "name_kr": "용속성",
+    "name_en": "Dragon",
+    "description_kr": "용속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the dragon element\r\nare effective."
+  },
+  {
+    "attr_id": 6,
+    "name_kr": "독속성",
+    "name_en": "Poison",
+    "description_kr": "독속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the poison element\r\nare effective."
+  },
+  {
+    "attr_id": 7,
+    "name_kr": "마비속성",
+    "name_en": "Paralysis",
+    "description_kr": "마비속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the paralysis\r\nelement are effective."
+  },
+  {
+    "attr_id": 8,
+    "name_kr": "수면속성",
+    "name_en": "Sleep",
+    "description_kr": "수면속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the sleep element\r\nare effective."
+  },
+  {
+    "attr_id": 9,
+    "name_kr": "폭파속성",
+    "name_en": "Blast",
+    "description_kr": "폭파속성 무기가 효과적입니다.",
+    "description_en": "Weapons with the blast element\r\nare effective."
+  }
+]
