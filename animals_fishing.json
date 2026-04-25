@@ -27,7 +27,11 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 6
+    "stage_bit": 6,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 1,
@@ -57,7 +61,12 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 14
+    "stage_bit": 14,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲",
+      "기름 솟는 계곡"
+    ]
   },
   {
     "index": 2,
@@ -87,7 +96,12 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 14
+    "stage_bit": 14,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲",
+      "기름 솟는 계곡"
+    ]
   },
   {
     "index": 3,
@@ -117,7 +131,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 4,
@@ -147,7 +164,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 5,
@@ -177,7 +197,13 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 60
+    "stage_bit": 60,
+    "locations_kr": [
+      "주홍빛 숲",
+      "기름 솟는 계곡",
+      "빙무의 절벽",
+      "용도의 폐허"
+    ]
   },
   {
     "index": 6,
@@ -207,7 +233,13 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 30
+    "stage_bit": 30,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲",
+      "기름 솟는 계곡",
+      "빙무의 절벽"
+    ]
   },
   {
     "index": 7,
@@ -237,7 +269,13 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 30
+    "stage_bit": 30,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲",
+      "기름 솟는 계곡",
+      "빙무의 절벽"
+    ]
   },
   {
     "index": 8,
@@ -267,7 +305,11 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 12
+    "stage_bit": 12,
+    "locations_kr": [
+      "주홍빛 숲",
+      "기름 솟는 계곡"
+    ]
   },
   {
     "index": 9,
@@ -297,7 +339,11 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 12
+    "stage_bit": 12,
+    "locations_kr": [
+      "주홍빛 숲",
+      "기름 솟는 계곡"
+    ]
   },
   {
     "index": 10,
@@ -327,7 +373,13 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 60
+    "stage_bit": 60,
+    "locations_kr": [
+      "주홍빛 숲",
+      "기름 솟는 계곡",
+      "빙무의 절벽",
+      "용도의 폐허"
+    ]
   },
   {
     "index": 11,
@@ -357,7 +409,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 12,
@@ -387,7 +442,11 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 12
+    "stage_bit": 12,
+    "locations_kr": [
+      "주홍빛 숲",
+      "기름 솟는 계곡"
+    ]
   },
   {
     "index": 13,
@@ -417,7 +476,11 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 48
+    "stage_bit": 48,
+    "locations_kr": [
+      "빙무의 절벽",
+      "용도의 폐허"
+    ]
   },
   {
     "index": 14,
@@ -447,7 +510,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 15,
@@ -477,7 +543,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 16,
@@ -507,7 +576,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 17,
@@ -537,7 +609,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 4
+    "stage_bit": 4,
+    "locations_kr": [
+      "주홍빛 숲"
+    ]
   },
   {
     "index": 18,
@@ -567,7 +642,14 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 62
+    "stage_bit": 62,
+    "locations_kr": [
+      "경계의 모래 평원",
+      "주홍빛 숲",
+      "기름 솟는 계곡",
+      "빙무의 절벽",
+      "용도의 폐허"
+    ]
   },
   {
     "index": 19,
@@ -597,6 +679,10 @@
     "legendary_name_kr": "",
     "legendary_king_name_kr": "",
     "frenzy_name_kr": "",
-    "stage_bit": 48
+    "stage_bit": 48,
+    "locations_kr": [
+      "빙무의 절벽",
+      "용도의 폐허"
+    ]
   }
 ]

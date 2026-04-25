@@ -1012,7 +1012,25 @@
         "item": "구멍함정",
         "effective": false
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "otomo_exp": 1000,
+        "reward_zenny": 22680
+      },
+      "high_rank": {
+        "guild_point": 1900,
+        "hunter_rank_point": 1700,
+        "reward_zenny": 25200
+      },
+      "master_rank": {
+        "guild_point": 1900,
+        "hunter_rank_point": 1700,
+        "reward_zenny": 25200
+      }
+    }
   },
   {
     "game_id": -1916429696,
@@ -1877,7 +1895,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 825,
+        "hunter_rank_point": 750,
+        "otomo_exp": 350,
+        "reward_zenny": 18000
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": -1547364608,
@@ -2869,7 +2905,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 990,
+        "hunter_rank_point": 900,
+        "otomo_exp": 500,
+        "reward_zenny": 20520
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 20520
+      }
+    }
   },
   {
     "game_id": -1528962176,
@@ -3757,7 +3811,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 550,
+        "hunter_rank_point": 500,
+        "otomo_exp": 100,
+        "reward_zenny": 12600
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": -1440201088,
@@ -4506,7 +4578,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 605,
+        "hunter_rank_point": 550,
+        "otomo_exp": 150,
+        "reward_zenny": 13320
+      },
+      "high_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      },
+      "master_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      }
+    }
   },
   {
     "game_id": -1363370496,
@@ -5460,7 +5550,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 715,
+        "hunter_rank_point": 650,
+        "otomo_exp": 250,
+        "reward_zenny": 14760
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": -1083842944,
@@ -6298,7 +6406,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 990,
+        "hunter_rank_point": 900,
+        "otomo_exp": 500,
+        "reward_zenny": 19800
+      },
+      "high_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      },
+      "master_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      }
+    }
   },
   {
     "game_id": -758250816,
@@ -7097,7 +7223,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1045,
+        "hunter_rank_point": 950,
+        "otomo_exp": 550,
+        "reward_zenny": 21600
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      }
+    }
   },
   {
     "game_id": -535078400,
@@ -7920,7 +8064,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 935,
+        "hunter_rank_point": 850,
+        "otomo_exp": 450,
+        "reward_zenny": 19080
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": -283654400,
@@ -8395,7 +8557,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1100,
+        "hunter_rank_point": 1000,
+        "otomo_exp": 600,
+        "reward_zenny": 21960
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 20520
+      }
+    }
   },
   {
     "game_id": -34937520,
@@ -9248,7 +9428,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 550,
+        "hunter_rank_point": 500,
+        "otomo_exp": 100,
+        "reward_zenny": 12240
+      },
+      "high_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      },
+      "master_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      }
+    }
   },
   {
     "game_id": 15,
@@ -10019,7 +10217,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 770,
+        "hunter_rank_point": 700,
+        "otomo_exp": 300,
+        "reward_zenny": 15840
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": 16,
@@ -10956,7 +11172,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 660,
+        "hunter_rank_point": 600,
+        "otomo_exp": 200,
+        "reward_zenny": 14040
+      },
+      "high_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      },
+      "master_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      }
+    }
   },
   {
     "game_id": 25,
@@ -11693,7 +11927,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 990,
+        "hunter_rank_point": 900,
+        "otomo_exp": 500,
+        "reward_zenny": 19800
+      },
+      "high_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      },
+      "master_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      }
+    }
   },
   {
     "game_id": 26,
@@ -12388,7 +12640,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 770,
+        "hunter_rank_point": 700,
+        "otomo_exp": 300,
+        "reward_zenny": 15840
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": 33,
@@ -13096,7 +13366,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 550,
+        "hunter_rank_point": 500,
+        "otomo_exp": 100,
+        "reward_zenny": 12240
+      },
+      "high_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      },
+      "master_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "reward_zenny": 21240
+      }
+    }
   },
   {
     "game_id": 13052,
@@ -13972,7 +14260,25 @@
         "item": "구멍함정",
         "effective": false
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1700,
+        "hunter_rank_point": 1550,
+        "otomo_exp": 1000,
+        "reward_zenny": 25200
+      },
+      "high_rank": {
+        "guild_point": 1900,
+        "hunter_rank_point": 1700,
+        "reward_zenny": 33120
+      },
+      "master_rank": {
+        "guild_point": 1900,
+        "hunter_rank_point": 1700,
+        "reward_zenny": 33120
+      }
+    }
   },
   {
     "game_id": 21849,
@@ -14492,7 +14798,25 @@
         "item": "구멍함정",
         "effective": false
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1650,
+        "hunter_rank_point": 1500,
+        "otomo_exp": 1000,
+        "reward_zenny": 27360
+      },
+      "high_rank": {
+        "guild_point": 1800,
+        "hunter_rank_point": 1600,
+        "reward_zenny": 24120
+      },
+      "master_rank": {
+        "guild_point": 1800,
+        "hunter_rank_point": 1600,
+        "reward_zenny": 24120
+      }
+    }
   },
   {
     "game_id": 32634,
@@ -15266,7 +15590,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 935,
+        "hunter_rank_point": 850,
+        "otomo_exp": 450,
+        "reward_zenny": 19080
+      },
+      "high_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      },
+      "master_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      }
+    }
   },
   {
     "game_id": 107194928,
@@ -16056,7 +16398,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 880,
+        "hunter_rank_point": 800,
+        "otomo_exp": 400,
+        "reward_zenny": 16920
+      },
+      "high_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      },
+      "master_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      }
+    }
   },
   {
     "game_id": 222933952,
@@ -16896,7 +17256,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 770,
+        "hunter_rank_point": 700,
+        "otomo_exp": 300,
+        "reward_zenny": 15840
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": 402056736,
@@ -17780,7 +18158,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 605,
+        "hunter_rank_point": 550,
+        "otomo_exp": 150,
+        "reward_zenny": 12960
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": 567628288,
@@ -18664,7 +19060,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 605,
+        "hunter_rank_point": 550,
+        "otomo_exp": 150,
+        "reward_zenny": 13680
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": 746996864,
@@ -19430,7 +19844,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1375,
+        "hunter_rank_point": 1250,
+        "otomo_exp": 850,
+        "reward_zenny": 22320
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 20520
+      }
+    }
   },
   {
     "game_id": 777460864,
@@ -20421,7 +20853,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 825,
+        "hunter_rank_point": 750,
+        "otomo_exp": 350,
+        "reward_zenny": 16200
+      },
+      "high_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      },
+      "master_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      }
+    }
   },
   {
     "game_id": 1049705664,
@@ -21273,7 +21723,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 605,
+        "hunter_rank_point": 550,
+        "otomo_exp": 150,
+        "reward_zenny": 12960
+      },
+      "high_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      },
+      "master_rank": {
+        "guild_point": 1680,
+        "hunter_rank_point": 1510,
+        "reward_zenny": 21600
+      }
+    }
   },
   {
     "game_id": 1401863296,
@@ -22300,7 +22768,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 935,
+        "hunter_rank_point": 850,
+        "otomo_exp": 450,
+        "reward_zenny": 19080
+      },
+      "high_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      },
+      "master_rank": {
+        "guild_point": 1760,
+        "hunter_rank_point": 1550,
+        "reward_zenny": 22680
+      }
+    }
   },
   {
     "game_id": 1411933184,
@@ -23296,7 +23782,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 880,
+        "hunter_rank_point": 800,
+        "otomo_exp": 400,
+        "reward_zenny": 16920
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": 1467998976,
@@ -24420,7 +24924,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 990,
+        "hunter_rank_point": 900,
+        "otomo_exp": 500,
+        "reward_zenny": 20160
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 20520
+      }
+    }
   },
   {
     "game_id": 1553456768,
@@ -25469,7 +25991,25 @@
         "item": "구멍함정",
         "effective": false
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 1100,
+        "hunter_rank_point": 1000,
+        "otomo_exp": 600,
+        "reward_zenny": 21960
+      },
+      "high_rank": {
+        "guild_point": 1850,
+        "hunter_rank_point": 1650,
+        "reward_zenny": 23400
+      },
+      "master_rank": {
+        "guild_point": 1850,
+        "hunter_rank_point": 1650,
+        "reward_zenny": 21500
+      }
+    }
   },
   {
     "game_id": 1657778432,
@@ -26513,7 +27053,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 990,
+        "hunter_rank_point": 900,
+        "otomo_exp": 500,
+        "reward_zenny": 20160
+      },
+      "high_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 23040
+      },
+      "master_rank": {
+        "guild_point": 1780,
+        "hunter_rank_point": 1570,
+        "reward_zenny": 20520
+      }
+    }
   },
   {
     "game_id": 1663995904,
@@ -27629,7 +28187,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 880,
+        "hunter_rank_point": 800,
+        "otomo_exp": 400,
+        "reward_zenny": 16920
+      },
+      "high_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      },
+      "master_rank": {
+        "guild_point": 1740,
+        "hunter_rank_point": 1530,
+        "reward_zenny": 22320
+      }
+    }
   },
   {
     "game_id": 1965232896,
@@ -28358,7 +28934,25 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 935,
+        "hunter_rank_point": 850,
+        "otomo_exp": 450,
+        "reward_zenny": 19080
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   },
   {
     "game_id": 2129596800,
@@ -28953,6 +29547,24 @@
         "item": "구멍함정",
         "effective": true
       }
-    ]
+    ],
+    "quest_rewards": {
+      "low_rank": {
+        "guild_point": 825,
+        "hunter_rank_point": 750,
+        "otomo_exp": 350,
+        "reward_zenny": 16560
+      },
+      "high_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      },
+      "master_rank": {
+        "guild_point": 1720,
+        "hunter_rank_point": 1520,
+        "reward_zenny": 21960
+      }
+    }
   }
 ]
