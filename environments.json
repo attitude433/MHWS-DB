@@ -1,0 +1,1123 @@
+[
+  {
+    "key": "RefEnvironment_0000_0000",
+    "name_kr": "경계의 모래 평원",
+    "name_en": "Windward Plains",
+    "names_all": {
+      "ja": "隔ての砂原",
+      "en": "Windward Plains",
+      "fr": "Plaines venteuses",
+      "it": "Piane ventose",
+      "de": "Windebene",
+      "es": "Llanos Barlovento",
+      "ru": "Наветренные равнины",
+      "pl": "Nawietrzne Równiny",
+      "pt": "Planícies Zéfiras",
+      "ko": "경계의 모래 평원",
+      "zh-tw": "天塹沙原",
+      "zh-cn": "天堑沙原"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0000_Short",
+    "name_kr": "경계의 모래 평원",
+    "name_en": "Plains",
+    "names_all": {
+      "ja": "隔ての砂原",
+      "en": "Plains",
+      "fr": "Plaines",
+      "it": "Piane",
+      "de": "Ebene",
+      "es": "Llanos",
+      "ru": "Равнины",
+      "pl": "Równiny",
+      "pt": "Planícies",
+      "ko": "경계의 모래 평원",
+      "zh-tw": "天塹沙原",
+      "zh-cn": "天堑沙原"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0001",
+    "name_kr": "주홍빛 숲",
+    "name_en": "Scarlet Forest",
+    "names_all": {
+      "ja": "緋の森",
+      "en": "Scarlet Forest",
+      "fr": "Forêt écarlate",
+      "it": "Foresta cremisi",
+      "de": "Karminwald",
+      "es": "Bosque Escarlata",
+      "ru": "Багряный лес",
+      "pl": "Szkarłatny Las",
+      "pt": "Floresta Escarlate",
+      "ko": "주홍빛 숲",
+      "zh-tw": "緋紅森林",
+      "zh-cn": "绯红森林"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0001_Short",
+    "name_kr": "주홍빛 숲",
+    "name_en": "Forest",
+    "names_all": {
+      "ja": "緋の森",
+      "en": "Forest",
+      "fr": "Forêt",
+      "it": "Foresta",
+      "de": "Wald",
+      "es": "Bosque",
+      "ru": "Лес",
+      "pl": "Las",
+      "pt": "Floresta",
+      "ko": "주홍빛 숲",
+      "zh-tw": "緋紅森林",
+      "zh-cn": "绯红森林"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0002",
+    "name_kr": "기름 솟는 계곡",
+    "name_en": "Oilwell Basin",
+    "names_all": {
+      "ja": "油涌き谷",
+      "en": "Oilwell Basin",
+      "fr": "Bassin pétrolier",
+      "it": "Bacino petrolifero",
+      "de": "Ölquellbecken",
+      "es": "Cuenca Oleosa",
+      "ru": "Нефтяная низина",
+      "pl": "Kotlina Oleju",
+      "pt": "Bacia Oleídea",
+      "ko": "기름 솟는 계곡",
+      "zh-tw": "湧油山谷",
+      "zh-cn": "涌油谷"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0002_Short",
+    "name_kr": "기름 솟는 계곡",
+    "name_en": "Basin",
+    "names_all": {
+      "ja": "油涌き谷",
+      "en": "Basin",
+      "fr": "Bassin",
+      "it": "Bacino",
+      "de": "Becken",
+      "es": "Cuenca",
+      "ru": "Низина",
+      "pl": "Kotlina",
+      "pt": "Bacia",
+      "ko": "기름 솟는 계곡",
+      "zh-tw": "湧油山谷",
+      "zh-cn": "涌油谷"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0003",
+    "name_kr": "빙무의 절벽",
+    "name_en": "Iceshard Cliffs",
+    "names_all": {
+      "ja": "氷霧の断崖",
+      "en": "Iceshard Cliffs",
+      "fr": "Falaises de glace",
+      "it": "Scogliere ghiaccioaguzzo",
+      "de": "Eissplitterklippen",
+      "es": "Acantilados del Témpano",
+      "ru": "Ледяные утёсы",
+      "pl": "Lodowcowe Klify",
+      "pt": "Escarpas Frígidas",
+      "ko": "빙무의 절벽",
+      "zh-tw": "冰霧斷崖",
+      "zh-cn": "冰雾断崖"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0003_Short",
+    "name_kr": "빙무의 절벽",
+    "name_en": "Cliffs",
+    "names_all": {
+      "ja": "氷霧の断崖",
+      "en": "Cliffs",
+      "fr": "Falaises",
+      "it": "Scogliere",
+      "de": "Klippen",
+      "es": "Acantilados",
+      "ru": "Утёсы",
+      "pl": "Klify",
+      "pt": "Escarpas",
+      "ko": "빙무의 절벽",
+      "zh-tw": "冰霧斷崖",
+      "zh-cn": "冰雾断崖"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0004",
+    "name_kr": "용도의 폐허",
+    "name_en": "Ruins of Wyveria",
+    "names_all": {
+      "ja": "竜都の跡形",
+      "en": "Ruins of Wyveria",
+      "fr": "Ruines de Wyveria",
+      "it": "Rovine di Wyveria",
+      "de": "Ruinen von Wyveria",
+      "es": "Ruinas de Wyveria",
+      "ru": "Руины Виверии",
+      "pl": "Ruiny Wiwerii",
+      "pt": "Ruínas de Serperia",
+      "ko": "용도의 폐허",
+      "zh-tw": "龍都遺跡",
+      "zh-cn": "龙都遗迹"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0004_Short",
+    "name_kr": "용도의 폐허",
+    "name_en": "Wyveria",
+    "names_all": {
+      "ja": "竜都の跡形",
+      "en": "Wyveria",
+      "fr": "Wyveria",
+      "it": "Wyveria",
+      "de": "Wyveria",
+      "es": "Wyveria",
+      "ru": "Виверия",
+      "pl": "Wiweria",
+      "pt": "Serperia",
+      "ko": "용도의 폐허",
+      "zh-tw": "龍都遺跡",
+      "zh-cn": "龙都遗迹"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0000",
+    "name_kr": "바람 소리 마을 쿠나파",
+    "name_en": "Kunafa, Windsong Village",
+    "names_all": {
+      "ja": "風音の村 クナファ",
+      "en": "Kunafa, Windsong Village",
+      "fr": "Kunafa, où chante le vent",
+      "it": "Kunafa, villaggio Cantavento",
+      "de": "Kunafa, Dorf des pfeifenden Windes",
+      "es": "Kunafa, aldea de viento cantor",
+      "ru": "Кунафа, деревня Песни ветра",
+      "pl": "Kunafa, Wioska Pieśni Wiatru",
+      "pt": "Kunafa, Aldeia dos Ventos Cantantes",
+      "ko": "바람 소리 마을 쿠나파",
+      "zh-tw": "風音之村庫納法",
+      "zh-cn": "风音村库纳法"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0000_Short",
+    "name_kr": "바람 소리 마을 쿠나파",
+    "name_en": "Kunafa",
+    "names_all": {
+      "ja": "風音の村 クナファ",
+      "en": "Kunafa",
+      "fr": "Kunafa",
+      "it": "Kunafa",
+      "de": "Kunafa",
+      "es": "Kunafa",
+      "ru": "Кунафа",
+      "pl": "Kunafa",
+      "pt": "Kunafa",
+      "ko": "바람 소리 마을 쿠나파",
+      "zh-tw": "風音之村庫納法",
+      "zh-cn": "风音村库纳法"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0002",
+    "name_kr": "모리바의 아지트",
+    "name_en": "Wudwud Hideout",
+    "names_all": {
+      "ja": "モリバーのアジト",
+      "en": "Wudwud Hideout",
+      "fr": "Repaire des Wudwuds",
+      "it": "Nascondiglio Wudwud",
+      "de": "Versteck der Wudwuds",
+      "es": "Escondite Wudwud",
+      "ru": "Убежище вудвудов",
+      "pl": "Leśniaczówka",
+      "pt": "Esconderijo Wudwud",
+      "ko": "모리바의 아지트",
+      "zh-tw": "莫利巴之家",
+      "zh-cn": "森狸人之家"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0002_Short",
+    "name_kr": "모리바의 아지트",
+    "name_en": "Wudwud H.",
+    "names_all": {
+      "ja": "モリバーのアジト",
+      "en": "Wudwud H.",
+      "fr": "Wudwuds",
+      "it": "Nascondiglio Wudwud",
+      "de": "Wudwud-Versteck",
+      "es": "Escondite Wudwud",
+      "ru": "Убеж. вудвудов",
+      "pl": "Leśniaczówka",
+      "pt": "Esconderijo de Wudwud",
+      "ko": "모리바의 아지트",
+      "zh-tw": "莫利巴之家",
+      "zh-cn": "森狸人之家"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0003",
+    "name_kr": "불가마 마을 아즈즈",
+    "name_en": "Azuz, the Everforge",
+    "names_all": {
+      "ja": "火窯の里 アズズ",
+      "en": "Azuz, the Everforge",
+      "fr": "Azuz, la Forge éternelle",
+      "it": "Azuz, la Forgeterna",
+      "de": "Azuz, Heimat der Schmieden",
+      "es": "Azuz, la Forja Eterna",
+      "ru": "Азуз, Вечная Кузница",
+      "pl": "Azuz, Wieczna Kuźnia",
+      "pt": "Azuz, a Forjeterna",
+      "ko": "불가마 마을 아즈즈",
+      "zh-tw": "火窯之村阿茲茲",
+      "zh-cn": "火窑村阿孜兹"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0003_Short",
+    "name_kr": "불가마 마을 아즈즈",
+    "name_en": "Azuz",
+    "names_all": {
+      "ja": "火窯の里 アズズ",
+      "en": "Azuz",
+      "fr": "Azuz",
+      "it": "Azuz",
+      "de": "Azuz",
+      "es": "Azuz",
+      "ru": "Азуз",
+      "pl": "Azuz",
+      "pt": "Azuz",
+      "ko": "불가마 마을 아즈즈",
+      "zh-tw": "火窯之村阿茲茲",
+      "zh-cn": "火窑村阿孜兹"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0004",
+    "name_kr": "수호자 마을 실드",
+    "name_en": "Sild, The Keepers' Vigil",
+    "names_all": {
+      "ja": "守人の里 シルド",
+      "en": "Sild, The Keepers' Vigil",
+      "fr": "Sild, village des Veilleurs",
+      "it": "Sild, Veglia dei Custodi",
+      "de": "Sild, Wiege der Hüter",
+      "es": "Sild, Atalaya de los Vigilantes",
+      "ru": "Сильд, форпост Хранителей",
+      "pl": "Sild, Warta Stróżów",
+      "pt": "Sild, Vigília dos Protetores",
+      "ko": "수호자 마을 실드",
+      "zh-tw": "守護者村莊希爾德",
+      "zh-cn": "守护者村西尔德"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0004_Short",
+    "name_kr": "수호자 마을 실드",
+    "name_en": "Sild",
+    "names_all": {
+      "ja": "守人の里 シルド",
+      "en": "Sild",
+      "fr": "Sild",
+      "it": "Sild",
+      "de": "Sild",
+      "es": "Sild",
+      "ru": "Сильд",
+      "pl": "Sild",
+      "pt": "Sild",
+      "ko": "수호자 마을 실드",
+      "zh-tw": "守護者村莊希爾德",
+      "zh-cn": "守护者村西尔德"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0000",
+    "name_kr": "교류의 봉우리 스자",
+    "name_en": "Suja, Peaks of Accord",
+    "names_all": {
+      "ja": "交わりの峰 スージャ",
+      "en": "Suja, Peaks of Accord",
+      "fr": "Suja, cimes de la concorde",
+      "it": "Suja, Vette dell'armonia",
+      "de": "Suja",
+      "es": "Suja, picos de la Armonía",
+      "ru": "Судджа, пики Согласия",
+      "pl": "Suja, Szczyty Porozumienia",
+      "pt": "Suja, Picos da Concórdia",
+      "ko": "교류의 봉우리 스자",
+      "zh-tw": "交匯之峰蘇加",
+      "zh-cn": "交汇之峰酥加"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0000_Short",
+    "name_kr": "교류의 봉우리 스자",
+    "name_en": "Suja",
+    "names_all": {
+      "ja": "交わりの峰 スージャ",
+      "en": "Suja",
+      "fr": "Suja",
+      "it": "Suja",
+      "de": "Suja",
+      "es": "Suja",
+      "ru": "Судджа",
+      "pl": "Suja",
+      "pt": "Suja",
+      "ko": "교류의 봉우리 스자",
+      "zh-tw": "交匯之峰蘇加",
+      "zh-cn": "交汇之峰酥加"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0001",
+    "name_kr": "대집회소",
+    "name_en": "Grand Hub",
+    "names_all": {
+      "ja": "大集会所",
+      "en": "Grand Hub",
+      "fr": "Grand-Camp",
+      "it": "Centro supremo",
+      "de": "Große Stätte",
+      "es": "Gran centro",
+      "ru": "Общее место встреч",
+      "pl": "Wielkie Centrum",
+      "pt": "Grande Central",
+      "ko": "대집회소",
+      "zh-tw": "大集會所",
+      "zh-cn": "大集会所"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0002",
+    "name_kr": "수련장",
+    "name_en": "Training Area",
+    "names_all": {
+      "ja": "トレーニングエリア",
+      "en": "Training Area",
+      "fr": "Aire d'entraînement",
+      "it": "Area di addestramento",
+      "de": "Trainingsbereich",
+      "es": "Zona de entrenamiento",
+      "ru": "Тренировочная зона",
+      "pl": "Obszar treningowy",
+      "pt": "Área de Treinamento",
+      "ko": "수련장",
+      "zh-tw": "訓練場",
+      "zh-cn": "训练场"
+    }
+  },
+  {
+    "key": "RefEnvironment_0000_0005",
+    "name_kr": "용곡의 터",
+    "name_en": "Wounded Hollow",
+    "names_all": {
+      "ja": "竜谷の跡地",
+      "en": "Wounded Hollow",
+      "fr": "Vallon meurtri",
+      "it": "Valle trafitta",
+      "de": "Klauenriss",
+      "es": "Hoyo de los heridos",
+      "ru": "Изувеченная лощина",
+      "pl": "Dolina Ran",
+      "pt": "Vão Ferido",
+      "ko": "용곡의 터",
+      "zh-tw": "龍谷遺址",
+      "zh-cn": "龙谷遗址"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0003",
+    "name_kr": "용등의 사원",
+    "name_en": "Dragontorch Shrine",
+    "names_all": {
+      "ja": "龍灯の社",
+      "en": "Dragontorch Shrine",
+      "fr": "Sanctuaire de la Torche",
+      "it": "Santuario della Fiaccola",
+      "de": "Drachenfackel-Schrein",
+      "es": "Santuario de la Tea Dracónida",
+      "ru": "Храм Драконьего светоча",
+      "pl": "Świątynia Smoczego Ognia",
+      "pt": "Altar da Tocha Dracônica",
+      "ko": "용등의 사원",
+      "zh-tw": "龍燈聖域",
+      "zh-cn": "龙灯圣域"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0004",
+    "name_kr": "빙쇄의 동봉",
+    "name_en": "Rimechain Peak",
+    "names_all": {
+      "ja": "氷鎖の凍峰",
+      "en": "Rimechain Peak",
+      "fr": "Cimes gelées",
+      "it": "Picco brinachiusa",
+      "de": "Frostspitze",
+      "es": "Pico de Escarcha",
+      "ru": "Пик Морозная Цепь",
+      "pl": "Szczyt Szronowych Łańcuchów",
+      "pt": "Pico Trancagelado",
+      "ko": "빙쇄의 동봉",
+      "zh-tw": "冰鎖凍峰",
+      "zh-cn": "冰锁冻峰"
+    }
+  },
+  {
+    "key": "RefEnvironment_0001_0005",
+    "name_kr": "망각의 기계 폐허",
+    "name_en": "Forgotten Machineworks",
+    "names_all": {
+      "ja": "遺忘の械墟",
+      "en": "Forgotten Machineworks",
+      "fr": "Machinerie oubliée",
+      "it": "Macchina dimenticata",
+      "de": "Vergessenes Werk",
+      "es": "Maquinaria olvidada",
+      "ru": "Заброшенный завод",
+      "pl": "Zapomniana Maszyneria",
+      "pt": "Maquinário Esquecido",
+      "ko": "망각의 기계 폐허",
+      "zh-tw": "被遺忘的機械廢墟",
+      "zh-cn": "遗忘的机械废墟"
+    }
+  },
+  {
+    "key": "RefEnvironment_9999_0000",
+    "name_kr": "강가의 샛길",
+    "name_en": "Riverside Trail",
+    "names_all": {
+      "ja": "河畔の間道",
+      "en": "Riverside Trail",
+      "fr": "Sentier de la rivière",
+      "it": "Percorso lungofiume",
+      "de": "Uferpfad",
+      "es": "Sendero ribereño",
+      "ru": "Прибрежная тропа",
+      "pl": "Nadrzeczny szlak",
+      "pt": "Trilha Ribeirinha",
+      "ko": "강가의 샛길",
+      "zh-tw": "河畔小徑",
+      "zh-cn": "河畔小径"
+    }
+  },
+  {
+    "key": "RefEnvironment_9999_0001",
+    "name_kr": "바위굴의 갱도",
+    "name_en": "Cavern Tunnel",
+    "names_all": {
+      "ja": "岩窟の坑道",
+      "en": "Cavern Tunnel",
+      "fr": "Passage souterrain",
+      "it": "Tunnel della caverna",
+      "de": "Stollen",
+      "es": "Túnel de la caverna",
+      "ru": "Тоннель в скале",
+      "pl": "Tunel jaskini",
+      "pt": "Túnel da Caverna",
+      "ko": "바위굴의 갱도",
+      "zh-tw": "岩窟坑道",
+      "zh-cn": "石窟坑道"
+    }
+  },
+  {
+    "key": "RefEnvironment_9999_0003",
+    "name_kr": "용도의 폐도",
+    "name_en": "Lost Path to Wyveria",
+    "names_all": {
+      "ja": "竜都の廃道",
+      "en": "Lost Path to Wyveria",
+      "fr": "Chemin oublié de Wyveria",
+      "it": "Sentiero perduto per Wyveria",
+      "de": "Alter Pfad nach Wyveria",
+      "es": "Senda perdida a Wyveria",
+      "ru": "Затерянный путь в Виверию",
+      "pl": "Zaginiona droga do Wiwerii",
+      "pt": "Caminho Perdido para Serperia",
+      "ko": "용도의 폐도",
+      "zh-tw": "龍都廢道",
+      "zh-cn": "龙都荒道"
+    }
+  },
+  {
+    "key": "RefEnvironment_9999_0004",
+    "name_kr": "수호자의 참배길",
+    "name_en": "Keepers' Approach",
+    "names_all": {
+      "ja": "守人の参道",
+      "en": "Keepers' Approach",
+      "fr": "Voie des Veilleurs",
+      "it": "Arrivo dei Custodi",
+      "de": "Hütersteig",
+      "es": "Acceso de los Vigilantes",
+      "ru": "Путь Хранителей",
+      "pl": "Droga Stróżów",
+      "pt": "Percurso dos Protetores",
+      "ko": "수호자의 참배길",
+      "zh-tw": "守護者參道",
+      "zh-cn": "守护者参道"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0000",
+    "name_kr": "풍요기",
+    "name_en": "Plenty",
+    "names_all": {
+      "ja": "豊穣期",
+      "en": "Plenty",
+      "fr": "Abondance",
+      "it": "Abbondanza",
+      "de": "Fülle",
+      "es": "Bonanza",
+      "ru": "Изобилие",
+      "pl": "Urodzaj",
+      "pt": "Fartura",
+      "ko": "풍요기",
+      "zh-tw": "豐收期",
+      "zh-cn": "丰饶期"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0001",
+    "name_kr": "황폐기",
+    "name_en": "Fallow",
+    "names_all": {
+      "ja": "荒廃期",
+      "en": "Fallow",
+      "fr": "Déclin",
+      "it": "Riposo",
+      "de": "Ödzeit",
+      "es": "Sequía",
+      "ru": "Увядание",
+      "pl": "Posucha",
+      "pt": "Pousio",
+      "ko": "황폐기",
+      "zh-tw": "荒廢期",
+      "zh-cn": "荒芜期"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0002_0",
+    "name_kr": "기상 이변",
+    "name_en": "Inclemency",
+    "names_all": {
+      "ja": "異常気象",
+      "en": "Inclemency",
+      "fr": "Anomalie climatique",
+      "it": "Intemperie",
+      "de": "Wetterereignis",
+      "es": "Inclemencia",
+      "ru": "Ненастье",
+      "pl": "Niepogoda",
+      "pt": "Intempérie",
+      "ko": "기상 이변",
+      "zh-tw": "異常天氣",
+      "zh-cn": "极端天气"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0002",
+    "name_kr": "모래 폭풍",
+    "name_en": "Sandtide",
+    "names_all": {
+      "ja": "砂嵐",
+      "en": "Sandtide",
+      "fr": "Tempête de sable",
+      "it": "Tempesta di sabbia",
+      "de": "Sandflut",
+      "es": "Marea de arena",
+      "ru": "Песчаный прилив",
+      "pl": "Fala piaskowa",
+      "pt": "Maré de Areia",
+      "ko": "모래 폭풍",
+      "zh-tw": "沙塵暴",
+      "zh-cn": "沙尘暴"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0003",
+    "name_kr": "집중 호우",
+    "name_en": "Downpour",
+    "names_all": {
+      "ja": "集中豪雨",
+      "en": "Downpour",
+      "fr": "Déluge",
+      "it": "Temporale",
+      "de": "Regen",
+      "es": "Aguacero",
+      "ru": "Проливные дожди",
+      "pl": "Ulewa",
+      "pt": "Temporal",
+      "ko": "집중 호우",
+      "zh-tw": "局部暴雨",
+      "zh-cn": "局部暴雨"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0004",
+    "name_kr": "불꽃 질주",
+    "name_en": "Firespring",
+    "names_all": {
+      "ja": "火走り",
+      "en": "Firespring",
+      "fr": "Coulée de feu",
+      "it": "Primafiamma",
+      "de": "Feuerschwemme",
+      "es": "Fuente ígnea",
+      "ru": "Извержение огня",
+      "pl": "Źródło Ognia",
+      "pt": "Nascente Ígnea",
+      "ko": "불꽃 질주",
+      "zh-tw": "奔火",
+      "zh-cn": "奔火"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0005",
+    "name_kr": "눈보라",
+    "name_en": "Frostwinds",
+    "names_all": {
+      "ja": "吹雪",
+      "en": "Frostwinds",
+      "fr": "Blizzard",
+      "it": "Venti gelidi",
+      "de": "Schneesturm",
+      "es": "Ventiscas",
+      "ru": "Ледяные ветра",
+      "pl": "Mroźne wiatry",
+      "pt": "Ventos Gélidos",
+      "ko": "눈보라",
+      "zh-tw": "暴風雪",
+      "zh-cn": "暴风雪"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0006",
+    "name_kr": "용의 각성",
+    "name_en": "Wyvern's Wakening",
+    "names_all": {
+      "ja": "竜の目覚め",
+      "en": "Wyvern's Wakening",
+      "fr": "Éveil des wyvernes",
+      "it": "Risveglio dei wyvern",
+      "de": "Wyvernwacht",
+      "es": "Despertar del Wyvern",
+      "ru": "Пробуждение виверн",
+      "pl": "Przebudzenie wiwern",
+      "pt": "Despertar das Serpes",
+      "ko": "용의 각성",
+      "zh-tw": "龍之覺醒",
+      "zh-cn": "龙之觉醒"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0000_6",
+    "name_kr": "용의 정적",
+    "name_en": "Wyvern's Tranquility",
+    "names_all": {
+      "ja": "竜の静寂",
+      "en": "Wyvern's Tranquility",
+      "fr": "Sérénité des wyvernes",
+      "it": "Tranquillità dei wyvern",
+      "de": "Wyvernruh",
+      "es": "Tranquilidad del Wyvern",
+      "ru": "Спокойствие виверн",
+      "pl": "Spokój wiwern",
+      "pt": "Sossego das Serpes",
+      "ko": "용의 정적",
+      "zh-tw": "龍之靜寂",
+      "zh-cn": "龙之静寂"
+    }
+  },
+  {
+    "key": "RefEnvironment_0002_0001_6",
+    "name_kr": "용의 겉잠",
+    "name_en": "Wyvern's Stirring",
+    "names_all": {
+      "ja": "竜のまどろみ",
+      "en": "Wyvern's Stirring",
+      "fr": "Sommeil des wyvernes",
+      "it": "Sonno dei wyvern",
+      "de": "Wyvernschlaf",
+      "es": "Vigilia del Wyvern",
+      "ru": "Волнение виверн",
+      "pl": "Sen wiwern",
+      "pt": "Sono das Serpes",
+      "ko": "용의 겉잠",
+      "zh-tw": "龍之淺眠",
+      "zh-cn": "龙之假寐"
+    }
+  },
+  {
+    "key": "RefEnvironment_0003_0000",
+    "name_kr": "늦은 밤",
+    "name_en": "Late Night",
+    "names_all": {
+      "ja": "深夜",
+      "en": "Late Night",
+      "fr": "Pleine nuit",
+      "it": "Notte fonda",
+      "de": "Tiefe Nacht",
+      "es": "Noche cerrada",
+      "ru": "Поздний вечер",
+      "pl": "Późna noc",
+      "pt": "Tarde da Noite",
+      "ko": "늦은 밤",
+      "zh-tw": "深夜",
+      "zh-cn": "深夜"
+    }
+  },
+  {
+    "key": "RefEnvironment_0003_0001",
+    "name_kr": "아침",
+    "name_en": "Morning",
+    "names_all": {
+      "ja": "朝",
+      "en": "Morning",
+      "fr": "Matin",
+      "it": "Mattino",
+      "de": "Morgen",
+      "es": "Mañana",
+      "ru": "Утро",
+      "pl": "Ranek",
+      "pt": "Manhã",
+      "ko": "아침",
+      "zh-tw": "早上",
+      "zh-cn": "早晨"
+    }
+  },
+  {
+    "key": "RefEnvironment_0003_0002",
+    "name_kr": "낮",
+    "name_en": "Daytime",
+    "names_all": {
+      "ja": "昼",
+      "en": "Daytime",
+      "fr": "Journée",
+      "it": "Giorno",
+      "de": "Tag",
+      "es": "Día",
+      "ru": "День",
+      "pl": "Dzień",
+      "pt": "Dia",
+      "ko": "낮",
+      "zh-tw": "午間",
+      "zh-cn": "白昼"
+    }
+  },
+  {
+    "key": "RefEnvironment_0003_0003",
+    "name_kr": "저녁",
+    "name_en": "Evening",
+    "names_all": {
+      "ja": "夕",
+      "en": "Evening",
+      "fr": "Soirée",
+      "it": "Sera",
+      "de": "Abend",
+      "es": "Tarde",
+      "ru": "Вечер",
+      "pl": "Wieczór",
+      "pt": "Anoitecer",
+      "ko": "저녁",
+      "zh-tw": "黃昏",
+      "zh-cn": "黄昏"
+    }
+  },
+  {
+    "key": "RefEnvironment_0003_0004",
+    "name_kr": "밤",
+    "name_en": "Nighttime",
+    "names_all": {
+      "ja": "夜",
+      "en": "Nighttime",
+      "fr": "Nuit",
+      "it": "Notte",
+      "de": "Nacht",
+      "es": "Noche",
+      "ru": "Ночь",
+      "pl": "Noc",
+      "pt": "Noite",
+      "ko": "밤",
+      "zh-tw": "夜晚",
+      "zh-cn": "夜晚"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0001",
+    "name_kr": "베이스캠프",
+    "name_en": "Base Camp",
+    "names_all": {
+      "ja": "ベースキャンプ",
+      "en": "Base Camp",
+      "fr": "Camp de base",
+      "it": "Campo base",
+      "de": "Basislager",
+      "es": "Campamento base",
+      "ru": "Базовый лагерь",
+      "pl": "Obóz główny",
+      "pt": "Acampamento",
+      "ko": "베이스캠프",
+      "zh-tw": "大本營",
+      "zh-cn": "大本营"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0001_0",
+    "name_kr": "베이스캠프",
+    "name_en": "Base Camp",
+    "names_all": {
+      "ja": "ベースキャンプ",
+      "en": "Base Camp",
+      "fr": "Camp de base",
+      "it": "Campo base",
+      "de": "Basislager",
+      "es": "Campamento base",
+      "ru": "Базовый лагерь",
+      "pl": "Obóz główny",
+      "pt": "Acampamento",
+      "ko": "베이스캠프",
+      "zh-tw": "大本營",
+      "zh-cn": "大本营"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0001_1",
+    "name_kr": "베이스캠프",
+    "name_en": "Base Camp",
+    "names_all": {
+      "ja": "ベースキャンプ",
+      "en": "Base Camp",
+      "fr": "Camp de base",
+      "it": "Campo base",
+      "de": "Basislager",
+      "es": "Campamento base",
+      "ru": "Базовый лагерь",
+      "pl": "Obóz główny",
+      "pt": "Acampamento",
+      "ko": "베이스캠프",
+      "zh-tw": "大本營",
+      "zh-cn": "大本营"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0001_2",
+    "name_kr": "베이스캠프",
+    "name_en": "Base Camp",
+    "names_all": {
+      "ja": "ベースキャンプ",
+      "en": "Base Camp",
+      "fr": "Camp de base",
+      "it": "Campo base",
+      "de": "Basislager",
+      "es": "Campamento base",
+      "ru": "Базовый лагерь",
+      "pl": "Obóz główny",
+      "pt": "Acampamento",
+      "ko": "베이스캠프",
+      "zh-tw": "大本營",
+      "zh-cn": "大本营"
+    }
+  },
+  {
+    "key": "RefEnvironment_0004_0001_3",
+    "name_kr": "베이스캠프",
+    "name_en": "Base Camp",
+    "names_all": {
+      "ja": "ベースキャンプ",
+      "en": "Base Camp",
+      "fr": "Camp de base",
+      "it": "Campo base",
+      "de": "Basislager",
+      "es": "Campamento base",
+      "ru": "Базовый лагерь",
+      "pl": "Obóz główny",
+      "pt": "Acampamento",
+      "ko": "베이스캠프",
+      "zh-tw": "大本營",
+      "zh-cn": "大本营"
+    }
+  },
+  {
+    "key": "RefEnvironment_0005_0000",
+    "name_kr": "제방",
+    "name_en": "Dam",
+    "names_all": {
+      "ja": "堰堤",
+      "en": "Dam",
+      "fr": "Barrage",
+      "it": "Diga",
+      "de": "Damm",
+      "es": "Presa",
+      "ru": "Плотина",
+      "pl": "Tama",
+      "pt": "Represa",
+      "ko": "제방",
+      "zh-tw": "堰堤",
+      "zh-cn": "堰堤"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Danger",
+    "name_kr": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터가 자주 출몰하는 곳이라 주의가 필요하다.",
+    "name_en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nMonsters frequent this area, so remain cautious.",
+    "names_all": {
+      "ja": "装備やアイテムを変更できる簡易な設備。\r\n<ICON UI_DECIDE>でファストトラベルが可能。\r\nモンスターの通り道のため要注意。",
+      "en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nMonsters frequent this area, so remain cautious.",
+      "fr": "Camp provisoire où vous pouvez changer\r\nd'équipement et d'objets. Voyage rapide avec <ICON UI_DECIDE>.\r\nZone dangereuse que les monstres trouvent facilement.",
+      "it": "Accampamento mobile dove cambiare equipaggiamento\r\ne oggetti. Viaggia velocemente qui con <ICON UI_DECIDE>.\r\nArea pericolosa facile da trovare per i mostri.",
+      "de": "Ein einfaches Zelt, in dem du Ausrüstung und\r\nObjekte wechseln kannst. Schnellreise per <ICON UI_DECIDE>.\r\nGefährlich, wird leicht von Monstern entdeckt.",
+      "es": "Un campamento temporal para cambiar tu equipo\r\ny los objetos. Viaja de inmediato aquí con <ICON UI_DECIDE>.\r\nUna zona peligrosa que los monstruos encontrarán.",
+      "ru": "Временный лагерь. Здесь можно сменить снаряжение\r\nи предметы. Нажмите <ICON UI_DECIDE> для быстрого перемещения.\r\nОсторожно: монстры часто появляются в этой области.",
+      "pl": "Przenośny obóz, gdzie możesz zmieniać wyposażenie\r\ni przedmioty. Szybko podróżuj tu poprzez <ICON UI_DECIDE>.\r\nPotwory często się tu pojawiają, więc zachowaj ostrożność.",
+      "pt": "Uma Instatenda para mudar de equipamento\r\ne itens. Use a viagem rápida com <ICON UI_DECIDE>.\r\nÁrea perigosa, facilmente achada por monstros.",
+      "ko": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터가 자주 출몰하는 곳이라 주의가 필요하다.",
+      "zh-tw": "可用於變更裝備與補充道具的簡易設備。\r\n按<ICON UI_DECIDE>就可快速移動至該處。\r\n魔物會路經此處，需要提高警覺。",
+      "zh-cn": "可以变更装备和道具的简易设施。\r\n按<ICON UI_DECIDE>可以快速旅行前往。\r\n怪物有可能会路经此处，需要提高警惕。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Caution",
+    "name_kr": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터가 자주 출몰할 수 있어 불안정하다.",
+    "name_en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nAn insecure area that monsters may pass through.",
+    "names_all": {
+      "ja": "装備やアイテムを変更できる簡易な設備。\r\n<ICON UI_DECIDE>でファストトラベルが可能。\r\nモンスターの通り道となりやすいため不安定。",
+      "en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nAn insecure area that monsters may pass through.",
+      "fr": "Camp provisoire où vous pouvez changer\r\nd'équipement et d'objets. Voyage rapide avec <ICON UI_DECIDE>.\r\nAttention, les monstres peuvent le trouver.",
+      "it": "Accampamento mobile dove cambiare equipaggiamento\r\ne oggetti. Viaggia velocemente qui con <ICON UI_DECIDE>.\r\nI mostri potrebbero trovarlo, quindi attenzione.",
+      "de": "Ein einfaches Zelt, in dem du Ausrüstung und\r\nObjekte wechseln kannst. Schnellreise per <ICON UI_DECIDE>.\r\nVorsicht, kann von Monstern entdeckt werden.",
+      "es": "Un campamento temporal para cambiar tu equipo\r\ny los objetos. Viaja de inmediato aquí con <ICON UI_DECIDE>.\r\nLos monstruos podrían encontrarla; ten cuidado.",
+      "ru": "Временный лагерь. Здесь можно сменить снаряжение\r\nи предметы. Нажмите <ICON UI_DECIDE> для быстрого перемещения.\r\nВнимание: монстры иногда появляются в этой области.",
+      "pl": "Przenośny obóz, gdzie możesz zmieniać wyposażenie\r\ni przedmioty. Szybko podróżuj tu poprzez <ICON UI_DECIDE>.\r\nNiestabilny obszar, przez który mogą przechodzić potwory.",
+      "pt": "Uma Instatenda para mudar de equipamento\r\ne itens. Use a viagem rápida com <ICON UI_DECIDE>.\r\nÉ possível que monstros a achem, tome cuidado.",
+      "ko": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터가 자주 출몰할 수 있어 불안정하다.",
+      "zh-tw": "可用於變更裝備與補充道具的簡易設備。\r\n按<ICON UI_DECIDE>就可快速移動至該處。\r\n魔物有可能會路經此處，環境並不穩定。",
+      "zh-cn": "可以变更装备和道具的简易设施。\r\n按<ICON UI_DECIDE>可以快速旅行前往。\r\n怪物有可能会路经此处，环境并不稳定。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Safety",
+    "name_kr": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터에게 들키지 않는 곳이라 안전하다.",
+    "name_en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nA safe area that is not easily found by monsters.",
+    "names_all": {
+      "ja": "装備やアイテムを変更できる簡易な設備。\r\n<ICON UI_DECIDE>でファストトラベルが可能。\r\nモンスターに見つからない場所にあるため安全。",
+      "en": "A Pop-up Camp where you can change your\r\nequipment and items. Fast travel here with <ICON UI_DECIDE>.\r\nA safe area that is not easily found by monsters.",
+      "fr": "Camp provisoire où vous pouvez changer\r\nd'équipement et d'objets. Voyage rapide avec <ICON UI_DECIDE>.\r\nZone sûre que les monstres ne trouvent pas facilement.",
+      "it": "Equipaggiamento mobile dove cambiare equipaggiamento\r\ne oggetti. Viaggia velocemente qui con <ICON UI_DECIDE>.\r\nArea sicura che i mostri non trovano facilmente.",
+      "de": "Ein einfaches Zelt, in dem du Ausrüstung und\r\nObjekte wechseln kannst. Schnellreise per <ICON UI_DECIDE>.\r\nSicheres Gebiet, schwer zu entdecken.",
+      "es": "Una instalación temporal para cambiar tu equipo\r\ny los objetos. Viaja de inmediato aquí con <ICON UI_DECIDE>.\r\nUna zona difícil de encontrar para los monstruos.",
+      "ru": "Временный лагерь. Здесь можно сменить снаряжение\r\nи предметы. Нажмите <ICON UI_DECIDE> для быстрого перемещения.\r\nМонстрам будет непросто найти это место.",
+      "pl": "Przenośny obóz, gdzie możesz zmieniać wyposażenie\r\ni przedmioty. Szybko podróżuj tu poprzez <ICON UI_DECIDE>.\r\nMiejsce trudne do znalezienia przez potwory.",
+      "pt": "Uma Instatenda para mudar de equipamento\r\ne itens. Use a viagem rápida com <ICON UI_DECIDE>.\r\nÁrea segura, dificilmente achada por monstros.",
+      "ko": "장비와 아이템을 변경할 수 있는 간이 설비.\r\n<ICON UI_DECIDE>으로 패스트 트래블을 할 수 있다.\r\n몬스터에게 들키지 않는 곳이라 안전하다.",
+      "zh-tw": "可用於變更裝備與補充道具的簡易設備。\r\n按<ICON UI_DECIDE>就可快速移動至該處。\r\n位於不會被魔物發現的場所，較為安全。",
+      "zh-cn": "可以变更装备和道具的简易设施。\r\n按<ICON UI_DECIDE>可以快速旅行前往。\r\n该位置不会被怪物发现，比较安全。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Danger_Discover",
+    "name_kr": "발견된 간이 캠프 설치 후보지.\r\n몬스터가 자주 출몰하는 곳이라 위험하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+    "name_en": "A discovered Pop-up Camp site.\r\nMonsters frequent this area, so remain cautious.\r\nCan be used for fast travel once set up.",
+    "names_all": {
+      "ja": "発見済みの簡易キャンプ設営候補地。\r\nモンスターの通り道のため要注意。\r\n設営後はファストトラベルが可能となる。",
+      "en": "A discovered Pop-up Camp site.\r\nMonsters frequent this area, so remain cautious.\r\nCan be used for fast travel once set up.",
+      "fr": "Site de camp provisoire découvert.\r\nLes monstres repèrent la zone facilement.\r\nVoyage rapide possible une fois monté.",
+      "it": "Luogo per l'accampamento mobile scoperto.\r\nArea pericolosa che i mostri trovano facilmente.\r\nSi può usare per il trasferimento rapido una volta allestito.",
+      "de": "Ein entdeckter Standort für ein Feldlager.\r\nGefährlich und für Monster leicht auffindbar.\r\nIst nach Aufbau zur Schnellreise nutzbar.",
+      "es": "Zona para campamento temporal descubierta.\r\nZona peligrosa que los monstruos encontrarán.\r\nFunciona como viaje rápido una vez levantado.",
+      "ru": "Место для временного лагеря. Будьте осторожны:\r\nмонстры часто появляются в этой области.\r\nРазбейте лагерь, чтобы быстро сюда перемещаться.",
+      "pl": "Odkryta lokalizacja przenośnego obozu. Potwory\r\nczęsto się tu pojawiają, więc zachowaj ostrożność.\r\nRozbity obóz może służyć do szybkiej podróży.",
+      "pt": "Local descoberto para Instatenda.\r\nÁrea perigosa, facilmente achada por monstros.\r\nPode ser usado para viagem rápida após montada.",
+      "ko": "발견된 간이 캠프 설치 후보지.\r\n몬스터가 자주 출몰하는 곳이라 위험하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+      "zh-tw": "已發現的簡易營地備選地點。魔物會路經\r\n此處，需要提高警覺。設置營地後可快速\r\n移動。",
+      "zh-cn": "已发现的简易营地备选地。\r\n怪物有可能会路经此处，需要提高警惕。\r\n设置简易营地后可以通过快速旅行到达。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Caution_Discover",
+    "name_kr": "발견된 간이 캠프 설치 후보지.\r\n몬스터가 자주 출몰할 수 있어 불안정하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+    "name_en": "A discovered Pop-up Camp site.\r\nAn insecure area that monsters may pass through.\r\nCan be used for fast travel once set up.",
+    "names_all": {
+      "ja": "発見済みの簡易キャンプ設営候補地。\r\nモンスターの通り道となりやすいため不安定。\r\n設営後はファストトラベルが可能となる。",
+      "en": "A discovered Pop-up Camp site.\r\nAn insecure area that monsters may pass through.\r\nCan be used for fast travel once set up.",
+      "fr": "Site de camp provisoire découvert.\r\nPeut être trouvé par les monstres.\r\nVoyage rapide possible une fois monté.",
+      "it": "Luogo per l'accampamento mobile scoperto.\r\nI mostri potrebbero trovarlo, quindi attenzione.\r\nSi può usare per il trasferimento rapido una volta allestito.",
+      "de": "Ein entdeckter Standort für ein Feldlager.\r\nFür Monster eventuell auffindbar.\r\nIst nach Aufbau zur Schnellreise nutzbar.",
+      "es": "Zona para campamento temporal descubierta.\r\nLos monstruos pueden encontrarlo; ten cuidado.\r\nFunciona como viaje rápido una vez levantado.",
+      "ru": "Место для временного лагеря. Будьте начеку:\r\nмонстры иногда появляются в этой области.\r\nРазбейте лагерь, чтобы быстро сюда перемещаться.",
+      "pl": "Odkryta lokalizacja przenośnego obozu. Niestabilny\r\nobszar, przez który mogą przechodzić potwory.\r\nRozbity obóz może służyć do szybkiej podróży.",
+      "pt": "Local descoberto para Instatenda.\r\nÉ possível que monstros a achem, tome cuidado. \r\nPode ser usado para viagem rápida após montada.",
+      "ko": "발견된 간이 캠프 설치 후보지.\r\n몬스터가 자주 출몰할 수 있어 불안정하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+      "zh-tw": "已發現的簡易營地備選地點。魔物有可能\r\n會路經此處，環境並不穩定。設置營地後\r\n可快速移動。",
+      "zh-cn": "已发现的简易营地备选地。\r\n怪物有可能会路经此处，环境并不稳定。\r\n设置简易营地后可以通过快速旅行到达。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Safety_Discover",
+    "name_kr": "발견된 간이 캠프 설치 후보지.\r\n몬스터에게 들키지 않는 곳이라 안전하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+    "name_en": "A discovered Pop-up Camp site.\r\nA safe area, not easily found by monsters.\r\nCan be used for fast travel once set up.",
+    "names_all": {
+      "ja": "発見済みの簡易キャンプ設営候補地。\r\nモンスターに見つからない場所のため安全。\r\n設営後はファストトラベルが可能となる。",
+      "en": "A discovered Pop-up Camp site.\r\nA safe area, not easily found by monsters.\r\nCan be used for fast travel once set up.",
+      "fr": "Site de camp provisoire découvert.\r\nZone sûre à l'abri des monstres.\r\nVoyage rapide possible une fois monté.",
+      "it": "Luogo per l'accampamento mobile scoperto.\r\nArea sicura che i mostri non trovano facilmente.\r\nSi può usare per il trasferimento rapido una volta allestito.",
+      "de": "Ein entdeckter Standort für ein Feldlager.\r\nSicher und für Monster nur schwer auffindbar.\r\nIst nach Aufbau zur Schnellreise nutzbar.",
+      "es": "Zona para campamento temporal descubierta.\r\nZona segura que los monstruos no encontrarán.\r\nFunciona como viaje rápido una vez levantado.",
+      "ru": "Место для временного лагеря.\r\nБезопасная область, которую монстры не посещают.\r\nРазбейте лагерь, чтобы быстро сюда перемещаться.",
+      "pl": "Odkryta lokalizacja przenośnego obozu.\r\nBezpieczny teren. Potworom trudno go znaleźć.\r\nRozbity obóz może służyć do szybkiej podróży.",
+      "pt": "Local descoberto para Instatenda.\r\nÁrea segura, dificilmente achada por monstros.\r\nPode ser usado para viagem rápida após montada.",
+      "ko": "발견된 간이 캠프 설치 후보지.\r\n몬스터에게 들키지 않는 곳이라 안전하다.\r\n설치 후에는 패스트 트래블을 할 수 있다.",
+      "zh-tw": "已發現的簡易營地備選地點。\r\n位於不會被魔物發現的場所，較為安全。\r\n設置營地後可快速移動。",
+      "zh-cn": "已发现的简易营地备选地。\r\n处于不会被怪物发现的位置，很安全。\r\n设置简易营地后可以通过快速旅行到达。"
+    }
+  },
+  {
+    "key": "RefEnvironment_TentTips_Destroy",
+    "name_kr": "파괴된 간이 캠프 흔적.\r\n시간이 지나면 다시 복구된다.\r\n추가 비용을 지불하면 즉시 복구할 수 있다.",
+    "name_en": "The remains of your Pop-up Camp. It will\r\nbe repaired over time, but you can pay extra\r\nto repair it quickly for immediate use.",
+    "names_all": {
+      "ja": "破壊された簡易キャンプの跡。\r\n時間経過によって修復され、再び利用可能。\r\n追加費用を支払えば、すぐに修復を完了できる。",
+      "en": "The remains of your Pop-up Camp. It will\r\nbe repaired over time, but you can pay extra\r\nto repair it quickly for immediate use.",
+      "fr": "Les restes de votre camp provisoire. Le camp sera\r\nréparé au fil du temps, mais si vous payez un\r\nsupplément, vous pouvez le réparer tout de suite.",
+      "it": "I resti del tuo accampamento mobile.\r\nVerrà riparato con il tempo, ma se paghi\r\nun extra sarà riparato immediatamente.",
+      "de": "Die Überreste eines Feldlagers. Es wird nach und\r\nnach wieder auf Vordermann gebracht, oder du\r\nkannst für den sofortigen Wiederaufbau zahlen.",
+      "es": "Restos del campamento temporal. Con tiempo\r\nlo repararán... o puedes pagar para repararlo\r\nrápido y poder volver a usarlo al momento.",
+      "ru": "Всё, что осталось от вашего временного лагеря.\r\nОн постепенно восстанавливается, но процесс\r\nможно ускорить за дополнительную плату.",
+      "pl": "Pozostałości przenośnego obozu. Z czasem zostanie\r\nnaprawiony, ale możesz zapłacić, aby został\r\nnaprawiony i był zdatny do natychmiastowego użytku.",
+      "pt": "Os restos da sua Instatenda. Ela será\r\nreparada ao longo do tempo, mas você pode pagar\r\npara repará-la rapidamente para uso imediato.",
+      "ko": "파괴된 간이 캠프 흔적.\r\n시간이 지나면 다시 복구된다.\r\n추가 비용을 지불하면 즉시 복구할 수 있다.",
+      "zh-tw": "被破壞的簡易營地的殘骸。經過一段時間後\r\n會被修復並可再次使用。支付額外費用就可\r\n馬上完成修復。",
+      "zh-cn": "被破坏的简易营地的残骸。\r\n经过一段时间后会被修复并再次利用。\r\n支付额外费用就可以立即修复完成。"
+    }
+  },
+  {
+    "key": "RefEnvironment_Tent_Discover",
+    "name_kr": "{0} 후보지",
+    "name_en": "{0} Campsite",
+    "names_all": {
+      "ja": "{0}　候補地",
+      "en": "{0} Campsite",
+      "fr": "Camp {0}",
+      "it": "Accampamento: {0}",
+      "de": "Lagerplatz {0}",
+      "es": "Campamento {0}",
+      "ru": "Место для лагеря: {0}",
+      "pl": "Obóz {0}",
+      "pt": "Acampamento: {0}",
+      "ko": "{0} 후보지",
+      "zh-tw": "{0}　備選地點",
+      "zh-cn": "{0}　设营备选地"
+    }
+  }
+]

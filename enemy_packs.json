@@ -1,0 +1,74 @@
+{
+  "zako_packs": [
+    {
+      "pack_id": 1,
+      "members": [
+        {
+          "em_id": 17,
+          "name_kr": "케라토노스♂",
+          "name_en": "Ceratonoth (Male)",
+          "em_enum": "EM1150_00_0"
+        },
+        {
+          "em_id": 19,
+          "name_kr": "케라토노스♀",
+          "name_en": "Ceratonoth (Female)",
+          "em_enum": "EM1150_00_1"
+        }
+      ]
+    },
+    {
+      "pack_id": 2,
+      "members": [
+        {
+          "em_id": 18,
+          "name_kr": "달루토돈",
+          "name_en": "Dalthydon",
+          "em_enum": "EM1151_00_0"
+        },
+        {
+          "em_id": 1909526144,
+          "name_kr": "달루토돈(가축종)",
+          "name_en": "Dalthydon (Livestock)",
+          "em_enum": "EM1151_00_1"
+        }
+      ]
+    }
+  ],
+  "animal_packs": [
+    {
+      "pack_id": 1,
+      "members": [
+        {
+          "em_id": 1806879616,
+          "name_kr": "천군 나비",
+          "name_en": "Myriads",
+          "em_enum": "EM5210_00_0"
+        },
+        {
+          "em_id": -1250248576,
+          "name_kr": "천군 나비",
+          "name_en": "Myriads",
+          "em_enum": "EM5210_10_0"
+        }
+      ]
+    },
+    {
+      "pack_id": 2,
+      "members": [
+        {
+          "em_id": 599509312,
+          "name_kr": "별무리 물고기",
+          "name_en": "Starduster",
+          "em_enum": "EM5300_00_0"
+        },
+        {
+          "em_id": -968922496,
+          "name_kr": "별무리 물고기",
+          "name_en": "Starduster",
+          "em_enum": "EM5300_10_0"
+        }
+      ]
+    }
+  ]
+}
