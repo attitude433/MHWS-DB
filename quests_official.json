@@ -27,7 +27,16 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "전와 차타카브라 토벌",
+    "inven_chapter": "Ch 1-1: 모래 평원을 누비는 자",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "차타카브라 토벌",
+    "inven_hr_requirement": "조건 없음",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001030",
@@ -57,7 +66,14 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "그 혀는 대단히 질기다",
+    "inven_field": "경계의 모래 평원 (낮/황폐기)",
+    "inven_star": "★5",
+    "inven_objective": "차타카브라(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 21 이상",
+    "inven_reward": "견갑옥"
   },
   {
     "mission_id": "001030",
@@ -87,7 +103,8 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "001050",
@@ -117,7 +134,16 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "불꽃 튀는 케마트리스 사냥",
+    "inven_chapter": "Ch 1-2: 바람 소리와 함께 살아가는 마을",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "케마트리스 사냥",
+    "inven_hr_requirement": "조건 없음",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001050",
@@ -147,7 +173,14 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "저녁 식사 때의 이그니션",
+    "inven_field": "경계의 모래 평원 (밤/풍요기)",
+    "inven_star": "★4",
+    "inven_objective": "케마트리스 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "식재료"
   },
   {
     "mission_id": "001080",
@@ -177,7 +210,16 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "붉은 무대와 꽃의 가시",
+    "inven_chapter": "Ch 1-3: 숲의 생태 조사",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★1",
+    "inven_objective": "라바라 바리나 사냥",
+    "inven_hr_requirement": "HR 2 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001080",
@@ -207,7 +249,14 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "바요네트가 춤추는 비",
+    "inven_field": "주홍빛 숲 (낮/집중 호우)",
+    "inven_star": "★5",
+    "inven_objective": "라바라 바리나(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 21 이상",
+    "inven_reward": "장식품"
   },
   {
     "mission_id": "001100",
@@ -237,7 +286,16 @@
         "em_enum": "EM0021_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "바바콩가를 쫓아내라!",
+    "inven_chapter": "Ch 1-3: 숲의 생태 조사",
+    "inven_field": "바바콩가사냥",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001100",
@@ -267,7 +325,14 @@
         "em_enum": "EM0021_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "군침 도는 식재료를 노리는 바바콩가",
+    "inven_field": "주홍빛 숲 (낮/황폐기)",
+    "inven_star": "★4",
+    "inven_objective": "바바콩가 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "식재료"
   },
   {
     "mission_id": "001130",
@@ -297,7 +362,16 @@
         "em_enum": "EM0151_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "모래 바다의 발라하라",
+    "inven_chapter": "Ch 1-4: 헌터의 긍지",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "발라하라 사냥",
+    "inven_hr_requirement": "HR 2 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001130",
@@ -327,7 +401,14 @@
         "em_enum": "EM0151_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "나선과 위태로운 시운전",
+    "inven_field": "경계의 모래 평원 (아침/황폐기)",
+    "inven_star": "★1",
+    "inven_objective": "발라하라 사냥",
+    "inven_hr_requirement": "HR 2 이상",
+    "inven_reward": "갑옥"
   },
   {
     "mission_id": "001135",
@@ -357,7 +438,16 @@
         "em_enum": "EM0150_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "벽수의 정점에 군림하다",
+    "inven_chapter": "Ch 1-4: 헌터의 긍지",
+    "inven_field": "도샤구마(보스) 사냥",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "001135",
@@ -387,7 +477,14 @@
         "em_enum": "EM0150_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "모래 상처투성이의 사나운 혼",
+    "inven_field": "경계의 모래 평원 (밤/황폐기)",
+    "inven_star": "★5",
+    "inven_objective": "도샤구마 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "장식품"
   },
   {
     "mission_id": "001135",
@@ -417,7 +514,14 @@
         "em_enum": "EM0150_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "야만적인 모습",
+    "inven_field": "경계의 모래 평원 (낮/황폐기)",
+    "inven_star": "★5",
+    "inven_objective": "도샤구마(보스) 포획",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "도샤구마 스케치"
   },
   {
     "mission_id": "002150",
@@ -447,7 +551,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "물속의 연회",
+    "inven_chapter": "Ch 1-5: 장대비가 쏟아지는 저편",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★2",
+    "inven_objective": "우드 투나 격퇴",
+    "inven_hr_requirement": "HR 3 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "002150",
@@ -477,7 +590,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "파도 소리는 숲을 넘어",
+    "inven_chapter": "Ch 5-2: 혼란의 세계",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "002190",
@@ -507,7 +629,16 @@
         "em_enum": "EM0155_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "뜨거운 마음은 폭발 직전?",
+    "inven_chapter": "Ch 2-1: 뜨거운 마음이 닿는 곳에",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★2",
+    "inven_objective": "푸푸로포루 사냥",
+    "inven_hr_requirement": "HR 3 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "002190",
@@ -537,7 +668,14 @@
         "em_enum": "EM0155_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "어둠 속의 케미쿠스",
+    "inven_field": "기름 솟는 계곡 (아침/황폐기)",
+    "inven_star": "★2",
+    "inven_objective": "푸푸로포루 사냥",
+    "inven_hr_requirement": "HR 3 이상",
+    "inven_reward": "광석 채취 소재"
   },
   {
     "mission_id": "003210",
@@ -567,7 +705,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "무자비한 섬광",
+    "inven_chapter": "Ch 2-2: 맞부딪힌 무기와 무기",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★2",
+    "inven_objective": "레 다우 토벌",
+    "inven_hr_requirement": "HR 3 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003210",
@@ -597,7 +744,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "울려 퍼지는 황뢰",
+    "inven_chapter": "Ch 5-2: 혼란의 세계",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★6",
+    "inven_objective": "레 다우 토벌",
+    "inven_hr_requirement": "HR 30 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003230",
@@ -627,7 +783,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "침묵, 교활, 암살자의 모든 것",
+    "inven_chapter": "Ch 2-3: 멀리 고향을 떠나서는",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★2",
+    "inven_objective": "네르스큐라 사냥",
+    "inven_hr_requirement": "HR 4 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003230",
@@ -657,7 +822,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "광기의 그림자 조사",
+    "inven_chapter": "Ch 4-2: 용곡에 도사린 그림자",
+    "inven_field": "용곡의 터",
+    "inven_star": "★4",
+    "inven_objective": "광룡화 네르스큐라 사냥",
+    "inven_hr_requirement": "HR 15 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003240",
@@ -687,7 +861,16 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "히라바미 사냥 의뢰",
+    "inven_chapter": "Ch 2-3: 멀리 고향을 떠나서는",
+    "inven_field": "히라바미사냥",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003240",
@@ -717,7 +900,8 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "003250",
@@ -747,7 +931,16 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "이글이글! 혁원수 아자라칸",
+    "inven_chapter": "Ch 2-4: 고대에서 온 불꽃",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★2",
+    "inven_objective": "아자라칸 사냥",
+    "inven_hr_requirement": "HR 4 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003250",
@@ -777,7 +970,14 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "혁원수, 원수를 무찌르니",
+    "inven_field": "기름 솟는 계곡 (밤/황폐기)",
+    "inven_star": "★9",
+    "inven_objective": "아자라칸(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "빛나는 부적"
   },
   {
     "mission_id": "003255",
@@ -807,7 +1007,16 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "흑염은 또다시 대지를 태운다",
+    "inven_chapter": "Ch 5-2: 혼란의 세계",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "003260",
@@ -837,7 +1046,14 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "타올라라, 네이키드 보디",
+    "inven_field": "기름 솟는 계곡 (낮/불꽃 질주)",
+    "inven_star": "★6",
+    "inven_objective": "누 이그드라 사냥",
+    "inven_hr_requirement": "HR 31 이상",
+    "inven_reward": "목걸이 티켓, 아즈즈 배달 식사권"
   },
   {
     "mission_id": "003260",
@@ -867,7 +1083,14 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "검은 불꽃이여, 저주받으라",
+    "inven_field": "기름 솟는 계곡 (늦은 밤/불꽃 질주)",
+    "inven_star": "★9",
+    "inven_objective": "누 이그드라(역전왕) 사냥",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "빛나는 부적/염옥소 사냥증 γ"
   },
   {
     "mission_id": "004270",
@@ -897,7 +1120,16 @@
         "em_enum": "EM0150_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "불길한 개벽",
+    "inven_chapter": "Ch 3-1: 계속해서 지켜온 자들",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 도샤구마 토벌",
+    "inven_hr_requirement": "HR 5 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "004270",
@@ -927,7 +1159,14 @@
         "em_enum": "EM0150_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "슬프고 잔혹한 하얀 짐승",
+    "inven_field": "용도의 폐허 (밤/용의 각성)",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 도샤구마 사냥",
+    "inven_hr_requirement": "HR 21 이상",
+    "inven_reward": "헌터 랭크 포인트"
   },
   {
     "mission_id": "004290",
@@ -957,7 +1196,16 @@
         "em_enum": "EM0002_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "하얀 왕자",
+    "inven_chapter": "Ch 3-1: 계속해서 지켜온 자들",
+    "inven_field": "수호룡 리오레우스토벌",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "004290",
@@ -987,7 +1235,14 @@
         "em_enum": "EM0002_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "이국의 하늘과 왕",
+    "inven_field": "용도의 폐허 (아침/용의 겉잠)",
+    "inven_star": "★6",
+    "inven_objective": "수호룡 리오레우스(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 31 이상",
+    "inven_reward": "녹슨 무기 조각"
   },
   {
     "mission_id": "004310",
@@ -1017,7 +1272,16 @@
         "em_enum": "EM0160_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "수호룡 알슈베르도 격퇴",
+    "inven_chapter": "Ch 3-1: 계속해서 지켜온 자들",
+    "inven_field": "수호룡 알슈베르도격퇴",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "004310",
@@ -1047,7 +1311,16 @@
         "em_enum": "EM0160_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "고독한 그림자의 하얀 꿈",
+    "inven_chapter": "Ch 3-4: 꿈속에서만 그린 낙원",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 알슈베르도 토벌",
+    "inven_hr_requirement": "HR 6 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "004320",
@@ -1077,7 +1350,16 @@
         "em_enum": "EM0162_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "빙쇄의 시련",
+    "inven_chapter": "Ch 3-2: 동봉에 가야",
+    "inven_field": "빙쇄의 동봉",
+    "inven_star": "★3",
+    "inven_objective": "진 다하드 격퇴",
+    "inven_hr_requirement": "HR 5 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "004320",
@@ -1107,7 +1389,16 @@
         "em_enum": "EM0162_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "깎아지른 절벽을 나아가는 동토의 주인",
+    "inven_chapter": "Ch 5-1: 얼어붙은 봉우리의 폭풍",
+    "inven_field": "빙쇄의 동봉",
+    "inven_star": "★6",
+    "inven_objective": "진 다하드 토벌",
+    "inven_hr_requirement": "HR 30 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "005340",
@@ -1137,7 +1428,16 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "고도의 파수꾼",
+    "inven_chapter": "Ch 3-3: 돌고 도는 생명",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 오도가론 아종 토벌",
+    "inven_hr_requirement": "HR 6 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "005340",
@@ -1167,7 +1467,14 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "봉인이 풀린 흉조",
+    "inven_field": "용도의 폐허 (낮/용의 정적)",
+    "inven_star": "★6",
+    "inven_objective": "수호룡 오도가론 아종(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 31 이상",
+    "inven_reward": "발바닥젤리 티켓"
   },
   {
     "mission_id": "005350",
@@ -1197,7 +1504,16 @@
         "em_enum": "EM0163_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥꾼은 허공에 숨어든다",
+    "inven_chapter": "Ch 3-3: 돌고 도는 생명",
+    "inven_field": "시이우사냥",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "005350",
@@ -1227,7 +1543,14 @@
         "em_enum": "EM0163_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "그 섬광은 내게 통하지 않는다",
+    "inven_field": "용도의 폐허 (낮/용의 각성)",
+    "inven_star": "★6",
+    "inven_objective": "시이우(역전의 개체) 사냥",
+    "inven_hr_requirement": "HR 31 이상",
+    "inven_reward": "화무 카탈로그"
   },
   {
     "mission_id": "005360",
@@ -1257,7 +1580,8 @@
         "em_enum": "EM0160_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "005360",
@@ -1287,7 +1611,8 @@
         "em_enum": "EM0160_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "005390",
@@ -1317,7 +1642,16 @@
         "em_enum": "EM0164_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "수호룡 조 시아",
+    "inven_chapter": "Ch 3-5: 몬스터 헌터",
+    "inven_field": "용등의 사원",
+    "inven_star": "★3",
+    "inven_objective": "조 시아 토벌",
+    "inven_hr_requirement": "HR 7 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "005390",
@@ -1347,7 +1681,16 @@
         "em_enum": "EM0164_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "맹아",
+    "inven_chapter": "Ch 6-2: 맹아의 첫 울음소리",
+    "inven_field": "용등의 사원",
+    "inven_star": "★8",
+    "inven_objective": "조 시아 토벌",
+    "inven_hr_requirement": "HR 50 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "006015",
@@ -1377,7 +1720,16 @@
         "em_enum": "EM0008_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "풍요에 이끌린 자들",
+    "inven_chapter": "Ch 4-1: 새로운 생태계",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★4",
+    "inven_objective": "얀쿡크 포획",
+    "inven_hr_requirement": "HR 8 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "006025",
@@ -1407,7 +1759,14 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "정상에 있는 영지주",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★4",
+    "inven_objective": "네르스큐라 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "식재료"
   },
   {
     "mission_id": "007035",
@@ -1456,7 +1815,16 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "벼락 속에서 춤추는 꽃",
+    "inven_chapter": "Ch 4-3: 잠든 용과 장미 가시",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "HR 20 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "008055",
@@ -1486,7 +1854,14 @@
         "em_enum": "EM0162_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "주데카의 심장",
+    "inven_field": "빙쇄의 동봉 (늦은 밤)",
+    "inven_star": "★9",
+    "inven_objective": "진 다하드(역전왕) 사냥",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "빛나는 부적/동봉룡 사냥증 γ"
   },
   {
     "mission_id": "009075",
@@ -1516,7 +1891,14 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "침묵의 섬광",
+    "inven_field": "경계의 모래 평원 (아침/모래 폭풍)",
+    "inven_star": "★8",
+    "inven_objective": "레 다우(역전왕) 사냥",
+    "inven_hr_requirement": "HR 50 이상",
+    "inven_reward": "황뢰룡 사냥증 γ"
   },
   {
     "mission_id": "009085",
@@ -1546,7 +1928,14 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "옛 도읍지의 물결에 잠드니 연민을 느끼네",
+    "inven_field": "주홍빛 숲 (아침/집중 호우)",
+    "inven_star": "★8",
+    "inven_objective": "우드 투나(역전왕) 사냥",
+    "inven_hr_requirement": "HR 50 이상",
+    "inven_reward": "파의룡 사냥증 γ"
   },
   {
     "mission_id": "009095",
@@ -1576,7 +1965,14 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "검은 요람 속의 아이",
+    "inven_field": "기름 솟는 계곡 (낮/불꽃 질주)",
+    "inven_star": "★10",
+    "inven_objective": "누 이그드라(역전왕) 사냥",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "염옥소 사냥증 γ, 역전 연마의 증표, 낡은 부적"
   },
   {
     "mission_id": "010115",
@@ -1625,7 +2021,16 @@
         "em_enum": "EM0022_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "검은 옷을 두른 용",
+    "inven_chapter": "Ch 5-2: 혼란의 세계",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "",
+    "inven_objective": "",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "011125",
@@ -1655,7 +2060,16 @@
         "em_enum": "EM0160_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "꿈에서 깨어나",
+    "inven_chapter": "Ch 6-1: 앞길",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★7",
+    "inven_objective": "알슈베르도 토벌",
+    "inven_hr_requirement": "HR 40 이상",
+    "inven_reward": "",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "101000",
@@ -1685,7 +2099,16 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "차타카브라 조심",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "차타카브라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "101002",
@@ -1715,7 +2138,16 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "불이 나면 케마트리스",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "케마트리스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "101004",
@@ -1745,7 +2177,16 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "아름다운 꽃에는...",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★1",
+    "inven_objective": "라바라 바리나 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "101005",
@@ -1775,7 +2216,16 @@
         "em_enum": "EM0021_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "분홍색 소동",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★1",
+    "inven_objective": "바바콩가 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "101008",
@@ -1805,7 +2255,16 @@
         "em_enum": "EM0151_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "넘실대는 모래 바다",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★1",
+    "inven_objective": "발라하라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "101009",
@@ -1835,7 +2294,16 @@
         "em_enum": "EM0150_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "숲의 도샤구마, 무법자",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★1",
+    "inven_objective": "도샤구마 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "102000",
@@ -1865,7 +2333,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "엄습하는 파의",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★2",
+    "inven_objective": "우드 투나 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "102001",
@@ -1895,7 +2372,16 @@
         "em_enum": "EM0155_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "기름 솟는 계곡의 가스 폭발",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★2",
+    "inven_objective": "푸푸로포루 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "102003",
@@ -1925,7 +2411,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "드넓은 사막을 다스리는 빛",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★2",
+    "inven_objective": "레 다우 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "102004",
@@ -1955,7 +2450,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "춤추는 그림자",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★2",
+    "inven_objective": "네르스큐라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/눈보라)"
   },
   {
     "mission_id": "102005",
@@ -1985,7 +2489,16 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "팔랑팔랑 날아와",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★2",
+    "inven_objective": "히라바미 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/눈보라)"
   },
   {
     "mission_id": "102007",
@@ -2015,7 +2528,16 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "혁원의 포효",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★2",
+    "inven_objective": "아자라칸 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "103000",
@@ -2045,7 +2567,16 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "기어 오는 화염",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★3",
+    "inven_objective": "누 이그드라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "103001",
@@ -2075,7 +2606,16 @@
         "em_enum": "EM0150_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "탄식하는 백야차",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 도샤구마 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "103002",
@@ -2105,7 +2645,16 @@
         "em_enum": "EM0002_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "불멸의 왕이 있을쏘냐",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 리오레우스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "103004",
@@ -2135,7 +2684,16 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "수호룡 오도가론 아종 사냥",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "수호룡 오도가론 아종 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "103005",
@@ -2165,7 +2723,16 @@
         "em_enum": "EM0163_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "허무를 삼키는 팔",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★3",
+    "inven_objective": "시이우 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "104000",
@@ -2195,7 +2762,16 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "무익한 싸움",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★4",
+    "inven_objective": "차타카브라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "104001",
@@ -2225,7 +2801,16 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "쫓고 쫓기는 불꽃 꼬리",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★4",
+    "inven_objective": "케마트리스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "104002",
@@ -2255,7 +2840,16 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "영원한 잠으로 이끄는 꽃이여",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★4",
+    "inven_objective": "라바라 바리나 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "104003",
@@ -2285,7 +2879,16 @@
         "em_enum": "EM0021_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "방귀 뀐 놈이 엉덩이 흔든다",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★4",
+    "inven_objective": "바바콩가 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "104004",
@@ -2315,7 +2918,16 @@
         "em_enum": "EM0151_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사막 용은 바다를 알지 못한다",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★4",
+    "inven_objective": "발라하라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "104005",
@@ -2345,7 +2957,16 @@
         "em_enum": "EM0155_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "내뿜는 독액",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★4",
+    "inven_objective": "푸푸로포루 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "104006",
@@ -2375,7 +2996,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "영지주의 사냥터",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★4",
+    "inven_objective": "네르스큐라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "104007",
@@ -2405,7 +3035,16 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "일시적인 승리",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★4",
+    "inven_objective": "히라바미 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "104009",
@@ -2435,7 +3074,16 @@
         "em_enum": "EM0001_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "여왕을 거느린 드넓은 대지",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★4",
+    "inven_objective": "리오레이아 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "104010",
@@ -2465,7 +3113,16 @@
         "em_enum": "EM0009_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "괴이한 독",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★4",
+    "inven_objective": "게리오스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "105000",
@@ -2495,7 +3152,16 @@
         "em_enum": "EM0150_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "벽수 사냥",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★5",
+    "inven_objective": "도샤구마 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105001",
@@ -2525,7 +3191,16 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "번민을 멸하는 가루라염",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★5",
+    "inven_objective": "아자라칸 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105002",
@@ -2555,7 +3230,16 @@
         "em_enum": "EM0150_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "하얀 벽수와의 정면 대결!",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 도샤구마 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "105003",
@@ -2585,7 +3269,16 @@
         "em_enum": "EM0002_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "왕의 화려한 귀환",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 리오레우스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "105004",
@@ -2615,7 +3308,16 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "새하얀 흐느낌",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 오도가론 아종 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105005",
@@ -2645,7 +3347,16 @@
         "em_enum": "EM0163_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "상반하는 질서",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "시이우 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105006",
@@ -2675,7 +3386,16 @@
         "em_enum": "EM0100_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "수호룡 안쟈나프 아종 사냥",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 안쟈나프 아종 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "105008",
@@ -2705,7 +3425,16 @@
         "em_enum": "EM0005_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "높은 산처럼 에워싼 갑옷",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★5",
+    "inven_objective": "그라비모스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "105009",
@@ -2735,7 +3464,16 @@
         "em_enum": "EM0022_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "눈사자 소풍",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★5",
+    "inven_objective": "도도블랑고 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105010",
@@ -2765,7 +3503,16 @@
         "em_enum": "EM0002_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "왕자 아래의 드넓은 하늘",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★5",
+    "inven_objective": "리오레우스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "105013",
@@ -2795,7 +3542,16 @@
         "em_enum": "EM0082_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "붉은 거품의 덧없는 꽃으로",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★5",
+    "inven_objective": "타마미츠네 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(늦은 밤/풍요기)"
   },
   {
     "mission_id": "106000",
@@ -2825,7 +3581,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "중량급 베일",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★6",
+    "inven_objective": "우드 투나 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "106001",
@@ -2855,7 +3620,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "주인을 부르는 흙먼지",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★6",
+    "inven_objective": "레 다우 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "106002",
@@ -2885,7 +3659,16 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "나락의 비웃음",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★6",
+    "inven_objective": "누 이그드라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "106003",
@@ -2915,7 +3698,16 @@
         "em_enum": "EM0162_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥꾼이 가는 땅에 서리가 내리면",
+    "inven_chapter": "",
+    "inven_field": "빙쇄의 동봉",
+    "inven_star": "★6",
+    "inven_objective": "진 다하드 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "106004",
@@ -2945,7 +3737,16 @@
         "em_enum": "EM0071_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "생명을 좀먹는 심연의 안개",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★6",
+    "inven_objective": "고어 마가라 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "106007",
@@ -2975,7 +3776,16 @@
         "em_enum": "EM0046_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "대해에서 왕이 나타나다",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★6",
+    "inven_objective": "라기아크루스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "106008",
@@ -3005,7 +3815,16 @@
         "em_enum": "EM0077_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "천의 칼날을 비추는 빛",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★6",
+    "inven_objective": "셀레기오스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "107000",
@@ -3035,7 +3854,16 @@
         "em_enum": "EM0160_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "생명의 사슬",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★7",
+    "inven_objective": "알슈베르도 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "107001",
@@ -3065,7 +3893,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "불완전한 그림자",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★7",
+    "inven_objective": "네르스큐라 클론 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "107002",
@@ -3095,7 +3932,16 @@
         "em_enum": "EM0166_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "방황하는 침략 병기",
+    "inven_chapter": "",
+    "inven_field": "빙쇄의 동봉",
+    "inven_star": "★8",
+    "inven_objective": "오메가 플라네테스 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "109000",
@@ -3163,7 +4009,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "바람과 모래와 영원한 블루스",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★9",
+    "inven_objective": "모든 타겟 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(늦은 밤/황폐기)"
   },
   {
     "mission_id": "109001",
@@ -3231,7 +4086,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "주홍빛 물의 세레나데",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★9",
+    "inven_objective": "모든 타겟 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "109002",
@@ -3299,7 +4163,16 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "생명을 태우는 자들의 탱고",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★9",
+    "inven_objective": "모든 타겟 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "109005",
@@ -3386,7 +4259,16 @@
         "em_enum": "EM0160_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "영웅의 증표",
+    "inven_chapter": "",
+    "inven_field": "용곡의 터",
+    "inven_star": "★10",
+    "inven_objective": "모든 타겟 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "109006",
@@ -3416,7 +4298,16 @@
         "em_enum": "EM0156_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 레 다우",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★9",
+    "inven_objective": "레 다우(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/모래 폭풍)"
   },
   {
     "mission_id": "109007",
@@ -3446,7 +4337,16 @@
         "em_enum": "EM0157_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 우드 투나",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★9",
+    "inven_objective": "우드 투나(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/집중 호우)"
   },
   {
     "mission_id": "109008",
@@ -3476,7 +4376,16 @@
         "em_enum": "EM0158_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 누 이그드라",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★9",
+    "inven_objective": "누 이그드라(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/불꽃 질주)"
   },
   {
     "mission_id": "109009",
@@ -3506,7 +4415,16 @@
         "em_enum": "EM0162_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 진 다하드",
+    "inven_chapter": "",
+    "inven_field": "빙쇄의 동봉",
+    "inven_star": "★9",
+    "inven_objective": "진 다하드(역전의 개체) 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "109010",
@@ -3536,7 +4454,16 @@
         "em_enum": "EM0071_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 고어 마가라",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★9",
+    "inven_objective": "고어 마가라(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/눈보라)"
   },
   {
     "mission_id": "109011",
@@ -3566,7 +4493,16 @@
         "em_enum": "EM0160_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 알슈베르도",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★9",
+    "inven_objective": "알슈베르도(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/용의 각성)"
   },
   {
     "mission_id": "109012",
@@ -3596,7 +4532,16 @@
         "em_enum": "EM0077_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 셀레기오스",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★9",
+    "inven_objective": "셀레기오스(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "109013",
@@ -3626,7 +4571,16 @@
         "em_enum": "EM0046_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 라기아크루스",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★9",
+    "inven_objective": "라기아크루스(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(밤/황폐기)"
   },
   {
     "mission_id": "109014",
@@ -3656,7 +4610,16 @@
         "em_enum": "EM0082_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 타마미츠네",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★9",
+    "inven_objective": "타마미츠네(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(늦은 밤/황폐기)"
   },
   {
     "mission_id": "109015",
@@ -3686,7 +4649,16 @@
         "em_enum": "EM0002_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사냥연습역전 리오레우스",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★9",
+    "inven_objective": "리오레우스(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(아침/황폐기)"
   },
   {
     "mission_id": "199000",
@@ -3716,7 +4688,16 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "고양이 화룡정 출격!",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★4",
+    "inven_objective": "케마트리스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "199001",
@@ -3746,7 +4727,16 @@
         "em_enum": "EM0151_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "역전의 사해룡",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★5",
+    "inven_objective": "발라하라(역전의 개체) 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/풍요기)"
   },
   {
     "mission_id": "199002",
@@ -3776,7 +4766,16 @@
         "em_enum": "EM0154_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "가공점의 특별 주문품",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★4",
+    "inven_objective": "라바라 바리나 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199003",
@@ -3806,7 +4805,16 @@
         "em_enum": "EM0008_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "이단아 같은 존재",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★4",
+    "inven_objective": "광룡화 얀쿡크 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199004",
@@ -3848,7 +4856,16 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "용곡 안전 확보",
+    "inven_chapter": "",
+    "inven_field": "용곡의 터",
+    "inven_star": "★4",
+    "inven_objective": "히라바미 2마리 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "199008",
@@ -3878,7 +4895,16 @@
         "em_enum": "EM0005_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "관리 소홀 조심",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★5",
+    "inven_objective": "그라비모스 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "199009",
@@ -3908,7 +4934,16 @@
         "em_enum": "EM0022_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "지켜야 하는 것",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★5",
+    "inven_objective": "도도블랑고 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "199010",
@@ -3938,7 +4973,16 @@
         "em_enum": "EM0150_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "베르너의 실증 실험",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 도샤구마 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "199011",
@@ -3968,7 +5012,16 @@
         "em_enum": "EM0163_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "'적응'의 형태",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "시이우 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199012",
@@ -4010,7 +5063,16 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "문지기로서",
+    "inven_chapter": "",
+    "inven_field": "용곡의 터",
+    "inven_star": "★5",
+    "inven_objective": "아자라칸 2마리 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮)"
   },
   {
     "mission_id": "199013",
@@ -4040,7 +5102,16 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "빈틈없는 강탈 서포트",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★5",
+    "inven_objective": "수호룡 오도가론 아종 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199014",
@@ -4089,7 +5160,16 @@
         "em_enum": "EM0153_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "싸움 끝에",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원",
+    "inven_star": "★5",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199015",
@@ -4138,7 +5218,16 @@
         "em_enum": "EM0021_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "털이 거칠어진다. 싫어요.",
+    "inven_chapter": "",
+    "inven_field": "주홍빛 숲",
+    "inven_star": "★5",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199016",
@@ -4187,7 +5276,16 @@
         "em_enum": "EM0005_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "성가신 방해꾼들",
+    "inven_chapter": "",
+    "inven_field": "기름 솟는 계곡",
+    "inven_star": "★6",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/풍요기)"
   },
   {
     "mission_id": "199017",
@@ -4236,7 +5334,16 @@
         "em_enum": "EM0161_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "절벽에 메아리치다",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★6",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/황폐기)"
   },
   {
     "mission_id": "199018",
@@ -4285,7 +5392,16 @@
         "em_enum": "EM0113_51_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "생존 경쟁 끝에",
+    "inven_chapter": "",
+    "inven_field": "용도의 폐허",
+    "inven_star": "★6",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(낮/기상 이변)"
   },
   {
     "mission_id": "199019",
@@ -4377,7 +5493,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "깜깜한 어둠 속의 광룡",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★8",
+    "inven_objective": "모든 타겟 사냥",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(저녁/황폐기)"
   },
   {
     "mission_id": "199020",
@@ -4407,7 +5532,16 @@
         "em_enum": "EM0071_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "길을 돌아오지 못할 자여",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★9",
+    "inven_objective": "고어 마가라(역전의 개체) 토벌",
+    "inven_hr_requirement": "",
+    "inven_reward": "",
+    "inven_time_weather": "(늦은 밤/눈보라)"
   },
   {
     "mission_id": "204000",
@@ -4437,7 +5571,8 @@
         "em_enum": "EM0152_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "204001",
@@ -4467,7 +5602,14 @@
         "em_enum": "EM0001_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "사막 너머로 숨어버린 야심한 밤의 불덩이",
+    "inven_field": "경계의 모래 평원 (밤/풍요기)",
+    "inven_star": "★4",
+    "inven_objective": "리오레이아 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "조사대 귀걸이 티켓"
   },
   {
     "mission_id": "205000",
@@ -4497,7 +5639,8 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "205001",
@@ -4527,7 +5670,8 @@
         "em_enum": "EM0159_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "700015",
@@ -4557,7 +5701,8 @@
         "em_enum": "EM0082_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "700025",
@@ -4587,7 +5732,16 @@
         "em_enum": "EM0164_50_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "천인들의 엘피스",
+    "inven_chapter": "",
+    "inven_field": "용등의 사원 (낮)",
+    "inven_star": "★10",
+    "inven_objective": "조 시아 토벌",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "역전 연마의 증표, 낡은 부적",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "720015",
@@ -4617,7 +5771,8 @@
         "em_enum": "EM0046_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": false
   },
   {
     "mission_id": "720025",
@@ -4647,7 +5802,16 @@
         "em_enum": "EM0077_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "천 개의 빛은 모두 칼날",
+    "inven_chapter": "",
+    "inven_field": "경계의 모래 평원 (낮/모래 폭풍)",
+    "inven_star": "★6",
+    "inven_objective": "셀레기오스 사냥",
+    "inven_hr_requirement": "HR 31 이상",
+    "inven_reward": "무기 장식품",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "730015",
@@ -4677,7 +5841,16 @@
         "em_enum": "EM0070_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "정상에 있는 영지주",
+    "inven_chapter": "",
+    "inven_field": "빙무의 절벽",
+    "inven_star": "★4",
+    "inven_objective": "네르스큐라 사냥",
+    "inven_hr_requirement": "HR 9 이상",
+    "inven_reward": "식재료",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "730025",
@@ -4707,7 +5880,16 @@
         "em_enum": "EM0166_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "0식 오메가 플라네테스 검증전",
+    "inven_chapter": "",
+    "inven_field": "빙쇄의 동봉 (낮)",
+    "inven_star": "★9",
+    "inven_objective": "오메가 플라네테스 토벌",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "오메가 데이터 2.0",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "740010",
@@ -4737,7 +5919,16 @@
         "em_enum": "EM0078_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "그 업보는 전쟁 속에",
+    "inven_chapter": "",
+    "inven_field": "망각의 기계 폐허 (낮)",
+    "inven_star": "★9",
+    "inven_objective": "고그마지오스 토벌",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "변이한 병기",
+    "inven_time_weather": ""
   },
   {
     "mission_id": "740025",
@@ -4767,6 +5958,15 @@
         "em_enum": "EM0078_00_0",
         "category": "large_monster"
       }
-    ]
+    ],
+    "has_inven_data": true,
+    "inven_name": "특수 임무 고그마지오스 토벌",
+    "inven_chapter": "",
+    "inven_field": "망각의 기계 폐허 (낮)",
+    "inven_star": "★10",
+    "inven_objective": "고그마지오스 토벌",
+    "inven_hr_requirement": "HR 100 이상",
+    "inven_reward": "변이한 병기, 역전 연마의 증표, 낡은 부적",
+    "inven_time_weather": ""
   }
 ]
