@@ -1,0 +1,562 @@
+[
+  {
+    "type_id": 1,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": 192746944,
+        "name_kr": "귀마개",
+        "name_en": "Earplugs"
+      }
+    ]
+  },
+  {
+    "type_id": 2,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": 192746944,
+        "name_kr": "귀마개",
+        "name_en": "Earplugs"
+      }
+    ]
+  },
+  {
+    "type_id": 3,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": -609509888,
+        "name_kr": "내진",
+        "name_en": "Tremor Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 4,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": -609509888,
+        "name_kr": "내진",
+        "name_en": "Tremor Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 5,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": -895828480,
+        "name_kr": "풍압 내성",
+        "name_en": "Windproof"
+      }
+    ]
+  },
+  {
+    "type_id": 6,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": -895828480,
+        "name_kr": "풍압 내성",
+        "name_en": "Windproof"
+      }
+    ]
+  },
+  {
+    "type_id": 7,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": -895828480,
+        "name_kr": "풍압 내성",
+        "name_en": "Windproof"
+      }
+    ]
+  },
+  {
+    "type_id": 8,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1425756032,
+        "name_kr": "불 내성",
+        "name_en": "Fire Resistance"
+      },
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 9,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 383104832,
+        "name_kr": "물 내성",
+        "name_en": "Water Resistance"
+      },
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 10,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 2143068800,
+        "name_kr": "번개 내성",
+        "name_en": "Thunder Resistance"
+      },
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 11,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 652161472,
+        "name_kr": "얼음 내성",
+        "name_en": "Ice Resistance"
+      },
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 12,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -2125233152,
+        "name_kr": "용 내성",
+        "name_en": "Dragon Resistance"
+      },
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 13,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 4,
+        "name_kr": "해독약",
+        "name_en": "Antidote"
+      },
+      {
+        "item_id": 174,
+        "name_kr": "한방약",
+        "name_en": "Herbal Medicine"
+      },
+      {
+        "item_id": 175,
+        "name_kr": "한방가루",
+        "name_en": "Herbal Powder"
+      },
+      {
+        "item_id": 631,
+        "name_kr": "도마뱀붙이구이",
+        "name_en": "Charred Lizard"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1459579264,
+        "name_kr": "독 내성",
+        "name_en": "Poison Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 14,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 4,
+        "name_kr": "해독약",
+        "name_en": "Antidote"
+      },
+      {
+        "item_id": 174,
+        "name_kr": "한방약",
+        "name_en": "Herbal Medicine"
+      },
+      {
+        "item_id": 175,
+        "name_kr": "한방가루",
+        "name_en": "Herbal Powder"
+      },
+      {
+        "item_id": 631,
+        "name_kr": "도마뱀붙이구이",
+        "name_en": "Charred Lizard"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1459579264,
+        "name_kr": "독 내성",
+        "name_en": "Poison Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 15,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": 705317568,
+        "name_kr": "기절 내성",
+        "name_en": "Stun Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 16,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": 705317568,
+        "name_kr": "기절 내성",
+        "name_en": "Stun Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 17,
+    "name_kr": "",
+    "items": [],
+    "skills": [
+      {
+        "skill_id": 522288832,
+        "name_kr": "마비 내성",
+        "name_en": "Paralysis Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 18,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 163,
+        "name_kr": "에너지드링크",
+        "name_en": "Energy Drink"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -193031552,
+        "name_kr": "수면 내성",
+        "name_en": "Sleep Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 19,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 179,
+        "name_kr": "세정제",
+        "name_en": "Cleanser"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1966172160,
+        "name_kr": "속박 내성",
+        "name_en": "Bind Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 20,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 212,
+        "name_kr": "소취옥",
+        "name_en": "Deodorant"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 820385792,
+        "name_kr": "폭파 피해 내성",
+        "name_en": "Blast Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 21,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 127,
+        "name_kr": "인내씨앗",
+        "name_en": "Adamant Seed"
+      },
+      {
+        "item_id": 171,
+        "name_kr": "경화약",
+        "name_en": "Armorskin"
+      },
+      {
+        "item_id": 173,
+        "name_kr": "그레이트 경화약",
+        "name_en": "Mega Armorskin"
+      },
+      {
+        "item_id": 177,
+        "name_kr": "경화의 가루",
+        "name_en": "Hardshell Powder"
+      },
+      {
+        "item_id": 414,
+        "name_kr": "경화탄",
+        "name_en": "Armor Ammo"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1522518528,
+        "name_kr": "방어력 DOWN 내성",
+        "name_en": "Iron Skin"
+      }
+    ]
+  },
+  {
+    "type_id": 22,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -568838336,
+        "name_kr": "속성 피해 내성",
+        "name_en": "Blight Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 23,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 212,
+        "name_kr": "소취옥",
+        "name_en": "Deodorant"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -411441344,
+        "name_kr": "악취 내성",
+        "name_en": "Stench Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 24,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 9,
+        "name_kr": "잘 익은 고기",
+        "name_en": "Well-done Steak"
+      },
+      {
+        "item_id": 10,
+        "name_kr": "설익은 고기",
+        "name_en": "Rare Steak"
+      },
+      {
+        "item_id": 165,
+        "name_kr": "활력제",
+        "name_en": "Immunizer"
+      },
+      {
+        "item_id": 632,
+        "name_kr": "와일드저키",
+        "name_en": "Wild Jerky"
+      },
+      {
+        "item_id": 8,
+        "name_kr": "휴대 식량",
+        "name_en": "Ration"
+      },
+      {
+        "item_id": 272,
+        "name_kr": "사시미 비늘",
+        "name_en": "Sushifish Scale"
+      },
+      {
+        "item_id": 685,
+        "name_kr": "대형사시미 비늘",
+        "name_en": "Great Sushifish Scale"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1940820864,
+        "name_kr": "열상 내성",
+        "name_en": "Bleeding Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 25,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 7,
+        "name_kr": "지움열매",
+        "name_en": "Nulberry"
+      },
+      {
+        "item_id": 167,
+        "name_kr": "핫드링크",
+        "name_en": "Hot Drink"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -1662120192,
+        "name_kr": "무아지경",
+        "name_en": "Antivirus"
+      }
+    ]
+  },
+  {
+    "type_id": 26,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 179,
+        "name_kr": "세정제",
+        "name_en": "Cleanser"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1966172160,
+        "name_kr": "속박 내성",
+        "name_en": "Bind Resistance"
+      }
+    ]
+  },
+  {
+    "type_id": 30,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 179,
+        "name_kr": "세정제",
+        "name_en": "Cleanser"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "type_id": 31,
+    "name_kr": "",
+    "items": [
+      {
+        "item_id": 179,
+        "name_kr": "세정제",
+        "name_en": "Cleanser"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -403054144,
+        "name_kr": "포호룡의 힘",
+        "name_en": "Mizutsune's Prowess"
+      }
+    ]
+  },
+  {
+    "type_id": 32,
+    "name_kr": "",
+    "items": [],
+    "skills": []
+  },
+  {
+    "type_id": 34,
+    "name_kr": "",
+    "items": [],
+    "skills": []
+  }
+]

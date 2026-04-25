@@ -1,0 +1,387 @@
+[
+  {
+    "disp_type": 0,
+    "first_item_name_kr": "화염탄",
+    "items": [
+      {
+        "item_id": 43,
+        "name_kr": "화염탄"
+      },
+      {
+        "item_id": 189,
+        "name_kr": "슬링어 화염탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -562534336,
+        "name_kr": "불속성 공격 강화"
+      },
+      {
+        "skill_id": 313598432,
+        "name_kr": "회심격【속성】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 1,
+    "first_item_name_kr": "수냉탄",
+    "items": [
+      {
+        "item_id": 44,
+        "name_kr": "수냉탄"
+      },
+      {
+        "item_id": 190,
+        "name_kr": "슬링어 수류탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 508916704,
+        "name_kr": "물속성 공격 강화"
+      },
+      {
+        "skill_id": 313598432,
+        "name_kr": "회심격【속성】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 2,
+    "first_item_name_kr": "전격탄",
+    "items": [
+      {
+        "item_id": 45,
+        "name_kr": "전격탄"
+      },
+      {
+        "item_id": 285,
+        "name_kr": "슬링어 뇌광탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1452140672,
+        "name_kr": "번개속성 공격 강화"
+      },
+      {
+        "skill_id": 313598432,
+        "name_kr": "회심격【속성】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 3,
+    "first_item_name_kr": "빙결탄",
+    "items": [
+      {
+        "item_id": 46,
+        "name_kr": "빙결탄"
+      },
+      {
+        "item_id": 289,
+        "name_kr": "슬링어 툭툭 빙탄"
+      },
+      {
+        "item_id": 286,
+        "name_kr": "슬링어 빙상탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1268070400,
+        "name_kr": "얼음속성 공격 강화"
+      },
+      {
+        "skill_id": 313598432,
+        "name_kr": "회심격【속성】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 4,
+    "first_item_name_kr": "멸룡탄",
+    "items": [
+      {
+        "item_id": 47,
+        "name_kr": "멸룡탄"
+      },
+      {
+        "item_id": 287,
+        "name_kr": "슬링어 멸룡탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -776946176,
+        "name_kr": "용속성 공격 강화"
+      },
+      {
+        "skill_id": 313598432,
+        "name_kr": "회심격【속성】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 5,
+    "first_item_name_kr": "독연기옥",
+    "items": [
+      {
+        "item_id": 180,
+        "name_kr": "독연기옥"
+      },
+      {
+        "item_id": 211,
+        "name_kr": "독고기"
+      },
+      {
+        "item_id": 48,
+        "name_kr": "독탄"
+      },
+      {
+        "item_id": 680,
+        "name_kr": "독병"
+      },
+      {
+        "item_id": 183,
+        "name_kr": "슬링어 독탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -1716324608,
+        "name_kr": "독속성 강화"
+      },
+      {
+        "skill_id": -168922880,
+        "name_kr": "회심격【특수】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 6,
+    "first_item_name_kr": "수면고기",
+    "items": [
+      {
+        "item_id": 186,
+        "name_kr": "수면고기"
+      },
+      {
+        "item_id": 50,
+        "name_kr": "수면탄"
+      },
+      {
+        "item_id": 681,
+        "name_kr": "수면병"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 166057120,
+        "name_kr": "수면속성 강화"
+      },
+      {
+        "skill_id": -168922880,
+        "name_kr": "회심격【특수】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 7,
+    "first_item_name_kr": "마비탄",
+    "items": [
+      {
+        "item_id": 49,
+        "name_kr": "마비탄"
+      },
+      {
+        "item_id": 208,
+        "name_kr": "마비고기"
+      },
+      {
+        "item_id": 679,
+        "name_kr": "마비병"
+      },
+      {
+        "item_id": 184,
+        "name_kr": "슬링어 마비탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -1863702144,
+        "name_kr": "마비속성 강화"
+      },
+      {
+        "skill_id": -168922880,
+        "name_kr": "회심격【특수】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 8,
+    "first_item_name_kr": "폭파병",
+    "items": [
+      {
+        "item_id": 682,
+        "name_kr": "폭파병"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -844978880,
+        "name_kr": "폭파속성 강화"
+      },
+      {
+        "skill_id": -168922880,
+        "name_kr": "회심격【특수】"
+      },
+      {
+        "skill_id": -1475134080,
+        "name_kr": "차지 마스터"
+      }
+    ]
+  },
+  {
+    "disp_type": 9,
+    "first_item_name_kr": "철갑유탄",
+    "items": [
+      {
+        "item_id": 41,
+        "name_kr": "철갑유탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -1946345856,
+        "name_kr": "발도술【힘】"
+      },
+      {
+        "skill_id": -893407296,
+        "name_kr": "KO술"
+      },
+      {
+        "skill_id": 353114912,
+        "name_kr": "모으기 타격 강화"
+      }
+    ]
+  },
+  {
+    "disp_type": 10,
+    "first_item_name_kr": "멸기탄",
+    "items": [
+      {
+        "item_id": 417,
+        "name_kr": "멸기탄"
+      },
+      {
+        "item_id": 683,
+        "name_kr": "멸기병"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 1758661504,
+        "name_kr": "스태미나 탈취"
+      }
+    ]
+  },
+  {
+    "disp_type": 11,
+    "first_item_name_kr": "슬링어 섬광탄",
+    "items": [
+      {
+        "item_id": 16,
+        "name_kr": "슬링어 섬광탄"
+      },
+      {
+        "item_id": 122,
+        "name_kr": "지급전용 섬광탄"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": -257693696,
+        "name_kr": "섬광 강화"
+      }
+    ]
+  },
+  {
+    "disp_type": 12,
+    "first_item_name_kr": "슬링어 음폭탄",
+    "items": [
+      {
+        "item_id": 70,
+        "name_kr": "슬링어 음폭탄"
+      },
+      {
+        "item_id": 207,
+        "name_kr": "지급전용 음폭탄"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "disp_type": 13,
+    "first_item_name_kr": "마비덫",
+    "items": [
+      {
+        "item_id": 20,
+        "name_kr": "마비덫"
+      },
+      {
+        "item_id": 123,
+        "name_kr": "지급전용 마비덫"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "disp_type": 14,
+    "first_item_name_kr": "구멍 함정",
+    "items": [
+      {
+        "item_id": 19,
+        "name_kr": "구멍 함정"
+      },
+      {
+        "item_id": 124,
+        "name_kr": "지급전용 함정"
+      }
+    ],
+    "skills": []
+  }
+]
