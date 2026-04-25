@@ -1,0 +1,6767 @@
+{
+  "npcs": [
+    {
+      "id": "NpcName_NN_m90101024",
+      "name_kr": "에릭",
+      "name_en": "Erik",
+      "names_all": {
+        "ja": "エリック",
+        "en": "Erik",
+        "fr": "Erik",
+        "it": "Erik",
+        "de": "Erik",
+        "es": "Erik",
+        "ru": "Эрик",
+        "pl": "Erik",
+        "pt": "Erik",
+        "ko": "에릭",
+        "zh-tw": "艾力克",
+        "zh-cn": "艾瑞克"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1014093312",
+      "name_kr": "나타",
+      "name_en": "Nata",
+      "names_all": {
+        "ja": "ナタ",
+        "en": "Nata",
+        "fr": "Nata",
+        "it": "Nata",
+        "de": "Nata",
+        "es": "Nata",
+        "ru": "Ната",
+        "pl": "Nata",
+        "pt": "Nata",
+        "ko": "나타",
+        "zh-tw": "拿塔",
+        "zh-cn": "纳塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2097763712",
+      "name_kr": "나타",
+      "name_en": "Nata",
+      "names_all": {
+        "ja": "ナタ",
+        "en": "Nata",
+        "fr": "Nata",
+        "it": "Nata",
+        "de": "Nata",
+        "es": "Nata",
+        "ru": "Ната",
+        "pl": "Nata",
+        "pt": "Nata",
+        "ko": "나타",
+        "zh-tw": "拿塔",
+        "zh-cn": "纳塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_1235736192",
+      "name_kr": "타신",
+      "name_en": "Tasheen",
+      "names_all": {
+        "ja": "タシン",
+        "en": "Tasheen",
+        "fr": "Tasheen",
+        "it": "Tasheen",
+        "de": "Tasheen",
+        "es": "Tasheen",
+        "ru": "Ташин",
+        "pl": "Tasheen",
+        "pt": "Tasheen",
+        "ko": "타신",
+        "zh-tw": "塔辛",
+        "zh-cn": "塔辛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m478646304",
+      "name_kr": "파비우스",
+      "name_en": "Fabius",
+      "names_all": {
+        "ja": "ファビウス",
+        "en": "Fabius",
+        "fr": "Fabius",
+        "it": "Fabius",
+        "de": "Fabius",
+        "es": "Fabius",
+        "ru": "Фабиус",
+        "pl": "Fabius",
+        "pt": "Fabius",
+        "ko": "파비우스",
+        "zh-tw": "法比烏斯",
+        "zh-cn": "法比乌斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1792504320",
+      "name_kr": "베르너",
+      "name_en": "Werner",
+      "names_all": {
+        "ja": "ヴェルナー",
+        "en": "Werner",
+        "fr": "Werner",
+        "it": "Werner",
+        "de": "Werner",
+        "es": "Werner",
+        "ru": "Вернер",
+        "pl": "Werner",
+        "pt": "Werner",
+        "ko": "베르너",
+        "zh-tw": "維爾納",
+        "zh-cn": "沃纳"
+      }
+    },
+    {
+      "id": "NpcName_NN_11440511",
+      "name_kr": "이사이",
+      "name_en": "Y'sai",
+      "names_all": {
+        "ja": "イサイ",
+        "en": "Y'sai",
+        "fr": "Y'sai",
+        "it": "Y'sai",
+        "de": "Y’sai",
+        "es": "Y'sai",
+        "ru": "И’сай",
+        "pl": "Y'sai",
+        "pt": "Y'sai",
+        "ko": "이사이",
+        "zh-tw": "伊賽",
+        "zh-cn": "伊塞"
+      }
+    },
+    {
+      "id": "NpcName_NN_m771758592",
+      "name_kr": "자토",
+      "name_en": "Zatoh",
+      "names_all": {
+        "ja": "ザトー",
+        "en": "Zatoh",
+        "fr": "Zatoh",
+        "it": "Zatoh",
+        "de": "Zatoh",
+        "es": "Zatoh",
+        "ru": "Затто",
+        "pl": "Zatoh",
+        "pt": "Zatoh",
+        "ko": "자토",
+        "zh-tw": "扎托",
+        "zh-cn": "扎托"
+      }
+    },
+    {
+      "id": "NpcName_NN_772234496",
+      "name_kr": "잭",
+      "name_en": "Jack",
+      "names_all": {
+        "ja": "ジャック",
+        "en": "Jack",
+        "fr": "Jack",
+        "it": "Jack",
+        "de": "Jack",
+        "es": "Jack",
+        "ru": "Джек",
+        "pl": "Jack",
+        "pt": "Jack",
+        "ko": "잭",
+        "zh-tw": "傑克",
+        "zh-cn": "杰克"
+      }
+    },
+    {
+      "id": "NpcName_NN_86",
+      "name_kr": "알마",
+      "name_en": "Alma",
+      "names_all": {
+        "ja": "アルマ",
+        "en": "Alma",
+        "fr": "Alma",
+        "it": "Alma",
+        "de": "Alma",
+        "es": "Alma",
+        "ru": "Альма",
+        "pl": "Alma",
+        "pt": "Alma",
+        "ko": "알마",
+        "zh-tw": "阿爾瑪",
+        "zh-cn": "阿尔玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m470640800",
+      "name_kr": "알마",
+      "name_en": "Alma",
+      "names_all": {
+        "ja": "アルマ",
+        "en": "Alma",
+        "fr": "Alma",
+        "it": "Alma",
+        "de": "Alma",
+        "es": "Alma",
+        "ru": "Альма",
+        "pl": "Alma",
+        "pt": "Alma",
+        "ko": "알마",
+        "zh-tw": "阿爾瑪",
+        "zh-cn": "阿尔玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_1436565248",
+      "name_kr": "올리비아",
+      "name_en": "Olivia",
+      "names_all": {
+        "ja": "オリヴィア",
+        "en": "Olivia",
+        "fr": "Olivia",
+        "it": "Olivia",
+        "de": "Olivia",
+        "es": "Olivia",
+        "ru": "Оливия",
+        "pl": "Olivia",
+        "pt": "Olivia",
+        "ko": "올리비아",
+        "zh-tw": "奧莉維亞",
+        "zh-cn": "奥利维娅"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1444742784",
+      "name_kr": "젬마",
+      "name_en": "Gemma",
+      "names_all": {
+        "ja": "ジェマ",
+        "en": "Gemma",
+        "fr": "Gemma",
+        "it": "Gemma",
+        "de": "Gemma",
+        "es": "Gemma",
+        "ru": "Джемма",
+        "pl": "Gemma",
+        "pt": "Gemma",
+        "ko": "젬마",
+        "zh-tw": "潔瑪",
+        "zh-cn": "杰玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m873093696",
+      "name_kr": "족장 엘라",
+      "name_en": "Elder Ela",
+      "names_all": {
+        "ja": "族長 エラ",
+        "en": "Elder Ela",
+        "fr": "Ela, l'Ancienne",
+        "it": "Anziana Ela",
+        "de": "Älteste Ela",
+        "es": "Anciana Ela",
+        "ru": "Старейшина Эла",
+        "pl": "Starsza Ela",
+        "pt": "Anciã Ella",
+        "ko": "족장 엘라",
+        "zh-tw": "族長艾拉",
+        "zh-cn": "埃拉族长"
+      }
+    },
+    {
+      "id": "NpcName_NN_1269375616",
+      "name_kr": "노노",
+      "name_en": "Nona",
+      "names_all": {
+        "ja": "ノノ",
+        "en": "Nona",
+        "fr": "Nona",
+        "it": "Nona",
+        "de": "Nona",
+        "es": "Nona",
+        "ru": "Нона",
+        "pl": "Nona",
+        "pt": "Nona",
+        "ko": "노노",
+        "zh-tw": "諾諾",
+        "zh-cn": "诺诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_920138880",
+      "name_kr": "나노나 할머니",
+      "name_en": "Old Nana",
+      "names_all": {
+        "ja": "ナノナおばあ",
+        "en": "Old Nana",
+        "fr": "Mamie Nana",
+        "it": "Nana",
+        "de": "Oma Nana",
+        "es": "Anciana Nana",
+        "ru": "Бабушка Нана",
+        "pl": "Stara Nana",
+        "pt": "Velha Nana",
+        "ko": "나노나 할머니",
+        "zh-tw": "娜諾娜婆婆",
+        "zh-cn": "娜诺阿婆婆"
+      }
+    },
+    {
+      "id": "NpcName_NN_16",
+      "name_kr": "피에",
+      "name_en": "Vien",
+      "names_all": {
+        "ja": "ピエ",
+        "en": "Vien",
+        "fr": "Vien",
+        "it": "Vien",
+        "de": "Vien",
+        "es": "Vien",
+        "ru": "Вьен",
+        "pl": "Vien",
+        "pt": "Vien",
+        "ko": "피에",
+        "zh-tw": "皮耶",
+        "zh-cn": "皮耶"
+      }
+    },
+    {
+      "id": "NpcName_NN_17",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_17"
+      }
+    },
+    {
+      "id": "NpcName_NN_18",
+      "name_kr": "몰니야",
+      "name_en": "Moniya",
+      "names_all": {
+        "ja": "モーニヤ",
+        "en": "Moniya",
+        "fr": "Moniya",
+        "it": "Moniya",
+        "de": "Moniya",
+        "es": "Moniya",
+        "ru": "Мония",
+        "pl": "Moniya",
+        "pt": "Moniya",
+        "ko": "몰니야",
+        "zh-tw": "莫尼亞",
+        "zh-cn": "莫尼亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_19",
+      "name_kr": "라아드",
+      "name_en": "Raadu",
+      "names_all": {
+        "ja": "ラアド",
+        "en": "Raadu",
+        "fr": "Raadu",
+        "it": "Raadu",
+        "de": "Raadu",
+        "es": "Raadu",
+        "ru": "Рааду",
+        "pl": "Raadu",
+        "pt": "Raadu",
+        "ko": "라아드",
+        "zh-tw": "拉亞德",
+        "zh-cn": "拉亚德"
+      }
+    },
+    {
+      "id": "NpcName_NN_11",
+      "name_kr": "잔드",
+      "name_en": "Zanza",
+      "names_all": {
+        "ja": "ザンザ",
+        "en": "Zanza",
+        "fr": "Zanza",
+        "it": "Zanza",
+        "de": "Zanza",
+        "es": "Zanza",
+        "ru": "Занза",
+        "pl": "Zanza",
+        "pt": "Zanza",
+        "ko": "잔드",
+        "zh-tw": "贊沙",
+        "zh-cn": "赞沙"
+      }
+    },
+    {
+      "id": "NpcName_NN_35",
+      "name_kr": "무타바",
+      "name_en": "Murtabak",
+      "names_all": {
+        "ja": "ムタバ",
+        "en": "Murtabak",
+        "fr": "Murtabak",
+        "it": "Murtabak",
+        "de": "Murtabak",
+        "es": "Murtabak",
+        "ru": "Муртабак",
+        "pl": "Murtabak",
+        "pt": "Murtabak",
+        "ko": "무타바",
+        "zh-tw": "穆塔巴",
+        "zh-cn": "穆塔帕"
+      }
+    },
+    {
+      "id": "NpcName_NN_46",
+      "name_kr": "루굴",
+      "name_en": "Rugul",
+      "names_all": {
+        "ja": "ルグル",
+        "en": "Rugul",
+        "fr": "Rugul",
+        "it": "Rugul",
+        "de": "Rugul",
+        "es": "Rugul",
+        "ru": "Ругуль",
+        "pl": "Rugul",
+        "pt": "Rugul",
+        "ko": "루굴",
+        "zh-tw": "魯古爾",
+        "zh-cn": "鲁格尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_47",
+      "name_kr": "크라바",
+      "name_en": "Karab",
+      "names_all": {
+        "ja": "クラバ",
+        "en": "Karab",
+        "fr": "Karab",
+        "it": "Karab",
+        "de": "Karab",
+        "es": "Karab",
+        "ru": "Караб",
+        "pl": "Karab",
+        "pt": "Karab",
+        "ko": "크라바",
+        "zh-tw": "克拉巴",
+        "zh-cn": "克拉巴"
+      }
+    },
+    {
+      "id": "NpcName_NN_48",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_48"
+      }
+    },
+    {
+      "id": "NpcName_NN_49",
+      "name_kr": "론타",
+      "name_en": "Ronta",
+      "names_all": {
+        "ja": "ロンタ",
+        "en": "Ronta",
+        "fr": "Ronta",
+        "it": "Ronta",
+        "de": "Ronta",
+        "es": "Ronta",
+        "ru": "Ронта",
+        "pl": "Ronta",
+        "pt": "Ronta",
+        "ko": "론타",
+        "zh-tw": "隆塔",
+        "zh-cn": "隆塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_93",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_93"
+      }
+    },
+    {
+      "id": "NpcName_NN_21",
+      "name_kr": "자레",
+      "name_en": "Zareh",
+      "names_all": {
+        "ja": "ザレ",
+        "en": "Zareh",
+        "fr": "Zareh",
+        "it": "Zareh",
+        "de": "Zareh",
+        "es": "Zareh",
+        "ru": "Зарех",
+        "pl": "Zareh",
+        "pt": "Zareh",
+        "ko": "자레",
+        "zh-tw": "薩雷",
+        "zh-cn": "扎雷"
+      }
+    },
+    {
+      "id": "NpcName_NN_m494609600",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m494609600"
+      }
+    },
+    {
+      "id": "NpcName_NN_1100797312",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1100797312"
+      }
+    },
+    {
+      "id": "NpcName_NN_m203471168",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m203471168"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1324114304",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1324114304"
+      }
+    },
+    {
+      "id": "NpcName_NN_m619544512",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m619544512"
+      }
+    },
+    {
+      "id": "NpcName_NN_1496576000",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1496576000"
+      }
+    },
+    {
+      "id": "NpcName_NN_321613696",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_321613696"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1348701952",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1348701952"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1481176192",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1481176192"
+      }
+    },
+    {
+      "id": "NpcName_NN_22",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_22"
+      }
+    },
+    {
+      "id": "NpcName_NN_41",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_41"
+      }
+    },
+    {
+      "id": "NpcName_NN_45",
+      "name_kr": "리야프",
+      "name_en": "Rayaf",
+      "names_all": {
+        "ja": "リヤフ",
+        "en": "Rayaf",
+        "fr": "Rayaf",
+        "it": "Rayaf",
+        "de": "Rayaf",
+        "es": "Rayaf",
+        "ru": "Раяф",
+        "pl": "Rayaf",
+        "pt": "Rayaf",
+        "ko": "리야프",
+        "zh-tw": "利亞福",
+        "zh-cn": "岚亚夫"
+      }
+    },
+    {
+      "id": "NpcName_NN_m122020776",
+      "name_kr": "베르너",
+      "name_en": "Werner",
+      "names_all": {
+        "ja": "ヴェルナー",
+        "en": "Werner",
+        "fr": "Werner",
+        "it": "Werner",
+        "de": "Werner",
+        "es": "Werner",
+        "ru": "Вернер",
+        "pl": "Werner",
+        "pt": "Werner",
+        "ko": "베르너",
+        "zh-tw": "維爾納",
+        "zh-cn": "沃纳"
+      }
+    },
+    {
+      "id": "NpcName_NN_59",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_59"
+      }
+    },
+    {
+      "id": "NpcName_NN_60",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_60"
+      }
+    },
+    {
+      "id": "NpcName_NN_65",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_65"
+      }
+    },
+    {
+      "id": "NpcName_NN_66",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_66"
+      }
+    },
+    {
+      "id": "NpcName_NN_94",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_94"
+      }
+    },
+    {
+      "id": "NpcName_NN_95",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_95"
+      }
+    },
+    {
+      "id": "NpcName_NN_96",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_96"
+      }
+    },
+    {
+      "id": "NpcName_NN_97",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_97"
+      }
+    },
+    {
+      "id": "NpcName_NN_98",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_98"
+      }
+    },
+    {
+      "id": "NpcName_NN_177805728",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_177805728"
+      }
+    },
+    {
+      "id": "NpcName_NN_30157820",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_30157820"
+      }
+    },
+    {
+      "id": "NpcName_NN_25",
+      "name_kr": "사우바",
+      "name_en": "Sauba",
+      "names_all": {
+        "ja": "サウバ",
+        "en": "Sauba",
+        "fr": "Sauba",
+        "it": "Sauba",
+        "de": "Sauba",
+        "es": "Sauba",
+        "ru": "Савба",
+        "pl": "Sauba",
+        "pt": "Sauba",
+        "ko": "사우바",
+        "zh-tw": "桑烏芭",
+        "zh-cn": "桑乌巴"
+      }
+    },
+    {
+      "id": "NpcName_NN_26",
+      "name_kr": "후훌트",
+      "name_en": "Fluruta",
+      "names_all": {
+        "ja": "フフルト",
+        "en": "Fluruta",
+        "fr": "Fluruta",
+        "it": "Fluruta",
+        "de": "Fluruta",
+        "es": "Fluruta",
+        "ru": "Флурута",
+        "pl": "Fluruta",
+        "pt": "Fluruta",
+        "ko": "후훌트",
+        "zh-tw": "芙芙爾特",
+        "zh-cn": "芙芙鲁特"
+      }
+    },
+    {
+      "id": "NpcName_NN_27",
+      "name_kr": "카이사",
+      "name_en": "Kaisa",
+      "names_all": {
+        "ja": "カイサ",
+        "en": "Kaisa",
+        "fr": "Kaisa",
+        "it": "Kaisa",
+        "de": "Kaisa",
+        "es": "Kaisa",
+        "ru": "Кайса",
+        "pl": "Kaisa",
+        "pt": "Kaisa",
+        "ko": "카이사",
+        "zh-tw": "凱莎",
+        "zh-cn": "凯莎"
+      }
+    },
+    {
+      "id": "NpcName_NN_28",
+      "name_kr": "루체",
+      "name_en": "Vete",
+      "names_all": {
+        "ja": "ルーチエ",
+        "en": "Vete",
+        "fr": "Vete",
+        "it": "Vete",
+        "de": "Vete",
+        "es": "Vete",
+        "ru": "Ветэ",
+        "pl": "Vete",
+        "pt": "Vete",
+        "ko": "루체",
+        "zh-tw": "露潔",
+        "zh-cn": "卢洁"
+      }
+    },
+    {
+      "id": "NpcName_NN_30",
+      "name_kr": "로자",
+      "name_en": "Roza",
+      "names_all": {
+        "ja": "ラザー",
+        "en": "Roza",
+        "fr": "Roza",
+        "it": "Roza",
+        "de": "Roza",
+        "es": "Roza",
+        "ru": "Горза",
+        "pl": "Roza",
+        "pt": "Roza",
+        "ko": "로자",
+        "zh-tw": "拉瑟",
+        "zh-cn": "雷莎"
+      }
+    },
+    {
+      "id": "NpcName_NN_32",
+      "name_kr": "르블",
+      "name_en": "Leba",
+      "names_all": {
+        "ja": "ルブ",
+        "en": "Leba",
+        "fr": "Leba",
+        "it": "Leba",
+        "de": "Leba",
+        "es": "Leba",
+        "ru": "Лэба",
+        "pl": "Leba",
+        "pt": "Leba",
+        "ko": "르블",
+        "zh-tw": "露布",
+        "zh-cn": "鲁布"
+      }
+    },
+    {
+      "id": "NpcName_NN_33",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_33"
+      }
+    },
+    {
+      "id": "NpcName_NN_50",
+      "name_kr": "유리리",
+      "name_en": "Yurelee",
+      "names_all": {
+        "ja": "ユーリリ",
+        "en": "Yurelee",
+        "fr": "Yurelee",
+        "it": "Yurelee",
+        "de": "Yurelee",
+        "es": "Yurelee",
+        "ru": "Юрили",
+        "pl": "Yurelee",
+        "pt": "Yurelee",
+        "ko": "유리리",
+        "zh-tw": "尤莉莉",
+        "zh-cn": "尤莉莉"
+      }
+    },
+    {
+      "id": "NpcName_NN_53",
+      "name_kr": "아네모",
+      "name_en": "Amone",
+      "names_all": {
+        "ja": "アネモ",
+        "en": "Amone",
+        "fr": "Amone",
+        "it": "Amone",
+        "de": "Amone",
+        "es": "Amone",
+        "ru": "Амоне",
+        "pl": "Amone",
+        "pt": "Amone",
+        "ko": "아네모",
+        "zh-tw": "阿妮莫",
+        "zh-cn": "阿妮莫"
+      }
+    },
+    {
+      "id": "NpcName_NN_56",
+      "name_kr": "아라키에",
+      "name_en": "Arakie",
+      "names_all": {
+        "ja": "アラキエ",
+        "en": "Arakie",
+        "fr": "Arakie",
+        "it": "Arakie",
+        "de": "Arakie",
+        "es": "Arakie",
+        "ru": "Араки",
+        "pl": "Arakie",
+        "pt": "Arakie",
+        "ko": "아라키에",
+        "zh-tw": "阿拉奇耶",
+        "zh-cn": "阿岚奇"
+      }
+    },
+    {
+      "id": "NpcName_NN_58",
+      "name_kr": "킬라말",
+      "name_en": "Kilama",
+      "names_all": {
+        "ja": "キラマ",
+        "en": "Kilama",
+        "fr": "Kilama",
+        "it": "Kilama",
+        "de": "Kilama",
+        "es": "Kilama",
+        "ru": "Килама",
+        "pl": "Kilama",
+        "pt": "Kilama",
+        "ko": "킬라말",
+        "zh-tw": "奇拉瑪",
+        "zh-cn": "吉拉玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_228308800",
+      "name_kr": "룰루루",
+      "name_en": "Luluru",
+      "names_all": {
+        "ja": "ルルル",
+        "en": "Luluru",
+        "fr": "Luluru",
+        "it": "Luluru",
+        "de": "Luluru",
+        "es": "Luluru",
+        "ru": "Лулуру",
+        "pl": "Luluru",
+        "pt": "Luluru",
+        "ko": "룰루루",
+        "zh-tw": "魯路露",
+        "zh-cn": "小露"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1518866560",
+      "name_kr": "소노라",
+      "name_en": "Sonora",
+      "names_all": {
+        "ja": "ソノラ",
+        "en": "Sonora",
+        "fr": "Sonora",
+        "it": "Sonora",
+        "de": "Sonora",
+        "es": "Sonora",
+        "ru": "Сонора",
+        "pl": "Sonora",
+        "pt": "Sonora",
+        "ko": "소노라",
+        "zh-tw": "索諾拉",
+        "zh-cn": "索诺拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m399361440",
+      "name_kr": "비키타",
+      "name_en": "Bikita",
+      "names_all": {
+        "ja": "ビキータ",
+        "en": "Bikita",
+        "fr": "Bikita",
+        "it": "Bikita",
+        "de": "Bikita",
+        "es": "Bikita",
+        "ru": "Бикита",
+        "pl": "Bikita",
+        "pt": "Bikita",
+        "ko": "비키타",
+        "zh-tw": "比其塔",
+        "zh-cn": "比吉塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m146852752",
+      "name_kr": "헤마",
+      "name_en": "Hama",
+      "names_all": {
+        "ja": "ヘマ",
+        "en": "Hama",
+        "fr": "Hama",
+        "it": "Hama",
+        "de": "Hama",
+        "es": "Hama",
+        "ru": "Хама",
+        "pl": "Hama",
+        "pt": "Hama",
+        "ko": "헤마",
+        "zh-tw": "黑瑪",
+        "zh-cn": "赫玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_1089391616",
+      "name_kr": "라쥬라",
+      "name_en": "Lazula",
+      "names_all": {
+        "ja": "ラジュラ",
+        "en": "Lazula",
+        "fr": "Lazula",
+        "it": "Lazula",
+        "de": "Lazula",
+        "es": "Lazula",
+        "ru": "Лазула",
+        "pl": "Lazula",
+        "pt": "Lazula",
+        "ko": "라쥬라",
+        "zh-tw": "拉爵拉",
+        "zh-cn": "拉吉拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_1458463488",
+      "name_kr": "넬리안",
+      "name_en": "Nelian",
+      "names_all": {
+        "ja": "ネリアン",
+        "en": "Nelian",
+        "fr": "Nelian",
+        "it": "Nelian",
+        "de": "Nelian",
+        "es": "Nelian",
+        "ru": "Неллиан",
+        "pl": "Nelian",
+        "pt": "Nelian",
+        "ko": "넬리안",
+        "zh-tw": "奈里安",
+        "zh-cn": "奈利安"
+      }
+    },
+    {
+      "id": "NpcName_NN_1921479168",
+      "name_kr": "토라엘라",
+      "name_en": "Trala",
+      "names_all": {
+        "ja": "トラエラ",
+        "en": "Trala",
+        "fr": "Trala",
+        "it": "Trala",
+        "de": "Trala",
+        "es": "Trala",
+        "ru": "Трала",
+        "pl": "Trala",
+        "pt": "Trala",
+        "ko": "토라엘라",
+        "zh-tw": "托拉艾拉",
+        "zh-cn": "特拉耶拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_2106112640",
+      "name_kr": "에티",
+      "name_en": "Eti",
+      "names_all": {
+        "ja": "エティ",
+        "en": "Eti",
+        "fr": "Eti",
+        "it": "Eti",
+        "de": "Eti",
+        "es": "Eti",
+        "ru": "Эти",
+        "pl": "Eti",
+        "pt": "Eti",
+        "ko": "에티",
+        "zh-tw": "艾提",
+        "zh-cn": "艾媞"
+      }
+    },
+    {
+      "id": "NpcName_NN_m299105472",
+      "name_kr": "미냐",
+      "name_en": "Minya",
+      "names_all": {
+        "ja": "ミニャ",
+        "en": "Minya",
+        "fr": "Minya",
+        "it": "Minya",
+        "de": "Minya",
+        "es": "Minya",
+        "ru": "Миния",
+        "pl": "Minya",
+        "pt": "Minya",
+        "ko": "미냐",
+        "zh-tw": "米妮亞",
+        "zh-cn": "米尼亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_1405304704",
+      "name_kr": "카이야나",
+      "name_en": "Kyana",
+      "names_all": {
+        "ja": "カイヤナ",
+        "en": "Kyana",
+        "fr": "Kyana",
+        "it": "Kyana",
+        "de": "Kyana",
+        "es": "Kyana",
+        "ru": "Киана",
+        "pl": "Kyana",
+        "pt": "Kiana",
+        "ko": "카이야나",
+        "zh-tw": "蘭晶",
+        "zh-cn": "凯亚娜"
+      }
+    },
+    {
+      "id": "NpcName_NN_626488960",
+      "name_kr": "투르사",
+      "name_en": "Tursa",
+      "names_all": {
+        "ja": "トルッサ",
+        "en": "Tursa",
+        "fr": "Tursa",
+        "it": "Tursa",
+        "de": "Tursa",
+        "es": "Tursa",
+        "ru": "Турса",
+        "pl": "Tursa",
+        "pt": "Tursa",
+        "ko": "투르사",
+        "zh-tw": "托爾薩",
+        "zh-cn": "图鲁萨"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1716322816",
+      "name_kr": "릴베리",
+      "name_en": "Rybel",
+      "names_all": {
+        "ja": "リルベリ",
+        "en": "Rybel",
+        "fr": "Rybel",
+        "it": "Rybel",
+        "de": "Rybel",
+        "es": "Rybel",
+        "ru": "Рибель",
+        "pl": "Rybel",
+        "pt": "Ribel",
+        "ko": "릴베리",
+        "zh-tw": "里爾貝利",
+        "zh-cn": "利尔贝利"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1869840256",
+      "name_kr": "카미니",
+      "name_en": "Nemeka",
+      "names_all": {
+        "ja": "ニミカ",
+        "en": "Nemeka",
+        "fr": "Nemeka",
+        "it": "Nemeka",
+        "de": "Nemeka",
+        "es": "Nemeka",
+        "ru": "Немека",
+        "pl": "Nemeka",
+        "pt": "Nemeka",
+        "ko": "카미니",
+        "zh-tw": "尼米卡",
+        "zh-cn": "米尼卡"
+      }
+    },
+    {
+      "id": "NpcName_NN_138099696",
+      "name_kr": "스미",
+      "name_en": "Sumi",
+      "names_all": {
+        "ja": "スミ",
+        "en": "Sumi",
+        "fr": "Sumi",
+        "it": "Sumi",
+        "de": "Sumi",
+        "es": "Sumi",
+        "ru": "Суми",
+        "pl": "Sumi",
+        "pt": "Suumi",
+        "ko": "스미",
+        "zh-tw": "斯米",
+        "zh-cn": "苏米"
+      }
+    },
+    {
+      "id": "NpcName_NN_68412784",
+      "name_kr": "마르가",
+      "name_en": "Marga",
+      "names_all": {
+        "ja": "マルガー",
+        "en": "Marga",
+        "fr": "Marga",
+        "it": "Marga",
+        "de": "Marga",
+        "es": "Marga",
+        "ru": "Марга",
+        "pl": "Marga",
+        "pt": "Marga",
+        "ko": "마르가",
+        "zh-tw": "瑪爾加",
+        "zh-cn": "马尔嘉"
+      }
+    },
+    {
+      "id": "NpcName_NN_609769344",
+      "name_kr": "에리진",
+      "name_en": "Aerin",
+      "names_all": {
+        "ja": "エリジン",
+        "en": "Aerin",
+        "fr": "Aerin",
+        "it": "Aerin",
+        "de": "Aerin",
+        "es": "Aerin",
+        "ru": "Эрин",
+        "pl": "Aerin",
+        "pt": "Aerin",
+        "ko": "에리진",
+        "zh-tw": "艾利金",
+        "zh-cn": "艾莉馨"
+      }
+    },
+    {
+      "id": "NpcName_NN_622159488",
+      "name_kr": "벨레",
+      "name_en": "Velre",
+      "names_all": {
+        "ja": "ヴェルレ",
+        "en": "Velre",
+        "fr": "Velre",
+        "it": "Velre",
+        "de": "Velre",
+        "es": "Velre",
+        "ru": "Велрэ",
+        "pl": "Velre",
+        "pt": "Velre",
+        "ko": "벨레",
+        "zh-tw": "維爾雷",
+        "zh-cn": "沃蕾"
+      }
+    },
+    {
+      "id": "NpcName_NN_1876696192",
+      "name_kr": "아놀리마",
+      "name_en": "Anolia",
+      "names_all": {
+        "ja": "アノリマ",
+        "en": "Anolia",
+        "fr": "Anolia",
+        "it": "Anolia",
+        "de": "Anolia",
+        "es": "Anolia",
+        "ru": "Анолия",
+        "pl": "Anolia",
+        "pt": "Anolia",
+        "ko": "아놀리마",
+        "zh-tw": "木蘭",
+        "zh-cn": "阿诺利马"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1626067328",
+      "name_kr": "살릭스",
+      "name_en": "Saris",
+      "names_all": {
+        "ja": "サリス",
+        "en": "Saris",
+        "fr": "Saris",
+        "it": "Saris",
+        "de": "Saris",
+        "es": "Saris",
+        "ru": "Сарис",
+        "pl": "Saris",
+        "pt": "Saris",
+        "ko": "살릭스",
+        "zh-tw": "薩利斯",
+        "zh-cn": "萨里斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_392398112",
+      "name_kr": "미단",
+      "name_en": "Mitan",
+      "names_all": {
+        "ja": "ミダン",
+        "en": "Mitan",
+        "fr": "Mitan",
+        "it": "Mitan",
+        "de": "Mitan",
+        "es": "Mitan",
+        "ru": "Митан",
+        "pl": "Mitan",
+        "pt": "Mitan",
+        "ko": "미단",
+        "zh-tw": "米丹",
+        "zh-cn": "弥丹"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1803608960",
+      "name_kr": "테베아",
+      "name_en": "Tebea",
+      "names_all": {
+        "ja": "テーベア",
+        "en": "Tebea",
+        "fr": "Tebea",
+        "it": "Tebea",
+        "de": "Tebea",
+        "es": "Tebea",
+        "ru": "Тибия",
+        "pl": "Tebea",
+        "pt": "Tebea",
+        "ko": "테베아",
+        "zh-tw": "提貝雅",
+        "zh-cn": "特贝亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_1754388480",
+      "name_kr": "오르키사",
+      "name_en": "Orkisa",
+      "names_all": {
+        "ja": "オルキサ",
+        "en": "Orkisa",
+        "fr": "Orkisa",
+        "it": "Orkisa",
+        "de": "Orkisa",
+        "es": "Orkisa",
+        "ru": "Орхиса",
+        "pl": "Orkisa",
+        "pt": "Orkisa",
+        "ko": "오르키사",
+        "zh-tw": "歐爾奇撒",
+        "zh-cn": "欧尔齐赛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1659237504",
+      "name_kr": "드왈",
+      "name_en": "Awdra",
+      "names_all": {
+        "ja": "ドルワ",
+        "en": "Awdra",
+        "fr": "Awdra",
+        "it": "Awdra",
+        "de": "Awdra",
+        "es": "Awdra",
+        "ru": "Одра",
+        "pl": "Awdra",
+        "pt": "Dolua",
+        "ko": "드왈",
+        "zh-tw": "杜魯瓦",
+        "zh-cn": "多瓦"
+      }
+    },
+    {
+      "id": "NpcName_NN_267936144",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_267936144"
+      }
+    },
+    {
+      "id": "NpcName_NN_1534066560",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1534066560"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1663078016",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1663078016"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1404747648",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1404747648"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1154753408",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1154753408"
+      }
+    },
+    {
+      "id": "NpcName_NN_1589839616",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1589839616"
+      }
+    },
+    {
+      "id": "NpcName_NN_m953046592",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m953046592"
+      }
+    },
+    {
+      "id": "NpcName_NN_m857952896",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m857952896"
+      }
+    },
+    {
+      "id": "NpcName_NN_57",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_57"
+      }
+    },
+    {
+      "id": "NpcName_NN_m711961408",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m711961408"
+      }
+    },
+    {
+      "id": "NpcName_NN_m282486528",
+      "name_kr": "젬마",
+      "name_en": "Gemma",
+      "names_all": {
+        "ja": "ジェマ",
+        "en": "Gemma",
+        "fr": "Gemma",
+        "it": "Gemma",
+        "de": "Gemma",
+        "es": "Gemma",
+        "ru": "Джемма",
+        "pl": "Gemma",
+        "pt": "Gemma",
+        "ko": "젬마",
+        "zh-tw": "潔瑪",
+        "zh-cn": "杰玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2041406976",
+      "name_kr": "젬마",
+      "name_en": "Gemma",
+      "names_all": {
+        "ja": "ジェマ",
+        "en": "Gemma",
+        "fr": "Gemma",
+        "it": "Gemma",
+        "de": "Gemma",
+        "es": "Gemma",
+        "ru": "Джемма",
+        "pl": "Gemma",
+        "pt": "Gemma",
+        "ko": "젬마",
+        "zh-tw": "潔瑪",
+        "zh-cn": "杰玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_62",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_62"
+      }
+    },
+    {
+      "id": "NpcName_NN_91",
+      "name_kr": "트라비",
+      "name_en": "Strabi",
+      "names_all": {
+        "ja": "ツラビ",
+        "en": "Strabi",
+        "fr": "Strabi",
+        "it": "Strabi",
+        "de": "Strabi",
+        "es": "Strabi",
+        "ru": "Страби",
+        "pl": "Strabi",
+        "pt": "Strabi",
+        "ko": "트라비",
+        "zh-tw": "圖拉比",
+        "zh-cn": "茨拉比"
+      }
+    },
+    {
+      "id": "NpcName_NN_92",
+      "name_kr": "이데이",
+      "name_en": "Y'ji",
+      "names_all": {
+        "ja": "イデイ",
+        "en": "Y'ji",
+        "fr": "Y'ji",
+        "it": "Y'ji",
+        "de": "Y’ji",
+        "es": "Y'ji",
+        "ru": "И’дзи",
+        "pl": "Y'ji",
+        "pt": "Y'ji",
+        "ko": "이데이",
+        "zh-tw": "伊迪",
+        "zh-cn": "伊迪"
+      }
+    },
+    {
+      "id": "NpcName_NN_1387823872",
+      "name_kr": "가라노",
+      "name_en": "Garano",
+      "names_all": {
+        "ja": "ガラノ",
+        "en": "Garano",
+        "fr": "Garano",
+        "it": "Garano",
+        "de": "Garano",
+        "es": "Garano",
+        "ru": "Гарано",
+        "pl": "Garano",
+        "pt": "Garano",
+        "ko": "가라노",
+        "zh-tw": "加拉諾",
+        "zh-cn": "加岚诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1459371136",
+      "name_kr": "도토마",
+      "name_en": "Dotoma",
+      "names_all": {
+        "ja": "ドトマ",
+        "en": "Dotoma",
+        "fr": "Dotoma",
+        "it": "Dotoma",
+        "de": "Dotoma",
+        "es": "Dotoma",
+        "ru": "Дотома",
+        "pl": "Dotoma",
+        "pt": "Dotoma",
+        "ko": "도토마",
+        "zh-tw": "多托馬",
+        "zh-cn": "多托瓦"
+      }
+    },
+    {
+      "id": "NpcName_NN_1008554176",
+      "name_kr": "네크",
+      "name_en": "Nyek",
+      "names_all": {
+        "ja": "ニェク",
+        "en": "Nyek",
+        "fr": "Nyek",
+        "it": "Nyek",
+        "de": "Nyek",
+        "es": "Nyek",
+        "ru": "Ньек",
+        "pl": "Nyek",
+        "pt": "Nyek",
+        "ko": "네크",
+        "zh-tw": "妮可",
+        "zh-cn": "妮可"
+      }
+    },
+    {
+      "id": "NpcName_NN_163241616",
+      "name_kr": "라가",
+      "name_en": "Raga",
+      "names_all": {
+        "ja": "ラガ",
+        "en": "Raga",
+        "fr": "Raga",
+        "it": "Raga",
+        "de": "Raga",
+        "es": "Raga",
+        "ru": "Рага",
+        "pl": "Raga",
+        "pt": "Raga",
+        "ko": "라가",
+        "zh-tw": "拉格",
+        "zh-cn": "岚格"
+      }
+    },
+    {
+      "id": "NpcName_NN_1409808256",
+      "name_kr": "아브야",
+      "name_en": "Abala",
+      "names_all": {
+        "ja": "アブヤ",
+        "en": "Abala",
+        "fr": "Abala",
+        "it": "Abala",
+        "de": "Abala",
+        "es": "Abala",
+        "ru": "Абала",
+        "pl": "Abala",
+        "pt": "Abuya",
+        "ko": "아브야",
+        "zh-tw": "阿布亞",
+        "zh-cn": "阿布亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_314572352",
+      "name_kr": "브노",
+      "name_en": "Vuno",
+      "names_all": {
+        "ja": "ヴノ",
+        "en": "Vuno",
+        "fr": "Vuno",
+        "it": "Vuno",
+        "de": "Vuno",
+        "es": "Vuno",
+        "ru": "Вуно",
+        "pl": "Vuno",
+        "pt": "Vuno",
+        "ko": "브노",
+        "zh-tw": "烏諾",
+        "zh-cn": "瓦诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_m61092792",
+      "name_kr": "네모",
+      "name_en": "Nemmo",
+      "names_all": {
+        "ja": "ネモ",
+        "en": "Nemmo",
+        "fr": "Nemmo",
+        "it": "Nemmo",
+        "de": "Nemmo",
+        "es": "Nemmo",
+        "ru": "Неммо",
+        "pl": "Nemmo",
+        "pt": "Nemmo",
+        "ko": "네모",
+        "zh-tw": "尼莫",
+        "zh-cn": "尼莫"
+      }
+    },
+    {
+      "id": "NpcName_NN_379299552",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_379299552"
+      }
+    },
+    {
+      "id": "NpcName_NN_1417657856",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1417657856"
+      }
+    },
+    {
+      "id": "NpcName_NN_m170272160",
+      "name_kr": "루니",
+      "name_en": "Ulni",
+      "names_all": {
+        "ja": "ルニ",
+        "en": "Ulni",
+        "fr": "Ulni",
+        "it": "Ulni",
+        "de": "Ulni",
+        "es": "Ulni",
+        "ru": "Улни",
+        "pl": "Ulni",
+        "pt": "Ulni",
+        "ko": "루니",
+        "zh-tw": "魯尼",
+        "zh-cn": "路尼"
+      }
+    },
+    {
+      "id": "NpcName_NN_636323008",
+      "name_kr": "놀스",
+      "name_en": "Noruth",
+      "names_all": {
+        "ja": "ノルス",
+        "en": "Noruth",
+        "fr": "Noruth",
+        "it": "Noruth",
+        "de": "Noruth",
+        "es": "Noruth",
+        "ru": "Норут",
+        "pl": "Noruth",
+        "pt": "Norussu",
+        "ko": "놀스",
+        "zh-tw": "諾魯斯",
+        "zh-cn": "诺尔斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_1923489920",
+      "name_kr": "필로",
+      "name_en": "Firo",
+      "names_all": {
+        "ja": "フィロ",
+        "en": "Firo",
+        "fr": "Firo",
+        "it": "Firo",
+        "de": "Firo",
+        "es": "Firo",
+        "ru": "Фиро",
+        "pl": "Firo",
+        "pt": "Firo",
+        "ko": "필로",
+        "zh-tw": "菲羅",
+        "zh-cn": "菲罗"
+      }
+    },
+    {
+      "id": "NpcName_NN_1788215552",
+      "name_kr": "챠로",
+      "name_en": "Charo",
+      "names_all": {
+        "ja": "チャロー",
+        "en": "Charo",
+        "fr": "Tcharo",
+        "it": "Charo",
+        "de": "Charo",
+        "es": "Zaro",
+        "ru": "Харо",
+        "pl": "Charo",
+        "pt": "Charo",
+        "ko": "챠로",
+        "zh-tw": "查羅",
+        "zh-cn": "切罗"
+      }
+    },
+    {
+      "id": "NpcName_NN_714065664",
+      "name_kr": "테츠잔",
+      "name_en": "Tetsuzan",
+      "names_all": {
+        "ja": "テツザン",
+        "en": "Tetsuzan",
+        "fr": "Tetsuzan",
+        "it": "Tetsuzan",
+        "de": "Tetsuzan",
+        "es": "Tetsuzan",
+        "ru": "Тецудзан",
+        "pl": "Tetsuzan",
+        "pt": "Tetsuzan",
+        "ko": "테츠잔",
+        "zh-tw": "鐵山",
+        "zh-cn": "铁山"
+      }
+    },
+    {
+      "id": "NpcName_NN_17220",
+      "name_kr": "가희",
+      "name_en": "The Diva",
+      "names_all": {
+        "ja": "歌姫",
+        "en": "The Diva",
+        "fr": "La diva",
+        "it": "Diva",
+        "de": "Die Diva",
+        "es": "La Diva",
+        "ru": "Дива",
+        "pl": "Diwa",
+        "pt": "A Diva",
+        "ko": "가희",
+        "zh-tw": "歌姬",
+        "zh-cn": "歌姬"
+      }
+    },
+    {
+      "id": "NpcName_NN_39334536",
+      "name_kr": "긴 귀를 가진 분",
+      "name_en": "The Allhearken",
+      "names_all": {
+        "ja": "耳の方",
+        "en": "The Allhearken",
+        "fr": "L'Oreille-de-tous",
+        "it": "Colei che sente tutto",
+        "de": "Die Allhörende",
+        "es": "La Suma Oyente",
+        "ru": "Всеслышащая",
+        "pl": "Wszechsłuchaczka",
+        "pt": "A Audiente",
+        "ko": "긴 귀를 가진 분",
+        "zh-tw": "長耳智者",
+        "zh-cn": "长耳智者"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1155136000",
+      "name_kr": "야테",
+      "name_en": "Yateh",
+      "names_all": {
+        "ja": "ヤテ",
+        "en": "Yateh",
+        "fr": "Yateh",
+        "it": "Yateh",
+        "de": "Yateh",
+        "es": "Yateh",
+        "ru": "Ятэ",
+        "pl": "Yateh",
+        "pt": "Yateh",
+        "ko": "야테",
+        "zh-tw": "夜天",
+        "zh-cn": "夜天"
+      }
+    },
+    {
+      "id": "NpcName_NN_320509664",
+      "name_kr": "라체",
+      "name_en": "Lerh",
+      "names_all": {
+        "ja": "ラーチェ",
+        "en": "Lerh",
+        "fr": "Lerh",
+        "it": "Lerh",
+        "de": "Lerh",
+        "es": "Lerh",
+        "ru": "Лерх",
+        "pl": "Lerh",
+        "pt": "Lerh",
+        "ko": "라체",
+        "zh-tw": "拉傑",
+        "zh-cn": "莱奇"
+      }
+    },
+    {
+      "id": "NpcName_NN_37958524",
+      "name_kr": "시마키",
+      "name_en": "Shimakee",
+      "names_all": {
+        "ja": "シマキ",
+        "en": "Shimakee",
+        "fr": "Shimakee",
+        "it": "Shimaki",
+        "de": "Schimakii",
+        "es": "Shimakee",
+        "ru": "Симаки",
+        "pl": "Shimakee",
+        "pt": "Shimaki",
+        "ko": "시마키",
+        "zh-tw": "風卷",
+        "zh-cn": "风卷"
+      }
+    },
+    {
+      "id": "NpcName_NN_248742352",
+      "name_kr": "이치우",
+      "name_en": "Ichiu",
+      "names_all": {
+        "ja": "イチウ",
+        "en": "Ichiu",
+        "fr": "Ichiu",
+        "it": "Ichiu",
+        "de": "Ichiu",
+        "es": "Ichiu",
+        "ru": "Итиу",
+        "pl": "Ichiu",
+        "pt": "Ichiu",
+        "ko": "이치우",
+        "zh-tw": "一雨",
+        "zh-cn": "一时雨"
+      }
+    },
+    {
+      "id": "NpcName_NN_1143728000",
+      "name_kr": "히스모",
+      "name_en": "Hismo",
+      "names_all": {
+        "ja": "ヒスモー",
+        "en": "Hismo",
+        "fr": "Hismo",
+        "it": "Hismo",
+        "de": "Hismo",
+        "es": "Hismo",
+        "ru": "Хисмо",
+        "pl": "Hismo",
+        "pt": "Hismo",
+        "ko": "히스모",
+        "zh-tw": "晨樓",
+        "zh-cn": "席斯摩"
+      }
+    },
+    {
+      "id": "NpcName_NN_1120413952",
+      "name_kr": "우스라이",
+      "name_en": "Usurai",
+      "names_all": {
+        "ja": "ウスライ",
+        "en": "Usurai",
+        "fr": "Usurai",
+        "it": "Usuri",
+        "de": "Usurai",
+        "es": "Usurai",
+        "ru": "Усурай",
+        "pl": "Usurai",
+        "pt": "Ussurai",
+        "ko": "우스라이",
+        "zh-tw": "薄冰",
+        "zh-cn": "薄冰"
+      }
+    },
+    {
+      "id": "NpcName_NN_1222785920",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1222785920"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1920087296",
+      "name_kr": "네브",
+      "name_en": "Neby",
+      "names_all": {
+        "ja": "ネブ",
+        "en": "Neby",
+        "fr": "Neby",
+        "it": "Neby",
+        "de": "Neby",
+        "es": "Neby",
+        "ru": "Нэби",
+        "pl": "Neby",
+        "pt": "Neby",
+        "ko": "네브",
+        "zh-tw": "妮布",
+        "zh-cn": "奈布"
+      }
+    },
+    {
+      "id": "NpcName_NN_m963571264",
+      "name_kr": "테노",
+      "name_en": "Teno",
+      "names_all": {
+        "ja": "テノ",
+        "en": "Teno",
+        "fr": "Teno",
+        "it": "Teno",
+        "de": "Teno",
+        "es": "Teno",
+        "ru": "Тено",
+        "pl": "Teno",
+        "pt": "Teno",
+        "ko": "테노",
+        "zh-tw": "提諾",
+        "zh-cn": "特诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_325639392",
+      "name_kr": "아토스",
+      "name_en": "Athos",
+      "names_all": {
+        "ja": "アトス",
+        "en": "Athos",
+        "fr": "Athos",
+        "it": "Athos",
+        "de": "Athos",
+        "es": "Athos",
+        "ru": "Афос",
+        "pl": "Athos",
+        "pt": "Athos",
+        "ko": "아토스",
+        "zh-tw": "阿德絲",
+        "zh-cn": "阿托斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_176555872",
+      "name_kr": "톰",
+      "name_en": "Tom",
+      "names_all": {
+        "ja": "トム",
+        "en": "Tom",
+        "fr": "Tom",
+        "it": "Pa",
+        "de": "Tom",
+        "es": "Tom",
+        "ru": "По",
+        "pl": "Tom",
+        "pt": "Tom",
+        "ko": "톰",
+        "zh-tw": "托姆",
+        "zh-cn": "托姆"
+      }
+    },
+    {
+      "id": "NpcName_NN_119017232",
+      "name_kr": "큐",
+      "name_en": "Medy",
+      "names_all": {
+        "ja": "キュー",
+        "en": "Medy",
+        "fr": "Medy",
+        "it": "Medy",
+        "de": "Medy",
+        "es": "Medy",
+        "ru": "Мэди",
+        "pl": "Medy",
+        "pt": "Medy",
+        "ko": "큐",
+        "zh-tw": "丘",
+        "zh-cn": "丘"
+      }
+    },
+    {
+      "id": "NpcName_NN_1263491328",
+      "name_kr": "테크",
+      "name_en": "Tek",
+      "names_all": {
+        "ja": "テク",
+        "en": "Tek",
+        "fr": "Tek",
+        "it": "Tek",
+        "de": "Tek",
+        "es": "Tek",
+        "ru": "Тек",
+        "pl": "Tek",
+        "pt": "Tek",
+        "ko": "테크",
+        "zh-tw": "鐵克",
+        "zh-cn": "铁克"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1149261952",
+      "name_kr": "풀라르",
+      "name_en": "Flar",
+      "names_all": {
+        "ja": "フラル",
+        "en": "Flar",
+        "fr": "Flar",
+        "it": "Flar",
+        "de": "Flar",
+        "es": "Flar",
+        "ru": "Флар",
+        "pl": "Flar",
+        "pt": "Flar",
+        "ko": "풀라르",
+        "zh-tw": "弗拉爾",
+        "zh-cn": "芙拉尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m698887360",
+      "name_kr": "스핀",
+      "name_en": "Spin",
+      "names_all": {
+        "ja": "スピン",
+        "en": "Spin",
+        "fr": "Spin",
+        "it": "Spin",
+        "de": "Spin",
+        "es": "Spin",
+        "ru": "Спин",
+        "pl": "Spin",
+        "pt": "Spin",
+        "ko": "스핀",
+        "zh-tw": "史平",
+        "zh-cn": "斯平"
+      }
+    },
+    {
+      "id": "NpcName_NN_1656193024",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_1656193024"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1431160704",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1431160704"
+      }
+    },
+    {
+      "id": "NpcName_NN_m682291584",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m682291584"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1190404480",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1190404480"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1922609664",
+      "name_kr": "도니",
+      "name_en": "Donny",
+      "names_all": {
+        "ja": "ドニ",
+        "en": "Donny",
+        "fr": "Danny",
+        "it": "Donny",
+        "de": "Donny",
+        "es": "Donny",
+        "ru": "Донни",
+        "pl": "Donny",
+        "pt": "Donny",
+        "ko": "도니",
+        "zh-tw": "多尼",
+        "zh-cn": "多尼"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1168711296",
+      "name_kr": "사민",
+      "name_en": "Samin",
+      "names_all": {
+        "ja": "サミン",
+        "en": "Samin",
+        "fr": "Samin",
+        "it": "Samin",
+        "de": "Samin",
+        "es": "Samin",
+        "ru": "Самин",
+        "pl": "Samin",
+        "pt": "Samin",
+        "ko": "사민",
+        "zh-tw": "薩民",
+        "zh-cn": "萨明"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2104534784",
+      "name_kr": "다릴",
+      "name_en": "Dareel",
+      "names_all": {
+        "ja": "ダリル",
+        "en": "Dareel",
+        "fr": "Dareel",
+        "it": "Dareel",
+        "de": "Dareel",
+        "es": "Dareel",
+        "ru": "Дарил",
+        "pl": "Dareel",
+        "pt": "Dareel",
+        "ko": "다릴",
+        "zh-tw": "達里爾",
+        "zh-cn": "达里尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_762405696",
+      "name_kr": "라사",
+      "name_en": "Rasa",
+      "names_all": {
+        "ja": "ラサ",
+        "en": "Rasa",
+        "fr": "Rasa",
+        "it": "Rasa",
+        "de": "Rasa",
+        "es": "Rasa",
+        "ru": "Разза",
+        "pl": "Rasa",
+        "pt": "Rassa",
+        "ko": "라사",
+        "zh-tw": "拉薩",
+        "zh-cn": "拉莎"
+      }
+    },
+    {
+      "id": "NpcName_NN_1046765120",
+      "name_kr": "코틀라",
+      "name_en": "Kotohla",
+      "names_all": {
+        "ja": "コトーラ",
+        "en": "Kotohla",
+        "fr": "Kotohla",
+        "it": "Kotohla",
+        "de": "Kotohla",
+        "es": "Kotohla",
+        "ru": "Котола",
+        "pl": "Kotohla",
+        "pt": "Kotohla",
+        "ko": "코틀라",
+        "zh-tw": "克特拉",
+        "zh-cn": "科托拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m833069376",
+      "name_kr": "리아프",
+      "name_en": "Riah",
+      "names_all": {
+        "ja": "リアフ",
+        "en": "Riah",
+        "fr": "Riah",
+        "it": "Riah",
+        "de": "Riah",
+        "es": "Riah",
+        "ru": "Райя",
+        "pl": "Riah",
+        "pt": "Riah",
+        "ko": "리아프",
+        "zh-tw": "莉阿芙",
+        "zh-cn": "里娅福"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1641787776",
+      "name_kr": "세츠가",
+      "name_en": "Sekka",
+      "names_all": {
+        "ja": "セッカ",
+        "en": "Sekka",
+        "fr": "Sekka",
+        "it": "Sekka",
+        "de": "Sekka",
+        "es": "Sekka",
+        "ru": "Секка",
+        "pl": "Sekka",
+        "pt": "Sekka",
+        "ko": "세츠가",
+        "zh-tw": "雪華",
+        "zh-cn": "雪华"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1928640512",
+      "name_kr": "나기",
+      "name_en": "Nahgi",
+      "names_all": {
+        "ja": "ナーギ",
+        "en": "Nahgi",
+        "fr": "Nahgi",
+        "it": "Nahgi",
+        "de": "Nahgi",
+        "es": "Nahgi",
+        "ru": "Наги",
+        "pl": "Nahgi",
+        "pt": "Nahgi",
+        "ko": "나기",
+        "zh-tw": "納奇",
+        "zh-cn": "纳吉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1647427840",
+      "name_kr": "마시오",
+      "name_en": "Mashio",
+      "names_all": {
+        "ja": "マシオ",
+        "en": "Mashio",
+        "fr": "Mashio",
+        "it": "Mashio",
+        "de": "Mashio",
+        "es": "Mashio",
+        "ru": "Масио",
+        "pl": "Mashio",
+        "pt": "Mashio",
+        "ko": "마시오",
+        "zh-tw": "真潮",
+        "zh-cn": "大潮"
+      }
+    },
+    {
+      "id": "NpcName_NN_1171419520",
+      "name_kr": "쿠모이",
+      "name_en": "Kumoi",
+      "names_all": {
+        "ja": "クモイ",
+        "en": "Kumoi",
+        "fr": "Kumoi",
+        "it": "Kumoi",
+        "de": "Kumoi",
+        "es": "Kumoi",
+        "ru": "Кумой",
+        "pl": "Kumoi",
+        "pt": "Kumoi",
+        "ko": "쿠모이",
+        "zh-tw": "雲居",
+        "zh-cn": "云居"
+      }
+    },
+    {
+      "id": "NpcName_NN_622724160",
+      "name_kr": "아파르",
+      "name_en": "Apar",
+      "names_all": {
+        "ja": "アパル",
+        "en": "Apar",
+        "fr": "Apar",
+        "it": "Apar",
+        "de": "Apar",
+        "es": "Apar",
+        "ru": "Апар",
+        "pl": "Apar",
+        "pt": "Apar",
+        "ko": "아파르",
+        "zh-tw": "阿帕爾",
+        "zh-cn": "阿帕尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m27976548",
+      "name_kr": "레전드",
+      "name_en": "Legend",
+      "names_all": {
+        "ja": "デンセツ",
+        "en": "Legend",
+        "fr": "Légende",
+        "it": "Leggenda",
+        "de": "Legende",
+        "es": "Legend",
+        "ru": "Легенда",
+        "pl": "Legenda",
+        "pt": "Lenda",
+        "ko": "레전드",
+        "zh-tw": "傳梭",
+        "zh-cn": "英传"
+      }
+    },
+    {
+      "id": "NpcName_NN_728281664",
+      "name_kr": "니파스",
+      "name_en": "Neepas",
+      "names_all": {
+        "ja": "ニパス",
+        "en": "Neepas",
+        "fr": "Neepas",
+        "it": "Nipas",
+        "de": "Nipas",
+        "es": "Neepas",
+        "ru": "Нипас",
+        "pl": "Neepas",
+        "pt": "Neepas",
+        "ko": "니파스",
+        "zh-tw": "尼帕斯",
+        "zh-cn": "尼帕斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1702863744",
+      "name_kr": "소바에",
+      "name_en": "Sobae",
+      "names_all": {
+        "ja": "ソバエ",
+        "en": "Sobae",
+        "fr": "Sobae",
+        "it": "Sobae",
+        "de": "Sobae",
+        "es": "Sobae",
+        "ru": "Собэ",
+        "pl": "Sobae",
+        "pt": "Sobae",
+        "ko": "소바에",
+        "zh-tw": "戲雨",
+        "zh-cn": "晴雨"
+      }
+    },
+    {
+      "id": "NpcName_NN_1947980544",
+      "name_kr": "트라몬",
+      "name_en": "Tramon",
+      "names_all": {
+        "ja": "トラモン",
+        "en": "Tramon",
+        "fr": "Tramon",
+        "it": "Tramon",
+        "de": "Tramon",
+        "es": "Tramon",
+        "ru": "Трамон",
+        "pl": "Tramon",
+        "pt": "Tramon",
+        "ko": "트라몬",
+        "zh-tw": "特拉孟",
+        "zh-cn": "托拉蒙"
+      }
+    },
+    {
+      "id": "NpcName_NN_m300091840",
+      "name_kr": "올라",
+      "name_en": "Ola",
+      "names_all": {
+        "ja": "オラ",
+        "en": "Ola",
+        "fr": "Ola",
+        "it": "Ola",
+        "de": "Ola",
+        "es": "Ola",
+        "ru": "Ола",
+        "pl": "Ola",
+        "pt": "Olla",
+        "ko": "올라",
+        "zh-tw": "歐拉",
+        "zh-cn": "奥拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2103601408",
+      "name_kr": "페르디난트",
+      "name_en": "Ferdinand",
+      "names_all": {
+        "ja": "フェルディナント",
+        "en": "Ferdinand",
+        "fr": "Ferdinand",
+        "it": "Ferdinand",
+        "de": "Ferdinand",
+        "es": "Ferdinand",
+        "ru": "Фердинанд",
+        "pl": "Ferdinand",
+        "pt": "Ferdinand",
+        "ko": "페르디난트",
+        "zh-tw": "費迪南",
+        "zh-cn": "费迪南"
+      }
+    },
+    {
+      "id": "NpcName_NN_m123951864",
+      "name_kr": "비오",
+      "name_en": "Vio",
+      "names_all": {
+        "ja": "ビオ",
+        "en": "Vio",
+        "fr": "Vio",
+        "it": "Vio",
+        "de": "Vio",
+        "es": "Vio",
+        "ru": "Вио",
+        "pl": "Vio",
+        "pt": "Vio",
+        "ko": "비오",
+        "zh-tw": "畢歐",
+        "zh-cn": "比欧"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2099905792",
+      "name_kr": "와플",
+      "name_en": "Waffle",
+      "names_all": {
+        "ja": "ワッフル",
+        "en": "Waffle",
+        "fr": "Gaufrette",
+        "it": "Waffle",
+        "de": "Waffel",
+        "es": "Waffle",
+        "ru": "Вафелия",
+        "pl": "Waffle",
+        "pt": "Waffle",
+        "ko": "와플",
+        "zh-tw": "窩夫",
+        "zh-cn": "华夫"
+      }
+    },
+    {
+      "id": "NpcName_NN_225280144",
+      "name_kr": "코로",
+      "name_en": "Rolie",
+      "names_all": {
+        "ja": "コロ",
+        "en": "Rolie",
+        "fr": "Rouly",
+        "it": "Rolie",
+        "de": "Rolli",
+        "es": "Rolie",
+        "ru": "Крутик",
+        "pl": "Rolie",
+        "pt": "Rolie",
+        "ko": "코로",
+        "zh-tw": "滾滾",
+        "zh-cn": "科滚滚"
+      }
+    },
+    {
+      "id": "NpcName_NN_m40989160",
+      "name_kr": "몬드",
+      "name_en": "Mondy",
+      "names_all": {
+        "ja": "モンド",
+        "en": "Mondy",
+        "fr": "Mando",
+        "it": "Mondy",
+        "de": "Mondy",
+        "es": "Mondy",
+        "ru": "Миндл",
+        "pl": "Mondy",
+        "pt": "Mondy",
+        "ko": "몬드",
+        "zh-tw": "杏仁",
+        "zh-cn": "蒙德"
+      }
+    },
+    {
+      "id": "NpcName_NN_1137848192",
+      "name_kr": "토마",
+      "name_en": "May",
+      "names_all": {
+        "ja": "トマ",
+        "en": "May",
+        "fr": "Mah",
+        "it": "Chi",
+        "de": "Mah",
+        "es": "May",
+        "ru": "Ми",
+        "pl": "May",
+        "pt": "May",
+        "ko": "토마",
+        "zh-tw": "托瑪",
+        "zh-cn": "托玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_953190784",
+      "name_kr": "토모",
+      "name_en": "Toh",
+      "names_all": {
+        "ja": "トモ",
+        "en": "Toh",
+        "fr": "Toh",
+        "it": "No",
+        "de": "Teh",
+        "es": "Toh",
+        "ru": "Дорр",
+        "pl": "Toh",
+        "pt": "Tche",
+        "ko": "토모",
+        "zh-tw": "托莫",
+        "zh-cn": "托莫"
+      }
+    },
+    {
+      "id": "NpcName_NN_276683392",
+      "name_kr": "코넛",
+      "name_en": "Conut",
+      "names_all": {
+        "ja": "コナツ",
+        "en": "Conut",
+        "fr": "Coco",
+        "it": "Conut",
+        "de": "Conut",
+        "es": "Conut",
+        "ru": "Коко",
+        "pl": "Conut",
+        "pt": "Conut",
+        "ko": "코넛",
+        "zh-tw": "柯納茨",
+        "zh-cn": "柯纳茨"
+      }
+    },
+    {
+      "id": "NpcName_NN_716664768",
+      "name_kr": "루크",
+      "name_en": "Luke",
+      "names_all": {
+        "ja": "ルーク",
+        "en": "Luke",
+        "fr": "Luke",
+        "it": "Luke",
+        "de": "Luke",
+        "es": "Luke",
+        "ru": "Люк",
+        "pl": "Luke",
+        "pt": "Luke",
+        "ko": "루크",
+        "zh-tw": "呂克",
+        "zh-cn": "卢克"
+      }
+    },
+    {
+      "id": "NpcName_NN_320540832",
+      "name_kr": "머지",
+      "name_en": "Madge",
+      "names_all": {
+        "ja": "マッジ",
+        "en": "Madge",
+        "fr": "Madge",
+        "it": "Madge",
+        "de": "Madge",
+        "es": "Madge",
+        "ru": "Мадж",
+        "pl": "Madge",
+        "pt": "Silphi",
+        "ko": "머지",
+        "zh-tw": "瑪吉",
+        "zh-cn": "玛吉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m337554080",
+      "name_kr": "긴",
+      "name_en": "Gin",
+      "names_all": {
+        "ja": "ギン",
+        "en": "Gin",
+        "fr": "Gin",
+        "it": "Ginkgo",
+        "de": "Gin",
+        "es": "Gin",
+        "ru": "Гинкго",
+        "pl": "Gin",
+        "pt": "Gin",
+        "ko": "긴",
+        "zh-tw": "銀",
+        "zh-cn": "银"
+      }
+    },
+    {
+      "id": "NpcName_NN_1156777344",
+      "name_kr": "헤이즐",
+      "name_en": "Hazel",
+      "names_all": {
+        "ja": "ヘイゼル",
+        "en": "Hazel",
+        "fr": "Noa",
+        "it": "Nocci",
+        "de": "Hazel",
+        "es": "Hazel",
+        "ru": "Фундук",
+        "pl": "Hazel",
+        "pt": "Velã",
+        "ko": "헤이즐",
+        "zh-tw": "榛果",
+        "zh-cn": "榛泽尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_1174486400",
+      "name_kr": "피스타",
+      "name_en": "Pista",
+      "names_all": {
+        "ja": "ピスタ",
+        "en": "Pista",
+        "fr": "Pista",
+        "it": "Pistacci",
+        "de": "Pista",
+        "es": "Tacho",
+        "ru": "Фисташик",
+        "pl": "Pista",
+        "pt": "Pista",
+        "ko": "피스타",
+        "zh-tw": "開心果",
+        "zh-cn": "皮斯塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_819502016",
+      "name_kr": "타니아",
+      "name_en": "Tanea",
+      "names_all": {
+        "ja": "タニア",
+        "en": "Tanea",
+        "fr": "Tanea",
+        "it": "Stagna",
+        "de": "Tanea",
+        "es": "Tanea",
+        "ru": "Каштаника",
+        "pl": "Tanea",
+        "pt": "Tanha",
+        "ko": "타니아",
+        "zh-tw": "栗子",
+        "zh-cn": "塔尼亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_1642609664",
+      "name_kr": "카프",
+      "name_en": "Caph",
+      "names_all": {
+        "ja": "カフ",
+        "en": "Caph",
+        "fr": "Caph",
+        "it": "Caph",
+        "de": "Caph",
+        "es": "Caph",
+        "ru": "Каф",
+        "pl": "Caph",
+        "pt": "Caph",
+        "ko": "카프",
+        "zh-tw": "卡夫",
+        "zh-cn": "卡夫"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1159940096",
+      "name_kr": "쉐다르",
+      "name_en": "Schedar",
+      "names_all": {
+        "ja": "シェダル",
+        "en": "Schedar",
+        "fr": "Schedar",
+        "it": "Schedar",
+        "de": "Schedar",
+        "es": "Schedar",
+        "ru": "Шедар",
+        "pl": "Schedar",
+        "pt": "Schedar",
+        "ko": "쉐다르",
+        "zh-tw": "謝達爾",
+        "zh-cn": "谢达尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m70875968",
+      "name_kr": "치이",
+      "name_en": "Tsih",
+      "names_all": {
+        "ja": "ツィー",
+        "en": "Tsih",
+        "fr": "Tsih",
+        "it": "Tsih",
+        "de": "Tsih",
+        "es": "Tsih",
+        "ru": "Цих",
+        "pl": "Tsih",
+        "pt": "Tsih",
+        "ko": "치이",
+        "zh-tw": "奇",
+        "zh-cn": "奇"
+      }
+    },
+    {
+      "id": "NpcName_NN_16269744",
+      "name_kr": "루크바",
+      "name_en": "Ruchbah",
+      "names_all": {
+        "ja": "ルクバー",
+        "en": "Ruchbah",
+        "fr": "Ruchbah",
+        "it": "Ruchbah",
+        "de": "Ruchbah",
+        "es": "Ruchbah",
+        "ru": "Рукбах",
+        "pl": "Ruchbah",
+        "pt": "Ruchbah",
+        "ko": "루크바",
+        "zh-tw": "盧克巴",
+        "zh-cn": "卢克巴"
+      }
+    },
+    {
+      "id": "NpcName_NN_2015373696",
+      "name_kr": "세긴",
+      "name_en": "Segin",
+      "names_all": {
+        "ja": "セギン",
+        "en": "Segin",
+        "fr": "Segin",
+        "it": "Segin",
+        "de": "Segin",
+        "es": "Segin",
+        "ru": "Сегин",
+        "pl": "Segin",
+        "pt": "Segin",
+        "ko": "세긴",
+        "zh-tw": "賽金",
+        "zh-cn": "塞金"
+      }
+    },
+    {
+      "id": "NpcName_NN_1667279488",
+      "name_kr": "로히",
+      "name_en": "Louhi",
+      "names_all": {
+        "ja": "ローヒ",
+        "en": "Louhi",
+        "fr": "Louhi",
+        "it": "Louhi",
+        "de": "Louhi",
+        "es": "Louhi",
+        "ru": "Лоухи",
+        "pl": "Louhi",
+        "pt": "Louhi",
+        "ko": "로히",
+        "zh-tw": "婁希",
+        "zh-cn": "罗希"
+      }
+    },
+    {
+      "id": "NpcName_NN_m964274112",
+      "name_kr": "모지",
+      "name_en": "Maugris",
+      "names_all": {
+        "ja": "モージ",
+        "en": "Maugris",
+        "fr": "Maugrise",
+        "it": "Malagigi",
+        "de": "Maugris",
+        "es": "Maugris",
+        "ru": "Малагис",
+        "pl": "Maugris",
+        "pt": "Maugis",
+        "ko": "모지",
+        "zh-tw": "莫日",
+        "zh-cn": "莫吉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m736987072",
+      "name_kr": "반짝가면",
+      "name_en": "Gawdygog",
+      "names_all": {
+        "ja": "キラカメン",
+        "en": "Gawdygog",
+        "fr": "Binnebling",
+        "it": "Sgargiocchiali",
+        "de": "Brillitzer",
+        "es": "Brillibrilli",
+        "ru": "Модноблеск",
+        "pl": "Jaskrogiel",
+        "pt": "Gawdygog",
+        "ko": "반짝가면",
+        "zh-tw": "面亮亮",
+        "zh-cn": "闪光假面"
+      }
+    },
+    {
+      "id": "NpcName_NN_415620352",
+      "name_kr": "낚싯대장",
+      "name_en": "Mastangler",
+      "names_all": {
+        "ja": "サオダイショウ",
+        "en": "Mastangler",
+        "fr": "Moulinet",
+        "it": "Arpomastro",
+        "de": "Meistangler",
+        "es": "Pescanoff",
+        "ru": "Рыбохват",
+        "pl": "Przeryb",
+        "pt": "Pescarito",
+        "ko": "낚싯대장",
+        "zh-tw": "釣魚王",
+        "zh-cn": "钓竿大王"
+      }
+    },
+    {
+      "id": "NpcName_NN_m111533864",
+      "name_kr": "대목이",
+      "name_en": "Thunk",
+      "names_all": {
+        "ja": "タイボク",
+        "en": "Thunk",
+        "fr": "Gigarbuste",
+        "it": "Tump",
+        "de": "Donk",
+        "es": "Bonk",
+        "ru": "Тудум",
+        "pl": "Stuk",
+        "pt": "Avorona",
+        "ko": "대목이",
+        "zh-tw": "大樹",
+        "zh-cn": "巨木"
+      }
+    },
+    {
+      "id": "NpcName_NN_m502574304",
+      "name_kr": "대목이",
+      "name_en": "Thunk",
+      "names_all": {
+        "ja": "タイボク",
+        "en": "Thunk",
+        "fr": "Gigarbuste",
+        "it": "Tump",
+        "de": "Donk",
+        "es": "Bonk",
+        "ru": "Тудум",
+        "pl": "Stuk",
+        "pt": "Avorão",
+        "ko": "대목이",
+        "zh-tw": "大樹",
+        "zh-cn": "巨木"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1630312064",
+      "name_kr": "자가르",
+      "name_en": "Rocky",
+      "names_all": {
+        "ja": "イシコロ",
+        "en": "Rocky",
+        "fr": "Roxane",
+        "it": "Petra",
+        "de": "Brocken",
+        "es": "Rocky",
+        "ru": "Камешек",
+        "pl": "Kamieniczka",
+        "pt": "Rocky",
+        "ko": "자가르",
+        "zh-tw": "石頭",
+        "zh-cn": "小石"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1909057664",
+      "name_kr": "자가르",
+      "name_en": "Rocky",
+      "names_all": {
+        "ja": "イシコロ",
+        "en": "Rocky",
+        "fr": "Roxane",
+        "it": "Petra",
+        "de": "Brocken",
+        "es": "Rocky",
+        "ru": "Камешек",
+        "pl": "Kamieniczka",
+        "pt": "Rocky",
+        "ko": "자가르",
+        "zh-tw": "石頭",
+        "zh-cn": "小石"
+      }
+    },
+    {
+      "id": "NpcName_NN_m841862336",
+      "name_kr": "옴기자",
+      "name_en": "Gopher",
+      "names_all": {
+        "ja": "ハコビヤ",
+        "en": "Gopher",
+        "fr": "Larben",
+        "it": "Galoppino",
+        "de": "Pakkesel",
+        "es": "Recadero",
+        "ru": "Волокун",
+        "pl": "Wafel",
+        "pt": "Pralá",
+        "ko": "옴기자",
+        "zh-tw": "老搬",
+        "zh-cn": "老搬"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1391440128",
+      "name_kr": "옴기자",
+      "name_en": "Gopher",
+      "names_all": {
+        "ja": "ハコビヤ",
+        "en": "Gopher",
+        "fr": "Larben",
+        "it": "Galoppino",
+        "de": "Pakkesel",
+        "es": "Recadero",
+        "ru": "Волокун",
+        "pl": "Wafel",
+        "pt": "Pracá",
+        "ko": "옴기자",
+        "zh-tw": "老搬",
+        "zh-cn": "老搬"
+      }
+    },
+    {
+      "id": "NpcName_NN_551360256",
+      "name_kr": "미식버섯",
+      "name_en": "Gourmush",
+      "names_all": {
+        "ja": "グルメノコ",
+        "en": "Gourmush",
+        "fr": "Gourmignon",
+        "it": "Furmè",
+        "de": "Pfifferschmack",
+        "es": "Gourseta",
+        "ru": "Грибоежка",
+        "pl": "Pyszniak",
+        "pt": "Gastronomelo",
+        "ko": "미식버섯",
+        "zh-tw": "美食菇",
+        "zh-cn": "美食菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_m279857440",
+      "name_kr": "미식버섯",
+      "name_en": "Gourmush",
+      "names_all": {
+        "ja": "グルメノコ",
+        "en": "Gourmush",
+        "fr": "Gourmignon",
+        "it": "Furmè",
+        "de": "Pfifferschmack",
+        "es": "Gourseta",
+        "ru": "Грибоежка",
+        "pl": "Pyszniak",
+        "pt": "Gastronomelo",
+        "ko": "미식버섯",
+        "zh-tw": "美食菇",
+        "zh-cn": "美食菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_108950704",
+      "name_kr": "홀홀홀씨",
+      "name_en": "Sporatic",
+      "names_all": {
+        "ja": "ホンポウシ",
+        "en": "Sporatic",
+        "fr": "Sporadique",
+        "it": "Selvaspora",
+        "de": "Flinkspor",
+        "es": "Esporadi",
+        "ru": "Дикобродка",
+        "pl": "Sporadnica",
+        "pt": "Espravagante",
+        "ko": "홀홀홀씨",
+        "zh-tw": "孢孢子",
+        "zh-cn": "孢孢"
+      }
+    },
+    {
+      "id": "NpcName_NN_465217696",
+      "name_kr": "홀홀홀씨",
+      "name_en": "Sporatic",
+      "names_all": {
+        "ja": "ホンポウシ",
+        "en": "Sporatic",
+        "fr": "Sporadique",
+        "it": "Selvaspora",
+        "de": "Flinkspor",
+        "es": "Esporadi",
+        "ru": "Дикобродка",
+        "pl": "Sporadnica",
+        "pt": "Espravagante",
+        "ko": "홀홀홀씨",
+        "zh-tw": "孢孢子",
+        "zh-cn": "孢孢"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1953359104",
+      "name_kr": "대로대로",
+      "name_en": "Fyne-fyne",
+      "names_all": {
+        "ja": "ナルナル",
+        "en": "Fyne-fyne",
+        "fr": "Touroule",
+        "it": "Bene-bene",
+        "de": "Paletti",
+        "es": "Bientodo",
+        "ru": "Окиоки",
+        "pl": "Okejos",
+        "pt": "Tabem-tabem",
+        "ko": "대로대로",
+        "zh-tw": "隨意",
+        "zh-cn": "向好"
+      }
+    },
+    {
+      "id": "NpcName_NN_m142589312",
+      "name_kr": "향기나고",
+      "name_en": "Sniffleur",
+      "names_all": {
+        "ja": "カオリバナ",
+        "en": "Sniffleur",
+        "fr": "Nifleur",
+        "it": "Sniffior",
+        "de": "Schnüffla",
+        "es": "Olfaflor",
+        "ru": "Аромашик",
+        "pl": "Wąchacz",
+        "pt": "Aromamor",
+        "ko": "향기나고",
+        "zh-tw": "香花",
+        "zh-cn": "香花"
+      }
+    },
+    {
+      "id": "NpcName_NN_2107575808",
+      "name_kr": "돌격이",
+      "name_en": "Bangard",
+      "names_all": {
+        "ja": "サキガケ",
+        "en": "Bangard",
+        "fr": "Gargare",
+        "it": "Vanguardio",
+        "de": "Foahut",
+        "es": "Vanguar",
+        "ru": "Абангард",
+        "pl": "Strasz",
+        "pt": "Fanguarda",
+        "ko": "돌격이",
+        "zh-tw": "沖峰",
+        "zh-cn": "先锋"
+      }
+    },
+    {
+      "id": "NpcName_NN_1151128064",
+      "name_kr": "부르피우",
+      "name_en": "Sparkwoosh",
+      "names_all": {
+        "ja": "チャカボウ",
+        "en": "Sparkwoosh",
+        "fr": "Touflamme",
+        "it": "Scintilla",
+        "de": "Brizzlfunk",
+        "es": "Chispita",
+        "ru": "Чирквжух",
+        "pl": "Iskierka",
+        "pt": "Faisquente",
+        "ko": "부르피우",
+        "zh-tw": "篝火迷",
+        "zh-cn": "篝火迷"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1941136896",
+      "name_kr": "조은눈버섯",
+      "name_en": "Musharpeye",
+      "names_all": {
+        "ja": "メキキマシュ",
+        "en": "Musharpeye",
+        "fr": "Bonneuille",
+        "it": "Occhiorcina",
+        "de": "Scharfschilz",
+        "es": "Avizoseta",
+        "ru": "Зоркошляпка",
+        "pl": "Grzybnioczka",
+        "pt": "Fungolho",
+        "ko": "조은눈버섯",
+        "zh-tw": "好眼菇",
+        "zh-cn": "好眼菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_1036036544",
+      "name_kr": "폭시기",
+      "name_en": "Glut",
+      "names_all": {
+        "ja": "ボウショク",
+        "en": "Glut",
+        "fr": "Gourmette",
+        "it": "Ghiotta",
+        "de": "Fielfras",
+        "es": "Glotina",
+        "ru": "Прожорка",
+        "pl": "Strawa",
+        "pt": "Buxinchei",
+        "ko": "폭시기",
+        "zh-tw": "貪吃鬼",
+        "zh-cn": "皓吃"
+      }
+    },
+    {
+      "id": "NpcName_NN_m557315520",
+      "name_kr": "끈적덩굴",
+      "name_en": "Eloosivy",
+      "names_all": {
+        "ja": "ヌメリツタ",
+        "en": "Eloosivy",
+        "fr": "Fugilierra",
+        "it": "Eva Siva",
+        "de": "Flitzefratz",
+        "es": "Hiedrusiva",
+        "ru": "Неуловимия",
+        "pl": "Ulotka",
+        "pt": "Cipesguia",
+        "ko": "끈적덩굴",
+        "zh-tw": "黏黏蔓",
+        "zh-cn": "飘丽塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m243954976",
+      "name_kr": "춤꾸니",
+      "name_en": "Danzamuffin",
+      "names_all": {
+        "ja": "オドリンボ",
+        "en": "Danzamuffin",
+        "fr": "Divasalsa",
+        "it": "Cecerina",
+        "de": "Zapplarack",
+        "es": "Danzaruja",
+        "ru": "Шумнопляска",
+        "pl": "Salsa",
+        "pt": "Dançángora",
+        "ko": "춤꾸니",
+        "zh-tw": "舞跳跳",
+        "zh-cn": "舞跳跳"
+      }
+    },
+    {
+      "id": "NpcName_NN_m368844608",
+      "name_kr": "배보이미",
+      "name_en": "Bearbelly",
+      "names_all": {
+        "ja": "ハラダシ",
+        "en": "Bearbelly",
+        "fr": "Ventralair",
+        "it": "Tartaruga",
+        "de": "Freiwamp",
+        "es": "Panzalaire",
+        "ru": "Голопуз",
+        "pl": "Misiak",
+        "pt": "Barrigudin",
+        "ko": "배보이미",
+        "zh-tw": "露肚",
+        "zh-cn": "大肚"
+      }
+    },
+    {
+      "id": "NpcName_NN_m443570496",
+      "name_kr": "으르렁",
+      "name_en": "Gnarls",
+      "names_all": {
+        "ja": "ウナリ",
+        "en": "Gnarls",
+        "fr": "Gromm",
+        "it": "Ringhio",
+        "de": "Knurrt",
+        "es": "Funfuño",
+        "ru": "Рычун",
+        "pl": "Warczak",
+        "pt": "Rosnas",
+        "ko": "으르렁",
+        "zh-tw": "低鳴",
+        "zh-cn": "吟生"
+      }
+    },
+    {
+      "id": "NpcName_NN_m92698328",
+      "name_kr": "으르렁",
+      "name_en": "Gnarls",
+      "names_all": {
+        "ja": "ウナリ",
+        "en": "Gnarls",
+        "fr": "Gromm",
+        "it": "Ringhio",
+        "de": "Knurrt",
+        "es": "Funfuño",
+        "ru": "Рычун",
+        "pl": "Warczak",
+        "pt": "Rosnas",
+        "ko": "으르렁",
+        "zh-tw": "低鳴",
+        "zh-cn": "吟生"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1233678080",
+      "name_kr": "힐끗버섯",
+      "name_en": "Scampshroom",
+      "names_all": {
+        "ja": "チョロタケ",
+        "en": "Scampshroom",
+        "fr": "Caracole",
+        "it": "Vagafunga",
+        "de": "Champel",
+        "es": "Zafarseta",
+        "ru": "Прытконожка",
+        "pl": "Drepka",
+        "pt": "Saltimelo",
+        "ko": "힐끗버섯",
+        "zh-tw": "動動菇",
+        "zh-cn": "动动菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_1804246016",
+      "name_kr": "힐끗버섯",
+      "name_en": "Scampshroom",
+      "names_all": {
+        "ja": "チョロタケ",
+        "en": "Scampshroom",
+        "fr": "Caracole",
+        "it": "Vagafunga",
+        "de": "Champel",
+        "es": "Zafarseta",
+        "ru": "Прытконожка",
+        "pl": "Drepka",
+        "pt": "Saltimelo",
+        "ko": "힐끗버섯",
+        "zh-tw": "動動菇",
+        "zh-cn": "动动菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_912844160",
+      "name_kr": "껑충이",
+      "name_en": "Wudwomp",
+      "names_all": {
+        "ja": "デカノッポ",
+        "en": "Wudwomp",
+        "fr": "Grobolet",
+        "it": "Gigawud",
+        "de": "Wudwumms",
+        "es": "Wudclonc",
+        "ru": "Бумвуд",
+        "pl": "Leśkot",
+        "pt": "Rewudondo",
+        "ko": "껑충이",
+        "zh-tw": "大壯",
+        "zh-cn": "壮波"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1514410368",
+      "name_kr": "껑충이",
+      "name_en": "Wudwomp",
+      "names_all": {
+        "ja": "デカノッポ",
+        "en": "Wudwomp",
+        "fr": "Grobolet",
+        "it": "Gigawud",
+        "de": "Wudwumms",
+        "es": "Wudclonc",
+        "ru": "Бумвуд",
+        "pl": "Leśkot",
+        "pt": "Rewudondo",
+        "ko": "껑충이",
+        "zh-tw": "大壯",
+        "zh-cn": "壮波"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1766273792",
+      "name_kr": "덤벙우리",
+      "name_en": "Fumblebud",
+      "names_all": {
+        "ja": "ウカツボミ",
+        "en": "Fumblebud",
+        "fr": "Gaffleur",
+        "it": "Gofflora",
+        "de": "Sprussel",
+        "es": "Torpina",
+        "ru": "Растяпия",
+        "pl": "Upuszczka",
+        "pt": "Caiflora",
+        "ko": "덤벙우리",
+        "zh-tw": "冒失蕾",
+        "zh-cn": "迷糊蕾"
+      }
+    },
+    {
+      "id": "NpcName_NN_m663028736",
+      "name_kr": "덤벙우리",
+      "name_en": "Fumblebud",
+      "names_all": {
+        "ja": "ウカツボミ",
+        "en": "Fumblebud",
+        "fr": "Gaffleur",
+        "it": "Gofflora",
+        "de": "Sprussel",
+        "es": "Torpina",
+        "ru": "Растяпия",
+        "pl": "Upuszczka",
+        "pt": "Caiflora",
+        "ko": "덤벙우리",
+        "zh-tw": "冒失蕾",
+        "zh-cn": "迷糊蕾"
+      }
+    },
+    {
+      "id": "NpcName_NN_415482944",
+      "name_kr": "싱싱풀",
+      "name_en": "Greenhorn",
+      "names_all": {
+        "ja": "アオクサ",
+        "en": "Greenhorn",
+        "fr": "Glandouille",
+        "it": "Virgulto",
+        "de": "Grünohr",
+        "es": "Verdendiz",
+        "ru": "Зеленорог",
+        "pl": "Żółtodziób",
+        "pt": "Gramanova",
+        "ko": "싱싱풀",
+        "zh-tw": "青草",
+        "zh-cn": "青草"
+      }
+    },
+    {
+      "id": "NpcName_NN_1807143040",
+      "name_kr": "싱싱풀",
+      "name_en": "Greenhorn",
+      "names_all": {
+        "ja": "アオクサ",
+        "en": "Greenhorn",
+        "fr": "Glandouille",
+        "it": "Virgulto",
+        "de": "Grünohr",
+        "es": "Verdendiz",
+        "ru": "Зеленорог",
+        "pl": "Żółtodziób",
+        "pt": "Gramanova",
+        "ko": "싱싱풀",
+        "zh-tw": "青草",
+        "zh-cn": "青草"
+      }
+    },
+    {
+      "id": "NpcName_NN_1767001216",
+      "name_kr": "잠꾸러기",
+      "name_en": "Dozy",
+      "names_all": {
+        "ja": "ネボスケ",
+        "en": "Dozy",
+        "fr": "Grassmat",
+        "it": "Sonnolo",
+        "de": "Schlappo",
+        "es": "Lirón",
+        "ru": "Соня",
+        "pl": "Senniak",
+        "pt": "Cochilo",
+        "ko": "잠꾸러기",
+        "zh-tw": "貪睡鬼",
+        "zh-cn": "瞌睡仔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m514595040",
+      "name_kr": "잠꾸러기",
+      "name_en": "Dozy",
+      "names_all": {
+        "ja": "ネボスケ",
+        "en": "Dozy",
+        "fr": "Grassmat",
+        "it": "Sonnolo",
+        "de": "Schlappo",
+        "es": "Lirón",
+        "ru": "Соня",
+        "pl": "Senniak",
+        "pt": "Cochilo",
+        "ko": "잠꾸러기",
+        "zh-tw": "貪睡鬼",
+        "zh-cn": "瞌睡仔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m430146912",
+      "name_kr": "{0}",
+      "name_en": "{0}",
+      "names_all": {
+        "ja": "{0}",
+        "en": "{0}",
+        "fr": "{0}",
+        "it": "{0}",
+        "de": "{0}",
+        "es": "{0}",
+        "ru": "{0}",
+        "pl": "{0}",
+        "pt": "{0}",
+        "ko": "{0}",
+        "zh-tw": "{0}",
+        "zh-cn": "{0}"
+      }
+    },
+    {
+      "id": "NpcName_NN_1066308736",
+      "name_kr": "복슬복숭",
+      "name_en": "Plumpeach",
+      "names_all": {
+        "ja": "モモムックリ",
+        "en": "Plumpeach",
+        "fr": "Patapêche",
+        "it": "Susipesca",
+        "de": "Pflirsich",
+        "es": "Nectarina",
+        "ru": "Перслива",
+        "pl": "Puszynka",
+        "pt": "Pesseguinho",
+        "ko": "복슬복숭",
+        "zh-tw": "桃圓",
+        "zh-cn": "桃圆"
+      }
+    },
+    {
+      "id": "NpcName_NN_m474561312",
+      "name_kr": "깜찍볏",
+      "name_en": "Sassafrill",
+      "names_all": {
+        "ja": "シャマトサカ",
+        "en": "Sassafrill",
+        "fr": "Bofroufrou",
+        "it": "Sassafrill",
+        "de": "Fänschi",
+        "es": "Sassafrill",
+        "ru": "Саснорюша",
+        "pl": "Sroczka",
+        "pt": "Sassafrill",
+        "ko": "깜찍볏",
+        "zh-tw": "冠夏瑪",
+        "zh-cn": "冠夏玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1268056960",
+      "name_kr": "깜찍볏",
+      "name_en": "Sassafrill",
+      "names_all": {
+        "ja": "シャマトサカ",
+        "en": "Sassafrill",
+        "fr": "Bofroufrou",
+        "it": "Sassafrill",
+        "de": "Fänschi",
+        "es": "Sassafrill",
+        "ru": "Саснорюша",
+        "pl": "Sroczka",
+        "pt": "Sassafrill",
+        "ko": "깜찍볏",
+        "zh-tw": "冠夏瑪",
+        "zh-cn": "冠夏玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_1487290240",
+      "name_kr": "표고송이",
+      "name_en": "Shrumpet",
+      "names_all": {
+        "ja": "タケヤッコ",
+        "en": "Shrumpet",
+        "fr": "Champette",
+        "it": "Fungolo",
+        "de": "Shrumpet",
+        "es": "Trompiñón",
+        "ru": "Грибовест",
+        "pl": "Trąbgrzybek",
+        "pt": "Shrumpet",
+        "ko": "표고송이",
+        "zh-tw": "菇菇子",
+        "zh-cn": "艾菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_459204064",
+      "name_kr": "표고송이",
+      "name_en": "Shrumpet",
+      "names_all": {
+        "ja": "タケヤッコ",
+        "en": "Shrumpet",
+        "fr": "Champette",
+        "it": "Fungolo",
+        "de": "Shrumpet",
+        "es": "Trompiñón",
+        "ru": "Грибовест",
+        "pl": "Trąbgrzybek",
+        "pt": "Shrumpet",
+        "ko": "표고송이",
+        "zh-tw": "菇菇子",
+        "zh-cn": "艾菇"
+      }
+    },
+    {
+      "id": "NpcName_NN_31940",
+      "name_kr": "통풀모자",
+      "name_en": "Chomber",
+      "names_all": {
+        "ja": "ハミボウシ",
+        "en": "Chomber",
+        "fr": "Chapivore",
+        "it": "Chomber",
+        "de": "Mampfer",
+        "es": "Chomber",
+        "ru": "Чавки",
+        "pl": "Cząber",
+        "pt": "Chomber",
+        "ko": "통풀모자",
+        "zh-tw": "吃蠅帽",
+        "zh-cn": "食蝇帽"
+      }
+    },
+    {
+      "id": "NpcName_NN_419252352",
+      "name_kr": "통풀모자",
+      "name_en": "Chomber",
+      "names_all": {
+        "ja": "ハミボウシ",
+        "en": "Chomber",
+        "fr": "Chapivore",
+        "it": "Chomber",
+        "de": "Mampfer",
+        "es": "Chomber",
+        "ru": "Чавки",
+        "pl": "Cząber",
+        "pt": "Chomber",
+        "ko": "통풀모자",
+        "zh-tw": "吃蠅帽",
+        "zh-cn": "食蝇帽"
+      }
+    },
+    {
+      "id": "NpcName_NN_1351565824",
+      "name_kr": "로쏘",
+      "name_en": "Rosso",
+      "names_all": {
+        "ja": "ロッソ",
+        "en": "Rosso",
+        "fr": "Rosso",
+        "it": "Rosso",
+        "de": "Rosso",
+        "es": "Rosso",
+        "ru": "Россо",
+        "pl": "Rosso",
+        "pt": "Rosso",
+        "ko": "로쏘",
+        "zh-tw": "羅素",
+        "zh-cn": "罗索"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2030010112",
+      "name_kr": "카냐",
+      "name_en": "Kanya",
+      "names_all": {
+        "ja": "カーニャ",
+        "en": "Kanya",
+        "fr": "Kanya",
+        "it": "Kanya",
+        "de": "Kanya",
+        "es": "Kanya",
+        "ru": "Канья",
+        "pl": "Kanya",
+        "pt": "Kanya",
+        "ko": "카냐",
+        "zh-tw": "卡妮亞",
+        "zh-cn": "卡妮亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_907481792",
+      "name_kr": "그리핀",
+      "name_en": "Griffin",
+      "names_all": {
+        "ja": "グリフィン",
+        "en": "Griffin",
+        "fr": "Griffin",
+        "it": "Griffin",
+        "de": "Griffin",
+        "es": "Griffin",
+        "ru": "Гриффин",
+        "pl": "Griffin",
+        "pt": "Griffin",
+        "ko": "그리핀",
+        "zh-tw": "葛里芬",
+        "zh-cn": "格里芬"
+      }
+    },
+    {
+      "id": "NpcName_NN_m838054464",
+      "name_kr": "크루스",
+      "name_en": "Cruz",
+      "names_all": {
+        "ja": "クルス",
+        "en": "Cruz",
+        "fr": "Cruz",
+        "it": "Cruz",
+        "de": "Cruz",
+        "es": "Cruz",
+        "ru": "Круз",
+        "pl": "Cruz",
+        "pt": "Cruz",
+        "ko": "크루스",
+        "zh-tw": "克魯斯",
+        "zh-cn": "库鲁斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_1783712000",
+      "name_kr": "카이",
+      "name_en": "Kai",
+      "names_all": {
+        "ja": "カイ",
+        "en": "Kai",
+        "fr": "Kai",
+        "it": "Kai",
+        "de": "Kai",
+        "es": "Kai",
+        "ru": "Кай",
+        "pl": "Kai",
+        "pt": "Kai",
+        "ko": "카이",
+        "zh-tw": "凱",
+        "zh-cn": "凯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m195931040",
+      "name_kr": "안바르",
+      "name_en": "Anvar",
+      "names_all": {
+        "ja": "アンバル",
+        "en": "Anvar",
+        "fr": "Anvar",
+        "it": "Anvar",
+        "de": "Anvar",
+        "es": "Anvar",
+        "ru": "Анвар",
+        "pl": "Anvar",
+        "pt": "Anvar",
+        "ko": "안바르",
+        "zh-tw": "安巴爾",
+        "zh-cn": "昂巴尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_5998",
+      "name_kr": "알파",
+      "name_en": "Alpha",
+      "names_all": {
+        "ja": "アルファ",
+        "en": "Alpha",
+        "fr": "Alpha",
+        "it": "Alpha",
+        "de": "Alpha",
+        "es": "Alfa",
+        "ru": "Альфа",
+        "pl": "Alpha",
+        "pt": "Alpha",
+        "ko": "알파",
+        "zh-tw": "阿爾法",
+        "zh-cn": "阿尔法"
+      }
+    },
+    {
+      "id": "NpcName_NN_16659",
+      "name_kr": "오메가",
+      "name_en": "Omega",
+      "names_all": {
+        "ja": "オメガ",
+        "en": "Omega",
+        "fr": "Oméga",
+        "it": "Omega",
+        "de": "Omega",
+        "es": "Omega",
+        "ru": "Омега",
+        "pl": "Omega",
+        "pt": "Omega",
+        "ko": "오메가",
+        "zh-tw": "歐米茄",
+        "zh-cn": "欧米茄"
+      }
+    },
+    {
+      "id": "NpcName_NN_2339",
+      "name_kr": "레벨 측정기",
+      "name_en": "Level Checker",
+      "names_all": {
+        "ja": "レベルチェッカー",
+        "en": "Level Checker",
+        "fr": "Vérifiniveau",
+        "it": "Controllore di livello",
+        "de": "Monitor",
+        "es": "Medidor de nivel",
+        "ru": "Уровнемер",
+        "pl": "Kontroler poziomu",
+        "pt": "Medidor de Nível",
+        "ko": "레벨 측정기",
+        "zh-tw": "等級檢測儀",
+        "zh-cn": "等级检测仪"
+      }
+    },
+    {
+      "id": "NpcName_NN_21415",
+      "name_kr": "레벨 측정기",
+      "name_en": "Level Checker",
+      "names_all": {
+        "ja": "レベルチェッカー",
+        "en": "Level Checker",
+        "fr": "Vérifiniveau",
+        "it": "Controllore di livello",
+        "de": "Monitor",
+        "es": "Medidor de nivel",
+        "ru": "Уровнемер",
+        "pl": "Kontroler poziomu",
+        "pt": "Medidor de Nível",
+        "ko": "레벨 측정기",
+        "zh-tw": "等級檢測儀",
+        "zh-cn": "等级检测仪"
+      }
+    },
+    {
+      "id": "NpcName_NN_25679",
+      "name_kr": "오메가 플라네테스",
+      "name_en": "Omega Planetes",
+      "names_all": {
+        "ja": "オメガ・プラネテス",
+        "en": "Omega Planetes",
+        "fr": "Oméga Planetikos",
+        "it": "Omega Planetes",
+        "de": "Omega Planetes",
+        "es": "Omega Planetes",
+        "ru": "Омега-Планетес",
+        "pl": "Omega Planetes",
+        "pt": "Omega Planetes",
+        "ko": "오메가 플라네테스",
+        "zh-tw": "遊星歐米茄",
+        "zh-cn": "游星欧米茄"
+      }
+    },
+    {
+      "id": "NpcName_NN_433309312",
+      "name_kr": "데시",
+      "name_en": "Desi",
+      "names_all": {
+        "ja": "デシ",
+        "en": "Desi",
+        "fr": "Desi",
+        "it": "Desi",
+        "de": "Desi",
+        "es": "Desi",
+        "ru": "Дези",
+        "pl": "Desi",
+        "pt": "Desi",
+        "ko": "데시",
+        "zh-tw": "德西",
+        "zh-cn": "德希"
+      }
+    },
+    {
+      "id": "NpcName_NN_30742",
+      "name_kr": "슬쩍이",
+      "name_en": "Ayejack",
+      "names_all": {
+        "ja": "ガメネッコ",
+        "en": "Ayejack",
+        "fr": "Filoupe",
+        "it": "Ayejack",
+        "de": "Wilbrill",
+        "es": "Cleptafa",
+        "ru": "Глазокрад",
+        "pl": "Patrzałek",
+        "pt": "Oculiante",
+        "ko": "슬쩍이",
+        "zh-tw": "小鏡鏡",
+        "zh-cn": "小睛睛"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1734245376",
+      "name_kr": "소롤",
+      "name_en": "Sorol",
+      "names_all": {
+        "ja": "ソロル",
+        "en": "Sorol",
+        "fr": "Sorol",
+        "it": "Sorol",
+        "de": "Sorol",
+        "es": "Sorol",
+        "ru": "Сороль",
+        "pl": "Sorol",
+        "pt": "Sorol",
+        "ko": "소롤",
+        "zh-tw": "索羅爾",
+        "zh-cn": "索罗尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_1638963072",
+      "name_kr": "시미온",
+      "name_en": "Simeon",
+      "names_all": {
+        "ja": "シミオン",
+        "en": "Simeon",
+        "fr": "Simeon",
+        "it": "Simeon",
+        "de": "Simeon",
+        "es": "Simeon",
+        "ru": "Симеон",
+        "pl": "Simeon",
+        "pt": "Simeon",
+        "ko": "시미온",
+        "zh-tw": "西蒙",
+        "zh-cn": "西米恩"
+      }
+    },
+    {
+      "id": "NpcName_NN_18036",
+      "name_kr": "예오리",
+      "name_en": "Georg",
+      "names_all": {
+        "ja": "イェオリ",
+        "en": "Georg",
+        "fr": "Georg",
+        "it": "Georg",
+        "de": "Georg",
+        "es": "Georg",
+        "ru": "Георг",
+        "pl": "Georg",
+        "pt": "Georg",
+        "ko": "예오리",
+        "zh-tw": "耶歐里",
+        "zh-cn": "伊欧里"
+      }
+    },
+    {
+      "id": "NpcName_NN_4176",
+      "name_kr": "알래스터",
+      "name_en": "Alistair",
+      "names_all": {
+        "ja": "アラスター",
+        "en": "Alistair",
+        "fr": "Alistair",
+        "it": "Alistair",
+        "de": "Alistair",
+        "es": "Alistair",
+        "ru": "Алистер",
+        "pl": "Alistair",
+        "pt": "Alistair",
+        "ko": "알래스터",
+        "zh-tw": "阿拉斯塔",
+        "zh-cn": "阿里斯塔尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m743901696",
+      "name_kr": "퀸",
+      "name_en": "Quinn",
+      "names_all": {
+        "ja": "クイン",
+        "en": "Quinn",
+        "fr": "Quinn",
+        "it": "Quinn",
+        "de": "Quinn",
+        "es": "Quinn",
+        "ru": "Квинн",
+        "pl": "Quinn",
+        "pt": "Quinn",
+        "ko": "퀸",
+        "zh-tw": "奎茵",
+        "zh-cn": "奎茵"
+      }
+    },
+    {
+      "id": "NpcName_NN_m303701408",
+      "name_kr": "헤드윅",
+      "name_en": "Hadewych",
+      "names_all": {
+        "ja": "ハーデヴィヒ",
+        "en": "Hadewych",
+        "fr": "Hadewych",
+        "it": "Hadewych",
+        "de": "Hadewych",
+        "es": "Hadewych",
+        "ru": "Хейдвич",
+        "pl": "Hadewych",
+        "pt": "Hadewych",
+        "ko": "헤드윅",
+        "zh-tw": "哈德薇琪",
+        "zh-cn": "哈德薇琪"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1735162496",
+      "name_kr": "리리",
+      "name_en": "Li Lee",
+      "names_all": {
+        "ja": "リ・リー",
+        "en": "Li Lee",
+        "fr": "Li Lee",
+        "it": "Li Lee",
+        "de": "Li Lee",
+        "es": "Li Lee",
+        "ru": "Ли Ли",
+        "pl": "Li Lee",
+        "pt": "Li Lee",
+        "ko": "리리",
+        "zh-tw": "里莉",
+        "zh-cn": "莉丽"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1620609280",
+      "name_kr": "리즈",
+      "name_en": "Lees",
+      "names_all": {
+        "ja": "リーズ",
+        "en": "Lees",
+        "fr": "Lees",
+        "it": "Lees",
+        "de": "Lees",
+        "es": "Lees",
+        "ru": "Лиис",
+        "pl": "Lees",
+        "pt": "Lees",
+        "ko": "리즈",
+        "zh-tw": "麗絲",
+        "zh-cn": "丽思"
+      }
+    },
+    {
+      "id": "NpcName_NN_m661654208",
+      "name_kr": "마유",
+      "name_en": "Mayu",
+      "names_all": {
+        "ja": "マユ",
+        "en": "Mayu",
+        "fr": "Mayu",
+        "it": "Mayu",
+        "de": "Mayu",
+        "es": "Mayu",
+        "ru": "Майю",
+        "pl": "Mayu",
+        "pt": "Mayu",
+        "ko": "마유",
+        "zh-tw": "瑪優",
+        "zh-cn": "麻优"
+      }
+    },
+    {
+      "id": "NpcName_NN_16393",
+      "name_kr": "아이비",
+      "name_en": "Ivy",
+      "names_all": {
+        "ja": "アイビー",
+        "en": "Ivy",
+        "fr": "Ivy",
+        "it": "Ivy",
+        "de": "Ivy",
+        "es": "Ivy",
+        "ru": "Айви",
+        "pl": "Ivy",
+        "pt": "Hera",
+        "ko": "아이비",
+        "zh-tw": "艾薇",
+        "zh-cn": "艾薇"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1491826560",
+      "name_kr": "까마귀",
+      "name_en": "Crow",
+      "names_all": {
+        "ja": "明烏",
+        "en": "Crow",
+        "fr": "Corbeau",
+        "it": "Crow",
+        "de": "Rabe",
+        "es": "Cuervo",
+        "ru": "Ворон",
+        "pl": "Kruk",
+        "pt": "Corvo",
+        "ko": "까마귀",
+        "zh-tw": "明烏",
+        "zh-cn": "明乌"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1612647680",
+      "name_kr": "얀",
+      "name_en": "Jan",
+      "names_all": {
+        "ja": "ヤン",
+        "en": "Jan",
+        "fr": "Jan",
+        "it": "Jan",
+        "de": "Jan",
+        "es": "Jan",
+        "ru": "Ян",
+        "pl": "Jan",
+        "pt": "Jan",
+        "ko": "얀",
+        "zh-tw": "陽",
+        "zh-cn": "阳"
+      }
+    },
+    {
+      "id": "NpcName_NN_497260096",
+      "name_kr": "윳타",
+      "name_en": "Jutta",
+      "names_all": {
+        "ja": "ユッタ",
+        "en": "Jutta",
+        "fr": "Jutta",
+        "it": "Jutta",
+        "de": "Jutta",
+        "es": "Jutta",
+        "ru": "Джутта",
+        "pl": "Jutta",
+        "pt": "Jutta",
+        "ko": "윳타",
+        "zh-tw": "尤塔",
+        "zh-cn": "尤塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_21120",
+      "name_kr": "무그라",
+      "name_en": "Mugura",
+      "names_all": {
+        "ja": "ムグラ",
+        "en": "Mugura",
+        "fr": "Mugura",
+        "it": "Mugura",
+        "de": "Mugura",
+        "es": "Mugura",
+        "ru": "Мугура",
+        "pl": "Mugura",
+        "pt": "Mugura",
+        "ko": "무그라",
+        "zh-tw": "葎",
+        "zh-cn": "葎"
+      }
+    },
+    {
+      "id": "NpcName_NN_18574",
+      "name_kr": "카제노",
+      "name_en": "Kazeno",
+      "names_all": {
+        "ja": "カゼノ",
+        "en": "Kazeno",
+        "fr": "Kazeno",
+        "it": "Kazeno",
+        "de": "Kazeno",
+        "es": "Kazeno",
+        "ru": "Казено",
+        "pl": "Kazeno",
+        "pt": "Kazeno",
+        "ko": "카제노",
+        "zh-tw": "風野",
+        "zh-cn": "风野"
+      }
+    },
+    {
+      "id": "NpcName_NN_28041",
+      "name_kr": "로블레",
+      "name_en": "Roble",
+      "names_all": {
+        "ja": "ローブレ",
+        "en": "Roble",
+        "fr": "Roble",
+        "it": "Roble",
+        "de": "Rollf",
+        "es": "Roble",
+        "ru": "Робль",
+        "pl": "Roble",
+        "pt": "Roble",
+        "ko": "로블레",
+        "zh-tw": "阿橡",
+        "zh-cn": "阿橡"
+      }
+    },
+    {
+      "id": "NpcName_NN_22768",
+      "name_kr": "피노",
+      "name_en": "Pino",
+      "names_all": {
+        "ja": "ピーノ",
+        "en": "Pino",
+        "fr": "Pino",
+        "it": "Pino",
+        "de": "Rolland",
+        "es": "Pino",
+        "ru": "Пино",
+        "pl": "Pino",
+        "pt": "Pino",
+        "ko": "피노",
+        "zh-tw": "阿松",
+        "zh-cn": "阿松"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1130878592",
+      "name_kr": "멜키오르",
+      "name_en": "Melchior",
+      "names_all": {
+        "ja": "メルヒオール",
+        "en": "Melchior",
+        "fr": "Melchior",
+        "it": "Melchior",
+        "de": "Melchior",
+        "es": "Melchior",
+        "ru": "Мельхиор",
+        "pl": "Melchior",
+        "pt": "Melquior",
+        "ko": "멜키오르",
+        "zh-tw": "梅爾希奧",
+        "zh-cn": "梅尔基奥"
+      }
+    },
+    {
+      "id": "NpcName_NN_322988192",
+      "name_kr": "블라제이",
+      "name_en": "Blazej",
+      "names_all": {
+        "ja": "ブラジェイ",
+        "en": "Blazej",
+        "fr": "Blazej",
+        "it": "Blazej",
+        "de": "Blazej",
+        "es": "Blazej",
+        "ru": "Блажей",
+        "pl": "Błażej",
+        "pt": "Blazej",
+        "ko": "블라제이",
+        "zh-tw": "布拉澤",
+        "zh-cn": "布拉杰"
+      }
+    },
+    {
+      "id": "NpcName_NN_774273920",
+      "name_kr": "으스름달",
+      "name_en": "Moonhaze",
+      "names_all": {
+        "ja": "朧月",
+        "en": "Moonhaze",
+        "fr": "Brume",
+        "it": "Bruma",
+        "de": "Mondschleier",
+        "es": "Bruma",
+        "ru": "Луновей",
+        "pl": "Księżycień",
+        "pt": "Névoa",
+        "ko": "으스름달",
+        "zh-tw": "朧月",
+        "zh-cn": "胧月"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1210675200",
+      "name_kr": "엔라이",
+      "name_en": "Enrai",
+      "names_all": {
+        "ja": "エンライ",
+        "en": "Enrai",
+        "fr": "Enrai",
+        "it": "Enrai",
+        "de": "Enrai",
+        "es": "Enrai",
+        "ru": "Энрай",
+        "pl": "Enrai",
+        "pt": "Enrai",
+        "ko": "엔라이",
+        "zh-tw": "遠雷",
+        "zh-cn": "远雷"
+      }
+    },
+    {
+      "id": "NpcName_NN_19049",
+      "name_kr": "고우키",
+      "name_en": "Akuma",
+      "names_all": {
+        "ja": "豪鬼",
+        "en": "Akuma",
+        "fr": "Akuma",
+        "it": "Akuma",
+        "de": "Akuma",
+        "es": "Akuma",
+        "ru": "Akuma",
+        "pl": "Akuma",
+        "pt": "Akuma",
+        "ko": "고우키",
+        "zh-tw": "豪鬼",
+        "zh-cn": "豪鬼"
+      }
+    },
+    {
+      "id": "NpcName_NN_32428",
+      "name_kr": "싱싱풀",
+      "name_en": "Greenhorn",
+      "names_all": {
+        "ja": "アオクサ",
+        "en": "Greenhorn",
+        "fr": "Glandouille",
+        "it": "Virgulto",
+        "de": "Grünohr",
+        "es": "Verdendiz",
+        "ru": "Зеленорог",
+        "pl": "Żółtodziób",
+        "pt": "Gramanova",
+        "ko": "싱싱풀",
+        "zh-tw": "青草",
+        "zh-cn": "青草"
+      }
+    },
+    {
+      "id": "NpcName_NN_m21052388",
+      "name_kr": "렉스",
+      "name_en": "Rex",
+      "names_all": {
+        "ja": "レックス",
+        "en": "Rex",
+        "fr": "Rex",
+        "it": "Rex",
+        "de": "Rex",
+        "es": "Rex",
+        "ru": "Рекс",
+        "pl": "Rex",
+        "pt": "Rex",
+        "ko": "렉스",
+        "zh-tw": "雷克斯",
+        "zh-cn": "莱克斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_740196352",
+      "name_kr": "코디",
+      "name_en": "Cobb",
+      "names_all": {
+        "ja": "コーディ",
+        "en": "Cobb",
+        "fr": "Cobb",
+        "it": "Cobb",
+        "de": "Cobb",
+        "es": "Cobb",
+        "ru": "Кобб",
+        "pl": "Cobb",
+        "pt": "Cobb",
+        "ko": "코디",
+        "zh-tw": "柯迪",
+        "zh-cn": "柯迪"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1904436608",
+      "name_kr": "리카르도",
+      "name_en": "Ricardo",
+      "names_all": {
+        "ja": "リカルド",
+        "en": "Ricardo",
+        "fr": "Ricardo",
+        "it": "Ricardo",
+        "de": "Ricardo",
+        "es": "Ricardo",
+        "ru": "Рикардо",
+        "pl": "Ricardo",
+        "pt": "Ricardo",
+        "ko": "리카르도",
+        "zh-tw": "利卡路德",
+        "zh-cn": "利卡德"
+      }
+    },
+    {
+      "id": "NpcName_NN_1558632320",
+      "name_kr": "사바르",
+      "name_en": "Sabar",
+      "names_all": {
+        "ja": "サバル",
+        "en": "Sabar",
+        "fr": "Sabar",
+        "it": "Sabar",
+        "de": "Sabar",
+        "es": "Sabar",
+        "ru": "Сабар",
+        "pl": "Sabal",
+        "pt": "Sabar",
+        "ko": "사바르",
+        "zh-tw": "薩巴爾",
+        "zh-cn": "萨巴尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_1198632064",
+      "name_kr": "길라라",
+      "name_en": "Gilar",
+      "names_all": {
+        "ja": "ジララ",
+        "en": "Gilar",
+        "fr": "Gilar",
+        "it": "Gilar",
+        "de": "Gilar",
+        "es": "Gilalito",
+        "ru": "Гилар",
+        "pl": "Gilar",
+        "pt": "Gilar",
+        "ko": "길라라",
+        "zh-tw": "吉拉拉",
+        "zh-cn": "吉拉勒"
+      }
+    },
+    {
+      "id": "NpcName_NN_2135203584",
+      "name_kr": "머드",
+      "name_en": "Mudum",
+      "names_all": {
+        "ja": "マード",
+        "en": "Mudum",
+        "fr": "Mudum",
+        "it": "Mudum",
+        "de": "Mudum",
+        "es": "Lodom",
+        "ru": "Мадум",
+        "pl": "Mudum",
+        "pt": "Mudum",
+        "ko": "머드",
+        "zh-tw": "瑪德",
+        "zh-cn": "玛德"
+      }
+    },
+    {
+      "id": "NpcName_NN_1525793664",
+      "name_kr": "사테츠",
+      "name_en": "Satesh",
+      "names_all": {
+        "ja": "サテツ",
+        "en": "Satesh",
+        "fr": "Satesh",
+        "it": "Satesh",
+        "de": "Satesh",
+        "es": "Satesh",
+        "ru": "Сатеш",
+        "pl": "Satesh",
+        "pt": "Satesh",
+        "ko": "사테츠",
+        "zh-tw": "鐵薩",
+        "zh-cn": "沙铁斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_1015634368",
+      "name_kr": "라바라",
+      "name_en": "Lavala",
+      "names_all": {
+        "ja": "ラヴァラ",
+        "en": "Lavala",
+        "fr": "Lavala",
+        "it": "Lavala",
+        "de": "Lavala",
+        "es": "Lavala",
+        "ru": "Лавал",
+        "pl": "Lavala",
+        "pt": "Lavala",
+        "ko": "라바라",
+        "zh-tw": "拉瓦拉",
+        "zh-cn": "拉瓦拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m64040364",
+      "name_kr": "라트너",
+      "name_en": "Lattner",
+      "names_all": {
+        "ja": "ラットナー",
+        "en": "Lattner",
+        "fr": "Lattner",
+        "it": "Lattner",
+        "de": "Lattner",
+        "es": "Lattner",
+        "ru": "Латтнер",
+        "pl": "Lattner",
+        "pt": "Lattner",
+        "ko": "라트너",
+        "zh-tw": "拉特納",
+        "zh-cn": "拉特纳"
+      }
+    },
+    {
+      "id": "NpcName_NN_2012206208",
+      "name_kr": "라도라이",
+      "name_en": "Ladori",
+      "names_all": {
+        "ja": "ラドライ",
+        "en": "Ladori",
+        "fr": "Ladori",
+        "it": "Ladori",
+        "de": "Ladori",
+        "es": "Ladori",
+        "ru": "Ладори",
+        "pl": "Ladori",
+        "pt": "Ladori",
+        "ko": "라도라이",
+        "zh-tw": "拉德萊",
+        "zh-cn": "拉德莱"
+      }
+    },
+    {
+      "id": "NpcName_NN_275527328",
+      "name_kr": "르파오",
+      "name_en": "Lapo",
+      "names_all": {
+        "ja": "ルパオ",
+        "en": "Lapo",
+        "fr": "Lapo",
+        "it": "Lapo",
+        "de": "Lapo",
+        "es": "Ólapo",
+        "ru": "Лапо",
+        "pl": "Lapo",
+        "pt": "Lapo",
+        "ko": "르파오",
+        "zh-tw": "魯帕歐",
+        "zh-cn": "卢珀欧"
+      }
+    },
+    {
+      "id": "NpcName_NN_m518671328",
+      "name_kr": "네르핀",
+      "name_en": "Nerup",
+      "names_all": {
+        "ja": "ネルピン",
+        "en": "Nerup",
+        "fr": "Nerup",
+        "it": "Nerup",
+        "de": "Nerup",
+        "es": "Nerup",
+        "ru": "Неруп",
+        "pl": "Nerup",
+        "pt": "Nerup",
+        "ko": "네르핀",
+        "zh-tw": "尼魯平",
+        "zh-cn": "内尔平"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1997167360",
+      "name_kr": "모르모",
+      "name_en": "Marmo",
+      "names_all": {
+        "ja": "モルモ",
+        "en": "Marmo",
+        "fr": "Marmo",
+        "it": "Marmo",
+        "de": "Marmo",
+        "es": "Marmo",
+        "ru": "Мармо",
+        "pl": "Marmo",
+        "pt": "Marmo",
+        "ko": "모르모",
+        "zh-tw": "莫魯莫",
+        "zh-cn": "莫尔莫"
+      }
+    },
+    {
+      "id": "NpcName_NN_326817888",
+      "name_kr": "트이자",
+      "name_en": "Tejin",
+      "names_all": {
+        "ja": "トイジャ",
+        "en": "Tejin",
+        "fr": "Tejin",
+        "it": "Tejin",
+        "de": "Tejin",
+        "es": "Geíta",
+        "ru": "Тедзин",
+        "pl": "Tejin",
+        "pt": "Tejin",
+        "ko": "트이자",
+        "zh-tw": "特伊賈",
+        "zh-cn": "托伊贾"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1787691520",
+      "name_kr": "징커",
+      "name_en": "Zinca",
+      "names_all": {
+        "ja": "ジンカ",
+        "en": "Zinca",
+        "fr": "Zinca",
+        "it": "Zinca",
+        "de": "Zinca",
+        "es": "Cincito",
+        "ru": "Цинка",
+        "pl": "Zinca",
+        "pt": "Zinca",
+        "ko": "징커",
+        "zh-tw": "進卡",
+        "zh-cn": "锌卡"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2010461440",
+      "name_kr": "사테츠",
+      "name_en": "Satesh",
+      "names_all": {
+        "ja": "サテツ",
+        "en": "Satesh",
+        "fr": "Satesh",
+        "it": "Satesh",
+        "de": "Satesh",
+        "es": "Satesh",
+        "ru": "Сатеш",
+        "pl": "Satesh",
+        "pt": "Satesh",
+        "ko": "사테츠",
+        "zh-tw": "鐵薩",
+        "zh-cn": "沙铁斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2128362368",
+      "name_kr": "렌",
+      "name_en": "Ren",
+      "names_all": {
+        "ja": "レン",
+        "en": "Ren",
+        "fr": "Len",
+        "it": "Ren",
+        "de": "Ren",
+        "es": "Ren",
+        "ru": "Рен",
+        "pl": "Ren",
+        "pt": "Ren",
+        "ko": "렌",
+        "zh-tw": "蓮",
+        "zh-cn": "莲恩"
+      }
+    },
+    {
+      "id": "NpcName_NN_m498740544",
+      "name_kr": "로루엘",
+      "name_en": "Lauruel",
+      "names_all": {
+        "ja": "ロルエル",
+        "en": "Lauruel",
+        "fr": "Lauruel",
+        "it": "Lauruel",
+        "de": "Lauruel",
+        "es": "Lauruel",
+        "ru": "Лорэл",
+        "pl": "Lauruel",
+        "pt": "Lauruel",
+        "ko": "로루엘",
+        "zh-tw": "羅爾艾魯",
+        "zh-cn": "劳雷尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_268194848",
+      "name_kr": "카라몬",
+      "name_en": "Kalamon",
+      "names_all": {
+        "ja": "カラモン",
+        "en": "Kalamon",
+        "fr": "Kalamon",
+        "it": "Kalamon",
+        "de": "Kalamon",
+        "es": "Kalamon",
+        "ru": "Каламон",
+        "pl": "Kalamon",
+        "pt": "Kalamon",
+        "ko": "카라몬",
+        "zh-tw": "卡拉孟",
+        "zh-cn": "卡拉蒙"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2058179200",
+      "name_kr": "라이샤",
+      "name_en": "Rysher",
+      "names_all": {
+        "ja": "ライシャ",
+        "en": "Rysher",
+        "fr": "Rysher",
+        "it": "Rysher",
+        "de": "Rysher",
+        "es": "Rysher",
+        "ru": "Ришер",
+        "pl": "Rysher",
+        "pt": "Rysher",
+        "ko": "라이샤",
+        "zh-tw": "萊夏",
+        "zh-cn": "莱夏"
+      }
+    },
+    {
+      "id": "NpcName_NN_m62133100",
+      "name_kr": "아디니",
+      "name_en": "Ardeni",
+      "names_all": {
+        "ja": "アーデニー",
+        "en": "Ardeni",
+        "fr": "Ardeni",
+        "it": "Ardeni",
+        "de": "Ardeni",
+        "es": "Ardeni",
+        "ru": "Ардени",
+        "pl": "Ardeni",
+        "pt": "Ardeni",
+        "ko": "아디니",
+        "zh-tw": "亞迪尼",
+        "zh-cn": "亚德尼"
+      }
+    },
+    {
+      "id": "NpcName_NN_1955598592",
+      "name_kr": "보세아",
+      "name_en": "Obeca",
+      "names_all": {
+        "ja": "ボセア",
+        "en": "Obeca",
+        "fr": "Obeca",
+        "it": "Obeca",
+        "de": "Obeca",
+        "es": "Obeca",
+        "ru": "Обека",
+        "pl": "Obeca",
+        "pt": "Obeca",
+        "ko": "보세아",
+        "zh-tw": "波賽亞",
+        "zh-cn": "波瑟亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1292088576",
+      "name_kr": "히드랑",
+      "name_en": "Hydoran",
+      "names_all": {
+        "ja": "ヒュドラン",
+        "en": "Hydoran",
+        "fr": "Hydoran",
+        "it": "Hydoran",
+        "de": "Hydoran",
+        "es": "Horten",
+        "ru": "Гидоран",
+        "pl": "Hydoran",
+        "pt": "Hydoran",
+        "ko": "히드랑",
+        "zh-tw": "修杜朗",
+        "zh-cn": "修德朗"
+      }
+    },
+    {
+      "id": "NpcName_NN_861448704",
+      "name_kr": "오쿠",
+      "name_en": "Oka",
+      "names_all": {
+        "ja": "オクウ",
+        "en": "Oka",
+        "fr": "Oka",
+        "it": "Kuer",
+        "de": "Oka",
+        "es": "Rob",
+        "ru": "Окка",
+        "pl": "Oka",
+        "pt": "Oka",
+        "ko": "오쿠",
+        "zh-tw": "歐克",
+        "zh-cn": "欧库"
+      }
+    },
+    {
+      "id": "NpcName_NN_m255624944",
+      "name_kr": "소우시",
+      "name_en": "Soshi",
+      "names_all": {
+        "ja": "ソウシ",
+        "en": "Soshi",
+        "fr": "Soshi",
+        "it": "Soshi",
+        "de": "Soshi",
+        "es": "Soshi",
+        "ru": "Соши",
+        "pl": "Soshi",
+        "pt": "Soshi",
+        "ko": "소우시",
+        "zh-tw": "索西",
+        "zh-cn": "索西"
+      }
+    },
+    {
+      "id": "NpcName_NN_m54101904",
+      "name_kr": "요르단",
+      "name_en": "Jordan",
+      "names_all": {
+        "ja": "ヨルダン",
+        "en": "Jordan",
+        "fr": "Jordan",
+        "it": "Jordan",
+        "de": "Jordan",
+        "es": "Jordan",
+        "ru": "Джордан",
+        "pl": "Jordan",
+        "pt": "Jordan",
+        "ko": "요르단",
+        "zh-tw": "約丹",
+        "zh-cn": "约坦"
+      }
+    },
+    {
+      "id": "NpcName_NN_m223935120",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m223935120"
+      }
+    },
+    {
+      "id": "NpcName_NN_284567264",
+      "name_kr": "리슈안",
+      "name_en": "Lucien",
+      "names_all": {
+        "ja": "リシュアン",
+        "en": "Lucien",
+        "fr": "Lucien",
+        "it": "Lucien",
+        "de": "Lucien",
+        "es": "Lucien",
+        "ru": "Люсьен",
+        "pl": "Lucien",
+        "pt": "Lucien",
+        "ko": "리슈안",
+        "zh-tw": "盧西昂",
+        "zh-cn": "卢西恩"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1678964992",
+      "name_kr": "제임스",
+      "name_en": "James",
+      "names_all": {
+        "ja": "ジェイムズ",
+        "en": "James",
+        "fr": "James",
+        "it": "James",
+        "de": "James",
+        "es": "James",
+        "ru": "Джеймс",
+        "pl": "James",
+        "pt": "James",
+        "ko": "제임스",
+        "zh-tw": "詹姆斯",
+        "zh-cn": "詹姆斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m503275584",
+      "name_kr": "프란츠",
+      "name_en": "Franz",
+      "names_all": {
+        "ja": "フランツ",
+        "en": "Franz",
+        "fr": "Franz",
+        "it": "Franz",
+        "de": "Franz",
+        "es": "Franz",
+        "ru": "Франц",
+        "pl": "Franz",
+        "pt": "Franz",
+        "ko": "프란츠",
+        "zh-tw": "弗朗茨",
+        "zh-cn": "弗朗茨"
+      }
+    },
+    {
+      "id": "NpcName_NN_841482176",
+      "name_kr": "산티아고",
+      "name_en": "Santiago",
+      "names_all": {
+        "ja": "サンチャゴ",
+        "en": "Santiago",
+        "fr": "Santiago",
+        "it": "Santiago",
+        "de": "Santiago",
+        "es": "Santiago",
+        "ru": "Сантьяго",
+        "pl": "Santiago",
+        "pt": "Santiago",
+        "ko": "산티아고",
+        "zh-tw": "桑提亞哥",
+        "zh-cn": "桑提亚哥"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2106653184",
+      "name_kr": "랄프",
+      "name_en": "Ralph",
+      "names_all": {
+        "ja": "ラルフ",
+        "en": "Ralph",
+        "fr": "Ralph",
+        "it": "Ralph",
+        "de": "Ralf",
+        "es": "Ralph",
+        "ru": "Ральф",
+        "pl": "Ralph",
+        "pt": "Ralph",
+        "ko": "랄프",
+        "zh-tw": "拉爾夫",
+        "zh-cn": "拉尔夫"
+      }
+    },
+    {
+      "id": "NpcName_NN_685792768",
+      "name_kr": "쟝",
+      "name_en": "Jean",
+      "names_all": {
+        "ja": "ジャン",
+        "en": "Jean",
+        "fr": "Jean",
+        "it": "Jean",
+        "de": "Jean",
+        "es": "Jean",
+        "ru": "Жан",
+        "pl": "Jean",
+        "pt": "Jean",
+        "ko": "쟝",
+        "zh-tw": "約翰",
+        "zh-cn": "布林讷"
+      }
+    },
+    {
+      "id": "NpcName_NN_715023936",
+      "name_kr": "프리츠",
+      "name_en": "Fritz",
+      "names_all": {
+        "ja": "フリッツ",
+        "en": "Fritz",
+        "fr": "Fritz",
+        "it": "Fritz",
+        "de": "Fritz",
+        "es": "Fritz",
+        "ru": "Фриц",
+        "pl": "Fritz",
+        "pt": "Fritz",
+        "ko": "프리츠",
+        "zh-tw": "弗利茲",
+        "zh-cn": "弗利兹"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1739355136",
+      "name_kr": "아서",
+      "name_en": "Arthur",
+      "names_all": {
+        "ja": "アーサー",
+        "en": "Arthur",
+        "fr": "Arthur",
+        "it": "Artù",
+        "de": "Arthur",
+        "es": "Arthur",
+        "ru": "Артур",
+        "pl": "Arthur",
+        "pt": "Arthur",
+        "ko": "아서",
+        "zh-tw": "亞瑟",
+        "zh-cn": "亚瑟"
+      }
+    },
+    {
+      "id": "NpcName_NN_266129408",
+      "name_kr": "로빈",
+      "name_en": "Robin",
+      "names_all": {
+        "ja": "ロビン",
+        "en": "Robin",
+        "fr": "Robin",
+        "it": "Robin",
+        "de": "Robin",
+        "es": "Robin",
+        "ru": "Робин",
+        "pl": "Robin",
+        "pt": "Robin",
+        "ko": "로빈",
+        "zh-tw": "羅賓",
+        "zh-cn": "罗宾"
+      }
+    },
+    {
+      "id": "NpcName_NN_515935744",
+      "name_kr": "레뮤엘",
+      "name_en": "Lemuel",
+      "names_all": {
+        "ja": "レミュエル",
+        "en": "Lemuel",
+        "fr": "Lemuel",
+        "it": "Lemuel",
+        "de": "Lemuel",
+        "es": "Lemuel",
+        "ru": "Лемюэль",
+        "pl": "Lemuel",
+        "pt": "Lemuel",
+        "ko": "레뮤엘",
+        "zh-tw": "萊繆爾",
+        "zh-cn": "莱缪尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1782003456",
+      "name_kr": "테츠마",
+      "name_en": "Tetsuma",
+      "names_all": {
+        "ja": "テツマ",
+        "en": "Tetsuma",
+        "fr": "Tetsuma",
+        "it": "Tetsuma",
+        "de": "Tetsuma",
+        "es": "Tetsuma",
+        "ru": "Тецума",
+        "pl": "Tetsuma",
+        "pt": "Tetsuma",
+        "ko": "테츠마",
+        "zh-tw": "帖瑪",
+        "zh-cn": "铁玛"
+      }
+    },
+    {
+      "id": "NpcName_NN_2087570944",
+      "name_kr": "미나",
+      "name_en": "Mina",
+      "names_all": {
+        "ja": "ミナ",
+        "en": "Mina",
+        "fr": "Mina",
+        "it": "Mina",
+        "de": "Mina",
+        "es": "Mina",
+        "ru": "Мина",
+        "pl": "Mina",
+        "pt": "Mina",
+        "ko": "미나",
+        "zh-tw": "米納",
+        "zh-cn": "米娜"
+      }
+    },
+    {
+      "id": "NpcName_NN_m592574848",
+      "name_kr": "비",
+      "name_en": "Bee",
+      "names_all": {
+        "ja": "“ビー”",
+        "en": "Bee",
+        "fr": "Bee",
+        "it": "Bee",
+        "de": "Bee",
+        "es": "Bee",
+        "ru": "Пчела",
+        "pl": "Bee",
+        "pt": "Bee",
+        "ko": "비",
+        "zh-tw": "蜂",
+        "zh-cn": "蜂儿"
+      }
+    },
+    {
+      "id": "NpcName_NN_1421191808",
+      "name_kr": "푸에노",
+      "name_en": "Pueno",
+      "names_all": {
+        "ja": "プエノ",
+        "en": "Pueno",
+        "fr": "Pueno",
+        "it": "Pueno",
+        "de": "Pueno",
+        "es": "Pueno",
+        "ru": "Пуэно",
+        "pl": "Pueno",
+        "pt": "Pueno",
+        "ko": "푸에노",
+        "zh-tw": "普艾諾",
+        "zh-cn": "普埃诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_16562",
+      "name_kr": "횃부리",
+      "name_en": "Tochiwappa",
+      "names_all": {
+        "ja": "トチワッパ",
+        "en": "Tochiwappa",
+        "fr": "Tochiwappa",
+        "it": "Tochiwappa",
+        "de": "Loderich",
+        "es": "Tochiwappa",
+        "ru": "Точиваппа",
+        "pl": "Tochiwappa",
+        "pt": "Tochiwappa",
+        "ko": "횃부리",
+        "zh-tw": "火棍仔",
+        "zh-cn": "火棍仔"
+      }
+    },
+    {
+      "id": "NpcName_NN_32061",
+      "name_kr": "골트라",
+      "name_en": "Goltora",
+      "names_all": {
+        "ja": "ゴルトラ",
+        "en": "Goltora",
+        "fr": "Goltora",
+        "it": "Gorora",
+        "de": "Goltora",
+        "es": "Goltora",
+        "ru": "Голтора",
+        "pl": "Goltora",
+        "pt": "Goltora",
+        "ko": "골트라",
+        "zh-tw": "戈爾托拉",
+        "zh-cn": "柯尔特拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_12325",
+      "name_kr": "푸에노",
+      "name_en": "Pueno",
+      "names_all": {
+        "ja": "プエノ",
+        "en": "Pueno",
+        "fr": "Pueno",
+        "it": "Pueno",
+        "de": "Pueno",
+        "es": "Pueno",
+        "ru": "Пуэно",
+        "pl": "Pueno",
+        "pt": "Pueno",
+        "ko": "푸에노",
+        "zh-tw": "普艾諾",
+        "zh-cn": "普埃诺"
+      }
+    },
+    {
+      "id": "NpcName_NN_19706",
+      "name_kr": "끈적덩굴",
+      "name_en": "Eloosivy",
+      "names_all": {
+        "ja": "ヌメリツタ",
+        "en": "Eloosivy",
+        "fr": "Fugilierra",
+        "it": "Eva Siva",
+        "de": "Flitzefratz",
+        "es": "Hiedrusiva",
+        "ru": "Неуловимия",
+        "pl": "Ulotka",
+        "pt": "Cipesguia",
+        "ko": "끈적덩굴",
+        "zh-tw": "黏黏蔓",
+        "zh-cn": "飘丽塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_365411072",
+      "name_kr": "아레사",
+      "name_en": "Alessa",
+      "names_all": {
+        "ja": "アレサ",
+        "en": "Alessa",
+        "fr": "Alessa",
+        "it": "Alessa",
+        "de": "Alessa",
+        "es": "Alessa",
+        "ru": "Алесса",
+        "pl": "Alessa",
+        "pt": "Alessa",
+        "ko": "아레사",
+        "zh-tw": "阿蕾莎",
+        "zh-cn": "艾丽莎"
+      }
+    },
+    {
+      "id": "NpcName_NN_966990784",
+      "name_kr": "밤안개",
+      "name_en": "Nightmist",
+      "names_all": {
+        "ja": "夜霧",
+        "en": "Nightmist",
+        "fr": "Nuée",
+        "it": "Luna",
+        "de": "Nachtnebel",
+        "es": "Neblina Nocturna",
+        "ru": "Ночная Мгла",
+        "pl": "Mgła",
+        "pt": "Neblina",
+        "ko": "밤안개",
+        "zh-tw": "夜霧",
+        "zh-cn": "夜雾"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1595466880",
+      "name_kr": "새벽",
+      "name_en": "Dawn",
+      "names_all": {
+        "ja": "暁",
+        "en": "Dawn",
+        "fr": "Potron-minet",
+        "it": "Alba",
+        "de": "Morgendunst",
+        "es": "Alba",
+        "ru": "Рассвет",
+        "pl": "Brzask",
+        "pt": "Alvorada",
+        "ko": "새벽",
+        "zh-tw": "曉",
+        "zh-cn": "晓"
+      }
+    },
+    {
+      "id": "NpcName_NN_27921",
+      "name_kr": "나디아",
+      "name_en": "Nadia",
+      "names_all": {
+        "ja": "ナディア",
+        "en": "Nadia",
+        "fr": "Nadia",
+        "it": "Nadia",
+        "de": "Nadia",
+        "es": "Nadia",
+        "ru": "Надия",
+        "pl": "Nadia",
+        "pt": "Nadia",
+        "ko": "나디아",
+        "zh-tw": "娜迪亞",
+        "zh-cn": "娜迪亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_14990",
+      "name_kr": "베르너",
+      "name_en": "Werner",
+      "names_all": {
+        "ja": "ヴェルナー",
+        "en": "Werner",
+        "fr": "Werner",
+        "it": "Werner",
+        "de": "Werner",
+        "es": "Werner",
+        "ru": "Вернер",
+        "pl": "Werner",
+        "pt": "Werner",
+        "ko": "베르너",
+        "zh-tw": "維爾納",
+        "zh-cn": "沃纳"
+      }
+    },
+    {
+      "id": "NpcName_NN_24190",
+      "name_kr": "케이시",
+      "name_en": "Casey",
+      "names_all": {
+        "ja": "ケイシー",
+        "en": "Casey",
+        "fr": "Casey",
+        "it": "Casey",
+        "de": "Casey",
+        "es": "Casey",
+        "ru": "Кэйси",
+        "pl": "Casey",
+        "pt": "Casey",
+        "ko": "케이시",
+        "zh-tw": "凱西",
+        "zh-cn": "凯西"
+      }
+    },
+    {
+      "id": "NpcName_NN_29119",
+      "name_kr": "헬름",
+      "name_en": "Helm",
+      "names_all": {
+        "ja": "ヘルム",
+        "en": "Helm",
+        "fr": "Helm",
+        "it": "Helm",
+        "de": "Helm",
+        "es": "Helm",
+        "ru": "Хельм",
+        "pl": "Helm",
+        "pt": "Helm",
+        "ko": "헬름",
+        "zh-tw": "赫爾姆",
+        "zh-cn": "赫鲁姆"
+      }
+    },
+    {
+      "id": "NpcName_NN_637",
+      "name_kr": "레브",
+      "name_en": "Lev",
+      "names_all": {
+        "ja": "レブ",
+        "en": "Lev",
+        "fr": "Lev",
+        "it": "Lev",
+        "de": "Lev",
+        "es": "Lev",
+        "ru": "Лев",
+        "pl": "Lev",
+        "pt": "Lev",
+        "ko": "레브",
+        "zh-tw": "雷布",
+        "zh-cn": "雷布"
+      }
+    },
+    {
+      "id": "NpcName_NN_21197",
+      "name_kr": "소니",
+      "name_en": "Sohni",
+      "names_all": {
+        "ja": "ソーニ",
+        "en": "Sohni",
+        "fr": "Sohni",
+        "it": "Sohni",
+        "de": "Sohni",
+        "es": "Sohni",
+        "ru": "Сони",
+        "pl": "Sohni",
+        "pt": "Sohni",
+        "ko": "소니",
+        "zh-tw": "索妮",
+        "zh-cn": "索妮"
+      }
+    },
+    {
+      "id": "NpcName_NN_20867",
+      "name_kr": "니로",
+      "name_en": "Neero",
+      "names_all": {
+        "ja": "ニーロ",
+        "en": "Neero",
+        "fr": "Neero",
+        "it": "Neero",
+        "de": "Neero",
+        "es": "Neero",
+        "ru": "Ниро",
+        "pl": "Neero",
+        "pt": "Neero",
+        "ko": "니로",
+        "zh-tw": "尼洛",
+        "zh-cn": "尼罗"
+      }
+    },
+    {
+      "id": "NpcName_NN_18967",
+      "name_kr": "유메",
+      "name_en": "Yume",
+      "names_all": {
+        "ja": "ユメ",
+        "en": "Yume",
+        "fr": "Yume",
+        "it": "Yume",
+        "de": "Yume",
+        "es": "Yume",
+        "ru": "Юме",
+        "pl": "Yume",
+        "pt": "Yume",
+        "ko": "유메",
+        "zh-tw": "夢",
+        "zh-cn": "由美"
+      }
+    },
+    {
+      "id": "NpcName_NN_21970",
+      "name_kr": "이치란 점원 이치란",
+      "name_en": "ICHIRAN Clerk Ichiran",
+      "names_all": {
+        "ja": "一蘭店員 イチラン",
+        "en": "ICHIRAN Clerk Ichiran",
+        "fr": "Ichiran, employée d'ICHIRAN",
+        "it": "Ichiran (staff ICHIRAN)",
+        "de": "ICHIRAN-Angestellte Ichiran",
+        "es": "Dependiente ICHIRAN Ichiran",
+        "ru": "Работник ICHIRAN Итиран",
+        "pl": "Pomocnik ICHIRAN Ichiran",
+        "pt": "Atendente Ichiran",
+        "ko": "이치란 점원 이치란",
+        "zh-tw": "一蘭店員依蘭",
+        "zh-cn": "一蘭店员 一兰"
+      }
+    },
+    {
+      "id": "NpcName_NN_15060",
+      "name_kr": "미야",
+      "name_en": "Mea",
+      "names_all": {
+        "ja": "ミャー",
+        "en": "Mea",
+        "fr": "Méa",
+        "it": "Mea",
+        "de": "Mea",
+        "es": "Mea",
+        "ru": "Миа",
+        "pl": "Mea",
+        "pt": "Mea",
+        "ko": "미야",
+        "zh-tw": "喵",
+        "zh-cn": "喵"
+      }
+    },
+    {
+      "id": "NpcName_NN_20210",
+      "name_kr": "이치란 점원 란",
+      "name_en": "ICHIRAN Clerk Ran",
+      "names_all": {
+        "ja": "一蘭店員 ラン",
+        "en": "ICHIRAN Clerk Ran",
+        "fr": "Ran, employée d'ICHIRAN",
+        "it": "Ran (staff ICHIRAN)",
+        "de": "ICHIRAN-Angestellte Ran",
+        "es": "Dependiente ICHIRAN Ran",
+        "ru": "Работник ICHIRAN Ран",
+        "pl": "Pomocnik ICHIRAN Ran",
+        "pt": "Atendente Ran",
+        "ko": "이치란 점원 란",
+        "zh-tw": "一蘭店員嵐",
+        "zh-cn": "一蘭店员 阿兰"
+      }
+    },
+    {
+      "id": "NpcName_NN_20405",
+      "name_kr": "이치란 점원 이치",
+      "name_en": "ICHIRAN Clerk Ichi",
+      "names_all": {
+        "ja": "一蘭店員 イチ",
+        "en": "ICHIRAN Clerk Ichi",
+        "fr": "Ichi, employée d'ICHIRAN",
+        "it": "Ichi (staff ICHIRAN)",
+        "de": "ICHIRAN-Angestellter Ichi",
+        "es": "Dependiente ICHIRAN Ichi",
+        "ru": "Работник ICHIRAN Ити",
+        "pl": "Pomocnik ICHIRAN Ichi",
+        "pt": "Atendente Ichi",
+        "ko": "이치란 점원 이치",
+        "zh-tw": "一蘭店員伊",
+        "zh-cn": "一蘭店员 阿一"
+      }
+    },
+    {
+      "id": "NpcName_NN_8751",
+      "name_kr": "폭신폭신 수령",
+      "name_en": "Downy Crake Leader",
+      "names_all": {
+        "ja": "フワフワの首領",
+        "en": "Downy Crake Leader",
+        "fr": "Cheffe des marouettes douces",
+        "it": "Capo dei rallus mollis",
+        "de": "Flauschhuhn-Boss",
+        "es": "Carrao algodón líder",
+        "ru": "Вожак пуховых коростелей",
+        "pl": "Lider derkaczy puchatych",
+        "pt": "Saracura Plumosa Líder",
+        "ko": "폭신폭신 수령",
+        "zh-tw": "柔毛秧雞首領",
+        "zh-cn": "柔毛秧鸡首领"
+      }
+    },
+    {
+      "id": "NpcName_NN_25042",
+      "name_kr": "루디",
+      "name_en": "Rudy",
+      "names_all": {
+        "ja": "ルディ",
+        "en": "Rudy",
+        "fr": "Rudy",
+        "it": "Rudy",
+        "de": "Rudy",
+        "es": "Rudy",
+        "ru": "Руди",
+        "pl": "Rudy",
+        "pt": "Rudy",
+        "ko": "루디",
+        "zh-tw": "盧迪",
+        "zh-cn": "鲁迪"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1292654592",
+      "name_kr": "안세르",
+      "name_en": "Anser",
+      "names_all": {
+        "ja": "アンセル",
+        "en": "Anser",
+        "fr": "Anser",
+        "it": "Anser",
+        "de": "Anser",
+        "es": "Anser",
+        "ru": "Ансер",
+        "pl": "Anser",
+        "pt": "Anser",
+        "ko": "안세르",
+        "zh-tw": "齊增伍",
+        "zh-cn": "齐增伍"
+      }
+    },
+    {
+      "id": "NpcName_NN_19360",
+      "name_kr": "키탈파",
+      "name_en": "Kitalpha",
+      "names_all": {
+        "ja": "キタルファ",
+        "en": "Kitalpha",
+        "fr": "Kitalpha",
+        "it": "Kitalpha",
+        "de": "Kitalpha",
+        "es": "Kitalpha",
+        "ru": "Китальфа",
+        "pl": "Kitalpha",
+        "pt": "Kitalpha",
+        "ko": "키탈파",
+        "zh-tw": "虛宿爾",
+        "zh-cn": "虚宿尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_486",
+      "name_kr": "고메이사",
+      "name_en": "Gomeisa",
+      "names_all": {
+        "ja": "ゴメイザ",
+        "en": "Gomeisa",
+        "fr": "Gomeisa",
+        "it": "Gomeisa",
+        "de": "Gomeisa",
+        "es": "Gomeisa",
+        "ru": "Гомейса",
+        "pl": "Gomeisa",
+        "pt": "Gomeisa",
+        "ko": "고메이사",
+        "zh-tw": "南河爾",
+        "zh-cn": "南河尔"
+      }
+    },
+    {
+      "id": "NpcName_NN_1405405184",
+      "name_kr": "펠리치타",
+      "name_en": "Felicita",
+      "names_all": {
+        "ja": "フェリチタ",
+        "en": "Felicita",
+        "fr": "Felicita",
+        "it": "Felicita",
+        "de": "Felicita",
+        "es": "Felicita",
+        "ru": "Феличита",
+        "pl": "Felicita",
+        "pt": "Felicita",
+        "ko": "펠리치타",
+        "zh-tw": "菲麗齊塔",
+        "zh-cn": "菲丽齐塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1390787072",
+      "name_kr": "니나",
+      "name_en": "Nina",
+      "names_all": {
+        "ja": "ニナ",
+        "en": "Nina",
+        "fr": "Nina",
+        "it": "Nina",
+        "de": "Nina",
+        "es": "Nina",
+        "ru": "Нина",
+        "pl": "Nina",
+        "pt": "Nina",
+        "ko": "니나",
+        "zh-tw": "妮娜",
+        "zh-cn": "妮娜"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1451456896",
+      "name_kr": "로타",
+      "name_en": "Lotta",
+      "names_all": {
+        "ja": "ロッタ",
+        "en": "Lotta",
+        "fr": "Lotta",
+        "it": "Lotta",
+        "de": "Lotta",
+        "es": "Lotta",
+        "ru": "Лотта",
+        "pl": "Lotta",
+        "pt": "Lotta",
+        "ko": "로타",
+        "zh-tw": "蘿塔",
+        "zh-cn": "洛塔"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1789285376",
+      "name_kr": "캐서린",
+      "name_en": "Catherine",
+      "names_all": {
+        "ja": "キャサリン",
+        "en": "Catherine",
+        "fr": "Catherine",
+        "it": "Catherine",
+        "de": "Catherine",
+        "es": "Catherine",
+        "ru": "Кэтрин",
+        "pl": "Catherine",
+        "pt": "Catherine",
+        "ko": "캐서린",
+        "zh-tw": "凱薩琳",
+        "zh-cn": "凯瑟琳"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1838461312",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m1838461312"
+      }
+    },
+    {
+      "id": "NpcName_NN_m854296576",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m854296576"
+      }
+    },
+    {
+      "id": "NpcName_NN_538207232",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_538207232"
+      }
+    },
+    {
+      "id": "NpcName_NN_729815168",
+      "name_kr": "클라라",
+      "name_en": "Clara",
+      "names_all": {
+        "ja": "クララ",
+        "en": "Clara",
+        "fr": "Clara",
+        "it": "Clara",
+        "de": "Clara",
+        "es": "Clara",
+        "ru": "Клара",
+        "pl": "Clara",
+        "pt": "Clara",
+        "ko": "클라라",
+        "zh-tw": "克拉拉",
+        "zh-cn": "克拉拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m293672992",
+      "name_kr": "니키야",
+      "name_en": "Nikiya",
+      "names_all": {
+        "ja": "ニキヤ",
+        "en": "Nikiya",
+        "fr": "Nikiya",
+        "it": "Nikija",
+        "de": "Nikiya",
+        "es": "Nikiya",
+        "ru": "Никия",
+        "pl": "Nikiya",
+        "pt": "Nikiya",
+        "ko": "니키야",
+        "zh-tw": "妮基雅",
+        "zh-cn": "尼基亚"
+      }
+    },
+    {
+      "id": "NpcName_NN_m526339104",
+      "name_kr": "미르타",
+      "name_en": "Myrtle",
+      "names_all": {
+        "ja": "ミルタ",
+        "en": "Myrtle",
+        "fr": "Myrtha",
+        "it": "Myrtle",
+        "de": "Myrtle",
+        "es": "Myrtle",
+        "ru": "Миртл",
+        "pl": "Myrtle",
+        "pt": "Myrtle",
+        "ko": "미르타",
+        "zh-tw": "米爾妲",
+        "zh-cn": "米尔达"
+      }
+    },
+    {
+      "id": "NpcName_NN_727837440",
+      "name_kr": "키트리",
+      "name_en": "Kitri",
+      "names_all": {
+        "ja": "キトリ",
+        "en": "Kitri",
+        "fr": "Kitri",
+        "it": "Kitri",
+        "de": "Kitri",
+        "es": "Kitri",
+        "ru": "Китри",
+        "pl": "Kitri",
+        "pt": "Kitri",
+        "ko": "키트리",
+        "zh-tw": "琪蒂",
+        "zh-cn": "姬特莉"
+      }
+    },
+    {
+      "id": "NpcName_NN_1818231936",
+      "name_kr": "마키",
+      "name_en": "Maki",
+      "names_all": {
+        "ja": "マキ",
+        "en": "Maki",
+        "fr": "Maki",
+        "it": "Maki",
+        "de": "Maki",
+        "es": "Maki",
+        "ru": "Маки",
+        "pl": "Maki",
+        "pt": "Maki",
+        "ko": "마키",
+        "zh-tw": "瑪奇",
+        "zh-cn": "玛奇"
+      }
+    },
+    {
+      "id": "NpcName_NN_m138479344",
+      "name_kr": "야브란",
+      "name_en": "Yabran",
+      "names_all": {
+        "ja": "ヤブラン",
+        "en": "Yabran",
+        "fr": "Yabran",
+        "it": "Yabran",
+        "de": "Yabran",
+        "es": "Yabran",
+        "ru": "Ябран",
+        "pl": "Yabran",
+        "pt": "Yabran",
+        "ko": "야브란",
+        "zh-tw": "油老爺",
+        "zh-cn": "油老"
+      }
+    },
+    {
+      "id": "NpcName_NN_m401413856",
+      "name_kr": "도가드",
+      "name_en": "Dogard",
+      "names_all": {
+        "ja": "ドガード",
+        "en": "Dogard",
+        "fr": "Dogard",
+        "it": "Dogard",
+        "de": "Dogard",
+        "es": "Dogard",
+        "ru": "Догард",
+        "pl": "Dogard",
+        "pt": "Dogard",
+        "ko": "도가드",
+        "zh-tw": "多格德",
+        "zh-cn": "多格德"
+      }
+    },
+    {
+      "id": "NpcName_NN_180881856",
+      "name_kr": "아이다",
+      "name_en": "Aida",
+      "names_all": {
+        "ja": "アイダ",
+        "en": "Aida",
+        "fr": "Aida",
+        "it": "Aida",
+        "de": "Aida",
+        "es": "Aida",
+        "ru": "Аида",
+        "pl": "Aida",
+        "pt": "Aida",
+        "ko": "아이다",
+        "zh-tw": "阿伊達",
+        "zh-cn": "阿伊达"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1968644736",
+      "name_kr": "로쿠로",
+      "name_en": "Roqul",
+      "names_all": {
+        "ja": "ロクロ",
+        "en": "Roqul",
+        "fr": "Roqul",
+        "it": "Roqul",
+        "de": "Roqul",
+        "es": "Roqul",
+        "ru": "Рокул",
+        "pl": "Roqul",
+        "pt": "Roqul",
+        "ko": "로쿠로",
+        "zh-tw": "洛庫羅",
+        "zh-cn": "洛库罗"
+      }
+    },
+    {
+      "id": "NpcName_NN_2096916224",
+      "name_kr": "즈스",
+      "name_en": "Zuzu",
+      "names_all": {
+        "ja": "ズス",
+        "en": "Zuzu",
+        "fr": "Zuzu",
+        "it": "Zuzu",
+        "de": "Zuzu",
+        "es": "Zuzu",
+        "ru": "Зузу",
+        "pl": "Zuzu",
+        "pt": "Zuzu",
+        "ko": "즈스",
+        "zh-tw": "茲斯",
+        "zh-cn": "兹斯"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1116815744",
+      "name_kr": "트이가",
+      "name_en": "Etig",
+      "names_all": {
+        "ja": "トイガ",
+        "en": "Etig",
+        "fr": "Etig",
+        "it": "Etig",
+        "de": "Etig",
+        "es": "Etig",
+        "ru": "Этиг",
+        "pl": "Etig",
+        "pt": "Etig",
+        "ko": "트이가",
+        "zh-tw": "特伊凱",
+        "zh-cn": "托伊卡"
+      }
+    },
+    {
+      "id": "NpcName_NN_m2111404288",
+      "name_kr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+      "name_en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+      "names_all": {
+        "ja": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "en": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "fr": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "it": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "de": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "es": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "ru": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "pl": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "pt": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "ko": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "zh-tw": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288",
+        "zh-cn": "<COLOR FF0000>#Rejected#</COLOR> NpcName_NN_m2111404288"
+      }
+    },
+    {
+      "id": "NpcName_NN_m913667072",
+      "name_kr": "그라나",
+      "name_en": "Grana",
+      "names_all": {
+        "ja": "グラナー",
+        "en": "Grana",
+        "fr": "Grana",
+        "it": "Grana",
+        "de": "Grana",
+        "es": "Grana",
+        "ru": "Грана",
+        "pl": "Grana",
+        "pt": "Grana",
+        "ko": "그라나",
+        "zh-tw": "固拉那",
+        "zh-cn": "格拉纳"
+      }
+    },
+    {
+      "id": "NpcName_NN_m598247936",
+      "name_kr": "브루조",
+      "name_en": "Bruntzo",
+      "names_all": {
+        "ja": "ブルーゾ",
+        "en": "Bruntzo",
+        "fr": "Bruntzo",
+        "it": "Bruntzo",
+        "de": "Bruntzo",
+        "es": "Bruntzo",
+        "ru": "Брунцо",
+        "pl": "Bruntzo",
+        "pt": "Bruntzo",
+        "ko": "브루조",
+        "zh-tw": "布魯索",
+        "zh-cn": "布鲁索"
+      }
+    },
+    {
+      "id": "NpcName_NN_m264562720",
+      "name_kr": "골트라",
+      "name_en": "Goltora",
+      "names_all": {
+        "ja": "ゴルトラ",
+        "en": "Goltora",
+        "fr": "Goltora",
+        "it": "Gorora",
+        "de": "Goltora",
+        "es": "Goltora",
+        "ru": "Голтора",
+        "pl": "Goltora",
+        "pt": "Goltora",
+        "ko": "골트라",
+        "zh-tw": "戈爾托拉",
+        "zh-cn": "柯尔特拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1485485696",
+      "name_kr": "눈무",
+      "name_en": "Numun",
+      "names_all": {
+        "ja": "ヌンム",
+        "en": "Numun",
+        "fr": "Numun",
+        "it": "Numun",
+        "de": "Numun",
+        "es": "Numun",
+        "ru": "Намун",
+        "pl": "Numun",
+        "pt": "Numun",
+        "ko": "눈무",
+        "zh-tw": "奴恩姆",
+        "zh-cn": "农穆"
+      }
+    },
+    {
+      "id": "NpcName_NN_m638481088",
+      "name_kr": "클라로로",
+      "name_en": "Clorolo",
+      "names_all": {
+        "ja": "クラロロ",
+        "en": "Clorolo",
+        "fr": "Clorolo",
+        "it": "Clorolo",
+        "de": "Karol",
+        "es": "Clorolo",
+        "ru": "Хлороло",
+        "pl": "Clorolo",
+        "pt": "Clorolo",
+        "ko": "클라로로",
+        "zh-tw": "庫拉羅羅",
+        "zh-cn": "科拉罗洛"
+      }
+    },
+    {
+      "id": "NpcName_NN_796585344",
+      "name_kr": "제다",
+      "name_en": "Jada",
+      "names_all": {
+        "ja": "ジャダ",
+        "en": "Jada",
+        "fr": "Jada",
+        "it": "Jada",
+        "de": "Jada",
+        "es": "Jada",
+        "ru": "Джада",
+        "pl": "Jada",
+        "pt": "Jada",
+        "ko": "제다",
+        "zh-tw": "賈達",
+        "zh-cn": "嘉达"
+      }
+    },
+    {
+      "id": "NpcName_NN_1077595392",
+      "name_kr": "돌레라",
+      "name_en": "Doler",
+      "names_all": {
+        "ja": "ドレーラ",
+        "en": "Doler",
+        "fr": "Doler",
+        "it": "Doler",
+        "de": "Doler",
+        "es": "Lerita",
+        "ru": "Долер",
+        "pl": "Doler",
+        "pt": "Doler",
+        "ko": "돌레라",
+        "zh-tw": "德雷拉",
+        "zh-cn": "多雷拉"
+      }
+    },
+    {
+      "id": "NpcName_NN_m1341358592",
+      "name_kr": "나그네",
+      "name_en": "Rove",
+      "names_all": {
+        "ja": "ルロウ",
+        "en": "Rove",
+        "fr": "Ronin",
+        "it": "Errante",
+        "de": "Rokko",
+        "es": "Rante",
+        "ru": "Странник",
+        "pl": "Włóczykot",
+        "pt": "Vagante",
+        "ko": "나그네",
+        "zh-tw": "柳浪",
+        "zh-cn": "柳浪"
+      }
+    },
+    {
+      "id": "NpcName_NN_1679970048",
+      "name_kr": "나그네",
+      "name_en": "Rove",
+      "names_all": {
+        "ja": "ルロウ",
+        "en": "Rove",
+        "fr": "Ronin",
+        "it": "Errante",
+        "de": "Rokko",
+        "es": "Rante",
+        "ru": "Странник",
+        "pl": "Włóczykot",
+        "pt": "Vagante",
+        "ko": "나그네",
+        "zh-tw": "柳浪",
+        "zh-cn": "柳浪"
+      }
+    },
+    {
+      "id": "NpcName_NN_1852232448",
+      "name_kr": "파르코",
+      "name_en": "Falco",
+      "names_all": {
+        "ja": "ファルコ",
+        "en": "Falco",
+        "fr": "Falco",
+        "it": "Falco",
+        "de": "Falco",
+        "es": "Falco",
+        "ru": "Фалько",
+        "pl": "Falco",
+        "pt": "Falco",
+        "ko": "파르코",
+        "zh-tw": "法爾可",
+        "zh-cn": "法尔可"
+      }
+    },
+    {
+      "id": "NpcName_NN_605072832",
+      "name_kr": "솔레",
+      "name_en": "Sole",
+      "names_all": {
+        "ja": "ソーレ",
+        "en": "Sole",
+        "fr": "Solé",
+        "it": "Sole",
+        "de": "Sole",
+        "es": "Sole",
+        "ru": "Соле",
+        "pl": "Sole",
+        "pt": "Sole",
+        "ko": "솔레",
+        "zh-tw": "索雷",
+        "zh-cn": "索蕾"
+      }
+    },
+    {
+      "id": "NpcName_NN_306260416",
+      "name_kr": "라키",
+      "name_en": "Laki",
+      "names_all": {
+        "ja": "ラキ",
+        "en": "Laki",
+        "fr": "Laki",
+        "it": "Laki",
+        "de": "Laki",
+        "es": "Laki",
+        "ru": "Лакки",
+        "pl": "Laki",
+        "pt": "Laki",
+        "ko": "라키",
+        "zh-tw": "拉奇",
+        "zh-cn": "拉齐"
+      }
+    }
+  ],
+  "facilities": [
+    {
+      "id": "Facility_NAME_1173731968",
+      "name_kr": "퀘스트 카운터",
+      "name_en": "Quest Counter"
+    },
+    {
+      "id": "Facility_NAME_1472590464",
+      "name_kr": "물자보급소",
+      "name_en": "Provisions Stockpile"
+    },
+    {
+      "id": "Facility_NAME_276593312",
+      "name_kr": "가공점",
+      "name_en": "Smithy"
+    },
+    {
+      "id": "Facility_NAME_654046272",
+      "name_kr": "가공점",
+      "name_en": "Smithy"
+    },
+    {
+      "id": "Facility_NAME_m466762496",
+      "name_kr": "식량 배급소",
+      "name_en": "Ingredient Center"
+    },
+    {
+      "id": "Facility_NAME_m629939584",
+      "name_kr": "지원 선박",
+      "name_en": "Support Ship"
+    },
+    {
+      "id": "Facility_NAME_m1754646784",
+      "name_kr": "지원 창구",
+      "name_en": "Support Desk"
+    },
+    {
+      "id": "Facility_NAME_1149857536",
+      "name_kr": "서클 정보 창구",
+      "name_en": "Squad Information Counter"
+    },
+    {
+      "id": "Facility_NAME_8341589",
+      "name_kr": "마을 중개소",
+      "name_en": "Village Intermediary"
+    },
+    {
+      "id": "Facility_NAME_m782568768",
+      "name_kr": "소지품 교환",
+      "name_en": "Item Trade"
+    },
+    {
+      "id": "Facility_NAME_1509247104",
+      "name_kr": "소재 채집 의뢰",
+      "name_en": "Material Retrieval"
+    },
+    {
+      "id": "Facility_NAME_m296868032",
+      "name_kr": "식사 초대",
+      "name_en": "Meal Invitation"
+    },
+    {
+      "id": "Facility_NAME_1105966336",
+      "name_kr": "세크레트 커스터마이즈",
+      "name_en": "Seikret Customization"
+    },
+    {
+      "id": "Facility_NAME_m1490949248",
+      "name_kr": "모닥불구이",
+      "name_en": "Bonfire Cooking"
+    },
+    {
+      "id": "Facility_NAME_1448808704",
+      "name_kr": "신난 모리바",
+      "name_en": "Happy Wudwud"
+    },
+    {
+      "id": "Facility_NAME_m238924928",
+      "name_kr": "신난 모리바",
+      "name_en": "Happy Wudwud"
+    },
+    {
+      "id": "Facility_NAME_m1162311936",
+      "name_kr": "수련 관리 창구",
+      "name_en": "Training Area Meownager"
+    },
+    {
+      "id": "Facility_NAME_995787776",
+      "name_kr": "간이 캠프 작업반장",
+      "name_en": "Pop-up Camp Meowster"
+    },
+    {
+      "id": "Facility_NAME_1217015936",
+      "name_kr": "간이 캠프 장인",
+      "name_en": "Pop-up Camp Purrofessional"
+    },
+    {
+      "id": "Facility_NAME_552494976",
+      "name_kr": "불가마 제련",
+      "name_en": "Smelting Foundry"
+    },
+    {
+      "id": "Facility_NAME_1240593920",
+      "name_kr": "마카 연금",
+      "name_en": "Melding Pot"
+    },
+    {
+      "id": "Facility_NAME_2071342720",
+      "name_kr": "같이 놀기",
+      "name_en": "Pet"
+    },
+    {
+      "id": "Facility_NAME_1094437632",
+      "name_kr": "격투대회 카운터",
+      "name_en": "Arena Quest Counter"
+    },
+    {
+      "id": "Facility_NAME_m1749830272",
+      "name_kr": "나무통 굴리기 챌린지",
+      "name_en": "Barrel Bowling"
+    },
+    {
+      "id": "Facility_NAME_696246592",
+      "name_kr": "길드 사냥 보조(베르너)",
+      "name_en": "Hunting Assistant (Werner)"
+    },
+    {
+      "id": "Facility_NAME_m1181458688",
+      "name_kr": "길드 사냥 보조(젬마)",
+      "name_en": "Hunting Assistant (Gemma)"
+    },
+    {
+      "id": "Facility_NAME_11209",
+      "name_kr": "생물 조사 창구",
+      "name_en": "Ecological Research"
+    },
+    {
+      "id": "Facility_NAME_m923528768",
+      "name_kr": "조사 동행 의뢰",
+      "name_en": "Survey Companion Request"
+    },
+    {
+      "id": "Facility_NAME_22299",
+      "name_kr": "주문 용지 배포 담당",
+      "name_en": "Order Form Distributor"
+    }
+  ],
+  "meals": [
+    {
+      "id": "MealLobby_0",
+      "name_kr": "쫄깃한 쿠나파 요리"
+    },
+    {
+      "id": "MealLobby_1",
+      "name_kr": "따끈한 아즈즈 요리"
+    },
+    {
+      "id": "MealLobby_2",
+      "name_kr": "신선한 실드 요리"
+    },
+    {
+      "id": "MealLobby_3",
+      "name_kr": "알록달록 스자 요리"
+    },
+    {
+      "id": "MealLobby_4",
+      "name_kr": "화무 초밥 정식"
+    },
+    {
+      "id": "MealLobby_5",
+      "name_kr": "용화 고기 듬뿍 한판 요리"
+    },
+    {
+      "id": "MealLobby_6",
+      "name_kr": "몽화의 티타임 스탠드"
+    },
+    {
+      "id": "MealLobby_7",
+      "name_kr": "축요의 세레모니 디시"
+    },
+    {
+      "id": "MealLobby_8",
+      "name_kr": "천연 돈코츠 라멘(창업이래)"
+    },
+    {
+      "id": "MealLobby_9",
+      "name_kr": "100％ 돈코츠 미사용 라멘"
+    }
+  ]
+}
