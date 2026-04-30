@@ -1,0 +1,3 @@
+irisclient
+anthropic
+python-dotenv

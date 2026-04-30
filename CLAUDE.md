@@ -32,7 +32,7 @@
 | `.정보 [몬스터]` | 로컬 DB 조회 | 무료 |
 | `.스킬 [스킬명]` | 로컬 DB 조회 | 무료 |
 | `.스킬 [스킬명] 장비` | 로컬 DB 조회 | 무료 |
-| `.소재 [소재명]` | 로컬 DB 조회 | 무료 (미완성) |
+| `.소재 [소재명]` | 로컬 DB 조회 | 무료 |
 | `.커스텀` | 고정 응답 (시뮬레이터 링크) | 무료 |
 | `.커스텀 [무기]` | 고정 응답 (디씨 가이드 링크) | 무료 |
 | `.챗 [질문]` | Claude API (RAG) | 유료 (1~2원/질문) |
@@ -73,10 +73,9 @@
 - `game_misc.json`: NPC + 시설 + 요리
 
 ### 매핑 (mapping/)
-- `skill_to_equipment.json` (4,587 연결)
+- `skill_to_equipment_1.json` (4,587 연결)
 - `item_usage.json` (8,535 연결)
 - `weapon_trees.json` / `series_to_weapons.json` / `species_to_monsters.json`
-- `monster_to_materials.json` / `material_to_monsters.json`
 - `external_guides.json` (디씨 무기별 가이드 14개)
 - `reference.json` (종족/부위/시리즈/강화 테이블)
 
@@ -84,26 +83,28 @@
 
 몬스터 별칭 16종 등록. 상세는 `MHWS_BOT_SPEC.md` 참조.
 
+## 완료된 작업
+
+- DB 한글화: `kind_kr` 9개 enum 보강 + `carve` 박피→갈무리 (`monsters.json`, `mapping/item_usage.json`)
+- Python 서버 코드 구현 완료: `main.py`, `db.py`, `alias.py`, `commands/` (info/skill/material/custom/chat)
+- 모든 명령어 출력 형식 확정 및 검증
+
 ## 미해결 작업
 
-### 1. DB 한글화 보강 (`.소재` 명령어 블로커)
-- `kind_kr` 7개 enum 한글 매핑 적용
-- `carve` "박피" → "갈무리" 일괄 수정
-- 매핑 표는 `MHWS_BOT_SPEC.md` 참조
-- 적용 대상 파일: `monsters.json`, `mapping/item_usage.json`
+### 1. 운영 환경 셋업 (나중에)
+- Oracle Cloud Always Free 인스턴스 발급
+- redroid (도커 안드로이드) + Iris 셋업
+- 봇 카카오 계정 발급
+- `.env` 작성 후 배포
 
-### 2. `.소재` 명령어 출력 형식
-- 정렬 기준 미정
+### 2. 검색 미스 처리
+- 못 찾았을 때 응답 형식 (유사어 제안 등)
 
-### 3. `.챗` 구현 세부
-- 모델 선택 (Haiku vs Sonnet)
-- 시스템 프롬프트
-- DB 컨텍스트 추출 로직 (키워드 매칭? 임베딩?)
+### 3. `.챗` 고도화 (선택)
+- 현재: 키워드 매칭 기반 RAG (Haiku)
+- 개선 시: 임베딩 검색 / 모델 업그레이드
 
-### 4. 검색 미스 처리
-- 못 찾았을 때 응답 형식
-
-### 5. 추가 기능 (선택)
+### 4. 추가 기능 (선택)
 - 공식 SNS (X / 인스타) 새 글 알림 (하루 2회 폴링)
 
 ## 봇 계정
