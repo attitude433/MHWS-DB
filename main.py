@@ -75,11 +75,11 @@ async def on_chat(ctx):
         await ctx.reply(custom.format_custom_weapon(weapon, db.external_guides))
         return
 
-    if msg.startswith('.챗 '):
-        query = msg[4:].strip()
-        result = await chat.ask(query)
-        await ctx.reply(result)
-        return
+    # if msg.startswith('.챗 '):
+    #     query = msg[4:].strip()
+    #     result = await chat.ask(query)
+    #     await ctx.reply(result)
+    #     return
 
 
 async def main():
