@@ -1,9 +1,10 @@
 import os
+import asyncio
 from dotenv import load_dotenv
 from iris import Bot
 import alias
 import db
-from commands import info, skill, material, custom, chat
+from commands import info, skill, material, custom, chat, sns
 
 load_dotenv()
 
@@ -81,4 +82,11 @@ async def on_chat(ctx):
         return
 
 
-bot.run()
+async def main():
+    room_name = os.environ.get('SNS_ROOM_NAME', '')
+    if room_name:
+        asyncio.create_task(sns.start_poller(bot, room_name))
+    await bot.run()
+
+
+asyncio.run(main())

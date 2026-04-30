@@ -1,3 +1,4 @@
 irisclient
 anthropic
 python-dotenv
+feedparser
