@@ -17,7 +17,7 @@ def format_custom_weapon(weapon_name: str, guides: dict) -> str:
         for alias in g.get('aliases', []):
             if alias.replace(' ', '').lower() == key:
                 return _guide_msg(g, guides['source_kr'])
-    return f'{weapon_name} 가이드를 찾을 수 없습니다'
+    return '정확히 입력해주세요'
 
 
 def _guide_msg(guide: dict, source_kr: str) -> str:

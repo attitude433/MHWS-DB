@@ -36,7 +36,7 @@ async def on_chat(ctx):
         if monster:
             await ctx.reply(info.format_info(monster))
         else:
-            await ctx.reply(f'몬스터를 찾을 수 없습니다: {query}')
+            await ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.스킬 '):
@@ -48,13 +48,13 @@ async def on_chat(ctx):
             if equip:
                 await ctx.reply(skill.format_skill_equipment(found, equip))
             else:
-                await ctx.reply(f'스킬을 찾을 수 없습니다: {skill_name}')
+                await ctx.reply('정확히 입력해주세요')
         else:
             found = alias.find_skill(query)
             if found:
                 await ctx.reply(skill.format_skill(db.skill_index[found]))
             else:
-                await ctx.reply(f'스킬을 찾을 수 없습니다: {query}')
+                await ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.소재 '):
@@ -63,7 +63,7 @@ async def on_chat(ctx):
         if item_data:
             await ctx.reply(material.format_material(query, item_data))
         else:
-            await ctx.reply(f'소재를 찾을 수 없습니다: {query}')
+            await ctx.reply('정확히 입력해주세요')
         return
 
     if msg == '.커스텀':
