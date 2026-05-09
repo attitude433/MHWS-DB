@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from iris import Bot
 import alias
 import db
-from commands import info, skill, material, custom, chat, sns
+from commands import info, skill, material, custom, chat, sns, scheduler
 
 load_dotenv()
 
@@ -96,6 +96,13 @@ if sns_room_id and youtube_key:
     threading.Thread(
         target=sns.start_poller,
         args=(bot, int(sns_room_id), youtube_key),
+        daemon=True,
+    ).start()
+
+if sns_room_id:
+    threading.Thread(
+        target=scheduler.start_scheduler,
+        args=(bot, int(sns_room_id)),
         daemon=True,
     ).start()
 
