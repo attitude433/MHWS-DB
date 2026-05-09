@@ -75,11 +75,14 @@ def on_message(ctx):
         ctx.reply(custom.format_custom_weapon(weapon, db.external_guides))
         return
 
-    # if msg.startswith('.챗 '):
-    #     query = msg[4:].strip()
-    #     result = chat.ask(query)
-    #     ctx.reply(result)
-    #     return
+    if msg.startswith('.챗 '):
+        query = msg[4:].strip()
+        if query:
+            threading.Thread(
+                target=lambda: ctx.reply(chat.ask(query)),
+                daemon=True,
+            ).start()
+        return
 
 
 @bot.on_event('new_member')

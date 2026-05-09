@@ -11,6 +11,11 @@ YOUTUBE_CHANNELS = [
 ]
 WILDS_KEYWORDS = ['wilds', '와일즈']
 
+BLUESKY_HANDLES = [
+    'monsterhunter.capcomusa.com',
+]
+BLUESKY_API = 'https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed'
+
 POLL_INTERVAL = 3600
 
 
@@ -50,6 +55,29 @@ def _fetch_youtube(api_key: str, channel_id: str) -> list[dict]:
         return []
 
 
+def _fetch_bluesky(handle: str) -> list[dict]:
+    url = f'{BLUESKY_API}?actor={handle}&limit=15'
+    try:
+        with urllib.request.urlopen(url, timeout=15) as r:
+            data = json.load(r)
+        posts = []
+        for item in data.get('feed', []):
+            p = item.get('post', {})
+            uri = p.get('uri', '')
+            rkey = uri.split('/')[-1] if uri else ''
+            if not rkey:
+                continue
+            author_handle = (p.get('author', {}) or {}).get('handle') or handle
+            posts.append({
+                'id': rkey,
+                'link': f'https://bsky.app/profile/{author_handle}/post/{rkey}',
+            })
+        return posts
+    except Exception as ex:
+        print(f'[sns] bluesky fetch error ({handle}): {ex}', flush=True)
+        return []
+
+
 def _is_wilds_relevant(title: str) -> bool:
     t = title.lower()
     return any(kw in t for kw in WILDS_KEYWORDS)
@@ -78,6 +106,25 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             state[key] = videos[0]['id']
             for v in reversed(new_videos):
                 messages.append(v['link'])
+
+    for handle in BLUESKY_HANDLES:
+        posts = _fetch_bluesky(handle)
+        if not posts:
+            continue
+        key = f'bsky:{handle}'
+        last_seen = state.get(key)
+        if last_seen is None:
+            state[key] = posts[0]['id']
+            continue
+        new_posts = []
+        for p in posts:
+            if p['id'] == last_seen:
+                break
+            new_posts.append(p)
+        if new_posts:
+            state[key] = posts[0]['id']
+            for p in reversed(new_posts):
+                messages.append(p['link'])
 
     return messages
 
