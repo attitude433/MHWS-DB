@@ -82,8 +82,18 @@ def on_message(ctx):
     #     return
 
 
-room_name = os.environ.get('SNS_ROOM_NAME', '')
-if room_name:
-    threading.Thread(target=sns.start_poller, args=(bot, room_name), daemon=True).start()
+@bot.on_event('new_member')
+def on_new_member(ctx):
+    ctx.reply('안녕하세요! 공지읽고 닉변 부탁드려요')
+
+
+sns_room_id = os.environ.get('SNS_ROOM_ID', '')
+youtube_key = os.environ.get('YOUTUBE_API_KEY', '')
+if sns_room_id and youtube_key:
+    threading.Thread(
+        target=sns.start_poller,
+        args=(bot, int(sns_room_id), youtube_key),
+        daemon=True,
+    ).start()
 
 bot.run()
