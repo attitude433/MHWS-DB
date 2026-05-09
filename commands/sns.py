@@ -2,7 +2,6 @@ import json
 import time
 import urllib.request
 from pathlib import Path
-import feedparser
 
 STATE_FILE = Path(__file__).parent.parent / 'sns_state.json'
 
@@ -10,7 +9,6 @@ YOUTUBE_CHANNELS = [
     {'id': 'UCVS0xBpOtXBAl12rdG67-OQ', 'label': '몬헌 공식'},
     {'id': 'UCW7h-1mymnJ96akzjrmiIgA', 'label': 'Capcom USA'},
 ]
-STEAM_FEED_URL = 'https://store.steampowered.com/feeds/news/app/2246340/?l=koreana'
 WILDS_KEYWORDS = ['wilds', '와일즈']
 
 POLL_INTERVAL = 3600
@@ -52,22 +50,6 @@ def _fetch_youtube(api_key: str, channel_id: str) -> list[dict]:
         return []
 
 
-def _fetch_steam() -> list[dict]:
-    try:
-        feed = feedparser.parse(STEAM_FEED_URL)
-        posts = []
-        for e in feed.entries:
-            posts.append({
-                'id': e.get('id') or e.get('link'),
-                'title': e.get('title', ''),
-                'link': e.get('link', ''),
-            })
-        return posts
-    except Exception as ex:
-        print(f'[sns] steam fetch error: {ex}', flush=True)
-        return []
-
-
 def _is_wilds_relevant(title: str) -> bool:
     t = title.lower()
     return any(kw in t for kw in WILDS_KEYWORDS)
@@ -96,22 +78,6 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             state[key] = videos[0]['id']
             for v in reversed(new_videos):
                 messages.append(v['link'])
-
-    posts = _fetch_steam()
-    if posts:
-        last_seen = state.get('steam')
-        if last_seen is None:
-            state['steam'] = posts[0]['id']
-        else:
-            new_posts = []
-            for p in posts:
-                if p['id'] == last_seen:
-                    break
-                new_posts.append(p)
-            if new_posts:
-                state['steam'] = new_posts[0]['id']
-                for p in reversed(new_posts):
-                    messages.append(p['link'])
 
     return messages
 
