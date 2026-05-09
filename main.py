@@ -1,5 +1,5 @@
 import os
-import asyncio
+import threading
 from dotenv import load_dotenv
 from iris import Bot
 import alias
@@ -22,21 +22,21 @@ HELP_TEXT = """[명령어 목록]
 .챗 (질문)"""
 
 
-@bot.on_event('chat')
-async def on_chat(ctx):
-    msg = ctx.message.content.strip()
+@bot.on_event('message')
+def on_message(ctx):
+    msg = ctx.message.msg.strip()
 
     if msg == '.명령어':
-        await ctx.reply(HELP_TEXT)
+        ctx.reply(HELP_TEXT)
         return
 
     if msg.startswith('.정보 '):
         query = msg[4:].strip()
         monster = alias.find_monster(query)
         if monster:
-            await ctx.reply(info.format_info(monster))
+            ctx.reply(info.format_info(monster))
         else:
-            await ctx.reply('정확히 입력해주세요')
+            ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.스킬 '):
@@ -46,47 +46,44 @@ async def on_chat(ctx):
             found = alias.find_skill(skill_name)
             equip = db.skill_to_equipment.get(found) if found else None
             if equip:
-                await ctx.reply(skill.format_skill_equipment(found, equip))
+                ctx.reply(skill.format_skill_equipment(found, equip))
             else:
-                await ctx.reply('정확히 입력해주세요')
+                ctx.reply('정확히 입력해주세요')
         else:
             found = alias.find_skill(query)
             if found:
-                await ctx.reply(skill.format_skill(db.skill_index[found]))
+                ctx.reply(skill.format_skill(db.skill_index[found]))
             else:
-                await ctx.reply('정확히 입력해주세요')
+                ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.소재 '):
         query = msg[4:].strip()
         item_data = alias.find_item(query)
         if item_data:
-            await ctx.reply(material.format_material(query, item_data))
+            ctx.reply(material.format_material(item_data['name_kr'], item_data))
         else:
-            await ctx.reply('정확히 입력해주세요')
+            ctx.reply('정확히 입력해주세요')
         return
 
     if msg == '.커스텀':
-        await ctx.reply(custom.format_custom())
+        ctx.reply(custom.format_custom())
         return
 
     if msg.startswith('.커스텀 '):
         weapon = msg[5:].strip()
-        await ctx.reply(custom.format_custom_weapon(weapon, db.external_guides))
+        ctx.reply(custom.format_custom_weapon(weapon, db.external_guides))
         return
 
     # if msg.startswith('.챗 '):
     #     query = msg[4:].strip()
-    #     result = await chat.ask(query)
-    #     await ctx.reply(result)
+    #     result = chat.ask(query)
+    #     ctx.reply(result)
     #     return
 
 
-async def main():
-    room_name = os.environ.get('SNS_ROOM_NAME', '')
-    if room_name:
-        asyncio.create_task(sns.start_poller(bot, room_name))
-    await bot.run()
+room_name = os.environ.get('SNS_ROOM_NAME', '')
+if room_name:
+    threading.Thread(target=sns.start_poller, args=(bot, room_name), daemon=True).start()
 
-
-asyncio.run(main())
+bot.run()

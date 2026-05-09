@@ -41,6 +41,11 @@ for _s in db.skills:
     _key = _s['name_kr'].replace(' ', '')
     _skill_index[_key] = _s['name_kr']
 
+_item_index: dict[str, dict] = {}
+for _name, _data in db.item_usage.items():
+    _key = _name.replace(' ', '')
+    _item_index[_key] = _data
+
 
 def find_monster(query: str):
     key = query.replace(' ', '')
@@ -59,4 +64,5 @@ def find_weapon_guide(query: str):
 
 
 def find_item(query: str):
-    return db.item_usage.get(query)
+    key = query.replace(' ', '')
+    return _item_index.get(key)

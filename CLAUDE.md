@@ -88,24 +88,70 @@
 - DB 한글화: `kind_kr` 9개 enum 보강 + `carve` 박피→갈무리 (`monsters.json`, `mapping/item_usage.json`)
 - Python 서버 코드 구현 완료: `main.py`, `db.py`, `alias.py`, `commands/` (info/skill/material/custom/chat)
 - 모든 명령어 출력 형식 확정 및 검증
+- 운영 환경 셋업 (Oracle Cloud + redroid + Iris + 봇 systemd 영구화) — 절차는 아래 "운영 환경 셋업 절차" 섹션 참조
 
 ## 미해결 작업
 
-### 1. 운영 환경 셋업 (나중에)
-- Oracle Cloud Always Free 인스턴스 발급
-- redroid (도커 안드로이드) + Iris 셋업
-- 봇 카카오 계정 발급
-- `.env` 작성 후 배포
-
-### 2. 검색 미스 처리
+### 1. 검색 미스 처리
 - 못 찾았을 때 응답 형식 (유사어 제안 등)
 
-### 3. `.챗` 고도화 (선택)
+### 2. `.챗` 고도화 (선택)
 - 현재: 키워드 매칭 기반 RAG (Haiku)
 - 개선 시: 임베딩 검색 / 모델 업그레이드
 
-### 4. 추가 기능 (선택)
+### 3. 추가 기능 (선택)
 - 공식 SNS (X / 인스타) 새 글 알림 (하루 2회 폴링)
+
+## 운영 환경 셋업 절차
+
+> 인스턴스 IP, SSH 사용자명, 키 경로 등 실제 값은 `OPS_LOCAL.md` 참조 (gitignored).
+
+### 인프라
+- Oracle Cloud Always Free / ARM Ampere A1 / Ubuntu 24.04 / 4 OCPU / 24GB RAM
+- 호스트네임: `server`
+
+### 부팅 자동화 (영구화)
+- `/etc/modules-load.d/binder.conf` — `binder_linux` 자동 적재
+- `/etc/systemd/system/dev-binderfs.mount` — binderfs 자동 마운트 (enabled)
+- redroid 컨테이너 — `--restart unless-stopped`
+- `mhws-iris.service` (oneshot) — redroid 부팅 대기 + `adb forward tcp:3000 tcp:3000` + Iris 시작
+- `mhws-bot.service` — Python 봇 (After=mhws-iris.service)
+
+### 핵심 파일/경로
+- `/etc/systemd/system/mhws-iris.service`, `mhws-bot.service`
+- `/usr/local/bin/mhws-iris-wait.sh`, `mhws-iris-start.sh`
+- `~/mhws-bot/` — 봇 코드 + venv + `.env`
+- `~/redroid-data/` — 안드 컨테이너 데이터 (카톡 로그인 보존)
+- `/data/local/tmp/Iris.apk` — redroid 안
+
+### redroid 컨테이너
+```
+docker run -itd --privileged --name redroid \
+  --restart unless-stopped \
+  -v ~/redroid-data:/data \
+  -p 5555:5555 \
+  redroid/redroid:13.0.0_64only-latest
+```
+
+### 봇 의존성
+- `requirements.txt` 의 `irisclient` 는 ❌ (PyPI 의 동명 다른 프로젝트)
+- ✅ `pip install git+https://github.com/dolidolih/irispy-client.git` 로 설치 (`from iris import Bot`)
+
+### .env 형식
+```
+IRIS_SERVER_URL=127.0.0.1:3000   # IP:PORT (http:// 제외, localhost 안 됨)
+ANTHROPIC_API_KEY=               # .챗 명령용 (선택)
+SNS_ROOM_NAME=                   # SNS 폴러용 (선택)
+```
+
+### 카톡 부계정 첫 셋업
+1. scrcpy 로 redroid 화면 미러링 후 카톡 로그인
+2. 본인 메인 카톡 → 부계정으로 메시지 1~2개 보내서 NotificationReferer 채우기
+3. (없으면 Iris 가 `failed to extract referer from data` 로 시작 안 됨)
+
+### 알려진 이슈
+- redroid 안에 옛 Iris process 가 남아 포트 3000 잡고 있으면 새 카톡 메시지 인식 못 함 → `adb shell su root pkill -f party.qwer.iris.Main` 후 `mhws-iris.service` 재시작
+- 새 카카오 계정 만들 때 보안 정보(비번/백업 이메일) 미리 등록해야 redroid 첫 로그인 시 12시간 락 회피
 
 ## 봇 계정
 
