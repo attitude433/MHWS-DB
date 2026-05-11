@@ -1,10 +1,18 @@
+import glob
 import os
+import random
 import threading
 from dotenv import load_dotenv
 from iris import Bot
 import alias
 import db
 from commands import info, skill, material, custom, chat, sns, scheduler
+
+CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
+CAT_FILES = []
+for _ext in ('jpg', 'jpeg', 'png', 'JPG', 'gif'):
+    CAT_FILES.extend(glob.glob(f'{CAT_DIR}/**/*.{_ext}', recursive=True))
+MEOW_LINES = ['야옹', '야~옹', '냐옹', '냐~옹', '야옹!', '갸르릉…']
 
 load_dotenv()
 
@@ -19,7 +27,9 @@ HELP_TEXT = """[명령어 목록]
 .소재 (소재명)
 .커스텀
 .커스텀 (무기)
-.챗 (질문)"""
+.챗 (정보 질문)
+.다이애나 (하고 싶은 말)
+.고양이"""
 
 
 @bot.on_event('message')
@@ -79,7 +89,27 @@ def on_message(ctx):
         query = msg[4:].strip()
         if query:
             threading.Thread(
-                target=lambda: ctx.reply(chat.ask(query)),
+                target=lambda: ctx.reply(chat.ask_info(query)),
+                daemon=True,
+            ).start()
+        return
+
+    if msg.startswith('.다이애나 '):
+        query = msg[6:].strip()
+        if query:
+            threading.Thread(
+                target=lambda: ctx.reply(chat.ask_chat(query)),
+                daemon=True,
+            ).start()
+        return
+
+    if msg == '.고양이':
+        if random.randint(0, 2) == 0 or not CAT_FILES:
+            ctx.reply(random.choice(MEOW_LINES))
+        else:
+            path = random.choice(CAT_FILES)
+            threading.Thread(
+                target=lambda p=path: ctx.reply_media([p]),
                 daemon=True,
             ).start()
         return

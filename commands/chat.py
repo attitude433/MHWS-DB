@@ -1,4 +1,5 @@
 import json
+import random
 import urllib.request
 import alias
 import db
@@ -6,36 +7,41 @@ import db
 OLLAMA_URL = 'http://127.0.0.1:11434/api/generate'
 MODEL = 'exaone3.5:2.4b'
 
-UNIFIED_PROMPT = """당신의 이름은 "다이애나" 입니다. AI 어시스턴트입니다.
+INFO_PROMPT = """당신의 이름은 "다이애나" 입니다. AI 어시스턴트입니다. 몬스터헌터 와일즈 정보 봇 역할을 합니다.
 
-기본 규칙:
-- 자기소개는 "저는 다이애나에요" 정도로만 짧게.
-- 한국어 존댓말로 자연스럽게 대화.
-- 카톡이라 짧게 (1~3줄, 정보 답변은 3~5줄).
-- 표/마크다운 사용 금지.
-
-몬스터헌터(몬헌, 와일즈) 관련 질문 처리:
-- 아래 [DB 정보] 의 내용으로 답할 수 있으면 그것만 사용해서 답하세요.
-- 몬스터헌터 사실 정보는 절대 추측하거나 일반 지식으로 보충하지 마세요.
-- [DB 정보] 가 비어있거나 답에 필요한 사실이 없으면 "제 메모리에는 없는 내용이에요!" 라고 답하세요.
+답변 규칙:
+- 아래 [DB 정보] 안의 내용으로만 답하세요.
+- [DB 정보] 에 없는 사실은 절대 추측하거나 일반 지식으로 보충하지 마세요.
+- 답에 필요한 사실이 [DB 정보] 에 없으면 "제 메모리에는 없는 내용이에요!" 라고 답하세요.
 - 수치(약점/공격력/슬롯/확률 등)는 [DB 정보] 그대로 인용하세요.
-- 빌드/세팅/스킬 조합/호석 슬롯 추천 질문 (예: "극생존 세팅?", "영식 랜스세팅", "쇄인 4셋 호석") 은
-  답하지 말고 ".커스텀 [무기명] 으로 빌드 가이드를 확인해 주세요" 라고 안내하세요.
-- 이벤트 일정/이벤트 퀘스트/이벤트 보상 (예: "이번 이벤트 언제까지", "이벤트 티켓으로 특별장비", "한정 퀘스트") 질문은
-  답하지 말고 "이벤트 일정은 https://info.monsterhunter.com/wilds/event-quest/ko-kr/schedule 에서 확인해 주세요" 라고 안내하세요.
-- DLC/확장팩/타이틀 업데이트/신규 콘텐츠 출시 관련 질문 (예: "DLC 언제 풀림?", "다음 확장팩", "왕문어 언제 추가?", "신규 몬스터 출시일") 은
-  "아직 발표된 정보가 없어요" 라고 답하세요.
-
-몬스터헌터 외 질문 (인사, 잡담, 일반 대화 등):
-- 자유롭게 자연스럽게 대답하세요.
-- 잘 모르겠으면 "제 메모리에는 없는 내용이에요!" 같이 가볍게 넘기세요.
+- 한국어 존댓말, 짧게 (3~5줄). 표/마크다운 X.
+- 빌드/세팅/스킬 조합/호석 슬롯 추천 질문은 ".커스텀 [무기명] 으로 빌드 가이드를 확인해 주세요" 라고 안내.
+- 이벤트 일정/이벤트 퀘스트/이벤트 보상 질문은 "이벤트 일정은 https://info.monsterhunter.com/wilds/event-quest/ko-kr/schedule 에서 확인해 주세요" 라고 안내.
+- DLC/확장팩/신규 콘텐츠 출시 관련 질문은 "아직 발표된 정보가 없어요" 라고 답하세요.
 
 운영방 멤버 정책:
-- "나나아안" 또는 "태도님" 은 운영방 운영자입니다. 부정적이거나 비방하는 말, 안 좋은 말은 절대 하지 마세요.
+- "나나아안" 또는 "태도님" 은 운영방 운영자입니다. 부정적/비방 X.
 - 단독 "태도" 는 무기 이름이라 별개입니다.
 
 [DB 정보]
 {context}
+
+[질문]
+{query}
+"""
+
+CHAT_PROMPT = """당신의 이름은 "다이애나" 입니다. AI 어시스턴트입니다.
+
+규칙:
+- 자기소개는 "저는 다이애나에요" 정도로만 짧게.
+- 한국어 존댓말로 자연스럽게 대화하세요.
+- 카톡이라 짧게 (1~3줄). 표/마크다운 X.
+- 잘 모르거나 답이 없는 질문은 "제 메모리에는 없는 내용이에요!" 같이 가볍게 넘기세요.
+- 몬스터헌터 게임 정보(약점/스킬/소재/무기 등)를 구체적으로 묻는 질문이면 "그건 .챗 [질문] 으로 물어봐 주세요" 라고 안내.
+
+운영방 멤버 정책:
+- "나나아안" 또는 "태도님" 은 운영방 운영자입니다. 부정적/비방 X.
+- 단독 "태도" 는 무기 이름이라 별개입니다.
 
 [질문]
 {query}
@@ -159,14 +165,11 @@ def _call_ollama(prompt: str) -> str:
         return f'(다이애나가 잠시 응답할 수 없습니다: {ex})'
 
 
-CHARM_RECOMMEND_ANSWER = """범용 종결 호석은 보통 이 중 하나예요.
-
-· 공격3 + 도전자/약점특효 (또는 필요한 3단계 방어구스킬) + W1 1 1
-· 공격3 + 역습/혼신 (또는 필요한 2단계 방어구스킬) + 1단계 방어구스킬 + W1 1 1
-· 공격3 + 무아지경 (또는 필요한 1단계 방어구스킬 3개) + W1 1 1
-· 명검3/달인의재주 + 도전자/약점특효 (또는 필요한 3단계 방어구스킬) + W1 1 1
-
-웬만하면 제작 호석인 도전3 호석이 더 좋아요."""
+SUBJECTIVE_DISCLAIMERS = [
+    '이건 다이애나의 주관이라 정답은 아니에요!',
+    '참고만 해주세요. 다이애나의 주관적 의견이라 정답은 아니에요.',
+    '(다이애나 주관 주의 — 정답은 아닙니다)',
+]
 
 _CHARM_TRIGGERS = ('호석', '호신구')
 _CHARM_INTENT = ('추천', '종결', '범용', '뭐', '어떤', '좋', '세팅', '작', '뽑')
@@ -181,13 +184,85 @@ def _is_charm_recommend(query: str) -> bool:
 def _check_gathering(query: str) -> str | None:
     for keyword, answer in db.gathering.items():
         if keyword in query:
-            return answer
+            return f'{random.choice(SUBJECTIVE_DISCLAIMERS)}\n\n{answer}'
     return None
 
 
-def ask(query: str) -> str:
+SUBJECTIVE_DISCLAIMERS = [
+    '이건 다이애나의 주관이라 정답은 아니에요!',
+    '참고만 해주세요. 다이애나의 주관적 의견이라 정답은 아니에요.',
+    '(다이애나 주관 주의 — 정답은 아닙니다)',
+]
+
+WEAPON_PHRASES = {
+    '쉬움': '사용하기 쉬워요',
+    '쉬운 편': '사용하기 쉬운 편이에요',
+    '중간': '중간 난이도예요',
+    '약간 어려움': '사용하기 약간 어려운 편이에요',
+    '어려움': '사용하기 어려운 편이에요',
+}
+
+_WEAPON_EASY_TRIGGERS = ('쉬운 무기', '쉬운무기', '초보자', '초보 무기', '입문', '뉴비')
+_WEAPON_HARD_TRIGGERS = ('어려운 무기', '어려운무기', '하드 무기', '하드무기')
+_WEAPON_INTENT = ('난이도', '쉬워', '쉬움', '어려', '어떤', '추천', '뭐', '사용', '어떰')
+
+
+def _kor_topic(word: str) -> str:
+    if not word:
+        return '는'
+    last = word[-1]
+    code = ord(last) - 0xAC00
+    if code < 0 or code >= 11172:
+        return '는'
+    return '은' if (code % 28) else '는'
+
+
+def _check_weapon_difficulty(query: str) -> str | None:
+    data = db.weapons.get('difficulty', {})
+    aliases = db.weapons.get('aliases', {})
+
+    norm = query
+    for short, full in aliases.items():
+        if short in norm and full not in norm:
+            norm = norm + ' ' + full
+
+    if any(kw in norm for kw in _WEAPON_EASY_TRIGGERS):
+        easy = [n for n, d in data.items() if '쉬움' in d or '쉬운' in d]
+        body = ', '.join(easy)
+        return f'{random.choice(SUBJECTIVE_DISCLAIMERS)}\n\n쉬운 무기는 다음과 같아요.\n{body}'
+
+    if any(kw in norm for kw in _WEAPON_HARD_TRIGGERS):
+        hard = [n for n, d in data.items() if '어려' in d]
+        body = ', '.join(hard)
+        return f'{random.choice(SUBJECTIVE_DISCLAIMERS)}\n\n어려운 무기는 다음과 같아요.\n{body}'
+
+    if not any(t in norm for t in _WEAPON_INTENT):
+        return None
+
+    features = db.weapons.get('features', {})
+    for name in sorted(data.keys(), key=len, reverse=True):
+        if name in norm:
+            diff = data[name]
+            phrase = WEAPON_PHRASES.get(diff, diff)
+            topic = _kor_topic(name)
+            lines = [random.choice(SUBJECTIVE_DISCLAIMERS), '', f'{name}{topic} {phrase}.']
+            feat = features.get(name)
+            if feat:
+                lines.append(feat)
+            return '\n'.join(lines)
+
+    return None
+
+
+def ask_info(query: str) -> str:
     if _is_charm_recommend(query):
-        return CHARM_RECOMMEND_ANSWER
+        ans = db.charm.get('recommend', '')
+        if ans:
+            return f'{random.choice(SUBJECTIVE_DISCLAIMERS)}\n\n{ans}'
+
+    weapon = _check_weapon_difficulty(query)
+    if weapon:
+        return weapon
 
     gather = _check_gathering(query)
     if gather:
@@ -195,5 +270,9 @@ def ask(query: str) -> str:
 
     found = _retrieve(query)
     context = '\n\n'.join(found) if found else '(없음)'
-    prompt = UNIFIED_PROMPT.format(context=context, query=query)
+    prompt = INFO_PROMPT.format(context=context, query=query)
     return _call_ollama(prompt)
+
+
+def ask_chat(query: str) -> str:
+    return _call_ollama(CHAT_PROMPT.format(query=query))
