@@ -1,22 +1,41 @@
 import db
 
 MONSTER_ALIASES = {
-    "고그마지오스": ["고구마", "고그마"],
+    "고그마지오스": ["고구마", "고그마", "거극룡"],
     "오메가 플라네테스": ["오메가", "영식"],
-    "진 다하드": ["진다하드", "진다", "이긴다소프트"],
-    "알슈베르도": ["알슈"],
-    "리오레우스": ["레우스", "레후스"],
-    "라기아크루스": ["라기아"],
-    "고어 마가라": ["고어", "마가라"],
-    "셀레기오스": ["셀레기"],
-    "우드 투나": ["나무참치"],
-    "그라비모스": ["그라비"],
-    "타마미츠네": ["미츠네"],
-    "누 이그드라": ["문어"],
-    "리오레이아": ["레이아"],
-    "얀쿡크": ["얀쿡", "얀센세", "얀선생"],
-    "푸푸로포루": ["바즈"],
+    "진 다하드": ["진다하드", "진다", "이긴다소프트", "동봉룡"],
+    "알슈베르도": ["알슈", "쇄인룡"],
+    "리오레우스": ["레우스", "레후스", "화룡"],
+    "라기아크루스": ["라기아", "해룡"],
+    "고어 마가라": ["고어", "마가라", "흑식룡"],
+    "셀레기오스": ["셀레기", "천인룡"],
+    "우드 투나": ["나무참치", "파의룡"],
+    "그라비모스": ["그라비", "개룡"],
+    "타마미츠네": ["미츠네", "포호룡"],
+    "누 이그드라": ["문어", "염옥소"],
+    "리오레이아": ["레이아", "자화룡"],
+    "얀쿡크": ["얀쿡", "얀센세", "얀선생", "괴조"],
+    "푸푸로포루": ["바즈", "소분룡"],
     "랑고스타": ["란고스타", "모기"],
+    "조 시아": ["백열룡"],
+    "수호룡 도샤구마": ["호벽수"],
+    "레 다우": ["황뢰룡"],
+    "라바라 바리나": ["자화지주"],
+    "바바콩가": ["도모수"],
+    "네르스큐라": ["영지주"],
+    "수호룡 알슈베르도": ["호쇄인룡"],
+    "케마트리스": ["염미룡"],
+    "도샤구마": ["벽수"],
+    "발라하라": ["사해룡"],
+    "차타카브라": ["전와"],
+    "수호룡 안쟈나프 아종": ["호뢰악룡"],
+    "히라바미": ["풍협룡"],
+    "아자라칸": ["혁원수"],
+    "게리오스": ["독괴조"],
+    "시이우": ["암기소"],
+    "수호룡 리오레우스": ["호화룡"],
+    "수호룡 오도가론 아종": ["호흉조룡"],
+    "도도블랑고": ["눈사자"],
 }
 
 _monster_index: dict[str, str] = {}
@@ -66,3 +85,27 @@ def find_weapon_guide(query: str):
 def find_item(query: str):
     key = query.replace(' ', '')
     return _item_index.get(key)
+
+
+def find_monster_partial(query: str):
+    tokens = query.replace(' ', '')
+    for key in sorted(_monster_index.keys(), key=len, reverse=True):
+        if len(key) >= 2 and key in tokens:
+            return db.monster_index.get(_monster_index[key])
+    return None
+
+
+def find_skill_partial(query: str) -> str | None:
+    tokens = query.replace(' ', '')
+    for key in sorted(_skill_index.keys(), key=len, reverse=True):
+        if len(key) >= 2 and key in tokens:
+            return _skill_index[key]
+    return None
+
+
+def find_item_partial(query: str):
+    tokens = query.replace(' ', '')
+    for key in sorted(_item_index.keys(), key=len, reverse=True):
+        if len(key) >= 2 and key in tokens:
+            return _item_index[key]
+    return None

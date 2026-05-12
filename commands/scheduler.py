@@ -1,17 +1,100 @@
+import random
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+import db
+import members
+
 KST = ZoneInfo('Asia/Seoul')
+
+LUNCH_MESSAGES = [
+    '점심 식사 맛있게 하세요!',
+    '점심 시간이에요! 든든히 잘 챙겨드세요',
+    '점심 맛있게 드세요!',
+    '점심시간이에요! 다들 식사 맛있게 하세요',
+    '점심 식사 시간이에요!',
+    '식사 맛있게 하세요! 다이애나도 응원해요',
+]
+
+DINNER_MESSAGES = [
+    '저녁 식사 맛있게 하세요!',
+    '저녁 시간이에요! 든든히 잘 챙겨드세요',
+    '저녁 맛있게 드세요!',
+    '저녁시간이에요! 다들 식사 맛있게 하세요',
+    '저녁 식사 시간이에요!',
+    '식사 맛있게 하세요! 다이애나도 응원해요',
+]
+
+BABBLE_STATIC: list[str] = []
+
+
+def _josa_iga(word: str) -> str:
+    if not word:
+        return '이'
+    last = word[-1]
+    code = ord(last) - 0xAC00
+    if code < 0 or code >= 11172:
+        return '가'
+    return '이' if (code % 28) else '가'
+
+
+def _craving() -> str:
+    menu = random.choice(db.meals)
+    return f'오늘 갑자기 {menu}{_josa_iga(menu)} 끌려요. 여러분은요?'
+
+
+def _time_passes() -> str:
+    now = datetime.now(KST)
+    h, m = now.hour, now.minute
+    if h < 12:
+        ampm, hh = '오전', h if h > 0 else 12
+    else:
+        ampm, hh = '오후', h - 12 if h > 12 else h
+    when = f'{ampm} {hh}시' if m == 0 else f'{ampm} {hh}시 {m}분'
+    return f'데이터를 정리하다 보니 시간이 너무 빠르네요! 벌써 {when}이에요!'
+
+
+def _weapon_show_off() -> str:
+    weapon = random.choice(list(db.weapons.get('difficulty', {}).keys()))
+    return f'다이애나 생각엔 {weapon}{_josa_iga(weapon)} 제일 멋있어요! 반대 의견 받아요!'
+
+
+def _weapon_stat() -> str:
+    weapon = random.choice(list(db.weapons.get('difficulty', {}).keys()))
+    return f'다이애나가 통계 돌려봤는데, 와일즈에서 제일 강한 건 역시 {weapon} 같아요!'
+
+
+def _hacking() -> str | None:
+    nick = members.get_random_nickname()
+    if not nick:
+        return None
+    return f'{nick}님 해킹 중.. 농담이에요!'
+
+
+def _pick_babble() -> str:
+    pool = list(BABBLE_STATIC)
+    pool.append(_craving())
+    pool.append(_time_passes())
+    pool.append(_weapon_show_off())
+    pool.append(_weapon_stat())
+    hack = _hacking()
+    if hack:
+        pool.append(hack)
+    return random.choice(pool)
+
 
 SCHEDULES = [
     {'hour': 9, 'minute': 0, 'message': '오늘도 좋은 하루! ٩(๑˃̵ᴗ˂̵)و'},
+    {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
+    {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'message': '모두 잘자요 (づ.-)'},
 ]
 
 
 def start_scheduler(bot, room_id: int):
     last_sent: dict = {}
+    last_babble = None
     print(
         f'[scheduler] started, room_id={room_id}, schedules={len(SCHEDULES)}',
         flush=True,
@@ -26,12 +109,25 @@ def start_scheduler(bot, room_id: int):
                     and now.minute == s['minute']
                     and last_sent.get(key) != now.date()
                 ):
-                    bot.api.reply(room_id, s['message'])
+                    msg = s['dynamic']() if 'dynamic' in s else s['message']
+                    bot.api.reply(room_id, msg)
                     last_sent[key] = now.date()
                     print(
-                        f'[scheduler] sent at {now.isoformat()}: {s["message"]}',
+                        f'[scheduler] sent at {now.isoformat()}: {msg}',
                         flush=True,
                     )
+
+            babble_key = (now.date(), now.hour)
+            if (
+                10 <= now.hour <= 22
+                and now.minute == 30
+                and last_babble != babble_key
+            ):
+                last_babble = babble_key
+                if random.random() < 0.15:
+                    msg = _pick_babble()
+                    bot.api.reply(room_id, msg)
+                    print(f'[scheduler] babble: {msg}', flush=True)
         except Exception as ex:
             print(f'[scheduler] error: {ex}', flush=True)
         time.sleep(30)

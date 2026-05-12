@@ -1,18 +1,22 @@
 import glob
 import os
 import random
+import re
 import threading
 from dotenv import load_dotenv
 from iris import Bot
 import alias
 import db
-from commands import info, skill, material, custom, chat, sns, scheduler
+import members
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, weather
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
 for _ext in ('jpg', 'jpeg', 'png', 'JPG', 'gif'):
     CAT_FILES.extend(glob.glob(f'{CAT_DIR}/**/*.{_ext}', recursive=True))
 MEOW_LINES = ['야옹', '야~옹', '냐옹', '냐~옹', '야옹!', '갸르릉…']
+
+VS_PATTERN = re.compile(r'^\s*(.+?)\s*(?:vs|VS|Vs|vS)\s*(.+?)\s*$')
 
 load_dotenv()
 
@@ -29,12 +33,21 @@ HELP_TEXT = """[명령어 목록]
 .커스텀 (무기)
 .챗 (정보 질문)
 .다이애나 (하고 싶은 말)
+.메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
+.날씨 (지역)
+.디스코드
 .고양이"""
 
 
 @bot.on_event('message')
 def on_message(ctx):
     msg = ctx.message.msg.strip()
+
+    if ctx.sender:
+        try:
+            members.upsert(ctx.sender.id, ctx.sender.name)
+        except Exception:
+            pass
 
     if msg == '.명령어':
         ctx.reply(HELP_TEXT)
@@ -86,7 +99,7 @@ def on_message(ctx):
         return
 
     if msg.startswith('.챗 '):
-        query = msg[4:].strip()
+        query = msg[3:].strip()
         if query:
             threading.Thread(
                 target=lambda: ctx.reply(chat.ask_info(query)),
@@ -97,10 +110,35 @@ def on_message(ctx):
     if msg.startswith('.다이애나 '):
         query = msg[6:].strip()
         if query:
+            sender_nick = ctx.sender.name if ctx.sender else ''
+            mentioned = members.get_mentioned_in(query)
             threading.Thread(
-                target=lambda: ctx.reply(chat.ask_chat(query)),
+                target=lambda: ctx.reply(chat.ask_chat(query, sender_nick, mentioned)),
                 daemon=True,
             ).start()
+        return
+
+    if msg in ('.메뉴추천', '.ㅈㅁㅊ', '.점메추', '.저메추', 'ㅈㅁㅊ', '점메추', '저메추'):
+        ctx.reply(meal.pick_random())
+        return
+
+    if msg == '.디스코드':
+        ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
+        return
+
+    if msg == '.날씨':
+        threading.Thread(
+            target=lambda: ctx.reply(weather.format_weather()),
+            daemon=True,
+        ).start()
+        return
+
+    if msg.startswith('.날씨 '):
+        location = msg[4:].strip()
+        threading.Thread(
+            target=lambda: ctx.reply(weather.format_weather(location)),
+            daemon=True,
+        ).start()
         return
 
     if msg == '.고양이':
@@ -114,10 +152,32 @@ def on_message(ctx):
             ).start()
         return
 
+    vs = VS_PATTERN.match(msg)
+    if vs:
+        a, b = vs.group(1).strip(), vs.group(2).strip()
+        if a and b:
+            if a == '태도':
+                choice = a
+            elif b == '태도':
+                choice = b
+            else:
+                choice = random.choice([a, b])
+            ctx.reply(f'다이애나는 {choice} 골랐어요!')
+            return
+
 
 @bot.on_event('new_member')
 def on_new_member(ctx):
-    ctx.reply('안녕하세요! 공지읽고 닉변 부탁드려요')
+    name = ctx.sender.name if ctx.sender else None
+    if name:
+        ctx.reply(f'{name}님 안녕하세요! 공지 읽고 닉변 부탁드려요')
+    else:
+        ctx.reply('안녕하세요! 공지 읽고 닉변 부탁드려요')
+
+
+@bot.on_event('del_member')
+def on_del_member(ctx):
+    ctx.reply('ㅠㅠ')
 
 
 sns_room_id = os.environ.get('SNS_ROOM_ID', '')

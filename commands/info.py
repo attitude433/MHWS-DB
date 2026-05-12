@@ -24,12 +24,29 @@ def format_info(monster: dict) -> str:
             max_val = max(round(mult[k] * 100) for k, _ in PHYS_KR)
             weak_parts.append((max_val, part['part_kr'], entries))
 
+    lines.append('')
+    lines.append('[약점 부위]')
     if weak_parts:
         weak_parts.sort(key=lambda x: -x[0])
-        lines.append('')
-        lines.append('[약점 부위]')
         for _, part_kr, entries in weak_parts:
             lines.append(f'{part_kr} : {" / ".join(entries)}')
+    else:
+        lines.append('(45% 이상 부위 없음 — 약점특효 미발동)')
+
+    # 특수 상태 부위 (hide)
+    hide_parts = monster.get('hide_parts', [])
+    if hide_parts:
+        lines.append('')
+        lines.append('[특수 상태 부위]')
+        seen = set()
+        for part in hide_parts:
+            mult = part['multipliers']
+            vals = tuple(round(mult[key] * 100) for key, _ in PHYS_KR)
+            if vals in seen:
+                continue
+            seen.add(vals)
+            entries = [f'{label} {val}' for (_, label), val in zip(PHYS_KR, vals)]
+            lines.append(f'{part["part_kr"]} : {" / ".join(entries)}')
 
     # 약점 속성
     elements = [(w['level'], w['element']) for w in monster.get('weaknesses', []) if w['kind'] == 'element']

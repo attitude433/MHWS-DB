@@ -1,20 +1,22 @@
 import json
 import time
 import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 STATE_FILE = Path(__file__).parent.parent / 'sns_state.json'
 
 YOUTUBE_CHANNELS = [
     {'id': 'UCVS0xBpOtXBAl12rdG67-OQ', 'label': '몬헌 공식'},
-    {'id': 'UCW7h-1mymnJ96akzjrmiIgA', 'label': 'Capcom USA'},
+    {'id': 'UC02q4A9aCXUARMI51rFcl5A', 'label': '캡콤 아시아'},
 ]
 WILDS_KEYWORDS = ['wilds', '와일즈']
 
-BLUESKY_HANDLES = [
-    'monsterhunter.capcomusa.com',
+X_ACCOUNTS = [
+    {'handle': 'Capcom_Asia_KR', 'label': '캡콤 아시아'},
+    {'handle': 'monsterhunter', 'label': '몬스터헌터 공식'},
 ]
-BLUESKY_API = 'https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed'
+RSSHUB_BASE = 'http://127.0.0.1:1200/twitter/user'
 
 POLL_INTERVAL = 3600
 
@@ -55,26 +57,22 @@ def _fetch_youtube(api_key: str, channel_id: str) -> list[dict]:
         return []
 
 
-def _fetch_bluesky(handle: str) -> list[dict]:
-    url = f'{BLUESKY_API}?actor={handle}&limit=15'
+def _fetch_x(handle: str) -> list[dict]:
+    url = f'{RSSHUB_BASE}/{handle}'
     try:
         with urllib.request.urlopen(url, timeout=15) as r:
-            data = json.load(r)
+            xml_data = r.read()
+        root = ET.fromstring(xml_data)
         posts = []
-        for item in data.get('feed', []):
-            p = item.get('post', {})
-            uri = p.get('uri', '')
-            rkey = uri.split('/')[-1] if uri else ''
-            if not rkey:
+        for item in root.findall('.//item'):
+            link = (item.findtext('link') or '').strip()
+            if not link:
                 continue
-            author_handle = (p.get('author', {}) or {}).get('handle') or handle
-            posts.append({
-                'id': rkey,
-                'link': f'https://bsky.app/profile/{author_handle}/post/{rkey}',
-            })
+            tweet_id = link.rstrip('/').split('/')[-1]
+            posts.append({'id': tweet_id, 'link': link})
         return posts
     except Exception as ex:
-        print(f'[sns] bluesky fetch error ({handle}): {ex}', flush=True)
+        print(f'[sns] x fetch error ({handle}): {ex}', flush=True)
         return []
 
 
@@ -107,11 +105,12 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             for v in reversed(new_videos):
                 messages.append(v['link'])
 
-    for handle in BLUESKY_HANDLES:
-        posts = _fetch_bluesky(handle)
+    for acc in X_ACCOUNTS:
+        handle = acc['handle']
+        posts = _fetch_x(handle)
         if not posts:
             continue
-        key = f'bsky:{handle}'
+        key = f'x:{handle}'
         last_seen = state.get(key)
         if last_seen is None:
             state[key] = posts[0]['id']
