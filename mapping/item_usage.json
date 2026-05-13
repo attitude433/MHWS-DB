@@ -66609,12 +66609,22 @@
     "item_id": 572,
     "name_kr": "콩가의 억센털",
     "name_en": "Conga Pelt+",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 6,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "콩가",
+        "monster_en": "Conga",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 50
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "콩가암α",
@@ -66701,7 +66711,16 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "양질의 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "예리한 이빨": {
     "item_id": 98,
@@ -67471,12 +67490,22 @@
     "item_id": 577,
     "name_kr": "블랑고의 억센털",
     "name_en": "Blango Pelt+",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 4,
     "used_in_weapons_count": 7,
     "used_in_charms_count": 3,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "블랑고",
+        "monster_en": "Blango",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 50
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "블랑고메일β",
@@ -67596,7 +67625,16 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "유니언광석": {
     "item_id": 582,
@@ -68072,12 +68110,67 @@
     "item_id": 661,
     "name_kr": "역전 사냥의 증표Ⅲ",
     "name_en": "Hunter Symbol III",
-    "drops_count": 0,
+    "drops_count": 6,
     "used_in_armor_count": 34,
     "used_in_weapons_count": 135,
     "used_in_charms_count": 19,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "우드 투나",
+        "monster_en": "Uth Duna",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "레 다우",
+        "monster_en": "Rey Dau",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "누 이그드라",
+        "monster_en": "Nu Udra",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "진 다하드",
+        "monster_en": "Jin Dahaad",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "고어 마가라",
+        "monster_en": "Gore Magala",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "알슈베르도",
+        "monster_en": "Arkveld",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "길드에이스피어스α",
@@ -70333,12 +70426,31 @@
     "item_id": 574,
     "name_kr": "랑고스타의 견갑각",
     "name_en": "Vespoid Carapace",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 16,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 3,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 42
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "랑고헬름α",
@@ -70518,18 +70630,46 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 무지개색 오팔",
+        "give_amount": 1,
+        "receive_amount": 5,
+        "limit": 2
+      }
+    ]
   },
   "랑고스타의 얇은날개": {
     "item_id": 576,
     "name_kr": "랑고스타의 얇은날개",
     "name_en": "Vespoid Innerwing",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 10,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 1,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 35
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "랑고메일α",
@@ -71508,12 +71648,31 @@
     "item_id": 492,
     "name_kr": "익룡의 가죽+",
     "name_en": "Wingdrake Hide+",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 7,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baounos",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "하르푸스",
+        "monster_en": "Harpus",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "레우스그리브β",
@@ -71947,12 +72106,31 @@
     "item_id": 573,
     "name_kr": "랑고스타의 갑각",
     "name_en": "Vespoid Shell",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 42
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "랑고헬름",
@@ -72040,18 +72218,46 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 오팔",
+        "give_amount": 3,
+        "receive_amount": 2,
+        "limit": 5
+      }
+    ]
   },
   "랑고스타의 날개": {
     "item_id": 575,
     "name_kr": "랑고스타의 날개",
     "name_en": "Vespoid Wing",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 35
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "랑고암",
@@ -72104,12 +72310,22 @@
     "item_id": 93,
     "name_kr": "초식종의 갑각",
     "name_en": "Herbivore Shell",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "케라토노스",
+        "monster_en": "Ceratonoth",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "도샤구마헬름",
@@ -72152,18 +72368,46 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "모래후추 열매",
+        "give_amount": 2,
+        "receive_amount": 1,
+        "limit": 5
+      }
+    ]
   },
   "탈리오스의 비늘+": {
     "item_id": 491,
     "name_kr": "탈리오스의 비늘+",
     "name_en": "Talioth Scale+",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 4,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "쿠나파헤드α",
@@ -72285,18 +72529,67 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 따로알로에",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "굉천 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 3
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "네마라치카의 견갑각": {
     "item_id": 499,
     "name_kr": "네마라치카의 견갑각",
     "name_en": "Comaqchi Carapace",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 7,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 1,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Nerumacchika",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Nerumacchika",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "네라치카액세서리β",
@@ -72381,18 +72674,46 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "수호룡세크레트의 깃털": {
     "item_id": 502,
     "name_kr": "수호룡세크레트의 깃털",
     "name_en": "Guardian Seikret Feather",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 3,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Secret",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Secret",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "수호룡 세크레트코일",
@@ -72437,18 +72758,46 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "유백색 고치실",
+        "give_amount": 2,
+        "receive_amount": 1,
+        "limit": 4
+      }
+    ]
   },
   "수호룡세크레트의 깃털+": {
     "item_id": 503,
     "name_kr": "수호룡세크레트의 깃털+",
     "name_en": "Guardian Seikret Feather+",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 13,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Secret",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Secret",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "실드후드α",
@@ -72608,7 +72957,16 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "실드 코튼": {
     "item_id": 613,
@@ -72943,12 +73301,31 @@
     "item_id": 494,
     "name_kr": "필라길 지느러미+",
     "name_en": "Piragill Fin+",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 7,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Pilagil",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Pilagil",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "투나물그리브α",
@@ -73045,18 +73422,46 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "반짝반짝한 보배",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "브브라치카의 견갑각": {
     "item_id": 488,
     "name_kr": "브브라치카의 견갑각",
     "name_en": "Bulaqchi Carapace",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 6,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 0,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Vurburachika",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Vurburachika",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "레다젤트헬름α",
@@ -73124,7 +73529,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "라이트크리스털": {
     "item_id": 578,
@@ -73417,12 +73831,31 @@
     "item_id": 497,
     "name_kr": "크라노다스의 견두갑각",
     "name_en": "Kranodath Skull+",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 11,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Cranodos",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Cranodos",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "크라노다스메일α",
@@ -73555,7 +73988,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "양질의 안티마석",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
   },
   "장수호랑나비": {
     "item_id": 230,
@@ -73670,18 +74112,81 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "양질의 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "유구한 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "유구한 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "반짝반짝한 보배",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "큼직큼직한 보배",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "크라노다스의 두갑각": {
     "item_id": 496,
     "name_kr": "크라노다스의 두갑각",
     "name_en": "Kranodath Skull",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 5,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Cranodos",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Cranodos",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "크라노다스메일",
@@ -73731,18 +74236,46 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "황금 오일",
+        "give_amount": 2,
+        "receive_amount": 1,
+        "limit": 3
+      }
+    ]
   },
   "익룡의 가죽": {
     "item_id": 97,
     "name_kr": "익룡의 가죽",
     "name_en": "Wingdrake Hide",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baounos",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "하르푸스",
+        "monster_en": "Harpus",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "레다젤트코일",
@@ -73771,18 +74304,37 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 모래후추 열매",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 4
+      }
+    ]
   },
   "교어의 껍질": {
     "item_id": 614,
     "name_kr": "교어의 껍질",
     "name_en": "Gajau Hide",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 0,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "가쟈우",
+        "monster_en": "",
+        "rank": "",
+        "kind": "fishing",
+        "kind_kr": "낚시",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "가쟈우부츠",
@@ -73866,7 +74418,23 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 무지개색 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "스자 옷감": {
     "item_id": 612,
@@ -74188,12 +74756,31 @@
     "item_id": 95,
     "name_kr": "탈리오스의 비늘",
     "name_en": "Talioth Scale",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "탈리오스암",
@@ -74284,12 +74871,31 @@
     "item_id": 94,
     "name_kr": "브브라치카의 갑각",
     "name_en": "Bulaqchi Shell",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Vurburachika",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Vurburachika",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "브라치카글라스",
@@ -74341,7 +74947,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "창뢰정 조각",
+        "give_amount": 2,
+        "receive_amount": 1,
+        "limit": 5
+      }
+    ]
   },
   "하베스트 티켓": {
     "item_id": 771,
@@ -74468,12 +75083,112 @@
     "item_id": 659,
     "name_kr": "역전 사냥의 증표Ⅰ",
     "name_en": "Hunter Symbol I",
-    "drops_count": 0,
+    "drops_count": 11,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 127,
     "used_in_charms_count": 0,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "차타카브라",
+        "monster_en": "Chatacabra",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "케마트리스",
+        "monster_en": "Quematrice",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "라바라 바리나",
+        "monster_en": "Lala Barina",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "바바콩가",
+        "monster_en": "Congalala",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "발라하라",
+        "monster_en": "Balahara",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "푸푸로포루",
+        "monster_en": "Rompopolo",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "네르스큐라",
+        "monster_en": "Nerscylla",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "히라바미",
+        "monster_en": "Hirabami",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "얀쿡크",
+        "monster_en": "Yian Kut-Ku",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "게리오스",
+        "monster_en": "Gypceros",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "리오레이아",
+        "monster_en": "Rathian",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "언더림글라스α",
@@ -76221,12 +76936,103 @@
     "item_id": 660,
     "name_kr": "역전 사냥의 증표Ⅱ",
     "name_en": "Hunter Symbol II",
-    "drops_count": 0,
+    "drops_count": 10,
     "used_in_armor_count": 4,
     "used_in_weapons_count": 88,
     "used_in_charms_count": 11,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "도샤구마",
+        "monster_en": "Doshaguma",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "아자라칸",
+        "monster_en": "Ajarakan",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "수호룡 도샤구마",
+        "monster_en": "Guardian Doshaguma",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "수호룡 리오레우스",
+        "monster_en": "Guardian Rathalos",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "수호룡 오도가론 아종",
+        "monster_en": "Guardian Ebony Odogaron",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "시이우",
+        "monster_en": "Xu Wu",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "수호룡 안쟈나프 아종",
+        "monster_en": "Guardian Fulgur Anjanath",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "리오레우스",
+        "monster_en": "Rathalos",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "그라비모스",
+        "monster_en": "Gravios",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "도도블랑고",
+        "monster_en": "Blangonga",
+        "rank": "tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "봉인의 안대α",
@@ -77366,12 +78172,22 @@
     "item_id": 761,
     "name_kr": "동봉룡 사냥증 γ",
     "name_en": "Jin Dahaad Certificate γ",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "진 다하드",
+        "monster_en": "Jin Dahaad",
+        "rank": "arch-tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "다하딜라헬름γ",
@@ -77492,12 +78308,22 @@
     "item_id": 760,
     "name_kr": "염옥소 사냥증 γ",
     "name_en": "Nu Udra Certificate γ",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "누 이그드라",
+        "monster_en": "Nu Udra",
+        "rank": "arch-tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "이그졸스헬름γ",
@@ -77629,12 +78455,22 @@
     "item_id": 762,
     "name_kr": "쇄인룡 사냥증 γ",
     "name_en": "Arkveld Certificate γ",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "알슈베르도",
+        "monster_en": "Arkveld",
+        "rank": "arch-tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "슈바르카헬름γ",
@@ -77852,12 +78688,22 @@
     "item_id": 759,
     "name_kr": "파의룡 사냥증 γ",
     "name_en": "Uth Duna Certificate γ",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "우드 투나",
+        "monster_en": "Uth Duna",
+        "rank": "arch-tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "투나물헬름γ",
@@ -78075,12 +78921,22 @@
     "item_id": 758,
     "name_kr": "황뢰룡 사냥증 γ",
     "name_en": "Rey Dau Certificate γ",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 5,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "레 다우",
+        "monster_en": "Rey Dau",
+        "rank": "arch-tempered",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "레다젤트헬름γ",
@@ -78176,12 +79032,22 @@
     "item_id": 487,
     "name_kr": "초식종의 견갑각",
     "name_en": "Herbivore Carapace",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 4,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "케라토노스",
+        "monster_en": "Ceratonoth",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "도샤구마메일β",
@@ -78237,7 +79103,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 따로알로에",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
   },
   "조사단 티켓": {
     "item_id": 616,
@@ -78337,12 +79212,31 @@
     "item_id": 498,
     "name_kr": "네마라치카의 갑각",
     "name_en": "Comaqchi Shell",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 1,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Nerumacchika",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Nerumacchika",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "네라치카액세서리",
@@ -78394,7 +79288,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "글라스위드",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": 4
+      }
+    ]
   },
   "쥐색금 부스러기": {
     "item_id": 472,
@@ -78461,12 +79364,22 @@
     "item_id": 571,
     "name_kr": "콩가의 털",
     "name_en": "Conga Pelt",
-    "drops_count": 0,
+    "drops_count": 1,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 2,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "콩가",
+        "monster_en": "Conga",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 50
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "콩가그리브",
@@ -78562,12 +79475,31 @@
     "item_id": 493,
     "name_kr": "필라길 지느러미",
     "name_en": "Piragill Fin",
-    "drops_count": 0,
+    "drops_count": 2,
     "used_in_armor_count": 1,
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Pilagil",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Pilagil",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "필라길그리브",
@@ -80420,5 +81352,111 @@
         "quantity": 1
       }
     ]
+  },
+  "역전 연마의 증표": {
+    "item_id": 826,
+    "name_kr": "역전 연마의 증표",
+    "name_en": "Battle-tempered Emblem",
+    "drops_count": 1,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "10성 이상 퀘스트",
+        "monster_en": "",
+        "rank": "",
+        "kind": "quest-reward",
+        "kind_kr": "퀘스트 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": []
+  },
+  "보석 어란": {
+    "item_id": 226,
+    "name_kr": "보석 어란",
+    "name_en": "Jeweled Mullet Roe",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "여왕꽃의 매혹가루",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 5,
+        "limit": 2
+      }
+    ]
+  },
+  "로열 아이루의 증표": {
+    "item_id": 834,
+    "name_kr": "로열 아이루의 증표",
+    "name_en": "Royal Felyne Emblem",
+    "drops_count": 1,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "로얄 아이루가 찾고 있는 것",
+        "monster_en": "",
+        "rank": "",
+        "kind": "quest-reward",
+        "kind_kr": "퀘스트 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": []
+  },
+  "픽토맨서의 증표": {
+    "item_id": 821,
+    "name_kr": "픽토맨서의 증표",
+    "name_en": "Soul of the Pictomancer",
+    "drops_count": 1,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "파이널판타지14 콜라보 사이드퀘스트",
+        "monster_en": "",
+        "rank": "",
+        "kind": "quest-reward",
+        "kind_kr": "퀘스트 보수",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": []
   }
 }

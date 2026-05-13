@@ -60,10 +60,46 @@ for _s in db.skills:
     _key = _s['name_kr'].replace(' ', '')
     _skill_index[_key] = _s['name_kr']
 
+GLYPH_VARIANTS = {
+    'α': ('알파', 'A', 'a'),
+    'β': ('베타', 'B', 'b'),
+    'γ': ('감마', 'Y', 'y'),
+    'Ⅰ': ('I', '1'),
+    'Ⅱ': ('II', '2'),
+    'Ⅲ': ('III', '3'),
+    'Ⅳ': ('IV', '4'),
+    'Ⅴ': ('V', '5'),
+}
+
+
+def _variant_keys(key: str) -> set[str]:
+    keys = {key}
+    for src, alts in GLYPH_VARIANTS.items():
+        if src not in key:
+            continue
+        new_keys = set()
+        for k in keys:
+            for alt in alts:
+                new_keys.add(k.replace(src, alt))
+        keys |= new_keys
+    return keys
+
+
 _item_index: dict[str, dict] = {}
 for _name, _data in db.item_usage.items():
     _key = _name.replace(' ', '')
-    _item_index[_key] = _data
+    for _variant in _variant_keys(_key):
+        _item_index.setdefault(_variant, _data)
+
+_weapon_full_index: dict[str, dict] = {}
+_weapon_series_groups: dict[str, list[dict]] = {}
+for _w in db.weapons_all:
+    _key = _w['name_kr'].replace(' ', '')
+    for _variant in _variant_keys(_key):
+        _weapon_full_index.setdefault(_variant, _w)
+    _series = (_w.get('series_name_kr') or '').replace(' ', '')
+    if _series:
+        _weapon_series_groups.setdefault(_series, []).append(_w)
 
 
 def find_monster(query: str):
@@ -109,3 +145,53 @@ def find_item_partial(query: str):
         if len(key) >= 2 and key in tokens:
             return _item_index[key]
     return None
+
+
+def find_weapon(query: str):
+    key = query.replace(' ', '')
+    return _weapon_full_index.get(key)
+
+
+def find_weapon_candidates(query: str, limit: int = 15) -> list[str]:
+    key = query.replace(' ', '')
+    if len(key) < 2:
+        return []
+    seen: dict[str, dict] = {}
+    for k, w in _weapon_full_index.items():
+        if key in k:
+            name = w['name_kr']
+            if name not in seen:
+                seen[name] = w
+        if len(seen) >= limit:
+            break
+    return list(seen.keys())
+
+
+# 방어구 인덱스 (피스 단위)
+_armor_piece_index: dict[str, dict] = {}
+for _set in db.armor:
+    for _piece in _set.get('pieces', []):
+        _piece['_set'] = _set
+        _key = _piece['name_kr'].replace(' ', '')
+        for _variant in _variant_keys(_key):
+            _armor_piece_index.setdefault(_variant, _piece)
+
+
+def find_armor_piece(query: str):
+    key = query.replace(' ', '')
+    return _armor_piece_index.get(key)
+
+
+def find_armor_candidates(query: str, limit: int = 15) -> list[str]:
+    key = query.replace(' ', '')
+    if len(key) < 2:
+        return []
+    seen: dict[str, dict] = {}
+    for k, p in _armor_piece_index.items():
+        if key in k:
+            name = p['name_kr']
+            if name not in seen:
+                seen[name] = p
+        if len(seen) >= limit:
+            break
+    return list(seen.keys())

@@ -8,6 +8,28 @@ import members
 
 KST = ZoneInfo('Asia/Seoul')
 
+MORNING_MESSAGES = [
+    '오늘도 좋은 하루! ٩(๑˃̵ᴗ˂̵)و',
+    '좋은 아침이에요! 오늘 하루도 잘 보내세요',
+    '다들 잘 주무셨어요? 화이팅!',
+    '모닝콜이에요~ 좋은 하루 시작해요',
+    '안녕하세요! 오늘도 좋은 일 많기를 바라요',
+    '좋은 아침! 오늘도 응원할게요',
+    '모두 굿모닝이에요!',
+]
+
+GOODNIGHT_MESSAGES = [
+    '모두 잘자요 (づ.-)',
+    '오늘 하루 수고하셨어요! 푹 쉬세요',
+    '다들 잘 자요. 좋은 꿈 꾸세요',
+    '다이애나도 절전 모드 들어갈게요. 잘자요!',
+    '오늘 많이 고생하셨어요. 편안한 밤 되세요',
+    '자정이에요. 모두 잘자요',
+    '내일 또 봐요! 굿나잇',
+    '푹 쉬시고 내일 만나요',
+    '잘자요! 좋은 밤 보내세요',
+]
+
 LUNCH_MESSAGES = [
     '점심 식사 맛있게 하세요!',
     '점심 시간이에요! 든든히 잘 챙겨드세요',
@@ -85,10 +107,10 @@ def _pick_babble() -> str:
 
 
 SCHEDULES = [
-    {'hour': 9, 'minute': 0, 'message': '오늘도 좋은 하루! ٩(๑˃̵ᴗ˂̵)و'},
+    {'hour': 9, 'minute': 0, 'dynamic': lambda: random.choice(MORNING_MESSAGES)},
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
-    {'hour': 0, 'minute': 0, 'message': '모두 잘자요 (づ.-)'},
+    {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},
 ]
 
 

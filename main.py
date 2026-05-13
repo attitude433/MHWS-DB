@@ -8,7 +8,7 @@ from iris import Bot
 import alias
 import db
 import members
-from commands import info, skill, material, custom, chat, sns, scheduler, meal, weather
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
@@ -30,11 +30,11 @@ HELP_TEXT = """[명령어 목록]
 .스킬 (스킬명) 장비
 .소재 (소재명)
 .커스텀
-.커스텀 (무기)
-.챗 (정보 질문)
-.다이애나 (하고 싶은 말)
+.커스텀 (무기 종류)
+.무기 (무기명)
+.방어구 (방어구명)
+.다이애나 (질문/잡담)
 .메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
-.날씨 (지역)
 .디스코드
 .고양이"""
 
@@ -94,17 +94,36 @@ def on_message(ctx):
         return
 
     if msg.startswith('.커스텀 '):
-        weapon = msg[5:].strip()
-        ctx.reply(custom.format_custom_weapon(weapon, db.external_guides))
+        weapon_name = msg[5:].strip()
+        ctx.reply(custom.format_custom_weapon(weapon_name, db.external_guides))
         return
 
-    if msg.startswith('.챗 '):
-        query = msg[3:].strip()
-        if query:
-            threading.Thread(
-                target=lambda: ctx.reply(chat.ask_info(query)),
-                daemon=True,
-            ).start()
+    if msg.startswith('.무기 '):
+        query = msg[4:].strip()
+        w = alias.find_weapon(query)
+        if w:
+            ctx.reply(weapon.format_weapon(w))
+        else:
+            cands = alias.find_weapon_candidates(query)
+            if cands:
+                body = '\n'.join(cands)
+                ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+            else:
+                ctx.reply('정확히 입력해주세요')
+        return
+
+    if msg.startswith('.방어구 '):
+        query = msg[5:].strip()
+        p = alias.find_armor_piece(query)
+        if p:
+            ctx.reply(armor.format_armor(p))
+        else:
+            cands = alias.find_armor_candidates(query)
+            if cands:
+                body = '\n'.join(cands)
+                ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+            else:
+                ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.다이애나 '):
@@ -124,21 +143,6 @@ def on_message(ctx):
 
     if msg == '.디스코드':
         ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
-        return
-
-    if msg == '.날씨':
-        threading.Thread(
-            target=lambda: ctx.reply(weather.format_weather()),
-            daemon=True,
-        ).start()
-        return
-
-    if msg.startswith('.날씨 '):
-        location = msg[4:].strip()
-        threading.Thread(
-            target=lambda: ctx.reply(weather.format_weather(location)),
-            daemon=True,
-        ).start()
         return
 
     if msg == '.고양이':
@@ -168,11 +172,7 @@ def on_message(ctx):
 
 @bot.on_event('new_member')
 def on_new_member(ctx):
-    name = ctx.sender.name if ctx.sender else None
-    if name:
-        ctx.reply(f'{name}님 안녕하세요! 공지 읽고 닉변 부탁드려요')
-    else:
-        ctx.reply('안녕하세요! 공지 읽고 닉변 부탁드려요')
+    ctx.reply('안녕하세요! 공지 읽고 닉변 부탁드려요')
 
 
 @bot.on_event('del_member')
@@ -192,6 +192,11 @@ if sns_room_id and youtube_key:
 if sns_room_id:
     threading.Thread(
         target=scheduler.start_scheduler,
+        args=(bot, int(sns_room_id)),
+        daemon=True,
+    ).start()
+    threading.Thread(
+        target=steam_sale.start_poller,
         args=(bot, int(sns_room_id)),
         daemon=True,
     ).start()

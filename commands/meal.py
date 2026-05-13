@@ -12,7 +12,14 @@ DIANA_TEMPLATES = [
     '{menu} 드시는 건 어떠세요?',
 ]
 
+SPECIAL_MENU = '단식'
+SPECIAL_MENU_PROB = 0.03
+_REGULAR_MEALS = [m for m in db.meals if m != SPECIAL_MENU]
+
 
 def pick_random() -> str:
-    menu = random.choice(db.meals)
+    if random.random() < SPECIAL_MENU_PROB:
+        menu = SPECIAL_MENU
+    else:
+        menu = random.choice(_REGULAR_MEALS)
     return random.choice(DIANA_TEMPLATES).format(menu=menu)

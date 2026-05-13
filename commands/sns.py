@@ -10,7 +10,6 @@ YOUTUBE_CHANNELS = [
     {'id': 'UCVS0xBpOtXBAl12rdG67-OQ', 'label': '몬헌 공식'},
     {'id': 'UC02q4A9aCXUARMI51rFcl5A', 'label': '캡콤 아시아'},
 ]
-WILDS_KEYWORDS = ['wilds', '와일즈']
 
 X_ACCOUNTS = [
     {'handle': 'Capcom_Asia_KR', 'label': '캡콤 아시아'},
@@ -76,11 +75,6 @@ def _fetch_x(handle: str) -> list[dict]:
         return []
 
 
-def _is_wilds_relevant(title: str) -> bool:
-    t = title.lower()
-    return any(kw in t for kw in WILDS_KEYWORDS)
-
-
 def _check_new(api_key: str, state: dict) -> list[str]:
     messages = []
 
@@ -99,7 +93,6 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             if v['id'] == last_seen:
                 break
             new_videos.append(v)
-        new_videos = [v for v in new_videos if _is_wilds_relevant(v['title'])]
         if new_videos:
             state[key] = videos[0]['id']
             for v in reversed(new_videos):

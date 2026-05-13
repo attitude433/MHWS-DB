@@ -1,18 +1,12 @@
 from collections import defaultdict
 
-RANK_KR = {'low': '하위', 'high': '상위', 'master': '마스터'}
+RANK_KR = {'low': '하위', 'high': '상위', 'master': '마스터', 'tempered': '역전', 'arch-tempered': '역전왕'}
 
 
-def format_material(item_name: str, item_data: dict) -> str:
-    drops = item_data.get('drops_from_monsters', [])
-    if not drops:
-        return f'[소재] {item_name}\n\n획득처 정보 없음'
-
-    # group by (monster_kr, rank), collect chances per kind_kr
+def _format_drops(drops: list) -> list[str]:
     groups: dict = defaultdict(lambda: defaultdict(list))
     order = []
     seen: set = set()
-
     for d in drops:
         key = (d['monster_kr'], d['rank'])
         if key not in seen:
@@ -20,7 +14,6 @@ def format_material(item_name: str, item_data: dict) -> str:
             order.append(key)
         groups[key][d['kind_kr']].append(d['chance'])
 
-    # average same-kind chances, then sort by chance desc within each group
     averaged: dict = {}
     for key in order:
         methods = []
@@ -30,16 +23,45 @@ def format_material(item_name: str, item_data: dict) -> str:
         methods.sort(key=lambda x: -x[1])
         averaged[key] = methods
 
-    # sort groups by max chance desc
     order.sort(key=lambda k: -averaged[k][0][1])
 
-    lines = [f'[소재] {item_name}', '', '[획득처]']
+    lines = ['[획득처]']
     for key in order:
         monster_kr, rank = key
         rank_kr = RANK_KR.get(rank, rank)
-        lines.append(f'{monster_kr} ({rank_kr})')
+        header = f'{monster_kr} ({rank_kr})' if rank_kr else monster_kr
+        lines.append(header)
         for kind_kr, avg in averaged[key]:
             lines.append(f'  - {kind_kr} {avg}%')
         lines.append('')
+    return lines
+
+
+def _format_exchanges(exchanges: list) -> list[str]:
+    lines = ['[NPC 교환]']
+    for e in exchanges:
+        npc = e.get('npc_kr', '')
+        give_item = e.get('give_item_kr', '')
+        give_amt = e.get('give_amount', 1)
+        recv_amt = e.get('receive_amount', 1)
+        limit = e.get('limit')
+        suffix = f' ({limit}회)' if limit else ''
+        lines.append(f'{npc}: {give_item} x{give_amt} → x{recv_amt}{suffix}')
+    lines.append('')
+    return lines
+
+
+def format_material(item_name: str, item_data: dict) -> str:
+    drops = item_data.get('drops_from_monsters', [])
+    exchanges = item_data.get('npc_exchanges', [])
+
+    if not drops and not exchanges:
+        return f'[소재] {item_name}\n\n획득처 정보 없음'
+
+    lines = [f'[소재] {item_name}', '']
+    if drops:
+        lines.extend(_format_drops(drops))
+    if exchanges:
+        lines.extend(_format_exchanges(exchanges))
 
     return '\n'.join(lines).rstrip()
