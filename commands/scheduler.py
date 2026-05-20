@@ -107,14 +107,16 @@ def _pick_babble() -> str:
     return random.choice(pool)
 
 
-def _morning() -> str:
-    base = random.choice(MORNING_MESSAGES)
-    line = _today.morning_holiday_line()
-    return f'{base}\n{line}' if line else base
+def _morning_multi() -> list[str]:
+    out = [random.choice(MORNING_MESSAGES)]
+    line = _today.morning_holiday_via_llm()
+    if line:
+        out.append(line)
+    return out
 
 
 SCHEDULES = [
-    {'hour': 9, 'minute': 0, 'dynamic': _morning},
+    {'hour': 9, 'minute': 0, 'multi_dynamic': _morning_multi},
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},
@@ -138,13 +140,21 @@ def start_scheduler(bot, room_id: int):
                     and now.minute == s['minute']
                     and last_sent.get(key) != now.date()
                 ):
-                    msg = s['dynamic']() if 'dynamic' in s else s['message']
-                    bot.api.reply(room_id, msg)
+                    if 'multi_dynamic' in s:
+                        msgs = s['multi_dynamic']()
+                    elif 'dynamic' in s:
+                        msgs = [s['dynamic']()]
+                    else:
+                        msgs = [s['message']]
+                    for i, msg in enumerate(msgs):
+                        if i:
+                            time.sleep(2)
+                        bot.api.reply(room_id, msg)
+                        print(
+                            f'[scheduler] sent at {now.isoformat()}: {msg}',
+                            flush=True,
+                        )
                     last_sent[key] = now.date()
-                    print(
-                        f'[scheduler] sent at {now.isoformat()}: {msg}',
-                        flush=True,
-                    )
 
             babble_key = (now.date(), now.hour)
             if (
