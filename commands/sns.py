@@ -89,10 +89,18 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             state[key] = videos[0]['id']
             continue
         new_videos = []
+        found = False
         for v in videos:
             if v['id'] == last_seen:
+                found = True
                 break
             new_videos.append(v)
+        if not found:
+            # last_seen scrolled out of fetch window (or ID format changed) —
+            # don't blast every item; just resync state silently.
+            state[key] = videos[0]['id']
+            print(f'[sns] yt {cid}: last_seen not in window; resync only', flush=True)
+            continue
         if new_videos:
             state[key] = videos[0]['id']
             for v in reversed(new_videos):
@@ -109,10 +117,16 @@ def _check_new(api_key: str, state: dict) -> list[str]:
             state[key] = posts[0]['id']
             continue
         new_posts = []
+        found = False
         for p in posts:
             if p['id'] == last_seen:
+                found = True
                 break
             new_posts.append(p)
+        if not found:
+            state[key] = posts[0]['id']
+            print(f'[sns] x {handle}: last_seen not in window; resync only', flush=True)
+            continue
         if new_posts:
             state[key] = posts[0]['id']
             for p in reversed(new_posts):
