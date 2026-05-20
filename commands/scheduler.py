@@ -108,11 +108,8 @@ def _pick_babble() -> str:
 
 
 def _morning_multi() -> list[str]:
-    out = [random.choice(MORNING_MESSAGES)]
-    line = _today.morning_holiday_via_llm()
-    if line:
-        out.append(line)
-    return out
+    # 기념일 멘트 비활성화 — 필요해지면 _today.morning_holiday_via_llm() 다시 호출.
+    return [random.choice(MORNING_MESSAGES)]
 
 
 SCHEDULES = [
