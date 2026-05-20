@@ -4,3 +4,7 @@ __pycache__/
 *.pyo
 OPS_LOCAL.md
 members.db
+.claude/
+sns_state.json
+steam_sale_state.json
+*_state.json
