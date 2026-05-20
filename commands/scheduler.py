@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 
 import db
 import members
+from commands import today as _today
 
 KST = ZoneInfo('Asia/Seoul')
 
@@ -106,8 +107,14 @@ def _pick_babble() -> str:
     return random.choice(pool)
 
 
+def _morning() -> str:
+    base = random.choice(MORNING_MESSAGES)
+    line = _today.morning_holiday_line()
+    return f'{base}\n{line}' if line else base
+
+
 SCHEDULES = [
-    {'hour': 9, 'minute': 0, 'dynamic': lambda: random.choice(MORNING_MESSAGES)},
+    {'hour': 9, 'minute': 0, 'dynamic': _morning},
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},
