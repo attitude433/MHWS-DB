@@ -49,12 +49,18 @@ def format_info(monster: dict) -> str:
             lines.append(f'{part["part_kr"]} : {" / ".join(entries)}')
 
     # 약점 속성
-    elements = [(w['level'], w['element']) for w in monster.get('weaknesses', []) if w['kind'] == 'element']
+    elements = [(w['level'], w['element'], w.get('note')) for w in monster.get('weaknesses', []) if w['kind'] == 'element']
     elements.sort(key=lambda x: -x[0])
     if elements:
         lines.append('')
         lines.append('[약점 속성]')
-        lines.append(' / '.join(f'{ELEMENT_KR.get(e, e)} {_stars(lv)}' for lv, e in elements))
+        parts_out = []
+        for lv, e, note in elements:
+            s = f'{ELEMENT_KR.get(e, e)} {_stars(lv)}'
+            if note:
+                s += f' ({note})'
+            parts_out.append(s)
+        lines.append(' / '.join(parts_out))
 
     # 상태이상
     statuses = [(w['level'], w['status']) for w in monster.get('weaknesses', []) if w['kind'] == 'status']

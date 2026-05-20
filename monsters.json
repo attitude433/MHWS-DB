@@ -13433,6 +13433,20 @@
     ],
     "weaknesses": [
       {
+        "kind": "element",
+        "level": 2,
+        "level_label": "★2",
+        "element": "fire",
+        "note": "기름 두른 부위"
+      },
+      {
+        "kind": "element",
+        "level": 3,
+        "level_label": "★3",
+        "element": "dragon",
+        "note": "기름 부드러워진/벗겨진 부위"
+      },
+      {
         "kind": "status",
         "level": 2,
         "level_label": "★2",
