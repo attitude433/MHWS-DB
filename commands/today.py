@@ -34,24 +34,17 @@ HOLIDAY_SYSTEM = """당신은 카톡 봇 "다이애나" 입니다. 어린 소녀
 - 1인칭은 "저 / 전 / 제가". 친근하지만 어디까지나 존댓말.
 
 [지시]
-- 받은 '오늘의 기념일 후보' 중에서 톡방에서 가볍게 소개할 만한 1개를 골라 "오늘은 OO이래요!" 식의 한 줄 멘트만 만드세요.
-- 무거운/추모성/정치 항목이 섞여 있어도 그건 무시하고 가벼운 걸 고르세요.
-- 그 기념일에 대해 다이애나 톤으로 한마디 덧붙여도 됩니다 (예: 꿀벌의 날이면 "꿀벌이 정말 열심히 일하잖아요!").
+- 받은 '오늘의 기념일 후보' 중에서 한국 카톡방에서 가볍게 소개할 만한 1개를 골라 "오늘은 OO이래요!" 식의 한 줄 멘트만 만드세요.
+- 우선순위: (1) 한국의 익숙한 큰 기념일/공휴일 (어린이날·광복절·식목일 등), (2) 가벼운 세계 OO의 날, (3) 재미있는 잡다한 기념일.
+- 다음 항목은 무조건 제외: 추모성·비극·전쟁·학살·테러·폭력 관련, 정치적·민감한 사회 이슈, 외국 한정 국경일·독립일, 외국 종교일.
+- 후보에 가벼운 것이 하나도 없으면 "" (빈 문자열) 만 출력하세요.
+- 그 기념일에 대해 다이애나 톤으로 한마디 덧붙여도 됩니다.
 - 이모지는 1~2개까지만, 안 써도 됩니다.
 - 다른 설명·인사·메타 발언 X. 본문만."""
 
 _cache: dict[date, list[str]] = {}
 
-# 제외 키워드 — 비극·추모·민감한 사회 이슈만.
-BLACKLIST = (
-    '추모', '학살', '전쟁', '희생', '순국', '전사', '전몰', '기억의 날',
-    '테러', '폭력', '학대', '자살', '학도', '위안부',
-    '인종차별', '인권', '빈곤', '에이즈', '난민', '실종',
-)
-
-# ":" 뒤가 외국 지역명이면 제외 (한국 톡방 톤에 안 맞음).
-# 미명시·한국·국제기구·세계·유럽 등은 통과.
-ALLOWED_REGIONS = ('대한민국', '한국', '유엔', 'UN', '국제', '세계', '유럽', '영연방')
+# 룰 필터는 최소화 — 톤·민감도 판단은 Sonnet 에게 맡김.
 
 
 def _wiki_url(today: date) -> str:
@@ -108,14 +101,8 @@ def fetch_today() -> list[str]:
         full = _strip_markup(raw)
         if not full:
             continue
-        if any(kw in full for kw in BLACKLIST):
-            continue
-        if ':' in full:
-            region = full.split(':', 1)[1]
-            if not any(r in region for r in ALLOWED_REGIONS):
-                continue
         # 매년 양력 날짜가 변하는 공휴일 (예: '부처님 오신 날 - 1983년, 2029년, ...').
-        # 연도가 3개 이상 나열돼 있고 올해가 거기 없으면 오늘이 아님.
+        # 연도가 3개 이상 나열돼 있고 올해가 거기 없으면 오늘이 아님 — 사실관계 필터.
         years = re.findall(r'(\d{4})\s*년', full)
         if len(years) >= 3 and str(datetime.now(KST).year) not in years:
             continue
@@ -156,8 +143,11 @@ def morning_holiday_via_llm() -> str | None:
             messages=[{'role': 'user', 'content': user_msg}],
         )
         text = ''.join(getattr(b, 'text', '') for b in resp.content).strip()
-        if text:
+        # LLM 이 "" 를 출력하면 가벼운 거 없다는 뜻 → 멘트 생략.
+        if text and len(text) > 3:
             return text
+        if text == '':
+            return None
     except Exception as ex:
         print(f'[today] llm error: {ex}', flush=True)
     return morning_holiday_line()
