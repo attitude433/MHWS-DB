@@ -66,7 +66,7 @@ def _format_monster(m: dict) -> str:
     lines = [f'[몬스터] {name}']
     weak = m.get('weaknesses', [])
     if weak:
-        lines.append(f'  약점: {json.dumps(weak, ensure_ascii=False)[:300]}')
+        lines.append(f'  약점: {json.dumps(weak, ensure_ascii=False)[:1500]}')
     parts_data = m.get('parts', [])
     if parts_data:
         weak_parts = []
