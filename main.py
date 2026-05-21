@@ -53,6 +53,30 @@ def on_message(ctx):
         ctx.reply(HELP_TEXT)
         return
 
+    if msg == '.정보':
+        ctx.reply('.정보 (몬스터명)\n예: .정보 도샤구마')
+        return
+
+    if msg == '.스킬':
+        ctx.reply('.스킬 (스킬명) 또는 .스킬 (스킬명) 장비\n예: .스킬 만족감')
+        return
+
+    if msg == '.소재':
+        ctx.reply('.소재 (소재명)\n예: .소재 철광석')
+        return
+
+    if msg == '.무기':
+        ctx.reply('.무기 (무기명)\n예: .무기 호프보우Ⅰ')
+        return
+
+    if msg == '.방어구':
+        ctx.reply('.방어구 (방어구명)\n예: .방어구 호프헬름')
+        return
+
+    if msg == '.다이애나':
+        ctx.reply('.다이애나 (질문)\n예: .다이애나 오늘 뭐 먹지?')
+        return
+
     if msg.startswith('.정보 '):
         query = msg[4:].strip()
         monster = alias.find_monster(query)
