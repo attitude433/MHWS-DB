@@ -67,10 +67,21 @@ def format_weapon(w: dict) -> str:
         lines.append(f'장착 코팅: {", ".join(co_strs)}')
 
     other = (w.get('other_options') or '').strip()
-    if other:
-        kind_kr = w.get('kind_kr', '')
-        label = '선율' if kind_kr == '수렵피리' else '특수 옵션'
-        lines.append(f'{label}: {other}')
+    kind_kr = w.get('kind_kr', '')
+    if kind_kr == '수렵피리':
+        cat = 'elementless'
+        for s in w.get('specials', []) or []:
+            if s.get('kind') == 'element':
+                cat = 'elemental'; break
+            if s.get('kind') == 'status':
+                cat = 'status'; break
+        melodies = db.horn_melodies.get(cat, [])
+        if melodies:
+            lines.append(f'선율: {" / ".join(melodies)}')
+        if other:
+            lines.append(f'추가 옵션: {other}')
+    elif other:
+        lines.append(f'특수 옵션: {other}')
 
     crafting = w.get('crafting') or {}
     previous_id = crafting.get('previous_id')
