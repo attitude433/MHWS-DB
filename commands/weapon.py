@@ -68,8 +68,11 @@ def format_weapon(w: dict) -> str:
 
     other = (w.get('other_options') or '').strip()
     kind_kr = w.get('kind_kr', '')
-    # 수렵피리 선율은 무기별 정확한 데이터 모은 뒤 다시 추가 예정 — 일단 비활성화.
-    if kind_kr != '수렵피리' and other:
+    if kind_kr == '수렵피리':
+        melodies = db.horn_melodies.get(name)
+        if melodies:
+            lines.append(f'선율: {" / ".join(melodies)}')
+    elif other:
         lines.append(f'특수 옵션: {other}')
 
     crafting = w.get('crafting') or {}
