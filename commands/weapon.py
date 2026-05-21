@@ -6,6 +6,18 @@ _by_kind_id: dict[tuple, dict] = {
     for w in db.weapons_all if w.get('game_id') is not None
 }
 
+COATING_KR = {
+    'power': '강격병',
+    'close-range': '접격병',
+    'pierce': '관통병',
+    'paralysis': '마비병',
+    'poison': '독병',
+    'sleep': '수면병',
+    'blast': '폭파병',
+    'exhaust': '멸기병',
+    'recovery': '회복병',
+}
+
 
 def _lookup(kind: str, gid: int):
     return _by_kind_id.get((kind, gid))
@@ -48,6 +60,11 @@ def format_weapon(w: dict) -> str:
     if skills:
         sk_strs = [f'{s.get("name_kr", "")} Lv{s.get("level", 1)}' for s in skills]
         lines.append(f'스킬: {", ".join(sk_strs)}')
+
+    coatings = w.get('coatings', [])
+    if coatings:
+        co_strs = [COATING_KR.get(c, c) for c in coatings]
+        lines.append(f'장착 코팅: {", ".join(co_strs)}')
 
     crafting = w.get('crafting') or {}
     previous_id = crafting.get('previous_id')

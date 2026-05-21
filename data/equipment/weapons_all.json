@@ -45,7 +45,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 937,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/937",
@@ -139,7 +139,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 938,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/938",
@@ -266,7 +266,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 939,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/939",
@@ -408,7 +408,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 940,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/940",
@@ -580,7 +580,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 941,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/941",
@@ -4298,7 +4298,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 946,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/946",
@@ -4417,7 +4417,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 947,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/947",
@@ -4572,7 +4572,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 948,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/948",
@@ -4756,7 +4756,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 949,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/949",
@@ -5838,7 +5838,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 999,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/999",
@@ -6007,7 +6007,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1000,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1000",
@@ -6199,7 +6199,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1001,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1001",
@@ -6382,7 +6382,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis",
+      "poison",
       "sleep"
     ],
     "inven_id": 978,
@@ -6526,7 +6526,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis",
+      "poison",
       "sleep"
     ],
     "inven_id": 979,
@@ -6710,7 +6710,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis",
+      "poison",
       "sleep"
     ],
     "inven_id": 980,
@@ -6917,7 +6917,7 @@
     },
     "coatings": [
       "pierce",
-      "paralysis",
+      "poison",
       "sleep"
     ],
     "inven_id": 981,
@@ -8194,7 +8194,7 @@
     },
     "coatings": [
       "close-range",
-      "poison"
+      "paralysis"
     ],
     "inven_id": 966,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/966",
@@ -8311,7 +8311,7 @@
     },
     "coatings": [
       "close-range",
-      "poison"
+      "paralysis"
     ],
     "inven_id": 967,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/967",
@@ -8441,7 +8441,7 @@
     },
     "coatings": [
       "close-range",
-      "poison"
+      "paralysis"
     ],
     "inven_id": 968,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/968",
@@ -8602,7 +8602,7 @@
     },
     "coatings": [
       "close-range",
-      "poison"
+      "paralysis"
     ],
     "inven_id": 969,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/969",
@@ -8809,7 +8809,7 @@
     },
     "coatings": [
       "close-range",
-      "poison"
+      "paralysis"
     ],
     "inven_id": 970,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/970",
@@ -10989,7 +10989,7 @@
     },
     "coatings": [
       "close-range",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1006,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1006",
@@ -11152,7 +11152,7 @@
     },
     "coatings": [
       "close-range",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1007,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1007",
@@ -12725,7 +12725,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1061,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1061",
@@ -12888,7 +12888,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 1062,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/1062",
@@ -13038,7 +13038,7 @@
     },
     "coatings": [
       "power",
-      "paralysis"
+      "poison"
     ],
     "inven_id": 942,
     "inven_url": "https://mhf.inven.co.kr/db/mhwilds/weapon/942",
