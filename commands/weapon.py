@@ -68,22 +68,8 @@ def format_weapon(w: dict) -> str:
 
     other = (w.get('other_options') or '').strip()
     kind_kr = w.get('kind_kr', '')
-    if kind_kr == '수렵피리':
-        if other:
-            # 원본 자료에 선율 정보 있는 78개는 그대로
-            lines.append(f'선율: {other}')
-        else:
-            # 자료 없는 6개 (아티어사운드 등) 만 카테고리 fallback
-            cat = 'elementless'
-            for s in w.get('specials', []) or []:
-                if s.get('kind') == 'element':
-                    cat = 'elemental'; break
-                if s.get('kind') == 'status':
-                    cat = 'status'; break
-            melodies = db.horn_melodies.get(cat, [])
-            if melodies:
-                lines.append(f'선율 (분류 추정): {" / ".join(melodies)}')
-    elif other:
+    # 수렵피리 선율은 무기별 정확한 데이터 모은 뒤 다시 추가 예정 — 일단 비활성화.
+    if kind_kr != '수렵피리' and other:
         lines.append(f'특수 옵션: {other}')
 
     crafting = w.get('crafting') or {}
