@@ -66731,7 +66731,98 @@
     "used_in_weapons_count": 5,
     "used_in_charms_count": 0,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "가지오스",
+        "monster_en": "Gajios",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Piragill",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Piragill",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Seikret",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Seikret",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "콩가그리브α",
@@ -67075,7 +67166,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥"
+    ]
   },
   "광룡결정 조각": {
     "item_id": 418,
@@ -67266,7 +67360,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "광룡증에 걸린 몬스터 사냥 시 획득"
+    ]
   },
   "두꺼운 괴수골": {
     "item_id": 61,
@@ -67277,7 +67374,26 @@
     "used_in_weapons_count": 14,
     "used_in_charms_count": 1,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "콩가",
+        "monster_en": "Conga",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 50
+      },
+      {
+        "monster_kr": "블랑고",
+        "monster_en": "Blango",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 50
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "블랑고헬름β",
@@ -68104,7 +68220,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥 (용도의 폐허, 상위)"
+    ]
   },
   "역전 사냥의 증표Ⅲ": {
     "item_id": 661,
@@ -69707,7 +69826,17 @@
     "used_in_weapons_count": 18,
     "used_in_charms_count": 8,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Piragill",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 2,
+        "chance": 20
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "길드에이스암α",
@@ -70184,7 +70313,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥 (상위)"
+    ]
   },
   "양질의 견골": {
     "item_id": 589,
@@ -70420,7 +70552,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "뼈무덤 (상위)"
+    ]
   },
   "랑고스타의 견갑각": {
     "item_id": 574,
@@ -70792,7 +70927,26 @@
     "used_in_weapons_count": 1,
     "used_in_charms_count": 3,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Comaqchi",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 2,
+        "chance": 20
+      },
+      {
+        "monster_kr": "네마라치카",
+        "monster_en": "Comaqchi",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 20
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "히라바미그리브",
@@ -70927,7 +71081,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "뼈무덤 (빙무의 절벽, 상위)"
+    ]
   },
   "고대의 용골": {
     "item_id": 62,
@@ -71416,7 +71573,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "뼈무덤 (상위)"
+    ]
   },
   "홍련석": {
     "item_id": 580,
@@ -71642,7 +71802,19 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥 (기름 솟는 계곡, 상위)"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "류누 옥석",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 4
+      }
+    ]
   },
   "익룡의 가죽+": {
     "item_id": 492,
@@ -71766,7 +71938,26 @@
     "used_in_weapons_count": 0,
     "used_in_charms_count": 4,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 2,
+        "chance": 20
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 20
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "본메일α",
@@ -71899,7 +72090,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "뼈무덤 (기름 솟는 계곡, 상위)"
+    ]
   },
   "수수께끼의 뼈": {
     "item_id": 58,
@@ -71910,7 +72104,35 @@
     "used_in_weapons_count": 14,
     "used_in_charms_count": 0,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Bulaqchi",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 20
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "랑고헬름",
@@ -72100,7 +72322,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "뼈무덤"
+    ]
   },
   "랑고스타의 갑각": {
     "item_id": 573,
@@ -73000,7 +73225,37 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 무지개색 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "제네시스 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      }
+    ]
   },
   "그라시스메탈": {
     "item_id": 698,
@@ -73295,7 +73550,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥 (빙무의 절벽, 상위)"
+    ]
   },
   "필라길 지느러미+": {
     "item_id": 494,
@@ -73825,7 +74083,19 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥 (희소)"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 모래후추 열매",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "크라노다스의 견두갑각": {
     "item_id": 497,
@@ -74459,7 +74729,23 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "역린 장식 항아리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      }
+    ]
   },
   "꽃성성티켓": {
     "item_id": 618,
@@ -74484,7 +74770,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '숲속은 쾌청, 괴조는 쾌활' 완료 보수"
+    ]
   },
   "대지의 결정": {
     "item_id": 57,
@@ -74495,7 +74784,26 @@
     "used_in_weapons_count": 15,
     "used_in_charms_count": 8,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 3,
+        "chance": 20
+      },
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 20
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "얼로이코일",
@@ -74750,7 +75058,19 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "광맥"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 7,
+        "limit": 4
+      }
+    ]
   },
   "탈리오스의 비늘": {
     "item_id": 95,
@@ -74834,7 +75154,98 @@
     "used_in_weapons_count": 0,
     "used_in_charms_count": 1,
     "used_in_items_count": 0,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "탈리오스",
+        "monster_en": "Talioth",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "가지오스",
+        "monster_en": "Gajios",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Piragill",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "필라길",
+        "monster_en": "Piragill",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Seikret",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "수호룡 세크레트",
+        "monster_en": "Guardian Seikret",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 70
+      }
+    ],
     "used_in_armor": [
       {
         "piece_name_kr": "탈리오스암",
@@ -75017,7 +75428,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '히라바미들의 수확제' 완료 보수"
+    ]
   },
   "오메가 데이터 2.0": {
     "item_id": 745,
@@ -75077,7 +75491,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "콜라보 이벤트 '0식 오메가 플라네테스' 완료 보수"
+    ]
   },
   "역전 사냥의 증표Ⅰ": {
     "item_id": 659,
@@ -76279,7 +76696,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '분홍색 기분이 나를 태우네' 완료 보수"
+    ]
   },
   "스컬 티켓": {
     "item_id": 797,
@@ -76304,7 +76724,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '광기, 먹거나 먹히거나' 완료 보수"
+    ]
   },
   "레이아코인": {
     "item_id": 779,
@@ -76383,7 +76806,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "격투대회 리오레이아 처치 보수"
+    ]
   },
   "격투왕코인": {
     "item_id": 807,
@@ -76507,7 +76933,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "격투장 퀘스트 클리어 시 랜덤 획득"
+    ]
   },
   "오리온 티켓": {
     "item_id": 800,
@@ -76568,7 +76997,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '매서운 화이트 아웃' 완료 보수"
+    ]
   },
   "파란별의 보옥": {
     "item_id": 830,
@@ -76662,7 +77094,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '번개의 훌륭한 기세' 완료 보수"
+    ]
   },
   "SF6 티켓": {
     "item_id": 781,
@@ -76695,7 +77130,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "Street Fighter 6 콜라보 격투대회 퀘스트 완료 보수"
+    ]
   },
   "푸푸로포루 스케치": {
     "item_id": 837,
@@ -76720,7 +77158,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '푸푸로포루는 울지 않는데' 완료 보수"
+    ]
   },
   "모리바의 애장품": {
     "item_id": 801,
@@ -76745,7 +77186,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '긴 것엔 감겨야 제맛' 완료 보수"
+    ]
   },
   "차타코인": {
     "item_id": 778,
@@ -76860,7 +77304,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "격투대회 차타카브라 처치 보수"
+    ]
   },
   "불길한 천": {
     "item_id": 229,
@@ -76930,7 +77377,26 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "경계의 모래 평원 특정 지점 채집"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "도스따로알로에",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "역전 사냥의 증표Ⅱ": {
     "item_id": 660,
@@ -77899,7 +78365,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '그 섬광은 내게 통하지 않는다' 완료 보수"
+    ]
   },
   "축제 티켓【용화】": {
     "item_id": 766,
@@ -77960,7 +78429,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "용화 축제 시즌 한정 이벤트 퀘스트 보수"
+    ]
   },
   "발바닥젤리 티켓": {
     "item_id": 796,
@@ -77985,7 +78457,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '봉인이 풀린 흉조' 완료 보수"
+    ]
   },
   "몽화 카탈로그": {
     "item_id": 772,
@@ -78037,7 +78512,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '어중간한 빛은 안 통해' 완료 보수"
+    ]
   },
   "목걸이 티켓": {
     "item_id": 794,
@@ -78062,7 +78540,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '타올라라, 네이키드 보디' 완료 보수"
+    ]
   },
   "축요 카탈로그": {
     "item_id": 776,
@@ -78105,7 +78586,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '왕과 나는 눈부신 어둠을 안다' 완료 보수"
+    ]
   },
   "축제 티켓【화무】": {
     "item_id": 763,
@@ -78166,7 +78650,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "화무 축제 시즌 한정 이벤트 퀘스트 보수"
+    ]
   },
   "동봉룡 사냥증 γ": {
     "item_id": 761,
@@ -78277,7 +78764,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '염미룡은 언제 노래하나' 완료 보수"
+    ]
   },
   "도샤구마 스케치": {
     "item_id": 795,
@@ -78302,7 +78792,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '야만적인 모습' 완료 보수"
+    ]
   },
   "염옥소 사냥증 γ": {
     "item_id": 760,
@@ -78449,7 +78942,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '카라보스의 아씨들' 완료 보수"
+    ]
   },
   "쇄인룡 사냥증 γ": {
     "item_id": 762,
@@ -78560,7 +79056,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '봉인을 푼 폭군' 완료 보수"
+    ]
   },
   "풀드레스 티켓": {
     "item_id": 775,
@@ -78621,7 +79120,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '찬란한 빛이여!' 완료 보수"
+    ]
   },
   "축제 티켓【몽화】": {
     "item_id": 770,
@@ -78682,7 +79184,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "몽화 축제 시즌 한정 이벤트 퀘스트 보수"
+    ]
   },
   "파의룡 사냥증 γ": {
     "item_id": 759,
@@ -78829,7 +79334,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "축요 축제 시즌 한정 이벤트 퀘스트 보수"
+    ]
   },
   "다이버 티켓": {
     "item_id": 767,
@@ -78890,7 +79398,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '열기와 함께 독이 두배' 완료 보수"
+    ]
   },
   "아이루 티켓": {
     "item_id": 780,
@@ -78915,7 +79426,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '셋이 모이면 케마트리스!' 완료 보수"
+    ]
   },
   "황뢰룡 사냥증 γ": {
     "item_id": 758,
@@ -79026,7 +79540,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '사막 너머로 숨어버린 야심한 밤의 불덩이' 완료 보수"
+    ]
   },
   "초식종의 견갑각": {
     "item_id": 487,
@@ -79206,7 +79723,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박에 낮은 확률로 등장 — 지원 포인트 300pts 로 구매"
+    ]
   },
   "네마라치카의 갑각": {
     "item_id": 498,
@@ -79358,7 +79878,23 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "안티마매터",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      }
+    ]
   },
   "콩가의 털": {
     "item_id": 571,
@@ -79469,7 +80005,26 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "빙무의 절벽 특정 지점 채집"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "금빛 용린 큰항아리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 1
+      }
+    ]
   },
   "필라길 지느러미": {
     "item_id": 493,
@@ -79585,7 +80140,37 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "양질의 안티마석",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "류누 옥석",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "세월의 대형 류누 구슬",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      }
+    ]
   },
   "잘 익은 고기 레시피북": {
     "item_id": 799,
@@ -79617,7 +80202,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '용도의 중심에서 고기를 태운 자' 완료 보수"
+    ]
   },
   "대왕청새치 지느러미": {
     "item_id": 615,
@@ -79657,7 +80245,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "대왕청새치 낚시로 획득"
+    ]
   },
   "명장의 설계도": {
     "item_id": 836,
@@ -79689,7 +80280,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '헌터들의 오랜 꿈' 완료 보수"
+    ]
   },
   "낡은 곡괭이": {
     "item_id": 769,
@@ -79737,7 +80331,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '광석이 제일 좋아요!' 완료 보수"
+    ]
   },
   "짓궂은 고양이 인상 기록": {
     "item_id": 802,
@@ -79769,7 +80366,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "이벤트 퀘스트 '저릿저릿한 숲속의 야수' 완료 보수"
+    ]
   },
   "약초": {
     "item_id": 26,
@@ -79791,6 +80391,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "회복약": {
@@ -79813,6 +80416,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "물자보급소 구매 (66z)"
     ]
   },
   "벌꿀": {
@@ -79824,7 +80430,44 @@
     "used_in_weapons_count": 0,
     "used_in_charms_count": 0,
     "used_in_items_count": 4,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Bulaqchi",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 3,
+        "chance": 20
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "high",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 3,
+        "chance": 20
+      },
+      {
+        "monster_kr": "브브라치카",
+        "monster_en": "Bulaqchi",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 2,
+        "chance": 20
+      },
+      {
+        "monster_kr": "랑고스타",
+        "monster_en": "Vespoid",
+        "rank": "low",
+        "kind": "target-reward",
+        "kind_kr": "타겟 보수",
+        "amount": 2,
+        "chance": 20
+      }
+    ],
     "used_in_armor": [],
     "used_in_weapons": [],
     "used_in_charms": [],
@@ -79853,6 +80496,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "해독초": {
@@ -79875,6 +80524,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "만드라고라": {
@@ -79903,6 +80558,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "증강제": {
@@ -79943,6 +80604,15 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "벌꿀",
+          "씁쓸충의 쓴 즙"
+        ],
+        "amount": 1
+      }
     ]
   },
   "활력제": {
@@ -79976,6 +80646,15 @@
         "result_name_en": "Adamant Pill",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "씁쓸충의 쓴 즙",
+          "만드라고라"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -80029,6 +80708,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "푸른버섯": {
@@ -80063,6 +80748,12 @@
         "result_amount": 2,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "화약초": {
@@ -80103,6 +80794,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "소형나무통": {
@@ -80125,6 +80822,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "물자보급소에서 80z로 구매 가능"
     ]
   },
   "폭약": {
@@ -80146,6 +80846,15 @@
         "result_name_en": "Large Barrel Bomb",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "화약초",
+          "니트로버섯"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -80169,6 +80878,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "물자보급소에서 210z로 구매 가능"
     ]
   },
   "광충의 발광소": {
@@ -80191,6 +80903,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "트랩툴": {
@@ -80219,6 +80937,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "물자보급소에서 200z로 구매 가능"
     ]
   },
   "그물": {
@@ -80240,6 +80961,15 @@
         "result_name_en": "Pitfall Trap",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "넝쿨의 잎",
+          "거미집"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -80269,6 +80999,12 @@
         "result_amount": 12,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "폭렬열매": {
@@ -80291,6 +81027,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "통상탄": {
@@ -80397,6 +81139,9 @@
         "result_amount": 2,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "상비품 (별도 획득 불필요)"
     ]
   },
   "폭렬 비늘": {
@@ -80419,6 +81164,9 @@
         "result_amount": 3,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "폭렬아로와나 낚시로 획득"
     ]
   },
   "확산열매": {
@@ -80441,6 +81189,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "유수초": {
@@ -80463,6 +81217,12 @@
         "result_amount": 6,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "서리초": {
@@ -80485,6 +81245,12 @@
         "result_amount": 6,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "용살열매": {
@@ -80507,6 +81273,12 @@
         "result_amount": 2,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "독광대버섯": {
@@ -80541,6 +81313,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "마비버섯": {
@@ -80575,6 +81353,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "수면초": {
@@ -80609,6 +81393,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "참렬열매": {
@@ -80631,6 +81421,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "파열 비늘": {
@@ -80653,6 +81449,9 @@
         "result_amount": 3,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "파열아로와나 낚시로 획득"
     ]
   },
   "몬스터의 대변": {
@@ -80675,6 +81474,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "굴린 응가": {
@@ -80697,6 +81499,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "두근두근버섯": {
@@ -80731,6 +81536,12 @@
         "result_amount": 2,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "연기열매": {
@@ -80771,6 +81582,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "포획용마취옥": {
@@ -80798,6 +81615,15 @@
         "result_name_en": "Tranq Ammo",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "마비버섯",
+          "수면초"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -80849,6 +81675,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "용격열매": {
@@ -80871,6 +81703,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "니트로버섯": {
@@ -80905,6 +81743,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "씁쓸충의 쓴 즙": {
@@ -80945,6 +81789,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "서늘버섯": {
@@ -80967,6 +81817,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "고추": {
@@ -80989,6 +81845,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "괴력씨앗": {
@@ -81029,6 +81891,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "귀인약": {
@@ -81050,6 +81918,15 @@
         "result_name_en": "Mega Demondrug",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "괴력씨앗",
+          "증강제"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -81091,6 +81968,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "경화약": {
@@ -81112,6 +81995,15 @@
         "result_name_en": "Mega Armorskin",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "인내씨앗",
+          "증강제"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -81135,6 +82027,17 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "해독초"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 60z로 구매 가능"
     ]
   },
   "한방약": {
@@ -81156,6 +82059,15 @@
         "result_name_en": "Herbal Powder",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "해독약",
+          "푸른버섯"
+        ],
+        "amount": 1
       }
     ]
   },
@@ -81179,6 +82091,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "날고기": {
@@ -81190,7 +82108,80 @@
     "used_in_weapons_count": 0,
     "used_in_charms_count": 0,
     "used_in_items_count": 3,
-    "drops_from_monsters": [],
+    "drops_from_monsters": [
+      {
+        "monster_kr": "케라토노스",
+        "monster_en": "Ceratonoth",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "케라토노스",
+        "monster_en": "Ceratonoth",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 30
+      },
+      {
+        "monster_kr": "달루토돈",
+        "monster_en": "Dalthydon",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "달루토돈",
+        "monster_en": "Dalthydon",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "젤레도론",
+        "monster_en": "Gelidron",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "젤레도론",
+        "monster_en": "Gelidron",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 75
+      }
+    ],
     "used_in_armor": [],
     "used_in_weapons": [],
     "used_in_charms": [],
@@ -81212,6 +82203,15 @@
         "result_name_en": "Poisoned Meat",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "창뢰정 조각",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": 5
       }
     ]
   },
@@ -81241,6 +82241,18 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "폭약",
+          "대형나무통"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 518z로 구매 가능"
     ]
   },
   "도깨비 니트로버섯": {
@@ -81263,6 +82275,12 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
+    ],
+    "notes": [
+      "나타에게 채집의뢰"
     ]
   },
   "폭약 비늘": {
@@ -81285,6 +82303,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "notes": [
+      "폭약금붕어 낚시로 획득"
     ]
   },
   "응급약": {
@@ -81329,6 +82350,23 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "몬스터의 대변"
+        ],
+        "amount": 1
+      },
+      {
+        "inputs": [
+          "굴린 응가"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 120z로 구매 가능"
     ]
   },
   "거미집": {
@@ -81351,6 +82389,9 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "역전 연마의 증표": {
@@ -81458,5 +82499,36 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": []
+  },
+  "군침버섯": {
+    "item_id": 215,
+    "name_kr": "군침버섯",
+    "name_en": "Droolshroom",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "반들반들한 보배",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "반짝반짝한 보배",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
   }
 }

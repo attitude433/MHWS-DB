@@ -54,8 +54,11 @@ def _format_exchanges(exchanges: list) -> list[str]:
 def format_material(item_name: str, item_data: dict) -> str:
     drops = item_data.get('drops_from_monsters', [])
     exchanges = item_data.get('npc_exchanges', [])
+    gathering = item_data.get('gathering', [])
+    recipes = item_data.get('recipes', [])
+    notes = item_data.get('notes', [])
 
-    if not drops and not exchanges:
+    if not drops and not exchanges and not gathering and not recipes and not notes:
         return f'[소재] {item_name}\n\n획득처 정보 없음'
 
     lines = [f'[소재] {item_name}', '']
@@ -63,5 +66,22 @@ def format_material(item_name: str, item_data: dict) -> str:
         lines.extend(_format_drops(drops))
     if exchanges:
         lines.extend(_format_exchanges(exchanges))
+    if gathering:
+        lines.append('[채집]')
+        for g in gathering:
+            lines.append(f'  - {g}')
+        lines.append('')
+    if recipes:
+        lines.append('[조합]')
+        for r in recipes:
+            inputs = ' + '.join(r.get('inputs', []))
+            amt = r.get('amount', 1)
+            lines.append(f'  - {inputs} → x{amt}')
+        lines.append('')
+    if notes:
+        lines.append('[기타]')
+        for n in notes:
+            lines.append(f'  - {n}')
+        lines.append('')
 
     return '\n'.join(lines).rstrip()
