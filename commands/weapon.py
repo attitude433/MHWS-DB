@@ -66,6 +66,12 @@ def format_weapon(w: dict) -> str:
         co_strs = [COATING_KR.get(c, c) for c in coatings]
         lines.append(f'장착 코팅: {", ".join(co_strs)}')
 
+    other = (w.get('other_options') or '').strip()
+    if other:
+        kind_kr = w.get('kind_kr', '')
+        label = '선율' if kind_kr == '수렵피리' else '특수 옵션'
+        lines.append(f'{label}: {other}')
+
     crafting = w.get('crafting') or {}
     previous_id = crafting.get('previous_id')
     cost = crafting.get('zenny_cost')
