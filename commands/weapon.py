@@ -72,6 +72,13 @@ def format_weapon(w: dict) -> str:
         melodies = db.horn_melodies.get(name)
         if melodies:
             lines.append(f'선율: {" / ".join(melodies)}')
+        if other:
+            # mhdb 자유 텍스트가 "옵션...향주파 [X]" 식으로 합쳐져 있어 분리
+            if '향주파' in other and not other.startswith('향주파'):
+                pre, _, rest = other.partition('향주파')
+                lines.append(f'기타 옵션: {pre.strip()} / 향주파{rest}')
+            else:
+                lines.append(f'기타 옵션: {other}')
     elif other:
         lines.append(f'특수 옵션: {other}')
 
