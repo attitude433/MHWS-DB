@@ -13520,7 +13520,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 10%)"
+    ]
   },
   "도모수의 발톱": {
     "item_id": 505,
@@ -13669,7 +13672,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 10%)"
+    ]
   },
   "도모수의 이빨": {
     "item_id": 506,
@@ -13804,7 +13810,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 5%)"
+    ]
   },
   "극채색 털": {
     "item_id": 507,
@@ -14070,7 +14079,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 20%)"
+    ]
   },
   "도모수의 첨예발톱": {
     "item_id": 510,
@@ -14234,7 +14246,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 20%)"
+    ]
   },
   "도모수의 예리이빨": {
     "item_id": 511,
@@ -15253,7 +15268,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 10%)"
+    ]
   },
   "영지주의 협각": {
     "item_id": 514,
@@ -15346,7 +15364,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 5%)"
+    ]
   },
   "영지주의 발톱": {
     "item_id": 515,
@@ -15612,7 +15633,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 10%)"
+    ]
   },
   "영지주의 가시": {
     "item_id": 516,
@@ -15955,7 +15979,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (60pt, 등장률 50%)"
+    ]
   },
   "영지주의 예리발톱": {
     "item_id": 519,
@@ -16175,7 +16202,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (70pt, 등장률 50%)"
+    ]
   },
   "영지주의 가시+": {
     "item_id": 520,
@@ -17048,7 +17078,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (50pt, 등장률 50%)"
+    ]
   },
   "수면주머니": {
     "item_id": 605,
@@ -17174,6 +17207,9 @@
         "receive_amount": 4,
         "limit": null
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 10%)"
     ]
   },
   "혼수주머니": {
@@ -22234,7 +22270,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (70pt, 등장률 30%)"
+    ]
   },
   "개룡의 두갑각": {
     "item_id": 543,
@@ -22946,7 +22985,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (80pt, 등장률 30%)"
+    ]
   },
   "개룡 사냥증 S": {
     "item_id": 547,
@@ -23856,7 +23898,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (40pt, 등장률 40%)"
+    ]
   },
   "염미룡의 비늘": {
     "item_id": 88,
@@ -31987,7 +32032,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (60pt, 등장률 50%)"
+    ]
   },
   "자화룡의 견갑각": {
     "item_id": 103,
@@ -42073,7 +42121,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (40pt, 등장률 50%)"
+    ]
   },
   "괴조의 견갑각": {
     "item_id": 523,
@@ -42304,7 +42355,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (40pt, 등장률 50%)"
+    ]
   },
   "괴조의 귀": {
     "item_id": 524,
@@ -49920,7 +49974,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (60pt, 등장률 50%)"
+    ]
   },
   "독괴조의 머리": {
     "item_id": 531,
@@ -64870,7 +64927,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (70pt, 등장률 30%)"
+    ]
   },
   "화룡의 견갑각": {
     "item_id": 557,
@@ -65098,7 +65158,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (70pt, 등장률 30%)"
+    ]
   },
   "화룡의 날개": {
     "item_id": 558,
@@ -66241,7 +66304,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (70pt, 등장률 50%)"
+    ]
   },
   "눈사자의 예리이빨": {
     "item_id": 538,
@@ -66429,7 +66495,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (80pt, 등장률 50%)"
+    ]
   },
   "눈사자의 수염": {
     "item_id": 539,
@@ -67053,6 +67122,9 @@
         "receive_amount": 2,
         "limit": 2
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 20%)"
     ]
   },
   "예리한 이빨": {
@@ -68092,6 +68164,9 @@
         "receive_amount": 2,
         "limit": 2
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 20%)"
     ]
   },
   "유니언광석": {
@@ -71116,6 +71191,9 @@
         "receive_amount": 5,
         "limit": 2
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (25pt, 등장률 20%)"
     ]
   },
   "랑고스타의 얇은날개": {
@@ -71258,7 +71336,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 20%)"
+    ]
   },
   "얼어붙은 빙골": {
     "item_id": 587,
@@ -72794,6 +72875,9 @@
         "receive_amount": 2,
         "limit": 5
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (15pt, 등장률 10%)"
     ]
   },
   "랑고스타의 날개": {
@@ -72880,6 +72964,9 @@
         "receive_amount": 2,
         "limit": null
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (15pt, 등장률 10%)"
     ]
   },
   "초식종의 갑각": {
@@ -80090,7 +80177,7 @@
     "used_in_charms": [],
     "used_in_items": [],
     "notes": [
-      "지원 선박에 낮은 확률로 등장 — 지원 포인트 300pts 로 구매"
+      "지원 선박 판매 (40pt, 등장률 20%)"
     ]
   },
   "네마라치카의 갑각": {
@@ -80309,7 +80396,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "notes": [
+      "지원 선박 판매 (15pt, 등장률 10%)"
+    ]
   },
   "상처가 난 비늘": {
     "item_id": 473,
@@ -80786,7 +80876,8 @@
       }
     ],
     "notes": [
-      "물자보급소 구매 (66z)"
+      "물자보급소 구매 (66z)",
+      "지원 선박 판매 (5pt, 등장률 50%)"
     ],
     "recipes": [
       {
@@ -81003,6 +81094,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 20%)"
     ]
   },
   "활력제": {
@@ -81046,6 +81140,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 20%)"
     ]
   },
   "불사충 진액": {
@@ -81996,6 +82093,9 @@
     ],
     "gathering": [
       "필드 채집"
+    ],
+    "notes": [
+      "지원 선박 판매 (60pt, 등장률 50%)"
     ]
   },
   "두근두근버섯": {
@@ -82174,7 +82274,8 @@
       "필드 채집"
     ],
     "notes": [
-      "나타에게 채집 의뢰 가능"
+      "나타에게 채집 의뢰 가능",
+      "지원 선박 판매 (5pt, 등장률 20%)"
     ]
   },
   "용격열매": {
@@ -82475,6 +82576,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 40%)"
     ]
   },
   "인내씨앗": {
@@ -82561,6 +82665,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 40%)"
     ]
   },
   "해독약": {
@@ -82593,7 +82700,8 @@
       }
     ],
     "notes": [
-      "물자보급소에서 60z로 구매 가능"
+      "물자보급소에서 60z로 구매 가능",
+      "지원 선박 판매 (10pt, 등장률 40%)"
     ]
   },
   "한방약": {
@@ -82625,6 +82733,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 20%)"
     ]
   },
   "낙양초 꽃": {
@@ -82817,7 +82928,8 @@
       }
     ],
     "notes": [
-      "물자보급소에서 518z로 구매 가능"
+      "물자보급소에서 518z로 구매 가능",
+      "지원 선박 판매 (5pt, 등장률 40%)"
     ]
   },
   "도깨비 니트로버섯": {
@@ -83805,6 +83917,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 50%)"
     ]
   },
   "고대의 비약": {
@@ -83938,6 +84053,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 20%)"
     ]
   },
   "마비덫": {
@@ -84360,6 +84478,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 20%)"
     ]
   },
   "힘의 부적": {
@@ -84450,6 +84571,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 20%)"
     ]
   },
   "강주약": {
@@ -84475,6 +84599,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 50%)"
     ]
   },
   "쿨드링크": {
@@ -84554,6 +84681,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (12pt, 등장률 40%)"
     ]
   },
   "그레이트 귀인약": {
@@ -84579,6 +84709,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 50%)"
     ]
   },
   "인내의 환약": {
@@ -84604,6 +84737,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (12pt, 등장률 40%)"
     ]
   },
   "그레이트 경화약": {
@@ -84629,6 +84765,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 50%)"
     ]
   },
   "한방가루": {
@@ -84654,6 +84793,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 40%)"
     ]
   },
   "귀인의 가루": {
@@ -84679,6 +84821,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 40%)"
     ]
   },
   "경화의 가루": {
@@ -84704,6 +84849,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (8pt, 등장률 40%)"
     ]
   },
   "생명의 큰 가루": {
@@ -84729,6 +84877,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 50%)"
     ]
   },
   "세정제": {
@@ -84754,6 +84905,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 20%)"
     ]
   },
   "독연기옥": {
@@ -84779,6 +84933,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 20%)"
     ]
   },
   "수면고기": {
@@ -84829,6 +84986,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 40%)"
     ]
   },
   "대형나무통폭탄G": {
@@ -84861,6 +85021,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (20pt, 등장률 40%)"
     ]
   },
   "그레이트 응급약": {
@@ -84961,6 +85124,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 20%)"
     ]
   },
   "도스따로알로에": {
@@ -85307,6 +85473,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 40%)"
     ]
   },
   "와일드저키": {
@@ -85606,6 +85775,101 @@
     "npc_exchanges": [],
     "notes": [
       "물자보급소 판매 (게임 진행 시 해금)"
+    ]
+  },
+  "포획용 그물": {
+    "item_id": 18,
+    "name_kr": "포획용 그물",
+    "name_en": "Capture Net",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "지원 선박 판매 (10pt, 등장률 20%)"
+    ]
+  },
+  "슬링어 툭툭 돌": {
+    "item_id": 69,
+    "name_kr": "슬링어 툭툭 돌",
+    "name_en": "Burst Pod",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "지원 선박 판매 (5pt, 등장률 40%)"
+    ]
+  },
+  "강철알": {
+    "item_id": 651,
+    "name_kr": "강철알",
+    "name_en": "Steel Egg",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "지원 선박 판매 (30pt, 등장률 15%)"
+    ]
+  },
+  "은알": {
+    "item_id": 652,
+    "name_kr": "은알",
+    "name_en": "Silver Egg",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "지원 선박 판매 (300pt, 등장률 30%)"
+    ]
+  },
+  "금알": {
+    "item_id": 653,
+    "name_kr": "금알",
+    "name_en": "Golden Egg",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "지원 선박 판매 (600pt, 등장률 40%)"
     ]
   }
 }
