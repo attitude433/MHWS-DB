@@ -122,6 +122,15 @@
         "result_amount": 1,
         "quantity": 1
       }
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": null
+      }
     ]
   },
   "수호룡의 비늘": {
@@ -494,7 +503,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "억센 호골": {
     "item_id": 588,
@@ -1279,7 +1297,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "수호룡의 깨끗한 피": {
     "item_id": 608,
@@ -2132,7 +2159,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": null
+      }
+    ]
   },
   "백열룡 사냥증 S": {
     "item_id": 710,
@@ -8380,7 +8416,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "굉천 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "황뢰룡 사냥증": {
     "item_id": 346,
@@ -9289,7 +9334,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "도스따로알로에",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "황뢰룡의 뇌옥": {
     "item_id": 351,
@@ -12267,7 +12321,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "몬스터의 농즙": {
     "item_id": 490,
@@ -12696,7 +12759,16 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "자화지주의 점액": {
     "item_id": 603,
@@ -13122,7 +13194,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "큼직큼직한 보배",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "용혈석 조각": {
     "item_id": 699,
@@ -14346,7 +14427,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "유구한 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "극채색 억센털": {
     "item_id": 512,
@@ -16330,7 +16420,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "역린 장식 항아리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "영지주 사냥증 S": {
     "item_id": 521,
@@ -17066,7 +17165,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 4,
+        "limit": null
+      }
+    ]
   },
   "혼수주머니": {
     "item_id": 606,
@@ -17264,7 +17372,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "해룡 사냥증 S": {
     "item_id": 729,
@@ -21835,7 +21952,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "개룡의 견갑각": {
     "item_id": 542,
@@ -23281,7 +23407,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "로열 항아리멍게",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "폭염주머니": {
     "item_id": 594,
@@ -25094,7 +25229,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "굉천 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "염미룡의 큰 볏": {
     "item_id": 304,
@@ -25936,7 +26080,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "벽수의 이빨": {
     "item_id": 36,
@@ -27112,7 +27265,16 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "도스따로알로에",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "벽수 사냥증 S": {
     "item_id": 321,
@@ -28877,7 +29039,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "여왕꽃의 매혹가루",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "큰물주머니": {
     "item_id": 596,
@@ -34673,7 +34844,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "굉천 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "전와 사냥증 S": {
     "item_id": 297,
@@ -40922,7 +41102,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "금빛 용린 큰항아리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "풍협룡의 꼬리발톱+": {
     "item_id": 361,
@@ -44662,7 +44851,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "세월의 대형 류누 구슬",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "소분룡의 큰 부리": {
     "item_id": 344,
@@ -45083,7 +45281,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "류누 옥석",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "맹독주머니": {
     "item_id": 602,
@@ -45367,7 +45574,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "로열 항아리멍게",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "쇄인룡의 꼬리": {
     "item_id": 456,
@@ -48466,7 +48682,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "안티마매터",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "혁원수 사냥증": {
     "item_id": 369,
@@ -49188,7 +49413,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "세월의 대형 류누 구슬",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "혁원수의 연수": {
     "item_id": 374,
@@ -50414,6 +50648,15 @@
         "result_name_en": "Dash Juice",
         "result_amount": 1,
         "quantity": 1
+      }
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "로열 항아리멍게",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": null
       }
     ]
   },
@@ -51792,7 +52035,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "제네시스 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "암기소 사냥증": {
     "item_id": 446,
@@ -55315,7 +55567,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "제네시스 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "파의룡의 비늘": {
     "item_id": 322,
@@ -55986,7 +56247,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "유구한 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "파의룡 사냥증": {
     "item_id": 328,
@@ -56617,7 +56887,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "큼직큼직한 보배",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "파의룡의 요염촉수": {
     "item_id": 332,
@@ -58270,7 +58549,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 7,
+        "limit": null
+      }
+    ]
   },
   "동봉룡의 비늘+": {
     "item_id": 419,
@@ -59022,7 +59310,16 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "금빛 용린 큰항아리",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "동봉룡의 층각": {
     "item_id": 423,
@@ -60120,7 +60417,16 @@
     "used_in_armor": [],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": null
+      }
+    ]
   },
   "동봉룡의 꼬리": {
     "item_id": 707,
@@ -60998,7 +61304,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "안티마매터",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "염옥소 사냥증": {
     "item_id": 382,
@@ -61986,7 +62301,16 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "세월의 대형 류누 구슬",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "염옥소의 염옥": {
     "item_id": 388,
@@ -63378,7 +63702,16 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "제네시스 오팔",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
   },
   "호흉조룡 사냥증": {
     "item_id": 432,
@@ -67169,6 +67502,15 @@
     "used_in_items": [],
     "gathering": [
       "광맥"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "황금 오일",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": null
+      }
     ]
   },
   "광룡결정 조각": {
@@ -72529,7 +72871,16 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "원조 류누 구슬",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
   },
   "초식종의 갑각": {
     "item_id": 93,
@@ -72783,6 +73134,13 @@
         "give_amount": 10,
         "receive_amount": 1,
         "limit": 2
+      },
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 따로알로에",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
       }
     ]
   },
@@ -75069,6 +75427,13 @@
         "give_amount": 1,
         "receive_amount": 7,
         "limit": 4
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "주홍빛호박 조각",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": null
       }
     ]
   },
@@ -80513,6 +80878,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "떠돌이 항아리멍게",
+        "give_amount": 2,
+        "receive_amount": 6,
+        "limit": null
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "황금 오일",
+        "give_amount": 2,
+        "receive_amount": 7,
+        "limit": null
+      }
     ]
   },
   "해독초": {
@@ -80809,6 +81190,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "모래후추 열매",
+        "give_amount": 2,
+        "receive_amount": 12,
+        "limit": null
+      }
     ]
   },
   "소형나무통": {
@@ -81042,6 +81432,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "카브레라이트광석",
+        "give_amount": 3,
+        "receive_amount": 12,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "양질의 견골",
+        "give_amount": 3,
+        "receive_amount": 15,
+        "limit": null
+      }
     ]
   },
   "통상탄": {
@@ -81204,6 +81610,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "대지의 결정",
+        "give_amount": 3,
+        "receive_amount": 10,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "양질의 견골",
+        "give_amount": 3,
+        "receive_amount": 15,
+        "limit": null
+      }
     ]
   },
   "유수초": {
@@ -81232,6 +81654,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "주홍빛호박 조각",
+        "give_amount": 2,
+        "receive_amount": 12,
+        "limit": null
+      }
     ]
   },
   "서리초": {
@@ -81260,6 +81691,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "풍협룡의 허물",
+        "give_amount": 2,
+        "receive_amount": 15,
+        "limit": null
+      }
     ]
   },
   "용살열매": {
@@ -81288,6 +81728,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 모래후추 열매",
+        "give_amount": 1,
+        "receive_amount": 7,
+        "limit": null
+      }
     ]
   },
   "독광대버섯": {
@@ -81328,6 +81777,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "주홍빛호박 조각",
+        "give_amount": 2,
+        "receive_amount": 9,
+        "limit": null
+      }
     ]
   },
   "마비버섯": {
@@ -81368,6 +81826,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 무지개색 오팔",
+        "give_amount": 1,
+        "receive_amount": 5,
+        "limit": null
+      }
     ]
   },
   "수면초": {
@@ -81408,6 +81875,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 오팔",
+        "give_amount": 3,
+        "receive_amount": 8,
+        "limit": null
+      }
     ]
   },
   "참렬열매": {
@@ -81436,6 +81912,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "고대의 화석 뼈",
+        "give_amount": 2,
+        "receive_amount": 12,
+        "limit": null
+      }
     ]
   },
   "파열 비늘": {
@@ -81718,6 +82203,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "수수께끼의 뼈",
+        "give_amount": 2,
+        "receive_amount": 7,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "단단한 뼈",
+        "give_amount": 2,
+        "receive_amount": 12,
+        "limit": null
+      }
     ]
   },
   "니트로버섯": {
@@ -81758,6 +82259,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "고대의 화석 뼈",
+        "give_amount": 2,
+        "receive_amount": 4,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "카브레라이트광석",
+        "give_amount": 3,
+        "receive_amount": 5,
+        "limit": null
+      }
     ]
   },
   "씁쓸충의 쓴 즙": {
@@ -81804,6 +82321,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "원조 류누 구슬",
+        "give_amount": 2,
+        "receive_amount": 6,
+        "limit": null
+      }
     ]
   },
   "서늘버섯": {
@@ -81902,6 +82428,22 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "수수께끼의 뼈",
+        "give_amount": 2,
+        "receive_amount": 5,
+        "limit": null
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "류누 자갈",
+        "give_amount": 2,
+        "receive_amount": 4,
+        "limit": null
+      }
     ]
   },
   "귀인약": {
@@ -81979,6 +82521,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "양질의 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 7,
+        "limit": null
+      }
     ]
   },
   "경화약": {
@@ -82102,6 +82653,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "유백색 고치실",
+        "give_amount": 2,
+        "receive_amount": 5,
+        "limit": null
+      }
     ]
   },
   "날고기": {
@@ -82286,6 +82846,29 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "대지의 결정",
+        "give_amount": 3,
+        "receive_amount": 2,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "양질의 견골",
+        "give_amount": 3,
+        "receive_amount": 5,
+        "limit": null
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "단단한 뼈",
+        "give_amount": 2,
+        "receive_amount": 5,
+        "limit": null
+      }
     ]
   },
   "폭약 비늘": {
@@ -82400,6 +82983,15 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "글라스위드",
+        "give_amount": 2,
+        "receive_amount": 5,
+        "limit": null
+      }
     ]
   },
   "역전 연마의 증표": {
@@ -82805,6 +83397,13 @@
         "give_amount": 1,
         "receive_amount": 3,
         "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "용도 꽈리",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": null
       }
     ]
   },
@@ -83073,7 +83672,15 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 5,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ],
     "notes": [
       "퀘스트 클리어 보수",
       "아즈즈 마을에서 소재 가공 제작 가능"
@@ -83093,7 +83700,22 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": null
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "하룻밤꽃의 달빛가루",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": null
+      }
+    ],
     "notes": [
       "퀘스트 클리어 보수",
       "아즈즈 마을에서 소재 가공 제작 가능"
@@ -83133,7 +83755,15 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 5,
+        "limit": null
+      }
+    ],
     "recipes": [
       {
         "inputs": [
@@ -83158,7 +83788,15 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 오팔",
+        "give_amount": 3,
+        "receive_amount": 12,
+        "limit": null
+      }
+    ],
     "recipes": [
       {
         "inputs": [
@@ -83272,6 +83910,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "물자보급소 판매 (게임 진행 시 해금)"
     ]
   },
   "구멍 함정": {
@@ -83322,6 +83963,9 @@
         ],
         "amount": 1
       }
+    ],
+    "notes": [
+      "물자보급소 판매 (게임 진행 시 해금)"
     ]
   },
   "철갑유탄": {
@@ -84704,6 +85348,264 @@
     ],
     "notes": [
       "나타에게 채집 의뢰 가능"
+    ]
+  },
+  "탄 고기": {
+    "item_id": 11,
+    "name_kr": "탄 고기",
+    "name_en": "Burnt Meat",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "창뢰정 조각",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
+  },
+  "예리어 지느러미": {
+    "item_id": 271,
+    "name_kr": "예리어 지느러미",
+    "name_en": "Whetfish Fin",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "여왕꽃의 매혹가루",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      },
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "사시미 비늘": {
+    "item_id": 272,
+    "name_kr": "사시미 비늘",
+    "name_en": "Sushifish Scale",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "여왕꽃의 매혹가루",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "칠색금": {
+    "item_id": 669,
+    "name_kr": "칠색금",
+    "name_en": "Oricalcite",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "금 연금 티켓": {
+    "item_id": 662,
+    "name_kr": "금 연금 티켓",
+    "name_en": "Gold Melding Ticket",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 30,
+        "receive_amount": 1,
+        "limit": null
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "하룻밤꽃의 달빛가루",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "금 유물 티켓": {
+    "item_id": 663,
+    "name_kr": "금 유물 티켓",
+    "name_en": "Gold Relic Ticket",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 30,
+        "receive_amount": 1,
+        "limit": null
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "하룻밤꽃의 달빛가루",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "가시풀 열매": {
+    "item_id": 52,
+    "name_kr": "가시풀 열매",
+    "name_en": "Thorngrass Pod",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "고대의 화석 뼈",
+        "give_amount": 2,
+        "receive_amount": 2,
+        "limit": null
+      }
+    ]
+  },
+  "낡은 용 동전": {
+    "item_id": 474,
+    "name_kr": "낡은 용 동전",
+    "name_en": "Ancient Wyvern Coin",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "글라스위드",
+        "give_amount": 2,
+        "receive_amount": 1,
+        "limit": null
+      },
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": null
+      }
+    ]
+  },
+  "휴대 식량": {
+    "item_id": 8,
+    "name_kr": "휴대 식량",
+    "name_en": "Ration",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "물자보급소 판매 (게임 진행 시 해금)"
+    ]
+  },
+  "숫돌": {
+    "item_id": 21,
+    "name_kr": "숫돌",
+    "name_en": "Whetstone",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "물자보급소 판매 (게임 진행 시 해금)"
     ]
   }
 }
