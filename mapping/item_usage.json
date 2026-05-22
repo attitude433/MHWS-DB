@@ -80419,6 +80419,14 @@
     ],
     "notes": [
       "물자보급소 구매 (66z)"
+    ],
+    "recipes": [
+      {
+        "inputs": [
+          "약초"
+        ],
+        "amount": 1
+      }
     ]
   },
   "벌꿀": {
@@ -82529,6 +82537,2151 @@
         "receive_amount": 3,
         "limit": 2
       }
+    ]
+  },
+  "쿠나파 치즈": {
+    "item_id": 213,
+    "name_kr": "쿠나파 치즈",
+    "name_en": "Kunafa Cheese",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "따로알로에",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 따로알로에",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "진한 쿠나파 치즈": {
+    "item_id": 214,
+    "name_kr": "진한 쿠나파 치즈",
+    "name_en": "Sharp Kunafa Cheese",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "도스따로알로에",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 3
+      },
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "굉천 창뢰정",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 3
+      }
+    ]
+  },
+  "진수성찬버섯": {
+    "item_id": 216,
+    "name_kr": "진수성찬버섯",
+    "name_en": "Delishroom",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "유구한 주홍빛호박",
+        "give_amount": 1,
+        "receive_amount": 1,
+        "limit": 2
+      },
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "큼직큼직한 보배",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
+  },
+  "머드슈림프": {
+    "item_id": 217,
+    "name_kr": "머드슈림프",
+    "name_en": "Mud Shrimp",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "떠돌이 항아리멍게",
+        "give_amount": 2,
+        "receive_amount": 4,
+        "limit": 2
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "로열 항아리멍게",
+        "give_amount": 1,
+        "receive_amount": 4,
+        "limit": 2
+      },
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "안티마석",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "양질의 안티마석",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "황금 오일",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "도스머드슈림프": {
+    "item_id": 218,
+    "name_kr": "도스머드슈림프",
+    "name_en": "Turbid Shrimp",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "도가드",
+        "give_item_kr": "안티마매터",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "세월의 대형 류누 구슬",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
+  },
+  "폭신폭신 알": {
+    "item_id": 219,
+    "name_kr": "폭신폭신 알",
+    "name_en": "Fluffy Egg",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "용린 장식 항아리",
+        "give_amount": 3,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "역린 장식 항아리",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "퐁신퐁신 알": {
+    "item_id": 220,
+    "name_kr": "퐁신퐁신 알",
+    "name_en": "Airy Egg",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "동용하초",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 1
+      },
+      {
+        "npc_kr": "세츠가",
+        "give_item_kr": "금빛 용린 큰항아리",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 2
+      }
+    ]
+  },
+  "실드 마늘": {
+    "item_id": 221,
+    "name_kr": "실드 마늘",
+    "name_en": "Sild Garlic",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "완숙 용도 꽈리",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "실드 마늘(특품)": {
+    "item_id": 222,
+    "name_kr": "실드 마늘(특품)",
+    "name_en": "Specialty Sild Garlic",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "제네시스 오팔",
+        "give_amount": 1,
+        "receive_amount": 2,
+        "limit": 1
+      }
+    ]
+  },
+  "와일드 허브": {
+    "item_id": 223,
+    "name_kr": "와일드 허브",
+    "name_en": "Wild Herb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "조은눈버섯",
+        "give_item_kr": "여왕꽃의 매혹가루",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 5,
+        "limit": 2
+      }
+    ]
+  },
+  "이스트 허니": {
+    "item_id": 224,
+    "name_kr": "이스트 허니",
+    "name_en": "Eastern Honey",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 5,
+        "limit": 2
+      },
+      {
+        "npc_kr": "렌",
+        "give_item_kr": "화석 무지개색 오팔",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "몬스터 칠리": {
+    "item_id": 225,
+    "name_kr": "몬스터 칠리",
+    "name_en": "Monster Chili",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "킬라말",
+        "give_item_kr": "양질의 모래후추 열매",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      },
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 5,
+        "limit": 2
+      },
+      {
+        "npc_kr": "아이다",
+        "give_item_kr": "로열 항아리멍게",
+        "give_amount": 1,
+        "receive_amount": 6,
+        "limit": 2
+      }
+    ]
+  },
+  "와일드 시드 오일": {
+    "item_id": 227,
+    "name_kr": "와일드 시드 오일",
+    "name_en": "Wild Seed Oil",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "반짝가면",
+        "give_item_kr": "낡은 용 동전",
+        "give_amount": 10,
+        "receive_amount": 5,
+        "limit": 2
+      },
+      {
+        "npc_kr": "야브란",
+        "give_item_kr": "류누 옥석",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "트뤼프 드 콩가": {
+    "item_id": 228,
+    "name_kr": "트뤼프 드 콩가",
+    "name_en": "Truffle Du Conga",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [
+      {
+        "npc_kr": "나그네",
+        "give_item_kr": "그랑 글라스위드",
+        "give_amount": 1,
+        "receive_amount": 3,
+        "limit": 2
+      }
+    ]
+  },
+  "크라노코퍼": {
+    "item_id": 281,
+    "name_kr": "크라노코퍼",
+    "name_en": "Krano Copper",
+    "drops_count": 1,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": []
+  },
+  "크라노코퍼곳": {
+    "item_id": 282,
+    "name_kr": "크라노코퍼곳",
+    "name_en": "Krano Pyrite",
+    "drops_count": 1,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "크라노다스",
+        "monster_en": "Kranodath",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      }
+    ],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": []
+  },
+  "갑옥": {
+    "item_id": 622,
+    "name_kr": "갑옥",
+    "name_en": "Armor Sphere",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "퀘스트 클리어 보수",
+      "아즈즈 마을에서 소재 가공 제작 가능"
+    ]
+  },
+  "첨갑옥": {
+    "item_id": 624,
+    "name_kr": "첨갑옥",
+    "name_en": "Advanced Armor Sphere",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "퀘스트 클리어 보수",
+      "아즈즈 마을에서 소재 가공 제작 가능"
+    ]
+  },
+  "견갑옥": {
+    "item_id": 625,
+    "name_kr": "견갑옥",
+    "name_en": "Hard Armor Sphere",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "퀘스트 클리어 보수",
+      "아즈즈 마을에서 소재 가공 제작 가능"
+    ]
+  },
+  "중갑옥": {
+    "item_id": 654,
+    "name_kr": "중갑옥",
+    "name_en": "Heavy Armor Sphere",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "퀘스트 클리어 보수",
+      "아즈즈 마을에서 소재 가공 제작 가능"
+    ]
+  },
+  "그레이트 회복약": {
+    "item_id": 3,
+    "name_kr": "그레이트 회복약",
+    "name_en": "Mega Potion",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "회복약",
+          "벌꿀"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "비약": {
+    "item_id": 5,
+    "name_kr": "비약",
+    "name_en": "Max Potion",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "만드라고라",
+          "증강제"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "고대의 비약": {
+    "item_id": 6,
+    "name_kr": "고대의 비약",
+    "name_en": "Ancient Potion",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "활력제",
+          "자양진액"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "생명의 가루": {
+    "item_id": 12,
+    "name_kr": "생명의 가루",
+    "name_en": "Lifepowder",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "푸른버섯"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 480z로 구매 가능"
+    ]
+  },
+  "소형나무통폭탄": {
+    "item_id": 14,
+    "name_kr": "소형나무통폭탄",
+    "name_en": "Barrel Bomb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "화약초",
+          "소형나무통"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 156z로 구매 가능"
+    ]
+  },
+  "슬링어 섬광탄": {
+    "item_id": 16,
+    "name_kr": "슬링어 섬광탄",
+    "name_en": "Flash Pod",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "광충의 발광소"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "구멍 함정": {
+    "item_id": 19,
+    "name_kr": "구멍 함정",
+    "name_en": "Pitfall Trap",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "트랩툴",
+          "그물"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "마비덫": {
+    "item_id": 20,
+    "name_kr": "마비덫",
+    "name_en": "Shock Trap",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "뇌광충의 축전소",
+          "트랩툴"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "철갑유탄": {
+    "item_id": 41,
+    "name_kr": "철갑유탄",
+    "name_en": "Sticky Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "폭렬열매"
+        ],
+        "amount": 1
+      },
+      {
+        "inputs": [
+          "통상탄",
+          "폭렬 비늘"
+        ],
+        "amount": 3
+      }
+    ],
+    "notes": [
+      "물자보급소에서 12z로 구매 가능"
+    ]
+  },
+  "확산탄": {
+    "item_id": 42,
+    "name_kr": "확산탄",
+    "name_en": "Cluster Bomb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "확산열매"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 30z로 구매 가능"
+    ]
+  },
+  "화염탄": {
+    "item_id": 43,
+    "name_kr": "화염탄",
+    "name_en": "Flaming Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "화약초"
+        ],
+        "amount": 6
+      }
+    ],
+    "notes": [
+      "물자보급소에서 20z로 구매 가능"
+    ]
+  },
+  "수냉탄": {
+    "item_id": 44,
+    "name_kr": "수냉탄",
+    "name_en": "Water Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "유수초"
+        ],
+        "amount": 6
+      }
+    ],
+    "notes": [
+      "물자보급소에서 20z로 구매 가능"
+    ]
+  },
+  "전격탄": {
+    "item_id": 45,
+    "name_kr": "전격탄",
+    "name_en": "Thunder Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "뇌광충의 축전소",
+          "통상탄"
+        ],
+        "amount": 12
+      }
+    ],
+    "notes": [
+      "물자보급소에서 20z로 구매 가능"
+    ]
+  },
+  "빙결탄": {
+    "item_id": 46,
+    "name_kr": "빙결탄",
+    "name_en": "Freeze Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "서리초"
+        ],
+        "amount": 6
+      }
+    ],
+    "notes": [
+      "물자보급소에서 20z로 구매 가능"
+    ]
+  },
+  "멸룡탄": {
+    "item_id": 47,
+    "name_kr": "멸룡탄",
+    "name_en": "Dragon Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "용살열매"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 100z로 구매 가능"
+    ]
+  },
+  "독탄": {
+    "item_id": 48,
+    "name_kr": "독탄",
+    "name_en": "Poison Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "독광대버섯"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 15z로 구매 가능"
+    ]
+  },
+  "마비탄": {
+    "item_id": 49,
+    "name_kr": "마비탄",
+    "name_en": "Paralysis Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "마비버섯"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 15z로 구매 가능"
+    ]
+  },
+  "수면탄": {
+    "item_id": 50,
+    "name_kr": "수면탄",
+    "name_en": "Sleep Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "수면초"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 15z로 구매 가능"
+    ]
+  },
+  "참렬탄": {
+    "item_id": 51,
+    "name_kr": "참렬탄",
+    "name_en": "Slicing Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "참렬열매"
+        ],
+        "amount": 1
+      },
+      {
+        "inputs": [
+          "통상탄",
+          "파열 비늘"
+        ],
+        "amount": 3
+      }
+    ],
+    "notes": [
+      "물자보급소에서 12z로 구매 가능"
+    ]
+  },
+  "귀환옥": {
+    "item_id": 77,
+    "name_kr": "귀환옥",
+    "name_en": "Farcaster",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "두근두근버섯",
+          "연기열매"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "포획용 마취 투척나이프": {
+    "item_id": 145,
+    "name_kr": "포획용 마취 투척나이프",
+    "name_en": "Tranq Blade",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "포획용마취옥",
+          "투척나이프"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "연기옥": {
+    "item_id": 151,
+    "name_kr": "연기옥",
+    "name_en": "Smoke Bomb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "연기열매",
+          "넝쿨의 잎"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "힘의 부적": {
+    "item_id": 152,
+    "name_kr": "힘의 부적",
+    "name_en": "Powercharm",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "'문지기로서' 퀘스트 보수로 획득"
+    ]
+  },
+  "방어의 부적": {
+    "item_id": 153,
+    "name_kr": "방어의 부적",
+    "name_en": "Armorcharm",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "'용곡 안전 확보' 퀘스트 보수로 획득 가능"
+    ]
+  },
+  "용격탄": {
+    "item_id": 154,
+    "name_kr": "용격탄",
+    "name_en": "Wyvern Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "용격열매"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 62z로 구매 가능"
+    ]
+  },
+  "에너지드링크": {
+    "item_id": 163,
+    "name_kr": "에너지드링크",
+    "name_en": "Energy Drink",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "벌꿀",
+          "니트로버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "강주약": {
+    "item_id": 164,
+    "name_kr": "강주약",
+    "name_en": "Dash Juice",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "질주진액",
+          "증강제"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "쿨드링크": {
+    "item_id": 166,
+    "name_kr": "쿨드링크",
+    "name_en": "Cool Drink",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "서늘버섯"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 300z로 구매 가능"
+    ]
+  },
+  "핫드링크": {
+    "item_id": 167,
+    "name_kr": "핫드링크",
+    "name_en": "Hot Drink",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "고추"
+        ],
+        "amount": 1
+      }
+    ],
+    "notes": [
+      "물자보급소에서 250z로 구매 가능"
+    ]
+  },
+  "괴력의 환약": {
+    "item_id": 169,
+    "name_kr": "괴력의 환약",
+    "name_en": "Might Pill",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "괴력씨앗",
+          "활력제"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "그레이트 귀인약": {
+    "item_id": 170,
+    "name_kr": "그레이트 귀인약",
+    "name_en": "Mega Demondrug",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "귀인약",
+          "자양진액"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "인내의 환약": {
+    "item_id": 172,
+    "name_kr": "인내의 환약",
+    "name_en": "Adamant Pill",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "인내씨앗",
+          "활력제"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "그레이트 경화약": {
+    "item_id": 173,
+    "name_kr": "그레이트 경화약",
+    "name_en": "Mega Armorskin",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "경화약",
+          "자양진액"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "한방가루": {
+    "item_id": 175,
+    "name_kr": "한방가루",
+    "name_en": "Herbal Powder",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "한방약"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "귀인의 가루": {
+    "item_id": 176,
+    "name_kr": "귀인의 가루",
+    "name_en": "Demon Powder",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "괴력씨앗"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "경화의 가루": {
+    "item_id": 177,
+    "name_kr": "경화의 가루",
+    "name_en": "Hardshell Powder",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "인내씨앗"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "생명의 큰 가루": {
+    "item_id": 178,
+    "name_kr": "생명의 큰 가루",
+    "name_en": "Dust of Life",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "낙양초 꽃"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "세정제": {
+    "item_id": 179,
+    "name_kr": "세정제",
+    "name_en": "Cleanser",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "불사충 진액",
+          "화약초"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "독연기옥": {
+    "item_id": 180,
+    "name_kr": "독연기옥",
+    "name_en": "Poison Smoke Bomb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "연기열매",
+          "독광대버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "수면고기": {
+    "item_id": 186,
+    "name_kr": "수면고기",
+    "name_en": "Drugged Meat",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "날고기",
+          "수면초"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "슬링어 유인탄": {
+    "item_id": 196,
+    "name_kr": "슬링어 유인탄",
+    "name_en": "Luring Pod",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "씁쓸충의 쓴 즙",
+          "두근두근버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "대형나무통폭탄G": {
+    "item_id": 197,
+    "name_kr": "대형나무통폭탄G",
+    "name_en": "Mega Barrel Bomb",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "대형나무통폭탄",
+          "도깨비 니트로버섯"
+        ],
+        "amount": 1
+      },
+      {
+        "inputs": [
+          "대형나무통폭탄",
+          "폭약 비늘"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "그레이트 응급약": {
+    "item_id": 198,
+    "name_kr": "그레이트 응급약",
+    "name_en": "First-aid Med+",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "벌꿀",
+          "응급약"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "마비고기": {
+    "item_id": 208,
+    "name_kr": "마비고기",
+    "name_en": "Tinged Meat",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "날고기",
+          "마비버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "독고기": {
+    "item_id": 211,
+    "name_kr": "독고기",
+    "name_en": "Poisoned Meat",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "날고기",
+          "독광대버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "소취옥": {
+    "item_id": 212,
+    "name_kr": "소취옥",
+    "name_en": "Deodorant",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "씁쓸충의 쓴 즙",
+          "연기열매"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "도스따로알로에": {
+    "item_id": 233,
+    "name_kr": "도스따로알로에",
+    "name_en": "Great Windward Aloe",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "풍요기일 때 경계의 모래 평원에 랜덤으로 출현하는 '거대따로알로에' 채집"
+    ]
+  },
+  "굉천 창뢰정": {
+    "item_id": 238,
+    "name_kr": "굉천 창뢰정",
+    "name_en": "Thundering Fulgurite",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "기상이변일 때 경계의 모래 평원에 랜덤으로 출현하는 '거대한 창뢰정' 채집"
+    ]
+  },
+  "유구한 주홍빛호박": {
+    "item_id": 241,
+    "name_kr": "유구한 주홍빛호박",
+    "name_en": "Eternal Scarlet Amber",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "황폐기일 때 주홍빛 숲에 랜덤으로 출현하는 '거대한 호박' 채집"
+    ]
+  },
+  "여왕꽃의 매혹가루": {
+    "item_id": 242,
+    "name_kr": "여왕꽃의 매혹가루",
+    "name_en": "Queensbloom Pollen",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "풍요기일 때 주홍빛 숲에 랜덤으로 출현하는 '퀸 라플레시아' 채집 (환경 개요 알림이 오지 않으므로 맵에서 채취 필터로 확인 필요)"
+    ]
+  },
+  "큼직큼직한 보배": {
+    "item_id": 245,
+    "name_kr": "큼직큼직한 보배",
+    "name_en": "Bulky Treasure",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "주홍빛 숲에 랜덤으로 출현하는 '큰 보배' 채집"
+    ]
+  },
+  "안티마매터": {
+    "item_id": 249,
+    "name_kr": "안티마매터",
+    "name_en": "Antimite Mass",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "기름 솟는 계곡에 랜덤으로 출현하는 '해정화된 거대한 광물' 채집"
+    ]
+  },
+  "금빛 용린 큰항아리": {
+    "item_id": 253,
+    "name_kr": "금빛 용린 큰항아리",
+    "name_en": "Large Goldenscale Vase",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "빙무의 절벽에 랜덤으로 출현하는 '화려한 고대 유물' 채집"
+    ]
+  },
+  "세월의 대형 류누 구슬": {
+    "item_id": 260,
+    "name_kr": "세월의 대형 류누 구슬",
+    "name_en": "Time-honed Wylk Gem",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "각 지역에 랜덤으로 출현하는 '유백색 결정 덩어리' 채집 (경계의 모래 평원, 기름 솟는 계곡, 용도의 폐허)"
+    ]
+  },
+  "하룻밤꽃의 달빛가루": {
+    "item_id": 266,
+    "name_kr": "하룻밤꽃의 달빛가루",
+    "name_en": "Nightflower Pollen",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "보름달일 때 경계의 모래 평원 3번, 10번 구역 및 주홍빛 숲 14번, 18번 구역에서 '덧없는 꽃' 채집"
+    ]
+  },
+  "제네시스 오팔": {
+    "item_id": 269,
+    "name_kr": "제네시스 오팔",
+    "name_en": "Genesis Opal",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "각 지역에 랜덤으로 출현하는 '유백색 결정 덩어리' 채집 (경계의 모래 평원, 기름 솟는 계곡, 용도의 폐허)"
+    ]
+  },
+  "귀인탄": {
+    "item_id": 413,
+    "name_kr": "귀인탄",
+    "name_en": "Demon Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "괴력씨앗"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "경화탄": {
+    "item_id": 414,
+    "name_kr": "경화탄",
+    "name_en": "Armor Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "인내씨앗"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "회복탄": {
+    "item_id": 415,
+    "name_kr": "회복탄",
+    "name_en": "Recover Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "푸른버섯"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 8z로 구매 가능"
+    ]
+  },
+  "포획용마취탄": {
+    "item_id": 416,
+    "name_kr": "포획용마취탄",
+    "name_en": "Tranq Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "포획용마취옥"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "멸기탄": {
+    "item_id": 417,
+    "name_kr": "멸기탄",
+    "name_en": "Exhaust Ammo",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "통상탄",
+          "두근두근버섯"
+        ],
+        "amount": 2
+      }
+    ],
+    "notes": [
+      "물자보급소에서 15z로 구매 가능"
+    ]
+  },
+  "슬링어 대형거름탄": {
+    "item_id": 457,
+    "name_kr": "슬링어 대형거름탄",
+    "name_en": "Large Dung Pod",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "recipes": [
+      {
+        "inputs": [
+          "슬링어 거름탄",
+          "니트로버섯"
+        ],
+        "amount": 1
+      }
+    ]
+  },
+  "와일드저키": {
+    "item_id": 632,
+    "name_kr": "와일드저키",
+    "name_en": "Wild Jerky",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [],
+    "used_in_armor": [],
+    "used_in_weapons": [],
+    "used_in_charms": [],
+    "used_in_items": [],
+    "npc_exchanges": [],
+    "notes": [
+      "물자보급소에서 98z로 구매 가능"
     ]
   }
 }

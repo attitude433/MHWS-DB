@@ -28,7 +28,7 @@ HELP_TEXT = """[명령어 목록]
 .정보 (몬스터)
 .스킬 (스킬명)
 .스킬 (스킬명) 장비
-.소재 (소재명)
+.소재 (소재명) / .아이템 (아이템명)
 .커스텀
 .커스텀 (무기 종류)
 .무기 (무기명)
@@ -61,8 +61,8 @@ def on_message(ctx):
         ctx.reply('.스킬 (스킬명) 또는 .스킬 (스킬명) 장비\n예: .스킬 만족감')
         return
 
-    if msg == '.소재':
-        ctx.reply('.소재 (소재명)\n예: .소재 철광석')
+    if msg == '.소재' or msg == '.아이템':
+        ctx.reply('.소재 (소재명) 또는 .아이템 (아이템명)\n예: .소재 철광석 / .아이템 비약')
         return
 
     if msg == '.무기':
@@ -104,8 +104,9 @@ def on_message(ctx):
                 ctx.reply('정확히 입력해주세요')
         return
 
-    if msg.startswith('.소재 '):
-        query = msg[4:].strip()
+    if msg.startswith('.소재 ') or msg.startswith('.아이템 '):
+        prefix_len = 4 if msg.startswith('.소재 ') else 5
+        query = msg[prefix_len:].strip()
         item_data = alias.find_item(query)
         if item_data:
             ctx.reply(material.format_material(item_data['name_kr'], item_data))
