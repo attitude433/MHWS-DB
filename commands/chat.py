@@ -117,15 +117,41 @@ def _format_skill(s: dict) -> str:
 
 def _format_item(it: dict) -> str:
     name = it.get('name_kr', '')
-    drops = it.get('drops_from_monsters', [])
     lines = [f'[소재] {name}']
+    drops = it.get('drops_from_monsters', [])
     if drops:
-        for d in drops[:5]:
+        lines.append('  획득처:')
+        for d in drops[:8]:
             mk = d.get('monster_kr', '')
             kk = d.get('kind_kr', '')
             ch = d.get('chance', 0)
             rk = d.get('rank', '')
-            lines.append(f'  {mk}({rk}) {kk} {ch}%')
+            lines.append(f'    {mk}({rk}) {kk} {ch}%')
+    exchanges = it.get('npc_exchanges', [])
+    if exchanges:
+        lines.append('  NPC 교환:')
+        for e in exchanges[:8]:
+            npc = e.get('npc_kr', '')
+            give = e.get('give_item_kr', '')
+            ga = e.get('give_amount', 1)
+            ra = e.get('receive_amount', 1)
+            lim = e.get('limit')
+            suf = f' ({lim}회)' if lim else ''
+            lines.append(f'    {npc}: {give} x{ga} → x{ra}{suf}')
+    gathering = it.get('gathering', [])
+    if gathering:
+        lines.append(f'  채집: {", ".join(gathering[:5])}')
+    recipes = it.get('recipes', [])
+    if recipes:
+        lines.append('  조합:')
+        for r in recipes[:5]:
+            inputs = ' + '.join(r.get('inputs', []))
+            amt = r.get('amount', 1)
+            lines.append(f'    {inputs} → x{amt}')
+    notes = it.get('notes', [])
+    if notes:
+        for n in notes[:5]:
+            lines.append(f'  기타: {n}')
     used = it.get('used_in_items', [])
     if used:
         names = [u.get('result_name_kr', '') for u in used[:5]]
