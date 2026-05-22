@@ -32,13 +32,13 @@
 | `.정보 [몬스터]` | 로컬 DB 조회 | 무료 |
 | `.스킬 [스킬명]` | 로컬 DB 조회 | 무료 |
 | `.스킬 [스킬명] 장비` | 로컬 DB 조회 | 무료 |
-| `.소재 [소재명]` | 로컬 DB 조회 (NPC 교환·낚시·역전왕 보상 포함) | 무료 |
+| `.소재 [소재명]` / `.아이템 [아이템명]` | 로컬 DB 조회 (NPC 교환·낚시·역전왕 보상·조합 레시피·교역선·물자보급소 포함) | 무료 |
 | `.커스텀` | 고정 응답 (시뮬레이터 링크) | 무료 |
 | `.커스텀 [무기 종류]` | 고정 응답 (디씨 가이드 링크) | 무료 |
-| `.무기 [무기명]` | 로컬 DB 조회 (스탯·강화 트리·재료, 후보 안내) | 무료 |
+| `.무기 [무기명]` | 로컬 DB 조회 (스탯·강화 트리·재료, 활 코팅·피리 선율 포함, 후보 안내) | 무료 |
 | `.방어구 [방어구명]` | 로컬 DB 조회 (스킬·슬롯·세트보너스·재료, 후보 안내) | 무료 |
 | `.다이애나 [질문/잡담]` | Claude Sonnet + Tool Use (호석/무기난이도/채집/이벤트/날씨/무작위 도구 10종) | 유료 (1~5원/질문) |
-| `.메뉴추천` (ㅈㅁㅊ/점메추/저메추) | 1352개 메뉴 무작위 + 단식 3% 가중치 | 무료 |
+| `.메뉴추천` (ㅈㅁㅊ/점메추/저메추) | 1358개 메뉴 무작위 + 단식 3% 가중치 | 무료 |
 | `.디스코드` | 고정 응답 | 무료 |
 | `.고양이` | 야옹 또는 사진 1/3 | 무료 |
 
@@ -55,18 +55,18 @@
 
 ## DB 구조
 
-### 메인 게임 데이터
-- `items.json` (773): 아이템
-- `monsters.json` (34): 대형 몬스터
-- `armor.json` (194 세트 / 714 피스): 방어구
-- `weapons_all.json` (1,188): 무기 14종
-- `accessories.json` (361): 장식주
-- `charms.json` (187): 호신구
-- `skills.json` (179): 스킬
-- `kinsects.json` (21): 사냥벌레
-- `stages.json` (5): 필드
+### 메인 게임 데이터 (`data/` 하위로 정리)
+- `data/misc/items.json` (773): 아이템
+- `data/monsters/monsters.json` (34): 대형 몬스터
+- `data/equipment/armor.json` (194 세트 / 714 피스): 방어구
+- `data/equipment/weapons_all.json` (1,188): 무기 14종 (활 코팅 인벤 자료로 교정 완료, 피리 선율 78종 매핑)
+- `data/equipment/accessories.json` (361): 장식주
+- `data/equipment/charms.json` (187): 호신구
+- `data/equipment/skills.json` (179): 스킬
+- `data/equipment/kinsects.json` (21): 사냥벌레
+- `data/monsters/stages.json` (5): 필드
 
-### Enemy 통합
+### Enemy 통합 (`data/monsters/`)
 - `all_enemies.json` (148): 통합 마스터
 - `small_monsters.json` (19): 소형
 - `animals_official.json` (70): 환경생물
@@ -74,15 +74,16 @@
 - `boss_titles.json` (140): 보스 칭호
 - `enemy_packs.json` (4): 무리
 
-### 전투/공략
+### 전투/공략 (`data/combat/`)
 - `weapon_attributes.json`: 9속성
 - `special_attack_types.json`: 특수공격 29종
 - `special_attack_countermeasures.json`: 특수공격 대처
 - `status_countermeasures.json`: 속성/상태이상별 효과적 무기/스킬
+- `horn_melodies.json`: 수렵피리 무기별 선율 84종 (인벤 자료 기반)
 
-### 퀘스트/세계관
+### 퀘스트/세계관 (`data/world/`)
 - `quests_official.json`: 146 미션
-- `monster_to_quests_official.json`: 몬스터→퀘스트
+- `data/monsters/monster_to_quests_official.json`: 몬스터→퀘스트
 - `environments.json`: 필드/캠프/시간대/계절/기상
 - `game_misc.json`: NPC + 시설 + 요리
 
@@ -114,23 +115,44 @@
 - Steam 할인 폴러 (MH 시리즈 8타이틀, 12h 주기)
 - 봇 자가 진단 cron (5분마다 systemd 상태 체크, 변경 시 1:1 카톡 알림): `/usr/local/bin/mhws-health.sh`
 - Anthropic API 사용량 일일 리포트 cron (UTC 00:00 = KST 09:00): `/usr/local/bin/mhws-daily-report.py` (`ANTHROPIC_ADMIN_KEY` 필요)
-- 게임 코드 직접 추출 환경 구축 (`D:\gamecode\`): ree-pak-cli + REasy + 와일즈 RSZ 스키마. PAK 26개에서 user/msg/scn/pfb/poglst 28만 파일 추출. PGL 포맷 reverse engineering 성공
+- 게임 코드 직접 추출 환경 구축 (`D:\gamecode\`): ree-pak-cli + REasy + 와일즈 RSZ 스키마 v0.7.0. PAK 28개에서 user/msg/scn/pfb/poglst 28만 파일 추출. PGL 포맷 reverse engineering 성공
 - 채집물 reward 매핑 추출 (gimmickrewarddata.user.3 파싱): 약 50종 채집 아이템 → gimmick prefab 매핑
+- 와일즈 데이터 인덱스 구축 (`D:\gamecode\indexing\`): user 45337 / msg 1140 / scn 17629 / pfb 5200 entry 카테고리 분류 + 마크다운 보고서. `npc 7345 / enemy 4913 / gathering 2917 / quest 721` 등 — 봇 매핑 시 검색 키로 즉시 활용
+- `.아이템` = `.소재` 알리아스, 인자 필요 명령 단독 입력 시 사용법 자동 안내
+- 다이애나 RAG/페르소나 보강: 말투 가이드, 명령어 화이트리스트 (`.스킬 목록` 환각 방지), 더블크로스 등 옛 시리즈 액션 단호 안내, 닉네임 대괄호/슬래시 보존, RAG 컨텍스트에 NPC 교환·채집·조합·노트 포함
+- SNS 폴러 옛글 폭주 패치 (last_seen 매칭 실패 시 resync only)
+- 메뉴 풀 1352 → 1358 (육회 계열 6 추가), 단식 3% 가중치 유지
+- 9시 모닝의 "오늘은 무슨 날" Sonnet 멘트 구현 (`commands/today.py`) — 현재는 비활성, scheduler `_morning_multi` 한 줄로 다시 켜기 가능
+- 활 코팅 26종 인벤 자료로 mhdb 오류 교정 (마비/독 혼동) + `.무기` 출력에 `장착 코팅` 라인
+- 수렵피리 선율 데이터 78종 매핑 + `.무기` 출력에 `선율` 라인 (84개 중 시즌 무기 6종은 카테고리 fallback)
+- 고그마지오스 약점 속성 추가 (화 ★2 기름 부위 / 용 ★3 기름 벗겨진 부위) + `.정보` weakness note 출력
+- 게임 코드 기반 자동 매핑 흡수:
+  - 채집 의뢰 가능 29종 (`collectionitemdata.user.3`) — `나타에게 채집 의뢰 가능` 노트, 임의 잘못 입력 3개 제거
+  - NPC 교환 81 entry + 상점 26 entry (`BarterData`/`ItemShopData`) → mapping 자동 채움
+  - 교역선 12종 (`SupportShipData`) + 조사단 티켓 가격 보정 (300→40pt)
+  - 비약·회복약 등 64개 아이템 조합법 (items.json `recipes` 활용) → mapping/item_usage.json 자동 흡수
+- 데이터 폴더 재배치 — root JSON 들을 `data/{monsters, equipment, world, combat, misc}/` 으로 정리, `db.py` path 갱신
 
 ## 미해결 작업
 
 ### 1. `.정보` / `.스킬` / `.소재` 검색 미스 후보 안내
 - `.무기` / `.방어구`처럼 부분 일치 후보 안내 미적용 (해당 명령들은 `정확히 입력해주세요` 만 반환)
 
-### 2. 일부 채집/도구 소재 매핑 빈 칸
-- mapping에 있지만 drops/exchanges 빈 항목 ~115개 (광물·뼈·일반 도구·이벤트 보상)
-- items.json엔 있지만 mapping에 키 없는 항목 264개 (도구·포션 류 — items.json `recipes` 활용 가능했으나 보류)
+### 2. RSZ 파싱 실패 6226개 user.3
+- struct.error 가 95% — 와일즈 patch_022 이후 RSZ 포맷 변경, v0.7.0 dump 도 못 따라잡음
+- 봇 핵심 카테고리(enemy/npc/equip commondata) 일부 막힘. 커뮤니티 dump 업데이트 시 재처리 가능
+- 일부 NPC 교환 데이터는 `USR version 1` 신규 포맷 — RSZ 와 별개 파서 필요
 
 ### 3. 소형 몬스터 보상 추가 정리
 - 라프마/포케피나/젤레도론/가지오스/바오노스(개별)/네르스큐라 베이비/오메가 미크로스 등은 외부 자료 부족으로 미반영
 
-### 4. 데이터 추출 자산 (D:\gamecode\)
+### 4. 9시 기념일 멘트 비활성화 상태
+- `commands/today.py` 의 Sonnet 호출 함수 + 위키 fetch 동작은 검증 완료, scheduler `_morning_multi` 에서 호출만 끔
+- 필요 시 한 줄 복원으로 재활성
+
+### 5. 데이터 추출 자산 (D:\gamecode\)
 - `gathering_extracted.json` — 191 아이템 채집 매핑 (stage 무관) + RARE 특산 stage 매핑. 봇 DB 통합 보류 중
+- 와일즈 인덱스 (`D:\gamecode\indexing\user|msg|scn|pfb`) — 카테고리 + RSZ 타입 인덱스 + 마크다운 보고서. 추가 게임 데이터 추출 시 검색 키로 활용
 - PGL 파싱 가능 (`parse_pgl_stages.py`), gimmick reward 추출 가능 (`extract_gimmick_rewards.py`)
 - DLC/패치 나오면 재추출 가능
 
