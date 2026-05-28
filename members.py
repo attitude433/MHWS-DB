@@ -3,6 +3,8 @@ import sqlite3
 from datetime import datetime
 from pathlib import Path
 
+import nicknames as _nicknames
+
 DB_PATH = Path(__file__).parent / 'members.db'
 
 
@@ -37,9 +39,21 @@ def _conn():
     return c
 
 
+def exists(user_id: int) -> bool:
+    if not user_id:
+        return False
+    with _conn() as c:
+        row = c.execute('SELECT 1 FROM members WHERE user_id = ?', (user_id,)).fetchone()
+    return row is not None
+
+
 def upsert(user_id: int, nickname: str):
     if not user_id or not nickname:
         return
+    # 매핑에 평문 닉이 있으면 그것을 우선 (raw 토큰 덮어쓰기)
+    mapped = _nicknames.get(user_id)
+    if mapped:
+        nickname = mapped
     now = datetime.now().isoformat(timespec='seconds')
     with _conn() as c:
         c.execute('''

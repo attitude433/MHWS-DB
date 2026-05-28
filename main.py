@@ -22,6 +22,11 @@ load_dotenv()
 
 db.monster_to_equipment = db.build_monster_to_equipment(alias.MONSTER_ALIASES)
 
+ALERT_ROOM_ID = os.environ.get('ALERT_ROOM_ID', '')
+_pending_new_user_id = None
+
+import nicknames as _nicknames
+
 bot = Bot(os.environ['IRIS_SERVER_URL'])
 
 HELP_TEXT = """[명령어 목록]
@@ -50,9 +55,90 @@ HELP_TEXT = """[명령어 목록]
 def on_message(ctx):
     msg = ctx.message.msg.strip()
 
+    # 1:1 알림방에서 운영자가 답장한 텍스트 → 가장 최근 pending 신규 user 와 매핑
+    global _pending_new_user_id
+    if (
+        ALERT_ROOM_ID
+        and isinstance(getattr(ctx, 'raw', None), dict)
+        and str(ctx.raw.get('chat_id', '')) == str(ALERT_ROOM_ID)
+        and msg
+        and not msg.startswith('.')
+        and not msg.startswith('[봇]')
+    ):
+        # 명시적 수동 매핑: "닉 [user_id 또는 구닉] [신닉]"
+        m = re.match(r'^닉\s+(\S+)\s+(.+)$', msg)
+        if m:
+            key = m.group(1)
+            new_nick = m.group(2).strip()
+            target_uid = None
+            try:
+                if key.isdigit():
+                    target_uid = int(key)
+                else:
+                    all_map = _nicknames.all_mappings()
+                    exact = [u for u, n in all_map.items() if n == key]
+                    if len(exact) == 1:
+                        target_uid = exact[0]
+                    elif len(exact) > 1:
+                        ctx.reply(f'"{key}" 동일 닉 {len(exact)}건 — user_id 로 지정해주세요')
+                        return
+                    else:
+                        partial = [(u, n) for u, n in all_map.items() if key in n]
+                        if len(partial) == 1:
+                            target_uid = partial[0][0]
+                        elif len(partial) > 1:
+                            cands = ', '.join(n for _, n in partial[:10])
+                            ctx.reply(f'"{key}" 후보 {len(partial)}건: {cands}')
+                            return
+                        else:
+                            ctx.reply(f'매핑에 없음: {key!r}')
+                            return
+                _nicknames.update(target_uid, new_nick)
+                with members._conn() as c:
+                    c.execute(
+                        'INSERT INTO members (user_id, nickname, last_seen, first_seen) VALUES (?, ?, ?, ?) '
+                        'ON CONFLICT(user_id) DO UPDATE SET nickname = excluded.nickname',
+                        (target_uid, new_nick, '', ''),
+                    )
+                ctx.reply(f'매핑 완료: {target_uid} → {new_nick}')
+            except Exception as ex:
+                ctx.reply(f'매핑 실패: {ex}')
+            return
+        # 일반 텍스트: pending 신규 user 와 매핑
+        if _pending_new_user_id:
+            uid = _pending_new_user_id
+            nick = msg
+            try:
+                _nicknames.update(uid, nick)
+                with members._conn() as c:
+                    c.execute(
+                        'UPDATE members SET nickname = ? WHERE user_id = ?',
+                        (nick, uid),
+                    )
+                ctx.reply(f'매핑 완료: {uid} → {nick}')
+            except Exception as ex:
+                ctx.reply(f'매핑 실패: {ex}')
+            _pending_new_user_id = None
+            return
+
     if ctx.sender:
         try:
+            is_new = not members.exists(ctx.sender.id)
             members.upsert(ctx.sender.id, ctx.sender.name)
+            if is_new and ALERT_ROOM_ID:
+                try:
+                    raw_nick = ctx.sender.name or '(없음)'
+                    _pending_new_user_id = ctx.sender.id
+                    bot.api.reply(
+                        int(ALERT_ROOM_ID),
+                        f'[봇] 신규 사용자 감지\n'
+                        f'user_id: {ctx.sender.id}\n'
+                        f'raw nick: {raw_nick}\n'
+                        f'\n신규 답장: 닉만 보내면 자동 매핑\n'
+                        f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
+                    )
+                except Exception:
+                    pass
         except Exception:
             pass
 

@@ -5,11 +5,26 @@
 from __future__ import annotations
 import io
 import random
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 
 import members
+import nicknames as _nicknames
+
+
+def _safe_nick(nick: Optional[str], user_id: Optional[int] = None) -> str:
+    """매핑된 평문 닉 우선, 없으면 카톡 raw 토큰 처리."""
+    if user_id:
+        mapped = _nicknames.get(user_id)
+        if mapped:
+            return mapped
+    if not nick:
+        return '익명 헌터'
+    if nick.endswith('=') and re.fullmatch(r'[A-Za-z0-9+/]+=+', nick):
+        return '익명 헌터'
+    return nick
 
 KST = timezone(timedelta(hours=9))
 
@@ -162,13 +177,14 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
         _record_history(c, user_id, new_zenny)
 
     # 응답 텍스트
+    safe = _safe_nick(nickname, user_id)
     if r is None:
         body = (
             f'{head_emoji} 룰렛 결과: 초기화\n'
             f'{bet:,} → 0제니 (잔고 전부 소멸)\n'
             f'현재 제니: 0제니 (오늘 {remaining_after}회 남음)'
         )
-        notice = f'💸 {nickname}님의 제니가 전부 사라졌습니다... 아이루도 울고 있어요'
+        notice = f'💸 {safe}님의 제니가 전부 사라졌습니다... 아이루도 울고 있어요'
         return (body, notice)
 
     diff_sign = '+' if diff > 0 else ''
@@ -179,14 +195,14 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
     )
     notice = ''
     if r == 10.00:
-        notice = f'🎰 {nickname}님이 잭팟을 터뜨렸습니다!! 제니가 폭발했어요! 💥'
+        notice = f'🎰 {safe}님이 잭팟을 터뜨렸습니다!! 제니가 폭발했어요! 💥'
     return (body, notice)
 
 
 def my_zenny(user_id: int, nickname: str) -> str:
     with members._conn() as c:
         zenny, _la, _rc, _lr, _nk = _get_row(c, user_id)
-    return f'{nickname} 현재 제니: {zenny:,}'
+    return f'{_safe_nick(nickname, user_id)} 현재 제니: {zenny:,}'
 
 
 MEDALS = {1: '🥇', 2: '🥈', 3: '🥉'}
@@ -195,7 +211,7 @@ MEDALS = {1: '🥇', 2: '🥈', 3: '🥉'}
 def leaderboard() -> str:
     with members._conn() as c:
         rows = c.execute(
-            'SELECT nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
+            'SELECT user_id, nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
         ).fetchall()
     if not rows:
         return '아직 제니 보유자가 없어요'
@@ -204,24 +220,24 @@ def leaderboard() -> str:
     ranks = []
     prev_zenny = None
     rank_cursor = 0
-    for i, (nick, z) in enumerate(rows, 1):
+    for i, (uid, nick, z) in enumerate(rows, 1):
         if z != prev_zenny:
             rank_cursor = i
             prev_zenny = z
-        ranks.append((rank_cursor, nick, z))
+        ranks.append((rank_cursor, uid, nick, z))
 
     lines = ['[제니 랭킹]']
     top10 = [r for r in ranks if r[0] <= 10]
     rest = [r for r in ranks if r[0] > 10]
-    for rk, nick, z in top10:
+    for rk, uid, nick, z in top10:
         medal = MEDALS.get(rk, '')
         prefix = f'{medal} {rk}.' if medal else f'{rk}.'
-        lines.append(f'{prefix} {nick} — {z:,}제니')
+        lines.append(f'{prefix} {_safe_nick(nick, uid)} — {z:,}제니')
     if rest:
         lines.append('---')
         lines.append('[보유자 전체]')
-        for rk, nick, z in rest:
-            lines.append(f'{rk}. {nick} — {z:,}제니')
+        for rk, uid, nick, z in rest:
+            lines.append(f'{rk}. {_safe_nick(nick, uid)} — {z:,}제니')
     return '\n'.join(lines)
 
 
@@ -256,7 +272,7 @@ def my_graph(user_id: int, nickname: str) -> Optional[str]:
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(dates, zenny_vals, marker='o', linewidth=1.5)
-    ax.set_title(f'{nickname} 제니 변화 ({len(rows)}일)')
+    ax.set_title(f'{_safe_nick(nickname, user_id)} 제니 변화 ({len(rows)}일)')
     ax.set_xlabel('날짜')
     ax.set_ylabel('제니')
     ax.grid(True, alpha=0.3)

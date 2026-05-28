@@ -8,3 +8,7 @@ members.db
 sns_state.json
 steam_sale_state.json
 *_state.json
+nicknames.json
+chat_logs_dump.json
+chat_logs_decrypted.json
+tmp_graph.png

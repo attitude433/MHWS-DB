@@ -49,6 +49,13 @@ DINNER_MESSAGES = [
     '식사 맛있게 하세요! 다이애나도 응원해요',
 ]
 
+ROULETTE_REMINDER_MESSAGES = [
+    '🎰 룰렛은 하루에 세 번! 자정 전에 한 번 더 돌려보세요',
+    '🎰 룰렛은 하루에 세 번! 오늘 횟수 다 안 썼으면 지금이 기회예요',
+    '🎰 룰렛은 하루에 세 번! 한 시간 뒤면 횟수 초기화돼요',
+    '🎰 룰렛은 하루에 세 번! 잭팟 운 시험해볼 시간이에요',
+]
+
 BABBLE_STATIC: list[str] = []
 
 
@@ -116,6 +123,7 @@ SCHEDULES = [
     {'hour': 9, 'minute': 0, 'multi_dynamic': _morning_multi},
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
+    {'hour': 23, 'minute': 0, 'dynamic': lambda: random.choice(ROULETTE_REMINDER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},
 ]
 
