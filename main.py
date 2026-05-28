@@ -8,7 +8,7 @@ from iris import Bot
 import alias
 import db
 import members
-from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
@@ -19,6 +19,8 @@ MEOW_LINES = ['야옹', '야~옹', '냐옹', '냐~옹', '야옹!', '갸르릉…
 VS_PATTERN = re.compile(r'^\s*(.+?)\s*(?:vs|VS|Vs|vS)\s*(.+?)\s*$')
 
 load_dotenv()
+
+db.monster_to_equipment = db.build_monster_to_equipment(alias.MONSTER_ALIASES)
 
 bot = Bot(os.environ['IRIS_SERVER_URL'])
 
@@ -33,6 +35,11 @@ HELP_TEXT = """[명령어 목록]
 .커스텀 (무기 종류)
 .무기 (무기명)
 .방어구 (방어구명)
+.랜덤
+.출석
+.룰렛 [금액] / .룰렛 올
+.제니
+.제니순위
 .다이애나 (질문/잡담)
 .메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
 .디스코드
@@ -170,8 +177,55 @@ def on_message(ctx):
         ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
         return
 
+    if msg == '.랜덤' or msg == '.란듐':
+        ctx.reply(random_build.random_build_text())
+        return
+
+    if msg == '.출석' or msg == '.출석체크':
+        uid = ctx.sender.id if ctx.sender else 0
+        nick = ctx.sender.name if ctx.sender else ''
+        if uid and nick:
+            ctx.reply(zenny.check_attend(uid, nick))
+        return
+
+    if msg == '.룰렛' or msg.startswith('.룰렛 '):
+        uid = ctx.sender.id if ctx.sender else 0
+        nick = ctx.sender.name if ctx.sender else ''
+        if uid and nick:
+            arg = msg[4:].strip()  # '.룰렛' → ''  / '.룰렛 100' → '100' / '.룰렛 올' → '올'
+            body, notice = zenny.spin_roulette(uid, nick, arg)
+            ctx.reply(body)
+            if notice:
+                ctx.reply(notice)
+        return
+
+    if msg == '.제니':
+        uid = ctx.sender.id if ctx.sender else 0
+        nick = ctx.sender.name if ctx.sender else ''
+        if uid and nick:
+            ctx.reply(zenny.my_zenny(uid, nick))
+        return
+
+    if msg == '.제니순위':
+        ctx.reply(zenny.leaderboard())
+        return
+
+    if msg == '.제니그래프':
+        uid = ctx.sender.id if ctx.sender else 0
+        nick = ctx.sender.name if ctx.sender else ''
+        if uid and nick:
+            path = zenny.my_graph(uid, nick)
+            if path:
+                threading.Thread(
+                    target=lambda p=path: ctx.reply_media([p]),
+                    daemon=True,
+                ).start()
+            else:
+                ctx.reply('그래프 그릴 기록이 없어요')
+        return
+
     if msg == '.고양이':
-        if random.randint(0, 2) == 0 or not CAT_FILES:
+        if random.randint(0, 9) == 0 or not CAT_FILES:
             ctx.reply(random.choice(MEOW_LINES))
         else:
             path = random.choice(CAT_FILES)

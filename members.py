@@ -16,6 +16,24 @@ def _conn():
             first_seen TEXT
         )
     ''')
+    # 제니/룰렛 컬럼 마이그레이션 (멱등)
+    cols = {row[1] for row in c.execute('PRAGMA table_info(members)').fetchall()}
+    if 'zenny' not in cols:
+        c.execute('ALTER TABLE members ADD COLUMN zenny INTEGER DEFAULT 0')
+    if 'last_attend' not in cols:
+        c.execute('ALTER TABLE members ADD COLUMN last_attend TEXT')
+    if 'roulette_count' not in cols:
+        c.execute('ALTER TABLE members ADD COLUMN roulette_count INTEGER DEFAULT 0')
+    if 'last_roulette' not in cols:
+        c.execute('ALTER TABLE members ADD COLUMN last_roulette TEXT')
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS zenny_history (
+            user_id INTEGER NOT NULL,
+            date    TEXT NOT NULL,
+            zenny   INTEGER NOT NULL,
+            PRIMARY KEY (user_id, date)
+        )
+    ''')
     return c
 
 

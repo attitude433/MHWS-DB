@@ -2,3 +2,4 @@ irisclient
 anthropic
 python-dotenv
 feedparser
+matplotlib

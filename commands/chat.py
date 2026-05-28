@@ -2,8 +2,8 @@ import json
 import random
 import alias
 import db
-from anthropic import Anthropic
 from commands import weather as _weather
+from commands import random_build as _random_build
 
 CLAUDE_MODEL = 'claude-sonnet-4-6'
 MAX_TOKENS = 400
@@ -12,9 +12,10 @@ EVENT_URL = 'https://info.monsterhunter.com/wilds/event-quest/ko-kr/schedule'
 _anthropic_client = None
 
 
-def _client() -> Anthropic:
+def _client():
     global _anthropic_client
     if _anthropic_client is None:
+        from anthropic import Anthropic
         _anthropic_client = Anthropic()
     return _anthropic_client
 
@@ -37,8 +38,21 @@ CHAT_SYSTEM = """당신은 "다이애나" 입니다. 어린 소녀 모습의 안
 - [DB 정보] 가 있으면 그 내용을 기반으로 답하세요. 수치(약점/공격력/슬롯/확률 등)는 [DB 정보] 그대로 인용. [DB 정보] 에 없는 게임 사실은 추측하거나 일반 지식으로 보충하지 마세요.
 - [DB 정보] 가 비었거나 부족하면 사용할 수 있는 도구(tools)를 활용하세요. 호석 추천 / 무기 난이도 / 채집 정보 / 이벤트 일정 / 날씨 / 무작위 무기·몬스터·스킬 같은 질문엔 해당 도구를 호출하세요. 도구 결과는 그대로 인용해 다이애나 말투로 다듬으세요.
 - 와일즈 무기 / 몬스터 / 스킬 이름을 직접 만들어 내지 마세요. 무작위로 골라야 하는 질문은 반드시 도구를 호출.
-- 게임 사실 답을 모르고 도구로도 못 구하면 "다이애나의 메모리에는 없어요!" 라고 답하세요.
-- 잡담/감정/페르소나 관련 질문은 도구 안 쓰고 평소처럼 자연스럽게 답하세요.
+
+[질문 영역 분류 — 답하기 전 먼저 판단]
+A. 와일즈 영역:
+   - 와일즈 게임에 등장하는 몬스터/무기/방어구/스킬/장식주/호석/소재/아이템/마을/NPC/필드/이벤트/시리즈 보너스 등
+   - 빌드·세팅·스킬 조합 추천
+   - 와일즈 출시·DLC·업데이트
+B. 와일즈 외:
+   - 실존 인물·연예인·배우·정치·시사
+   - 음식·날씨·일상·감정 잡담
+   - 멤버 닉네임 언급
+   - 게임 외 일반 상식
+
+A 면: [DB 정보]·도구 활용. 없으면 "다이애나의 메모리에는 없어요!" + 관련 .명령어 안내.
+B 면: 도구 호출 X. 다이애나가 아는 대로 자연스럽게 받아치기. 모르면 "저도 잘 몰라요!" 정도로 가볍게. 메모리 멘트나 .명령어 안내는 절대 X.
+판단 애매하면 B 로 가서 가볍게.
 - 빌드/세팅/스킬 조합 추천 질문은 ".커스텀 [무기명] 으로 빌드 가이드를 확인해 주세요" 라고 안내.
 - DLC/확장팩/신규 콘텐츠 출시 관련 질문은 "아직 발표된 정보가 없어요" 라고 답하세요.
 - 옛 시리즈 (더블크로스·크로스·라이즈·월드 등) 의 수렵기술·헌터아츠·에너지 블레이드 같은 액션은 와일즈에 존재하지 않습니다. 이런 거 물어보면 "와일즈에는 그 기술이 없어요" 라고 답하고, 추가될 거냐 물어도 "추가될 일은 없을 거예요" 라고 단호하게 안내.
@@ -215,12 +229,118 @@ def _retrieve_meal(query: str) -> list[str]:
     return found
 
 
+WEAPON_KINDS_KR = [
+    '대검', '한손검', '쌍검', '태도', '해머', '수렵피리',
+    '랜스', '건랜스', '슬래시액스', '차지액스', '조충곤', '활',
+    '라이트 보우건', '헤비 보우건',
+]
+
+ELEMENT_KEYWORDS = {
+    '화염': ('element', 'fire'), '화속성': ('element', 'fire'), '불속성': ('element', 'fire'),
+    '수속성': ('element', 'water'), '물속성': ('element', 'water'),
+    '뇌속성': ('element', 'thunder'), '번개속성': ('element', 'thunder'),
+    '빙속성': ('element', 'ice'), '얼음속성': ('element', 'ice'),
+    '용속성': ('element', 'dragon'),
+    '폭파': ('status', 'blastblight'), '폭발': ('status', 'blastblight'),
+    '마비': ('status', 'paralysis'),
+    '독속성': ('status', 'poison'), '독무기': ('status', 'poison'),
+    '수면': ('status', 'sleep'),
+}
+
+ATTR_LABEL_KR = {
+    ('element', 'fire'): '화', ('element', 'water'): '수', ('element', 'thunder'): '뇌',
+    ('element', 'ice'): '빙', ('element', 'dragon'): '용',
+    ('status', 'blastblight'): '폭파', ('status', 'paralysis'): '마비',
+    ('status', 'poison'): '독', ('status', 'sleep'): '수면',
+}
+
+
+def _detect_weapon_kind(query: str) -> str:
+    q = query.replace(' ', '')
+    for kind in WEAPON_KINDS_KR:
+        if kind.replace(' ', '') in q:
+            return kind
+    return ''
+
+
+def _detect_attribute(query: str) -> tuple:
+    q = query.replace(' ', '')
+    for kw, attr in ELEMENT_KEYWORDS.items():
+        if kw in q:
+            return attr
+    return ()
+
+
+def _format_attribute_weapons(attr: tuple, weapon_kind: str) -> str:
+    if not attr:
+        return ''
+    kind_field, value = attr
+    label = ATTR_LABEL_KR.get(attr, value)
+    matched = []
+    for w in db.weapons_all:
+        if (w.get('crafting') or {}).get('branches'):
+            continue  # 최종 강화만
+        for sp in (w.get('specials') or []):
+            if sp.get(kind_field) == value:
+                matched.append(w)
+                break
+    if weapon_kind:
+        kw = weapon_kind.replace(' ', '')
+        matched = [w for w in matched if w.get('kind_kr', '').replace(' ', '') == kw]
+
+    header = f'[{label} 속성 무기' + (f' / {weapon_kind}' if weapon_kind else '') + ' 최종 강화]'
+    if not matched:
+        if weapon_kind:
+            return f'{header}\n(와일즈에 해당 조합 고정 무기 없음 — 아티어 {weapon_kind}로 {label} 속성 부여해 제작 가능)'
+        return f'{header}\n(없음)'
+    if weapon_kind:
+        names = ', '.join(w['name_kr'] for w in matched)
+        return f'{header}\n{names}'
+    names = ', '.join(f'{w["name_kr"]}({w["kind_kr"]})' for w in matched)
+    return f'{header}({len(matched)}개)\n{names}'
+
+
+def _format_monster_equipment(monster_name: str, weapon_kind: str) -> str:
+    info = db.monster_to_equipment.get(monster_name)
+    if not info:
+        return ''
+    weapons = info['weapons']
+    if weapon_kind:
+        kw = weapon_kind.replace(' ', '')
+        weapons = [w for w in weapons if w['kind_kr'].replace(' ', '') == kw]
+    armor = info['armor_series']
+
+    lines = [f'[{monster_name} 소재 장비]']
+    if weapons:
+        if weapon_kind:
+            names = ', '.join(w['name_kr'] for w in weapons)
+            lines.append(f'무기({weapon_kind}): {names}')
+        else:
+            names = ', '.join(f'{w["name_kr"]}({w["kind_kr"]})' for w in info['weapons'])
+            lines.append(f'무기({len(info["weapons"])}): {names}')
+    if armor:
+        names = ', '.join(s['name_kr'] for s in armor)
+        lines.append(f'방어구 시리즈: {names}')
+    return '\n'.join(lines) if len(lines) > 1 else ''
+
+
 def _retrieve(query: str) -> list[str]:
     parts = []
+
+    weapon_kind = _detect_weapon_kind(query)
 
     monster = alias.find_monster(query) or alias.find_monster_partial(query)
     if monster:
         parts.append(_format_monster(monster))
+        gear = _format_monster_equipment(monster['name_kr'], weapon_kind)
+        if gear:
+            parts.append(gear)
+
+    attr = _detect_attribute(query)
+    if attr:
+        attr_text = _format_attribute_weapons(attr, weapon_kind)
+        if attr_text:
+            parts.append(attr_text)
 
     skill_name = alias.find_skill(query) or alias.find_skill_partial(query)
     if skill_name:
@@ -318,6 +438,11 @@ TOOLS = [
         'description': '무작위 와일즈 스킬 1개를 가져옴.',
         'input_schema': {'type': 'object', 'properties': {}},
     },
+    {
+        'name': 'get_random_build',
+        'description': '시리즈 스킬 또는 그룹 스킬 1개 발동이 보장된 풀세트 와일즈 빌드(무기+방어구5+호석+장식주)를 무작위로 1세트 생성. "랜덤 빌드", "장비 추천 아무거나", "세팅 짜줘", "랜덤 세팅" 같은 요청에 사용.',
+        'input_schema': {'type': 'object', 'properties': {}},
+    },
 ]
 
 
@@ -379,6 +504,9 @@ def _exec_tool(name: str, args: dict) -> str:
             s = random.choice(db.skills)
             desc = (s.get('description_kr') or '').replace('\r', '').replace('\n', ' ')[:120]
             return f'{s["name_kr"]} ({s.get("kind_kr","?")}): {desc}'
+
+        if name == 'get_random_build':
+            return _random_build.random_build_text()
 
         return f'(알 수 없는 도구: {name})'
     except Exception as ex:
