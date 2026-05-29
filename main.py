@@ -24,6 +24,7 @@ db.monster_to_equipment = db.build_monster_to_equipment(alias.MONSTER_ALIASES)
 
 ALERT_ROOM_ID = os.environ.get('ALERT_ROOM_ID', '')
 _pending_new_user_id = None
+_notified_unmapped: set = set()
 
 import nicknames as _nicknames
 
@@ -100,6 +101,7 @@ def on_message(ctx):
                         'ON CONFLICT(user_id) DO UPDATE SET nickname = excluded.nickname',
                         (target_uid, new_nick, '', ''),
                     )
+                _notified_unmapped.discard(target_uid)
                 ctx.reply(f'매핑 완료: {target_uid} → {new_nick}')
             except Exception as ex:
                 ctx.reply(f'매핑 실패: {ex}')
@@ -115,6 +117,7 @@ def on_message(ctx):
                         'UPDATE members SET nickname = ? WHERE user_id = ?',
                         (nick, uid),
                     )
+                _notified_unmapped.discard(uid)
                 ctx.reply(f'매핑 완료: {uid} → {nick}')
             except Exception as ex:
                 ctx.reply(f'매핑 실패: {ex}')
@@ -123,22 +126,25 @@ def on_message(ctx):
 
     if ctx.sender:
         try:
-            is_new = not members.exists(ctx.sender.id)
-            members.upsert(ctx.sender.id, ctx.sender.name)
-            if is_new and ALERT_ROOM_ID:
-                try:
-                    raw_nick = ctx.sender.name or '(없음)'
-                    _pending_new_user_id = ctx.sender.id
-                    bot.api.reply(
-                        int(ALERT_ROOM_ID),
-                        f'[봇] 신규 사용자 감지\n'
-                        f'user_id: {ctx.sender.id}\n'
-                        f'raw nick: {raw_nick}\n'
-                        f'\n신규 답장: 닉만 보내면 자동 매핑\n'
-                        f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
-                    )
-                except Exception:
-                    pass
+            uid = ctx.sender.id
+            members.upsert(uid, ctx.sender.name)
+            # 매핑 안 된 사용자 채팅 시 1:1 알림 (세션당 1회)
+            if uid and ALERT_ROOM_ID and not _nicknames.get(uid):
+                if uid not in _notified_unmapped:
+                    _notified_unmapped.add(uid)
+                    _pending_new_user_id = uid
+                    try:
+                        raw_nick = ctx.sender.name or '(없음)'
+                        bot.api.reply(
+                            int(ALERT_ROOM_ID),
+                            f'[봇] 매핑 안 된 사용자 채팅 감지\n'
+                            f'user_id: {uid}\n'
+                            f'raw nick: {raw_nick}\n'
+                            f'\n신규 답장: 닉만 보내면 자동 매핑\n'
+                            f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
+                        )
+                    except Exception:
+                        pass
         except Exception:
             pass
 
@@ -271,7 +277,9 @@ def on_message(ctx):
         uid = ctx.sender.id if ctx.sender else 0
         nick = ctx.sender.name if ctx.sender else ''
         if uid and nick:
-            ctx.reply(zenny.check_attend(uid, nick))
+            res = zenny.check_attend(uid, nick)
+            if res:
+                ctx.reply(res)
         return
 
     if msg == '.룰렛' or msg.startswith('.룰렛 '):
@@ -280,7 +288,8 @@ def on_message(ctx):
         if uid and nick:
             arg = msg[4:].strip()  # '.룰렛' → ''  / '.룰렛 100' → '100' / '.룰렛 올' → '올'
             body, notice = zenny.spin_roulette(uid, nick, arg)
-            ctx.reply(body)
+            if body:
+                ctx.reply(body)
             if notice:
                 ctx.reply(notice)
         return
@@ -296,18 +305,33 @@ def on_message(ctx):
         ctx.reply(zenny.leaderboard())
         return
 
-    if msg == '.제니그래프':
-        uid = ctx.sender.id if ctx.sender else 0
-        nick = ctx.sender.name if ctx.sender else ''
-        if uid and nick:
-            path = zenny.my_graph(uid, nick)
+    if msg == '.제니그래프' or msg.startswith('.제니그래프 '):
+        target_uid = ctx.sender.id if ctx.sender else 0
+        target_nick = ctx.sender.name if ctx.sender else ''
+        if msg.startswith('.제니그래프 '):
+            query = msg[7:].strip()
+            if query:
+                found_uid, found_nick, cands = zenny.find_user(query)
+                if found_uid:
+                    target_uid = found_uid
+                    target_nick = found_nick
+                elif cands:
+                    names = ', '.join(n for _, n in cands[:10])
+                    ctx.reply(f'"{query}" 후보 {len(cands)}건: {names}')
+                    return
+                else:
+                    ctx.reply(f'"{query}" 닉네임을 못 찾았어요')
+                    return
+        if target_uid:
+            path = zenny.my_graph(target_uid, target_nick or '익명')
             if path:
                 threading.Thread(
                     target=lambda p=path: ctx.reply_media([p]),
                     daemon=True,
                 ).start()
             else:
-                ctx.reply('그래프 그릴 기록이 없어요')
+                who = target_nick or str(target_uid)
+                ctx.reply(f'{who} 님 그래프 그릴 기록이 없어요')
         return
 
     if msg == '.고양이':
@@ -337,11 +361,54 @@ def on_message(ctx):
 
 @bot.on_event('new_member')
 def on_new_member(ctx):
+    global _pending_new_user_id
+    try:
+        if ctx.sender and ALERT_ROOM_ID:
+            uid = ctx.sender.id
+            raw_nick = ctx.sender.name or '(없음)'
+            mapped = _nicknames.get(uid)
+            is_known = members.exists(uid) or bool(mapped)
+            if not is_known:
+                members.upsert(uid, raw_nick)
+                _pending_new_user_id = uid
+                bot.api.reply(
+                    int(ALERT_ROOM_ID),
+                    f'[봇] 🆕 신규 사용자 입장\n'
+                    f'user_id: {uid}\n'
+                    f'raw nick: {raw_nick}\n'
+                    f'\n신규 답장: 닉만 보내면 자동 매핑\n'
+                    f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
+                )
+            else:
+                # 재입장 (이미 알고 있는 사람)
+                display = mapped or raw_nick
+                bot.api.reply(
+                    int(ALERT_ROOM_ID),
+                    f'[봇] 🔁 재입장\n'
+                    f'user_id: {uid}\n'
+                    f'닉: {display}',
+                )
+    except Exception:
+        pass
     ctx.reply('안녕하세요! 공지 읽고 닉변 부탁드려요')
 
 
 @bot.on_event('del_member')
 def on_del_member(ctx):
+    try:
+        if ctx.sender and ALERT_ROOM_ID:
+            uid = ctx.sender.id
+            raw_nick = ctx.sender.name or '(없음)'
+            mapped = _nicknames.get(uid)
+            display = mapped or raw_nick
+            bot.api.reply(
+                int(ALERT_ROOM_ID),
+                f'[봇] 👋 퇴장\n'
+                f'user_id: {uid}\n'
+                f'닉: {display}',
+            )
+    except Exception:
+        pass
     ctx.reply('ㅠㅠ')
 
 

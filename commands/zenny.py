@@ -32,18 +32,29 @@ ATTEND_MIN = 10
 ATTEND_MAX = 30
 ROULETTE_DAILY_LIMIT = 3
 
+# 운영자 본인 등 제니 시스템 제외 대상 user_id
+EXCLUDED_USER_IDS = {395932031}
+
+
+def is_excluded(uid: int) -> bool:
+    try:
+        return int(uid) in EXCLUDED_USER_IDS
+    except (ValueError, TypeError):
+        return False
+
 # (수익률 r, 확률) — 합 = 1.0. r=None 은 초기화 (잔고 전체 리셋)
+# 양수 outcome 의 수익률을 한 단계씩 상향 (확률표 그대로)
 ROULETTE_OUTCOMES = [
     (None, 0.001),   # 초기화
     (-0.70, 0.057),
     (-0.50, 0.172),
     (-0.20, 0.270),
     (0.0,   0.100),
-    (0.20,  0.167),
-    (0.50,  0.120),
-    (0.70,  0.080),
-    (1.00,  0.032),
-    (10.00, 0.001),  # 잭팟
+    (0.25,  0.167),  # +20% → +25%
+    (0.60,  0.120),  # +50% → +60%
+    (0.80,  0.080),  # +70% → +80%
+    (1.20,  0.032),  # +100% → +120%
+    (15.00, 0.001),  # 잭팟 +1000% → +1500%
 ]
 
 
@@ -68,6 +79,8 @@ def _get_row(c, user_id: int) -> tuple:
 
 
 def check_attend(user_id: int, nickname: str) -> str:
+    if is_excluded(user_id):
+        return ''
     today = today_kst()
     with members._conn() as c:
         # 멤버 row 보장
@@ -110,6 +123,8 @@ def _format_pct(r: Optional[float]) -> str:
 
 def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
     """룰렛 1회. (응답 텍스트, 방 공지 텍스트 or '') 반환."""
+    if is_excluded(user_id):
+        return ('', '')
     today = today_kst()
     with members._conn() as c:
         c.execute(
@@ -194,9 +209,49 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
         f'현재 제니: {new_zenny:,}제니 (오늘 {remaining_after}회 남음)'
     )
     notice = ''
-    if r == 10.00:
+    if r == 15.00:
         notice = f'🎰 {safe}님이 잭팟을 터뜨렸습니다!! 제니가 폭발했어요! 💥'
     return (body, notice)
+
+
+def find_user(query: str) -> tuple:
+    """닉 검색 — 정확 일치 우선, 없으면 부분 일치.
+
+    Returns:
+        (user_id, nickname, candidates_list)
+        - 매치 1건: (uid, nick, [])
+        - 매치 0건: (None, '', [])
+        - 매치 여러 건: (None, '', [(uid, nick), ...])
+    """
+    query = query.strip()
+    if not query:
+        return (None, '', [])
+
+    # nicknames.json + members.db 통합
+    pool: dict = {}  # uid -> nick
+    for uid, nick in _nicknames.all_mappings().items():
+        pool[int(uid)] = nick
+    with members._conn() as c:
+        rows = c.execute('SELECT user_id, nickname FROM members WHERE nickname IS NOT NULL').fetchall()
+    for uid, nick in rows:
+        if uid not in pool and nick:
+            pool[uid] = nick
+
+    # 정확 일치
+    exact = [(uid, nick) for uid, nick in pool.items() if nick == query]
+    if len(exact) == 1:
+        return (exact[0][0], exact[0][1], [])
+    if len(exact) > 1:
+        return (None, '', exact)
+
+    # 부분 일치
+    partial = [(uid, nick) for uid, nick in pool.items() if query in nick]
+    if len(partial) == 1:
+        return (partial[0][0], partial[0][1], [])
+    if len(partial) > 1:
+        return (None, '', partial)
+
+    return (None, '', [])
 
 
 def my_zenny(user_id: int, nickname: str) -> str:
@@ -213,6 +268,7 @@ def leaderboard() -> str:
         rows = c.execute(
             'SELECT user_id, nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
         ).fetchall()
+    rows = [r for r in rows if not is_excluded(r[0])]
     if not rows:
         return '아직 제니 보유자가 없어요'
 
@@ -226,19 +282,24 @@ def leaderboard() -> str:
             prev_zenny = z
         ranks.append((rank_cursor, uid, nick, z))
 
-    lines = ['[제니 랭킹]']
     top10 = [r for r in ranks if r[0] <= 10]
-    rest = [r for r in ranks if r[0] > 10]
+
+    body = '[제니 랭킹]\n\n'
+    body += '▼ 🎰 룰렛 + 출석 누적 점수 (상위 10)\n\n'
     for rk, uid, nick, z in top10:
         medal = MEDALS.get(rk, '')
-        prefix = f'{medal} {rk}.' if medal else f'{rk}.'
-        lines.append(f'{prefix} {_safe_nick(nick, uid)} — {z:,}제니')
-    if rest:
-        lines.append('---')
-        lines.append('[보유자 전체]')
-        for rk, uid, nick, z in rest:
-            lines.append(f'{rk}. {_safe_nick(nick, uid)} — {z:,}제니')
-    return '\n'.join(lines)
+        head = f'{medal} [{rk}위]' if medal else f'[{rk}위]'
+        body += f'{head} {_safe_nick(nick, uid)} — {z:,}제니\n'
+    body += '\n'
+    footer = (
+        '━━━━━━━━━━━━\n'
+        '📅 KST 자정 출석·룰렛 횟수 리셋\n'
+        '🎯 .출석 — 1일 1회 10~30 제니\n'
+        '🎰 .룰렛 [금액] / 올 — 1일 3회\n'
+        '💰 .제니 — 본인 잔고 조회'
+    )
+    body += footer
+    return body
 
 
 def my_graph(user_id: int, nickname: str) -> Optional[str]:
