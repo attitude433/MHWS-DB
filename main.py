@@ -8,7 +8,7 @@ from iris import Bot
 import alias
 import db
 import members
-from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny, rps
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
@@ -54,6 +54,7 @@ HELP_TEXT = """[명령어 목록]
 ━━━━━━━━━━━━
 .출석
 .룰렛 [금액] / .룰렛 올
+.가위 / .바위 / .보 [금액]
 .제니
 .제니순위
 
@@ -308,6 +309,18 @@ def on_message(ctx):
             if notice:
                 ctx.reply(notice)
         return
+
+    for _hand in ('가위', '바위', '보'):
+        _prefix = f'.{_hand}'
+        if msg == _prefix or msg.startswith(_prefix + ' '):
+            uid = ctx.sender.id if ctx.sender else 0
+            nick = (ctx.sender.name if ctx.sender else '') or '익명 헌터'
+            if uid:
+                arg = msg[len(_prefix):].strip()
+                res = rps.play(uid, nick, _hand, arg)
+                if res:
+                    ctx.reply(res)
+            return
 
     if msg == '.제니':
         uid = ctx.sender.id if ctx.sender else 0
