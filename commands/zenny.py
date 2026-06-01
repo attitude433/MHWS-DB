@@ -4,6 +4,7 @@
 """
 from __future__ import annotations
 import io
+import math
 import random
 import re
 from datetime import datetime, timezone, timedelta
@@ -165,23 +166,33 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             if remaining <= 0 and not unlimited:
                 return ('오늘 룰렛 횟수를 다 사용했어요', '')
             return (
-                f'.룰렛 [금액] 또는 .룰렛 올 (오늘 {remaining}회 남음, 보유: {zenny:,}제니)',
+                f'.룰렛 [금액] / [%] / 올 (오늘 {remaining}회 남음, 보유: {zenny:,}제니)',
                 '',
             )
 
         if roulette_count >= ROULETTE_DAILY_LIMIT and not unlimited:
             return ('오늘 룰렛 횟수를 다 사용했어요', '')
 
-        # 베팅 금액 파싱
+        # 베팅 금액 파싱 (올 / 퍼센트 / 금액)
         if bet_arg == '올':
             if zenny <= 0:
                 return ('제니가 없어요', '')
             bet = zenny
+        elif bet_arg.endswith('%'):
+            try:
+                pct = float(bet_arg[:-1])
+            except ValueError:
+                return ('.룰렛 50% 처럼 입력해주세요', '')
+            if pct <= 0 or pct > 100:
+                return ('1~100% 사이로 입력해주세요', '')
+            if zenny <= 0:
+                return ('제니가 없어요', '')
+            bet = math.ceil(zenny * pct / 100)  # 소수점 올림
         else:
             try:
                 bet = int(bet_arg)
             except ValueError:
-                return ('.룰렛 [금액] 또는 .룰렛 올 형식으로 입력해주세요', '')
+                return ('.룰렛 [금액] / [%] / 올 형식으로 입력해주세요', '')
             if bet <= 0:
                 return ('1 이상의 숫자를 입력해주세요', '')
             if bet > zenny:
