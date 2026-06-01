@@ -98,6 +98,7 @@ def _pick_with_pity(neg_streak: int) -> tuple:
 
 def check_attend(user_id: int, nickname: str) -> str:
     today = today_kst()
+    unlimited = is_excluded(user_id)  # 운영자: 1일 1회 제한 없음
     with members._conn() as c:
         # 멤버 row 보장
         c.execute(
@@ -108,7 +109,7 @@ def check_attend(user_id: int, nickname: str) -> str:
              datetime.now().isoformat(timespec='seconds')),
         )
         zenny, last_attend, _rc, _lr, _nk, _ns, attend_bonus = _get_row(c, user_id)
-        if last_attend == today:
+        if last_attend == today and not unlimited:
             return f'이미 오늘 출석했어요 (현재: {zenny:,}제니)'
         # 비밀: 직전에 룰렛 초기화당한 사람은 다음 출석 1회 30제니 확정
         if attend_bonus:
