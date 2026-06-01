@@ -25,7 +25,9 @@ def _weapon_leaf_pool() -> list[dict]:
 def _armor_pool() -> list[dict]:
     return [
         s for s in db.armor
-        if s.get('rarity', 0) >= 4 and len(s.get('pieces') or []) == 5
+        if s.get('rarity', 0) >= 4
+        and len(s.get('pieces') or []) == 5
+        and any(g in s.get('name_kr', '') for g in ('α', 'β', 'γ'))
     ]
 
 
