@@ -273,10 +273,10 @@ def on_message(ctx):
         ctx.reply(random_build.random_build_text())
         return
 
-    if msg == '.출석' or msg == '.출석체크':
+    if msg == '.출석' or msg == '.출석체크' or msg == '.출첵':
         uid = ctx.sender.id if ctx.sender else 0
-        nick = ctx.sender.name if ctx.sender else ''
-        if uid and nick:
+        nick = (ctx.sender.name if ctx.sender else '') or '익명 헌터'
+        if uid:
             res = zenny.check_attend(uid, nick)
             if res:
                 ctx.reply(res)
@@ -284,8 +284,8 @@ def on_message(ctx):
 
     if msg == '.룰렛' or msg.startswith('.룰렛 '):
         uid = ctx.sender.id if ctx.sender else 0
-        nick = ctx.sender.name if ctx.sender else ''
-        if uid and nick:
+        nick = (ctx.sender.name if ctx.sender else '') or '익명 헌터'
+        if uid:
             arg = msg[4:].strip()  # '.룰렛' → ''  / '.룰렛 100' → '100' / '.룰렛 올' → '올'
             body, notice = zenny.spin_roulette(uid, nick, arg)
             if body:
@@ -296,18 +296,19 @@ def on_message(ctx):
 
     if msg == '.제니':
         uid = ctx.sender.id if ctx.sender else 0
-        nick = ctx.sender.name if ctx.sender else ''
-        if uid and nick:
+        nick = (ctx.sender.name if ctx.sender else '') or '익명 헌터'
+        if uid:
             ctx.reply(zenny.my_zenny(uid, nick))
         return
 
     if msg == '.제니순위':
-        ctx.reply(zenny.leaderboard())
+        viewer = ctx.sender.id if ctx.sender else 0
+        ctx.reply(zenny.leaderboard(viewer))
         return
 
     if msg == '.제니그래프' or msg.startswith('.제니그래프 '):
         target_uid = ctx.sender.id if ctx.sender else 0
-        target_nick = ctx.sender.name if ctx.sender else ''
+        target_nick = (ctx.sender.name if ctx.sender else '') or '익명 헌터'
         if msg.startswith('.제니그래프 '):
             query = msg[7:].strip()
             if query:

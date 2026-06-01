@@ -43,18 +43,18 @@ def is_excluded(uid: int) -> bool:
         return False
 
 # (수익률 r, 확률) — 합 = 1.0. r=None 은 초기화 (잔고 전체 리셋)
-# 양수 outcome 의 수익률을 한 단계씩 상향 (확률표 그대로)
+# 잭팟·초기화 1.0% / 1.0% 로 상향, 잭팟 수익률 +900% (×10) 로 조정
 ROULETTE_OUTCOMES = [
-    (None, 0.001),   # 초기화
-    (-0.70, 0.057),
-    (-0.50, 0.172),
-    (-0.20, 0.270),
-    (0.0,   0.100),
-    (0.25,  0.167),  # +20% → +25%
-    (0.60,  0.120),  # +50% → +60%
-    (0.80,  0.080),  # +70% → +80%
-    (1.20,  0.032),  # +100% → +120%
-    (15.00, 0.001),  # 잭팟 +1000% → +1500%
+    (None, 0.010),   # 초기화 0.1 → 1.0%
+    (-0.70, 0.056),  # 5.7 → 5.6
+    (-0.50, 0.169),  # 17.2 → 16.9
+    (-0.20, 0.265),  # 27.0 → 26.5
+    (0.0,   0.098),  # 10.0 → 9.8
+    (0.25,  0.164),  # 16.7 → 16.4
+    (0.60,  0.118),  # 12.0 → 11.8
+    (0.80,  0.079),  # 8.0 → 7.9
+    (1.20,  0.031),  # 3.2 → 3.1
+    (9.00,  0.010),  # 잭팟 +1500% → +900% (×16 → ×10), 0.1 → 1.0%
 ]
 
 
@@ -72,10 +72,28 @@ def _record_history(c, user_id: int, zenny: int) -> None:
 
 def _get_row(c, user_id: int) -> tuple:
     row = c.execute(
-        'SELECT zenny, last_attend, roulette_count, last_roulette, nickname FROM members WHERE user_id = ?',
+        'SELECT zenny, last_attend, roulette_count, last_roulette, nickname, neg_streak FROM members WHERE user_id = ?',
         (user_id,),
     ).fetchone()
-    return row or (0, None, 0, None, None)
+    return row or (0, None, 0, None, None, 0)
+
+
+def _pick_with_pity(neg_streak: int) -> tuple:
+    """비밀 pity timer: 5회 연속 음수면 양수 outcome (잭팟 제외) 무작위 강제.
+
+    Returns: (r, pity_triggered)
+    """
+    if neg_streak >= 5:
+        positives = [(r, p) for r, p in ROULETTE_OUTCOMES if r is not None and 0 < r < 9.0]
+        total = sum(p for _, p in positives)
+        rr = random.random() * total
+        cum = 0.0
+        for r, p in positives:
+            cum += p
+            if rr < cum:
+                return r, True
+        return positives[-1][0], True
+    return _pick_outcome(), False
 
 
 def check_attend(user_id: int, nickname: str) -> str:
@@ -91,7 +109,7 @@ def check_attend(user_id: int, nickname: str) -> str:
             (user_id, nickname, datetime.now().isoformat(timespec='seconds'),
              datetime.now().isoformat(timespec='seconds')),
         )
-        zenny, last_attend, _rc, _lr, _nk = _get_row(c, user_id)
+        zenny, last_attend, _rc, _lr, _nk, _ns = _get_row(c, user_id)
         if last_attend == today:
             return f'이미 오늘 출석했어요 (현재: {zenny:,}제니)'
         reward = random.randint(ATTEND_MIN, ATTEND_MAX)
@@ -134,7 +152,7 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             (user_id, nickname, datetime.now().isoformat(timespec='seconds'),
              datetime.now().isoformat(timespec='seconds')),
         )
-        zenny, _la, roulette_count, last_roulette, _nk = _get_row(c, user_id)
+        zenny, _la, roulette_count, last_roulette, _nk, neg_streak = _get_row(c, user_id)
 
         # 자정 리셋
         if last_roulette != today:
@@ -167,10 +185,16 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             if bet > zenny:
                 return ('제니가 부족해요', '')
 
-        # 룰렛 굴리기
-        r = _pick_outcome()
+        # 룰렛 굴리기 (비밀 pity timer 적용)
+        r, _pity = _pick_with_pity(neg_streak)
         roulette_count += 1
         remaining_after = ROULETTE_DAILY_LIMIT - roulette_count
+
+        # neg_streak 갱신: 초기화/본전/양수면 리셋, 음수면 +1
+        if r is None or (r is not None and r >= 0):
+            new_streak = 0
+        else:
+            new_streak = neg_streak + 1
 
         if r is None:
             new_zenny = 0
@@ -186,8 +210,8 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             head_emoji = '🎰'
 
         c.execute(
-            'UPDATE members SET zenny = ?, roulette_count = ?, last_roulette = ? WHERE user_id = ?',
-            (new_zenny, roulette_count, today, user_id),
+            'UPDATE members SET zenny = ?, roulette_count = ?, last_roulette = ?, neg_streak = ? WHERE user_id = ?',
+            (new_zenny, roulette_count, today, new_streak, user_id),
         )
         _record_history(c, user_id, new_zenny)
 
@@ -209,7 +233,7 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
         f'현재 제니: {new_zenny:,}제니 (오늘 {remaining_after}회 남음)'
     )
     notice = ''
-    if r == 15.00:
+    if r == 9.00:
         notice = f'🎰 {safe}님이 잭팟을 터뜨렸습니다!! 제니가 폭발했어요! 💥'
     return (body, notice)
 
@@ -263,7 +287,7 @@ def my_zenny(user_id: int, nickname: str) -> str:
 MEDALS = {1: '🥇', 2: '🥈', 3: '🥉'}
 
 
-def leaderboard() -> str:
+def leaderboard(viewer_user_id: int = 0) -> str:
     with members._conn() as c:
         rows = c.execute(
             'SELECT user_id, nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
@@ -291,6 +315,13 @@ def leaderboard() -> str:
         head = f'{medal} [{rk}위]' if medal else f'[{rk}위]'
         body += f'{head} {_safe_nick(nick, uid)} — {z:,}제니\n'
     body += '\n'
+
+    # viewer 가 11위 이하면 본인 순위 한 줄 표시
+    if viewer_user_id:
+        viewer_rank = next(((rk, uid, nick, z) for rk, uid, nick, z in ranks if uid == viewer_user_id), None)
+        if viewer_rank and viewer_rank[0] > 10:
+            rk, uid, nick, z = viewer_rank
+            body += f'(나) [{rk}위] {_safe_nick(nick, uid)} — {z:,}제니\n\n'
     footer = (
         '━━━━━━━━━━━━\n'
         '📅 KST 자정 출석·룰렛 횟수 리셋\n'

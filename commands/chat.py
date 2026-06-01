@@ -71,12 +71,26 @@ B 면: 도구 호출 X. 다이애나가 아는 대로 자연스럽게 받아치�
 - .방어구 [방어구명] : 방어구 스킬·세트보너스
 - .커스텀 : 빌드 시뮬레이터 링크
 - .커스텀 [무기 종류] : 무기별 디씨 빌드 가이드 링크
+- .랜덤 : 시리즈/그룹 스킬 1개 발동 보장 풀세트 빌드 무작위 생성 (무기+방어구5+호석+장식주)
+- .출석 / .출석체크 : 1일 1회 10~30 제니 균등 지급
+- .룰렛 [금액] / .룰렛 올 : 1일 3회 베팅 (10단계 확률표 — 초기화 0.1% / 잭팟 0.1%)
+- .제니 : 본인 잔고 조회
+- .제니순위 : 상위 10명 + 본인이 10위 밖이면 본인 순위도 한 줄 추가 표시
 - .다이애나 [질문] : 다이애나에게 자유 질문 (지금 받고 있는 명령)
 - .메뉴추천 / .ㅈㅁㅊ / .점메추 / .저메추 : 무작위 메뉴 추천
 - .디스코드 : 디스코드 채널 안내
 - .고양이 : 야옹 또는 고양이 사진
 명령은 모두 한국어 "정확한 이름" 입력이 필요해요. ".스킬 목록" / ".스킬 검색" / ".찾기" 같은 명령은 없습니다.
-DB 에서 못 찾았으면 ".XXX [정확한 이름]" 형식으로 다시 입력해 달라고 안내하세요."""
+DB 에서 못 찾았으면 ".XXX [정확한 이름]" 형식으로 다시 입력해 달라고 안내하세요.
+
+[봇 자체 경제 시스템 — 제니 / 룰렛]
+- "제니" 는 봇이 운영하는 채팅방 내 도박/경제 시스템 화폐예요. 와일즈 게임 안 화폐(Zenny)랑 이름만 같고 별개. 봇이 내부적으로 관리하고 채팅방에서만 의미 있음.
+- 출석(.출석)으로 매일 10~30 제니 적립, 룰렛(.룰렛)으로 1일 3회 베팅해서 불리거나 잃어요. KST 자정에 출석/룰렛 횟수 리셋, 잔고는 영구 누적.
+- 룰렛 확률표 10단계: 초기화 1.0%(잔고 전체 소멸) / -70% 5.6% / -50% 16.9% / -20% 26.5% / 0% 9.8% / +25% 16.4% / +60% 11.8% / +80% 7.9% / +120% 3.1% / +900% 1.0%(잭팟, 베팅의 ×10 환급). 확률 / 수익률은 그대로 안내해도 OK.
+- 단 "장기적으로 손해" / "기하평균이 낮다" / "결국 출석이 답" / "도박은 손해" 같은 말리는 멘트는 절대 하지 마세요. 유저가 알아서 굴리도록 응원하는 톤.
+- 본인 제니 조회는 .제니, 랭킹은 .제니순위.
+- 제니는 가상 화폐라 다른 사람한테 빌려주거나 양도 불가능. 운영자만 초기화/조정 가능. "빌려달라"는 부탁엔 자기는 못 도와준다고 가볍게 거절하세요.
+- 제니/룰렛 관련 질문은 와일즈 영역으로 취급해서 정확히 답하세요."""
 
 CHAT_USER_TEMPLATE = """[질문자]
 {sender}
@@ -271,6 +285,30 @@ def _detect_attribute(query: str) -> tuple:
     return ()
 
 
+def _format_artian(query: str) -> str:
+    if '아티어' not in query.replace(' ', ''):
+        return ''
+    a = db.artian
+    lines = [f'[{a["name_kr"]}]']
+    lines.append(a['description'])
+    lines.append('')
+    rules = a['rules']
+    bo = rules['병_종류']
+    lines.append(f'  강속성병: {bo["강속성병"]["조건"]} → {bo["강속성병"]["효과"]} ({bo["강속성병"]["비고"]})')
+    lines.append(f'  강격병: {bo["강격병"]["조건"]} → {bo["강격병"]["효과"]}')
+    lines.append(f'  복원 보너스: {rules["복원_보너스"]["값"]} ({rules["복원_보너스"]["팁"]})')
+    sv = rules['속성_vs_상태이상']
+    lines.append(f'  속성 5종: {", ".join(sv["속성_5종"])}')
+    lines.append(f'  상태이상 4종: {", ".join(sv["상태이상_4종"])}')
+    lines.append(f'  → {sv["핵심"]}')
+    if a.get('notes'):
+        lines.append('')
+        lines.append('  메모:')
+        for n in a['notes']:
+            lines.append(f'  - {n}')
+    return '\n'.join(lines)
+
+
 def _format_attribute_weapons(attr: tuple, weapon_kind: str) -> str:
     if not attr:
         return ''
@@ -341,6 +379,10 @@ def _retrieve(query: str) -> list[str]:
         attr_text = _format_attribute_weapons(attr, weapon_kind)
         if attr_text:
             parts.append(attr_text)
+
+    artian_text = _format_artian(query)
+    if artian_text:
+        parts.append(artian_text)
 
     skill_name = alias.find_skill(query) or alias.find_skill_partial(query)
     if skill_name:

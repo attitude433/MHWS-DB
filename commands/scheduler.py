@@ -161,17 +161,7 @@ def start_scheduler(bot, room_id: int):
                         )
                     last_sent[key] = now.date()
 
-            babble_key = (now.date(), now.hour)
-            if (
-                10 <= now.hour <= 22
-                and now.minute == 30
-                and last_babble != babble_key
-            ):
-                last_babble = babble_key
-                if random.random() < 0.15:
-                    msg = _pick_babble()
-                    bot.api.reply(room_id, msg)
-                    print(f'[scheduler] babble: {msg}', flush=True)
+            # 매시 30분 잡담 — 비활성화 (사용자 요청). 다시 켜려면 위 블록 복원.
         except Exception as ex:
             print(f'[scheduler] error: {ex}', flush=True)
         time.sleep(30)

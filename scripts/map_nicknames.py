@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TXT_PATH = Path(r'C:\Users\goodb\Downloads\KakaoTalk_20260528_2152_16_380_group.txt')
+TXT_PATH = Path(r'C:\Users\goodb\OneDrive\바탕 화면\KakaoTalk_20260601_0859_00_675_group.txt')
 DUMP_PATH = ROOT / 'chat_logs_decrypted.json'
 OUT_PATH = ROOT / 'nicknames.json'
 
@@ -119,12 +119,29 @@ def main():
     print(f'  → 잠정 닉 매핑: {len(nick_stats)}')
     print(f'  → 최종 user_id 매핑: {len(uid_to_nick)}')
 
-    # 정리
-    final = {str(uid): nick for uid, (nick, _) in uid_to_nick.items()}
+    # 새 매핑
+    new_map = {str(uid): nick for uid, (nick, _) in uid_to_nick.items()}
+
+    # 기존 nicknames.json 병합 — 새 매칭이 더 많이 잡힌 쪽 우선
+    existing = {}
+    if OUT_PATH.exists():
+        with open(OUT_PATH, encoding='utf-8') as f:
+            existing = json.load(f)
+    merged = dict(existing)
+    added = 0
+    updated = 0
+    for uid, nick in new_map.items():
+        if uid not in merged:
+            merged[uid] = nick
+            added += 1
+        elif merged[uid] != nick:
+            merged[uid] = nick
+            updated += 1
 
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
-        json.dump(final, f, ensure_ascii=False, indent=2)
-    print(f'\n저장: {OUT_PATH}  ({len(final)} 엔트리)')
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+    print(f'\n기존: {len(existing)} → 병합: {len(merged)} (신규 {added}, 갱신 {updated})')
+    print(f'저장: {OUT_PATH}')
 
     # 상위 10개 샘플
     print('\n--- 매칭 수 상위 20 ---')
