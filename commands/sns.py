@@ -32,22 +32,30 @@ def _save_state(state: dict):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
+_YT_NS = {
+    'a': 'http://www.w3.org/2005/Atom',
+    'yt': 'http://www.youtube.com/xml/schemas/2015',
+}
+
+
 def _fetch_youtube(api_key: str, channel_id: str) -> list[dict]:
-    url = (
-        f'https://www.googleapis.com/youtube/v3/search'
-        f'?key={api_key}&channelId={channel_id}'
-        f'&part=snippet&order=date&maxResults=10&type=video'
-    )
+    # RSS 피드 사용 (quota 무제한, api_key 불필요 — 인자는 호환 위해 유지)
+    url = f'https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}'
     try:
-        with urllib.request.urlopen(url, timeout=15) as r:
-            data = json.load(r)
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            xml_data = r.read()
+        root = ET.fromstring(xml_data)
         videos = []
-        for it in data.get('items', []):
-            vid = it['id']['videoId']
-            sn = it['snippet']
+        for entry in root.findall('a:entry', _YT_NS):
+            vid_el = entry.find('yt:videoId', _YT_NS)
+            title_el = entry.find('a:title', _YT_NS)
+            if vid_el is None or not vid_el.text:
+                continue
+            vid = vid_el.text.strip()
             videos.append({
                 'id': vid,
-                'title': sn['title'],
+                'title': (title_el.text if title_el is not None else '') or '',
                 'link': f'https://www.youtube.com/watch?v={vid}',
             })
         return videos
