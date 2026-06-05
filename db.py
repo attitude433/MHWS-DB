@@ -31,6 +31,7 @@ meal_ingredients = _load('mapping/meal_ingredients.json')
 meal_village = _load('mapping/meal_village.json')
 meal_random_skills = _load('mapping/meal_random_skills.json')
 meal_notes = _load('mapping/meal_notes.json')
+dlc_news = _load('data/world/dlc_news.json')
 
 monster_index = {m['name_kr']: m for m in monsters}
 skill_index = {s['name_kr']: s for s in skills}

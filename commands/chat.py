@@ -490,6 +490,11 @@ TOOLS = [
         'description': '현재 Steam에서 할인 중인 몬스터헌터 시리즈 게임(와일즈/라이즈/선브레이크/월드/아이스본/스토리즈1·2·3) 정보를 가져옴. "할인", "세일", "스팀 할인", "지금 싼 게임", "할인하는 거 있어" 같은 질문에 사용.',
         'input_schema': {'type': 'object', 'properties': {}},
     },
+    {
+        'name': 'get_dlc_news',
+        'description': '몬스터헌터 와일즈 DLC(어센던스/확장팩/대형 업데이트)의 발표·출시 소식을 가져옴. "DLC", "어센던스", "확장팩", "신규 콘텐츠", "DLC 언제 나와", "업데이트 소식" 같은 질문에 사용.',
+        'input_schema': {'type': 'object', 'properties': {}},
+    },
 ]
 
 
@@ -558,6 +563,24 @@ def _exec_tool(name: str, args: dict) -> str:
         if name == 'get_steam_sales':
             from commands import steam_sale
             return steam_sale.get_current_sales_summary()
+
+        if name == 'get_dlc_news':
+            d = db.dlc_news
+            lines = [
+                f"[{d.get('title', 'DLC')}]",
+                f"종류: {d.get('type', '')}",
+                f"상태: {d.get('status', '')}",
+                f"출시: {d.get('release', '')}",
+                d.get('summary', ''),
+            ]
+            news = d.get('news') or []
+            if news:
+                lines.append('')
+                lines.append('소식:')
+                for n in news:
+                    date = f"{n.get('date')} " if n.get('date') else ''
+                    lines.append(f"- {date}{n.get('label', '')} ({n.get('source', '')}) {n.get('url', '')}")
+            return '\n'.join(lines)
 
         return f'(알 수 없는 도구: {name})'
     except Exception as ex:

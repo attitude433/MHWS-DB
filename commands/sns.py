@@ -145,16 +145,19 @@ def _check_new(api_key: str, state: dict) -> list[str]:
 
 def start_poller(bot, room_id: int, api_key: str):
     state = _load_state()
-    _check_new(api_key, state)
-    _save_state(state)
     print(f'[sns] poller started, room_id={room_id}', flush=True)
+    # 최초 실행(state 비어있음)만 첫 폴링 발송 스킵 (옛글 폭주 방지).
+    # 재시작(state 존재)은 첫 폴링부터 발송 → last_seen 이후 신규 누락 방지.
+    first = not state
     while True:
-        time.sleep(POLL_INTERVAL)
         try:
             messages = _check_new(api_key, state)
             _save_state(state)
-            for msg in messages:
-                bot.api.reply(room_id, msg)
-                print(f'[sns] sent: {msg}', flush=True)
+            if not first:
+                for msg in messages:
+                    bot.api.reply(room_id, msg)
+                    print(f'[sns] sent: {msg}', flush=True)
+            first = False
         except Exception as ex:
             print(f'[sns] poll error: {ex}', flush=True)
+        time.sleep(POLL_INTERVAL)
