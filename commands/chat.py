@@ -485,6 +485,11 @@ TOOLS = [
         'description': '시리즈 스킬 또는 그룹 스킬 1개 발동이 보장된 풀세트 와일즈 빌드(무기+방어구5+호석+장식주)를 무작위로 1세트 생성. "랜덤 빌드", "장비 추천 아무거나", "세팅 짜줘", "랜덤 세팅" 같은 요청에 사용.',
         'input_schema': {'type': 'object', 'properties': {}},
     },
+    {
+        'name': 'get_steam_sales',
+        'description': '현재 Steam에서 할인 중인 몬스터헌터 시리즈 게임(와일즈/라이즈/선브레이크/월드/아이스본/스토리즈1·2·3) 정보를 가져옴. "할인", "세일", "스팀 할인", "지금 싼 게임", "할인하는 거 있어" 같은 질문에 사용.',
+        'input_schema': {'type': 'object', 'properties': {}},
+    },
 ]
 
 
@@ -549,6 +554,10 @@ def _exec_tool(name: str, args: dict) -> str:
 
         if name == 'get_random_build':
             return _random_build.random_build_text()
+
+        if name == 'get_steam_sales':
+            from commands import steam_sale
+            return steam_sale.get_current_sales_summary()
 
         return f'(알 수 없는 도구: {name})'
     except Exception as ex:

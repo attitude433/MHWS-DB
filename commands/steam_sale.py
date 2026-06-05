@@ -4,6 +4,7 @@ import urllib.request
 from pathlib import Path
 
 STATE_PATH = Path(__file__).parent.parent / 'steam_sale_state.json'
+CURRENT_PATH = Path(__file__).parent.parent / 'steam_sales_current.json'  # 다이애나 도구용 현재 할인 스냅샷
 
 WATCH_APPS = [
     {'appid': 2246340, 'name': '와일즈',     'group': '와일즈'},
@@ -49,6 +50,36 @@ def _save_state(state: dict):
         json.dumps(state, ensure_ascii=False, indent=2),
         encoding='utf-8',
     )
+
+
+def _save_current(sales: dict):
+    try:
+        CURRENT_PATH.write_text(
+            json.dumps(sales, ensure_ascii=False, indent=2),
+            encoding='utf-8',
+        )
+    except Exception:
+        pass
+
+
+def get_current_sales_summary() -> str:
+    """다이애나 도구용: 현재 할인 중인 MH 게임 요약 (마지막 폴링 스냅샷 기반)."""
+    if not CURRENT_PATH.exists():
+        return '아직 할인 정보가 준비되지 않았어요. (다음 폴링 후 확인 가능)'
+    try:
+        sales = json.loads(CURRENT_PATH.read_text(encoding='utf-8'))
+    except Exception:
+        return '할인 정보를 읽지 못했어요.'
+    if not sales:
+        return '지금은 할인 중인 몬스터헌터 시리즈 게임이 없어요.'
+    lines = ['[현재 Steam 할인 중인 MH 시리즈]']
+    for appid, info in sorted(sales.items(), key=lambda x: -x[1].get('original_raw', 0)):
+        lines.append(
+            f"{info.get('name','?')} {info.get('discount',0)}% 할인 "
+            f"({info.get('original','')} → {info.get('final','')}) "
+            f"https://store.steampowered.com/app/{appid}/"
+        )
+    return '\n'.join(lines)
 
 
 def _current_sales() -> dict:
@@ -136,11 +167,13 @@ def _format_end(labels: list[str]) -> str:
 
 def start_poller(bot, room_id: int):
     print(f'[steam_sale] poller started, room_id={room_id}', flush=True)
-    first_run = not STATE_PATH.exists()
+    # 봇 시작(재시작) 직후 첫 폴링은 알림 스킵, state 동기화만 → 재시작 시 진행 중 할인 중복 알림 방지
+    first_run = True
     while True:
         try:
             state = _load_state()
             current = _current_sales()
+            _save_current(current)  # 다이애나 도구용 스냅샷 (알림 로직과 무관)
             newly = {appid: info for appid, info in current.items() if int(state.get(appid, 0)) == 0}
             ended_labels = _ended_group_labels(state, current)
             if first_run:
