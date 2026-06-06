@@ -7,17 +7,32 @@ from pathlib import Path
 STATE_FILE = Path(__file__).parent.parent / 'sns_state.json'
 
 YOUTUBE_CHANNELS = [
-    {'id': 'UCVS0xBpOtXBAl12rdG67-OQ', 'label': '몬헌 공식'},
-    {'id': 'UC02q4A9aCXUARMI51rFcl5A', 'label': '캡콤 아시아'},
+    {'id': 'UCVS0xBpOtXBAl12rdG67-OQ', 'label': '몬헌 공식', 'mh_only': False},
+    {'id': 'UC02q4A9aCXUARMI51rFcl5A', 'label': '캡콤 아시아', 'mh_only': True},
 ]
 
 X_ACCOUNTS = [
-    {'handle': 'Capcom_Asia_KR', 'label': '캡콤 아시아'},
-    {'handle': 'monsterhunter', 'label': '몬스터헌터 공식'},
+    {'handle': 'Capcom_Asia_KR', 'label': '캡콤 아시아', 'mh_only': True},
+    {'handle': 'monsterhunter', 'label': '몬스터헌터 공식', 'mh_only': False},
 ]
 RSSHUB_BASE = 'http://127.0.0.1:1200/twitter/user'
 
 POLL_INTERVAL = 3600
+
+# 캡콤아시아 채널처럼 캡콤 전체 게임 다루는 곳에서 MH 글만 거르는 키워드.
+# 너무 흔한 단어(월드/world/rise/stories)는 단독으로 두면 스파6 "월드 투어",
+# "Year 4 rise" 등에서 오탐 → 명확한 MH 시리즈 명칭만 사용.
+MH_KEYWORDS = (
+    '몬스터헌터', '몬헌', '와일즈', '선브레이크', '아이스본', '어센던스',
+    'monster hunter', 'monsterhunter', 'mhwilds', 'wilds',
+    'sunbreak', 'iceborne', 'ascendance',
+    'mhrise', 'mhworld', 'mhstories', 'mhw',
+)
+
+
+def _is_mh(text: str) -> bool:
+    t = (text or '').lower()
+    return any(kw.lower() in t for kw in MH_KEYWORDS)
 
 
 def _load_state() -> dict:
@@ -76,7 +91,9 @@ def _fetch_x(handle: str) -> list[dict]:
             if not link:
                 continue
             tweet_id = link.rstrip('/').split('/')[-1]
-            posts.append({'id': tweet_id, 'link': link})
+            title = (item.findtext('title') or '').strip()
+            desc = (item.findtext('description') or '').strip()
+            posts.append({'id': tweet_id, 'link': link, 'title': title, 'desc': desc})
         return posts
     except Exception as ex:
         print(f'[sns] x fetch error ({handle}): {ex}', flush=True)
@@ -112,6 +129,9 @@ def _check_new(api_key: str, state: dict) -> list[str]:
         if new_videos:
             state[key] = videos[0]['id']
             for v in reversed(new_videos):
+                if ch.get('mh_only') and not _is_mh(v.get('title', '')):
+                    print(f'[sns] yt {cid}: skip non-MH "{v.get("title","")[:40]}"', flush=True)
+                    continue
                 messages.append(v['link'])
 
     for acc in X_ACCOUNTS:
@@ -138,6 +158,11 @@ def _check_new(api_key: str, state: dict) -> list[str]:
         if new_posts:
             state[key] = posts[0]['id']
             for p in reversed(new_posts):
+                if acc.get('mh_only'):
+                    blob = f"{p.get('title','')} {p.get('desc','')}"
+                    if not _is_mh(blob):
+                        print(f'[sns] x {handle}: skip non-MH "{p.get("title","")[:40]}"', flush=True)
+                        continue
                 messages.append(p['link'])
 
     return messages

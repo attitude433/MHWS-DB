@@ -174,6 +174,7 @@
 - SNS YouTube 폴러 RSS 전환: `search` API (quota 100/call → 일 10000 초과로 403/429 빈발 → state 동기화 끊겨 옛 영상 재전송) → `youtube.com/feeds/videos.xml?channel_id=` RSS (quota 0, api_key 불필요). 재전송 원인 제거. `_fetch_youtube` 만 교체, 시그니처·state 로직 유지.
 - 다이애나 Steam 할인 도구 추가 (11종 → 12종): Steam 폴러가 매 폴링마다 현재 할인 스냅샷을 `steam_sales_current.json` 에 저장 (알림 state 로직과 분리), `get_steam_sales` 도구가 즉시 읽어 답변. "할인/세일/지금 싼 게임" 질문 대응. 실시간 API 대신 12h 스냅샷 (할인은 며칠~몇 주 지속이라 충분).
 - SNS 폴러 재시작 시 신규 누락 방지: 기존 `start_poller` 가 봇 켜질 때마다 시작 `_check_new` 로 새 글을 발송 없이 흡수 → 재시작 잦으면 그 사이 글 영구 누락. `first = not state` 로 변경 (최초 실행만 첫 폴링 발송 스킵, 재시작은 첫 폴링부터 발송). 죽은 state 키(`UCW7h`/`bsky`) 정리.
+- SNS 폴러 MH 키워드 필터: 캡콤아시아 채널(YouTube + X)은 캡콤 전체 게임을 다뤄 바하·스파6·귀무자 등 비-몬헌 글이 섞임. `YOUTUBE_CHANNELS`/`X_ACCOUNTS` 각 항목에 `mh_only` 플래그, 캡콤아시아만 `True`. `MH_KEYWORDS` 매칭(몬스터헌터/몬헌/와일즈/라이즈/선브레이크/월드/아이스본/스토리즈/어센던스 + 영문) 안 되는 글은 발송 스킵. state 는 그대로 최신으로 갱신 (필터된 글이 다음 글 발송을 방해 안 함). 몬헌 공식 채널 2개는 필터 없이 그대로.
 - DLC 소식 DB + 다이애나 도구 (12종 → 13종): `data/world/dlc_news.json` 에 와일즈 어센던스 DLC 발표·소식 저장, `get_dlc_news` 도구로 "DLC/어센던스/확장팩 언제" 질문 대응. 소식 추가는 `news` 배열에 항목 한 줄씩.
 
 ## 미해결 작업
