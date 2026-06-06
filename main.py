@@ -151,11 +151,14 @@ def on_message(ctx):
                     _pending_new_user_id = uid
                     try:
                         raw_nick = ctx.sender.name or '(없음)'
+                        # 채팅 내용 미리보기 (200자 자름)
+                        preview = msg if len(msg) <= 200 else msg[:200] + '…'
                         bot.api.reply(
                             int(ALERT_ROOM_ID),
                             f'[봇] 매핑 안 된 사용자 채팅 감지\n'
                             f'user_id: {uid}\n'
                             f'raw nick: {raw_nick}\n'
+                            f'메시지: {preview}\n'
                             f'\n신규 답장: 닉만 보내면 자동 매핑\n'
                             f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
                         )
