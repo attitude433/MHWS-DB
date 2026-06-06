@@ -573,6 +573,8 @@ def _exec_tool(name: str, args: dict) -> str:
                 f"출시: {d.get('release', '')}",
                 d.get('summary', ''),
             ]
+            if d.get('official_url'):
+                lines.append(f"공식 사이트: {d['official_url']}")
             news = d.get('news') or []
             if news:
                 lines.append('')
