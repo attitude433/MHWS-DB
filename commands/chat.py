@@ -578,10 +578,17 @@ def _exec_tool(name: str, args: dict) -> str:
             news = d.get('news') or []
             if news:
                 lines.append('')
-                lines.append('소식:')
-                for n in news:
+                RECENT = 5
+                head = news[:RECENT]  # 위가 최신 컨벤션
+                if len(news) > RECENT:
+                    lines.append(f'소식 (총 {len(news)}건 중 최신 {RECENT}):')
+                else:
+                    lines.append('소식:')
+                for n in head:
                     date = f"{n.get('date')} " if n.get('date') else ''
                     lines.append(f"- {date}{n.get('label', '')} ({n.get('source', '')}) {n.get('url', '')}")
+                if len(news) > RECENT:
+                    lines.append(f'(이전 {len(news) - RECENT}건은 생략)')
             return '\n'.join(lines)
 
         return f'(알 수 없는 도구: {name})'
