@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TXT_PATH = Path(r'C:\Users\goodb\OneDrive\바탕 화면\KakaoTalk_20260601_0859_00_675_group.txt')
+TXT_PATH = Path(r'C:\Users\goodb\Downloads\KakaoTalk_20260606_1750_08_666_group.txt')
 DUMP_PATH = ROOT / 'chat_logs_decrypted.json'
 OUT_PATH = ROOT / 'nicknames.json'
 
