@@ -272,7 +272,10 @@ def on_message(ctx):
     if msg.startswith('.다이애나 '):
         query = msg[6:].strip()
         if query:
-            sender_nick = ctx.sender.name if ctx.sender else ''
+            # raw 토큰 대신 매핑된 평문 닉 우선 (없으면 raw, 그것도 없으면 빈값)
+            uid = ctx.sender.id if ctx.sender else 0
+            mapped = _nicknames.get(uid) if uid else None
+            sender_nick = mapped or (ctx.sender.name if ctx.sender else '')
             mentioned = members.get_mentioned_in(query)
             threading.Thread(
                 target=lambda: ctx.reply(chat.ask_chat(query, sender_nick, mentioned)),
