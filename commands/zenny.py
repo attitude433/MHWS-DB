@@ -365,7 +365,7 @@ def leaderboard(viewer_user_id: int = 0) -> str:
                 body += f"(나) [{v['rank']}위] {v['nick']} — {_signed(v['score'])}\n"
         body += '\n'
 
-    # ━━ 누적 섹션 (아래, 전체보기로 접힘) ━━
+    # ━━ 누적 섹션 (아래, 전체 표시 — 카톡 자동 접힘 발동용 길이 확보) ━━
     cumulative_ranks = []
     prev_zenny = None
     rank_cursor = 0
@@ -374,19 +374,12 @@ def leaderboard(viewer_user_id: int = 0) -> str:
             rank_cursor = i
             prev_zenny = z
         cumulative_ranks.append((rank_cursor, uid, nick, z))
-    top10_cum = [r for r in cumulative_ranks if r[0] <= 10]
 
-    body += '━━━━━━━━━━━━\n📊 누적 순위 (전체 기간, 상위 10)\n\n'
-    for rk, uid, nick, z in top10_cum:
+    body += f'━━━━━━━━━━━━\n📊 누적 순위 (전체 기간, {len(cumulative_ranks)}명)\n\n'
+    for rk, uid, nick, z in cumulative_ranks:
         medal = MEDALS.get(rk, '')
         head = f'{medal} [{rk}위]' if medal else f'[{rk}위]'
         body += f'{head} {_safe_nick(nick, uid)} — {z:,}제니\n'
-
-    if viewer_user_id:
-        viewer_rank = next(((rk, uid, nick, z) for rk, uid, nick, z in cumulative_ranks if uid == viewer_user_id), None)
-        if viewer_rank and viewer_rank[0] > 10:
-            rk, uid, nick, z = viewer_rank
-            body += f'(나) [{rk}위] {_safe_nick(nick, uid)} — {z:,}제니\n'
 
     body += (
         '\n━━━━━━━━━━━━\n'
