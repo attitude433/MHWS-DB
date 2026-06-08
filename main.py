@@ -8,7 +8,7 @@ from iris import Bot
 import alias
 import db
 import members
-from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny, rps
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny, rps, web
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
@@ -467,5 +467,8 @@ if sns_room_id:
         args=(bot, int(sns_room_id)),
         daemon=True,
     ).start()
+
+# 다이애나 도메인용 웹 서버 (제니 분포도)
+threading.Thread(target=web.start_server, daemon=True).start()
 
 bot.run()
