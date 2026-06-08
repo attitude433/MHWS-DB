@@ -57,6 +57,8 @@ HELP_TEXT = """[명령어 목록]
 .가위 / .바위 / .보 [금액]
 .제니
 .제니순위
+.제니그래프
+.제니분포
 
 ━━━━━━━━━━━━
 💬 잡담·기타
@@ -71,6 +73,12 @@ HELP_TEXT = """[명령어 목록]
 @bot.on_event('message')
 def on_message(ctx):
     msg = ctx.message.msg.strip()
+
+    # 띄어쓰기 변형 정규화: ".제니 그래프" / ".제니 분포" → 붙임 형태로 처리
+    if msg.startswith('.제니 그래프'):
+        msg = '.제니그래프' + msg[len('.제니 그래프'):]
+    elif msg.startswith('.제니 분포'):
+        msg = '.제니분포' + msg[len('.제니 분포'):]
 
     # 1:1 알림방에서 운영자가 답장한 텍스트 → 가장 최근 pending 신규 user 와 매핑
     global _pending_new_user_id
@@ -338,6 +346,10 @@ def on_message(ctx):
     if msg == '.제니순위':
         viewer = ctx.sender.id if ctx.sender else 0
         ctx.reply(zenny.leaderboard(viewer))
+        return
+
+    if msg == '.제니분포':
+        ctx.reply('🎰 제니 분포 대시보드 (실시간)\nhttp://d-i-0336-7.p-e.kr')
         return
 
     if msg == '.제니그래프' or msg.startswith('.제니그래프 '):
