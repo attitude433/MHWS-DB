@@ -4,8 +4,10 @@
 봇 프로세스 백그라운드 스레드로 기동, 0.0.0.0:80 listen.
 """
 from __future__ import annotations
+import json as _json
 import os
 import statistics
+import urllib.request
 from typing import Optional
 
 from flask import Flask, jsonify, request
@@ -14,6 +16,35 @@ import logging
 import members
 import nicknames as _nicknames
 from commands.zenny import EXCLUDED_USER_IDS
+
+IRIS_QUERY_URL = 'http://127.0.0.1:3000/query'
+SNS_ROOM_ID = os.environ.get('SNS_ROOM_ID', '')
+
+
+def _get_active_members() -> Optional[set]:
+    """Iris /query 로 카톡방 현재 활성 멤버 user_id 셋 반환. 실패 시 None."""
+    room_id = os.environ.get('SNS_ROOM_ID', SNS_ROOM_ID)
+    if not room_id:
+        return None
+    try:
+        body = _json.dumps({
+            'query': f'SELECT active_member_ids FROM chat_rooms WHERE id={int(room_id)}'
+        }).encode()
+        req = urllib.request.Request(
+            IRIS_QUERY_URL, data=body,
+            headers={'Content-Type': 'application/json'},
+        )
+        with urllib.request.urlopen(req, timeout=5) as r:
+            resp = _json.load(r)
+        rows = resp.get('data', [])
+        if not rows:
+            return None
+        ids_str = rows[0].get('active_member_ids', '[]') or '[]'
+        ids = _json.loads(ids_str)
+        return {int(x) for x in ids}
+    except Exception as ex:
+        print(f'[web] active members fetch error: {ex}', flush=True)
+        return None
 
 app = Flask(__name__)
 logging.getLogger('werkzeug').setLevel(logging.WARNING)
@@ -89,7 +120,9 @@ def _collect() -> dict:
         history_raw = c.execute(
             'SELECT user_id, date, zenny FROM zenny_history ORDER BY user_id, date'
         ).fetchall()
-    # 운영자 제외 + 닉네임 매핑된 멤버만 포함 (raw 토큰 노출 방지)
+    # 카톡방 현재 활성 멤버 가져옴 (Iris API). 실패 시 None → 필터 비활성 (안전 fallback)
+    active_set = _get_active_members()
+    # 운영자 제외 + 닉네임 매핑된 멤버 + 카톡방 현재 멤버만
     rows = []
     nick_map = {}
     for uid, nick, z in rows_raw:
@@ -98,6 +131,8 @@ def _collect() -> dict:
         mapped = _nicknames.get(uid)
         if not mapped:
             continue
+        if active_set is not None and uid not in active_set:
+            continue  # 카톡방에서 나간 멤버 제외
         rows.append((uid, mapped, z))
         nick_map[uid] = mapped
     if not rows:
