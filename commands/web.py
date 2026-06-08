@@ -527,18 +527,22 @@ fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
     }
   });
 
-  // 랭킹 리스트
+  // 랭킹 리스트 — 닉 클릭 시 멤버 페이지로
+  const __KEY__ = new URLSearchParams(location.search).get('key') || '';
   document.getElementById('rankList').innerHTML = data.map((r, i) => {
     let rankClass = '', icon = `${i + 1}`;
     if (i === 0) { rankClass = 'gold'; icon = '🥇'; }
     else if (i === 1) { rankClass = 'silver'; icon = '🥈'; }
     else if (i === 2) { rankClass = 'bronze'; icon = '🥉'; }
+    const href = `/u/${encodeURIComponent(r.nick)}?key=${encodeURIComponent(__KEY__)}`;
     return `
-      <div class="ranking-row">
-        <div class="rank ${rankClass}">${icon}</div>
-        <div class="name">${r.nick}</div>
-        <div class="zenny">${r.zenny.toLocaleString()} z</div>
-      </div>`;
+      <a href="${href}" style="text-decoration:none;color:inherit;">
+        <div class="ranking-row">
+          <div class="rank ${rankClass}">${icon}</div>
+          <div class="name">${r.nick}</div>
+          <div class="zenny">${r.zenny.toLocaleString()} z</div>
+        </div>
+      </a>`;
   }).join('');
 });
 </script>
@@ -561,6 +565,526 @@ def api_zenny():
     if not _key_ok():
         return jsonify({'error': 'unauthorized'}), 403
     return jsonify(_collect())
+
+
+def _collect_user(nick_query: str) -> Optional[dict]:
+    """특정 닉네임의 멤버 프로필 데이터. 없으면 None."""
+    import re as _re
+    from collections import Counter, defaultdict
+
+    full = _collect()
+    if not full['ranking']:
+        return None
+
+    rank_idx = None
+    target_nick = None
+    for i, r in enumerate(full['ranking']):
+        if r['nick'] == nick_query:
+            rank_idx = i
+            target_nick = r['nick']
+            break
+    if rank_idx is None:
+        partials = [(i, r['nick']) for i, r in enumerate(full['ranking']) if nick_query in r['nick']]
+        if len(partials) == 1:
+            rank_idx, target_nick = partials[0]
+
+    if rank_idx is None:
+        return None
+
+    target_uid = None
+    for uid, n in _nicknames.all_mappings().items():
+        if n == target_nick:
+            target_uid = int(uid)
+            break
+    if target_uid is None:
+        return None
+
+    balance = full['ranking'][rank_idx]['zenny']
+
+    with members._conn() as c:
+        events = c.execute(
+            'SELECT ts, kind, bet, payout, delta, outcome, balance_after FROM zenny_events '
+            'WHERE user_id=? ORDER BY ts',
+            (target_uid,),
+        ).fetchall()
+        history = c.execute(
+            'SELECT date, zenny FROM zenny_history WHERE user_id=? ORDER BY date',
+            (target_uid,),
+        ).fetchall()
+
+    attend_count = sum(1 for e in events if e[1] == 'attend')
+    roulette_count = sum(1 for e in events if e[1] == 'roulette')
+    rps_count = sum(1 for e in events if e[1] == 'rps')
+    jackpot_count = sum(1 for e in events if e[5] == 'jackpot')
+    reset_count = sum(1 for e in events if e[5] == 'reset')
+
+    roul_outcome = Counter(e[5] for e in events if e[1] == 'roulette')
+
+    rps_user_hand = Counter()
+    rps_bot_hand = Counter()
+    rps_result = Counter()
+    RPS_OUT_RE = _re.compile(r'^rps_(win|draw|lose)_(가위|바위|보)_vs_(가위|바위|보)$')
+    for e in events:
+        if e[1] != 'rps':
+            continue
+        m = RPS_OUT_RE.match(e[5] or '')
+        if m:
+            rps_result[m.group(1)] += 1
+            rps_user_hand[m.group(2)] += 1
+            rps_bot_hand[m.group(3)] += 1
+
+    valid_delta = [e for e in events if e[4] is not None]
+    if valid_delta:
+        max_gain_e = max(valid_delta, key=lambda e: e[4])
+        max_loss_e = min(valid_delta, key=lambda e: e[4])
+    else:
+        max_gain_e = max_loss_e = None
+
+    def _ev_dict(e):
+        if not e:
+            return {'delta': 0, 'kind': '', 'outcome': '', 'ts': ''}
+        return {'delta': e[4] or 0, 'kind': e[1], 'outcome': e[5] or '', 'ts': e[0] or ''}
+
+    cur_win = cur_lose = max_win = max_lose = 0
+    for e in events:
+        if e[1] != 'roulette' or e[4] is None:
+            continue
+        if e[4] > 0:
+            cur_win += 1
+            cur_lose = 0
+            if cur_win > max_win:
+                max_win = cur_win
+        elif e[4] < 0:
+            cur_lose += 1
+            cur_win = 0
+            if cur_lose > max_lose:
+                max_lose = cur_lose
+        else:
+            cur_win = cur_lose = 0
+
+    bets = [e[2] for e in events if e[2] is not None and e[1] in ('roulette', 'rps')]
+    payouts = [e[3] for e in events if e[3] is not None]
+    avg_bet = round(sum(bets) / len(bets)) if bets else 0
+    max_bet = max(bets) if bets else 0
+    total_bet = sum(bets)
+    total_payout = sum(payouts)
+
+    daily = defaultdict(int)
+    for e in events:
+        if e[0] and e[4] is not None:
+            day = e[0][:10]
+            daily[day] += e[4]
+    daily_sorted = sorted(daily.items())[-60:]
+
+    history_series = [{'date': d, 'zenny': z} for d, z in history][-60:]
+
+    return {
+        'nick': target_nick,
+        'balance': balance,
+        'rank': rank_idx + 1,
+        'total_members': full['total_members'],
+        'mean': full['mean'],
+        'median': full['median'],
+        'attend_count': attend_count,
+        'roulette_count': roulette_count,
+        'rps_count': rps_count,
+        'jackpot_count': jackpot_count,
+        'reset_count': reset_count,
+        'roul_outcome': dict(roul_outcome),
+        'rps_user_hand': dict(rps_user_hand),
+        'rps_bot_hand': dict(rps_bot_hand),
+        'rps_result': dict(rps_result),
+        'max_gain': _ev_dict(max_gain_e),
+        'max_loss': _ev_dict(max_loss_e),
+        'max_win_streak': max_win,
+        'max_lose_streak': max_lose,
+        'avg_bet': avg_bet,
+        'max_bet': max_bet,
+        'total_bet': total_bet,
+        'total_payout': total_payout,
+        'history': history_series,
+        'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
+    }
+
+
+USER_PAGE = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>__NICK__ — 프로필</title>
+<meta property="og:title" content="__NICK__ — 멤버 프로필">
+<meta property="og:description" content="몬헌 와일즈 카톡봇 멤버 통계">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="ko_KR">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI','Apple SD Gothic Neo',sans-serif;
+         background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+         color:#fff; min-height:100vh; padding:30px; }
+  .container { max-width:1200px; margin:0 auto; }
+  .back { display:inline-block; color:#aaa; text-decoration:none; font-size:13px;
+          margin-bottom:14px; padding:6px 12px; border:1px solid rgba(255,255,255,0.1);
+          border-radius:6px; transition:all 0.2s; }
+  .back:hover { background:rgba(255,255,255,0.05); color:#ffd700; }
+  .header { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px);
+            border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:24px;
+            margin-bottom:20px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+  .header h1 { color:#ffd700; font-size:24px; text-shadow:0 0 16px rgba(255,215,0,0.4); }
+  .header .sub { color:#aaa; font-size:13px; margin-top:6px; }
+  .header .balance { margin-left:auto; text-align:right; }
+  .header .balance .v { color:#00d4ff; font-size:28px; font-weight:bold; }
+  .header .balance .s { color:#888; font-size:12px; }
+  .summary { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-bottom:20px; }
+  .stat-card { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px);
+               border:1px solid rgba(255,255,255,0.1); border-radius:10px;
+               padding:14px; text-align:center; }
+  .stat-card .label { color:#aaa; font-size:11px; margin-bottom:4px; }
+  .stat-card .value { color:#ffd700; font-size:20px; font-weight:bold; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px; }
+  .card { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px);
+          border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:20px; }
+  .card.full { grid-column:1/-1; }
+  .card h3 { color:#ffd700; font-size:15px; margin-bottom:14px; }
+  .chart-wrap { position:relative; height:280px; }
+  .events { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .ev { background:rgba(255,255,255,0.03); padding:12px; border-radius:8px; }
+  .ev .l { color:#aaa; font-size:11px; }
+  .ev .v { font-size:18px; font-weight:bold; margin-top:4px; }
+  .ev .s { color:#666; font-size:11px; margin-top:2px; }
+  .green { color:#44dd88; }
+  .red { color:#ff6688; }
+  .gold { color:#ffd700; }
+  ::-webkit-scrollbar { width:6px; }
+  ::-webkit-scrollbar-track { background:rgba(255,255,255,0.05); }
+  ::-webkit-scrollbar-thumb { background:#ffd700; border-radius:3px; }
+  @media(max-width:768px){ .summary{grid-template-columns:repeat(2,1fr);} .grid{grid-template-columns:1fr;} .events{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="/?key=__KEY__">← 분포 페이지로</a>
+  <div class="header">
+    <div>
+      <h1>__NICK__</h1>
+      <div class="sub" id="rank-sub">-</div>
+    </div>
+    <div class="balance">
+      <div class="v" id="balance">-</div>
+      <div class="s">현재 잔고</div>
+    </div>
+  </div>
+  <div class="summary" id="summary"></div>
+  <div class="grid">
+    <div class="card full">
+      <h3>📈 잔고 추이 (최근 60일)</h3>
+      <div class="chart-wrap"><canvas id="historyChart"></canvas></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>🎰 룰렛 결과 분포</h3><div class="chart-wrap"><canvas id="roulChart"></canvas></div></div>
+    <div class="card"><h3>✌️ 가위바위보 손 패턴</h3><div class="chart-wrap"><canvas id="rpsChart"></canvas></div></div>
+  </div>
+  <div class="grid">
+    <div class="card full">
+      <h3>🔥 큰 사건</h3>
+      <div class="events" id="big-events"></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card full">
+      <h3>💰 베팅 패턴</h3>
+      <div class="events" id="bet-pattern"></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card full">
+      <h3>📊 일별 손익 (양수=초록, 음수=빨강)</h3>
+      <div class="chart-wrap"><canvas id="dailyChart"></canvas></div>
+    </div>
+  </div>
+</div>
+<script>
+const fmt = n => (n||0).toLocaleString('ko-KR');
+const signed = n => (n>0?'+':'')+fmt(n);
+fetch('/api/user/__NICK_ENCODED__?key=__KEY__').then(r => r.json()).then(d => {
+  if (d.error) { document.querySelector('.container').innerHTML = '<div class="card" style="text-align:center;padding:50px;">'+d.error+'</div>'; return; }
+  document.getElementById('balance').textContent = fmt(d.balance);
+  document.getElementById('rank-sub').textContent =
+    `전체 ${d.rank}위 / ${d.total_members}명 · 평균 ${fmt(d.mean)} · 중앙값 ${fmt(d.median)}`;
+
+  document.getElementById('summary').innerHTML = `
+    <div class="stat-card"><div class="label">출석</div><div class="value">${d.attend_count}일</div></div>
+    <div class="stat-card"><div class="label">룰렛</div><div class="value">${d.roulette_count}회</div></div>
+    <div class="stat-card"><div class="label">가위바위보</div><div class="value">${d.rps_count}회</div></div>
+    <div class="stat-card"><div class="label">잭팟 🎰</div><div class="value gold">${d.jackpot_count}</div></div>
+    <div class="stat-card"><div class="label">초기화 💸</div><div class="value red">${d.reset_count}</div></div>
+  `;
+
+  // 60일 잔고 추이
+  new Chart(document.getElementById('historyChart'), {
+    type:'line',
+    data:{ labels:d.history.map(h=>h.date.slice(5)),
+           datasets:[{ data:d.history.map(h=>h.zenny), borderColor:'#ffd700',
+             backgroundColor:'rgba(255,215,0,0.15)', fill:true, tension:0.25,
+             pointRadius:2, pointHoverRadius:5 }] },
+    options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} },
+      scales:{ y:{ ticks:{color:'#aaa'}, grid:{color:'rgba(255,255,255,0.05)'} },
+               x:{ ticks:{color:'#aaa', maxRotation:60}, grid:{display:false} } } }
+  });
+
+  // 룰렛 outcome 분포
+  const roul_order = ['reset','r-70','r-50','r-20','r+0','r+25','r+60','r+80','r+120','jackpot'];
+  const roul_label = {reset:'초기화','r-70':'-70%','r-50':'-50%','r-20':'-20%','r+0':'본전','r+25':'+25%','r+60':'+60%','r+80':'+80%','r+120':'+120%',jackpot:'잭팟'};
+  const roul_color = {reset:'#ff4466','r-70':'#ff6688','r-50':'#ff8844','r-20':'#ffcc44','r+0':'#888','r+25':'#88dd44','r+60':'#44dd88','r+80':'#44cccc','r+120':'#00d4ff',jackpot:'#ffd700'};
+  const roul_data = roul_order.map(k => d.roul_outcome[k] || 0);
+  const roul_present = roul_order.map((k,i)=>roul_data[i]>0?k:null).filter(Boolean);
+  new Chart(document.getElementById('roulChart'), {
+    type:'doughnut',
+    data:{ labels:roul_present.map(k=>roul_label[k]),
+           datasets:[{ data:roul_present.map(k=>d.roul_outcome[k]),
+             backgroundColor:roul_present.map(k=>roul_color[k]),
+             borderColor:'rgba(0,0,0,0.3)', borderWidth:2 }] },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{ position:'right', labels:{color:'#fff', font:{size:11}} } } }
+  });
+
+  // 가위바위보 — 본인 손
+  const hands = ['가위','바위','보'];
+  const total_rps = (d.rps_user_hand['가위']||0)+(d.rps_user_hand['바위']||0)+(d.rps_user_hand['보']||0);
+  new Chart(document.getElementById('rpsChart'), {
+    type:'bar',
+    data:{ labels:['본인 손','봇 손'],
+           datasets: hands.map((h,i) => ({
+             label:h, data:[d.rps_user_hand[h]||0, d.rps_bot_hand[h]||0],
+             backgroundColor:['#ff6688','#ffcc44','#44dd88'][i], borderRadius:6
+           })) },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{ labels:{color:'#fff'} },
+        title:{ display:true, color:'#aaa', text: total_rps===0 ? '아직 가위바위보 기록 없음' : `승/무/패: ${d.rps_result.win||0}·${d.rps_result.draw||0}·${d.rps_result.lose||0} (총 ${total_rps})` } },
+      scales:{ y:{beginAtZero:true, ticks:{color:'#aaa',precision:0}, grid:{color:'rgba(255,255,255,0.05)'}},
+               x:{ticks:{color:'#aaa'}, grid:{display:false}} } }
+  });
+
+  // 큰 사건
+  const fmt_outcome = (kind, oc) => {
+    if (oc==='jackpot') return '🎰 잭팟';
+    if (oc==='reset') return '💸 초기화';
+    if (oc==='attend' || oc==='attend_bonus') return '🎯 출석';
+    if (oc && oc.startsWith('r')) return '🎰 룰렛 '+oc.slice(1);
+    if (oc && oc.startsWith('rps_')) {
+      const p = oc.split('_');
+      return '✌️ '+(p[1]==='win'?'승':p[1]==='draw'?'무':'패');
+    }
+    return oc || '';
+  };
+  document.getElementById('big-events').innerHTML = `
+    <div class="ev"><div class="l">📈 최대 이득</div><div class="v green">${signed(d.max_gain.delta)}</div><div class="s">${fmt_outcome(d.max_gain.kind,d.max_gain.outcome)} · ${d.max_gain.ts.slice(0,10)}</div></div>
+    <div class="ev"><div class="l">📉 최대 손실</div><div class="v red">${signed(d.max_loss.delta)}</div><div class="s">${fmt_outcome(d.max_loss.kind,d.max_loss.outcome)} · ${d.max_loss.ts.slice(0,10)}</div></div>
+    <div class="ev"><div class="l">🔥 최장 연승</div><div class="v gold">${d.max_win_streak}회</div><div class="s">룰렛 양수 연속</div></div>
+    <div class="ev"><div class="l">🧊 최장 연패</div><div class="v red">${d.max_lose_streak}회</div><div class="s">룰렛 음수 연속</div></div>
+  `;
+
+  // 베팅 패턴
+  document.getElementById('bet-pattern').innerHTML = `
+    <div class="ev"><div class="l">평균 베팅</div><div class="v">${fmt(d.avg_bet)}</div><div class="s">룰렛+가위바위보</div></div>
+    <div class="ev"><div class="l">최대 베팅</div><div class="v">${fmt(d.max_bet)}</div></div>
+    <div class="ev"><div class="l">누적 베팅</div><div class="v red">${fmt(d.total_bet)}</div></div>
+    <div class="ev"><div class="l">누적 환급</div><div class="v green">${fmt(d.total_payout)}</div></div>
+  `;
+
+  // 일별 손익 막대
+  new Chart(document.getElementById('dailyChart'), {
+    type:'bar',
+    data:{ labels:d.daily_events.map(e=>e.date.slice(5)),
+           datasets:[{ data:d.daily_events.map(e=>e.delta),
+             backgroundColor: d.daily_events.map(e=>e.delta>=0?'#44dd88':'#ff6688'),
+             borderRadius:3 }] },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false} },
+      scales:{ y:{ ticks:{color:'#aaa'}, grid:{color:'rgba(255,255,255,0.05)'} },
+               x:{ ticks:{color:'#aaa', maxRotation:60, font:{size:9}}, grid:{display:false} } } }
+  });
+});
+</script>
+</body></html>
+"""
+
+
+@app.route('/u/<path:nick>')
+def user_page(nick):
+    key = request.args.get('key', '')
+    wk = _current_key()
+    if wk and key != wk:
+        return GATE_PAGE
+    import urllib.parse
+    safe_nick = urllib.parse.quote(nick, safe='')
+    return (USER_PAGE
+            .replace('__NICK_ENCODED__', safe_nick)
+            .replace('__NICK__', nick)
+            .replace('__KEY__', key))
+
+
+@app.route('/api/user/<path:nick>')
+def api_user(nick):
+    if not _key_ok():
+        return jsonify({'error': 'unauthorized'}), 403
+    data = _collect_user(nick)
+    if data is None:
+        return jsonify({'error': f'멤버를 찾을 수 없어요: {nick}'}), 404
+    return jsonify(data)
+
+
+def start_server(host: str = '0.0.0.0', port: int = 80):
+    """특정 닉네임의 멤버 프로필 데이터. 없으면 None."""
+    import re as _re
+    from collections import Counter
+    from collections import defaultdict
+
+    # 분포 데이터 (운영자/비매핑/비활성 필터 동일 기준)
+    full = _collect()
+    if not full['ranking']:
+        return None
+
+    # 랭킹에서 닉 찾기
+    rank_idx = None
+    target_nick = None
+    for i, r in enumerate(full['ranking']):
+        if r['nick'] == nick_query:
+            rank_idx = i
+            target_nick = r['nick']
+            break
+    if rank_idx is None:
+        # 부분 일치 fallback
+        partials = [(i, r['nick']) for i, r in enumerate(full['ranking']) if nick_query in r['nick']]
+        if len(partials) == 1:
+            rank_idx, target_nick = partials[0]
+
+    if rank_idx is None:
+        return None
+
+    # uid 역방향
+    target_uid = None
+    for uid, n in _nicknames.all_mappings().items():
+        if n == target_nick:
+            target_uid = int(uid)
+            break
+    if target_uid is None:
+        return None
+
+    balance = full['ranking'][rank_idx]['zenny']
+
+    with members._conn() as c:
+        events = c.execute(
+            'SELECT ts, kind, bet, payout, delta, outcome, balance_after FROM zenny_events '
+            'WHERE user_id=? ORDER BY ts',
+            (target_uid,),
+        ).fetchall()
+        history = c.execute(
+            'SELECT date, zenny FROM zenny_history WHERE user_id=? ORDER BY date',
+            (target_uid,),
+        ).fetchall()
+
+    attend_count = sum(1 for e in events if e[1] == 'attend')
+    roulette_count = sum(1 for e in events if e[1] == 'roulette')
+    rps_count = sum(1 for e in events if e[1] == 'rps')
+    jackpot_count = sum(1 for e in events if e[5] == 'jackpot')
+    reset_count = sum(1 for e in events if e[5] == 'reset')
+
+    # 룰렛 outcome 분포
+    roul_outcome = Counter(e[5] for e in events if e[1] == 'roulette')
+
+    # 가위바위보 손/결과
+    rps_user_hand = Counter()
+    rps_bot_hand = Counter()
+    rps_result = Counter()
+    RPS_OUT_RE = _re.compile(r'^rps_(win|draw|lose)_(가위|바위|보)_vs_(가위|바위|보)$')
+    for e in events:
+        if e[1] != 'rps':
+            continue
+        m = RPS_OUT_RE.match(e[5] or '')
+        if m:
+            rps_result[m.group(1)] += 1
+            rps_user_hand[m.group(2)] += 1
+            rps_bot_hand[m.group(3)] += 1
+
+    # 큰 사건 — delta 가 None 인 이벤트는 제외 (lookback 실패한 잭팟·초기화 등)
+    valid_delta = [e for e in events if e[4] is not None]
+    if valid_delta:
+        max_gain_e = max(valid_delta, key=lambda e: e[4])
+        max_loss_e = min(valid_delta, key=lambda e: e[4])
+    else:
+        max_gain_e = max_loss_e = None
+
+    def _ev_dict(e):
+        if not e:
+            return {'delta': 0, 'kind': '', 'outcome': '', 'ts': ''}
+        return {'delta': e[4] or 0, 'kind': e[1], 'outcome': e[5] or '', 'ts': e[0] or ''}
+
+    # 연승/연패 (룰렛 결과 시퀀스, 본전·잭팟·초기화 등도 부호 기준)
+    cur_win = cur_lose = max_win = max_lose = 0
+    for e in events:
+        if e[1] != 'roulette' or e[4] is None:
+            continue
+        if e[4] > 0:
+            cur_win += 1
+            cur_lose = 0
+            if cur_win > max_win:
+                max_win = cur_win
+        elif e[4] < 0:
+            cur_lose += 1
+            cur_win = 0
+            if cur_lose > max_lose:
+                max_lose = cur_lose
+        else:  # 본전
+            cur_win = cur_lose = 0
+
+    # 베팅 패턴
+    bets = [e[2] for e in events if e[2] is not None and e[1] in ('roulette', 'rps')]
+    payouts = [e[3] for e in events if e[3] is not None]
+    avg_bet = round(sum(bets) / len(bets)) if bets else 0
+    max_bet = max(bets) if bets else 0
+    total_bet = sum(bets)
+    total_payout = sum(payouts)
+
+    # 일별 delta 합 (60일)
+    daily = defaultdict(int)
+    for e in events:
+        if e[0] and e[4] is not None:
+            day = e[0][:10]  # YYYY-MM-DD
+            daily[day] += e[4]
+    daily_sorted = sorted(daily.items())[-60:]
+
+    # 60일 잔고 추이
+    history_series = [{'date': d, 'zenny': z} for d, z in history][-60:]
+
+    return {
+        'nick': target_nick,
+        'balance': balance,
+        'rank': rank_idx + 1,
+        'total_members': full['total_members'],
+        'mean': full['mean'],
+        'median': full['median'],
+        'attend_count': attend_count,
+        'roulette_count': roulette_count,
+        'rps_count': rps_count,
+        'jackpot_count': jackpot_count,
+        'reset_count': reset_count,
+        'roul_outcome': dict(roul_outcome),
+        'rps_user_hand': dict(rps_user_hand),
+        'rps_bot_hand': dict(rps_bot_hand),
+        'rps_result': dict(rps_result),
+        'max_gain': _ev_dict(max_gain_e),
+        'max_loss': _ev_dict(max_loss_e),
+        'max_win_streak': max_win,
+        'max_lose_streak': max_lose,
+        'avg_bet': avg_bet,
+        'max_bet': max_bet,
+        'total_bet': total_bet,
+        'total_payout': total_payout,
+        'history': history_series,
+        'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
+    }
 
 
 def start_server(host: str = '0.0.0.0', port: int = 80):
