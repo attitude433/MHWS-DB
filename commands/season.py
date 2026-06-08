@@ -86,9 +86,10 @@ def ensure_current_season() -> dict:
 
 
 def get_season_score(user_id: int, season_id: Optional[int] = None) -> int:
-    """특정 시즌의 멤버 점수 — 현재 잔고 - season_start_zenny.
+    """특정 시즌의 멤버 점수.
 
-    season_id 미지정 시 현재 시즌. 종료된 시즌은 season_results 에서 우선 조회.
+    옵션 C 동작: 시즌 잔고 = members.zenny 그 자체. 시즌마다 0 에서 시작.
+    종료된 시즌은 season_results 에서 조회.
     """
     cur = get_current_season()
     target_id = season_id if season_id is not None else (cur['id'] if cur else None)
@@ -96,12 +97,8 @@ def get_season_score(user_id: int, season_id: Optional[int] = None) -> int:
         return 0
     if cur and target_id == cur['id']:
         with members._conn() as c:
-            row = c.execute(
-                'SELECT zenny - COALESCE(season_start_zenny, 0) FROM members WHERE user_id = ?',
-                (user_id,),
-            ).fetchone()
+            row = c.execute('SELECT zenny FROM members WHERE user_id = ?', (user_id,)).fetchone()
         return int(row[0]) if row else 0
-    # 종료된 시즌
     with members._conn() as c:
         row = c.execute(
             'SELECT score FROM season_results WHERE season_id = ? AND user_id = ?',
@@ -113,7 +110,7 @@ def get_season_score(user_id: int, season_id: Optional[int] = None) -> int:
 def get_season_ranking(season_id: Optional[int] = None, active_uids: Optional[set] = None) -> list[dict]:
     """시즌 랭킹 — [{user_id, nick, score, rank}] 점수 내림차순.
 
-    종료된 시즌은 season_results 그대로, 현재 시즌은 (zenny - season_start_zenny) 실시간.
+    종료된 시즌은 season_results, 현재 시즌은 members.zenny (시즌 잔고).
     운영자 제외, 닉네임 매핑된 멤버만, active_uids 주면 그 안에서만.
     """
     cur = get_current_season()
@@ -123,10 +120,7 @@ def get_season_ranking(season_id: Optional[int] = None, active_uids: Optional[se
 
     if cur and target_id == cur['id']:
         with members._conn() as c:
-            rows = c.execute(
-                'SELECT user_id, zenny - COALESCE(season_start_zenny, 0) FROM members '
-                'WHERE zenny - COALESCE(season_start_zenny, 0) != 0'
-            ).fetchall()
+            rows = c.execute('SELECT user_id, zenny FROM members WHERE zenny != 0').fetchall()
     else:
         with members._conn() as c:
             rows = c.execute(
@@ -181,7 +175,7 @@ def end_current_season_and_start_new(now_kst: Optional[datetime] = None) -> dict
             c.execute('UPDATE seasons SET end_ts = ? WHERE id = ?', (end_ts, cur['id']))
         print(f'[season] 종료: id={cur["id"]} "{cur["title"]}" → {len(ranking)}명 기록', flush=True)
 
-    # 새 시즌 — 모든 멤버의 현재 잔고를 season_start_zenny 에 스냅샷
+    # 새 시즌 — 시즌 결과를 cumulative_zenny 에 누적 + zenny = 0 (시즌 잔고 리셋)
     next_title = f'{now_kst.year}년 {now_kst.month}월'
     new_start_ts = _month_start_kst(now_kst.year, now_kst.month)
     with members._conn() as c:
@@ -189,9 +183,9 @@ def end_current_season_and_start_new(now_kst: Optional[datetime] = None) -> dict
             'INSERT INTO seasons (start_ts, end_ts, title) VALUES (?, NULL, ?)',
             (new_start_ts, next_title),
         )
-        c.execute('UPDATE members SET season_start_zenny = zenny')
+        c.execute('UPDATE members SET cumulative_zenny = COALESCE(cumulative_zenny, 0) + zenny, zenny = 0')
     new_cur = get_current_season()
-    print(f'[season] 시작: id={new_cur["id"]} "{new_cur["title"]}" (잔고 스냅샷 완료)', flush=True)
+    print(f'[season] 시작: id={new_cur["id"]} "{new_cur["title"]}" (시즌 잔고 0 리셋, cumulative 에 누적 완료)', flush=True)
     return new_cur
 
 

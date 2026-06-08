@@ -34,6 +34,8 @@ def _conn():
         c.execute('ALTER TABLE members ADD COLUMN attend_bonus INTEGER DEFAULT 0')
     if 'season_start_zenny' not in cols:
         c.execute('ALTER TABLE members ADD COLUMN season_start_zenny INTEGER DEFAULT 0')
+    if 'cumulative_zenny' not in cols:
+        c.execute('ALTER TABLE members ADD COLUMN cumulative_zenny INTEGER DEFAULT 0')
     c.execute('''
         CREATE TABLE IF NOT EXISTS zenny_history (
             user_id INTEGER NOT NULL,

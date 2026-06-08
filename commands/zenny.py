@@ -318,8 +318,20 @@ def find_user(query: str) -> tuple:
 
 def my_zenny(user_id: int, nickname: str) -> str:
     with members._conn() as c:
-        zenny, *_ = _get_row(c, user_id)
-    return f'{_safe_nick(nickname, user_id)} 현재 제니: {zenny:,}'
+        row = c.execute(
+            'SELECT zenny, COALESCE(cumulative_zenny, 0) FROM members WHERE user_id = ?',
+            (user_id,),
+        ).fetchone()
+    if not row:
+        return f'{_safe_nick(nickname, user_id)} 제니 정보를 찾을 수 없어요'
+    season_zenny, cum_zenny = row[0], row[1]
+    total_lifetime = cum_zenny + season_zenny
+    nick = _safe_nick(nickname, user_id)
+    return (
+        f'{nick}\n'
+        f'🎰 시즌 잔고: {season_zenny:,}제니\n'
+        f'📊 누적: {total_lifetime:,}제니 (역대 합)'
+    )
 
 
 MEDALS = {1: '🥇', 2: '🥈', 3: '🥉'}
@@ -336,10 +348,12 @@ def leaderboard(viewer_user_id: int = 0) -> str:
     cur_season = _season.get_current_season()
     season_ranking = _season.get_season_ranking() if cur_season else []
 
-    # 누적 랭킹 (잔고)
+    # 누적 랭킹 — cumulative_zenny + zenny (역대 합)
     with members._conn() as c:
         rows = c.execute(
-            'SELECT user_id, nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
+            'SELECT user_id, nickname, COALESCE(cumulative_zenny, 0) + zenny AS total '
+            'FROM members WHERE COALESCE(cumulative_zenny, 0) + zenny > 0 '
+            'ORDER BY total DESC, nickname'
         ).fetchall()
     rows = [r for r in rows if not is_excluded(r[0])]
 
