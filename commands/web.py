@@ -91,7 +91,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="🎰 제니 분포 대시보드">
 <meta property="og:description" content="몬헌 와일즈 카톡봇 — 실시간 제니 분포 통계">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://d-i-0336-7.p-e.kr">
+<meta property="og:url" content="http://mhws.diana.ai.kr">
 <meta property="og:site_name" content="다이애나">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">

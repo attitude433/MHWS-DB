@@ -349,7 +349,7 @@ def on_message(ctx):
         return
 
     if msg == '.제니분포':
-        ctx.reply('🎰 제니 분포 대시보드 (실시간)\nhttp://d-i-0336-7.p-e.kr')
+        ctx.reply('🎰 제니 분포 대시보드 (실시간)\nhttp://mhws.diana.ai.kr')
         return
 
     if msg == '.제니그래프' or msg.startswith('.제니그래프 '):

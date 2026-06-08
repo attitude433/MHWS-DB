@@ -179,7 +179,7 @@
 - 닉네임 매핑 3차 갱신: 6/6 카톡 export 반영 → 72 entry 유지 (닉변 2건 — 차뭉 태도/대검, 리례릿 차액/태도). 신규 0건 (인스턴스 chat_logs dump 가 6/1 자라 그 이후 user_id 매칭 불가). export 에 있지만 매핑 안 된 활발한 닉 100+명 발견(simnel/김치볶음/darksara 등) — 운영 중 알림방 흐름으로 처리.
 - 매핑 안 된 사용자 1:1 알림에 첫 채팅 메시지 미리보기 추가: 기존엔 `user_id` + `raw nick` 만 보여 누구인지 판단 어려움 → `메시지: {200자 자름}` 한 줄 추가. 운영자가 메시지 내용 보고 어느 닉인지 매칭 가능.
 - 다이애나 `sender_nick` 매핑된 평문 닉 우선: 기존 `ctx.sender.name` (카톡 raw 토큰일 수 있음) 을 그대로 LLM 에 전달 → 다이애나가 raw 토큰을 닉인 줄 알고 답에 박는 케이스 발생 (예: 라라가 질문했는데 "FJ﨤S U9 님"으로 호명). `nicknames.get(uid)` 우선, 없으면 raw, 그것도 없으면 빈값. 룰렛/제니의 `_safe_nick` 과 동일 우선순위.
-- 다이애나 도메인용 웹 서버 (`commands/web.py`): `d-i-0336-7.p-e.kr` 으로 접속하면 제니 분포 대시보드 HTML 제공. Flask + Chart.js (CDN), 봇 프로세스 백그라운드 스레드로 0.0.0.0:80 listen. 디자인: 보라 그라데이션 + 글래스모피즘 + 골드 강조. 표시: 활성 멤버수 / 전체 제니 / 평균·중앙값 / 상위 5명 점유율 / 구간별 히스토그램 / 상위5 vs 나머지 도넛 / 로그 스케일 전체 랭킹 / 전체 랭킹 리스트(메달). 운영자(EXCLUDED) 및 닉네임 매핑 안 된 멤버 제외 (raw 토큰 노출 방지). 인프라: Oracle Cloud Security List 인그레스 80 추가 + 인스턴스 iptables 80 ACCEPT + systemd unit 에 `AmbientCapabilities=CAP_NET_BIND_SERVICE` 추가 (ubuntu 유저로 80 bind).
+- 다이애나 도메인용 웹 서버 (`commands/web.py`): `mhws.diana.ai.kr` (가비아 유료 .kr, 2026-06-08 등록) 으로 접속하면 제니 분포 대시보드 HTML 제공. Flask + Chart.js (CDN), 봇 프로세스 백그라운드 스레드로 0.0.0.0:80 listen. 디자인: 보라 그라데이션 + 글래스모피즘 + 골드 강조. 표시: 활성 멤버수 / 전체 제니 / 평균·중앙값 / 상위 5명 점유율 / 구간별 히스토그램 / 상위5 vs 나머지 도넛 / 로그 스케일 전체 랭킹 / 전체 랭킹 리스트(메달). 운영자(EXCLUDED) 및 닉네임 매핑 안 된 멤버 제외 (raw 토큰 노출 방지). 인프라: Oracle Cloud Security List 인그레스 80 추가 + 인스턴스 iptables 80 ACCEPT + systemd unit 에 `AmbientCapabilities=CAP_NET_BIND_SERVICE` 추가 (ubuntu 유저로 80 bind).
 
 ## 미해결 작업
 
