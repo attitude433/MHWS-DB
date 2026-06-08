@@ -115,8 +115,11 @@ def _safe_nick(uid: int, raw: Optional[str]) -> str:
 
 
 def _collect() -> dict:
+    # 분포 페이지 메인 데이터 = 누적 잔고 (cumulative_zenny + zenny)
     with members._conn() as c:
-        rows_raw = c.execute('SELECT user_id, nickname, zenny FROM members').fetchall()
+        rows_raw = c.execute(
+            'SELECT user_id, nickname, COALESCE(cumulative_zenny, 0) + zenny FROM members'
+        ).fetchall()
         history_raw = c.execute(
             'SELECT user_id, date, zenny FROM zenny_history ORDER BY user_id, date'
         ).fetchall()
@@ -641,7 +644,14 @@ def _collect_user(nick_query: str) -> Optional[dict]:
     if target_uid is None:
         return None
 
-    balance = full['ranking'][rank_idx]['zenny']
+    balance = full['ranking'][rank_idx]['zenny']  # 누적 잔고 (cumulative + zenny)
+
+    # 시즌 잔고 별도 조회
+    with members._conn() as c:
+        row = c.execute(
+            'SELECT zenny FROM members WHERE user_id = ?', (target_uid,)
+        ).fetchone()
+        season_balance = int(row[0]) if row else 0
 
     with members._conn() as c:
         events = c.execute(
@@ -728,7 +738,8 @@ def _collect_user(nick_query: str) -> Optional[dict]:
 
     return {
         'nick': target_nick,
-        'balance': balance,
+        'balance': balance,            # 누적 잔고 (cumulative + zenny)
+        'season_balance': season_balance,  # 시즌 잔고 (zenny)
         'rank': rank_idx + 1,
         'total_members': full['total_members'],
         'mean': full['mean'],
@@ -847,7 +858,7 @@ USER_PAGE = """<!DOCTYPE html>
     </div>
     <div class="balance">
       <div class="v" id="balance">-</div>
-      <div class="s">현재 잔고</div>
+      <div class="s">📊 누적 잔고 · 🎰 시즌 <span id="season-balance">-</span></div>
     </div>
   </div>
   <div class="summary" id="summary"></div>
@@ -898,6 +909,7 @@ const signed = n => (n>0?'+':'')+fmt(n);
 fetch('/api/user/__NICK_ENCODED__?key=__KEY__').then(r => r.json()).then(d => {
   if (d.error) { document.querySelector('.container').innerHTML = '<div class="card" style="text-align:center;padding:50px;">'+d.error+'</div>'; return; }
   document.getElementById('balance').textContent = fmt(d.balance);
+  document.getElementById('season-balance').textContent = fmt(d.season_balance ?? 0);
   document.getElementById('rank-sub').textContent =
     `전체 ${d.rank}위 / ${d.total_members}명 · 평균 ${fmt(d.mean)} · 중앙값 ${fmt(d.median)}`;
 

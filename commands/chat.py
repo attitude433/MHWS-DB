@@ -95,6 +95,13 @@ DB 에서 못 찾았으면 ".XXX [정확한 이름]" 형식으로 다시 입력�
 - 제니는 가상 화폐라 다른 사람한테 빌려주거나 양도 불가능. 운영자만 초기화/조정 가능. "빌려달라"는 부탁엔 자기는 못 도와준다고 가볍게 거절하세요.
 - 제니/룰렛 관련 질문은 와일즈 영역으로 취급해서 정확히 답하세요.
 
+[시즌제]
+- 매월 1일 KST 자정에 시즌 자동 전환. 시즌 = "2026년 N월" 형태.
+- 시즌 전환 시: 모든 멤버 시즌 잔고가 0 으로 리셋 (출석부터 다시), 시즌 결과는 누적(cumulative)에 합산되어 영구 보존.
+- 룰렛/가위바위보 베팅은 시즌 잔고로 굴러감. 시즌 잔고가 0 이면 그달엔 베팅 불가 (출석으로 모아야).
+- .제니 응답이 "시즌 잔고 / 누적" 두 줄로 보이는 이유. .제니순위 도 시즌(미리보기) + 누적(접힘) 으로 분리.
+- "내 시즌 잔고" 와 "내 누적" 이 다른 게 정상. 시즌은 이번 달, 누적은 역대 합.
+
 [제니 통계·웹 페이지 (다이애나 도메인)]
 - 카톡방은 mhws.diana.ai.kr 에 두 가지 웹 페이지를 운영합니다:
   · 분포 페이지: 방 전체 멤버 잔고 분포·랭킹·시스템 통계 (펌프/풀림/잭팟·초기화 히스토리)
@@ -600,9 +607,14 @@ def _exec_tool(name: str, args: dict) -> str:
             data = _collect_user(nick)
             if not data:
                 return f'(카톡방 활성 멤버에서 못 찾았어요: {nick})'
+            _season_info = data.get('season') or {}
+            _season_title = _season_info.get('title', '')
+            _season_rank = _season_info.get('rank')
             lines = [
                 f"[{data['nick']}]",
-                f"잔고 {data['balance']:,}제니 · 전체 {data['rank']}위 / {data['total_members']}명",
+                f"📊 누적 잔고 {data['balance']:,}제니 · 누적 {data['rank']}위 / {data['total_members']}명",
+                f"🎰 시즌 잔고 {data.get('season_balance', 0):,}제니"
+                + (f" · {_season_title} {_season_rank}위" if _season_rank else f" · {_season_title}"),
                 f"출석 {data['attend_count']}일 · 룰렛 {data['roulette_count']}회 · 가위바위보 {data['rps_count']}회",
                 f"잭팟 {data['jackpot_count']}회 · 초기화 {data['reset_count']}회",
                 f"최대 단일 이득 +{data['max_gain']['delta']:,} ({data['max_gain']['outcome']})",
