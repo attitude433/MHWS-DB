@@ -191,7 +191,7 @@ def _collect() -> dict:
     # 간단화: 기록 있는 날의 합계만 사용 (정확하진 않지만 추세 신호 충분)
     history_series = sorted(daily_totals.items())[-60:]  # 최근 60일
 
-    # 시즌 정보 (현재 시즌 + 상위 10)
+    # 시즌 정보 (현재 시즌 + 상위 10 + 역대 시즌 1·2·3등)
     from commands import season as _season
     cur_season = _season.get_current_season()
     season_top10 = []
@@ -199,6 +199,7 @@ def _collect() -> dict:
         s_ranking = _season.get_season_ranking(active_uids=active_set)
         for e in s_ranking[:10]:
             season_top10.append({'rank': e['rank'], 'nick': e['nick'], 'score': e['score']})
+    past_seasons = _season.get_past_season_medalists(limit=12)
 
     return {
         'total_members': len(rows),
@@ -220,6 +221,7 @@ def _collect() -> dict:
             'title': cur_season['title'] if cur_season else '',
             'top10': season_top10,
         } if cur_season else None,
+        'past_seasons': past_seasons,
     }
 
 
@@ -338,6 +340,12 @@ PAGE = """<!DOCTYPE html>
       <div class="ranking-list" id="season-list" style="max-height:none;"></div>
     </div>
   </div>
+  <div class="grid" id="past-wrap" style="display:none;">
+    <div class="card full">
+      <h3>🏅 역대 시즌 챔피언</h3>
+      <div class="ranking-list" id="past-list" style="max-height:none;"></div>
+    </div>
+  </div>
 
   <div class="summary" id="summary"></div>
 
@@ -384,6 +392,25 @@ fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
 
   document.querySelector('.subtitle').textContent =
     `몬헌 와일즈 카톡봇 · 활성 멤버 ${d.total_members}명 · 실시간 데이터 (새로고침으로 갱신)`;
+
+  // 역대 시즌 챔피언
+  if (d.past_seasons && d.past_seasons.length) {
+    document.getElementById('past-wrap').style.display = '';
+    const medalEmoji = r => r === 1 ? '🥇' : r === 2 ? '🥈' : r === 3 ? '🥉' : '';
+    const rankCls = r => r === 1 ? 'gold' : r === 2 ? 'silver' : r === 3 ? 'bronze' : '';
+    document.getElementById('past-list').innerHTML = d.past_seasons.map(s => {
+      const medals = (s.medalists || []).map(m => `
+        <span style="margin-right:14px;">
+          <span class="${rankCls(m.rank)}">${medalEmoji(m.rank)}</span>
+          ${m.nick} <span style="color:#888;font-size:11px;">(+${(m.score||0).toLocaleString('ko-KR')})</span>
+        </span>`).join('');
+      return `
+        <div class="ranking-row" style="grid-template-columns:120px 1fr;">
+          <div class="name" style="color:#ffd700;">${s.title}</div>
+          <div class="name">${medals}</div>
+        </div>`;
+    }).join('');
+  }
 
   // 시즌 랭킹
   if (d.season && d.season.top10 && d.season.top10.length) {
@@ -768,7 +795,13 @@ def _collect_user(nick_query: str) -> Optional[dict]:
         'history': history_series,
         'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
         'season': _season_user_stats(target_uid, events),
+        'medals': _user_medals(target_uid),
     }
+
+
+def _user_medals(user_id: int) -> list:
+    from commands import season as _season
+    return _season.get_user_medals(user_id)
 
 
 def _season_user_stats(user_id: int, events: list) -> Optional[dict]:
@@ -842,6 +875,8 @@ USER_PAGE = """<!DOCTYPE html>
   .green { color:#44dd88; }
   .red { color:#ff6688; }
   .gold { color:#ffd700; }
+  .silver { color:#c0c0c0; }
+  .bronze { color:#cd7f32; }
   ::-webkit-scrollbar { width:6px; }
   ::-webkit-scrollbar-track { background:rgba(255,255,255,0.05); }
   ::-webkit-scrollbar-thumb { background:#ffd700; border-radius:3px; }
@@ -866,6 +901,12 @@ USER_PAGE = """<!DOCTYPE html>
     <div class="card full">
       <h3>🏆 <span id="season-title">시즌</span> 통계</h3>
       <div class="events" id="season-stats"></div>
+    </div>
+  </div>
+  <div class="grid" id="medals-wrap" style="display:none;">
+    <div class="card full">
+      <h3>🏅 시즌 우승 기록</h3>
+      <div class="events" id="medals-list"></div>
     </div>
   </div>
   <div class="grid">
@@ -920,6 +961,19 @@ fetch('/api/user/__NICK_ENCODED__?key=__KEY__').then(r => r.json()).then(d => {
     <div class="stat-card"><div class="label">잭팟 🎰</div><div class="value gold">${d.jackpot_count}</div></div>
     <div class="stat-card"><div class="label">초기화 💸</div><div class="value red">${d.reset_count}</div></div>
   `;
+
+  // 옛 시즌 메달
+  if (d.medals && d.medals.length) {
+    document.getElementById('medals-wrap').style.display = '';
+    const medalEmoji = r => r === 1 ? '🥇' : r === 2 ? '🥈' : r === 3 ? '🥉' : '';
+    const rankCls = r => r === 1 ? 'gold' : r === 2 ? 'silver' : r === 3 ? 'bronze' : '';
+    document.getElementById('medals-list').innerHTML = d.medals.map(m => `
+      <div class="ev">
+        <div class="l">${m.title}</div>
+        <div class="v ${rankCls(m.rank)}">${medalEmoji(m.rank)} ${m.rank}위</div>
+        <div class="s">+${fmt(m.score)}</div>
+      </div>`).join('');
+  }
 
   // 시즌 통계
   if (d.season) {

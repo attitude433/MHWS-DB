@@ -189,6 +189,23 @@ def end_current_season_and_start_new(now_kst: Optional[datetime] = None) -> dict
     return new_cur
 
 
+def get_user_medals(user_id: int) -> list[dict]:
+    """특정 유저가 종료된 시즌에서 1·2·3등 한 기록.
+
+    [{season_id, title, rank, score}] 시간 역순.
+    """
+    with members._conn() as c:
+        rows = c.execute(
+            '''SELECT s.id, s.title, sr.rank, sr.score
+               FROM season_results sr
+               JOIN seasons s ON s.id = sr.season_id
+               WHERE sr.user_id = ? AND sr.rank <= 3 AND s.end_ts IS NOT NULL
+               ORDER BY s.id DESC''',
+            (user_id,),
+        ).fetchall()
+    return [{'season_id': r[0], 'title': r[1], 'rank': r[2], 'score': r[3]} for r in rows]
+
+
 def get_past_season_medalists(limit: int = 6) -> list[dict]:
     """옛 시즌별 1·2·3등 명단 (최근 limit 개 시즌)."""
     with members._conn() as c:
