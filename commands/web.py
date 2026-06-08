@@ -188,6 +188,15 @@ def _collect() -> dict:
     # 간단화: 기록 있는 날의 합계만 사용 (정확하진 않지만 추세 신호 충분)
     history_series = sorted(daily_totals.items())[-60:]  # 최근 60일
 
+    # 시즌 정보 (현재 시즌 + 상위 10)
+    from commands import season as _season
+    cur_season = _season.get_current_season()
+    season_top10 = []
+    if cur_season:
+        s_ranking = _season.get_season_ranking(active_uids=active_set)
+        for e in s_ranking[:10]:
+            season_top10.append({'rank': e['rank'], 'nick': e['nick'], 'score': e['score']})
+
     return {
         'total_members': len(rows),
         'total_zenny': total,
@@ -204,6 +213,10 @@ def _collect() -> dict:
         'max_loss': max_loss,
         'zero_drops': zero_drops,
         'history': [{'date': d, 'total': t} for d, t in history_series],
+        'season': {
+            'title': cur_season['title'] if cur_season else '',
+            'top10': season_top10,
+        } if cur_season else None,
     }
 
 
@@ -316,6 +329,13 @@ PAGE = """<!DOCTYPE html>
   <h1>💰 제니 분포 대시보드</h1>
   <p class="subtitle">몬헌 와일즈 카톡봇 · 실시간 데이터 (새로고침으로 갱신)</p>
 
+  <div class="grid" id="season-wrap" style="display:none;">
+    <div class="card full">
+      <h3>🏆 <span id="season-title">이번 시즌</span> 랭킹 (상위 10)</h3>
+      <div class="ranking-list" id="season-list" style="max-height:none;"></div>
+    </div>
+  </div>
+
   <div class="summary" id="summary"></div>
 
   <div class="grid">
@@ -357,9 +377,32 @@ PAGE = """<!DOCTYPE html>
 fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
   const total = d.total_zenny;
   const data = d.ranking;
+  const _qs = location.search || '';
 
   document.querySelector('.subtitle').textContent =
     `몬헌 와일즈 카톡봇 · 활성 멤버 ${d.total_members}명 · 실시간 데이터 (새로고침으로 갱신)`;
+
+  // 시즌 랭킹
+  if (d.season && d.season.top10 && d.season.top10.length) {
+    document.getElementById('season-wrap').style.display = '';
+    document.getElementById('season-title').textContent = d.season.title;
+    const signed = v => (v >= 0 ? '+' : '') + v.toLocaleString('ko-KR');
+    document.getElementById('season-list').innerHTML = d.season.top10.map(e => {
+      let cls = '', icon = `${e.rank}`;
+      if (e.rank === 1) { cls = 'gold'; icon = '🥇'; }
+      else if (e.rank === 2) { cls = 'silver'; icon = '🥈'; }
+      else if (e.rank === 3) { cls = 'bronze'; icon = '🥉'; }
+      const href = `/u/${encodeURIComponent(e.nick)}${_qs}`;
+      return `
+        <a href="${href}" style="text-decoration:none;color:inherit;">
+          <div class="ranking-row">
+            <div class="rank ${cls}">${icon}</div>
+            <div class="name">${e.nick}</div>
+            <div class="zenny">${signed(e.score)}</div>
+          </div>
+        </a>`;
+    }).join('');
+  }
 
   document.getElementById('summary').innerHTML = `
     <div class="stat-card">
@@ -527,8 +570,7 @@ fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
     }
   });
 
-  // 랭킹 리스트 — 닉 클릭 시 멤버 페이지로 (현재 query string 그대로 전달)
-  const _qs = location.search || '';
+  // 랭킹 리스트 — 닉 클릭 시 멤버 페이지로 (현재 query string 그대로 전달, _qs 위에서 선언됨)
   document.getElementById('rankList').innerHTML = data.map((r, i) => {
     let rankClass = '', icon = `${i + 1}`;
     if (i === 0) { rankClass = 'gold'; icon = '🥇'; }
