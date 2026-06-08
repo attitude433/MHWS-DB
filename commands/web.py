@@ -527,14 +527,14 @@ fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
     }
   });
 
-  // 랭킹 리스트 — 닉 클릭 시 멤버 페이지로
-  const __KEY__ = new URLSearchParams(location.search).get('key') || '';
+  // 랭킹 리스트 — 닉 클릭 시 멤버 페이지로 (현재 query string 그대로 전달)
+  const _qs = location.search || '';
   document.getElementById('rankList').innerHTML = data.map((r, i) => {
     let rankClass = '', icon = `${i + 1}`;
     if (i === 0) { rankClass = 'gold'; icon = '🥇'; }
     else if (i === 1) { rankClass = 'silver'; icon = '🥈'; }
     else if (i === 2) { rankClass = 'bronze'; icon = '🥉'; }
-    const href = `/u/${encodeURIComponent(r.nick)}?key=${encodeURIComponent(__KEY__)}`;
+    const href = `/u/${encodeURIComponent(r.nick)}${_qs}`;
     return `
       <a href="${href}" style="text-decoration:none;color:inherit;">
         <div class="ranking-row">
