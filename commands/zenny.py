@@ -325,49 +325,75 @@ def my_zenny(user_id: int, nickname: str) -> str:
 MEDALS = {1: '🥇', 2: '🥈', 3: '🥉'}
 
 
+def _signed(n: int) -> str:
+    return f'{n:+,}'.replace('+', '+')  # 그대로지만 명시적
+
+
 def leaderboard(viewer_user_id: int = 0) -> str:
+    from commands import season as _season
+
+    # 시즌 랭킹 (현재 진행 중)
+    cur_season = _season.get_current_season()
+    season_ranking = _season.get_season_ranking() if cur_season else []
+
+    # 누적 랭킹 (잔고)
     with members._conn() as c:
         rows = c.execute(
             'SELECT user_id, nickname, zenny FROM members WHERE zenny > 0 ORDER BY zenny DESC, nickname'
         ).fetchall()
     rows = [r for r in rows if not is_excluded(r[0])]
-    if not rows:
+
+    if not season_ranking and not rows:
         return '아직 제니 보유자가 없어요'
 
-    # 동점 동순위 계산
-    ranks = []
+    body = '[제니 랭킹]\n\n'
+
+    # ━━ 시즌 섹션 (위, 미리보기) ━━
+    if cur_season and season_ranking:
+        title = cur_season['title']
+        body += f'▼ 🎰 {title} 시즌 (상위 10)\n\n'
+        top10_season = [e for e in season_ranking if e['rank'] <= 10]
+        for e in top10_season:
+            medal = MEDALS.get(e['rank'], '')
+            head = f"{medal} [{e['rank']}위]" if medal else f"[{e['rank']}위]"
+            body += f"{head} {e['nick']} — {_signed(e['score'])}\n"
+
+        # viewer 시즌 11위 이하 본인 순위
+        if viewer_user_id:
+            v = next((e for e in season_ranking if e['user_id'] == viewer_user_id), None)
+            if v and v['rank'] > 10:
+                body += f"(나) [{v['rank']}위] {v['nick']} — {_signed(v['score'])}\n"
+        body += '\n'
+
+    # ━━ 누적 섹션 (아래, 전체보기로 접힘) ━━
+    cumulative_ranks = []
     prev_zenny = None
     rank_cursor = 0
     for i, (uid, nick, z) in enumerate(rows, 1):
         if z != prev_zenny:
             rank_cursor = i
             prev_zenny = z
-        ranks.append((rank_cursor, uid, nick, z))
+        cumulative_ranks.append((rank_cursor, uid, nick, z))
+    top10_cum = [r for r in cumulative_ranks if r[0] <= 10]
 
-    top10 = [r for r in ranks if r[0] <= 10]
-
-    body = '[제니 랭킹]\n\n'
-    body += '▼ 🎰 룰렛 + 출석 누적 점수 (상위 10)\n\n'
-    for rk, uid, nick, z in top10:
+    body += '━━━━━━━━━━━━\n📊 누적 순위 (전체 기간, 상위 10)\n\n'
+    for rk, uid, nick, z in top10_cum:
         medal = MEDALS.get(rk, '')
         head = f'{medal} [{rk}위]' if medal else f'[{rk}위]'
         body += f'{head} {_safe_nick(nick, uid)} — {z:,}제니\n'
-    body += '\n'
 
-    # viewer 가 11위 이하면 본인 순위 한 줄 표시
     if viewer_user_id:
-        viewer_rank = next(((rk, uid, nick, z) for rk, uid, nick, z in ranks if uid == viewer_user_id), None)
+        viewer_rank = next(((rk, uid, nick, z) for rk, uid, nick, z in cumulative_ranks if uid == viewer_user_id), None)
         if viewer_rank and viewer_rank[0] > 10:
             rk, uid, nick, z = viewer_rank
-            body += f'(나) [{rk}위] {_safe_nick(nick, uid)} — {z:,}제니\n\n'
-    footer = (
-        '━━━━━━━━━━━━\n'
-        '📅 KST 자정 출석·룰렛 횟수 리셋\n'
-        '🎯 .출석 — 1일 1회 10~30 제니\n'
-        '🎰 .룰렛 [금액] / 올 — 1일 3회\n'
-        '💰 .제니 — 본인 잔고 조회'
+            body += f'(나) [{rk}위] {_safe_nick(nick, uid)} — {z:,}제니\n'
+
+    body += (
+        '\n━━━━━━━━━━━━\n'
+        '📆 매월 1일 시즌 점수 리셋 (KST 자정)\n'
+        '📅 매일 KST 자정 출석·룰렛 횟수 리셋\n'
+        '🎯 .출석 / 🎰 .룰렛 / ✌️ .가위 / 💰 .제니'
     )
-    body += footer
     return body
 
 
