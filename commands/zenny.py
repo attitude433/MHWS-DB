@@ -123,6 +123,11 @@ def check_attend(user_id: int, nickname: str) -> str:
             (new_zenny, today, user_id),
         )
         _record_history(c, user_id, new_zenny)
+    members.record_event(
+        user_id, kind='attend', bet=None, payout=reward, delta=reward,
+        outcome='attend_bonus' if attend_bonus else 'attend',
+        balance_after=new_zenny,
+    )
     return f'출석 완료! +{reward}제니 (현재: {new_zenny:,}제니)'
 
 
@@ -230,6 +235,23 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             (new_zenny, roulette_count, today, new_streak, new_attend_bonus, user_id),
         )
         _record_history(c, user_id, new_zenny)
+    # 이벤트 로그
+    if r is None:
+        _outcome = 'reset'
+        _delta = -zenny
+        _payout = 0
+    elif r == 9.00:
+        _outcome = 'jackpot'
+        _delta = diff
+        _payout = payback
+    else:
+        _outcome = f'r{int(round(r * 100)):+d}'  # 'r+25', 'r-50', 'r+0'
+        _delta = diff
+        _payout = payback
+    members.record_event(
+        user_id, kind='roulette', bet=bet, payout=_payout, delta=_delta,
+        outcome=_outcome, balance_after=new_zenny,
+    )
 
     # 응답 텍스트
     safe = _safe_nick(nickname, user_id)

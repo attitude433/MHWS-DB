@@ -103,6 +103,21 @@ def play(user_id: int, nickname: str, user_hand: str, bet_arg: str) -> str:
             (new_zenny, game_count, today, user_id),
         )
         _record_history(c, user_id, new_zenny)
+    # 이벤트 로그
+    if result == 'win':
+        _delta = new_zenny - zenny
+        _payout = int(round(bet * WIN_MULT))
+    elif result == 'draw':
+        _delta = 0
+        _payout = bet
+    else:
+        _delta = -bet
+        _payout = 0
+    members.record_event(
+        user_id, kind='rps', bet=bet, payout=_payout, delta=_delta,
+        outcome=f'rps_{result}_{user_hand}_vs_{bot_hand}',
+        balance_after=new_zenny,
+    )
 
     uh = f'{HANDS[user_hand]} {user_hand}'
     bh = f'{HANDS[bot_hand]} {bot_hand}'

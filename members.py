@@ -40,7 +40,43 @@ def _conn():
             PRIMARY KEY (user_id, date)
         )
     ''')
+    # 단일 이벤트 로그 (.출석 / .룰렛 / .가위·바위·보 각각 한 줄씩)
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS zenny_events (
+            id            INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id       INTEGER NOT NULL,
+            ts            TEXT    NOT NULL,
+            kind          TEXT    NOT NULL,
+            bet           INTEGER,
+            payout        INTEGER,
+            delta         INTEGER NOT NULL,
+            outcome       TEXT    NOT NULL,
+            balance_after INTEGER NOT NULL
+        )
+    ''')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_events_user ON zenny_events (user_id, ts)')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_events_kind ON zenny_events (kind, ts)')
     return c
+
+
+def record_event(user_id: int, kind: str, bet, payout, delta: int,
+                 outcome: str, balance_after: int) -> None:
+    """단일 이벤트 한 줄 기록. 실패해도 게임 동작 막지 않게 best-effort."""
+    from datetime import datetime
+    try:
+        with _conn() as c:
+            c.execute(
+                '''INSERT INTO zenny_events
+                   (user_id, ts, kind, bet, payout, delta, outcome, balance_after)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
+                (
+                    int(user_id),
+                    datetime.now().isoformat(timespec='seconds'),
+                    kind, bet, payout, int(delta), outcome, int(balance_after),
+                ),
+            )
+    except Exception:
+        pass
 
 
 def exists(user_id: int) -> bool:
