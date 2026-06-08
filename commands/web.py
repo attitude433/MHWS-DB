@@ -40,8 +40,12 @@ def _safe_nick(uid: int, raw: Optional[str]) -> str:
 def _collect() -> dict:
     with members._conn() as c:
         rows_raw = c.execute('SELECT user_id, nickname, zenny FROM members').fetchall()
+        history_raw = c.execute(
+            'SELECT user_id, date, zenny FROM zenny_history ORDER BY user_id, date'
+        ).fetchall()
     # 운영자 제외 + 닉네임 매핑된 멤버만 포함 (raw 토큰 노출 방지)
     rows = []
+    nick_map = {}
     for uid, nick, z in rows_raw:
         if uid in EXCLUDED_USER_IDS:
             continue
@@ -49,6 +53,7 @@ def _collect() -> dict:
         if not mapped:
             continue
         rows.append((uid, mapped, z))
+        nick_map[uid] = mapped
     if not rows:
         return {
             'total_members': 0, 'total_zenny': 0, 'mean': 0, 'median': 0,
@@ -70,6 +75,38 @@ def _collect() -> dict:
                 bucket_counts[i] += 1
                 break
 
+    # zenny_history 분석 — 펌프/풀림/단일 최대 이벤트/일별 총량 추이
+    # 사용자별 일별 변화량을 펌프(양수) / 풀림(음수절댓값)으로 집계
+    pump = 0
+    drain = 0
+    max_gain = {'delta': 0, 'nick': '', 'date': ''}
+    max_loss = {'delta': 0, 'nick': '', 'date': ''}  # delta 는 음수
+    zero_drops = 0  # 잔고 0으로 떨어진 횟수 (초기화 추정)
+    daily_totals: dict = {}  # date -> 그날 모든 활성 유저 잔고 합
+    prev_by_uid: dict = {}
+
+    for uid, date, z in history_raw:
+        if uid not in nick_map:
+            continue
+        prev = prev_by_uid.get(uid, 0)  # 첫 기록 이전엔 0 으로 가정
+        delta = z - prev
+        if delta > 0:
+            pump += delta
+            if delta > max_gain['delta']:
+                max_gain = {'delta': delta, 'nick': nick_map[uid], 'date': date}
+        elif delta < 0:
+            drain += -delta
+            if delta < max_loss['delta']:
+                max_loss = {'delta': delta, 'nick': nick_map[uid], 'date': date}
+            if z == 0 and prev > 0:
+                zero_drops += 1
+        prev_by_uid[uid] = z
+        daily_totals[date] = daily_totals.get(date, 0) + z
+
+    # 일별 총량 — 활성 유저 잔고가 그날 기록되지 않은 사람은 직전 잔고 유지로 보정 필요
+    # 간단화: 기록 있는 날의 합계만 사용 (정확하진 않지만 추세 신호 충분)
+    history_series = sorted(daily_totals.items())[-60:]  # 최근 60일
+
     return {
         'total_members': len(rows),
         'total_zenny': total,
@@ -79,6 +116,13 @@ def _collect() -> dict:
         'top5_pct': top5_pct,
         'buckets': [{'label': l, 'count': c} for (l, _, _), c in zip(BUCKETS, bucket_counts)],
         'ranking': [{'nick': nick, 'zenny': z} for _, nick, z in rows_sorted],
+        'pump': pump,
+        'drain': drain,
+        'net': pump - drain,
+        'max_gain': max_gain,
+        'max_loss': max_loss,
+        'zero_drops': zero_drops,
+        'history': [{'date': d, 'total': t} for d, t in history_series],
     }
 
 
@@ -194,6 +238,15 @@ PAGE = """<!DOCTYPE html>
   <div class="summary" id="summary"></div>
 
   <div class="grid">
+    <div class="card full">
+      <h3>📈 방 전체 총제니 추이 (최근 60일)</h3>
+      <div class="chart-container"><canvas id="histLine"></canvas></div>
+    </div>
+  </div>
+
+  <div class="summary" id="flow"></div>
+
+  <div class="grid">
     <div class="card">
       <h3>📊 제니 구간별 인원 분포</h3>
       <div class="chart-container"><canvas id="histChart"></canvas></div>
@@ -249,6 +302,59 @@ fetch('/api/zenny').then(r => r.json()).then(d => {
       <div class="stat-sub">${d.top5_sum.toLocaleString()}제니</div>
     </div>
   `;
+
+  // 시스템 흐름 카드 (펌프/풀림/최대이벤트)
+  const mg = d.max_gain || {};
+  const ml = d.max_loss || {};
+  document.getElementById('flow').innerHTML = `
+    <div class="stat-card">
+      <div class="stat-label">💧 누적 펌프 (유입)</div>
+      <div class="stat-value" style="color:#44dd88">+${d.pump.toLocaleString()}</div>
+      <div class="stat-sub">출석·룰렛 양수·잭팟·승</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">🔥 누적 풀림 (소멸)</div>
+      <div class="stat-value" style="color:#ff6688">-${d.drain.toLocaleString()}</div>
+      <div class="stat-sub">초기화 ${d.zero_drops}회 · 음수 룰렛 · 패</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">📈 최대 단일 이득</div>
+      <div class="stat-value" style="color:#44dd88">+${(mg.delta || 0).toLocaleString()}</div>
+      <div class="stat-sub">${mg.nick || '-'} (${mg.date || '-'})</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">📉 최대 단일 손실</div>
+      <div class="stat-value" style="color:#ff6688">${(ml.delta || 0).toLocaleString()}</div>
+      <div class="stat-sub">${ml.nick || '-'} (${ml.date || '-'})</div>
+    </div>
+  `;
+
+  // 총제니 추이 라인 차트
+  new Chart(document.getElementById('histLine'), {
+    type: 'line',
+    data: {
+      labels: d.history.map(h => h.date.slice(5)),  // MM-DD
+      datasets: [{
+        label: '방 전체 총제니',
+        data: d.history.map(h => h.total),
+        borderColor: '#ffd700',
+        backgroundColor: 'rgba(255,215,0,0.15)',
+        fill: true,
+        tension: 0.25,
+        pointRadius: 2,
+        pointHoverRadius: 5,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, ticks: { color: '#aaa' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        x: { ticks: { color: '#aaa', maxRotation: 60, minRotation: 0 }, grid: { display: false } }
+      }
+    }
+  });
 
   // 히스토그램
   new Chart(document.getElementById('histChart'), {
