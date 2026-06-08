@@ -233,21 +233,26 @@ def get_past_season_medalists(limit: int = 6) -> list[dict]:
 
 
 def _scheduler_loop():
-    """매월 1일 KST 자정에 시즌 전환. 1분 단위로 깨어남."""
+    """매월 1일 KST 자정에 시즌 전환. 1시간 단위로 깨어남.
+
+    안전장치: 실제로 "이번 달 1일이 지났고 현재 시즌이 그 이전에 시작됐을 때만" 전환.
+    start_ts month 비교 같은 헐거운 조건은 사고 유발 (start_ts 가 1월이면 6월에도
+    전환 발동) — 절대시각 비교로 정확히.
+    """
     while True:
         try:
             now = datetime.now(KST)
-            # 다음 달 1일 0시까지 sleep
-            target = _next_month_start(now)
+            target = _next_month_start(now)  # 다음 달 1일 0시
             sleep_sec = max(60, (target - now).total_seconds())
-            # 한 번에 너무 길게 자지 않게 1시간 단위
-            time.sleep(min(sleep_sec, 3600))
+            time.sleep(min(sleep_sec, 3600))  # 한 번에 1시간 단위로 깨어남
             now = datetime.now(KST)
-            # 새 달 1일이고 현재 시즌이 이전 달이면 전환
             cur = get_current_season()
             if cur:
-                start = datetime.fromisoformat(cur['start_ts'])
-                if (now.year, now.month) != (start.year, start.month):
+                # 이번 달 1일 0시 (KST) 시각
+                this_month_start = datetime(now.year, now.month, 1, 0, 0, 0)
+                cur_start = datetime.fromisoformat(cur['start_ts'])
+                # 현재 시즌이 이번 달 1일 0시 이전에 시작됐고, 지금이 이번 달 1일 이후면 전환
+                if cur_start < this_month_start and now >= this_month_start:
                     end_current_season_and_start_new(now)
         except Exception as ex:
             print(f'[season] scheduler error: {ex}', flush=True)
