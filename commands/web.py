@@ -669,6 +669,12 @@ def _collect_user(nick_query: str) -> Optional[dict]:
     total_bet = sum(bets)
     total_payout = sum(payouts)
 
+    # 도박 순손익 (출석 제외) — 룰렛 + 가위바위보 delta 합
+    attend_sum = sum(e[4] for e in events if e[1] == 'attend' and e[4] is not None)
+    roul_pnl = sum(e[4] for e in events if e[1] == 'roulette' and e[4] is not None)
+    rps_pnl = sum(e[4] for e in events if e[1] == 'rps' and e[4] is not None)
+    gambling_pnl = roul_pnl + rps_pnl
+
     daily = defaultdict(int)
     for e in events:
         if e[0] and e[4] is not None:
@@ -702,6 +708,10 @@ def _collect_user(nick_query: str) -> Optional[dict]:
         'max_bet': max_bet,
         'total_bet': total_bet,
         'total_payout': total_payout,
+        'attend_sum': attend_sum,
+        'roul_pnl': roul_pnl,
+        'rps_pnl': rps_pnl,
+        'gambling_pnl': gambling_pnl,
         'history': history_series,
         'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
     }
@@ -795,6 +805,12 @@ USER_PAGE = """<!DOCTYPE html>
     <div class="card full">
       <h3>💰 베팅 패턴</h3>
       <div class="events" id="bet-pattern"></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card full">
+      <h3>🎲 도박 순손익 (출석 제외)</h3>
+      <div class="events" id="gambling"></div>
     </div>
   </div>
   <div class="grid">
@@ -893,6 +909,15 @@ fetch('/api/user/__NICK_ENCODED__?key=__KEY__').then(r => r.json()).then(d => {
     <div class="ev"><div class="l">누적 환급</div><div class="v green">${fmt(d.total_payout)}</div></div>
   `;
 
+  // 도박 순손익 (출석 제외)
+  const pnlCls = v => v>=0 ? 'green' : 'red';
+  document.getElementById('gambling').innerHTML = `
+    <div class="ev"><div class="l">🎲 도박 순손익</div><div class="v ${pnlCls(d.gambling_pnl)}">${signed(d.gambling_pnl)}</div><div class="s">룰렛+가위바위보 delta 합</div></div>
+    <div class="ev"><div class="l">🎯 출석 누적</div><div class="v green">+${fmt(d.attend_sum)}</div><div class="s">${d.attend_count}일</div></div>
+    <div class="ev"><div class="l">🎰 룰렛 손익</div><div class="v ${pnlCls(d.roul_pnl)}">${signed(d.roul_pnl)}</div></div>
+    <div class="ev"><div class="l">✌️ 가위바위보 손익</div><div class="v ${pnlCls(d.rps_pnl)}">${signed(d.rps_pnl)}</div></div>
+  `;
+
   // 일별 손익 막대
   new Chart(document.getElementById('dailyChart'), {
     type:'bar',
@@ -934,157 +959,6 @@ def api_user(nick):
         return jsonify({'error': f'멤버를 찾을 수 없어요: {nick}'}), 404
     return jsonify(data)
 
-
-def start_server(host: str = '0.0.0.0', port: int = 80):
-    """특정 닉네임의 멤버 프로필 데이터. 없으면 None."""
-    import re as _re
-    from collections import Counter
-    from collections import defaultdict
-
-    # 분포 데이터 (운영자/비매핑/비활성 필터 동일 기준)
-    full = _collect()
-    if not full['ranking']:
-        return None
-
-    # 랭킹에서 닉 찾기
-    rank_idx = None
-    target_nick = None
-    for i, r in enumerate(full['ranking']):
-        if r['nick'] == nick_query:
-            rank_idx = i
-            target_nick = r['nick']
-            break
-    if rank_idx is None:
-        # 부분 일치 fallback
-        partials = [(i, r['nick']) for i, r in enumerate(full['ranking']) if nick_query in r['nick']]
-        if len(partials) == 1:
-            rank_idx, target_nick = partials[0]
-
-    if rank_idx is None:
-        return None
-
-    # uid 역방향
-    target_uid = None
-    for uid, n in _nicknames.all_mappings().items():
-        if n == target_nick:
-            target_uid = int(uid)
-            break
-    if target_uid is None:
-        return None
-
-    balance = full['ranking'][rank_idx]['zenny']
-
-    with members._conn() as c:
-        events = c.execute(
-            'SELECT ts, kind, bet, payout, delta, outcome, balance_after FROM zenny_events '
-            'WHERE user_id=? ORDER BY ts',
-            (target_uid,),
-        ).fetchall()
-        history = c.execute(
-            'SELECT date, zenny FROM zenny_history WHERE user_id=? ORDER BY date',
-            (target_uid,),
-        ).fetchall()
-
-    attend_count = sum(1 for e in events if e[1] == 'attend')
-    roulette_count = sum(1 for e in events if e[1] == 'roulette')
-    rps_count = sum(1 for e in events if e[1] == 'rps')
-    jackpot_count = sum(1 for e in events if e[5] == 'jackpot')
-    reset_count = sum(1 for e in events if e[5] == 'reset')
-
-    # 룰렛 outcome 분포
-    roul_outcome = Counter(e[5] for e in events if e[1] == 'roulette')
-
-    # 가위바위보 손/결과
-    rps_user_hand = Counter()
-    rps_bot_hand = Counter()
-    rps_result = Counter()
-    RPS_OUT_RE = _re.compile(r'^rps_(win|draw|lose)_(가위|바위|보)_vs_(가위|바위|보)$')
-    for e in events:
-        if e[1] != 'rps':
-            continue
-        m = RPS_OUT_RE.match(e[5] or '')
-        if m:
-            rps_result[m.group(1)] += 1
-            rps_user_hand[m.group(2)] += 1
-            rps_bot_hand[m.group(3)] += 1
-
-    # 큰 사건 — delta 가 None 인 이벤트는 제외 (lookback 실패한 잭팟·초기화 등)
-    valid_delta = [e for e in events if e[4] is not None]
-    if valid_delta:
-        max_gain_e = max(valid_delta, key=lambda e: e[4])
-        max_loss_e = min(valid_delta, key=lambda e: e[4])
-    else:
-        max_gain_e = max_loss_e = None
-
-    def _ev_dict(e):
-        if not e:
-            return {'delta': 0, 'kind': '', 'outcome': '', 'ts': ''}
-        return {'delta': e[4] or 0, 'kind': e[1], 'outcome': e[5] or '', 'ts': e[0] or ''}
-
-    # 연승/연패 (룰렛 결과 시퀀스, 본전·잭팟·초기화 등도 부호 기준)
-    cur_win = cur_lose = max_win = max_lose = 0
-    for e in events:
-        if e[1] != 'roulette' or e[4] is None:
-            continue
-        if e[4] > 0:
-            cur_win += 1
-            cur_lose = 0
-            if cur_win > max_win:
-                max_win = cur_win
-        elif e[4] < 0:
-            cur_lose += 1
-            cur_win = 0
-            if cur_lose > max_lose:
-                max_lose = cur_lose
-        else:  # 본전
-            cur_win = cur_lose = 0
-
-    # 베팅 패턴
-    bets = [e[2] for e in events if e[2] is not None and e[1] in ('roulette', 'rps')]
-    payouts = [e[3] for e in events if e[3] is not None]
-    avg_bet = round(sum(bets) / len(bets)) if bets else 0
-    max_bet = max(bets) if bets else 0
-    total_bet = sum(bets)
-    total_payout = sum(payouts)
-
-    # 일별 delta 합 (60일)
-    daily = defaultdict(int)
-    for e in events:
-        if e[0] and e[4] is not None:
-            day = e[0][:10]  # YYYY-MM-DD
-            daily[day] += e[4]
-    daily_sorted = sorted(daily.items())[-60:]
-
-    # 60일 잔고 추이
-    history_series = [{'date': d, 'zenny': z} for d, z in history][-60:]
-
-    return {
-        'nick': target_nick,
-        'balance': balance,
-        'rank': rank_idx + 1,
-        'total_members': full['total_members'],
-        'mean': full['mean'],
-        'median': full['median'],
-        'attend_count': attend_count,
-        'roulette_count': roulette_count,
-        'rps_count': rps_count,
-        'jackpot_count': jackpot_count,
-        'reset_count': reset_count,
-        'roul_outcome': dict(roul_outcome),
-        'rps_user_hand': dict(rps_user_hand),
-        'rps_bot_hand': dict(rps_bot_hand),
-        'rps_result': dict(rps_result),
-        'max_gain': _ev_dict(max_gain_e),
-        'max_loss': _ev_dict(max_loss_e),
-        'max_win_streak': max_win,
-        'max_lose_streak': max_lose,
-        'avg_bet': avg_bet,
-        'max_bet': max_bet,
-        'total_bet': total_bet,
-        'total_payout': total_payout,
-        'history': history_series,
-        'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
-    }
 
 
 def start_server(host: str = '0.0.0.0', port: int = 80):

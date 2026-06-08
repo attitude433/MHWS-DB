@@ -610,6 +610,8 @@ def _exec_tool(name: str, args: dict) -> str:
                 f"최장 연승 {data['max_win_streak']}회 · 최장 연패 {data['max_lose_streak']}회",
                 f"평균 베팅 {data['avg_bet']:,} · 최대 베팅 {data['max_bet']:,}",
                 f"누적 베팅 {data['total_bet']:,} · 누적 환급 {data['total_payout']:,}",
+                f"도박 순손익 (출석 제외): {data['gambling_pnl']:+,} (룰렛 {data['roul_pnl']:+,} / 가위바위보 {data['rps_pnl']:+,})",
+                f"출석 누적 보상: +{data['attend_sum']:,}",
             ]
             # RPS 결과 분포 (있을 때만)
             rps_res = data.get('rps_result') or {}
