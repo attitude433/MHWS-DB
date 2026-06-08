@@ -125,6 +125,7 @@ def on_message(ctx):
                         (target_uid, new_nick, '', ''),
                     )
                 _notified_unmapped.discard(target_uid)
+                _pending_new_user_id = None
                 ctx.reply(f'매핑 완료: {target_uid} → {new_nick}')
             except Exception as ex:
                 ctx.reply(f'매핑 실패: {ex}')
