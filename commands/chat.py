@@ -72,10 +72,13 @@ B 면: 도구 호출 X. 다이애나가 아는 대로 자연스럽게 받아치�
 - .커스텀 : 빌드 시뮬레이터 링크
 - .커스텀 [무기 종류] : 무기별 디씨 빌드 가이드 링크
 - .랜덤 : 시리즈/그룹 스킬 1개 발동 보장 풀세트 빌드 무작위 생성 (무기+방어구5+호석+장식주)
-- .출석 / .출석체크 : 1일 1회 10~30 제니 균등 지급
-- .룰렛 [금액] / .룰렛 올 : 1일 3회 베팅 (10단계 확률표 — 초기화 0.1% / 잭팟 0.1%)
+- .출석 / .출석체크 / .출첵 : 1일 1회 10~30 제니 균등 지급
+- .룰렛 [금액] / [%] / 올 : 룰렛·가위바위보 합산 1일 3회. 10단계 확률표 (초기화 1.0% / 잭팟 1.0%)
+- .가위 / .바위 / .보 [금액] / [%] : 가위바위보 베팅 (승 ×2.5 / 무 본전 / 패 몰수). 룰렛과 횟수 공유. 올 키워드 차단, "100%" 명시 시만 전액
 - .제니 : 본인 잔고 조회
-- .제니순위 : 상위 10명 + 본인이 10위 밖이면 본인 순위도 한 줄 추가 표시
+- .제니순위 : 상위 10명 + 본인이 10위 밖이면 본인 순위 한 줄
+- .제니그래프 [닉] : 본인 또는 지정 멤버의 60일 잔고 라인 차트 PNG
+- .제니분포 : 카톡방 전체 제니 분포 대시보드 웹 페이지 링크 (다이애나 도메인)
 - .다이애나 [질문] : 다이애나에게 자유 질문 (지금 받고 있는 명령)
 - .메뉴추천 / .ㅈㅁㅊ / .점메추 / .저메추 : 무작위 메뉴 추천
 - .디스코드 : 디스코드 채널 안내
@@ -90,7 +93,16 @@ DB 에서 못 찾았으면 ".XXX [정확한 이름]" 형식으로 다시 입력�
 - 단 "장기적으로 손해" / "기하평균이 낮다" / "결국 출석이 답" / "도박은 손해" 같은 말리는 멘트는 절대 하지 마세요. 유저가 알아서 굴리도록 응원하는 톤.
 - 본인 제니 조회는 .제니, 랭킹은 .제니순위.
 - 제니는 가상 화폐라 다른 사람한테 빌려주거나 양도 불가능. 운영자만 초기화/조정 가능. "빌려달라"는 부탁엔 자기는 못 도와준다고 가볍게 거절하세요.
-- 제니/룰렛 관련 질문은 와일즈 영역으로 취급해서 정확히 답하세요."""
+- 제니/룰렛 관련 질문은 와일즈 영역으로 취급해서 정확히 답하세요.
+
+[제니 통계·웹 페이지 (다이애나 도메인)]
+- 카톡방은 mhws.diana.ai.kr 에 두 가지 웹 페이지를 운영합니다:
+  · 분포 페이지: 방 전체 멤버 잔고 분포·랭킹·시스템 통계 (펌프/풀림/잭팟·초기화 히스토리)
+  · 멤버 프로필 페이지: 각 멤버의 잔고 추이·룰렛 분포·가위바위보 패턴·큰 사건·베팅 패턴
+- 봇은 모든 .출석/.룰렛/.가위·바위·보 결과를 zenny_events 로 기록 중. 그래서 잭팟·초기화·승률·연승·연패 등 정확한 통계를 알 수 있어요.
+- "내 잭팟 몇 번 떴어", "OO님 출석 며칠", "내 최대 손실", "OO 룰렛 승률", "내 통계 보여줘" 같은 질문엔 `get_member_stats` 도구를 호출해 답하세요. 본인 질문이면 [질문자] 닉네임을 그대로 nick 인자로.
+- "지금까지 잭팟 누가 떴어", "초기화 누구누구", "잭팟 명단" 같은 질문엔 `get_jackpot_reset_history` 도구를 호출.
+- 페이지 URL 은 직접 발설하지 말고 ".제니분포" 또는 ".제니그래프 [닉]" 명령으로 받으라고 안내하세요 (토큰이 박힌 URL 이라 봇이 발송해야 함)."""
 
 CHAT_USER_TEMPLATE = """[질문자]
 {sender}
@@ -495,6 +507,22 @@ TOOLS = [
         'description': '몬스터헌터 와일즈 DLC(어센던스/확장팩/대형 업데이트)의 발표·출시 소식을 가져옴. "DLC", "어센던스", "확장팩", "신규 콘텐츠", "DLC 언제 나와", "업데이트 소식" 같은 질문에 사용.',
         'input_schema': {'type': 'object', 'properties': {}},
     },
+    {
+        'name': 'get_member_stats',
+        'description': '카톡방 멤버 한 명의 제니/룰렛/가위바위보 통계를 가져옴. 출석 일수, 룰렛·가위바위보 횟수, 잭팟·초기화 횟수, 최대 단일 이득/손실, 최장 연승/연패, 평균·최대 베팅, 누적 베팅·환급, 현재 잔고·전체 순위. "내 잭팟 몇 번 떴어", "OO님 출석 며칠 했어", "내 최대 손실 얼마", "OO 룰렛 승률" 같은 질문에 사용. 본인 질문이면 질문자 닉네임 그대로 넘기기.',
+        'input_schema': {
+            'type': 'object',
+            'properties': {
+                'nick': {'type': 'string', 'description': '멤버 닉네임 (카톡 표시 닉 그대로)'},
+            },
+            'required': ['nick'],
+        },
+    },
+    {
+        'name': 'get_jackpot_reset_history',
+        'description': '카톡방에서 지금까지 룰렛 잭팟(+900% ×10 환급)·초기화(잔고 전부 소멸)가 떴던 멤버·날짜 명단을 가져옴. "누가 잭팟 떴어", "잭팟 명단", "초기화 누구누구 당했어" 같은 질문에 사용.',
+        'input_schema': {'type': 'object', 'properties': {}},
+    },
 ]
 
 
@@ -563,6 +591,57 @@ def _exec_tool(name: str, args: dict) -> str:
         if name == 'get_steam_sales':
             from commands import steam_sale
             return steam_sale.get_current_sales_summary()
+
+        if name == 'get_member_stats':
+            from commands.web import _collect_user
+            nick = (args.get('nick') or '').strip()
+            if not nick:
+                return '(닉네임이 비어있어요)'
+            data = _collect_user(nick)
+            if not data:
+                return f'(카톡방 활성 멤버에서 못 찾았어요: {nick})'
+            lines = [
+                f"[{data['nick']}]",
+                f"잔고 {data['balance']:,}제니 · 전체 {data['rank']}위 / {data['total_members']}명",
+                f"출석 {data['attend_count']}일 · 룰렛 {data['roulette_count']}회 · 가위바위보 {data['rps_count']}회",
+                f"잭팟 {data['jackpot_count']}회 · 초기화 {data['reset_count']}회",
+                f"최대 단일 이득 +{data['max_gain']['delta']:,} ({data['max_gain']['outcome']})",
+                f"최대 단일 손실 {data['max_loss']['delta']:,} ({data['max_loss']['outcome']})",
+                f"최장 연승 {data['max_win_streak']}회 · 최장 연패 {data['max_lose_streak']}회",
+                f"평균 베팅 {data['avg_bet']:,} · 최대 베팅 {data['max_bet']:,}",
+                f"누적 베팅 {data['total_bet']:,} · 누적 환급 {data['total_payout']:,}",
+            ]
+            # RPS 결과 분포 (있을 때만)
+            rps_res = data.get('rps_result') or {}
+            if rps_res:
+                w = rps_res.get('win', 0); d_ = rps_res.get('draw', 0); l = rps_res.get('lose', 0)
+                lines.append(f"가위바위보 승/무/패 {w}/{d_}/{l}")
+            return '\n'.join(lines)
+
+        if name == 'get_jackpot_reset_history':
+            import members as _m
+            import nicknames as _nk
+            with _m._conn() as c:
+                rows = c.execute(
+                    "SELECT user_id, ts, outcome FROM zenny_events "
+                    "WHERE outcome IN ('jackpot','reset') ORDER BY ts"
+                ).fetchall()
+            jp = []
+            rs = []
+            for uid, ts, outcome in rows:
+                nick = _nk.get(uid) or f'uid:{uid}'
+                day = (ts or '')[:10]
+                (jp if outcome == 'jackpot' else rs).append(f'{day} {nick}')
+            parts = []
+            if jp:
+                parts.append(f'[🎰 잭팟 {len(jp)}회]')
+                parts.extend('  ' + s for s in jp)
+            if rs:
+                parts.append(f'[💸 초기화 {len(rs)}회]')
+                parts.extend('  ' + s for s in rs)
+            if not parts:
+                return '(아직 잭팟·초기화 기록 없어요)'
+            return '\n'.join(parts)
 
         if name == 'get_dlc_news':
             d = db.dlc_news
