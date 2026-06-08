@@ -4,10 +4,11 @@
 봇 프로세스 백그라운드 스레드로 기동, 0.0.0.0:80 listen.
 """
 from __future__ import annotations
+import os
 import statistics
 from typing import Optional
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import logging
 
 import members
@@ -16,6 +17,51 @@ from commands.zenny import EXCLUDED_USER_IDS
 
 app = Flask(__name__)
 logging.getLogger('werkzeug').setLevel(logging.WARNING)
+
+def _current_key() -> str:
+    # 매 호출 시 env 읽기 — main.py 의 load_dotenv() 시점 의존 제거
+    return os.environ.get('WEB_KEY', '')
+
+
+def _key_ok() -> bool:
+    wk = _current_key()
+    if not wk:
+        return True
+    return request.args.get('key', '') == wk
+
+
+GATE_PAGE = """<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<title>🎰 제니 분포 대시보드</title>
+<meta name="description" content="몬헌 와일즈 카톡방 - 실시간 제니 분포 통계">
+<meta property="og:title" content="🎰 제니 분포 대시보드">
+<meta property="og:description" content="몬헌 와일즈 카톡봇 — 실시간 제니 분포 통계">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://mhws.diana.ai.kr">
+<meta property="og:site_name" content="다이애나">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<style>
+  body { font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif;
+         background: linear-gradient(135deg,#0f0c29,#302b63,#24243e); color:#fff;
+         min-height:100vh; margin:0; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .box { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px);
+         border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:34px 28px;
+         text-align:center; max-width:420px; }
+  h1 { color:#ffd700; margin:0 0 14px; font-size:22px; }
+  p { color:#bbb; line-height:1.6; margin:8px 0; font-size:14px; }
+  .cmd { display:inline-block; background:rgba(255,215,0,0.12); color:#ffd700;
+         padding:4px 10px; border-radius:6px; font-family:monospace; font-size:14px; }
+</style>
+</head><body>
+<div class="box">
+  <h1>🎰 제니 분포 대시보드</h1>
+  <p>카톡방 봇 멤버 전용 페이지에요.</p>
+  <p>몬헌 와일즈 카톡방에서 <span class="cmd">.제니분포</span> 를 입력하면<br>다이애나가 접속 링크를 알려줘요.</p>
+</div>
+</body></html>
+"""
 
 
 # 잔고 구간 (라벨, 하한, 상한)
@@ -273,7 +319,7 @@ PAGE = """<!DOCTYPE html>
 </div>
 
 <script>
-fetch('/api/zenny').then(r => r.json()).then(d => {
+fetch('/api/zenny?key=__KEY__').then(r => r.json()).then(d => {
   const total = d.total_zenny;
   const data = d.ranking;
 
@@ -468,11 +514,17 @@ fetch('/api/zenny').then(r => r.json()).then(d => {
 
 @app.route('/')
 def index():
-    return PAGE
+    key = request.args.get('key', '')
+    wk = _current_key()
+    if wk and key != wk:
+        return GATE_PAGE
+    return PAGE.replace('__KEY__', key)
 
 
 @app.route('/api/zenny')
 def api_zenny():
+    if not _key_ok():
+        return jsonify({'error': 'unauthorized'}), 403
     return jsonify(_collect())
 
 

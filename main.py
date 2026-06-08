@@ -4,6 +4,7 @@ import random
 import re
 import threading
 from dotenv import load_dotenv
+load_dotenv()  # 모듈 import 전에 환경변수 로드 (commands.web 등이 import 시점에 env 읽음)
 from iris import Bot
 import alias
 import db
@@ -17,8 +18,6 @@ for _ext in ('jpg', 'jpeg', 'png', 'JPG', 'gif'):
 MEOW_LINES = ['야옹', '야~옹', '냐옹', '냐~옹', '야옹!', '갸르릉…']
 
 VS_PATTERN = re.compile(r'^\s*(.+?)\s*(?:vs|VS|Vs|vS)\s*(.+?)\s*$')
-
-load_dotenv()
 
 db.monster_to_equipment = db.build_monster_to_equipment(alias.MONSTER_ALIASES)
 
@@ -349,7 +348,9 @@ def on_message(ctx):
         return
 
     if msg == '.제니분포':
-        ctx.reply('🎰 제니 분포 대시보드 (실시간)\nhttp://mhws.diana.ai.kr')
+        _wk = os.environ.get('WEB_KEY', '')
+        _url = f'http://mhws.diana.ai.kr/?key={_wk}' if _wk else 'http://mhws.diana.ai.kr'
+        ctx.reply(f'🎰 제니 분포 대시보드 (실시간)\n{_url}')
         return
 
     if msg == '.제니그래프' or msg.startswith('.제니그래프 '):
