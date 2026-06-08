@@ -375,7 +375,9 @@ def leaderboard(viewer_user_id: int = 0) -> str:
             prev_zenny = z
         cumulative_ranks.append((rank_cursor, uid, nick, z))
 
-    body += f'━━━━━━━━━━━━\n📊 누적 순위 (전체 기간, {len(cumulative_ranks)}명)\n\n'
+    # 카톡 500자 임계 + zero-width space 500개로 정확한 위치 자동 접힘 발동
+    body += f'━━━━━━━━━━━━\n📊 누적 순위 (전체 기간, {len(cumulative_ranks)}명)\n'
+    body += '​' * 500 + '\n\n'
     for rk, uid, nick, z in cumulative_ranks:
         medal = MEDALS.get(rk, '')
         head = f'{medal} [{rk}위]' if medal else f'[{rk}위]'
