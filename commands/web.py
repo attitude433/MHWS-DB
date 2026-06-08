@@ -756,6 +756,30 @@ def _collect_user(nick_query: str) -> Optional[dict]:
         'gambling_pnl': gambling_pnl,
         'history': history_series,
         'daily_events': [{'date': d, 'delta': v} for d, v in daily_sorted],
+        'season': _season_user_stats(target_uid, events),
+    }
+
+
+def _season_user_stats(user_id: int, events: list) -> Optional[dict]:
+    """현재 시즌 기준 멤버 통계 (점수·순위·시즌 이벤트 카운트)."""
+    from commands import season as _season
+    cur = _season.get_current_season()
+    if not cur:
+        return None
+    score = _season.get_season_score(user_id)
+    s_ranking = _season.get_season_ranking()
+    rank = next((e['rank'] for e in s_ranking if e['user_id'] == user_id), None)
+    start_ts = cur['start_ts']
+    s_events = [e for e in events if e[0] and e[0] >= start_ts]
+    return {
+        'title': cur['title'],
+        'score': score,
+        'rank': rank,
+        'attend_count': sum(1 for e in s_events if e[1] == 'attend'),
+        'roulette_count': sum(1 for e in s_events if e[1] == 'roulette'),
+        'rps_count': sum(1 for e in s_events if e[1] == 'rps'),
+        'jackpot_count': sum(1 for e in s_events if e[5] == 'jackpot'),
+        'reset_count': sum(1 for e in s_events if e[5] == 'reset'),
     }
 
 
@@ -827,6 +851,12 @@ USER_PAGE = """<!DOCTYPE html>
     </div>
   </div>
   <div class="summary" id="summary"></div>
+  <div class="grid" id="season-wrap" style="display:none;">
+    <div class="card full">
+      <h3>🏆 <span id="season-title">시즌</span> 통계</h3>
+      <div class="events" id="season-stats"></div>
+    </div>
+  </div>
   <div class="grid">
     <div class="card full">
       <h3>📈 잔고 추이 (최근 60일)</h3>
@@ -878,6 +908,20 @@ fetch('/api/user/__NICK_ENCODED__?key=__KEY__').then(r => r.json()).then(d => {
     <div class="stat-card"><div class="label">잭팟 🎰</div><div class="value gold">${d.jackpot_count}</div></div>
     <div class="stat-card"><div class="label">초기화 💸</div><div class="value red">${d.reset_count}</div></div>
   `;
+
+  // 시즌 통계
+  if (d.season) {
+    document.getElementById('season-wrap').style.display = '';
+    document.getElementById('season-title').textContent = d.season.title;
+    const s = d.season;
+    const rankLabel = s.rank ? `전체 ${s.rank}위` : '집계 외';
+    document.getElementById('season-stats').innerHTML = `
+      <div class="ev"><div class="l">시즌 점수</div><div class="v gold">${signed(s.score)}</div><div class="s">${rankLabel}</div></div>
+      <div class="ev"><div class="l">시즌 출석</div><div class="v">${s.attend_count}일</div></div>
+      <div class="ev"><div class="l">시즌 룰렛 / RPS</div><div class="v">${s.roulette_count} / ${s.rps_count}</div></div>
+      <div class="ev"><div class="l">시즌 잭팟 / 초기화</div><div class="v"><span class="gold">${s.jackpot_count}</span> / <span class="red">${s.reset_count}</span></div></div>
+    `;
+  }
 
   // 60일 잔고 추이
   new Chart(document.getElementById('historyChart'), {
