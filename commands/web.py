@@ -86,7 +86,17 @@ PAGE = """<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>몬헌 와일즈 봇 - 제니 분포</title>
+<title>🎰 제니 분포 대시보드</title>
+<meta name="description" content="몬헌 와일즈 카톡방 - 실시간 제니 분포 통계 (활성 멤버 / 평균·중앙값 / 상위 점유율 / 전체 랭킹)">
+<meta property="og:title" content="🎰 제니 분포 대시보드">
+<meta property="og:description" content="몬헌 와일즈 카톡봇 — 실시간 제니 분포 통계">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://d-i-0336-7.p-e.kr">
+<meta property="og:site_name" content="다이애나">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="🎰 제니 분포 대시보드">
+<meta name="twitter:description" content="몬헌 와일즈 카톡봇 — 실시간 제니 분포 통계">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
