@@ -32,6 +32,10 @@ KST = timezone(timedelta(hours=9))
 ATTEND_MIN = 10
 ATTEND_MAX = 30
 ROULETTE_DAILY_LIMIT = 3
+# 오늘의 행운 순번: 매일 1~10 중 하나(숨김) 뽑아 그 순번째 출석자에게 출석 보상 1.5배
+LUCKY_MIN = 1
+LUCKY_MAX = 10
+LUCKY_MULT = 1.5
 
 # 운영자 본인 등 제니 시스템 제외 대상 user_id
 EXCLUDED_USER_IDS = {395932031}
@@ -97,6 +101,17 @@ def _pick_with_pity(neg_streak: int) -> tuple:
     return _pick_outcome(), False
 
 
+def _lucky_number(c, today: str) -> int:
+    """오늘의 행운 순번 (1~10). 하루 1회 뽑아 고정 (숨김)."""
+    c.execute('CREATE TABLE IF NOT EXISTS daily_lucky (date TEXT PRIMARY KEY, lucky_num INTEGER)')
+    row = c.execute('SELECT lucky_num FROM daily_lucky WHERE date = ?', (today,)).fetchone()
+    if row:
+        return row[0]
+    c.execute('INSERT OR IGNORE INTO daily_lucky (date, lucky_num) VALUES (?, ?)',
+              (today, random.randint(LUCKY_MIN, LUCKY_MAX)))
+    return c.execute('SELECT lucky_num FROM daily_lucky WHERE date = ?', (today,)).fetchone()[0]
+
+
 def check_attend(user_id: int, nickname: str) -> str:
     today = today_kst()
     unlimited = is_excluded(user_id)  # 운영자: 1일 1회 제한 없음
@@ -117,6 +132,13 @@ def check_attend(user_id: int, nickname: str) -> str:
             reward = ATTEND_MAX
         else:
             reward = random.randint(ATTEND_MIN, ATTEND_MAX)
+        # 오늘의 행운 순번: 이 사람의 출석 순번 == 뽑힌 숫자면 1.5배 (운영자 제외)
+        lucky_num = _lucky_number(c, today)
+        prev = c.execute('SELECT COUNT(*) FROM members WHERE last_attend = ?', (today,)).fetchone()[0]
+        order = prev + 1  # 이 사람이 오늘 몇 번째 출석자인지
+        lucky = (order == lucky_num) and not unlimited
+        if lucky:
+            reward = int(round(reward * LUCKY_MULT))
         new_zenny = zenny + reward
         c.execute(
             'UPDATE members SET zenny = ?, last_attend = ?, attend_bonus = 0 WHERE user_id = ?',
@@ -125,9 +147,12 @@ def check_attend(user_id: int, nickname: str) -> str:
         _record_history(c, user_id, new_zenny)
     members.record_event(
         user_id, kind='attend', bet=None, payout=reward, delta=reward,
-        outcome='attend_bonus' if attend_bonus else 'attend',
+        outcome='attend_lucky' if lucky else ('attend_bonus' if attend_bonus else 'attend'),
         balance_after=new_zenny,
     )
+    if lucky:
+        return (f'🍀 {_safe_nick(nickname, user_id)}님, 오늘의 행운 순번({order}번째)! '
+                f'출석 1.5배 +{reward}제니 🎉 (현재: {new_zenny:,}제니)')
     return f'출석 완료! +{reward}제니 (현재: {new_zenny:,}제니)'
 
 
@@ -407,13 +432,30 @@ def leaderboard(viewer_user_id: int = 0) -> str:
 
 
 def my_graph(user_id: int, nickname: str) -> Optional[str]:
-    """본인 60일 잔고 그래프. 임시 PNG path 반환. 데이터 없으면 None."""
+    """본인 현재 시즌 잔고 그래프. 임시 PNG path 반환. 데이터 없으면 None.
+
+    시즌 초기화되면 그래프도 비워지도록 현재 시즌 시작일 이후 기록만 그림.
+    (zenny_history 자체는 분포·멤버 페이지가 쓰므로 삭제하지 않음)
+    """
+    try:
+        from commands import season  # 순환 임포트 회피 (season → zenny)
+        cur = season.get_current_season()
+        season_start = cur['start_ts'][:10] if cur else None
+    except Exception:
+        season_start = None  # 시즌 조회 실패 시 전체 기록으로 폴백
     with members._conn() as c:
-        rows = c.execute(
-            '''SELECT date, zenny FROM zenny_history
-               WHERE user_id = ? ORDER BY date DESC LIMIT 60''',
-            (user_id,),
-        ).fetchall()
+        if season_start:
+            rows = c.execute(
+                '''SELECT date, zenny FROM zenny_history
+                   WHERE user_id = ? AND date >= ? ORDER BY date DESC LIMIT 60''',
+                (user_id, season_start),
+            ).fetchall()
+        else:
+            rows = c.execute(
+                '''SELECT date, zenny FROM zenny_history
+                   WHERE user_id = ? ORDER BY date DESC LIMIT 60''',
+                (user_id,),
+            ).fetchall()
     if not rows:
         return None
     rows = list(reversed(rows))  # 오래된 → 최신

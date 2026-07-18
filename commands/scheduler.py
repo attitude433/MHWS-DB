@@ -1,6 +1,6 @@
 import random
 import time
-from datetime import datetime
+from datetime import datetime, date
 from zoneinfo import ZoneInfo
 
 import db
@@ -119,9 +119,19 @@ def _morning_multi() -> list[str]:
     return [random.choice(MORNING_MESSAGES)]
 
 
+# 일회성: 캡콤 공식 방송 안내 (6/26 오전 6시 방송). 26일부터 자동 종료 — until 도달 후 SCHEDULES에서 이 줄 제거 가능.
+CAPCOM_BROADCAST_URL = 'https://youtu.be/T2x6ua9uZaI'
+CAPCOM_BROADCAST_MESSAGES = [
+    f'📺 이번 주 금요일(6/26) 오전 6시에 캡콤 공식 방송이 있어요! 와일즈 신규 소식 나올 수도 있으니 챙겨봐요 👀\n{CAPCOM_BROADCAST_URL}',
+    f'📺 6/26(금) 오전 6시, 캡콤 공식 방송 예정! 새 소식 기대해도 좋을 것 같아요\n{CAPCOM_BROADCAST_URL}',
+    f'📺 잊지 마세요! 6/26(금) 오전 6시 캡콤 공식 방송이에요. 시간 되면 같이 봐요\n{CAPCOM_BROADCAST_URL}',
+]
+
 SCHEDULES = [
     {'hour': 9, 'minute': 0, 'multi_dynamic': _morning_multi},
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
+    {'hour': 15, 'minute': 0, 'dynamic': lambda: random.choice(CAPCOM_BROADCAST_MESSAGES),
+     'until': date(2026, 6, 26)},
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
     {'hour': 23, 'minute': 0, 'dynamic': lambda: random.choice(ROULETTE_REMINDER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},
@@ -140,6 +150,8 @@ def start_scheduler(bot, room_id: int):
             now = datetime.now(KST)
             for s in SCHEDULES:
                 key = (s['hour'], s['minute'])
+                if 'until' in s and now.date() >= s['until']:
+                    continue
                 if (
                     now.hour == s['hour']
                     and now.minute == s['minute']

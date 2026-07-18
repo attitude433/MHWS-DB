@@ -29,7 +29,40 @@ import nicknames as _nicknames
 
 bot = Bot(os.environ['IRIS_SERVER_URL'])
 
-HELP_TEXT = """[명령어 목록]
+# === 응답 전송 직렬화 + 최소 간격(0.4s) + 계측 ===
+# 카톡(redroid) 이 연속 발신을 조용히 삼키는 문제(Iris 는 성공 처리) 완화.
+# 모든 봇 발신을 하나의 락으로 직렬화하고 최소 간격을 강제 → 연타 응답 드롭 감소.
+import time as _time
+import threading as _threading
+_orig_api_reply = bot.api.reply
+_send_lock = _threading.Lock()
+_last_send_ts = [0.0]
+_SEND_MIN_GAP = 0.4
+def _reply_instrumented(room_id, msg, thread_id=None):
+    with _send_lock:
+        _gap = _time.time() - _last_send_ts[0]
+        if _gap < _SEND_MIN_GAP:
+            _time.sleep(_SEND_MIN_GAP - _gap)
+        last = None
+        for _i in range(2):
+            try:
+                r = _orig_api_reply(room_id, msg, thread_id=thread_id)
+                _last_send_ts[0] = _time.time()
+                ok = (not isinstance(r, dict)) or r.get('success', True)
+                print(f"[send] room={room_id} try{_i+1} ok={ok} msg={str(msg)[:24]!r}", flush=True)
+                if ok:
+                    return r
+                last = r
+            except Exception as e:
+                _last_send_ts[0] = _time.time()
+                print(f"[send] room={room_id} try{_i+1} EXC {e} msg={str(msg)[:24]!r}", flush=True)
+                last = e
+            _time.sleep(0.4)
+        print(f"[send] room={room_id} DROPPED msg={str(msg)[:24]!r}", flush=True)
+        return last if isinstance(last, dict) else None
+bot.api.reply = _reply_instrumented
+
+HELP_TEXT = "[명령어 목록]\n🆕 신규: .게임 (다이애나와 주사위 대결)\n" + "​" * 500 + """
 
 ━━━━━━━━━━━━
 🐲 와일즈 DB
@@ -64,6 +97,7 @@ HELP_TEXT = """[명령어 목록]
 ━━━━━━━━━━━━
 .다이애나 (질문/잡담)
 .메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
+.게임 (다이애나와 주사위 대결)
 .디스코드
 .고양이
 .명령어"""
@@ -72,6 +106,15 @@ HELP_TEXT = """[명령어 목록]
 @bot.on_event('message')
 def on_message(ctx):
     msg = ctx.message.msg.strip()
+
+    # 계측: 명령 수신 로깅 (uid/attachment) — 응답 유실 추적용
+    if msg[:1] == '.' or msg in ('ㅈㅁㅊ', '점메추', '저메추'):
+        try:
+            _ru = ctx.sender.id if ctx.sender else 0
+            _ratt = ctx.raw.get('attachment') if isinstance(getattr(ctx, 'raw', None), dict) else None
+            print(f"[recv] uid={_ru} msg={msg[:24]!r} att={_ratt!r}", flush=True)
+        except Exception:
+            pass
 
     # 띄어쓰기 변형 정규화: ".제니 그래프" / ".제니 분포" → 붙임 형태로 처리
     if msg.startswith('.제니 그래프'):
@@ -151,9 +194,13 @@ def on_message(ctx):
     if ctx.sender:
         try:
             uid = ctx.sender.id
-            members.upsert(uid, ctx.sender.name)
-            # 매핑 안 된 사용자 채팅 시 1:1 알림 (세션당 1회)
-            if uid and ALERT_ROOM_ID and not _nicknames.get(uid):
+            # 캐시에 없거나(신규) 암호화 토큰이 바뀌었으면(닉변) 실시간 복호화
+            nick = _nicknames.get(uid)
+            if uid and (not nick or _nicknames.cipher_changed(uid, ctx.sender.name)):
+                nick = _nicknames.resolve_one(bot.api, uid) or _nicknames.resolve_from_feed(bot.api, uid)
+            members.upsert(uid, nick or ctx.sender.name)
+            # 실시간 복호화도 실패한 진짜 미매핑만 1:1 알림 (세션당 1회)
+            if uid and ALERT_ROOM_ID and not nick:
                 if uid not in _notified_unmapped:
                     _notified_unmapped.add(uid)
                     _pending_new_user_id = uid
@@ -286,7 +333,7 @@ def on_message(ctx):
             sender_nick = mapped or (ctx.sender.name if ctx.sender else '')
             mentioned = members.get_mentioned_in(query)
             threading.Thread(
-                target=lambda: ctx.reply(chat.ask_chat(query, sender_nick, mentioned)),
+                target=lambda: ctx.reply(chat.ask_chat(query, sender_nick, mentioned, uid)),
                 daemon=True,
             ).start()
         return
@@ -297,6 +344,10 @@ def on_message(ctx):
 
     if msg == '.디스코드':
         ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
+        return
+
+    if msg == '.게임' or msg == '.티카투카':
+        ctx.reply('🎲 티카투카 — 다이애나와 주사위 대결!\nhttp://mhws.diana.ai.kr/game')
         return
 
     if msg == '.랜덤' or msg == '.란듐':
@@ -415,27 +466,39 @@ def on_new_member(ctx):
         if ctx.sender and ALERT_ROOM_ID:
             uid = ctx.sender.id
             raw_nick = ctx.sender.name or '(없음)'
-            mapped = _nicknames.get(uid)
-            is_known = members.exists(uid) or bool(mapped)
-            if not is_known:
+            was_known = members.exists(uid) or bool(_nicknames.get(uid))
+            # 입장 즉시 실시간 복호화 시도 (실패 시 feed 의 평문 닉 폴백)
+            resolved = (_nicknames.resolve_one(bot.api, uid) or _nicknames.resolve_from_feed(bot.api, uid)) if uid else ''
+            _nicknames.cipher_changed(uid, ctx.sender.name)  # 토큰 시딩
+            tag = '🔁 재입장' if was_known else '🆕 신규 사용자 입장'
+            if resolved:
+                # 닉 자동 인식됨 → 수동 매핑 불필요
+                members.upsert(uid, resolved)
+                bot.api.reply(
+                    int(ALERT_ROOM_ID),
+                    f'[봇] {tag} (닉 자동 인식)\n'
+                    f'user_id: {uid}\n'
+                    f'닉: {resolved}',
+                )
+            elif not was_known:
+                # 복호화 실패 + 처음 보는 사람 → 수동 매핑 요청
                 members.upsert(uid, raw_nick)
                 _pending_new_user_id = uid
                 bot.api.reply(
                     int(ALERT_ROOM_ID),
-                    f'[봇] 🆕 신규 사용자 입장\n'
+                    f'[봇] 🆕 신규 사용자 입장 (닉 복호화 실패)\n'
                     f'user_id: {uid}\n'
                     f'raw nick: {raw_nick}\n'
                     f'\n신규 답장: 닉만 보내면 자동 매핑\n'
                     f'닉변 매핑: "닉 [구닉 또는 user_id] [신닉]"',
                 )
             else:
-                # 재입장 (이미 알고 있는 사람)
-                display = mapped or raw_nick
+                # 재입장인데 복호화 실패 → 기존 캐시 닉으로 안내
                 bot.api.reply(
                     int(ALERT_ROOM_ID),
                     f'[봇] 🔁 재입장\n'
                     f'user_id: {uid}\n'
-                    f'닉: {display}',
+                    f'닉: {_nicknames.get(uid) or raw_nick}',
                 )
     except Exception:
         pass
@@ -481,6 +544,9 @@ if sns_room_id:
         args=(bot, int(sns_room_id)),
         daemon=True,
     ).start()
+
+# 닉네임 자동 복호화 (open_chat_member → 봇 키 복호화, 시작 시 + 1시간마다)
+_nicknames.start_auto_refresh(bot.api)
 
 # 다이애나 도메인용 웹 서버 (제니 분포도)
 threading.Thread(target=web.start_server, daemon=True).start()

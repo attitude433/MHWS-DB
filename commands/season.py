@@ -248,12 +248,15 @@ def _scheduler_loop():
             now = datetime.now(KST)
             cur = get_current_season()
             if cur:
+                # start_ts 는 naive KST ISO 로 저장됨 → now 도 naive 로 맞춰 비교
+                # (aware now 와 naive this_month_start 비교 시 TypeError → 전환 미발동 사고)
+                now_naive = now.replace(tzinfo=None)
                 # 이번 달 1일 0시 (KST) 시각
                 this_month_start = datetime(now.year, now.month, 1, 0, 0, 0)
                 cur_start = datetime.fromisoformat(cur['start_ts'])
                 # 현재 시즌이 이번 달 1일 0시 이전에 시작됐고, 지금이 이번 달 1일 이후면 전환
-                if cur_start < this_month_start and now >= this_month_start:
-                    end_current_season_and_start_new(now)
+                if cur_start < this_month_start and now_naive >= this_month_start:
+                    end_current_season_and_start_new(now_naive)
         except Exception as ex:
             print(f'[season] scheduler error: {ex}', flush=True)
             time.sleep(300)

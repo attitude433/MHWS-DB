@@ -44,8 +44,9 @@
 | `.제니` | 시즌 잔고 + 누적(역대 합) 두 줄 | 무료 |
 | `.제니순위` | 시즌 상위 10 (미리보기) + zero-width space 500개로 자동 접힘 + 누적 전체 (역대 합) | 무료 |
 | `.제니그래프` (`.제니그래프 [닉]`) | 본인 또는 지정 사용자 60일 잔고 라인 차트 (숨은 명령어, matplotlib + 나눔고딕) | 무료 |
-| `.다이애나 [질문/잡담]` | Claude Sonnet + Tool Use (호석/무기난이도/채집/이벤트/날씨/무작위/랜덤빌드/Steam할인/DLC소식 도구 13종) | 유료 (1~5원/질문) |
+| `.다이애나 [질문/잡담]` | Claude Sonnet + Tool Use (호석/무기난이도/채집/이벤트/날씨/무작위/랜덤빌드/Steam할인/DLC소식/무기모션치/멤버통계/잭팟이력/방멤버목록/제니순위 도구 18종) | 유료 (1~5원/질문) |
 | `.메뉴추천` (ㅈㅁㅊ/점메추/저메추) | 1356개 메뉴 무작위 + 단식 3% 가중치 | 무료 |
+| `.게임` (별칭 `.티카투카`) | 티카투카 웹게임 URL 안내 (다이애나와 주사위 대결, 제니 무관 단독) | 무료 |
 | `.디스코드` | 고정 응답 | 무료 |
 | `.고양이` | 야옹 10% / 사진 90% | 무료 |
 
@@ -87,6 +88,7 @@
 - `special_attack_countermeasures.json`: 특수공격 대처
 - `status_countermeasures.json`: 속성/상태이상별 효과적 무기/스킬
 - `horn_melodies.json`: 수렵피리 무기별 선율 84종 (인벤 자료 기반)
+- `weapon_motion_values.json`: 무기 14종 + 건랜스 포격 + 고우키&파판 모션치 1,277 행 (구글시트 기반, 다이애나 `get_weapon_motion_values` 도구용)
 
 ### 퀘스트/세계관 (`data/world/`)
 - `quests_official.json`: 146 미션
@@ -199,6 +201,22 @@
 - (사고·복구) 2026-06-08 시즌 시스템 작업 중 `seasons.start_ts` 를 임시로 `2026-01-01` 로 변경했을 때 스케줄러의 헐거운 `(year, month) 비교` 가 즉시 시즌 전환 자동 발동 → 모든 멤버 `cumulative_zenny += zenny; zenny = 0`. 다행히 데이터 보존된 채로 SQL 4줄로 즉시 복구. 안전장치 강화: 스케줄러 조건을 절대시각 비교(`cur_start < this_month_start AND now >= this_month_start`)로 변경 (커밋 `55606d9`). 봇 다이애나 톤 사과문 운영방 발송. 메모리 `incident_season_zenny_wipe.md` 회고 저장.
 - `.제니분포` / `.제니 분포` 명령어 추가: 봇이 `mhws.diana.ai.kr` URL 안내. `.제니그래프` / `.제니 분포` 도 띄어쓰기 변형 정규화 (`.제니 그래프` → `.제니그래프`). `.명령어` HELP_TEXT 에 `.제니그래프` / `.제니분포` 노출.
 - 분포 페이지 시스템 분석 카드 (띵동빌런·에이들릭 요청): `zenny_history` 일별 변화량 기반 펌프(양수 누적)·풀림(음수 누적)·최대 단일 이득·최대 단일 손실 stat 4개 + 60일 방 전체 총제니 라인 차트. 검증: 펌프 - 풀림 = 현재 잔고합. 시스템 인플레 추세 시각화 (이론 기하 0.94 수렴이 안 되는 이유 = 출석 펌프·다양한 베팅 비율·신규 유입).
+- 닉네임 명시 매핑(`닉 X Y`) 후 `_pending_new_user_id` 미해제 버그 수정 ([main.py:128](main.py:128)): 명시 매핑 직후 같은 닉 한 번 더 보내면 자동 매핑이 또 트리거되어 중복 응답 나던 케이스 해소.
+- 다이애나 시스템 프롬프트 캐싱 활성화 + 페르소나 대규모 확장 ([chat.py](commands/chat.py)): (1) `system=[{cache_control:ephemeral}]` 5분 TTL 캐싱 — 시스템 프롬프트 ~5K 토큰 prefix 가 피크 시간 cache read (~0.1× 비용) 으로 절감. (2) 프래그마타 세계관 풍부화: "프래그마타"는 다이애나 자신·자기 세계라는 명시 + "캐릭터·출연·게임·작품·출시" 같은 메타 단어를 자기 입으로 말하지 않음 + 루나필라멘트·크레이들·히긴스 박사·데이지·에이트(D-I-3355-8)·딜리션 프로토콜·소라빵 외투·맨발 무선충전·취미(그림·미끄럼틀·스케이트보드·물총·데이터칩 입에 물기) 등 배경 추가. "프래그마타 샀어/재밌어/출시?" 메타 발화 응답 가이드 포함. (3) 카톡 닉 `닉/무기` 또는 `닉\무기` 컨벤션 — 호명 시 첫 슬래시 앞만 떼서 부르기 (`용만스/차액/에너지 블레이드 주세요` → `용만스님`). (4) 와일즈 외 시리즈 작품명·줄임말 인지: MH3(트라이)/MH4(4G)/크로스(MHX)/더블크로스(MHXX·GU·덥크)/월드(MHW)/아이스본(IB·아본)/라이즈(MHR)/선브레이크(SB·선브)/와일즈+어센던스 + 외전(스토리즈 1·2·3·나우·프론티어). 옛 시리즈 액션 단호 안내 규칙은 유지.
+- 다이애나 무기 모션치 도구 (도구 15종 → 16종): 몬헌(와일즈) 모션치 구글시트 16탭(무기 14종 + 건랜스 포격 + 고우키&파판) → `data/combat/weapon_motion_values.json` (1,277 공격 행, `db.weapon_motion_values` 로드). `get_weapon_motion_values(weapon_kind, attack?)` 도구가 모션치 + 속성/상태이상 보정·기절치·부위파괴 보정·예리도 소모·튕김·주석 응답. 슬액/차액/라보/헤보/피리 별칭 매핑. "대검 모아베기 3차지 모션치", "태도 기인참 배율" 류 대응.
+- 스케줄러 일회성 안내 슬롯 + `until` 가드 ([scheduler.py](commands/scheduler.py)): 캡콤 공식 방송(6/26 오전 6시) 안내를 6/23~25 매일 15시 발송, `until=date(2026,6,26)` 로 26일부터 자동 중단. `SCHEDULES` 항목에 `until` 키 지원 (루프에서 `now.date() >= until` 이면 skip).
+- 메뉴풀 개고기 메뉴 제거: `.메뉴추천` 풀에서 `영양탕` 1건 제거 (1356 → 1355). 개고기 계열은 영양탕 하나뿐이었음 (영양밥 등은 무관).
+- (사고·복구) 2026-07-01 시즌 자동 전환 실패 → 지연 복구. `season.py _scheduler_loop` 의 전환 조건 `now >= this_month_start` 에서 `now`(KST aware) vs `this_month_start`(naive) 비교가 TypeError → except 로 잡혀 **전환 미발동**. 잠복 이유: 같은 달엔 `cur_start < this_month_start` 가 False 라 단축평가로 그 비교를 안 거침 → 실제 True 되는 첫 월경계(7/1, 시즌 시스템 최초 자동 전환)에 그대로 터짐. **수정**: 비교 전부 naive KST 통일 (`now_naive = now.replace(tzinfo=None)`, 전환 함수에도 naive 전달). 7/1 09시경 배포·재시작 후 지연분 수동 전환(배포된 `end_current_season_and_start_new()` 호출) — zenny 148,607 전액 cumulative 이전·손실 0, 6월 1·2·3등 스냅샷. **공평성 리셋**: 자정~전환 사이 이미 쓴 출석 21명·룰렛 19명의 7/1 사용기록 리셋(`last_attend='2026-06-30'`, `roulette_count=0`)해 새 시즌 1일차 기회 복구. `members.db.bak_20260701_before_season_fix` 백업. 8월부터는 자정 자동 전환 정상.
+- `.제니그래프` 시즌 초기화 반영 ([zenny.py](commands/zenny.py) `my_graph`): 현재 시즌 시작일(`season.get_current_season().start_ts[:10]`) 이후 `zenny_history` 만 그림 → 시즌 초기화되면 그래프도 비워져 새로 쌓임. `zenny_history` 원본은 분포·멤버 페이지가 쓰므로 미삭제. 시즌 조회 실패 시 전체 기록 폴백 (그래프 안 깨짐). season→zenny 순환 회피 위해 함수 내 lazy import.
+- 닉네임 실시간 복호화 자동 인식 ([nicknames.py](nicknames.py)): 기존 정적 `nicknames.json` + 수동 `닉 X Y` 매핑을 대체. irispy 의 `__get_name_of_user_id` 가 `db2.open_chat_member.nickname` 암호문을 그대로 반환하던 걸, **봇 계정 user_id(441510000, DB 소유자 키)로 Iris `/decrypt`** 해서 평문 닉 획득 (메시지는 발신자 키지만 이름은 소유자 키라 enc=31 동일해도 키가 다름). `refresh_from_iris`(일괄, **암호문 바뀐 사람만 복호화** 최적화) + `resolve_one`(단일 실시간) + `cipher_changed`(메시지 토큰 변화 감지) + `start_auto_refresh`(시작 1회 + **3분 주기**). 봇 uid 자동 감지(`isMine:true` 로그) + 폴백 상수. `main.py on_message` 는 캐시 미스/토큰 변화 시 즉시 복호화, `on_new_member` 는 입장 즉시 복호화. 커버: 신규입장·재입장 즉시 / 닉변은 다음 발화 즉시 or ≤3분 / 매핑 실패 특이 enc 극소수만 raw 폴백. 72 → 216명 자동 인식. 검증: 활성 210명 캐시=카톡원본 100% 일치.
+- 다이애나 `list_room_members` 도구 (도구 16종 → 17종): 현재 방 실제 멤버(`web._get_active_members()` = `chat_rooms.active_member_ids`, 봇·운영자 제외) 닉 목록·인원수. "지금 누구 있어", "몇 명이야", "OO 있어?"(search 인자로 존재 확인) 대응. 나간 사람은 로스터 제외(캐시엔 보존해 과거 데이터·언급용).
+- 티카투카 웹게임 ([commands/tikatuka.py](commands/tikatuka.py) + [web.py](commands/web.py) `/tikatuka`·`/game` 라우트 + `.게임`/`.티카투카` 봇 명령): 로스트아크 신규 미니게임을 다이애나 vs 유저로 이식. 룰 기반 AI(알까기 우선·배율 노림·낮은 실드는 상대 보드에 투척), 클라이언트 전용(서버 상태 0). 룰: 각자 3줄×3칸, 같은 숫자 배율 ×3/×5, 알까기(같은 줄 같은 눈 → 상대 일반 제거 + 실드 재굴림 아무 보드), 선공 랜덤 시작 실드, 리롤 1회(기존/새 값 택1), 양쪽 보드 만차 시 2줄 선승. 주사위 굴림·이동·알까기 제거 모션. 다크 퍼플 테마. **제니 무관 단독 게임**(추후 PvP 제니 베팅 아이디어 보류). `.명령어` 미리보기에 `🆕 신규: .게임` 노출.
+- (사고·복구) 핑구님 RPS 무응답 → 룰렛 횟수 오소진 복구 (2026-07-02): `.보 100%` 두 번이 실제로 정상 실행됐으나(둘 다 무승부, `zenny_events` 에 `rps_draw` 기록) **응답만 방 전송 누락** → 하루 3회 카운터가 조용히 소진돼 "핑구님만 씹힘"처럼 보임. 원인은 명령매칭·이모지 아님(reply 테스트 4종 정상), 빠른 연타 중 Iris 전송 순간 누락 추정. `roulette_count` 3→1 복구(무응답 RPS 2회분) + 방에 다이애나 톤 사과 안내. zenny는 무승부라 손실 0.
+- 다이애나 `get_member_stats` 본인 질문 uid 폴백 ([chat.py](commands/chat.py)): 동명이인("헌터" 3명 등)·호명형 줄임 닉으로 `_collect_user(nick)` 가 실패하던 문제. `ask_chat`/`_exec_tool` 에 **sender_uid 배선** → 넘어온 닉이 질문자 본인 닉(줄임/전체/빈값)이면 **질문자 uid 로 확실히 조회**. 타인 질문은 그대로 닉 조회(하이재킹 방지). 헌터/대검님 "내 통계" 못 찾던 것 = 다이애나가 "헌터"만 넘겨 3명 중복 → 이걸로 해결.
+- 출석 "오늘의 행운 순번" ([zenny.py](commands/zenny.py) `check_attend` + `daily_lucky` 테이블): 매일 KST 자정 **1~10 중 하나 숨겨서 뽑음**, 그 순번째로 `.출석`한 사람이 **출석 보상 1.5배** + 방 축하 문구. 도박 아님(무손실), 매일 딱 한 명 당첨이라 인플레 미미. `zenny_events` outcome=`attend_lucky`. 출석파에게 변동성·재미 부여(성실 출석은 상위권 구조적으로 불가라는 분석에서 나온 아이디어).
+- (원인규명) 핑구님 응답 유실 = **카톡(redroid) 발신 드롭 확정** ([main.py](main.py)): 계측(`[recv]`/`[send]` 로깅 + Iris 성공여부) 심어 현장 포착 — 봇 수신·전송·Iris ok=True 다 정상인데 방엔 안 뜸(특히 **똑같은 메시지 연타는 카톡이 중복제거**). 봇/서버 문제 아니라 카톡 클라 단 유실. 대응: **모든 발신 단일 락 직렬화 + 최소 0.4s 간격 + 실패 시 1회 재시도**(`bot.api.reply` 몽키패치, ctx.reply 도 같은 인스턴스라 커버). 완전 차단은 카톡 한계라 어려움 — 계측은 안정화까지 유지.
+- 닉네임 feed 폴백 ([nicknames.py](nicknames.py) `resolve_from_feed`): `open_chat_member.nickname` 이 **깨진 raw 바이트로 저장돼 복호화 불가**한 특이 케이스(페일노트님 등) 대응. 입장/닉변 시 오는 **`feedType` feed 메시지의 members[].nickName 이 평문**이라, 최근 chat_logs 10건에서 feed 찾아 평문 닉 추출. `on_new_member`·`on_message` 가 `resolve_one` 실패 시 폴백 호출. 닉 인식 3중: ①실시간 복호화 → ②feed 평문 → ③수동 알림.
+- 다이애나 `get_ranking` 도구 (도구 17종 → 18종): "시즌 순위"·"누적 순위"·"1등 누구"·"내 순위 몇 등" 질문에 **넘기지 않고 직접 답**. 시즌 잔고 상위 10 + 누적(cumulative+zenny) 상위 10 + (sender_uid 로) 질문자 본인 시즌·누적 순위. `season.get_season_ranking` + members 누적 쿼리 + `web._get_active_members` 필터 재활용. 기존엔 순위 질문 = `.제니순위` 안내로만 넘기던 걸 해소.
 
 ## 미해결 작업
 
