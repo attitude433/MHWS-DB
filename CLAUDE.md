@@ -1,5 +1,11 @@
 # 몬스터헌터 와일즈 카톡봇
 
+> **관련 프로젝트 문서**:
+> - 이 파일: `C:\Users\goodb\OneDrive\바탕 화면\MHWSDB\CLAUDE.md` (다이애나 카톡봇)
+> - 마인크래프트 서버(Cobblemon): `C:\Users\goodb\OneDrive\바탕 화면\Cobblemon-Server\SETUP.md`
+>
+> 몬헌 봇과 마크 서버는 같은 Oracle Cloud 인스턴스를 공유하지만 별개 프로젝트. 세션마다 두 md 다 확인하기.
+
 ## 프로젝트 개요
 
 - 몬스터헌터 와일즈 카카오톡 오픈채팅방 정보 봇
@@ -46,7 +52,6 @@
 | `.제니그래프` (`.제니그래프 [닉]`) | 본인 또는 지정 사용자 60일 잔고 라인 차트 (숨은 명령어, matplotlib + 나눔고딕) | 무료 |
 | `.다이애나 [질문/잡담]` | Claude Sonnet + Tool Use (호석/무기난이도/채집/이벤트/날씨/무작위/랜덤빌드/Steam할인/DLC소식/무기모션치/멤버통계/잭팟이력/방멤버목록/제니순위 도구 18종) | 유료 (1~5원/질문) |
 | `.메뉴추천` (ㅈㅁㅊ/점메추/저메추) | 1356개 메뉴 무작위 + 단식 3% 가중치 | 무료 |
-| `.게임` (별칭 `.티카투카`) | 티카투카 웹게임 URL 안내 (다이애나와 주사위 대결, 제니 무관 단독) | 무료 |
 | `.디스코드` | 고정 응답 | 무료 |
 | `.고양이` | 야옹 10% / 사진 90% | 무료 |
 
@@ -206,6 +211,7 @@
 - 다이애나 무기 모션치 도구 (도구 15종 → 16종): 몬헌(와일즈) 모션치 구글시트 16탭(무기 14종 + 건랜스 포격 + 고우키&파판) → `data/combat/weapon_motion_values.json` (1,277 공격 행, `db.weapon_motion_values` 로드). `get_weapon_motion_values(weapon_kind, attack?)` 도구가 모션치 + 속성/상태이상 보정·기절치·부위파괴 보정·예리도 소모·튕김·주석 응답. 슬액/차액/라보/헤보/피리 별칭 매핑. "대검 모아베기 3차지 모션치", "태도 기인참 배율" 류 대응.
 - 스케줄러 일회성 안내 슬롯 + `until` 가드 ([scheduler.py](commands/scheduler.py)): 캡콤 공식 방송(6/26 오전 6시) 안내를 6/23~25 매일 15시 발송, `until=date(2026,6,26)` 로 26일부터 자동 중단. `SCHEDULES` 항목에 `until` 키 지원 (루프에서 `now.date() >= until` 이면 skip).
 - 메뉴풀 개고기 메뉴 제거: `.메뉴추천` 풀에서 `영양탕` 1건 제거 (1356 → 1355). 개고기 계열은 영양탕 하나뿐이었음 (영양밥 등은 무관).
+- `.메뉴추천` 한국어 조사 자동 처리 (`meal.py`): 메뉴명 마지막 글자 받침 유무(유니코드 종성)로 은/는·이/가 자동 분기. "김밥은 어떨까요" / "카레는 어떨까요" 식으로 자연스러운 조사 붙음.
 - (사고·복구) 2026-07-01 시즌 자동 전환 실패 → 지연 복구. `season.py _scheduler_loop` 의 전환 조건 `now >= this_month_start` 에서 `now`(KST aware) vs `this_month_start`(naive) 비교가 TypeError → except 로 잡혀 **전환 미발동**. 잠복 이유: 같은 달엔 `cur_start < this_month_start` 가 False 라 단축평가로 그 비교를 안 거침 → 실제 True 되는 첫 월경계(7/1, 시즌 시스템 최초 자동 전환)에 그대로 터짐. **수정**: 비교 전부 naive KST 통일 (`now_naive = now.replace(tzinfo=None)`, 전환 함수에도 naive 전달). 7/1 09시경 배포·재시작 후 지연분 수동 전환(배포된 `end_current_season_and_start_new()` 호출) — zenny 148,607 전액 cumulative 이전·손실 0, 6월 1·2·3등 스냅샷. **공평성 리셋**: 자정~전환 사이 이미 쓴 출석 21명·룰렛 19명의 7/1 사용기록 리셋(`last_attend='2026-06-30'`, `roulette_count=0`)해 새 시즌 1일차 기회 복구. `members.db.bak_20260701_before_season_fix` 백업. 8월부터는 자정 자동 전환 정상.
 - `.제니그래프` 시즌 초기화 반영 ([zenny.py](commands/zenny.py) `my_graph`): 현재 시즌 시작일(`season.get_current_season().start_ts[:10]`) 이후 `zenny_history` 만 그림 → 시즌 초기화되면 그래프도 비워져 새로 쌓임. `zenny_history` 원본은 분포·멤버 페이지가 쓰므로 미삭제. 시즌 조회 실패 시 전체 기록 폴백 (그래프 안 깨짐). season→zenny 순환 회피 위해 함수 내 lazy import.
 - 닉네임 실시간 복호화 자동 인식 ([nicknames.py](nicknames.py)): 기존 정적 `nicknames.json` + 수동 `닉 X Y` 매핑을 대체. irispy 의 `__get_name_of_user_id` 가 `db2.open_chat_member.nickname` 암호문을 그대로 반환하던 걸, **봇 계정 user_id(441510000, DB 소유자 키)로 Iris `/decrypt`** 해서 평문 닉 획득 (메시지는 발신자 키지만 이름은 소유자 키라 enc=31 동일해도 키가 다름). `refresh_from_iris`(일괄, **암호문 바뀐 사람만 복호화** 최적화) + `resolve_one`(단일 실시간) + `cipher_changed`(메시지 토큰 변화 감지) + `start_auto_refresh`(시작 1회 + **3분 주기**). 봇 uid 자동 감지(`isMine:true` 로그) + 폴백 상수. `main.py on_message` 는 캐시 미스/토큰 변화 시 즉시 복호화, `on_new_member` 는 입장 즉시 복호화. 커버: 신규입장·재입장 즉시 / 닉변은 다음 발화 즉시 or ≤3분 / 매핑 실패 특이 enc 극소수만 raw 폴백. 72 → 216명 자동 인식. 검증: 활성 210명 캐시=카톡원본 100% 일치.
@@ -217,6 +223,12 @@
 - (원인규명) 핑구님 응답 유실 = **카톡(redroid) 발신 드롭 확정** ([main.py](main.py)): 계측(`[recv]`/`[send]` 로깅 + Iris 성공여부) 심어 현장 포착 — 봇 수신·전송·Iris ok=True 다 정상인데 방엔 안 뜸(특히 **똑같은 메시지 연타는 카톡이 중복제거**). 봇/서버 문제 아니라 카톡 클라 단 유실. 대응: **모든 발신 단일 락 직렬화 + 최소 0.4s 간격 + 실패 시 1회 재시도**(`bot.api.reply` 몽키패치, ctx.reply 도 같은 인스턴스라 커버). 완전 차단은 카톡 한계라 어려움 — 계측은 안정화까지 유지.
 - 닉네임 feed 폴백 ([nicknames.py](nicknames.py) `resolve_from_feed`): `open_chat_member.nickname` 이 **깨진 raw 바이트로 저장돼 복호화 불가**한 특이 케이스(페일노트님 등) 대응. 입장/닉변 시 오는 **`feedType` feed 메시지의 members[].nickName 이 평문**이라, 최근 chat_logs 10건에서 feed 찾아 평문 닉 추출. `on_new_member`·`on_message` 가 `resolve_one` 실패 시 폴백 호출. 닉 인식 3중: ①실시간 복호화 → ②feed 평문 → ③수동 알림.
 - 다이애나 `get_ranking` 도구 (도구 17종 → 18종): "시즌 순위"·"누적 순위"·"1등 누구"·"내 순위 몇 등" 질문에 **넘기지 않고 직접 답**. 시즌 잔고 상위 10 + 누적(cumulative+zenny) 상위 10 + (sender_uid 로) 질문자 본인 시즌·누적 순위. `season.get_season_ranking` + members 누적 쿼리 + `web._get_active_members` 필터 재활용. 기존엔 순위 질문 = `.제니순위` 안내로만 넘기던 걸 해소.
+- 재입장 닉변 감지 알림 ([main.py](main.py) `on_new_member`): 재입장 시 캐시의 이전 닉(`old_nick`)과 복호화한 현재 닉(`resolved`)이 다르면 1:1 알림에 `⚠️ 닉변: OOO → XXX` 한 줄 자동 추가. 닉 동일하면 기존과 동일 표시.
+- 멤버 입퇴장 이력 추적 (`members.py` `member_visits` 테이블 + `main.py`): 입장(`join`)/퇴장(`leave`) 시 닉·타임스탬프 기록. 재입장 알림에 이전 방문 이력(닉+날짜) 자동 표시.
+- `.메뉴추천` 한국어 조사 자동 처리 (`meal.py`): 메뉴명 마지막 글자 받침 유무(유니코드 종성)로 은/는·이/가 자동 분기. "김밥은 어떨까요" / "카레는 어떨까요" 식으로 자연스러운 조사 붙음.
+- 다이애나 도구 오호출 방지 (`chat.py`): `get_weapon_motion_values` 는 "모션치/모션값/배율" 명시 시만 사용하도록, `get_member_stats` 는 "전적/기록/통계" 요청에 우선 사용하도록 설명 보강. 닉에 무기 이름이 있다고 모션치 도구 호출하던 문제 해소.
+- 다이애나 영역 분류 보강 (`chat.py`): 현실 음식·동물·물건 이름이 와일즈 아이템과 겹쳐도, 게임 맥락 없이 물으면 B(잡담) 처리. "꽁치 알아?"=잡담, "꽁치 어디서 잡아?"=와일즈.
+- 미사용 기능 정리: `commands/today.py`(기념일 멘트), `commands/tikatuka.py`(티카투카 웹게임), `commands/wordle.py`(워들 웹게임) 삭제. 관련 라우트(`/tikatuka`·`/game`·`/wordle`)·봇 명령어(`.게임`/`.티카투카`)·`.명령어` 목록에서 제거.
 
 ## 미해결 작업
 
@@ -231,11 +243,7 @@
 ### 3. 소형 몬스터 보상 추가 정리
 - 라프마/포케피나/젤레도론/가지오스/바오노스(개별)/네르스큐라 베이비/오메가 미크로스 등은 외부 자료 부족으로 미반영
 
-### 4. 9시 기념일 멘트 비활성화 상태
-- `commands/today.py` 의 Sonnet 호출 함수 + 위키 fetch 동작은 검증 완료, scheduler `_morning_multi` 에서 호출만 끔
-- 필요 시 한 줄 복원으로 재활성
-
-### 5. 데이터 추출 자산 (D:\gamecode\)
+### 4. 데이터 추출 자산 (D:\gamecode\)
 - `gathering_extracted.json` — 191 아이템 채집 매핑 (stage 무관) + RARE 특산 stage 매핑. 봇 DB 통합 보류 중
 - 와일즈 인덱스 (`D:\gamecode\indexing\user|msg|scn|pfb`) — 카테고리 + RSZ 타입 인덱스 + 마크다운 보고서. 추가 게임 데이터 추출 시 검색 키로 활용
 - PGL 파싱 가능 (`parse_pgl_stages.py`), gimmick reward 추출 가능 (`extract_gimmick_rewards.py`)

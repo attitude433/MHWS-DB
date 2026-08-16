@@ -639,12 +639,6 @@ def api_zenny():
     return jsonify(_collect())
 
 
-@app.route('/tikatuka')
-@app.route('/game')
-def tikatuka_page():
-    from commands import tikatuka
-    return tikatuka.GAME_HTML
-
 
 def _collect_user(nick_query: str) -> Optional[dict]:
     """특정 닉네임의 멤버 프로필 데이터. 없으면 None."""

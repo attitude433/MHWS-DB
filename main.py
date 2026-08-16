@@ -62,7 +62,7 @@ def _reply_instrumented(room_id, msg, thread_id=None):
         return last if isinstance(last, dict) else None
 bot.api.reply = _reply_instrumented
 
-HELP_TEXT = "[명령어 목록]\n🆕 신규: .게임 (다이애나와 주사위 대결)\n" + "​" * 500 + """
+HELP_TEXT = "[명령어 목록]\n" + "​" * 500 + """
 
 ━━━━━━━━━━━━
 🐲 와일즈 DB
@@ -97,7 +97,6 @@ HELP_TEXT = "[명령어 목록]\n🆕 신규: .게임 (다이애나와 주사위
 ━━━━━━━━━━━━
 .다이애나 (질문/잡담)
 .메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
-.게임 (다이애나와 주사위 대결)
 .디스코드
 .고양이
 .명령어"""
@@ -346,9 +345,6 @@ def on_message(ctx):
         ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
         return
 
-    if msg == '.게임' or msg == '.티카투카':
-        ctx.reply('🎲 티카투카 — 다이애나와 주사위 대결!\nhttp://mhws.diana.ai.kr/game')
-        return
 
     if msg == '.랜덤' or msg == '.란듐':
         ctx.reply(random_build.random_build_text())
@@ -466,23 +462,37 @@ def on_new_member(ctx):
         if ctx.sender and ALERT_ROOM_ID:
             uid = ctx.sender.id
             raw_nick = ctx.sender.name or '(없음)'
-            was_known = members.exists(uid) or bool(_nicknames.get(uid))
+            old_nick = _nicknames.get(uid)
+            was_known = members.exists(uid) or bool(old_nick)
             # 입장 즉시 실시간 복호화 시도 (실패 시 feed 의 평문 닉 폴백)
             resolved = (_nicknames.resolve_one(bot.api, uid) or _nicknames.resolve_from_feed(bot.api, uid)) if uid else ''
             _nicknames.cipher_changed(uid, ctx.sender.name)  # 토큰 시딩
             tag = '🔁 재입장' if was_known else '🆕 신규 사용자 입장'
             if resolved:
                 # 닉 자동 인식됨 → 수동 매핑 불필요
+                nick_changed = was_known and old_nick and old_nick != resolved
                 members.upsert(uid, resolved)
-                bot.api.reply(
-                    int(ALERT_ROOM_ID),
-                    f'[봇] {tag} (닉 자동 인식)\n'
-                    f'user_id: {uid}\n'
+                members.record_visit(uid, resolved, 'join')
+                lines = [
+                    f'[봇] {tag} (닉 자동 인식)',
+                    f'user_id: {uid}',
                     f'닉: {resolved}',
-                )
+                ]
+                if nick_changed:
+                    lines.append(f'⚠️ 닉변: {old_nick} → {resolved}')
+                # 재입장이면 이전 이력 표시
+                if was_known:
+                    history = members.get_visit_history(uid)
+                    # 방금 기록한 join 제외한 과거 이력
+                    past = [v for v in history[:-1] if v['action'] == 'join']
+                    if past:
+                        for v in past:
+                            lines.append(f'이전 이름: {v["nickname"]}\n날짜: {v["ts"]}')
+                bot.api.reply(int(ALERT_ROOM_ID), '\n'.join(lines))
             elif not was_known:
                 # 복호화 실패 + 처음 보는 사람 → 수동 매핑 요청
                 members.upsert(uid, raw_nick)
+                members.record_visit(uid, raw_nick, 'join')
                 _pending_new_user_id = uid
                 bot.api.reply(
                     int(ALERT_ROOM_ID),
@@ -494,12 +504,19 @@ def on_new_member(ctx):
                 )
             else:
                 # 재입장인데 복호화 실패 → 기존 캐시 닉으로 안내
-                bot.api.reply(
-                    int(ALERT_ROOM_ID),
-                    f'[봇] 🔁 재입장\n'
-                    f'user_id: {uid}\n'
-                    f'닉: {_nicknames.get(uid) or raw_nick}',
-                )
+                display = _nicknames.get(uid) or raw_nick
+                members.record_visit(uid, display, 'join')
+                lines = [
+                    f'[봇] 🔁 재입장',
+                    f'user_id: {uid}',
+                    f'닉: {display}',
+                ]
+                history = members.get_visit_history(uid)
+                past = [v for v in history[:-1] if v['action'] == 'join']
+                if past:
+                    for v in past:
+                        lines.append(f'이전 이름: {v["nickname"]}\n날짜: {v["ts"]}')
+                bot.api.reply(int(ALERT_ROOM_ID), '\n'.join(lines))
     except Exception:
         pass
     ctx.reply('안녕하세요! 공지 읽고 닉변 부탁드려요')
@@ -513,6 +530,7 @@ def on_del_member(ctx):
             raw_nick = ctx.sender.name or '(없음)'
             mapped = _nicknames.get(uid)
             display = mapped or raw_nick
+            members.record_visit(uid, display, 'leave')
             bot.api.reply(
                 int(ALERT_ROOM_ID),
                 f'[봇] 👋 퇴장\n'

@@ -60,6 +60,16 @@ def _conn():
     ''')
     c.execute('CREATE INDEX IF NOT EXISTS idx_events_user ON zenny_events (user_id, ts)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_events_kind ON zenny_events (kind, ts)')
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS member_visits (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            nickname TEXT,
+            action  TEXT NOT NULL,
+            ts      TEXT NOT NULL
+        )
+    ''')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_visits_user ON member_visits (user_id, ts)')
     return c
 
 
@@ -117,6 +127,30 @@ def get_random_nickname() -> str | None:
     if not rows:
         return None
     return random.choice(rows)[0]
+
+
+def record_visit(user_id: int, nickname: str, action: str):
+    """입장('join') 또는 퇴장('leave') 기록."""
+    if not user_id:
+        return
+    now = datetime.now().isoformat(timespec='seconds')
+    with _conn() as c:
+        c.execute(
+            'INSERT INTO member_visits (user_id, nickname, action, ts) VALUES (?, ?, ?, ?)',
+            (user_id, nickname or '', action, now),
+        )
+
+
+def get_visit_history(user_id: int) -> list[dict]:
+    """해당 유저의 입퇴장 이력 (오래된 순)."""
+    if not user_id:
+        return []
+    with _conn() as c:
+        rows = c.execute(
+            'SELECT nickname, action, ts FROM member_visits WHERE user_id = ? ORDER BY ts',
+            (user_id,),
+        ).fetchall()
+    return [{'nickname': r[0], 'action': r[1], 'ts': r[2]} for r in rows]
 
 
 def get_mentioned_in(query: str, min_len: int = 3) -> list[str]:
