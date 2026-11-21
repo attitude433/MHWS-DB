@@ -58,8 +58,15 @@ def _fetch_youtube(api_key: str, channel_id: str) -> list[dict]:
     url = f'https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}'
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=15) as r:
-            xml_data = r.read()
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=15) as r:
+                    xml_data = r.read()
+                break
+            except Exception:
+                if attempt == 2:
+                    raise
+                time.sleep(5)
         root = ET.fromstring(xml_data)
         videos = []
         for entry in root.findall('a:entry', _YT_NS):

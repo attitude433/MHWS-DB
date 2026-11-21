@@ -1,0 +1,16 @@
+[Unit]
+Description=Iris kakao bot bridge
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=ubuntu
+ExecStartPre=/usr/local/bin/mhws-iris-wait.sh
+ExecStartPre=/usr/bin/adb connect localhost:5555
+ExecStartPre=/usr/bin/adb -s localhost:5555 forward tcp:3000 tcp:3000
+ExecStart=/usr/local/bin/mhws-iris-start.sh
+
+[Install]
+WantedBy=multi-user.target

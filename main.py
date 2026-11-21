@@ -9,7 +9,7 @@ from iris import Bot
 import alias
 import db
 import members
-from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny, rps, web, season
+from commands import info, skill, material, custom, chat, sns, scheduler, meal, steam_sale, weapon, armor, random_build, zenny, rps, duel, web, season, frontier
 
 CAT_DIR = '/home/ubuntu/Cat-Images-Dataset'
 CAT_FILES = []
@@ -18,6 +18,18 @@ for _ext in ('jpg', 'jpeg', 'png', 'JPG', 'gif'):
 MEOW_LINES = ['야옹', '야~옹', '냐옹', '냐~옹', '야옹!', '갸르릉…']
 
 VS_PATTERN = re.compile(r'^\s*(.+?)\s*(?:vs|VS|Vs|vS)\s*(.+?)\s*$')
+
+FINGER_PATTERN = re.compile(r'^\s*ㅗ[ㅗ\s]*$')
+FINGER_LINES = [
+    '그 손가락은 뭐예요...? 다이애나 조금 슬퍼요',
+    '어어 방금 나쁜 손가락 봤어요!',
+    '그거 올리면 못써요! 접어주세요',
+    '다이애나 앞에서는 고운 말 고운 손가락만 해주세요~',
+    '으음, 못 본 걸로 해드릴게요. 이번만이에요?',
+    '나쁜 손가락은 다이애나가 호오 불어서 접어드릴게요',
+    '싸우지 마시고 사이좋게 지내요~',
+    '그 손가락으로 좋아요나 눌러주세요!',
+]
 
 db.monster_to_equipment = db.build_monster_to_equipment(alias.MONSTER_ALIASES)
 
@@ -87,6 +99,7 @@ HELP_TEXT = "[명령어 목록]\n" + "​" * 500 + """
 .출석
 .룰렛 [금액] / [%] / 올
 .가위 / .바위 / .보 [금액]
+.승부 [닉네임] [금액]
 .제니
 .제니순위
 .제니그래프
@@ -98,6 +111,7 @@ HELP_TEXT = "[명령어 목록]\n" + "​" * 500 + """
 .다이애나 (질문/잡담)
 .메뉴추천 (ㅈㅁㅊ / 점메추 / 저메추)
 .디스코드
+.프론티어 (몬헌 프론티어 한국어판)
 .고양이
 .명령어"""
 
@@ -255,7 +269,12 @@ def on_message(ctx):
         if monster:
             ctx.reply(info.format_info(monster))
         else:
-            ctx.reply('정확히 입력해주세요')
+            cands = alias.find_monster_candidates(query)
+            if cands:
+                body = '\n'.join(cands)
+                ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+            else:
+                ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.스킬 '):
@@ -267,13 +286,23 @@ def on_message(ctx):
             if equip:
                 ctx.reply(skill.format_skill_equipment(found, equip))
             else:
-                ctx.reply('정확히 입력해주세요')
+                cands = alias.find_skill_candidates(skill_name) if not found else []
+                if cands:
+                    body = '\n'.join(cands)
+                    ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+                else:
+                    ctx.reply('정확히 입력해주세요')
         else:
             found = alias.find_skill(query)
             if found:
                 ctx.reply(skill.format_skill(db.skill_index[found]))
             else:
-                ctx.reply('정확히 입력해주세요')
+                cands = alias.find_skill_candidates(query)
+                if cands:
+                    body = '\n'.join(cands)
+                    ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+                else:
+                    ctx.reply('정확히 입력해주세요')
         return
 
     if msg.startswith('.소재 ') or msg.startswith('.아이템 '):
@@ -283,7 +312,12 @@ def on_message(ctx):
         if item_data:
             ctx.reply(material.format_material(item_data['name_kr'], item_data))
         else:
-            ctx.reply('정확히 입력해주세요')
+            cands = alias.find_item_candidates(query)
+            if cands:
+                body = '\n'.join(cands)
+                ctx.reply(f'정확한 이름을 입력해주세요. 후보:\n{body}')
+            else:
+                ctx.reply('정확히 입력해주세요')
         return
 
     if msg == '.커스텀':
@@ -338,11 +372,17 @@ def on_message(ctx):
         return
 
     if msg in ('.메뉴추천', '.ㅈㅁㅊ', '.점메추', '.저메추', 'ㅈㅁㅊ', '점메추', '저메추'):
-        ctx.reply(meal.pick_random())
+        r = meal.pick_random(ctx.sender.id if ctx.sender else 0)
+        if r:
+            ctx.reply(r)
         return
 
     if msg == '.디스코드':
         ctx.reply('디스코드 채널은 https://discord.gg/N9kRfVw 에서 만나요!')
+        return
+
+    if msg in ('.프론티어', '.프섭', '.mhf', '.MHF'):
+        ctx.reply(frontier.info_text())
         return
 
 
@@ -382,6 +422,20 @@ def on_message(ctx):
                 if res:
                     ctx.reply(res)
             return
+
+    if msg == '.승부' or msg.startswith('.승부 '):
+        uid = ctx.sender.id if ctx.sender else 0
+        if uid:
+            ctx.reply(duel.challenge(uid, msg[3:].strip()))
+        return
+
+    if msg in ('.수락', '.거절'):
+        uid = ctx.sender.id if ctx.sender else 0
+        if uid:
+            res = duel.accept(uid, ctx.room.id) if msg == '.수락' else duel.reject(uid)
+            if res:
+                ctx.reply(res)
+        return
 
     if msg == '.제니':
         uid = ctx.sender.id if ctx.sender else 0
@@ -439,6 +493,10 @@ def on_message(ctx):
                 target=lambda p=path: ctx.reply_media([p]),
                 daemon=True,
             ).start()
+        return
+
+    if FINGER_PATTERN.match(msg):
+        ctx.reply(random.choice(FINGER_LINES))
         return
 
     vs = VS_PATTERN.match(msg)
@@ -567,6 +625,8 @@ if sns_room_id:
 _nicknames.start_auto_refresh(bot.api)
 
 # 다이애나 도메인용 웹 서버 (제니 분포도)
+from commands import duel_web  # noqa: F401 (/duel 라우트 등록)
+duel.send = bot.api.reply
 threading.Thread(target=web.start_server, daemon=True).start()
 
 # 시즌 시스템 (매월 1일 KST 자정 자동 전환)

@@ -15,6 +15,7 @@ for _m in monsters:
     _m['hide_parts'] = [_p for _p in _all if _p.get('part') == 'hide']
     _m['parts'] = [_p for _p in _all if _p.get('part') != 'hide']
 skills = _load('data/equipment/skills.json')
+items = _load('data/misc/items.json')
 item_usage = _load('mapping/item_usage.json')
 skill_to_equipment = _load('mapping/skill_to_equipment_1.json')
 external_guides = _load('data/misc/external_guides.json')

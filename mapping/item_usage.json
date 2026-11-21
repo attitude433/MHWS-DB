@@ -970,7 +970,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "수호룡의 피": {
     "item_id": 607,
@@ -1306,6 +1309,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "수호룡의 깨끗한 피": {
@@ -1814,7 +1820,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "수호룡의 모피": {
     "item_id": 664,
@@ -7667,7 +7676,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "황뢰룡의 갑각": {
     "item_id": 140,
@@ -8647,7 +8659,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "황뢰룡의 견갑각": {
     "item_id": 348,
@@ -11112,7 +11127,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "자화지주의 솜털+": {
     "item_id": 306,
@@ -11349,7 +11367,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "자화지주의 견갑각": {
     "item_id": 307,
@@ -12138,7 +12159,7 @@
     "item_id": 489,
     "name_kr": "몬스터의 체액",
     "name_en": "Monster Fluid",
-    "drops_count": 2,
+    "drops_count": 4,
     "used_in_armor_count": 2,
     "used_in_weapons_count": 15,
     "used_in_charms_count": 2,
@@ -12161,6 +12182,24 @@
         "kind_kr": "갈무리(부패)",
         "amount": 1,
         "chance": 30
+      },
+      {
+        "monster_kr": "네르스큐라 베이비",
+        "monster_en": "Nerscylla Hatchling",
+        "rank": "low",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "네르스큐라 베이비",
+        "monster_en": "Nerscylla Hatchling",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
       }
     ],
     "used_in_armor": [
@@ -12330,13 +12369,16 @@
         "receive_amount": 2,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "몬스터의 농즙": {
     "item_id": 490,
     "name_kr": "몬스터의 농즙",
     "name_en": "Monster Broth",
-    "drops_count": 4,
+    "drops_count": 6,
     "used_in_armor_count": 23,
     "used_in_weapons_count": 20,
     "used_in_charms_count": 1,
@@ -12377,6 +12419,24 @@
         "kind_kr": "갈무리(부패)",
         "amount": 1,
         "chance": 30
+      },
+      {
+        "monster_kr": "네르스큐라 베이비",
+        "monster_en": "Nerscylla Hatchling",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "네르스큐라 베이비",
+        "monster_en": "Nerscylla Hatchling",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
       }
     ],
     "used_in_armor": [
@@ -12768,6 +12828,9 @@
         "receive_amount": 2,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "자화지주의 점액": {
@@ -12957,7 +13020,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "자화지주의 농점액": {
     "item_id": 604,
@@ -13203,6 +13269,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "용혈석 조각": {
@@ -13523,6 +13592,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (20pt, 등장률 10%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "도모수의 발톱": {
@@ -13884,7 +13956,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "도모수 사냥증": {
     "item_id": 508,
@@ -14082,6 +14157,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (30pt, 등장률 20%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "도모수의 첨예발톱": {
@@ -14639,7 +14717,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "도모수 사냥증 S": {
     "item_id": 585,
@@ -15109,7 +15190,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "영지주의 갑각": {
     "item_id": 513,
@@ -15271,6 +15355,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (20pt, 등장률 10%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "영지주의 협각": {
@@ -15367,6 +15454,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (25pt, 등장률 5%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "영지주의 발톱": {
@@ -15731,7 +15821,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "영지주 사냥증": {
     "item_id": 517,
@@ -15982,6 +16075,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (60pt, 등장률 50%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "영지주의 예리발톱": {
@@ -16459,6 +16555,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "영지주 사냥증 S": {
@@ -17081,6 +17180,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (50pt, 등장률 50%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "수면주머니": {
@@ -17717,7 +17819,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "해룡의 가죽+": {
     "item_id": 731,
@@ -17981,7 +18086,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "해룡의 전기갑각": {
     "item_id": 732,
@@ -19357,7 +19465,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "흑식룡의 견갑각": {
     "item_id": 563,
@@ -22273,6 +22384,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (70pt, 등장률 30%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "개룡의 두갑각": {
@@ -23458,6 +23572,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "폭염주머니": {
@@ -24060,7 +24177,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "염미룡의 가죽": {
     "item_id": 89,
@@ -24625,7 +24745,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "염미룡 사냥증": {
     "item_id": 300,
@@ -24863,7 +24986,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "염미룡의 가죽+": {
     "item_id": 302,
@@ -25283,6 +25409,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "염미룡의 큰 볏": {
@@ -25951,7 +26080,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "벽수의 발톱": {
     "item_id": 35,
@@ -26134,6 +26266,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "벽수의 이빨": {
@@ -26283,13 +26418,16 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "단단한 뼈": {
     "item_id": 59,
     "name_kr": "단단한 뼈",
     "name_en": "Sturdy Bone",
-    "drops_count": 4,
+    "drops_count": 11,
     "used_in_armor_count": 6,
     "used_in_weapons_count": 14,
     "used_in_charms_count": 4,
@@ -26330,6 +26468,69 @@
         "kind_kr": "타겟 보수",
         "amount": 2,
         "chance": 10
+      },
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baunos",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "가지오스",
+        "monster_en": "Gajios",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "젤레도론",
+        "monster_en": "Gelidron",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "high",
+        "kind": "carve",
+        "kind_kr": "갈무리",
+        "amount": 1,
+        "chance": 25
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
       }
     ],
     "used_in_armor": [
@@ -26532,7 +26733,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "벽수 사냥증": {
     "item_id": 316,
@@ -26727,7 +26931,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "벽수의 가죽+": {
     "item_id": 318,
@@ -27121,7 +27328,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "벽수의 예리이빨": {
     "item_id": 320,
@@ -27319,6 +27529,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "벽수 사냥증 S": {
@@ -27789,7 +28002,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "사해룡의 두갑각": {
     "item_id": 82,
@@ -28383,7 +28599,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "사해룡의 견갑각": {
     "item_id": 313,
@@ -30074,7 +30293,10 @@
     ],
     "used_in_weapons": [],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "천인룡의 비인": {
     "item_id": 549,
@@ -30547,7 +30769,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "천인룡의 창꼬리": {
     "item_id": 551,
@@ -32035,6 +32260,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (60pt, 등장률 50%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "자화룡의 견갑각": {
@@ -32265,7 +32493,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "자화룡의 익막": {
     "item_id": 104,
@@ -33989,7 +34220,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "전와의 비늘": {
     "item_id": 87,
@@ -34901,6 +35135,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "전와 사냥증 S": {
@@ -37593,7 +37830,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "포호룡의 비단지느러미+": {
     "item_id": 724,
@@ -38241,7 +38481,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "포호룡의 수옥": {
     "item_id": 728,
@@ -40191,7 +40434,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡의 가죽": {
     "item_id": 354,
@@ -40284,7 +40530,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡의 비막": {
     "item_id": 355,
@@ -40544,7 +40793,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡 사냥증": {
     "item_id": 357,
@@ -40742,7 +40994,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡의 가죽+": {
     "item_id": 359,
@@ -40922,7 +41177,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡의 비막+": {
     "item_id": 360,
@@ -41380,7 +41638,10 @@
         "quantity": 3
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "풍협룡 사냥증 S": {
     "item_id": 362,
@@ -42124,6 +42385,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (40pt, 등장률 50%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "괴조의 견갑각": {
@@ -43943,7 +44207,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "소분룡의 발톱": {
     "item_id": 337,
@@ -44101,7 +44368,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "얼룩 독가죽": {
     "item_id": 338,
@@ -44507,7 +44777,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "소분룡의 예리발톱": {
     "item_id": 342,
@@ -44672,7 +44945,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "얼룩 맹독가죽": {
     "item_id": 343,
@@ -46172,7 +46448,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "쇄인룡의 견갑각": {
     "item_id": 460,
@@ -46481,7 +46760,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "쇄인룡의 흰 털": {
     "item_id": 462,
@@ -48036,7 +48318,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "혁원수의 갑각": {
     "item_id": 364,
@@ -48138,7 +48423,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "혁원수의 배갑": {
     "item_id": 365,
@@ -48581,7 +48869,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "혁원수의 골수": {
     "item_id": 368,
@@ -48929,7 +49220,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "혁원수의 견갑각": {
     "item_id": 371,
@@ -49082,7 +49376,10 @@
         "quantity": 4
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "혁원수의 견갑": {
     "item_id": 372,
@@ -49476,6 +49773,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "혁원수의 연수": {
@@ -50715,6 +51015,9 @@
         "receive_amount": 3,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "노바크리스털": {
@@ -51230,7 +51533,11 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집",
+      "필드 채집"
+    ]
   },
   "암기소 사냥증 S": {
     "item_id": 298,
@@ -51593,7 +51900,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "암기소의 촉수": {
     "item_id": 442,
@@ -51928,7 +52238,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "암기소의 수액": {
     "item_id": 445,
@@ -52450,7 +52763,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "암기소의 촉수+": {
     "item_id": 449,
@@ -52974,7 +53290,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "암기소의 암옥": {
     "item_id": 452,
@@ -53359,7 +53678,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "호화룡의 갑각": {
     "item_id": 401,
@@ -53984,7 +54306,10 @@
         "quantity": 5
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "호화룡의 견갑각": {
     "item_id": 407,
@@ -55728,7 +56053,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "파의룡의 가죽": {
     "item_id": 323,
@@ -55942,7 +56270,10 @@
         "quantity": 1
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "파의룡의 촉수": {
     "item_id": 325,
@@ -56563,7 +56894,10 @@
         "quantity": 6
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "파의룡의 가죽+": {
     "item_id": 330,
@@ -56953,6 +57287,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "파의룡의 요염촉수": {
@@ -58223,7 +58560,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "드래그라이트광석": {
     "item_id": 55,
@@ -58615,6 +58955,9 @@
         "receive_amount": 7,
         "limit": null
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "동봉룡의 비늘+": {
@@ -59376,6 +59719,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "동봉룡의 층각": {
@@ -60449,7 +60795,10 @@
         "quantity": 2
       }
     ],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "갑옥+": {
     "item_id": 623,
@@ -61197,7 +61546,10 @@
       }
     ],
     "used_in_charms": [],
-    "used_in_items": []
+    "used_in_items": [],
+    "gathering": [
+      "몬스터 흔적 채집"
+    ]
   },
   "염옥소의 수액": {
     "item_id": 381,
@@ -62367,6 +62719,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "염옥소의 염옥": {
@@ -64930,6 +65285,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (70pt, 등장률 30%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "화룡의 견갑각": {
@@ -66307,6 +66665,9 @@
     "used_in_items": [],
     "notes": [
       "지원 선박 판매 (70pt, 등장률 50%)"
+    ],
+    "gathering": [
+      "몬스터 흔적 채집"
     ]
   },
   "눈사자의 예리이빨": {
@@ -72522,7 +72883,7 @@
     "item_id": 58,
     "name_kr": "수수께끼의 뼈",
     "name_en": "Mystery Bone",
-    "drops_count": 0,
+    "drops_count": 8,
     "used_in_armor_count": 8,
     "used_in_weapons_count": 14,
     "used_in_charms_count": 0,
@@ -72554,6 +72915,51 @@
         "kind_kr": "갈무리",
         "amount": 1,
         "chance": 25
+      },
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baunos",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "가지오스",
+        "monster_en": "Gajios",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "젤레도론",
+        "monster_en": "Gelidron",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "라프마",
+        "monster_en": "Rafma",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
+      },
+      {
+        "monster_kr": "포케피나",
+        "monster_en": "Porkeplume",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 1,
+        "chance": 100
       }
     ],
     "used_in_armor": [
@@ -83448,6 +83854,9 @@
         "receive_amount": 3,
         "limit": 2
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "퐁신퐁신 알": {
@@ -83479,6 +83888,9 @@
         "receive_amount": 2,
         "limit": 2
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "실드 마늘": {
@@ -83696,6 +84108,9 @@
         "receive_amount": 3,
         "limit": 2
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "크라노코퍼": {
@@ -83722,7 +84137,10 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": []
+    "npc_exchanges": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "크라노코퍼곳": {
     "item_id": 282,
@@ -83748,7 +84166,10 @@
     "used_in_weapons": [],
     "used_in_charms": [],
     "used_in_items": [],
-    "npc_exchanges": []
+    "npc_exchanges": [],
+    "gathering": [
+      "필드 채집"
+    ]
   },
   "갑옥": {
     "item_id": 622,
@@ -85146,6 +85567,9 @@
     "npc_exchanges": [],
     "notes": [
       "풍요기일 때 경계의 모래 평원에 랜덤으로 출현하는 '거대따로알로에' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "굉천 창뢰정": {
@@ -85165,6 +85589,9 @@
     "npc_exchanges": [],
     "notes": [
       "기상이변일 때 경계의 모래 평원에 랜덤으로 출현하는 '거대한 창뢰정' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "유구한 주홍빛호박": {
@@ -85184,6 +85611,9 @@
     "npc_exchanges": [],
     "notes": [
       "황폐기일 때 주홍빛 숲에 랜덤으로 출현하는 '거대한 호박' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "여왕꽃의 매혹가루": {
@@ -85203,6 +85633,9 @@
     "npc_exchanges": [],
     "notes": [
       "풍요기일 때 주홍빛 숲에 랜덤으로 출현하는 '퀸 라플레시아' 채집 (환경 개요 알림이 오지 않으므로 맵에서 채취 필터로 확인 필요)"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "큼직큼직한 보배": {
@@ -85222,6 +85655,10 @@
     "npc_exchanges": [],
     "notes": [
       "주홍빛 숲에 랜덤으로 출현하는 '큰 보배' 채집"
+    ],
+    "gathering": [
+      "필드 채집",
+      "특산물 채집: 주홍빛 숲 (구역 21·29·33·36)"
     ]
   },
   "안티마매터": {
@@ -85241,6 +85678,9 @@
     "npc_exchanges": [],
     "notes": [
       "기름 솟는 계곡에 랜덤으로 출현하는 '해정화된 거대한 광물' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "금빛 용린 큰항아리": {
@@ -85260,6 +85700,9 @@
     "npc_exchanges": [],
     "notes": [
       "빙무의 절벽에 랜덤으로 출현하는 '화려한 고대 유물' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "세월의 대형 류누 구슬": {
@@ -85279,6 +85722,9 @@
     "npc_exchanges": [],
     "notes": [
       "각 지역에 랜덤으로 출현하는 '유백색 결정 덩어리' 채집 (경계의 모래 평원, 기름 솟는 계곡, 용도의 폐허)"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "하룻밤꽃의 달빛가루": {
@@ -85298,6 +85744,9 @@
     "npc_exchanges": [],
     "notes": [
       "보름달일 때 경계의 모래 평원 3번, 10번 구역 및 주홍빛 숲 14번, 18번 구역에서 '덧없는 꽃' 채집"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "제네시스 오팔": {
@@ -85317,6 +85766,12 @@
     "npc_exchanges": [],
     "notes": [
       "각 지역에 랜덤으로 출현하는 '유백색 결정 덩어리' 채집 (경계의 모래 평원, 기름 솟는 계곡, 용도의 폐허)"
+    ],
+    "gathering": [
+      "필드 채집",
+      "특산물 채집: 경계의 모래 평원 (구역 6·14)",
+      "특산물 채집: 유전 (구역 50·52)",
+      "특산물 채집: 발화도 (구역 89)"
     ]
   },
   "귀인탄": {
@@ -85737,6 +86192,9 @@
         "receive_amount": 1,
         "limit": null
       }
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "휴대 식량": {
@@ -85756,6 +86214,9 @@
     "npc_exchanges": [],
     "notes": [
       "물자보급소 판매 (게임 진행 시 해금)"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "숫돌": {
@@ -85832,6 +86293,9 @@
     "npc_exchanges": [],
     "notes": [
       "지원 선박 판매 (30pt, 등장률 15%)"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "은알": {
@@ -85851,6 +86315,9 @@
     "npc_exchanges": [],
     "notes": [
       "지원 선박 판매 (300pt, 등장률 30%)"
+    ],
+    "gathering": [
+      "필드 채집"
     ]
   },
   "금알": {
@@ -85870,6 +86337,442 @@
     "npc_exchanges": [],
     "notes": [
       "지원 선박 판매 (600pt, 등장률 40%)"
+    ],
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "슬링어 음폭탄": {
+    "item_id": 70,
+    "name_kr": "슬링어 음폭탄",
+    "name_en": "Screamer Pod",
+    "drops_count": 2,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "drops_from_monsters": [
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baunos",
+        "rank": "low",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 3,
+        "chance": 100
+      },
+      {
+        "monster_kr": "바오노스",
+        "monster_en": "Baunos",
+        "rank": "high",
+        "kind": "shiny",
+        "kind_kr": "유실물",
+        "amount": 3,
+        "chance": 100
+      }
+    ]
+  },
+  "창뢰정 조각": {
+    "item_id": 236,
+    "name_kr": "창뢰정 조각",
+    "name_en": "Fulgurite Shard",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "양질의 창뢰정": {
+    "item_id": 237,
+    "name_kr": "양질의 창뢰정",
+    "name_en": "Pure Fulgurite",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "주홍빛호박 조각": {
+    "item_id": 239,
+    "name_kr": "주홍빛호박 조각",
+    "name_en": "Scarlet Amber Shard",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "양질의 주홍빛호박": {
+    "item_id": 240,
+    "name_kr": "양질의 주홍빛호박",
+    "name_en": "Fine Scarlet Amber",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "반들반들한 보배": {
+    "item_id": 243,
+    "name_kr": "반들반들한 보배",
+    "name_en": "Shiny Treasure",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "반짝반짝한 보배": {
+    "item_id": 244,
+    "name_kr": "반짝반짝한 보배",
+    "name_en": "Sparkly Treasure",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "용린 장식 항아리": {
+    "item_id": 251,
+    "name_kr": "용린 장식 항아리",
+    "name_en": "Wyvernscale Vase",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "역린 장식 항아리": {
+    "item_id": 252,
+    "name_kr": "역린 장식 항아리",
+    "name_en": "Dragonscale Vase",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "용도 꽈리": {
+    "item_id": 254,
+    "name_kr": "용도 꽈리",
+    "name_en": "Wyveria Lantern",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "완숙 용도 꽈리": {
+    "item_id": 255,
+    "name_kr": "완숙 용도 꽈리",
+    "name_en": "Mature Wyveria Lantern",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "유백색 고치실": {
+    "item_id": 257,
+    "name_kr": "유백색 고치실",
+    "name_en": "Milky Cocoon Web",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "류누 자갈": {
+    "item_id": 258,
+    "name_kr": "류누 자갈",
+    "name_en": "Wylk Pebble",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "류누 옥석": {
+    "item_id": 259,
+    "name_kr": "류누 옥석",
+    "name_en": "Wylk Gem",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "고대의 화석 뼈": {
+    "item_id": 261,
+    "name_kr": "고대의 화석 뼈",
+    "name_en": "Ancient Fossil",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "글라스위드": {
+    "item_id": 264,
+    "name_kr": "글라스위드",
+    "name_en": "Gobletweed",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "그랑 글라스위드": {
+    "item_id": 265,
+    "name_kr": "그랑 글라스위드",
+    "name_en": "Chaliceweed",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "화석 오팔": {
+    "item_id": 267,
+    "name_kr": "화석 오팔",
+    "name_en": "Fossilized Opal",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "화석 무지개색 오팔": {
+    "item_id": 268,
+    "name_kr": "화석 무지개색 오팔",
+    "name_en": "Fossilized Fire Opal",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "잘 익은 고기": {
+    "item_id": 9,
+    "name_kr": "잘 익은 고기",
+    "name_en": "Well-done Steak",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "따로알로에": {
+    "item_id": 231,
+    "name_kr": "따로알로에",
+    "name_en": "Windward Aloe",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "양질의 따로알로에": {
+    "item_id": 232,
+    "name_kr": "양질의 따로알로에",
+    "name_en": "Fine Windward Aloe",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "모래후추 열매": {
+    "item_id": 234,
+    "name_kr": "모래후추 열매",
+    "name_en": "Sandpepper",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "양질의 모래후추 열매": {
+    "item_id": 235,
+    "name_kr": "양질의 모래후추 열매",
+    "name_en": "Fiery Sandpepper",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "안티마석": {
+    "item_id": 247,
+    "name_kr": "안티마석",
+    "name_en": "Antimite",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "양질의 안티마석": {
+    "item_id": 248,
+    "name_kr": "양질의 안티마석",
+    "name_en": "Fine Antimite",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "황금 오일": {
+    "item_id": 246,
+    "name_kr": "황금 오일",
+    "name_en": "Auric Oil",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "풍협룡의 허물": {
+    "item_id": 250,
+    "name_kr": "풍협룡의 허물",
+    "name_en": "Hirabami Molting",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "원조 류누 구슬": {
+    "item_id": 256,
+    "name_kr": "원조 류누 구슬",
+    "name_en": "Origin Wylk Gem",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "떠돌이 항아리멍게": {
+    "item_id": 262,
+    "name_kr": "떠돌이 항아리멍게",
+    "name_en": "Drifting Sea Pot",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "로열 항아리멍게": {
+    "item_id": 263,
+    "name_kr": "로열 항아리멍게",
+    "name_en": "Royal Sea Pot",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
+    ]
+  },
+  "동용하초": {
+    "item_id": 270,
+    "name_kr": "동용하초",
+    "name_en": "Wyvernsprout",
+    "drops_count": 0,
+    "used_in_armor_count": 0,
+    "used_in_weapons_count": 0,
+    "used_in_charms_count": 0,
+    "used_in_items_count": 0,
+    "gathering": [
+      "필드 채집"
     ]
   }
 }

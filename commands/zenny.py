@@ -121,7 +121,7 @@ def check_attend(user_id: int, nickname: str) -> str:
             '''INSERT INTO members (user_id, nickname, last_seen, first_seen)
                VALUES (?, ?, ?, ?)
                ON CONFLICT(user_id) DO UPDATE SET nickname = excluded.nickname, last_seen = excluded.last_seen''',
-            (user_id, nickname, datetime.now().isoformat(timespec='seconds'),
+            (user_id, _nicknames.get(user_id) or nickname, datetime.now().isoformat(timespec='seconds'),
              datetime.now().isoformat(timespec='seconds')),
         )
         zenny, last_attend, _rc, _lr, _nk, _ns, attend_bonus = _get_row(c, user_id)
@@ -182,7 +182,7 @@ def spin_roulette(user_id: int, nickname: str, bet_arg: str) -> tuple[str, str]:
             '''INSERT INTO members (user_id, nickname, last_seen, first_seen)
                VALUES (?, ?, ?, ?)
                ON CONFLICT(user_id) DO UPDATE SET nickname = excluded.nickname, last_seen = excluded.last_seen''',
-            (user_id, nickname, datetime.now().isoformat(timespec='seconds'),
+            (user_id, _nicknames.get(user_id) or nickname, datetime.now().isoformat(timespec='seconds'),
              datetime.now().isoformat(timespec='seconds')),
         )
         zenny, _la, roulette_count, last_roulette, _nk, neg_streak, attend_bonus = _get_row(c, user_id)

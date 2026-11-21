@@ -657,6 +657,11 @@ def _collect_user(nick_query: str) -> Optional[dict]:
             target_nick = r['nick']
             break
     if rank_idx is None:
+        heads = [(i, r['nick']) for i, r in enumerate(full['ranking'])
+                 if _re.split(r'[/\\]', r['nick'])[0].strip() == nick_query]
+        if len(heads) == 1:
+            rank_idx, target_nick = heads[0]
+    if rank_idx is None:
         partials = [(i, r['nick']) for i, r in enumerate(full['ranking']) if nick_query in r['nick']]
         if len(partials) == 1:
             rank_idx, target_nick = partials[0]
@@ -1114,7 +1119,7 @@ def api_user(nick):
 
 
 
-def start_server(host: str = '0.0.0.0', port: int = 80):
+def start_server(host: str = os.environ.get('WEB_HOST', '0.0.0.0'), port: int = int(os.environ.get('WEB_PORT', '80'))):
     print(f'[web] starting on {host}:{port}', flush=True)
     try:
         app.run(host=host, port=port, threaded=True, use_reloader=False)

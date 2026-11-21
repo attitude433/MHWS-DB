@@ -108,9 +108,37 @@ def find_monster(query: str):
     return db.monster_index.get(canonical) if canonical else None
 
 
+def find_monster_candidates(query: str, limit: int = 15) -> list[str]:
+    key = query.replace(' ', '')
+    if len(key) < 2:
+        return []
+    seen: dict[str, bool] = {}
+    for k, canonical in _monster_index.items():
+        if key in k:
+            if canonical not in seen:
+                seen[canonical] = True
+        if len(seen) >= limit:
+            break
+    return list(seen.keys())
+
+
 def find_skill(query: str) -> str | None:
     key = query.replace(' ', '')
     return _skill_index.get(key)
+
+
+def find_skill_candidates(query: str, limit: int = 15) -> list[str]:
+    key = query.replace(' ', '')
+    if len(key) < 2:
+        return []
+    seen: dict[str, bool] = {}
+    for k, name in _skill_index.items():
+        if key in k:
+            if name not in seen:
+                seen[name] = True
+        if len(seen) >= limit:
+            break
+    return list(seen.keys())
 
 
 def find_weapon_guide(query: str):
@@ -121,6 +149,21 @@ def find_weapon_guide(query: str):
 def find_item(query: str):
     key = query.replace(' ', '')
     return _item_index.get(key)
+
+
+def find_item_candidates(query: str, limit: int = 15) -> list[str]:
+    key = query.replace(' ', '')
+    if len(key) < 2:
+        return []
+    seen: dict[str, bool] = {}
+    for k, d in _item_index.items():
+        if key in k:
+            name = d.get('name_kr', '')
+            if name and name not in seen:
+                seen[name] = True
+        if len(seen) >= limit:
+            break
+    return list(seen.keys())
 
 
 def find_monster_partial(query: str):

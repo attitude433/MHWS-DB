@@ -1,20 +1,62 @@
 {
   "title": "몬스터헌터 와일즈: 어센던스",
-  "type": "대형 DLC / 타이틀 업데이트",
+  "type": "대형 DLC / 확장팩",
   "status": "발표됨 (출시 전)",
-  "release": "미정",
+  "release": "2027년 예정",
   "official_url": "https://www.monsterhunter.com/wilds-ascendance/ko-kr/",
-  "summary": "와일즈 첫 대형 확장. 발표 트레일러와 한국어 공식 사이트가 공개되었고, 자세한 출시일·신규 콘텐츠는 아직 미정.",
+  "summary": "와일즈 첫 대형 확장 (아이스본급). 마스터 랭크(정식 명칭 확정), 와일즈 엔딩 수년 후 동쪽 지역이 무대, 신규 거점 '마도이'(라오샨룽 습격 대비), 신규 지역(구름 위 부유섬). 복귀 몬스터: 라오샨룽·크샬다오라·테오 테스카토르·푸루푸루. 신규 몬스터: 분충조 아라케타(비룡)·군드라자(뇌운을 조종하는 고룡). 팔에 장착하는 신규 장비 '부스트 브레이서'(게이지 최대 3스톡, 무기 14종 전부 신규 액션, 무한 유지 불가). 캐릭터 커스텀 무료 변경(성형권 불필요) 예정. 2027년 출시 (PC/PS5/XSX|S/닌텐도 스위치2).",
   "news": [
     {
-      "date": "",
+      "date": "2026-09-19",
+      "label": "푸루푸루(기괴룡) 복귀 확정 — TGS 데모 방송에서 공식 확인 (팬들이 9/3 트레일러 배경에서 먼저 발견). 날개 가시·더 길어진 목 등 디자인 변화",
+      "source": "GosuGamers / TGS 데모 방송",
+      "url": "https://www.gosugamers.net/entertainment/news/79213-monster-hunter-wilds-ascendance-reveal-khezu-as-latest-returning-monster"
+    },
+    {
+      "date": "2026-09-17",
+      "label": "TGS 2026 세계 최초 시연 — 부스트 브레이서 체험 (게이지 3스톡, R1+○+△ 강화). 시연 퀘스트: 신규 분충조 아라케타(무리·고속) / 마스터 랭크 테오 테스카토르(슈퍼노바) / 초보자용 차타카브라",
+      "source": "게임뷰 (4Gamer 번역)",
+      "url": "https://www.gamevu.co.kr/news/articleView.html?idxno=60867"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "캡콤 스팟라이트(23시 방송) — 테오 테스카토르 복귀 트레일러, 신규 고룡 군드라자(뇌운 조종)·분충조 아라케타 공개, 신규 거점 마도이, 캐릭터 커스텀 무료 변경 발표. 복귀 고룡: 라오샨룽·크샬다오라·테오",
+      "source": "인벤 / 캡콤 스팟라이트 TGS 2026",
+      "url": "https://www.inven.co.kr/webzine/news/?news=321024"
+    },
+    {
+      "date": "2026-09-03",
+      "label": "State of Play 신규 트레일러 — 라오샨룽 복귀 확정(더블크로스 이후 첫 등장), 구름 위 부유섬 신규 지역, 신규 몬스터·장비 공개, 2027년 출시",
+      "source": "State of Play / 캡콤 공식 (유튜브, 프로모션 영상①)",
+      "url": "https://www.youtube.com/watch?v=YdccUnqbPcA"
+    },
+    {
+      "date": "2026-09-02",
+      "label": "부스트 액션 소개 영상 + 무기별 소개 영상 순차 공개 시작 (대검 9/2, 활 9/3, 14종 매일 공개)",
+      "source": "캡콤아시아 (유튜브, 한글 자막)",
+      "url": "https://www.youtube.com/watch?v=i2BoVCS-1ks"
+    },
+    {
+      "date": "2026-09-01",
+      "label": "TGS 2026 최초 시연 예고 — 캡콤 스팟라이트 9/16 23시 방송, TGS(9/17~21) 현장서 부스트 브레이서 첫 체험",
+      "source": "경향게임스",
+      "url": "https://www.khgames.co.kr/news/articleView.html?idxno=307944"
+    },
+    {
+      "date": "2026-07-14",
+      "label": "본편 가격 인하(8/4부터, 일본 기준 8,990→4,990엔)·골드 에디션 통합 — 확장팩 대비 신규 유저 확보",
+      "source": "경향게임스",
+      "url": "https://www.khgames.co.kr/news/articleView.html?idxno=306342"
+    },
+    {
+      "date": "2026-06",
       "label": "개발자 메시지",
       "source": "캡콤아시아 (유튜브)",
       "url": "https://www.youtube.com/watch?v=-aRBxnYfi0k"
     },
     {
-      "date": "",
-      "label": "발표 트레일러",
+      "date": "2026-06",
+      "label": "발표 트레일러 (Summer Game Fest 2026 최초 공개)",
       "source": "캡콤아시아 (유튜브)",
       "url": "https://www.youtube.com/watch?v=rVOzlcUPe7Q"
     }

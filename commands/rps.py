@@ -10,6 +10,7 @@ import random
 from datetime import datetime
 
 import members
+import nicknames as _nicknames
 from commands.zenny import (
     today_kst,
     is_excluded,
@@ -43,7 +44,7 @@ def play(user_id: int, nickname: str, user_hand: str, bet_arg: str) -> str:
             '''INSERT INTO members (user_id, nickname, last_seen, first_seen)
                VALUES (?, ?, ?, ?)
                ON CONFLICT(user_id) DO UPDATE SET nickname = excluded.nickname, last_seen = excluded.last_seen''',
-            (user_id, nickname, datetime.now().isoformat(timespec='seconds'),
+            (user_id, _nicknames.get(user_id) or nickname, datetime.now().isoformat(timespec='seconds'),
              datetime.now().isoformat(timespec='seconds')),
         )
         zenny, _la, game_count, last_game, _nk, _ns, _ab = _get_row(c, user_id)

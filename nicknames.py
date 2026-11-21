@@ -81,16 +81,24 @@ def _detect_bot_uid(api) -> int:
     return _bot_uid
 
 
+def _unhex(h) -> str:
+    """hex(nickname) → 원본 문자열. Iris /query 가 일부 암호문을 깨뜨려 반환해서 hex 로 우회."""
+    try:
+        return bytes.fromhex(h).decode() if h else ''
+    except Exception:
+        return ''
+
+
 def _decrypt_member(api, user_id: int) -> str:
     """open_chat_member 암호화 닉 → 봇 키로 복호화. 실패 시 ''"""
     try:
         rows = api.query(
-            'SELECT nickname, enc FROM db2.open_chat_member WHERE user_id = ?',
+            'SELECT hex(nickname) AS h, enc FROM db2.open_chat_member WHERE user_id = ?',
             [int(user_id)],
         )
         if not rows:
             return ''
-        cipher, enc = rows[0].get('nickname'), rows[0].get('enc')
+        cipher, enc = _unhex(rows[0].get('h')), rows[0].get('enc')
         if not cipher or enc is None:
             return ''
         return api.decrypt(int(enc), cipher, _detect_bot_uid(api)) or ''
@@ -177,7 +185,7 @@ def refresh_from_iris(api) -> int:
     → 평소엔 쿼리 1번 + 복호화 0건 (닉변 시에만 그 사람만). 짧은 주기로 돌려도 부하 ~0.
     """
     try:
-        rows = api.query('SELECT user_id, nickname, enc FROM db2.open_chat_member')
+        rows = api.query('SELECT user_id, hex(nickname) AS h, enc FROM db2.open_chat_member')
     except Exception:
         return 0
     bot_uid = _detect_bot_uid(api)
@@ -185,7 +193,7 @@ def refresh_from_iris(api) -> int:
     for r in rows:
         try:
             uid = int(r['user_id'])
-            cipher, enc = r.get('nickname'), r.get('enc')
+            cipher, enc = _unhex(r.get('h')), r.get('enc')
             if not cipher or enc is None:
                 continue
             if _last_cipher.get(uid) == cipher:
@@ -198,8 +206,12 @@ def refresh_from_iris(api) -> int:
         try:
             plain = api.decrypt(int(enc), cipher, bot_uid)
         except Exception:
-            continue
+            plain = ''
         if not plain:
+            # 복호화 불가(깨진 암호문 등)도 관측값 기록 → 같은 암호문 재시도로 인한
+            # Iris 500 스팸 방지. 닉변으로 암호문 바뀌면 다시 시도됨.
+            with _lock:
+                _last_cipher[uid] = cipher
             continue
         with _lock:
             _last_cipher[uid] = cipher  # 토큰 시딩

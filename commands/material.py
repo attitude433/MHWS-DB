@@ -51,14 +51,26 @@ def _format_exchanges(exchanges: list) -> list[str]:
     return lines
 
 
+def crafted_equipment(item_data: dict, limit: int = 10) -> tuple[str, str]:
+    weapons = list(dict.fromkeys(w.get('weapon_name_kr', '') for w in item_data.get('used_in_weapons', [])))
+    armor_sets = list(dict.fromkeys(a.get('set_name_kr', '') for a in item_data.get('used_in_armor', [])))
+
+    def _join(names: list) -> str:
+        s = ', '.join(names[:limit])
+        return s + (f' 외 {len(names) - limit}개' if len(names) > limit else '')
+
+    return _join(weapons), _join(armor_sets)
+
+
 def format_material(item_name: str, item_data: dict) -> str:
     drops = item_data.get('drops_from_monsters', [])
     exchanges = item_data.get('npc_exchanges', [])
     gathering = item_data.get('gathering', [])
     recipes = item_data.get('recipes', [])
     notes = item_data.get('notes', [])
+    weapons, armors = crafted_equipment(item_data)
 
-    if not drops and not exchanges and not gathering and not recipes and not notes:
+    if not drops and not exchanges and not gathering and not recipes and not notes and not weapons and not armors:
         return f'[소재] {item_name}\n\n획득처 정보 없음'
 
     lines = [f'[소재] {item_name}', '']
@@ -82,6 +94,13 @@ def format_material(item_name: str, item_data: dict) -> str:
         lines.append('[기타]')
         for n in notes:
             lines.append(f'  - {n}')
+        lines.append('')
+    if weapons or armors:
+        lines.append('[제작 장비]')
+        if weapons:
+            lines.append(f'  - 무기: {weapons}')
+        if armors:
+            lines.append(f'  - 방어구: {armors}')
         lines.append('')
 
     return '\n'.join(lines).rstrip()

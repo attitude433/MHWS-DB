@@ -4,6 +4,7 @@ from datetime import datetime, date
 from zoneinfo import ZoneInfo
 
 import db
+from commands import frontier
 import members
 
 KST = ZoneInfo('Asia/Seoul')
@@ -130,6 +131,7 @@ SCHEDULES = [
     {'hour': 12, 'minute': 0, 'dynamic': lambda: random.choice(LUNCH_MESSAGES)},
     {'hour': 15, 'minute': 0, 'dynamic': lambda: random.choice(CAPCOM_BROADCAST_MESSAGES),
      'until': date(2026, 6, 26)},
+    {'hour': 17, 'minute': 0, 'multi_dynamic': frontier.daily_messages},  # 프론티어 사설섭 공지(꺼져 있으면 생략)
     {'hour': 18, 'minute': 0, 'dynamic': lambda: random.choice(DINNER_MESSAGES)},
     {'hour': 23, 'minute': 0, 'dynamic': lambda: random.choice(ROULETTE_REMINDER_MESSAGES)},
     {'hour': 0, 'minute': 0, 'dynamic': lambda: random.choice(GOODNIGHT_MESSAGES)},

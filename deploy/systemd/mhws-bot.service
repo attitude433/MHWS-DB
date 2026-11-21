@@ -1,0 +1,19 @@
+[Unit]
+Description=MHWS KakaoTalk Bot
+After=mhws-iris.service network-online.target
+Requires=mhws-iris.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/mhws-bot
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/ubuntu/mhws-bot/.venv/bin/python /home/ubuntu/mhws-bot/main.py
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/ubuntu/mhws-bot/bot.log
+StandardError=append:/home/ubuntu/mhws-bot/bot.log
+
+[Install]
+WantedBy=multi-user.target
